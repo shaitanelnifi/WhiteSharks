@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\doorScript.cs">
+    <Files>
+      <File FileName="Assets\scripts\npcScript.cs" Line="19" Column="2" />
+      <File FileName="Assets\scripts\playerScript.cs" Line="4" Column="5" />
+      <File FileName="Assets\scripts\converScript.cs" Line="9" Column="11" />
+      <File FileName="Assets\scripts\doorScript.cs" Line="4" Column="24" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
