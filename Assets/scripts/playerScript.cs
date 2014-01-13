@@ -32,9 +32,10 @@ public class playerScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		float deltaTime = Time.deltaTime;
 		if(Input.GetKey(moveLeft))
-			transform.Translate(new Vector3(1,0, 0)* -speed * Time.deltaTime);
+			transform.Translate(new Vector3(1,0, 0)* -speed * deltaTime);
 		if(Input.GetKey(moveRight))
-			transform.Translate(new Vector3(1,0, 0)* speed * Time.deltaTime);
+			transform.Translate(new Vector3(1,0, 0)* speed * deltaTime);
 	}
 }
