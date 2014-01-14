@@ -14,6 +14,7 @@ public class playerScript : MonoBehaviour {
 	public Transform mainChar;
 	public float sceneX, sceneY, sceneZ;
 	public float newX, newY;
+	public float playerCurrentY = -2.083729f;
 
 	////Move the camera to the next scene when collides with the door object.
 	void OnTriggerEnter2D(Collider2D collider){
@@ -44,10 +45,12 @@ public class playerScript : MonoBehaviour {
 			transform.Translate(new Vector3(1,0, 0)* -speed * Time.deltaTime);
 		if(Input.GetKey(moveRight))
 			transform.Translate(new Vector3(1,0, 0)* speed * Time.deltaTime);
-		if(Input.GetKey(moveTop))
+		if(Input.GetKey(moveTop)){
 			transform.Translate(new Vector3(0,1, 0)* speed * Time.deltaTime);
-		if(Input.GetKey(moveBottom))
+		}
+		if(Input.GetKey(moveBottom)){
 			transform.Translate(new Vector3(0,1, 0)* -speed * Time.deltaTime);
+		}
 
 	}
 }

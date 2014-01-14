@@ -292,6 +292,7 @@ MonoBehaviour:
   sceneZ: 0
   newX: -10.3849096
   newY: -2.32141399
+  playerCurrentY: 0
 --- !u!50 &644058896
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -741,7 +742,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2062944587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.3735671, y: -1.20346463, z: 0}
+  m_LocalPosition: {x: -4.3735671, y: -1.20346463, z: 200}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -768,6 +769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversation: {fileID: 1502930416}
+  playerObj: {fileID: 644058894}
 --- !u!50 &2062944592
 Rigidbody2D:
   m_ObjectHideFlags: 0
