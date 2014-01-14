@@ -7,9 +7,9 @@ using System.Collections;
 public class gameManager : MonoBehaviour {
 	// Declare properties
 	private static gameManager instance;
-	private gameStates currentState;
-	private string currLevel;			// Current level
-	private string name;				// Character name
+	private gameStates _currentState;
+	private string _currLevel;			// Current level
+	private string _name;				// Character name
 
 	public static gameManager Instance {
 		get {
@@ -30,9 +30,9 @@ public class gameManager : MonoBehaviour {
 		print ("Creating a new game state");
 
 		// Set default properties
-		currLevel = "Level 1";
-		name = "My Character";
-		currentState = gameStates.MAINMENU;
+		_currLevel = "Level 1";
+		_name = "My Character";
+		_currentState = gameStates.MAINMENU;
 
 		// Load Level 1
 		Application.LoadLevel ("stage1");
@@ -46,25 +46,25 @@ public class gameManager : MonoBehaviour {
 	}
 
 	public string getLevel() {
-		if (currLevel != null)
-			return currLevel;
+		if (_currLevel != null)
+			return _currLevel;
 		else
 			return "currLevel is null!";
 	}
 
 	public void setLevel(string level) {
-		currLevel = level;
+		_currLevel = level;
 	}
 
 	public string getName() {
-		if (name != null)
-			return name;
+		if (_name != null)
+			return _name;
 		else
 			return "name is null!";
 	}
 
 	public void setName(string newName) {
-		name = newName;
+		_name = newName;
 	}
 
 	void Update() {

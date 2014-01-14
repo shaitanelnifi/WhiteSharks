@@ -7,8 +7,16 @@ using System.Collections;
 public class inputManager : MonoBehaviour {
 	// Declare properties
 	private static inputManager instance;
-	private KeyCode prevKeyPressed;
-	private gameStates currentState;
+	private KeyCode _prevKeyPressed;
+	private PlayerState _currState;
+	private bool _isPause = false;
+	private float _buttonWidth = 150;
+
+	// Movement components
+	private KeyCode _moveLeft;
+	private KeyCode _moveRight;
+	private KeyCode _moveUp;
+	private KeyCode _moveDown;
 	
 	public static inputManager Instance {
 		get {
@@ -18,6 +26,20 @@ public class inputManager : MonoBehaviour {
 			}
 			return instance;
 		}
+	}
+
+	/// <summary>
+	/// Sets the movement components.
+	/// </summary>
+	/// <param name="L">Move Left component</param>
+	/// <param name="R">Move Right component</param>
+	/// <param name="U">Move Up component</param>
+	/// <param name="D">Move Down component</param>
+	public void SetMovementComponents(KeyCode L, KeyCode R, KeyCode U, KeyCode D) {
+		_moveLeft = L;
+		_moveRight = R;
+		_moveUp = U;
+		_moveDown = D;
 	}
 
 	KeyCode FetchKey() {
@@ -31,21 +53,50 @@ public class inputManager : MonoBehaviour {
 		return KeyCode.None;
 	}
 
+	void PauseMenu() {
+		_isPause = !_isPause;
+		if (_isPause) {
+			Time.timeScale = 0;
+		} else {
+			Time.timeScale = 1;
+		}
+	}
+
+	void OnGUI() {
+		// This condition used for triggering pause menu
+		if (_isPause) {
+			if (GUI.Button (new Rect (Screen.width/2 - _buttonWidth, Screen.height/2, _buttonWidth, 30), "Unpause")) {
+				_isPause = !_isPause;
+				Time.timeScale = 1;
+			}
+
+			if (GUI.Button (new Rect (Screen.width/2 - _buttonWidth, Screen.height/2 + 40, _buttonWidth, 30), "Exit to Main Menu")) {
+				_isPause = !_isPause;
+				Application.LoadLevel ("mainmenu");
+			}
+		}
+	}
+
 	// Use this for initialization
 	void Start () {
-	
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		// Gets the last key pressed
 		if (Input.anyKeyDown) {
-			prevKeyPressed = FetchKey ();
+			_prevKeyPressed = FetchKey ();
+		}
+
+		// Input to open pause menu
+		if (Input.GetKeyDown(KeyCode.Escape) && Application.loadedLevelName != "mainmenu") {
+			PauseMenu ();
 		}
 	}
 }
 
-public enum PlayerMovement {
+public enum PlayerState {
 	MOVELEFT,
 	MOVERIGHT,
 	MOVEDOWN,
