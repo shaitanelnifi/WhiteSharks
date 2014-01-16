@@ -755,8 +755,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1.587304, y: 1.37881863}
-  m_Center: {x: -.14414978, y: -2.05059052}
+  m_Size: {x: 1.587304, y: 5.41710043}
+  m_Center: {x: -.14414978, y: -.0314495564}
 --- !u!114 &2062944591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -770,6 +770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversation: {fileID: 1502930416}
   playerObj: {fileID: 644058894}
+  box: {fileID: 2062944590}
 --- !u!50 &2062944592
 Rigidbody2D:
   m_ObjectHideFlags: 0
