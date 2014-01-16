@@ -1,20 +1,13 @@
-﻿/*
-npc class. 
-
-changes: added collision with the player. -John Mai
-
-*/
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
-public class npcScript : MonoBehaviour {
-	
+public class NPC : CaseElement {
+
 	public GameObject conversation, playerObj;
 	public BoxCollider2D box;
 
-
 	//enable conversation object if left mouse button is clicked.
-	public void onMouseDown(){
+	public override void onMouseDown(){
 		if(Input.GetMouseButton(0)){
 			conversation.renderer.enabled = true;
 			conversation.collider2D.enabled = true;
