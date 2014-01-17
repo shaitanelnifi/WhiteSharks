@@ -10,7 +10,8 @@ public abstract class CaseElement : MonoBehaviour {
 
 	private int guilt;				//How is it related to the case?  
 	private int location;			//Where is it during gameplay, every room/scene has a corresponding Int id
-	private GameObject conversation;	//The associated dialogue when a case element is clicked
+	private GameObject conversation;//The associated dialogue when a case element is clicked
+	private bool visible;			//Is the element visible in the journal?
 
 	public abstract void onMouseDown ();
 
@@ -23,6 +24,7 @@ public abstract class CaseElement : MonoBehaviour {
 		description = someDesc;
 	}
 
+
 	public void setProfileImage(Sprite someImage){
 		profileImage = someImage;
 	}
@@ -30,6 +32,7 @@ public abstract class CaseElement : MonoBehaviour {
 	public void setGuilt(int level){
 		guilt = level;
 	}
+
 
 	public void setLocation(int somePlace){
 		location = somePlace;
@@ -39,6 +42,7 @@ public abstract class CaseElement : MonoBehaviour {
 		conversation = someConv;
 	}
 
+
 	//Getters for all Case Element fields
 	public string getElementName( ){
 		return elementName;
@@ -47,7 +51,8 @@ public abstract class CaseElement : MonoBehaviour {
 	public string getDescription( ){
 		return description;
 	}
-	
+
+
 	public Sprite getProfileImage( ){
 		return profileImage;
 	}
@@ -55,7 +60,8 @@ public abstract class CaseElement : MonoBehaviour {
 	public int getGuilt( ){
 		return guilt;
 	}
-	
+
+
 	public int getLocation( ){
 		return location;
 	}
