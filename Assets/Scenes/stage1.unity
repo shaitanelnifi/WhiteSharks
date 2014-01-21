@@ -765,9 +765,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2062944587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b5ea504e315f84f9c027c6f0658829, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e55abf860691c541a849b33c21c6089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  elementName: 
+  description: 
+  profileImage: {fileID: 0}
   conversation: {fileID: 1502930416}
   playerObj: {fileID: 644058894}
   box: {fileID: 2062944590}
