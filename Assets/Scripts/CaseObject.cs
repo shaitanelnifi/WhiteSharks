@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Object : CaseElement {
+public class CaseObject : CaseElement {
 
 	public string category;	//What kind of item is it? (such as Personal Items, blades, guns, etc)
 
