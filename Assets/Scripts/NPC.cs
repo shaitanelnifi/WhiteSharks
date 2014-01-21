@@ -3,7 +3,13 @@ using System.Collections;
 
 public class NPC : CaseElement {
 
-	public GameObject conversation, playerObj;
+	enum AnimationState //enum to avoid magic numbers in the animation ArrayList
+	{
+		idle=0,
+		conversation
+	};
+	
+	public GameObject conversationObj, playerObj;
 	public BoxCollider2D box;
 
 	//NPC specific data fields
@@ -15,8 +21,8 @@ public class NPC : CaseElement {
 	//enable conversation object if left mouse button is clicked.
 	public override void onMouseDown(){
 		if(Input.GetMouseButton(0)){
-			conversation.renderer.enabled = true;
-			conversation.collider2D.enabled = true;
+			conversationObj.renderer.enabled = true;
+			conversationObj.collider2D.enabled = true;
 		}
 	}
 	//switch the displaying order of the npc. 
