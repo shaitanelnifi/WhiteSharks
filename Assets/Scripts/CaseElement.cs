@@ -8,7 +8,7 @@ public abstract class CaseElement : MonoBehaviour {
 	public string description;	//A text description of it
 	public Sprite profileImage; //Its base image (square mug-shot)
 
-	private int guilt;				//How is it related to the case?  
+	private GuiltLevel guilt;		//How is it related to the case?  
 	private int location;			//Where is it during gameplay, every room/scene has a corresponding Int id
 	private GameObject conversation;//The associated dialogue when a case element is clicked
 	private bool visible;			//Is the element visible in the journal?
@@ -29,7 +29,7 @@ public abstract class CaseElement : MonoBehaviour {
 		profileImage = someImage;
 	}
 
-	public void setGuilt(int level){
+	public void setGuilt(GuiltLevel level){
 		guilt = level;
 	}
 
@@ -57,7 +57,7 @@ public abstract class CaseElement : MonoBehaviour {
 		return profileImage;
 	}
 	
-	public int getGuilt( ){
+	public GuiltLevel getGuilt( ){
 		return guilt;
 	}
 
