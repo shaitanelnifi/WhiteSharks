@@ -40,11 +40,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 25225bdb87552fd49a4fe47f6741821d, type: 2}
   mSprites:
+  - name: emptyMugShot
+    x: 1025
+    y: 1849
+    width: 199
+    height: 199
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: journalPlaceHolder
     x: 0
     y: 1476
     width: 1024
     height: 572
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: NoelAltProfile
+    x: 1025
+    y: 1669
+    width: 167
+    height: 179
     borderLeft: 0
     borderRight: 0
     borderTop: 0
