@@ -37,30 +37,30 @@ public class gameStart : MonoBehaviour {
 	}
 
 	void Update() {
-		print (_wo);
+
 	}
 	
 	private void startGame() {
-		print ("Starting game");
+		Debug.Log("Starting game");
 
 		// Initialize various managers for the game
 		// Singleton pattern
-		DontDestroyOnLoad(gameManager.Instance);
-		DontDestroyOnLoad (inputManager.Instance);
-		gameManager.Instance.startState();
+		DontDestroyOnLoad(GameManager.Instance);
+		DontDestroyOnLoad(InputManager.Instance);
+		GameManager.Instance.startState();
 	}
 
 	private void optionsMenu() {
 		print ("Entering Options menu");
 
 		_mainMenu = false;
-		DontDestroyOnLoad (inputManager.Instance);
+		DontDestroyOnLoad (InputManager.Instance);
 	}
 
 	private void quitGame() {
 		print ("Quitting game");
 
-		DontDestroyOnLoad(gameManager.Instance);
-		gameManager.Instance.quitGame();  
+		DontDestroyOnLoad(GameManager.Instance);
+		GameManager.Instance.quitGame();  
 	}
 }

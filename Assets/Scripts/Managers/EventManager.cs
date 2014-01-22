@@ -1,6 +1,45 @@
 ﻿// Anthony Lim
 // Taken from http://bibdy.net/index.php/projects/furious-tourist-unity3d/138-unity3d-c-event-manager
 
+/*****************
+ * Example usage of the Event Manager
+ * 
+ * public class TestListener : MonoBehaviour, IEventListener {
+ *
+ *	// Use this for initialization
+ *	void Start () {
+ *		EventManager.Instance.AttachListener (this, "Event_NearNPC", this.HandleDetectNear);
+ *	}
+ *
+ *	// Update is called once per frame
+ *	void Update () {
+ *		EventManager.Instance.QueueEvent (new Event_NearNPC(50, 50));
+ *	}
+ *
+ *	public class Event_NearNPC : BaseEvent {
+ *		public readonly float m_loc;
+ *		public readonly float m_otherloc;
+ *		public Event_NearNPC(float loc, float otherloc) { m_loc = loc; m_otherloc = otherloc; }
+ *		
+ *		public float GetLoc { get { return m_loc; } }
+ *		public float GetOtherLoc { get { return m_otherloc; } }
+ *	}
+ *
+ *	private bool HandleDetectNear(IEvent evt) { 
+ *		Event_NearNPC castEvent = evt as Event_NearNPC;
+ *		
+ *		if (transform.position.x < -4.373567 ) {
+ *			Debug.Log ("wow!");
+ *			EventManager.Instance.DetachListener(this, "Event_NearNPC", this.HandleDetectNear);
+ *			return true;
+ *		}
+ *		
+ *		Debug.Log ("u did it");
+ *		return true;
+ *	 }
+ * } 
+ *****************/
+
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -24,18 +63,18 @@ public class EventManager : MonoBehaviour
 	private static EventManager s_Instance = null;
 	private Hashtable m_listenerTable = new Hashtable();
 	private Queue m_eventQueue = new Queue();
-	
+
 	// override so we don't have the typecast the object
 	public static EventManager Instance 
 	{
 		get {
 			if (s_Instance == null) {
-				s_Instance = GameObject.FindObjectOfType (typeof(EventManager)) as EventManager;
+				s_Instance = new GameObject("EventManager").AddComponent<EventManager>();
 			}
 			return s_Instance;
 		}
 	}
-	
+
 	//Add a listener to the event manager that will receive any events of the supplied event name.
 	public bool AttachListener(IEventListener listener, string eventName, DelegateEventHandler handler)
 	{
@@ -145,4 +184,5 @@ public class EventManager : MonoBehaviour
 		m_eventQueue.Clear();
 		s_Instance = null;
 	}
+
 }

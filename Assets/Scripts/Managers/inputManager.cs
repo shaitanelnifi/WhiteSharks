@@ -4,9 +4,9 @@
 using UnityEngine;
 using System.Collections;
 
-public class inputManager : MonoBehaviour {
+public class InputManager : MonoBehaviour {
 	// Declare properties
-	private static inputManager instance;
+	private static InputManager instance;
 	private KeyCode _prevKeyPressed;
 	private PlayerState _currState;
 	private bool _isPause = false;
@@ -18,11 +18,11 @@ public class inputManager : MonoBehaviour {
 	private KeyCode _moveUp;
 	private KeyCode _moveDown;
 	
-	public static inputManager Instance {
+	public static InputManager Instance {
 		get {
 			if (instance == null) {
-				print("Instance null, creating new inputManager");
-				instance = new GameObject("inputManager").AddComponent<inputManager>();
+				Debug.Log("Instance null, creating new InputManager");
+				instance = new GameObject("InputManager").AddComponent<InputManager>();
 			}
 			return instance;
 		}

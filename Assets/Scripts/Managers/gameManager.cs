@@ -4,18 +4,18 @@
 using UnityEngine;
 using System.Collections;
 
-public class gameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour {
 	// Declare properties
-	private static gameManager instance;
+	private static GameManager instance;
 	private gameStates _currentState;
 	private string _currLevel;			// Current level
 	private string _name;				// Character name
 
-	public static gameManager Instance {
+	public static GameManager Instance {
 		get {
 			if (instance == null) {
-				print("Instance null, creating new gameManager");
-				instance = new GameObject("gameManager").AddComponent<gameManager>();
+				Debug.Log("Instance null, creating new GameManager");
+				instance = new GameObject("GameManager").AddComponent<GameManager>();
 			}
 			return instance;
 		}
@@ -27,7 +27,7 @@ public class gameManager : MonoBehaviour {
 	}
 
 	public void startState() {
-		print ("Creating a new game state");
+		Debug.Log("Creating a new game state");
 
 		// Set default properties
 		_currLevel = "Level 1";
@@ -41,7 +41,7 @@ public class gameManager : MonoBehaviour {
 
 	public void quitGame() {
 		// Quit the game
-		print ("Qutting the game");
+		Debug.Log("Qutting the game");
 		Application.Quit ();
 	}
 
