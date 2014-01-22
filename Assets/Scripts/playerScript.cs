@@ -6,26 +6,23 @@ changes: change scene depends on which door the player collide with. -John Mai 1
 using UnityEngine;
 using System.Collections;
 
-public class playerScript : MonoBehaviour {
+public class playerScript : CaseElement {
 
 	public KeyCode moveLeft, moveRight, moveTop, moveBottom;
 	public float speed = 8f;
 	public Camera mainCam;
 	public Transform mainChar;
-	public float sceneX, sceneY, sceneZ;
-	public float newX, newY;
-	public float playerCurrentY = -2.083729f;
 
 	////Move the camera to the next scene when collides with the door object.
 	void OnTriggerEnter2D(Collider2D collider){
 		doorScript doorObj = collider.gameObject.GetComponent<doorScript> ();
 		if (doorObj != null) {
 
-			newX = doorObj.newX;
-			newY = doorObj.newY;
-			sceneX = doorObj.sceneX;
-			sceneY = doorObj.sceneY;
-			sceneZ = doorObj.sceneZ;
+			float newX = doorObj.newX;
+			float newY = doorObj.newY;
+			float sceneX = doorObj.sceneX;
+			float sceneY = doorObj.sceneY;
+			float sceneZ = doorObj.sceneZ;
 
 			//move the player to the next scene.
 			Vector3 temp = transform.position; 
