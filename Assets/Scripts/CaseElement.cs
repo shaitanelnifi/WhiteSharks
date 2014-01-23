@@ -13,7 +13,6 @@ public abstract class CaseElement : MonoBehaviour {
 	private GameObject conversation;//The associated dialogue when a case element is clicked
 	private bool visible;			//Is the element visible in the journal?
 
-	public abstract void onMouseDown ();
 
 	//Setters for all Case Element fields
 	public void setElementName(string someName){
