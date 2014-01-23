@@ -26,12 +26,12 @@ public class TestListener : MonoBehaviour, IEventListener {
 		Event_NearNPC castEvent = evt as Event_NearNPC;
 		
 		if (transform.position.x < -4.373567 ) {
-			Debug.Log ("wow!");
+			//Debug.Log ("wow!");
 			EventManager.Instance.DetachListener(this, "Event_NearNPC", this.HandleDetectNear);
 			return true;
 		}
 		
-		Debug.Log ("u did it");
+		//Debug.Log ("u did it");
 		return true;
 	}
 }
