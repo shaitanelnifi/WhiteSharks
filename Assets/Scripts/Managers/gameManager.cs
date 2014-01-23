@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour {
 	private gameStates _currentState;
 	private string _currLevel;			// Current level
 	private string _name;				// Character name
+	private ArrayList roomList;
+	private ArrayList npcList;
+	private ArrayList weaponList;
 	// + case: ArrayList<CaseElement>
 	// + npcs: ArrayList<CaseElement>
 	// + objects: ArrayList<CaseElement>
@@ -44,7 +47,6 @@ public class GameManager : MonoBehaviour {
 
 		// Load Level 1
 		Application.LoadLevel ("stage1");
-
 	}
 
 	/// <summary>

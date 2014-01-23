@@ -8,7 +8,7 @@ public class gameStart : MonoBehaviour {
 	// Declare properties
 	private float _buttonWidth = 150;
 	private bool _mainMenu = true;
-	private string _wo = "";
+	private string _wo;
 
 	// Our Startscreen GUI
 	void OnGUI ()
