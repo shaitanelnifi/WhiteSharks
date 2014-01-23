@@ -25,8 +25,8 @@ public class Conversation : MonoBehaviour {
 	string createConversation (ArrayList alibi){
 		switch (alibi.Count) {
 		case 1:
-			int roomListSize = gameManager.Instance.rooms.Count;
-			return alibi[0] + ", I was in " + (string)gameManager.Instance.rooms[Random.Range(0,roomListSize)] + ".";
+			int roomListSize = GameManager.Instance.roomList.Count;
+			return alibi[0] + ", I was in " + (string)GameManager.Instance.roomList[Random.Range(0,roomListSize)] + ".";
 			break;
 		case 2:
 			//getRoomName()
