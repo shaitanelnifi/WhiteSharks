@@ -43,7 +43,7 @@ MonoBehaviour:
   - name: emptyMugShot
     x: 1025
     y: 1849
-    width: 199
+    width: 164
     height: 199
     borderLeft: 0
     borderRight: 0
