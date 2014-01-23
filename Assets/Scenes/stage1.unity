@@ -262,6 +262,7 @@ GameObject:
   - 61: {fileID: 644058897}
   - 50: {fileID: 644058896}
   - 114: {fileID: 644058895}
+  - 95: {fileID: 644058900}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -283,11 +284,15 @@ MonoBehaviour:
   elementName: 
   description: 
   profileImage: {fileID: 0}
+<<<<<<< HEAD
   moveLeft: 97
   moveRight: 100
   moveTop: 119
   moveBottom: 115
   speed: 8
+=======
+  maxSpeed: 8
+>>>>>>> f7644b55ab1287d02fc77ff7d01af475d62fa513
   mainCam: {fileID: 266501273}
   mainChar: {fileID: 644058899}
 --- !u!50 &644058896
@@ -350,6 +355,20 @@ Transform:
   m_LocalScale: {x: .780895114, y: .780896127, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!95 &644058900
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 644058894}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: af3b2932e50424648b2bc68fac73d3ea, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 0
+  m_AnimatePhysics: 1
+  m_HasTransformHierarchy: 1
 --- !u!1 &820491425
 GameObject:
   m_ObjectHideFlags: 0
