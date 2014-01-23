@@ -19,7 +19,7 @@ public class NPC : CaseElement {
 	public ArrayList animations;		//An array list of sprites representing the animation
 
 	//enable conversation object if left mouse button is clicked.
-	public override void onMouseDown(){
+	public void OnMouseDown(){
 		if(Input.GetMouseButton(0)){
 			conversationObj.renderer.enabled = true;
 			conversationObj.collider2D.enabled = true;
