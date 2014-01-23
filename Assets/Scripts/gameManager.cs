@@ -10,6 +10,9 @@ public class gameManager : MonoBehaviour {
 	private gameStates _currentState;
 	private string _currLevel;			// Current level
 	private string _name;				// Character name
+	public ArrayList rooms;
+	public ArrayList npcs;
+	public ArrayList weapons;
 
 	public static gameManager Instance {
 		get {

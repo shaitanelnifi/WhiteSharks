@@ -24,25 +24,25 @@ public class Conversation : MonoBehaviour {
 	 */
 	string createConversation (ArrayList alibi){
 		switch (alibi.Count) {
-		case GuiltLevel.guilty:
+		case 1:
 			int roomListSize = gameManager.Instance.rooms.Count;
-			Random r = new Random();
-			int rInt = r.Next(0, roomListSize);
-			return alibi[0] + ", I was in " + gameManager.Instance.rooms[rInt] + ".";
-		case GuiltLevel.suspect:
+			return alibi[0] + ", I was in " + (string)gameManager.Instance.rooms[Random.Range(0,roomListSize)] + ".";
+			break;
+		case 2:
 			//getRoomName()
-			return alibi[0] + ", I was in " + gameManager.Instance.alibi[1] + ".";
-		case GuiltLevel.witness:
+			return alibi[0] + ", I was in " + alibi[1] + ".";
+			break;
+		case 3:
 			//getRoomName()
-			NPC n = alibi[2];
-			return alibi[0] + ", I was in " + alibi[1] + " with " + n.getElementName + ".";
-			
+			NPC n = (NPC)alibi[2];
+			return alibi[0] + ", I was in " + alibi[1] + " with " + alibi[2] + ".";
+			break;
 		}
 		return "";
 	}
 
 
-	string createInformation (int guilt){
+	string createInformation (GuiltLevel guilt){
 		if (guilt == GuiltLevel.guilty) {
 			return "This weapon was used.";		
 		} else {
