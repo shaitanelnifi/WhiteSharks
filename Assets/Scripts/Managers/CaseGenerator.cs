@@ -10,7 +10,9 @@ using System.Collections.Generic;
 
 public class CaseGenerator : MonoBehaviour {
 				
+	void Start(){
 
+	}
 					
 					//NPC npc1 = new NPC(Noel Alt, Description, Whatever);
 					

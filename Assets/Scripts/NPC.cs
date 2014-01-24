@@ -28,7 +28,7 @@ public class NPC : CaseElement {
 	}
 	//switch the displaying order of the npc. 
 	void Update () {
-		if (transform.position.y < playerObj.transform.position.y) {
+		/*if (transform.position.y < playerObj.transform.position.y) {
 			renderer.sortingLayerName= "foreground";
 			renderer.sortingOrder = 2;
 			box.isTrigger = true;
@@ -36,6 +36,6 @@ public class NPC : CaseElement {
 		else{
 			renderer.sortingLayerName= "middleground";
 			box.isTrigger = false;
-		}
+		}*/
 	}
 }

@@ -71,7 +71,7 @@ MonoBehaviour:
   description: She is a random person
   profileImage: {fileID: 0}
   guilt: 0
-  location: 1
+  location: 2
   conversationObj: {fileID: 0}
   playerObj: {fileID: 0}
   box: {fileID: 6100000}

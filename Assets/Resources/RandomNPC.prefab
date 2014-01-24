@@ -51,11 +51,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e55abf860691c541a849b33c21c6089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementName: Random NPC 2
+  elementName: Leo Cooper
   description: This is a second random NPC so that we have 3
   profileImage: {fileID: 21300000, guid: 61dc4d35d018ed54cb8bb5a2dcb6e2ea, type: 3}
   guilt: 0
-  location: 1
+  location: 2
   conversationObj: {fileID: 0}
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
