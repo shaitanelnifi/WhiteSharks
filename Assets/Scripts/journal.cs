@@ -47,10 +47,7 @@ public class journal : MonoBehaviour {
 		emptyName = "?????";
 
 		//Person of interest list.
-		personsOfInterest = new List<NPC>();
-		personsOfInterest.Add(npc1);
-		personsOfInterest.Add(npc2);
-		personsOfInterest.Add(npc3);
+		personsOfInterest = GameManager.npcList;
 
 		//Listens for tab button presses in journal and runs onClick with button clicked as parameter.
 		/*UIEventListener.Get (viewTab1).onClick += this.onTabClick;
@@ -68,7 +65,7 @@ public class journal : MonoBehaviour {
 		poiButtonList.Add (poiButton2);
 		poiButtonList.Add (poiButton3);
 
-		//initPoIView ();
+		initPoIView ();
 	}
 
 	void Update () {
@@ -88,7 +85,8 @@ public class journal : MonoBehaviour {
 	//Needs clean up (repetitive). Needs to be general to work with both PoI view and object view
 	void onClick(GameObject button){
 		if (button == poiButton1) {
-			if(personsOfInterest[0] != null){
+			Debug.LogError(GameManager.npcList[0].isVisible());
+			if(GameManager.npcList[0].isVisible()){
 				poiName.text = personsOfInterest[0].getElementName();
 				poiDescription.text = personsOfInterest[0].getDescription();
 			}
@@ -98,7 +96,7 @@ public class journal : MonoBehaviour {
 			}
 		}
 		else if(button == poiButton2) {
-			if(personsOfInterest[1] != null){
+			if(GameManager.npcList[1].isVisible()){
 				poiName.text = personsOfInterest[1].getElementName();
 				poiDescription.text = personsOfInterest[1].getDescription();
 			}
@@ -108,7 +106,7 @@ public class journal : MonoBehaviour {
 			}
 		}
 		else if(button == poiButton3) {
-			if(personsOfInterest[2] != null){
+			if(GameManager.npcList[2].isVisible()){
 				poiName.text = personsOfInterest[2].getElementName();
 				poiDescription.text = personsOfInterest[2].getDescription();
 			}
@@ -129,6 +127,7 @@ public class journal : MonoBehaviour {
 				poiButtonList[i].gameObject.GetComponent<UI2DSprite>().sprite2D = personsOfInterest[i].getProfileImage();
 			}
 			else {
+				Debug.LogError("Im null");
 				poiButtonList[i].gameObject.GetComponent<UI2DSprite>().sprite2D = emptyPortrait;
 			}
 		}

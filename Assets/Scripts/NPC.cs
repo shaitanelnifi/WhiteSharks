@@ -24,7 +24,7 @@ public class NPC : CaseElement {
 		if(Input.GetMouseButton(0)){
 			//conversationObj.renderer.enabled = true;
 			//conversationObj.collider2D.enabled = true;
-			journal.Instance.changePoIView(this);
+			GameManager.npcList.Find(x => x.elementName.CompareTo(this.elementName) == 0).setVisible(true);
 		}
 	}
 	//switch the displaying order of the npc. 
