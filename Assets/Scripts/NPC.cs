@@ -22,8 +22,9 @@ public class NPC : CaseElement {
 	//enable conversation object if left mouse button is clicked.
 	public void OnMouseDown(){
 		if(Input.GetMouseButton(0)){
-			conversationObj.renderer.enabled = true;
-			conversationObj.collider2D.enabled = true;
+			//conversationObj.renderer.enabled = true;
+			//conversationObj.collider2D.enabled = true;
+			journal.Instance.changePoIView(this);
 		}
 	}
 	//switch the displaying order of the npc. 

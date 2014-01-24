@@ -3,13 +3,26 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class journal : MonoBehaviour {
+
+	private static journal instance;
+	private static int MAX_NPC = 3;
+
+	public static journal Instance {
+		get {
+			if (instance == null) {
+				Debug.Log("JOURNAL: Instance null, creating new Journal");
+				instance = new GameObject("journal").AddComponent<journal>();
+			}
+			return instance;
+		}
+	}
 	//PoI buttons
 	public GameObject poI2;
 
 	public List<NPC> personsOfInterest;
 
 	//Test case elements of NPC type
-	public Sprite emptyPortrait;
+	public static Sprite emptyPortrait;
 	private string emptyName;
 	public NPC npc1;
 	public NPC npc2;
@@ -21,7 +34,7 @@ public class journal : MonoBehaviour {
 	public GameObject viewTab3;
 
 	//Grab buttons and textfield from view. Will change to use gameobject find.
-	private List<GameObject> poiButtonList;
+	private static List<GameObject> poiButtonList;
 	public GameObject poiButton1;
 	public GameObject poiButton2;
 	public GameObject poiButton3;
@@ -55,7 +68,7 @@ public class journal : MonoBehaviour {
 		poiButtonList.Add (poiButton2);
 		poiButtonList.Add (poiButton3);
 
-		initPoIView ();
+		//initPoIView ();
 	}
 
 	void Update () {
@@ -107,11 +120,11 @@ public class journal : MonoBehaviour {
 	}
 
 	//Initialize PoI view.
-	void initPoIView(){
+	public void initPoIView(){
 		for (int i = 0; i < personsOfInterest.Count; i++) {
-			//Debug.Log (i);
+			Debug.Log (i);
 			if(personsOfInterest[i] != null){
-				Debug.Log(personsOfInterest[i].getProfileImage ().ToString ());
+				Debug.Log("getting image " +i+ ": " + personsOfInterest[i].getProfileImage ().ToString ());
 				//GetComponent is slow, will use gameobject find component in children in later iteration.
 				poiButtonList[i].gameObject.GetComponent<UI2DSprite>().sprite2D = personsOfInterest[i].getProfileImage();
 			}
@@ -121,7 +134,13 @@ public class journal : MonoBehaviour {
 		}
 	}
 
-	void changePoIView(){
+	public void changePoIView(NPC n){
+		//if (indexPoI <= MAX_NPC - 1) {
+		//	personsOfInterest[i]=n;
+			Debug.Log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+		//	Debug.Log("getting image " +i+ ": " + personsOfInterest[i].getProfileImage ().ToString ());
+		//	poiButtonList[i].gameObject.GetComponent<UI2DSprite>().sprite2D = personsOfInterest[i].getProfileImage();
+		//}
 
 	}
 }

@@ -149,13 +149,14 @@ public class GameManager : MonoBehaviour {
 
 	//Testing purposes
 	void Start(){
-		npcList.Add(Resources.Load<NPC>("NoelAlt"));
-		npcList.Add(Resources.Load<NPC>("NPC1"));
-		//Debug.Log ("GM NPClist count: " + npcList.Count);
 		roomIDList = new ArrayList ();
 		roomIDList.Add("stage1");
 		roomIDList.Add("stage2");
-		Debug.Log ("Room ID list:" + roomIDList);
+		npcList.Add(Resources.Load<NPC>("NoelAlt"));
+		npcList.Add(Resources.Load<NPC>("NPC1"));
+		npcList.Add(Resources.Load<NPC>("RandomNPC"));
+		//Debug.Log ("GM NPClist count: " + npcList.Count);
+		Debug.Log ("Room ID list count:" + roomIDList.Count);
 
 	}
 
@@ -163,7 +164,7 @@ public class GameManager : MonoBehaviour {
 		List<NPC> temp = new List<NPC>();
 		foreach (NPC n in npcList) {
 			if (n.location == sceneID){
-				Debug.Log("Match found");
+				//Debug.Log("Match found");
 				temp.Add(n);
 			}
 				}
