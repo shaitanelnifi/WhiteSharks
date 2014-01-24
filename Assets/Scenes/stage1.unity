@@ -632,7 +632,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poI2: {fileID: 1769857164}
   personsOfInterest: []
-  emptyPortrait: {fileID: 21300000, guid: 27994b798ef710f4ab5b8b366a30358c, type: 3}
   npc1: {fileID: 0}
   npc2: {fileID: 0}
   npc3: {fileID: 0}
@@ -1554,7 +1553,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 467432649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f94a157905c28044d9eb3cb23388bf44, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
@@ -1682,6 +1681,7 @@ MonoBehaviour:
   profileImage: {fileID: 0}
   guilt: 0
   location: 0
+  visible: 0
   maxSpeed: 8
   mainCam: {fileID: 266501273}
   mainChar: {fileID: 644058899}
