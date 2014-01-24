@@ -4,9 +4,9 @@
 using UnityEngine;
 using System.Collections;
 
-public class inputManager : MonoBehaviour {
+public class InputManager : MonoBehaviour {
 	// Declare properties
-	private static inputManager instance;
+	private static InputManager instance;
 	private KeyCode _prevKeyPressed;
 	private PlayerState _currState;
 	private bool _isPause = false;
@@ -18,11 +18,11 @@ public class inputManager : MonoBehaviour {
 	private KeyCode _moveUp;
 	private KeyCode _moveDown;
 	
-	public static inputManager Instance {
+	public static InputManager Instance {
 		get {
 			if (instance == null) {
-				print("Instance null, creating new inputManager");
-				instance = new GameObject("inputManager").AddComponent<inputManager>();
+				Debug.Log("Instance null, creating new InputManager");
+				instance = new GameObject("InputManager").AddComponent<InputManager>();
 			}
 			return instance;
 		}
@@ -56,8 +56,10 @@ public class inputManager : MonoBehaviour {
 	void PauseMenu() {
 		_isPause = !_isPause;
 		if (_isPause) {
+			GameManager.Instance.setState(gameStates.JOURNAL);
 			Time.timeScale = 0;
 		} else {
+			GameManager.Instance.setState(gameStates.INGAME);
 			Time.timeScale = 1;
 		}
 	}
@@ -67,11 +69,13 @@ public class inputManager : MonoBehaviour {
 		if (_isPause) {
 			if (GUI.Button (new Rect (Screen.width/2 - _buttonWidth, Screen.height/2, _buttonWidth, 30), "Unpause")) {
 				_isPause = !_isPause;
+				GameManager.Instance.setState(gameStates.INGAME);
 				Time.timeScale = 1;
 			}
 
 			if (GUI.Button (new Rect (Screen.width/2 - _buttonWidth, Screen.height/2 + 40, _buttonWidth, 30), "Exit to Main Menu")) {
 				_isPause = !_isPause;
+				GameManager.Instance.setState(gameStates.MAINMENU);
 				Application.LoadLevel ("mainmenu");
 			}
 		}
