@@ -3,6 +3,7 @@
 
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour {
 	// Declare properties
@@ -11,11 +12,12 @@ public class GameManager : MonoBehaviour {
 	private string _currLevel;			// Current level
 	private string _name;				// Character name
 	public ArrayList roomList;
-	private ArrayList npcList;
-	private ArrayList weaponList;
+	public static List<NPC> npcList = new List<NPC>();
+	public ArrayList weaponList;
 	// + case: ArrayList<CaseElement>
 	// + npcs: ArrayList<CaseElement>
 	// + objects: ArrayList<CaseElement>
+
 
 
 	public static GameManager Instance {
@@ -39,6 +41,8 @@ public class GameManager : MonoBehaviour {
 	/// </summary>
 	public void startState() {
 		Debug.Log("Creating a new game state");
+		//CaseGenerator c = new CaseGenerator("","");
+		//GameManager.setNPCS = 
 
 		// Set default properties
 		_currLevel = "Level 1";
@@ -47,6 +51,7 @@ public class GameManager : MonoBehaviour {
 
 		// Load Level 1
 		Application.LoadLevel ("stage1");
+		//this.instantiateNPC ("NoelAlt");
 	}
 
 	/// <summary>
@@ -137,6 +142,24 @@ public class GameManager : MonoBehaviour {
 
 	void Update() {
 		//print ("Test??");
+	}
+
+	//Testing purposes
+	void Start(){
+		npcList.Add(Resources.Load<NPC>("NoelAlt"));
+		npcList.Add(Resources.Load<NPC>("NPC1"));
+		Debug.Log ("GM NPClist count: " + npcList.Count);
+	}
+
+	public static List<NPC> getSceneNPCList(int sceneID){ 
+		List<NPC> temp = new List<NPC>();
+		foreach (NPC n in npcList) {
+			if (n.location == sceneID){
+				Debug.Log("Match found");
+				temp.Add(n);
+			}
+				}
+		return temp;
 	}
 }
 

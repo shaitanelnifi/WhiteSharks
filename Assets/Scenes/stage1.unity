@@ -284,6 +284,8 @@ MonoBehaviour:
   elementName: 
   description: 
   profileImage: {fileID: 0}
+  guilt: 0
+  location: 0
   maxSpeed: 8
   mainCam: {fileID: 266501273}
   mainChar: {fileID: 644058899}
@@ -361,6 +363,54 @@ Animator:
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 1
   m_HasTransformHierarchy: 1
+--- !u!1001 &647153470
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.3735671
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.20346463
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: conversationObj
+      value: 
+      objectReference: {fileID: 1502930416}
+    - target: {fileID: 11400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: playerObj
+      value: 
+      objectReference: {fileID: 644058894}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+  m_RootGameObject: {fileID: 2062944587}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &820491425
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,6 +458,46 @@ Transform:
   m_GameObject: {fileID: 820491425}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.7974358, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &1263816297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1263816299}
+  - 114: {fileID: 1263816298}
+  m_Layer: 0
+  m_Name: setup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1263816298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263816297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcb89dc5b299e48af9a0eaea28dec7f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: scene1
+  id: 1
+--- !u!4 &1263816299
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263816297}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -704,8 +794,8 @@ Transform:
 --- !u!1 &2062944587
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+  m_PrefabInternal: {fileID: 647153470}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2062944589}
@@ -723,8 +813,9 @@ GameObject:
 --- !u!212 &2062944588
 SpriteRenderer:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 21200000, guid: e95b9d1a228e644d7bcddf8736d250c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 647153470}
   m_GameObject: {fileID: 2062944587}
   m_Enabled: 1
   m_CastShadows: 0
@@ -746,8 +837,8 @@ SpriteRenderer:
 --- !u!4 &2062944589
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+  m_PrefabInternal: {fileID: 647153470}
   m_GameObject: {fileID: 2062944587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.3735671, y: -1.20346463, z: 200}
@@ -757,8 +848,9 @@ Transform:
 --- !u!61 &2062944590
 BoxCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 6100000, guid: e95b9d1a228e644d7bcddf8736d250c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 647153470}
   m_GameObject: {fileID: 2062944587}
   m_Enabled: 1
   m_Material: {fileID: 0}
@@ -768,27 +860,32 @@ BoxCollider2D:
 --- !u!114 &2062944591
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11400000, guid: e95b9d1a228e644d7bcddf8736d250c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 647153470}
   m_GameObject: {fileID: 2062944587}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e55abf860691c541a849b33c21c6089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementName: 
-  description: 
+  elementName: Random
+  description: She is a random person
   profileImage: {fileID: 0}
+  guilt: 0
+  location: 1
   conversationObj: {fileID: 1502930416}
   playerObj: {fileID: 644058894}
   box: {fileID: 2062944590}
   weaponProficiency: 
   highClass: 0
+  scene: scene1
 --- !u!50 &2062944592
 Rigidbody2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 5000000, guid: e95b9d1a228e644d7bcddf8736d250c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 647153470}
   m_GameObject: {fileID: 2062944587}
   m_Mass: 100
   m_LinearDrag: 0
