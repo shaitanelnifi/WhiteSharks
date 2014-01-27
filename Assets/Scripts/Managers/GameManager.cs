@@ -16,11 +16,12 @@ public class GameManager : MonoBehaviour {
 	public ArrayList weaponList;
 	public ArrayList roomIDList;
 	public int currentRoomIndex;
+
+	public Case theCase; //Generate this!
+
 	// + case: ArrayList<CaseElement>
 	// + npcs: ArrayList<CaseElement>
 	// + objects: ArrayList<CaseElement>
-
-
 
 	public static GameManager Instance {
 		get {
