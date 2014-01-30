@@ -156,6 +156,8 @@ public class GameManager : MonoBehaviour {
 		npcList.Add(Resources.Load<NPC>("NoelAlt"));
 		npcList.Add(Resources.Load<NPC>("NPC1"));
 		npcList.Add(Resources.Load<NPC>("RandomNPC"));
+		Debug.LogError ("Generating case");
+		generateCase ();
 		//Debug.Log ("GM NPClist count: " + npcList.Count);
 		Debug.Log ("Room ID list count:" + roomIDList.Count);
 
