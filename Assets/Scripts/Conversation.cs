@@ -26,15 +26,12 @@ public class Conversation : MonoBehaviour {
 	public static string createConversation (List<string> alibi){
 		switch (alibi.Count) {
 		case 1:
-			alibi.Add(GameManager.roomList[Random.Range(0, GameManager.roomList.Count-1)]);
 			return alibi[0] + ", I was in " + alibi[1] + ".";
 			break;
 		case 2:
-			//getRoomName()
 			return alibi[0] + ", I was in " + alibi[1] + ".";
 			break;
 		case 3:
-			//getRoomName()
 			return alibi[0] + ", I was in " + alibi[1] + " with " + alibi[2] + ".";
 			break;
 		}
