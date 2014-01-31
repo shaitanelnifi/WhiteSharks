@@ -63,6 +63,7 @@ MonoBehaviour:
   weaponProficiency: 6
   highClass: 1
   scene: scene1
+  personalSentence: 'Hmmm... Let me think... '
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

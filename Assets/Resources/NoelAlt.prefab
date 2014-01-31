@@ -63,9 +63,10 @@ MonoBehaviour:
   conversationObj: {fileID: 0}
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
-  weaponProficiency: 1
+  weaponProficiency: 6
   highClass: 1
   scene: scene1
+  personalSentence: 'Oh well, you know... '
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
