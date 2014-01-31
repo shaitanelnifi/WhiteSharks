@@ -90,6 +90,7 @@ public class buttonScript : MonoBehaviour {
 	//to go back to the case without accusing anything
 	void goBack() {
 		//it goes back to stage1 for now
+		DontDestroyOnLoad(GameManager.Instance);
 		Application.LoadLevel("stage1");
 	}
 
