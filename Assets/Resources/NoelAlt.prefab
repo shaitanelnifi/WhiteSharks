@@ -59,11 +59,10 @@ MonoBehaviour:
   profileImage: {fileID: 21300000, guid: 6475629552f334fbe828e4ec4fb0f6aa, type: 3}
   guilt: 0
   location: 1
-  visible: 1
   conversationObj: {fileID: 0}
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
-  weaponProficiency: 1
+  weaponProficiency: 
   highClass: 1
   scene: scene1
 --- !u!212 &21200000
