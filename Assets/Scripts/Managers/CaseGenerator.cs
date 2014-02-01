@@ -53,7 +53,8 @@ public class CaseGenerator : Object {
 
 		//Same with rooms
 		int roomrandom = Random.Range(0, rooms.Count - 1);
-		theCase.setRoom(rooms[roomrandom]);
+		GameManager.theCase.setRoom(rooms[roomrandom]);
+		GameManager.room = rooms [roomrandom];
 		rooms.Remove (rooms[roomrandom]);
 		Debug.Log ("Room is " + theCase.getRoom());
 
@@ -73,7 +74,6 @@ public class CaseGenerator : Object {
 		}
 
 		return theCase;
-
 	}
 	
 	
@@ -83,7 +83,8 @@ public class CaseGenerator : Object {
 		n.alibi.Add(GameManager.roomList[Random.Range(0, GameManager.roomList.Count-1)]);
 		n.convo = n.alibi [0] + " I was in the " + n.alibi [1] + ".";
 		Debug.Log ("Murderer " + n.elementName + " conversation: " + n.convo);
-		theCase.setGuilty (n);
+		GameManager.guilty = n;
+		//GameManager.theCase.setGuilty (n);
 		return n;
 	}	
 
@@ -109,7 +110,8 @@ public class CaseGenerator : Object {
 
 	private CaseObject activateWeapon(CaseObject o){
 		o.setGuilt (GuiltLevel.guilty);
-		theCase.setWeapon (o);
+		//GameManager.theCase.setWeapon (o);
+		GameManager.weapon = o;
 		return o;
 		}
 
