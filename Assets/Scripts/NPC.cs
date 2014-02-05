@@ -21,9 +21,11 @@ public class NPC : CaseElement {
 	public string scene;
 	public string personalSentence;
 	public string convo;
+	public GameObject convoBubble;
 
 	void Start(){
 		alibi.Add(personalSentence);
+		convoBubble = GameObject.Find ("Conversation Bubble");
 	}
 
 	//enable conversation object if left mouse button is clicked.
@@ -32,6 +34,9 @@ public class NPC : CaseElement {
 			//conversationObj.renderer.enabled = true;
 			//conversationObj.collider2D.enabled = true;
 			GameManager.npcList.Find(x => x.elementName.CompareTo(this.elementName) == 0).setVisible(true);
+
+			convoBubble.GetComponentInChildren<UILabel>().text = convo;
+			convoBubble.GetComponentInChildren<UI2DSprite>().sprite2D = this.getProfileImage();
 		}
 	}
 	//switch the displaying order of the npc. 
