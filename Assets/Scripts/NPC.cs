@@ -27,6 +27,14 @@ public class NPC : CaseElement {
 		alibi.Add(personalSentence);
 		convoBubble = GameObject.Find ("Conversation Bubble");
 	}
+	
+	public void OnMouseEnter(){
+		GameManager.Instance.updateMouseIcon("Speech_Icon");
+	}
+	
+	public void OnMouseExit(){
+		GameManager.Instance.updateMouseIcon ("Walk_Icon");
+	}
 
 	//enable conversation object if left mouse button is clicked.
 	public void OnMouseDown(){
