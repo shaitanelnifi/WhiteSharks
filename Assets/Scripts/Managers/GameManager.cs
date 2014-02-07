@@ -17,8 +17,11 @@ public class GameManager : MonoBehaviour {
 	public ArrayList roomIDList;
 	public int currentRoomIndex;
 	private string currentMainCharacter;
-	public Case theCase; //Generate this!
+	public static Case theCase = new Case(); //Generate this!
 	public float nextX, nextY;
+	public static NPC guilty;
+	public static CaseObject weapon;
+	public static string room;
 
 	// + case: ArrayList<CaseElement>
 	// + npcs: ArrayList<CaseElement>
@@ -86,8 +89,10 @@ public class GameManager : MonoBehaviour {
 	/// </summary>
 	public void generateCase() {
 		// case generation
+
 		CaseGenerator c = new CaseGenerator ();
-		theCase = c.generateCase ();
+		c.generateCase();
+		Debug.Log ("the case in GM " + guilty + " " + weapon + " " + room);
 
 	}
 
@@ -189,7 +194,7 @@ public class GameManager : MonoBehaviour {
 		Debug.LogError ("Generating case");
 		generateCase ();
 		//Debug.Log ("GM NPClist count: " + npcList.Count);
-		Debug.Log ("Room ID list count:" + roomIDList.Count);
+		//Debug.Log ("Room ID list count:" + roomIDList.Count);
 
 	}
 
