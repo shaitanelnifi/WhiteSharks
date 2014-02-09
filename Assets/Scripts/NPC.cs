@@ -23,9 +23,16 @@ public class NPC : CaseElement {
 	public string convo;
 	public GameObject convoBubble;
 
+	//Mouse icon information
+	public string mouseOverIcon = "Speech_Icon";
+
 	void Start(){
 		alibi.Add(personalSentence);
 		convoBubble = GameObject.Find ("Conversation Bubble");
+	}
+	
+	public void OnMouseEnter(){
+		GameManager.Instance.updateMouseIcon(mouseOverIcon);
 	}
 
 	//enable conversation object if left mouse button is clicked.
