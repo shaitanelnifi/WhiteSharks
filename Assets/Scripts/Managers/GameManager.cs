@@ -4,6 +4,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class GameManager : MonoBehaviour {
 	// Declare properties
@@ -22,6 +23,12 @@ public class GameManager : MonoBehaviour {
 	public static NPC guilty;
 	public static CaseObject weapon;
 	public static string room;
+
+	//Handles mouse cursor information
+	public static int cursorSize = 64;
+	public static List<Texture2D> mouseSprites;
+	public static string[] spriteIndex;
+	public static Texture2D currMouse;
 
 	// + case: ArrayList<CaseElement>
 	// + npcs: ArrayList<CaseElement>
@@ -173,14 +180,54 @@ public class GameManager : MonoBehaviour {
 
 	public void OnGUI() {
 		GUI.TextArea(new Rect(1, 1, 100, 20), _currentState.ToString());
+
+		//Handle mouse updates here
+
+		GUI.DrawTexture (new Rect (Input.mousePosition.x - cursorSize / 2 + 1, (Screen.height - Input.mousePosition.y) - cursorSize / 2 + 1,
+		                      cursorSize, cursorSize), currMouse);
+
 	}
 
 	void Update() {
 		//print ("Test??");
 	}
 
+	//Initialize the sprite array for the mouse to draw
+	//Loads in from Sprites/Mouse Icons
+	//Sets the initial icon to Walk
+	void setSprites(){
+
+		mouseSprites = new List<Texture2D>();
+		Screen.showCursor = false;
+
+		foreach (object o in Resources.LoadAll("MouseIcons", typeof(Texture2D))) {
+			mouseSprites.Add(o as Texture2D);
+		}
+
+		spriteIndex = new string[mouseSprites.Count];
+		
+		for(int i=0; i< spriteIndex.Length; i++) {
+			spriteIndex[i] = mouseSprites[i].name;
+		}
+
+		currMouse = (Texture2D) mouseSprites[Array.IndexOf(spriteIndex, "Walk_Icon")];
+	}
+
+	//Updates the current sprite when called by another game object
+	//Takes in a string based on what kind of object it is that signifies the icon the cursor should be
+	public void updateMouseIcon(string whichSprite){
+		currMouse = (Texture2D)mouseSprites [Array.IndexOf (spriteIndex, whichSprite)];
+
+		print (currMouse.ToString () + " WHEEEE");
+	}
+
 	//Testing purposes
 	void Start(){
+
+		//For a changing cursor, load in all of its sprites into the list
+		setSprites ();
+
+
 		roomIDList = new ArrayList ();
 		roomIDList.Add("stage1");
 		roomIDList.Add("stage2");
