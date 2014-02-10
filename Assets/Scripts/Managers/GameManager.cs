@@ -195,7 +195,7 @@ public class GameManager : MonoBehaviour {
 	//Initialize the sprite array for the mouse to draw
 	//Loads in from Sprites/Mouse Icons
 	//Sets the initial icon to Walk
-	void setSprites(){
+	void setIcons(){
 
 		mouseSprites = new List<Texture2D>();
 		Screen.showCursor = false;
@@ -225,7 +225,7 @@ public class GameManager : MonoBehaviour {
 	void Start(){
 
 		//For a changing cursor, load in all of its sprites into the list
-		setSprites ();
+		setIcons ();
 
 
 		roomIDList = new ArrayList ();

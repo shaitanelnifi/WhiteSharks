@@ -45,6 +45,17 @@ public class journal : MonoBehaviour {
 	public GameObject poiView;
 	public GameObject mapView;
 
+	//Handles player gamestate knowledge, not flavor text/progress
+	public Dictionary knowledge; 
+
+	public Dictionary getKnowledge(){
+		return knowledge;
+		}
+
+	public void updateKnowledge(DictEntry newEntry){
+		knowledge.updateDictionary (newEntry);
+	}
+
 	//Destroys duplicate UI Roots.
 	void Awake () {
 		if(!j){
