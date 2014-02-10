@@ -7,6 +7,10 @@ public abstract class playerAction : MonoBehaviour {
 	public List<DictEntry> preCondition;	//In order for a playerAction to appear, its preCondition must be satisfied
 	public DictEntry postState;				//Once the action is completed, apply a change to the player knowledge
 
+	public void setPostState(DictEntry post){
+		postState = post;
+	}
+
 	public void evaluate(){
 		bool success = checkCondition ();
 

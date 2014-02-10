@@ -5,7 +5,8 @@ public enum GuiltLevel
 {
 	guilty=1,
 	suspect,
-	witness
+	witness,
+	unrelated = -1
 };
 
 public enum Category
@@ -18,5 +19,6 @@ public enum Category
 	Miscellaneous=5,		//Objects not normally associated with weaponry
 	Firearms=6,			//Guns are dangerous
 	
-	PersonalItem=-1		//An object with this category is not used for killing but is associated with a character
+	PersonalItem=-1,		//An object with this category is not used for killing but is associated with a character
+	unrelated = -2
 };
