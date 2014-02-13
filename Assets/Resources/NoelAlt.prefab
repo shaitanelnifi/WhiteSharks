@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 212: {fileID: 21200000}
   - 61: {fileID: 6100000}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: NoelAlt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,22 +60,19 @@ MonoBehaviour:
   guilt: 2
   location: 1
   visible: 1
+  defaultIcon: Walk_Icon
   conversationObj: {fileID: 0}
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
-  weaponProficiency: 6
+  weaponProficiency: 1
   highClass: 1
-  alibi:
-  - 'Oh well, you know... '
-  - Finn
-  - 'Oh well, you know... '
-  - Belly
-  - 'Oh well, you know... '
-  - Belly
+  alibi: F
   scene: scene1
   personalSentence: 'Oh well, you know... '
   convo: Oh well, you know...  I was in the Finn.
   convoBubble: {fileID: 0}
+  npcKnowledge: {fileID: 0}
+  mouseOverIcon: Speech_Icon
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

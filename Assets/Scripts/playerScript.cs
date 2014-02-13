@@ -3,6 +3,12 @@ player class. controls the movement of the main character.
 
 changes: change scene depends on which door the player collide with. -John Mai 1/12/2014
  */ 
+
+/*
+note: for wall collider, use mouseEnter function to stop player from moving into wall
+
+
+ */
 using UnityEngine;
 using System.Collections;
 
@@ -17,6 +23,8 @@ public class playerScript : CaseElement {
 	Vector2 targetPosition;
 	Vector2 direction;
 	Vector2 closestColl;
+
+
 
 	void Start(){
 		anim = GetComponent<Animator>();
@@ -33,10 +41,12 @@ public class playerScript : CaseElement {
 
 		if (targetPosition.x != 0){
 			//if something is on the way, use find path
-			if (Physics2D.Linecast(transform.position, targetPosition)){	
+			int layerMask = 1 << 10;
+			layerMask = ~layerMask;
+			if (Physics2D.Linecast(transform.position, targetPosition,layerMask)){	
 				//didnt called
 				if(objectOnWay(targetPosition)){
-					Vector2 toPoint = FindClosestPoint().transform.position;
+					Vector2 toPoint = FindClosestPoint(targetPosition).transform.position;
 					distance = Vector2.Distance (transform.position, toPoint);
 					transform.position = Vector2.Lerp (transform.position, toPoint,Time.deltaTime* (maxSpeed/distance));
 				}
@@ -69,20 +79,27 @@ public class playerScript : CaseElement {
 		Vector2 direct;
 		direct.x = target.x - transform.position.x;
 		direct.y = target.y - transform.position.y;
-		//get the info of that object.
-		RaycastHit2D tempHit = Physics2D.Raycast(transform.position, direct);
-		if (tempHit.collider.GetType() == typeof(PolygonCollider2D)){
+		float dis = Vector2.Distance (transform.position, target);
+		// Bit shift the index of the layer (8) to get a bit mask
+		int layerMask = 1 << 10;
+		// This would cast rays only against colliders in layer 8.
+		// But instead we want to collide against everything except layer 8. 
+		// The ~ operator does this, it inverts a bitmask.
+		layerMask = ~layerMask;
+		//Physics2D.IgnoreRaycastLayer
+		RaycastHit2D tempHit = Physics2D.Raycast(transform.position, direct,dis,layerMask);
+		if (tempHit.collider.GetType() == typeof(PolygonCollider2D) &&tempHit.collider.GetType()!= null){
 			result = true;
 		}
 		return result;		 
 	}
 	//return closest pathPoint near player.
-	GameObject FindClosestPoint() {
+	GameObject FindClosestPoint(Vector2 target) {
 		GameObject[] points;
 		points = GameObject.FindGameObjectsWithTag("point");
 		GameObject closest= null;
 		float distance = Mathf.Infinity;
-		Vector2 position = transform.position;
+		Vector2 position = target;
 		foreach (GameObject point in points) {
 			float curDistance = Vector2.Distance(point.transform.position,position);
 			if (curDistance < distance) {

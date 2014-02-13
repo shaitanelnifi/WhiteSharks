@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 212: {fileID: 21200000}
   - 61: {fileID: 6100000}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RandomNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,21 +57,19 @@ MonoBehaviour:
   guilt: 3
   location: 2
   visible: 0
+  defaultIcon: Walk_Icon
   conversationObj: {fileID: 0}
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
-  weaponProficiency: 6
+  weaponProficiency: 2
   highClass: 1
-  alibi:
-  - 'Hmmm... Let me think... '
-  - Belly
-  - Peijun Shi
-  - 'Hmmm... Let me think... '
-  - Belly
-  - Peijun Shi
+  alibi: F
   scene: scene1
   personalSentence: 'Hmmm... Let me think... '
   convo: Hmmm... Let me think...  I was in the Belly with Peijun Shi.
+  convoBubble: {fileID: 0}
+  npcKnowledge: {fileID: 0}
+  mouseOverIcon: Speech_Icon
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

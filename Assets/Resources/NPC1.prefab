@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21200000}
   - 114: {fileID: 11400000}
   - 61: {fileID: 6100000}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: NPC1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,22 +58,19 @@ MonoBehaviour:
   guilt: 1
   location: 2
   visible: 1
+  defaultIcon: Walk_Icon
   conversationObj: {fileID: 0}
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
-  weaponProficiency: 3
+  weaponProficiency: -2
   highClass: 0
-  alibi:
-  - 'I''m glad you asked! '
-  - Belly
-  - 'I''m glad you asked! '
-  - Belly
-  - 'I''m glad you asked! '
-  - Finn
+  alibi: F
   scene: scene1
   personalSentence: 'I''m glad you asked! '
   convo: I'm glad you asked!  I was in the Belly.
   convoBubble: {fileID: 0}
+  npcKnowledge: {fileID: 0}
+  mouseOverIcon: Speech_Icon
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

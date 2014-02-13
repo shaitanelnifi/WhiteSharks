@@ -223,8 +223,8 @@ public class GameManager : MonoBehaviour {
 
 	//Testing purposes
 	void Start(){
-		nextX = -8.535372f;
-		nextY = -2.800358f;
+		nextX = -6.440672f;
+		nextY = -5.890769f;
 		//For a changing cursor, load in all of its sprites into the list
 		setIcons ();
 

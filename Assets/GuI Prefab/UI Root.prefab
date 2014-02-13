@@ -2566,7 +2566,6 @@ MonoBehaviour:
   timeLabel: {fileID: 11400138}
   poiView: {fileID: 100016}
   mapView: {fileID: 100014}
-  knowledge: {fileID: 0}
 --- !u!114 &11400054
 MonoBehaviour:
   m_ObjectHideFlags: 1
