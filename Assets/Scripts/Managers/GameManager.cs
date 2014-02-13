@@ -223,6 +223,7 @@ public class GameManager : MonoBehaviour {
 
 	//Testing purposes
 	void Start(){
+		//start location
 		nextX = -6.440672f;
 		nextY = -5.890769f;
 		//For a changing cursor, load in all of its sprites into the list

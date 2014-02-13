@@ -44,7 +44,6 @@ public class playerScript : CaseElement {
 			int layerMask = 1 << 10;
 			layerMask = ~layerMask;
 			if (Physics2D.Linecast(transform.position, targetPosition,layerMask)){	
-				//didnt called
 				if(objectOnWay(targetPosition)){
 					Vector2 toPoint = FindClosestPoint(targetPosition).transform.position;
 					distance = Vector2.Distance (transform.position, toPoint);
@@ -59,18 +58,6 @@ public class playerScript : CaseElement {
 				}
 			}
 		}
-	/*	else if (targetPosition.x == 0){
-			Debug.Log ("not suppose to show");
-		}
-		//didnt get into here
-		else{
-			distance = Vector2.Distance (transform.position, targetPosition);
-			Debug.Log ("3333");
-			if(distance > 0){
-				Debug.Log ("4444");
-				transform.position = Vector2.Lerp (transform.position, targetPosition,Time.deltaTime* (maxSpeed/distance));
-			}
-		}*/
 	}
 
 	//returns true if the collide object is type PolygonCollider2D
@@ -131,6 +118,7 @@ public class playerScript : CaseElement {
 			Application.LoadLevel (temp);
 		}
 	}
+
 
 
 	//flips the sprite or animation
