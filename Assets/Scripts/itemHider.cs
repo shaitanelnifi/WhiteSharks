@@ -6,19 +6,19 @@ public class itemHider : MonoBehaviour {
 	public CaseObject hiddenCaseObject;
 	public string mouseOverIcon = "";
 	public string defaultIcon = "Walk_Icon";		//The standard mouse icon when not hovering over an object
-	public bool opened;
+	public bool opened = false;
 
-	public itemHider(CaseObject whatToHide){
-
-		hiddenCaseObject = whatToHide;
-		opened = false;
-
-	}
 
 	public void OnMouseDown(){
-		if (!opened) {
-			opened = true;
-			Instantiate(hiddenCaseObject);
+		if (Input.GetMouseButton(0)){
+			print ("\n");
+			print ("You found it!\n");
+			if (!opened) {
+
+				opened = true;
+				Instantiate(hiddenCaseObject, transform.position, transform.rotation);
+				Destroy(this.gameObject);
+			}
 		}
 	}
 

@@ -217,8 +217,7 @@ public class GameManager : MonoBehaviour {
 	//Takes in a string based on what kind of object it is that signifies the icon the cursor should be
 	public void updateMouseIcon(string whichSprite){
 		currMouse = (Texture2D)mouseSprites [Array.IndexOf (spriteIndex, whichSprite)];
-
-		print (currMouse.ToString () + " WHEEEE");
+		
 	}
 
 	//Testing purposes
