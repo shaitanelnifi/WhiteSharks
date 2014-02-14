@@ -2092,7 +2092,7 @@ Rigidbody2D:
     type: 2}
   m_PrefabInternal: {fileID: 1552632526}
   m_GameObject: {fileID: 486398427}
-  m_Mass: 1000
+  m_Mass: 1e+06
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -2997,6 +2997,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .99632293
       objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
+      propertyPath: m_Mass
+      value: 1e+06
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
   m_RootGameObject: {fileID: 2004265435}
@@ -3390,7 +3394,7 @@ Transform:
   m_PrefabInternal: {fileID: 1404002608}
   m_GameObject: {fileID: 1275977979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.82309246, y: -6.26322937, z: 0}
+  m_LocalPosition: {x: -9.62793541, y: -6.45260382, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3760,11 +3764,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: c1b376aaa05771040bd4ba395cd96f45, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -8.82309246
+      value: -9.62793541
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c1b376aaa05771040bd4ba395cd96f45, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -6.26322937
+      value: -6.45260382
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c1b376aaa05771040bd4ba395cd96f45, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4236,6 +4240,10 @@ Prefab:
     - target: {fileID: 400000, guid: 0de3ea12863632e48a1f96b262e4b1f0, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: 0de3ea12863632e48a1f96b262e4b1f0, type: 2}
+      propertyPath: m_Mass
+      value: 1e+06
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0de3ea12863632e48a1f96b262e4b1f0, type: 2}
@@ -4870,7 +4878,7 @@ Rigidbody2D:
     type: 2}
   m_PrefabInternal: {fileID: 1035249045}
   m_GameObject: {fileID: 2004265435}
-  m_Mass: 1000
+  m_Mass: 1e+06
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
