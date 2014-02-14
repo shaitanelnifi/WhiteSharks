@@ -23,6 +23,8 @@ public class NPC : CaseElement {
 	public string convo;
 	public GameObject convoBubble;
 
+	public Dictionary npcKnowledge;
+
 	//Mouse icon information
 	public string mouseOverIcon = "Speech_Icon";
 
