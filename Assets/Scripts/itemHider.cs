@@ -11,8 +11,7 @@ public class itemHider : MonoBehaviour {
 
 	public void OnMouseDown(){
 		if (Input.GetMouseButton(0)){
-			print ("\n");
-			print ("You found it!\n");
+
 			if (!opened) {
 
 				opened = true;
