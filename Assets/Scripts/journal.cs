@@ -48,6 +48,9 @@ public class journal : MonoBehaviour {
 	public GameObject poiView;
 	public GameObject mapView;
 
+	//This is what the player eventually wants to fill out by talking to NPCs.  Score tracking and conversation starters (potentially)
+	public static Dictionary playerKnow;
+
 	//Destroys duplicate UI Roots.
 	void Awake () {
 		if(!j){
@@ -62,6 +65,11 @@ public class journal : MonoBehaviour {
 	void Start () {
 		//Default name for "invisible" person of interest.
 		emptyName = "?????";
+		playerKnow = new Dictionary ();
+
+		foreach(NPC n in GameManager.npcList){
+			journal.Instance.addEntry(new DictEntry(n.getEnumName (), GuiltLevel.unrelated, Category.unrelated, "-1", -1));
+		}
 
 		//Persons of interest list.
 		personsOfInterest = GameManager.npcList;
@@ -88,6 +96,7 @@ public class journal : MonoBehaviour {
 		initObjView ();
 		changeView (0);
 		StartCoroutine (UpdateTime ());
+
 	}
 
 	//Single onclick function for any button in the journal.
@@ -231,13 +240,19 @@ public class journal : MonoBehaviour {
 		}
 	}
 
+	//Access function for updating the journal's dictionary
 	public void updateKnowledge(DictEntry postState){
-		//A stub because i don't know what this is.
+		playerKnow.updateDictionary (postState);
 	}
 
-	public Dictionary getKnowledge(){
-		//A stub because I dont' know what this is.
-		Dictionary pk = new Dictionary();
-		return pk;
+	//Access function for adding an entry to the journal's dictionary
+	public void addEntry(DictEntry newEntry){
+		playerKnow.addNewEntry (newEntry);
 	}
+
+	//Access function for printing the journal's dictionary
+	public void printKnowledge(){
+		playerKnow.printEntries ();
+	}
+
 }

@@ -21,3 +21,14 @@ public enum Category
 	PersonalItem=-1,		//An object with this category is not used for killing but is associated with a character
 	unrelated = -2
 };
+
+public enum NPCNames{
+
+	LiamOShea = 4,
+	NinaWalker = 5,
+	JoshSusach = 6,
+	NoelAlt = 7,
+	CarlosFranco = 8,
+	PeijunShi = 9,
+
+};

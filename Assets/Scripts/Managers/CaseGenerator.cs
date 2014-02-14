@@ -44,6 +44,7 @@ public class CaseGenerator : Object {
 
 			foreach(NPC n in GameManager.npcList){
 				npcs.Add(n);
+				GameManager.Instance.addEntry(new DictEntry(n.getEnumName(), n.getGuilt(), n.getWeaponProf(), n.getAlibi(), n.getTrust()));
 			}
 			foreach (string r in GameManager.roomList) {
 				rooms.Add(r);	
@@ -57,6 +58,7 @@ public class CaseGenerator : Object {
 			}
 		categories.Remove (Category.None);
 		categories.Remove (Category.PersonalItem);
+		categories.Remove (Category.unrelated);
 		}
 
 
@@ -84,7 +86,6 @@ public class CaseGenerator : Object {
 		suspectA.weaponProficiency = categoryA;
 		suspectB.weaponProficiency = categoryB;
 		suspectC.weaponProficiency = categoryC;
-
 
 		//Debug.LogError ("Categories are: " + categoryA +" and " + categoryB );
 
@@ -122,6 +123,8 @@ public class CaseGenerator : Object {
 		Debug.LogError ("Suspect1 :" +suspectB+ " who is proficient with "+suspectB.weaponProficiency +" and was in " + suspectB.alibi);
 		Debug.LogError ("Suspect2 :" +suspectC+ " who is proficient with "+suspectC.weaponProficiency +" and was in " + suspectC.alibi);
 
+		//GameManager.Instance.printGoal ();
+
 		return theCase;
 	}
 	
@@ -130,6 +133,11 @@ public class CaseGenerator : Object {
 		n.setGuilt (GuiltLevel.guilty);
 		n.alibi = r;
 		GameManager.guilty = n;
+
+		DictEntry newEntry = new DictEntry(n.getEnumName(), GuiltLevel.guilty, n.getWeaponProf(), n.getAlibi(), n.getTrust());
+		newEntry.printEntry ();
+		GameManager.Instance.updateDict( newEntry);
+
 		return n;
 	}	
 
@@ -137,6 +145,11 @@ public class CaseGenerator : Object {
 	private NPC makeSuspect(NPC n, string r){
 		n.setGuilt (GuiltLevel.suspect);
 		n.alibi = r;
+
+		DictEntry newEntry = new DictEntry(n.getEnumName(), GuiltLevel.suspect, n.getWeaponProf(), n.getAlibi(), n.getTrust());
+		newEntry.printEntry ();
+		GameManager.Instance.updateDict( newEntry);
+
 		return n;
 	}
 
