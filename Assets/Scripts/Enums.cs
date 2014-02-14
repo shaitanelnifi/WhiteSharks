@@ -14,8 +14,8 @@ public enum Category
 	None = 0,			//Implies that the npc has no ability to use weapons
 	SmallProjectiles=1,	//Like darts and other small thrown objects
 	BluntWeapons =2, 		//Melee weapon
-	BladedWeapons=3,		//Melee weapon
-	PiercingWeapons=4,	//Melee weapon
+	BladedWeapons=3,		//Swords
+	Poison=4,	//Poisons
 	Miscellaneous=5,		//Objects not normally associated with weaponry
 	Firearms=6,			//Guns are dangerous
 	
