@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour {
 	public ArrayList roomIDList;
 	public int currentRoomIndex;
 	private string currentMainCharacter;
+	public CaseGenerator generator;
 	public static Case theCase = new Case(); //Generate this!
 	public float nextX, nextY;
 	public static NPC guilty;
@@ -30,9 +31,6 @@ public class GameManager : MonoBehaviour {
 	public static string[] spriteIndex;
 	public static Texture2D currMouse;
 
-	// + case: ArrayList<CaseElement>
-	// + npcs: ArrayList<CaseElement>
-	// + objects: ArrayList<CaseElement>
 
 	public static GameManager Instance {
 		get {
@@ -95,12 +93,10 @@ public class GameManager : MonoBehaviour {
 	/// Generates the case
 	/// </summary>
 	public void generateCase() {
-		// case generation
-
-		CaseGenerator c = new CaseGenerator ();
-		c.generateCase();
-		Debug.Log ("the case in GM " + guilty + " " + weapon + " " + room);
-
+		Debug.Log (theCase.getRoom());
+		theCase = generator.generateCase();
+		//Debug.Log ("the case in GM " + guilty + " " + weapon + " " + room);
+		Debug.Log (theCase.getRoom());
 	}
 
 	/// <summary>
@@ -118,16 +114,7 @@ public class GameManager : MonoBehaviour {
 	public void drawScore() {
 		// draws the score on the screen
 	}
-
-//	public void updateJNPC(NPC n) {
-//
-//	}
-//
-//	public void updateJObject(CaseObject o) {
-//
-//	}
-
-
+	
 	/// <summary>
 	/// Quits the game
 	/// </summary>
@@ -233,17 +220,16 @@ public class GameManager : MonoBehaviour {
 		roomIDList = new ArrayList ();
 		roomIDList.Add("stage1");
 		roomIDList.Add("stage2");
-		roomList.Add ("Finn");
-		roomList.Add ("Belly");
+		roomList.Add ("Gym");
+		roomList.Add ("Cafe");
+		roomList.Add ("Office");
 		npcList.Add(Resources.Load<NPC>("NoelAlt"));
 		npcList.Add(Resources.Load<NPC>("NPC1"));
 		npcList.Add(Resources.Load<NPC>("RandomNPC"));
 		weaponList.Add(Resources.Load<CaseObject>("Weapon1"));
 		weaponList.Add(Resources.Load<CaseObject>("Weapon2"));
-		Debug.LogError ("Generating case");
+		generator = new CaseGenerator ();
 		generateCase ();
-		//Debug.Log ("GM NPClist count: " + npcList.Count);
-		//Debug.Log ("Room ID list count:" + roomIDList.Count);
 
 	}
 
