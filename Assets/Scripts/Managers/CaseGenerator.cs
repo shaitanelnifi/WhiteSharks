@@ -123,7 +123,7 @@ public class CaseGenerator : Object {
 		Debug.LogError ("Suspect1 :" +suspectB+ " who is proficient with "+suspectB.weaponProficiency +" and was in " + suspectB.alibi);
 		Debug.LogError ("Suspect2 :" +suspectC+ " who is proficient with "+suspectC.weaponProficiency +" and was in " + suspectC.alibi);
 
-		//GameManager.Instance.printGoal ();
+		GameManager.Instance.printGoal ();
 
 		return theCase;
 	}

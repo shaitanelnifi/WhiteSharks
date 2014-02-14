@@ -64,7 +64,7 @@ MonoBehaviour:
   conversationObj: {fileID: 0}
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
-  weaponProficiency: 1
+  weaponProficiency: 5
   highClass: 1
   alibi: F
   scene: scene1

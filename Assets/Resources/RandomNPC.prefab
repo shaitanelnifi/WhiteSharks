@@ -54,7 +54,7 @@ MonoBehaviour:
   elementName: Leo Cooper
   description: This is a second random NPC so that we have 3
   profileImage: {fileID: 21300000, guid: b203a331a825743cca86f0e03a60847f, type: 3}
-  guilt: 3
+  guilt: 2
   location: 2
   visible: 0
   defaultIcon: Walk_Icon
@@ -63,12 +63,13 @@ MonoBehaviour:
   box: {fileID: 6100000}
   weaponProficiency: 2
   highClass: 1
-  alibi: F
+  alibi: 
   scene: scene1
   personalSentence: 'Hmmm... Let me think... '
   convo: Hmmm... Let me think...  I was in the Belly with Peijun Shi.
   convoBubble: {fileID: 0}
-  npcKnowledge: {fileID: 0}
+  trust: 0
+  enumName: 8
   mouseOverIcon: Speech_Icon
 --- !u!212 &21200000
 SpriteRenderer:

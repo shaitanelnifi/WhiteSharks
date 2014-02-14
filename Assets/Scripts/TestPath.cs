@@ -27,7 +27,7 @@ public class TestPath : MonoBehaviour {
 				distance = curDistance;
 			}
 		}
-		Debug.Log ("closet point: " + closest.transform.position);
+		//Debug.Log ("closet point: " + closest.transform.position);
 		return closest;
 	}
 	public void move(){

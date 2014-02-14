@@ -12,6 +12,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
   - 20: {fileID: 2000000}
+  - 50: {fileID: 5000000}
   m_Layer: 10
   m_Name: player
   m_TagString: Untagged
@@ -59,6 +60,21 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
   m_OcclusionCulling: 1
+--- !u!50 &5000000
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Mass: 9.99999975e-05
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!61 &6100000
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -91,6 +107,7 @@ MonoBehaviour:
   maxSpeed: 8
   mainCam: {fileID: 0}
   mainChar: {fileID: 0}
+  canWalk: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
