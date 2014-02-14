@@ -55,15 +55,15 @@ MonoBehaviour:
   description: Liam is a guard at the Fin.
   profileImage: {fileID: 21300000, guid: 8b98b68a3e5434fde8a6cef5f4ee29ca, type: 3}
   guilt: 2
-  location: 2
-  visible: 0
+  location: 1
+  visible: 1
   defaultIcon: Walk_Icon
   conversationObj: {fileID: 0}
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
-  weaponProficiency: 2
+  weaponProficiency: 1
   highClass: 1
-  alibi: F
+  alibi: Cafe
   scene: scene1
   personalSentence: 
   convo: 
