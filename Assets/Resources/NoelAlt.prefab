@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 212: {fileID: 21200000}
   - 61: {fileID: 6100000}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: NoelAlt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ MonoBehaviour:
   conversationObj: {fileID: 0}
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
-  weaponProficiency: -2
+  weaponProficiency: 5
   highClass: 1
   alibi: F
   scene: scene1
