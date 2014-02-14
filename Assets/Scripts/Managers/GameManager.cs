@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour {
 	private string _name;				// Character name
 	public static List<string> roomList = new List<string>();
 	public static List<NPC> npcList = new List<NPC>();
+	public static List<NPC> witnessList = new List<NPC>();
 	public static List<CaseObject> weaponList= new List<CaseObject>();
 	public ArrayList roomIDList;
 	public int currentRoomIndex;
@@ -223,11 +224,17 @@ public class GameManager : MonoBehaviour {
 		roomList.Add ("Gym");
 		roomList.Add ("Cafe");
 		roomList.Add ("Office");
-		npcList.Add(Resources.Load<NPC>("NoelAlt"));
-		npcList.Add(Resources.Load<NPC>("NPC1"));
-		npcList.Add(Resources.Load<NPC>("RandomNPC"));
-		weaponList.Add(Resources.Load<CaseObject>("Weapon1"));
-		weaponList.Add(Resources.Load<CaseObject>("Weapon2"));
+		npcList.Add(Resources.Load<NPC>("LiamOShea"));
+		npcList.Add(Resources.Load<NPC>("NinaWalker"));
+		npcList.Add(Resources.Load<NPC>("JoshSusach"));
+		witnessList.Add(Resources.Load<NPC>("NoelAlt"));
+		witnessList.Add(Resources.Load<NPC>("PeijunShi"));
+		witnessList.Add(Resources.Load<NPC>("CarlosFranco"));
+		weaponList.Add(Resources.Load<CaseObject>("eSword"));
+		weaponList.Add(Resources.Load<CaseObject>("LaserPistol"));
+		weaponList.Add(Resources.Load<CaseObject>("MetalPipe"));
+		weaponList.Add(Resources.Load<CaseObject>("RadioactiveIceCubes"));
+		weaponList.Add(Resources.Load<CaseObject>("VSs"));
 		generator = new CaseGenerator ();
 		generateCase ();
 
@@ -243,6 +250,18 @@ public class GameManager : MonoBehaviour {
 				}
 		return temp;
 	}
+
+	public static List<NPC> getSceneWitnessList(int sceneID){ 
+		List<NPC> temp = new List<NPC>();
+		foreach (NPC n in witnessList) {
+			if (n.location == sceneID){
+				//Debug.Log("Match found");
+				temp.Add(n);
+			}
+		}
+		return temp;
+	}
+
 }
 
 public enum gameStates {
