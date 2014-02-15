@@ -61,10 +61,6 @@ public class NPC : CaseElement {
 
 			convSetup.generateDialoguer();
 
-			//conversationObj.renderer.enabled = true;
-			//conversationObj.collider2D.enabled = true;
-			//convoBubble.GetComponentInChildren<UILabel>().text = convo;
-			//convoBubble.GetComponentInChildren<UI2DSprite>().sprite2D = this.getProfileImage();
 		}
 	}
 

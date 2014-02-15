@@ -23,39 +23,43 @@ public class playerScript : CaseElement {
 	Vector2 targetPosition;
 	Vector2 direction;
 	Vector2 closestColl;
+	public bool canWalk;
 
 
 
 	void Start(){
 		anim = GetComponent<Animator>();
+		canWalk = true;
 	}
-	void FixedUpdate(){	
+	void FixedUpdate(){
 		float distance;
-		if(Input.GetMouseButton(0)){
-			//get mouse clicked location and convert them to world point.
-			targetPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-			Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(targetPosition.x, targetPosition.y, camera.nearClipPlane));
-			targetPosition.x = mousePosition.x;
-			targetPosition.y = mousePosition.y;
+		if (canWalk) {
+			if (Input.GetMouseButton (0)) {
+				//get mouse clicked location and convert them to world point.
+				targetPosition = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
+				Vector3 mousePosition = Camera.main.ScreenToWorldPoint (new Vector3 (targetPosition.x, targetPosition.y, camera.nearClipPlane));
+				targetPosition.x = mousePosition.x;
+				targetPosition.y = mousePosition.y;
+			}
 		}
 
-		if (targetPosition.x != 0){
+		if (targetPosition.x != 0) {
 			//if something is on the way, use find path
 			int layerMask = 1 << 10;
 			layerMask = ~layerMask;
-			if (Physics2D.Linecast(transform.position, targetPosition,layerMask)){	
-				if(objectOnWay(targetPosition)){
-					Vector2 toPoint = FindClosestPoint(targetPosition).transform.position;
-					distance = Vector2.Distance (transform.position, toPoint);
-					transform.position = Vector2.Lerp (transform.position, toPoint,Time.deltaTime* (maxSpeed/distance));
+			if (Physics2D.Linecast (transform.position, targetPosition, layerMask)) {	
+				if (objectOnWay (targetPosition)) {
+						Vector2 toPoint = FindClosestPoint (targetPosition).transform.position;
+						distance = Vector2.Distance (transform.position, toPoint);
+						transform.position = Vector2.Lerp (transform.position, toPoint, Time.deltaTime * (maxSpeed / distance));
 				}
 			}
-			//else go straight to that location
-			else{
-				distance = Vector2.Distance (transform.position, targetPosition);
-				if(distance > 0){
-					transform.position = Vector2.Lerp (transform.position, targetPosition,Time.deltaTime* (maxSpeed/distance));
-				}
+		}
+		//else go straight to that location
+		else {
+			distance = Vector2.Distance (transform.position, targetPosition);
+			if (distance > 0) {
+					transform.position = Vector2.Lerp (transform.position, targetPosition, Time.deltaTime * (maxSpeed / distance));
 			}
 		}
 	}
@@ -87,7 +91,7 @@ public class playerScript : CaseElement {
 		GameObject closest= null;
 		float distance = Mathf.Infinity;
 		Vector2 position = target;
-		foreach (GameObject point in points) {
+		if(!(point.transform.position.Equals(target))){
 			float curDistance = Vector2.Distance(point.transform.position,position);
 			if (curDistance < distance) {
 				closest = point;

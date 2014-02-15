@@ -19,7 +19,8 @@ public enum Category
 	Firearms=5,			//Guns are dangerous
 	
 	PersonalItem=-1,		//An object with this category is not used for killing but is associated with a character
-	unrelated = -2
+	unrelated = -2,
+	Miscellaneous = -3
 };
 
 public enum NPCNames{
