@@ -2038,8 +2038,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
-  x: 4.78900003
-  y: -5.42999983
+  x: 1.24455738
+  y: -4.84536886
 --- !u!1 &486398427
 GameObject:
   m_ObjectHideFlags: 0
@@ -4700,6 +4700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 546e4042cc205e14bb0c655ff9ec24f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 1
 --- !u!1 &1896030520
 GameObject:
   m_ObjectHideFlags: 0
