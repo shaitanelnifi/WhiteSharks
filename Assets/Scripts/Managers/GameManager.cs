@@ -14,18 +14,17 @@ public class GameManager : MonoBehaviour {
 	private string _name;				// Character name
 	public static List<string> roomList = new List<string>();
 	public static List<NPC> npcList = new List<NPC>();
+	public static List<NPC> witnessList = new List<NPC>();
 	public static List<CaseObject> weaponList= new List<CaseObject>();
 	public ArrayList roomIDList;
 	public int currentRoomIndex;
 	private string currentMainCharacter;
+	public CaseGenerator generator;
 	public static Case theCase = new Case(); //Generate this!
 	public float nextX, nextY;
 	public static NPC guilty;
 	public static CaseObject weapon;
 	public static string room;
-
-	//This is the target state the player wishes to reach for maximum score
-	public static Dictionary idealGameState;
 
 	//Handles mouse cursor information
 	public static int cursorSize = 64;
@@ -33,9 +32,6 @@ public class GameManager : MonoBehaviour {
 	public static string[] spriteIndex;
 	public static Texture2D currMouse;
 
-	// + case: ArrayList<CaseElement>
-	// + npcs: ArrayList<CaseElement>
-	// + objects: ArrayList<CaseElement>
 
 	public static GameManager Instance {
 		get {
@@ -90,8 +86,6 @@ public class GameManager : MonoBehaviour {
 		_name = "My Character";
 		_currentState = gameStates.INGAME;
 
-		idealGameState = new Dictionary ();
-
 		// Load character select screen
 		Application.LoadLevel ("CharacterSele");
 	}
@@ -100,12 +94,10 @@ public class GameManager : MonoBehaviour {
 	/// Generates the case
 	/// </summary>
 	public void generateCase() {
-		// case generation
-
-		CaseGenerator c = new CaseGenerator ();
-		c.generateCase();
-		Debug.Log ("the case in GM " + guilty + " " + weapon + " " + room);
-
+		Debug.Log (theCase.getRoom());
+		theCase = generator.generateCase();
+		//Debug.Log ("the case in GM " + guilty + " " + weapon + " " + room);
+		Debug.Log (theCase.getRoom());
 	}
 
 	/// <summary>
@@ -123,16 +115,7 @@ public class GameManager : MonoBehaviour {
 	public void drawScore() {
 		// draws the score on the screen
 	}
-
-//	public void updateJNPC(NPC n) {
-//
-//	}
-//
-//	public void updateJObject(CaseObject o) {
-//
-//	}
-
-
+	
 	/// <summary>
 	/// Quits the game
 	/// </summary>
@@ -222,23 +205,8 @@ public class GameManager : MonoBehaviour {
 	//Takes in a string based on what kind of object it is that signifies the icon the cursor should be
 	public void updateMouseIcon(string whichSprite){
 		currMouse = (Texture2D)mouseSprites [Array.IndexOf (spriteIndex, whichSprite)];
-		
-	}
 
-
-	//Access function for updating the GameManager's dictionary
-	public void addEntry(DictEntry newEntry){
-		idealGameState.addNewEntry (newEntry);
-	}
-
-	//Access function for adding an entry to the GameManager's dictionary
-	public void updateDict(DictEntry newEntry){
-		idealGameState.updateDictionary (newEntry);
-	}
-
-	//Access function for printing the GameManager's dictionary
-	public void printGoal(){
-		idealGameState.printEntries ();
+		print (currMouse.ToString () + " WHEEEE");
 	}
 
 	//Testing purposes
@@ -253,17 +221,22 @@ public class GameManager : MonoBehaviour {
 		roomIDList = new ArrayList ();
 		roomIDList.Add("stage1");
 		roomIDList.Add("stage2");
-		roomList.Add ("Finn");
-		roomList.Add ("Belly");
-		npcList.Add(Resources.Load<NPC>("NoelAlt"));
-		npcList.Add(Resources.Load<NPC>("NPC1"));
-		npcList.Add(Resources.Load<NPC>("RandomNPC"));
-		weaponList.Add(Resources.Load<CaseObject>("Weapon1"));
-		weaponList.Add(Resources.Load<CaseObject>("Weapon2"));
-		Debug.LogError ("Generating case");
+		roomList.Add ("Gym");
+		roomList.Add ("Cafe");
+		roomList.Add ("Office");
+		npcList.Add(Resources.Load<NPC>("LiamOShea"));
+		npcList.Add(Resources.Load<NPC>("NinaWalker"));
+		npcList.Add(Resources.Load<NPC>("JoshSusach"));
+		witnessList.Add(Resources.Load<NPC>("NoelAlt"));
+		witnessList.Add(Resources.Load<NPC>("PeijunShi"));
+		witnessList.Add(Resources.Load<NPC>("CarlosFranco"));
+		weaponList.Add(Resources.Load<CaseObject>("eSword"));
+		weaponList.Add(Resources.Load<CaseObject>("LaserPistol"));
+		weaponList.Add(Resources.Load<CaseObject>("MetalPipe"));
+		weaponList.Add(Resources.Load<CaseObject>("RadioactiveIceCubes"));
+		weaponList.Add(Resources.Load<CaseObject>("VSs"));
+		generator = new CaseGenerator ();
 		generateCase ();
-		//Debug.Log ("GM NPClist count: " + npcList.Count);
-		//Debug.Log ("Room ID list count:" + roomIDList.Count);
 
 	}
 
@@ -277,6 +250,18 @@ public class GameManager : MonoBehaviour {
 				}
 		return temp;
 	}
+
+	public static List<NPC> getSceneWitnessList(int sceneID){ 
+		List<NPC> temp = new List<NPC>();
+		foreach (NPC n in witnessList) {
+			if (n.location == sceneID){
+				//Debug.Log("Match found");
+				temp.Add(n);
+			}
+		}
+		return temp;
+	}
+
 }
 
 public enum gameStates {
