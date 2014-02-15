@@ -221,6 +221,10 @@ public class GameManager : MonoBehaviour {
 		roomIDList = new ArrayList ();
 		roomIDList.Add("stage1");
 		roomIDList.Add("stage2");
+		roomIDList.Add("stage3");
+		roomIDList.Add("stage4");
+		roomIDList.Add("stage5");
+		roomIDList.Add("stage6");
 		roomList.Add ("Gym");
 		roomList.Add ("Cafe");
 		roomList.Add ("Office");
