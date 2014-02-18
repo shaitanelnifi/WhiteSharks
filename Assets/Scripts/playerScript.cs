@@ -5,7 +5,7 @@ changes: change scene depends on which door the player collide with. -John Mai 1
  */ 
 
 /*
-note: for wall collider, use mouseEnter function to stop player from moving into wall
+note: add id 3 and another list for rooms
 
 
  */
@@ -30,7 +30,14 @@ public class playerScript : CaseElement {
 	void Start(){
 		anim = GetComponent<Animator>();
 		canWalk = true;
+		mainCam = GameObject.Find("Main Camera").camera;
+		GameObject moveCam = GameObject.Find ("moveCam");
+			if(moveCam != null && transform.position.x < 1){
+				mainCam.transform.Translate(new Vector3(-9.273237f, 0, 0));
+				MoveCam.right = false;
+			}
 	}
+
 	void FixedUpdate(){	
 		if(canWalk){
 			float distance;
@@ -100,7 +107,6 @@ public class playerScript : CaseElement {
 				}
 			}
 		}
-		Debug.Log ("asds");
 
 		Debug.Log ("closet point: " + closest.transform.position);
 		return closest;
@@ -108,10 +114,12 @@ public class playerScript : CaseElement {
 	//change scene when collide with door
 	void OnTriggerEnter2D(Collider2D collider){
 		DoorScript doorObj = collider.gameObject.GetComponent<DoorScript> ();
+		SceneDoor doorObj2 = collider.gameObject.GetComponent<SceneDoor> ();
+		string temp;
+		int tempIndex;
 
 		if (doorObj != null) {
-			string temp;
-			int tempIndex = 0;
+			tempIndex = 0;
 			if (doorObj.id == 0)
 				tempIndex = GameManager.Instance.currentRoomIndex - 1;
 			else if(doorObj.id ==1)
@@ -125,9 +133,22 @@ public class playerScript : CaseElement {
 			DestoryPlayer();
 			Application.LoadLevel (temp);
 		}
+		else if(doorObj2 != null) {
+			if (doorObj2.id >1){
+				tempIndex = doorObj2.id;
+				temp = (string) GameManager.Instance.rooms[tempIndex];
+			}
+			else{
+				tempIndex = GameManager.Instance.currentRoomIndex;
+				temp = (string) GameManager.Instance.roomIDList[tempIndex];
+			}
+			GameManager.Instance.SetNextX(doorObj2.x);
+			GameManager.Instance.SetNextY(doorObj2.y);
+			DestoryPlayer();
+			Application.LoadLevel (temp);
+		}
+
 	}
-
-
 
 	//flips the sprite or animation
 	void Flip(){

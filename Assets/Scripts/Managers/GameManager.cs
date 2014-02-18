@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour {
 	public static List<NPC> witnessList = new List<NPC>();
 	public static List<CaseObject> weaponList= new List<CaseObject>();
 	public ArrayList roomIDList;
+	public string[] rooms;
 	public int currentRoomIndex;
 	private string currentMainCharacter;
 	public CaseGenerator generator;
@@ -219,8 +220,13 @@ public class GameManager : MonoBehaviour {
 
 
 		roomIDList = new ArrayList ();
+		rooms = new string[5];
+		rooms[2] = "bar";
+		rooms[3] = "bellyRoom";
 		roomIDList.Add("stage1");
 		roomIDList.Add("stage2");
+		roomIDList.Add("stage3");
+		roomIDList.Add("stage4");
 		roomList.Add ("Gym");
 		roomList.Add ("Cafe");
 		roomList.Add ("Office");
