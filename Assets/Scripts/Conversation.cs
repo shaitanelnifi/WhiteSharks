@@ -49,6 +49,7 @@ public class Conversation {
 			idConversion = (2 * idConversion) - 7; //Some formula goes here
 
 			Dialoguer.SetGlobalString(idConversion, curr.getWeapon().ToString());
+			Dialoguer.SetGlobalFloat(idConversion, curr.getTrust ());
 
 		    if ((int)curr.getGuilt() >= (int) GuiltLevel.suspect)
 				Dialoguer.SetGlobalString(idConversion + 1, curr.getLocation());

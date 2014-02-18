@@ -23,6 +23,15 @@ public enum Category
 	Miscellaneous = -3
 };
 
+public enum CaseObjectNames{
+
+	unrelated = -1,
+	HallPass = 1,
+	Picture = 2,
+	Bracelet = 3
+
+};
+
 public enum NPCNames{
 
 	LiamOShea = 4,

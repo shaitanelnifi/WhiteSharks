@@ -136,7 +136,7 @@ public class playerScript : CaseElement {
 		else if(doorObj2 != null) {
 			if (doorObj2.id >1){
 				tempIndex = doorObj2.id;
-				temp = (string) GameManager.Instance.rooms[tempIndex];
+				temp = (string) GameManager.Instance.getRoomList()[tempIndex];
 			}
 			else{
 				tempIndex = GameManager.Instance.currentRoomIndex;
