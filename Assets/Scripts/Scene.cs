@@ -6,6 +6,7 @@ using System.Collections;
 
 public class Scene : MonoBehaviour {
 	public static GameObject player;
+	public float scaleX, scaleY;
 	// Use this for initialization
 	void Start () {
 		string temp = (string)GameManager.Instance.GetMainCharacter ();
@@ -14,5 +15,9 @@ public class Scene : MonoBehaviour {
 		tempVec.x = GameManager.Instance.GetNextX ();
 		tempVec.y = GameManager.Instance.GetNextY ();
 		player.transform.position = tempVec;
+		//scale the player sprite
+		if (scaleX != 0 && scaleY != 0) {
+			player.transform.localScale = new Vector3(scaleX, scaleY, 1);	
+		}
 	}
 }

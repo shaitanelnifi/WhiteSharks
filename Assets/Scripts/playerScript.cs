@@ -5,7 +5,7 @@ changes: change scene depends on which door the player collide with. -John Mai 1
  */ 
 
 /*
-note: for wall collider, use mouseEnter function to stop player from moving into wall
+note: add id 3 and another list for rooms
 
 
  */
@@ -30,36 +30,43 @@ public class playerScript : CaseElement {
 	void Start(){
 		anim = GetComponent<Animator>();
 		canWalk = true;
+		mainCam = GameObject.Find("Main Camera").camera;
+		GameObject moveCam = GameObject.Find ("moveCam");
+			if(moveCam != null && transform.position.x < 1){
+				mainCam.transform.Translate(new Vector3(-9.273237f, 0, 0));
+				MoveCam.right = false;
+			}
 	}
-	void FixedUpdate(){
-		float distance;
-		if (canWalk) {
-			if (Input.GetMouseButton (0)) {
+
+	void FixedUpdate(){	
+		if(canWalk){
+			float distance;
+			if(Input.GetMouseButton(0)){
 				//get mouse clicked location and convert them to world point.
-				targetPosition = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
-				Vector3 mousePosition = Camera.main.ScreenToWorldPoint (new Vector3 (targetPosition.x, targetPosition.y, camera.nearClipPlane));
+				targetPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+				Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(targetPosition.x, targetPosition.y, camera.nearClipPlane));
 				targetPosition.x = mousePosition.x;
 				targetPosition.y = mousePosition.y;
 			}
-		}
 
-		if (targetPosition.x != 0) {
-			//if something is on the way, use find path
-			int layerMask = 1 << 10;
-			layerMask = ~layerMask;
-			if (Physics2D.Linecast (transform.position, targetPosition, layerMask)) {	
-				if (objectOnWay (targetPosition)) {
-						Vector2 toPoint = FindClosestPoint (targetPosition).transform.position;
+			if (targetPosition.x != 0){
+				//if something is on the way, use find path
+				int layerMask = 1 << 10;
+				layerMask = ~layerMask;
+				if (Physics2D.Linecast(transform.position, targetPosition,layerMask)){	
+					if(objectOnWay(targetPosition)){
+						Vector2 toPoint = FindClosestPoint(targetPosition).transform.position;
 						distance = Vector2.Distance (transform.position, toPoint);
-						transform.position = Vector2.Lerp (transform.position, toPoint, Time.deltaTime * (maxSpeed / distance));
+						transform.position = Vector2.Lerp (transform.position, toPoint,Time.deltaTime* (maxSpeed/distance));
+					}
 				}
-			}
-		}
-		//else go straight to that location
-		else {
-			distance = Vector2.Distance (transform.position, targetPosition);
-			if (distance > 0) {
-					transform.position = Vector2.Lerp (transform.position, targetPosition, Time.deltaTime * (maxSpeed / distance));
+				//else go straight to that location
+				else{
+					distance = Vector2.Distance (transform.position, targetPosition);
+					if(distance > 0){
+						transform.position = Vector2.Lerp (transform.position, targetPosition,Time.deltaTime* (maxSpeed/distance));
+					}
+				}
 			}
 		}
 	}
@@ -91,23 +98,28 @@ public class playerScript : CaseElement {
 		GameObject closest= null;
 		float distance = Mathf.Infinity;
 		Vector2 position = target;
-		if(!(point.transform.position.Equals(target))){
-			float curDistance = Vector2.Distance(point.transform.position,position);
-			if (curDistance < distance) {
-				closest = point;
-				distance = curDistance;
+		foreach (GameObject point in points) {
+			if(!(point.transform.position.Equals(target))){
+				float curDistance = Vector2.Distance(point.transform.position,position);
+				if (curDistance < distance) {
+					closest = point;
+					distance = curDistance;
+				}
 			}
 		}
+
 		Debug.Log ("closet point: " + closest.transform.position);
 		return closest;
 	}
 	//change scene when collide with door
 	void OnTriggerEnter2D(Collider2D collider){
 		DoorScript doorObj = collider.gameObject.GetComponent<DoorScript> ();
+		SceneDoor doorObj2 = collider.gameObject.GetComponent<SceneDoor> ();
+		string temp;
+		int tempIndex;
 
 		if (doorObj != null) {
-			string temp;
-			int tempIndex = 0;
+			tempIndex = 0;
 			if (doorObj.id == 0)
 				tempIndex = GameManager.Instance.currentRoomIndex - 1;
 			else if(doorObj.id ==1)
@@ -121,9 +133,22 @@ public class playerScript : CaseElement {
 			DestoryPlayer();
 			Application.LoadLevel (temp);
 		}
+		else if(doorObj2 != null) {
+			if (doorObj2.id >1){
+				tempIndex = doorObj2.id;
+				temp = (string) GameManager.Instance.rooms[tempIndex];
+			}
+			else{
+				tempIndex = GameManager.Instance.currentRoomIndex;
+				temp = (string) GameManager.Instance.roomIDList[tempIndex];
+			}
+			GameManager.Instance.SetNextX(doorObj2.x);
+			GameManager.Instance.SetNextY(doorObj2.y);
+			DestoryPlayer();
+			Application.LoadLevel (temp);
+		}
+
 	}
-
-
 
 	//flips the sprite or animation
 	void Flip(){
