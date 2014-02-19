@@ -46,6 +46,8 @@ public class CaseGenerator : Object {
 			foreach(NPC n in GameManager.npcList){
 				npcs.Add(n);
 			}
+
+
 			foreach (string r in GameManager.roomList) {
 				rooms.Add(r);	
 			}
@@ -74,9 +76,13 @@ public class CaseGenerator : Object {
 		theCase = new Case ();
 		//Debug.LogError ("Generating case");
 		npcs.Shuffle (rng);
+		//Debug.Log("NPC list count in case generator: " + npcs.Count );
 		suspectA = npcs [0];
 		suspectB = npcs [1];
 		suspectC = npcs [2];
+
+
+
 		//Debug.LogError ("Suspects are: " + suspectA +", " + suspectB + " and " + suspectC );
 
 		categories.Shuffle (rng);
@@ -84,6 +90,7 @@ public class CaseGenerator : Object {
 		categoryB = categories [1];
 		categoryC = categories [2];
 
+		//Debug.Log ("SuspectA: " + suspectA + " SuspectB: " + suspectB +" SuspectC: " + suspectC);
 		suspectA.weaponProficiency = categoryA;
 		suspectB.weaponProficiency = categoryB;
 		suspectC.weaponProficiency = categoryC;
@@ -126,12 +133,12 @@ public class CaseGenerator : Object {
 		this.activateWeapon (weaponA);
 		this.activateWeapon (weaponB);
 
-		Debug.LogError ("Case generated as:");
-		Debug.LogError ("Guilty :" +suspectA+ " who is proficient with "+suspectA.weaponProficiency +" and was in " + suspectA.alibi);
-		Debug.LogError ("Suspect1 :" +suspectB+ " who is proficient with "+suspectB.weaponProficiency +" and was in " + suspectB.alibi);
-		Debug.LogError ("Suspect2 :" +suspectC+ " who is proficient with "+suspectC.weaponProficiency +" and was in " + suspectC.alibi);
+		//Debug.LogError ("Case generated as:");
+		//Debug.LogError ("Guilty :" +suspectA+ " who is proficient with "+suspectA.weaponProficiency +" and was in " + suspectA.alibi);
+		//Debug.LogError ("Suspect1 :" +suspectB+ " who is proficient with "+suspectB.weaponProficiency +" and was in " + suspectB.alibi);
+		//Debug.LogError ("Suspect2 :" +suspectC+ " who is proficient with "+suspectC.weaponProficiency +" and was in " + suspectC.alibi);
 
-		Debug.LogError(weaponA);
+		//Debug.LogError(weaponA);
 
 		theCase.activeWeapons.Add (weaponA);
 		theCase.activeWeapons.Add (weaponB);

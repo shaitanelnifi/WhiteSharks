@@ -95,10 +95,10 @@ public class GameManager : MonoBehaviour {
 	/// Generates the case
 	/// </summary>
 	public void generateCase() {
-		Debug.Log (theCase.getRoom());
+		//Debug.Log (theCase.getRoom());
 		theCase = generator.generateCase();
 		//Debug.Log ("the case in GM " + guilty + " " + weapon + " " + room);
-		Debug.Log (theCase.getRoom());
+		//Debug.Log (theCase.getRoom());
 	}
 
 	/// <summary>
@@ -249,6 +249,8 @@ public class GameManager : MonoBehaviour {
 	public static List<NPC> getSceneNPCList(int sceneID){ 
 		List<NPC> temp = new List<NPC>();
 		foreach (NPC n in npcList) {
+			Debug.Log (n.location + " " + n.name);
+			Debug.Log (sceneID);
 			if (n.location == sceneID){
 				//Debug.Log("Match found");
 				temp.Add(n);
