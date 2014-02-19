@@ -710,6 +710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleX: .368005097
   scaleY: .358005792
+  id: 1
 --- !u!1 &1650131400
 GameObject:
   m_ObjectHideFlags: 0

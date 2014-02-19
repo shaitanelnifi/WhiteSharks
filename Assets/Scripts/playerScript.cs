@@ -24,6 +24,7 @@ public class playerScript : CaseElement {
 	Vector2 direction;
 	Vector2 closestColl;
 	public bool canWalk;
+	public int currentRoom;
 
 
 
@@ -69,6 +70,26 @@ public class playerScript : CaseElement {
 				}
 			}
 		}
+	//Fixing scale (if it works lol)
+		switch (currentRoom) {
+		case 0:
+			break;
+		case 1:
+			Debug.Log ("YAY");
+			//transform.localScale = new Vector2(-5.09804f*transform.position.y,-5.09804f*transform.position.y);
+			//Debug.Log (transform.localScale);
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+		case 5:
+			break;
+		}
+	
+	
 	}
 
 	//returns true if the collide object is type PolygonCollider2D
