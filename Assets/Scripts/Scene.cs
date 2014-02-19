@@ -7,6 +7,7 @@ using System.Collections;
 public class Scene : MonoBehaviour {
 	public static GameObject player;
 	public float scaleX, scaleY;
+	public int id;
 	// Use this for initialization
 	void Start () {
 		string temp = (string)GameManager.Instance.GetMainCharacter ();
@@ -19,5 +20,6 @@ public class Scene : MonoBehaviour {
 		if (scaleX != 0 && scaleY != 0) {
 			player.transform.localScale = new Vector3(scaleX, scaleY, 1);	
 		}
+		player.GetComponent<playerScript> ().currentRoom = this.id;
 	}
 }

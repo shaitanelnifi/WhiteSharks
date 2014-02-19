@@ -24,6 +24,8 @@ public class playerScript : CaseElement {
 	Vector2 direction;
 	Vector2 closestColl;
 	public bool canWalk;
+	public int currentRoom;
+	private int counter = 0;
 
 
 
@@ -69,6 +71,31 @@ public class playerScript : CaseElement {
 				}
 			}
 		}
+	//Fixing scale (if it works lol)
+		float currY = transform.position.y;
+		//Debug.LogError (currentRoom);
+		switch (currentRoom) {
+		case 0:
+			transform.localScale = new Vector2( currY * (-.08f) + (.67f),currY * (-.08f) + (.67f));
+			break;
+		case 1:
+			transform.localScale = new Vector2(currY / (-5.09f),currY / (-5.09f));
+			break;
+		case 2:
+			transform.localScale = new Vector2(-0.08f * currY - 0.03f, -0.08f * currY - 0.03f);
+			break;
+		case 3:
+			transform.localScale = new Vector2(-0.25f * currY -1.12f, -0.25f * currY -1.12f);
+			break;
+		case 4:
+			transform.localScale = new Vector2(-0.17f * currY + 0.42f, -0.17f * currY + 0.42f);
+			break;
+		case 5:
+			transform.localScale = new Vector2(-0.15f * currY - 0.35f, -0.15f * currY - 0.35f);
+			break;
+		}
+	
+	
 	}
 
 	//returns true if the collide object is type PolygonCollider2D
@@ -113,39 +140,44 @@ public class playerScript : CaseElement {
 	}
 	//change scene when collide with door
 	void OnTriggerEnter2D(Collider2D collider){
-		DoorScript doorObj = collider.gameObject.GetComponent<DoorScript> ();
-		SceneDoor doorObj2 = collider.gameObject.GetComponent<SceneDoor> ();
-		string temp;
-		int tempIndex;
+		int coolDown = 30;
+		counter++;
+		if (counter >= coolDown){
+	
+			DoorScript doorObj = collider.gameObject.GetComponent<DoorScript> ();
+			SceneDoor doorObj2 = collider.gameObject.GetComponent<SceneDoor> ();
+			string temp;
+			int tempIndex;
 
-		if (doorObj != null) {
-			tempIndex = 0;
-			if (doorObj.id == 0)
-				tempIndex = GameManager.Instance.currentRoomIndex - 1;
-			else if(doorObj.id ==1)
-				tempIndex = GameManager.Instance.currentRoomIndex + 1;
-			Debug.Log("Temp index:" + tempIndex);
-			temp = (string) GameManager.Instance.roomIDList[tempIndex];
-			Debug.Log("Room obtained:" + temp);
-			GameManager.Instance.currentRoomIndex = tempIndex;
-			GameManager.Instance.SetNextX(doorObj.x);
-			GameManager.Instance.SetNextY(doorObj.y);
-			DestoryPlayer();
-			Application.LoadLevel (temp);
-		}
-		else if(doorObj2 != null) {
-			if (doorObj2.id >1){
-				tempIndex = doorObj2.id;
-				temp = (string) GameManager.Instance.getRoomList()[tempIndex];
-			}
-			else{
-				tempIndex = GameManager.Instance.currentRoomIndex;
+			if (doorObj != null) {
+				tempIndex = 0;
+				if (doorObj.id == 0)
+					tempIndex = GameManager.Instance.currentRoomIndex - 1;
+				else if(doorObj.id ==1)
+					tempIndex = GameManager.Instance.currentRoomIndex + 1;
+				Debug.Log("Temp index:" + tempIndex);
 				temp = (string) GameManager.Instance.roomIDList[tempIndex];
+				Debug.Log("Room obtained:" + temp);
+				GameManager.Instance.currentRoomIndex = tempIndex;
+				GameManager.Instance.SetNextX(doorObj.x);
+				GameManager.Instance.SetNextY(doorObj.y);
+				DestoryPlayer();
+				Application.LoadLevel (temp);
+				}
+				else if(doorObj2 != null) {
+					if (doorObj2.id >1){
+						tempIndex = doorObj2.id;
+						temp = (string) GameManager.Instance.rooms[tempIndex];
+					}
+					else{
+						tempIndex = GameManager.Instance.currentRoomIndex;
+						temp = (string) GameManager.Instance.roomIDList[tempIndex];
+					}
+					GameManager.Instance.SetNextX(doorObj2.x);
+					GameManager.Instance.SetNextY(doorObj2.y);
+					DestoryPlayer();
+					Application.LoadLevel (temp);
 			}
-			GameManager.Instance.SetNextX(doorObj2.x);
-			GameManager.Instance.SetNextY(doorObj2.y);
-			DestoryPlayer();
-			Application.LoadLevel (temp);
 		}
 
 	}

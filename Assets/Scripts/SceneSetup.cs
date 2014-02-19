@@ -26,7 +26,6 @@ public class SceneSetup : MonoBehaviour {
 			NPC t = (NPC) Instantiate(Resources.Load<NPC>(n.name));
 			t.playerObj = GameObject.Find("player");
 		}
-
 	}
 	
 	// Update is called once per frame

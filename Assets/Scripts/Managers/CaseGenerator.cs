@@ -45,8 +45,9 @@ public class CaseGenerator : Object {
 
 			foreach(NPC n in GameManager.npcList){
 				npcs.Add(n);
-				GameManager.Instance.addEntry(new DictEntry(n.getEnumName(), n.getGuilt(), n.getWeaponProf(), n.getAlibi(), n.getTrust()));
 			}
+
+
 			foreach (string r in GameManager.roomList) {
 				rooms.Add(r);	
 			}
@@ -75,9 +76,13 @@ public class CaseGenerator : Object {
 		theCase = new Case ();
 		//Debug.LogError ("Generating case");
 		npcs.Shuffle (rng);
+		//Debug.Log("NPC list count in case generator: " + npcs.Count );
 		suspectA = npcs [0];
 		suspectB = npcs [1];
 		suspectC = npcs [2];
+
+
+
 		//Debug.LogError ("Suspects are: " + suspectA +", " + suspectB + " and " + suspectC );
 
 		categories.Shuffle (rng);
@@ -85,9 +90,11 @@ public class CaseGenerator : Object {
 		categoryB = categories [1];
 		categoryC = categories [2];
 
+		//Debug.Log ("SuspectA: " + suspectA + " SuspectB: " + suspectB +" SuspectC: " + suspectC);
 		suspectA.weaponProficiency = categoryA;
 		suspectB.weaponProficiency = categoryB;
 		suspectC.weaponProficiency = categoryC;
+
 
 		//Debug.LogError ("Categories are: " + categoryA +" and " + categoryB );
 
@@ -96,15 +103,14 @@ public class CaseGenerator : Object {
 				weaponsA.Add(w);
 			}
 		}
-		//Debug.LogError ("Made copy of categoryA weapons, size:" + weaponsA.Count);
+		Debug.LogError ("Made copy of categoryA weapons, size:" + weaponsA.Count + " and it is " + categoryA);
 		foreach (CaseObject w in weapons){
 			if (w.category.CompareTo(categoryB) == 0){
 				weaponsB.Add(w);
 			}
 		}
+		Debug.LogError ("Made copy of categoryB weapons, size:" + weaponsB.Count+ " and it is " + categoryB);
 
-		//Debug.LogError ("Made copy of categoryB weapons, size:" + weaponsB.Count+ " and it is " + categoryB);
-		
 		foreach (CaseObject w in weapons){
 			if (w.category.CompareTo(categoryC) == 0){
 				weaponsC.Add(w);
@@ -127,21 +133,19 @@ public class CaseGenerator : Object {
 		this.activateWeapon (weaponA);
 		this.activateWeapon (weaponB);
 
-		Debug.LogError ("Case generated as:");
-		Debug.LogError ("Guilty :" +suspectA+ " who is proficient with "+suspectA.weaponProficiency +" and was in " + suspectA.alibi);
-		Debug.LogError ("Suspect1 :" +suspectB+ " who is proficient with "+suspectB.weaponProficiency +" and was in " + suspectB.alibi);
-		Debug.LogError ("Suspect2 :" +suspectC+ " who is proficient with "+suspectC.weaponProficiency +" and was in " + suspectC.alibi);
+		//Debug.LogError ("Case generated as:");
+		//Debug.LogError ("Guilty :" +suspectA+ " who is proficient with "+suspectA.weaponProficiency +" and was in " + suspectA.alibi);
+		//Debug.LogError ("Suspect1 :" +suspectB+ " who is proficient with "+suspectB.weaponProficiency +" and was in " + suspectB.alibi);
+		//Debug.LogError ("Suspect2 :" +suspectC+ " who is proficient with "+suspectC.weaponProficiency +" and was in " + suspectC.alibi);
 
-		Debug.LogError(weaponA);
-		
+		//Debug.LogError(weaponA);
+
 		theCase.activeWeapons.Add (weaponA);
 		theCase.activeWeapons.Add (weaponB);
 		theCase.activeWeapons.Add (weaponC);
 		theCase.setGuilty (suspectA);
 		theCase.setRoom (roomA);
 		theCase.setWeapon (weaponA);
-
-		GameManager.Instance.printGoal ();
 
 		return theCase;
 	}
@@ -151,11 +155,6 @@ public class CaseGenerator : Object {
 		n.setGuilt (GuiltLevel.guilty);
 		n.alibi = r;
 		GameManager.guilty = n;
-
-		DictEntry newEntry = new DictEntry(n.getEnumName(), GuiltLevel.guilty, n.getWeaponProf(), n.getAlibi(), n.getTrust());
-		newEntry.printEntry ();
-		GameManager.Instance.updateDict( newEntry);
-
 		return n;
 	}	
 
@@ -163,11 +162,6 @@ public class CaseGenerator : Object {
 	private NPC makeSuspect(NPC n, string r){
 		n.setGuilt (GuiltLevel.suspect);
 		n.alibi = r;
-
-		DictEntry newEntry = new DictEntry(n.getEnumName(), GuiltLevel.suspect, n.getWeaponProf(), n.getAlibi(), n.getTrust());
-		newEntry.printEntry ();
-		GameManager.Instance.updateDict( newEntry);
-
 		return n;
 	}
 

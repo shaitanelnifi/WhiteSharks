@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour {
 	public static List<NPC> witnessList = new List<NPC>();
 	public static List<CaseObject> weaponList= new List<CaseObject>();
 	public ArrayList roomIDList;
+	public string[] rooms;
 	public int currentRoomIndex;
 	private string currentMainCharacter;
 	public CaseGenerator generator;
@@ -26,18 +27,12 @@ public class GameManager : MonoBehaviour {
 	public static CaseObject weapon;
 	public static string room;
 
-	//This is the target state the player wishes to reach for maximum score
-	public static Dictionary idealGameState;
-
 	//Handles mouse cursor information
 	public static int cursorSize = 64;
 	public static List<Texture2D> mouseSprites;
 	public static string[] spriteIndex;
 	public static Texture2D currMouse;
 
-	// + case: ArrayList<CaseElement>
-	// + npcs: ArrayList<CaseElement>
-	// + objects: ArrayList<CaseElement>
 
 	public static GameManager Instance {
 		get {
@@ -92,8 +87,6 @@ public class GameManager : MonoBehaviour {
 		_name = "My Character";
 		_currentState = gameStates.INGAME;
 
-		idealGameState = new Dictionary ();
-
 		// Load character select screen
 		Application.LoadLevel ("CharacterSele");
 	}
@@ -102,13 +95,10 @@ public class GameManager : MonoBehaviour {
 	/// Generates the case
 	/// </summary>
 	public void generateCase() {
-
-		Debug.Log (theCase.getRoom());
+		//Debug.Log (theCase.getRoom());
 		theCase = generator.generateCase();
 		//Debug.Log ("the case in GM " + guilty + " " + weapon + " " + room);
-		Debug.Log (theCase.getRoom());
-
-
+		//Debug.Log (theCase.getRoom());
 	}
 
 	/// <summary>
@@ -126,16 +116,7 @@ public class GameManager : MonoBehaviour {
 	public void drawScore() {
 		// draws the score on the screen
 	}
-
-//	public void updateJNPC(NPC n) {
-//
-//	}
-//
-//	public void updateJObject(CaseObject o) {
-//
-//	}
-
-
+	
 	/// <summary>
 	/// Quits the game
 	/// </summary>
@@ -225,23 +206,8 @@ public class GameManager : MonoBehaviour {
 	//Takes in a string based on what kind of object it is that signifies the icon the cursor should be
 	public void updateMouseIcon(string whichSprite){
 		currMouse = (Texture2D)mouseSprites [Array.IndexOf (spriteIndex, whichSprite)];
-		
-	}
 
-
-	//Access function for updating the GameManager's dictionary
-	public void addEntry(DictEntry newEntry){
-		idealGameState.addNewEntry (newEntry);
-	}
-
-	//Access function for adding an entry to the GameManager's dictionary
-	public void updateDict(DictEntry newEntry){
-		idealGameState.updateDictionary (newEntry);
-	}
-
-	//Access function for printing the GameManager's dictionary
-	public void printGoal(){
-		idealGameState.printEntries ();
+		print (currMouse.ToString () + " WHEEEE");
 	}
 
 	//Testing purposes
@@ -254,8 +220,13 @@ public class GameManager : MonoBehaviour {
 
 
 		roomIDList = new ArrayList ();
+		rooms = new string[5];
+		rooms[2] = "bar";
+		rooms[3] = "bellyRoom";
 		roomIDList.Add("stage1");
 		roomIDList.Add("stage2");
+		roomIDList.Add("stage3");
+		roomIDList.Add("stage4");
 		roomList.Add ("Gym");
 		roomList.Add ("Cafe");
 		roomList.Add ("Office");
@@ -271,7 +242,21 @@ public class GameManager : MonoBehaviour {
 		weaponList.Add(Resources.Load<CaseObject>("RadioactiveIceCubes"));
 		weaponList.Add(Resources.Load<CaseObject>("VSs"));
 		generator = new CaseGenerator ();
+		generateCase ();
 
+	}
+
+	public static List<NPC> getSceneNPCList(int sceneID){ 
+		List<NPC> temp = new List<NPC>();
+		foreach (NPC n in npcList) {
+			Debug.Log (n.location + " " + n.name);
+			Debug.Log (sceneID);
+			if (n.location == sceneID){
+				//Debug.Log("Match found");
+				temp.Add(n);
+			}
+				}
+		return temp;
 	}
 
 	public static List<NPC> getSceneWitnessList(int sceneID){ 
@@ -285,17 +270,6 @@ public class GameManager : MonoBehaviour {
 		return temp;
 	}
 
-
-	public static List<NPC> getSceneNPCList(int sceneID){ 
-		List<NPC> temp = new List<NPC>();
-		foreach (NPC n in npcList) {
-			if (n.location == sceneID){
-				//Debug.Log("Match found");
-				temp.Add(n);
-			}
-				}
-		return temp;
-	}
 }
 
 public enum gameStates {

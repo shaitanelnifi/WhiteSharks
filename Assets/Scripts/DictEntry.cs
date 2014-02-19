@@ -10,22 +10,24 @@ using System;
  * their own entries.  Entries are the key to unlocking different dialogue
  * options (they act as preconditions).
 */
-public class DictEntry {
+public class DictEntry : MonoBehaviour {
 	
-	public NPCNames index;			//Look up npcs through a string index (their name)
+	public string index;			//Look up npcs through a string index (their name)
 	public GuiltLevel guilt;		//Their guilt level
 	public Category weapon;			//Their weapon
 	public string location;			//Their location
+	public List<string> relations;	//If the NPC is connected to another somehow, store the other npcs indices here
 	public float trust;				//Their trust
 
-	public DictEntry(NPCNames ind, GuiltLevel gui, Category weap, string loc, float tru){
+	public DictEntry(string ind, GuiltLevel gui, Category weap, string loc, List<string> relat, float tru){
 		index = ind;
 		weapon = weap;
 		location = loc;
+		relations = relat;
 		trust = tru;
 	}
 
-	public NPCNames getIndex(){
+	public string getIndex(){
 		return index;
 	}
 
@@ -41,6 +43,10 @@ public class DictEntry {
 		return location;
 	}
 
+	public List<string> getRelations(){
+		return relations;
+		}
+
 	public float getTrust(){
 		return trust;
 	}
@@ -48,7 +54,7 @@ public class DictEntry {
 	//Print entry to console, useful for testing/debugging
 	//Does not print relations
 	public void printEntry(){
-		Debug.Log ("[ " + index.ToString() + "-> Guilt: " + guilt.ToString () + ", Weapon: " + weapon.ToString () + ", Loc: " + location + 
+		print ("[ " + index + "-> Guilt: " + guilt.ToString () + ", Weapon: " + weapon.ToString () + ", Loc: " + location + 
 						", Trust: " + trust + " ]\n");
 		}
 

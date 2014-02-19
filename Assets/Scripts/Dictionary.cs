@@ -3,25 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 
-public class Dictionary {
+public class Dictionary : MonoBehaviour{
 
 	private List<DictEntry> entries;
 
-	public Dictionary(){
-		entries = new List<DictEntry> ();
-	}
-
-	public int size(){
-		return entries.Count;
-	}
 
 	//Search for the ListIndex (as int) of a DictEntry (its index is a string), returns -1 if not found
-	public int findIndex(NPCNames indexToFind){
+	public int findIndex(string indexToFind){
 
 		for (int i = 0; i < entries.Count; i++) {
-			NPCNames dictIndex = entries[i].getIndex ();
+			string dictIndex = entries[i].getIndex ();
 
-			if (dictIndex == indexToFind){
+			if (dictIndex.Equals(indexToFind)){
 				return i;
 			}
 
@@ -52,13 +45,13 @@ public class Dictionary {
 			return true;
 		}
 
-		Debug.Log("Could not find entry by the index:     " + newEntry.getIndex ());
+		print("Could not find entry by the index:     " + newEntry.getIndex ());
 		return false;
 
 	}
 
 	//Look in the dictionary for an entry with the given index
-	public DictEntry retrieveEntry(NPCNames lookupIndex){
+	public DictEntry retrieveEntry(string lookupIndex){
 
 		int tempIndex = findIndex (lookupIndex);
 
@@ -66,15 +59,9 @@ public class Dictionary {
 			return entries[tempIndex];
 		}
 
-		Debug.Log("Could not find entry by the index:     " + lookupIndex);
+		print("Could not find entry by the index:     " + lookupIndex);
 		return null;
 
-	}
-
-	//Access dictionary by an int value (like a list/array)
-	public DictEntry this[int i]{
-		get{ return this.entries [i];}
-		set{ this.entries [i] = value;}
 	}
 
 
