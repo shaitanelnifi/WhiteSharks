@@ -119,11 +119,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: y
-      value: -6.16793203
+      value: -6.86458921
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: x
-      value: -10.5451899
+      value: .675700903
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_Enabled
@@ -677,8 +677,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  x: -10.5451899
-  y: -6.16793203
+  x: .675700903
+  y: -6.86458921
 --- !u!50 &1474080304
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1004,3 +1004,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleX: 0
   scaleY: 0
+  id: 0
