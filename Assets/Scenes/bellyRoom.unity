@@ -138,6 +138,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleX: 0
   scaleY: 0
+  maxY: -2.0999999
+  minY: -4.4000001
+  minScale: .899999976
+  maxScale: 1.10000002
+  id: 6
 --- !u!1 &988993997
 GameObject:
   m_ObjectHideFlags: 0

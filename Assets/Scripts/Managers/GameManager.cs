@@ -27,6 +27,9 @@ public class GameManager : MonoBehaviour {
 	public static CaseObject weapon;
 	public static string room;
 
+	//This is the target state the player wishes to reach for maximum score
+	public static Dictionary idealGameState;
+
 	//Handles mouse cursor information
 	public static int cursorSize = 64;
 	public static List<Texture2D> mouseSprites;
@@ -86,6 +89,7 @@ public class GameManager : MonoBehaviour {
 		_currLevel = "Level 1";
 		_name = "My Character";
 		_currentState = gameStates.INGAME;
+		idealGameState = new Dictionary ();
 
 		// Load character select screen
 		Application.LoadLevel ("CharacterSele");
@@ -177,9 +181,21 @@ public class GameManager : MonoBehaviour {
 
 	}
 
-	void Update() {
-		//print ("Test??");
+	//Access function for updating the GameManager's dictionary
+	public void addEntry(DictEntry newEntry){
+		idealGameState.addNewEntry (newEntry);
 	}
+	
+	//Access function for adding an entry to the GameManager's dictionary
+	public void updateDict(DictEntry newEntry){
+		idealGameState.updateDictionary (newEntry);
+	}
+	
+	//Access function for printing the GameManager's dictionary
+	public void printGoal(){
+		idealGameState.printEntries ();
+	}
+
 
 	//Initialize the sprite array for the mouse to draw
 	//Loads in from Sprites/Mouse Icons
@@ -243,6 +259,7 @@ public class GameManager : MonoBehaviour {
 		weaponList.Add(Resources.Load<CaseObject>("VSs"));
 		generator = new CaseGenerator ();
 		generateCase ();
+
 
 	}
 

@@ -831,9 +831,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 546e4042cc205e14bb0c655ff9ec24f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleX: 0
-  scaleY: 0
-  id: 0
+  scaleX: 1
+  scaleY: 1
+  maxY: -6
+  minY: -8
+  minScale: .370000005
+  maxScale: .649999976
+  id: 4
 --- !u!1001 &2007506676
 Prefab:
   m_ObjectHideFlags: 0
