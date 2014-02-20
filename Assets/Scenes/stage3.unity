@@ -151,7 +151,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a469d30d1e765974c87160172a7f21e0, type: 2}
       propertyPath: m_Name
-      value: sceneDoor
+      value: doornext
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a469d30d1e765974c87160172a7f21e0, type: 2}
       propertyPath: m_LocalScale.x
@@ -235,7 +235,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 3}
   m_Center: {x: 0, y: 0}
 --- !u!4 &168480581
 Transform:
@@ -244,7 +244,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 168480578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.27868342, y: -6.09484625, z: -2.40234375}
+  m_LocalPosition: {x: 5.47378492, y: -7.71383429, z: -2.40234375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -461,19 +461,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[2].x
-      value: 1.67720675
+      value: 2.64375019
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[2].y
-      value: -3.5137887
+      value: -1.21498251
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[3].x
-      value: -2.55496693
+      value: -1.11821318
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[3].y
-      value: -3.37333441
+      value: -1.0222826
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[4].x
@@ -866,7 +866,7 @@ GameObject:
   - 50: {fileID: 756252716}
   - 114: {fileID: 756252715}
   m_Layer: 10
-  m_Name: sceneDoor
+  m_Name: doornext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -880,11 +880,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 756252714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a679c3e68773fb48b69687ccd070cf4, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 2
-  x: 14.2839003
+  id: 1
+  x: .5
   y: -8.46453762
 --- !u!50 &756252716
 Rigidbody2D:
@@ -1074,8 +1074,8 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -1.06988001, y: -.822227478}
       - {x: 2.93101931, y: -1.09629059}
-      - {x: 1.67720675, y: -3.5137887}
-      - {x: -2.55496693, y: -3.37333441}
+      - {x: 2.64375019, y: -1.21498251}
+      - {x: -1.11821318, y: -1.0222826}
 --- !u!50 &1049646232
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1596,7 +1596,7 @@ GameObject:
   - 4: {fileID: 1991934203}
   - 212: {fileID: 1991934202}
   - 114: {fileID: 1991934204}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: scene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1621,9 +1621,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
+  m_SortingLayer: 1
   m_SortingOrder: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 3985949495
   m_Sprite: {fileID: 21300000, guid: 76163fa43405a19468b1ea4a99249db0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1991934203
@@ -1650,7 +1650,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleX: .362595588
   scaleY: .362596005
-  id: 2
+  maxY: -5.5999999
+  minY: -7.5999999
+  minScale: .300000012
+  maxScale: .375
+  id: 0
 --- !u!1 &2010867274
 GameObject:
   m_ObjectHideFlags: 0

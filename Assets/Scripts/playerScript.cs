@@ -73,35 +73,30 @@ public class playerScript : CaseElement {
 			}
 		}
 	//Fixing scale (if it works lol)
+
+	float scale = calcScale ();
+	transform.localScale = new Vector2 (scale, scale);
+
+	}
+
+	//Calculate the proper scaling for the avatar using scene traits
+	private float calcScale(){
 		float currY = transform.position.y;
 		//Debug.LogError (currentRoom);
-
+		
 		float scale = 0f;
+		float slope = -1 * (scaleInfo [1] - scaleInfo [0]) / (scaleInfo [3] - scaleInfo [2]);
+		
+		scale = slope * (currY - scaleInfo[3]) + scaleInfo[0];
 
-		//scale = slope * (currY - scaleInfo[3] ) - scaleInfo[0];
+		//Ensures they don't go too small or too big.
+		if (scale > scaleInfo[1])
+			scale = scaleInfo[1];
+		else if (scale < scaleInfo[0])
+			scale = scaleInfo[0];
 
-		switch (currentRoom) {
-		case 0:
-			transform.localScale = new Vector2( currY * (-.08f) + (.67f),currY * (-.08f) + (.67f));
-			break;
-		case 1:
-			transform.localScale = new Vector2(currY / (-5.09f),currY / (-5.09f));
-			break;
-		case 2:
-			transform.localScale = new Vector2(-0.08f * currY - 0.03f, -0.08f * currY - 0.03f);
-			break;
-		case 3:
-			transform.localScale = new Vector2(-0.25f * currY -1.12f, -0.25f * currY -1.12f);
-			break;
-		case 4:
-			transform.localScale = new Vector2(-0.17f * currY + 0.42f, -0.17f * currY + 0.42f);
-			break;
-		case 5:
-			transform.localScale = new Vector2(-0.15f * currY - 0.35f, -0.15f * currY - 0.35f);
-			break;
-		}
-	
-	
+		return scale;
+
 	}
 
 	//returns true if the collide object is type PolygonCollider2D
