@@ -4706,7 +4706,7 @@ MonoBehaviour:
   minY: -5.5
   minScale: .899999976
   maxScale: 1.14999998
-  id: 0
+  id: 1
 --- !u!1 &1896030520
 GameObject:
   m_ObjectHideFlags: 0

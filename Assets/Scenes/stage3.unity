@@ -884,8 +884,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
-  x: .5
-  y: -8.46453762
+  x: 15
+  y: -8.69999981
 --- !u!50 &756252716
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1654,7 +1654,7 @@ MonoBehaviour:
   minY: -7.5999999
   minScale: .300000012
   maxScale: .375
-  id: 0
+  id: 3
 --- !u!1 &2010867274
 GameObject:
   m_ObjectHideFlags: 0

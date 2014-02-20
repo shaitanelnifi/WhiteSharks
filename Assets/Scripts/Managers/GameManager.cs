@@ -237,11 +237,11 @@ public class GameManager : MonoBehaviour {
 
 		roomIDList = new ArrayList ();
 		rooms = new string[5];
-		rooms[2] = "bar";
 		rooms[3] = "bellyRoom";
 		roomIDList.Add("stage1");
 		roomIDList.Add("stage2");
 		roomIDList.Add("stage3");
+		roomIDList.Add("bar");
 		roomIDList.Add("stage4");
 		roomList.Add ("Gym");
 		roomList.Add ("Cafe");
@@ -259,6 +259,7 @@ public class GameManager : MonoBehaviour {
 		weaponList.Add(Resources.Load<CaseObject>("VSs"));
 		generator = new CaseGenerator ();
 		generateCase ();
+
 
 	}
 
