@@ -61,14 +61,15 @@ MonoBehaviour:
   conversationObj: {fileID: 0}
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
-  weaponProficiency: 4
+  weaponProficiency: 1
   highClass: 1
   alibi: Cafe
   scene: scene1
   personalSentence: 
   convo: 
   convoBubble: {fileID: 0}
-  npcKnowledge: {fileID: 0}
+  trust: 0
+  enumName: 4
   mouseOverIcon: Speech_Icon
 --- !u!212 &21200000
 SpriteRenderer:

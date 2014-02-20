@@ -71,7 +71,8 @@ MonoBehaviour:
   personalSentence: 'Oh well, you know... '
   convo: Oh well, you know...  I was in the Finn.
   convoBubble: {fileID: 0}
-  npcKnowledge: {fileID: 0}
+  trust: 0
+  enumName: 7
   mouseOverIcon: Speech_Icon
 --- !u!212 &21200000
 SpriteRenderer:

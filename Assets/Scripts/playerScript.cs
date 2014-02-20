@@ -26,6 +26,7 @@ public class playerScript : CaseElement {
 	public bool canWalk;
 	public int currentRoom;
 	private int counter = 0;
+	public float[] scaleInfo = new float[4]{0f, 0f, 0f, 0f};
 
 
 
@@ -74,6 +75,11 @@ public class playerScript : CaseElement {
 	//Fixing scale (if it works lol)
 		float currY = transform.position.y;
 		//Debug.LogError (currentRoom);
+
+		float scale = 0f;
+
+		//scale = slope * (currY - scaleInfo[3] ) - scaleInfo[0];
+
 		switch (currentRoom) {
 		case 0:
 			transform.localScale = new Vector2( currY * (-.08f) + (.67f),currY * (-.08f) + (.67f));
