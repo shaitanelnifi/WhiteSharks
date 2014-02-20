@@ -41,6 +41,10 @@ public class playerScript : CaseElement {
 			}
 	}
 
+	public void moveTarget(Vector2 adjust){
+		targetPosition = targetPosition + adjust;
+	}
+
 	void FixedUpdate(){	
 		if(canWalk){
 			float distance;
