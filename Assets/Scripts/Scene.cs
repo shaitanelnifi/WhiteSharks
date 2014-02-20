@@ -10,6 +10,7 @@ public class Scene : MonoBehaviour {
 	public int id;
 	// Use this for initialization
 	void Start () {
+
 		string temp = (string)GameManager.Instance.GetMainCharacter ();
 		player = (GameObject)Instantiate(Resources.Load((temp)));
 		Vector2 tempVec = transform.position;
