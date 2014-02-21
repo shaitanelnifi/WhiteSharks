@@ -20,6 +20,7 @@ public class DictEntry {
 
 	public DictEntry(NPCNames ind, GuiltLevel gui, Category weap, string loc, float tru){
 		index = ind;
+		guilt = gui;
 		weapon = weap;
 		location = loc;
 		trust = tru;
@@ -48,7 +49,7 @@ public class DictEntry {
 	//Print entry to console, useful for testing/debugging
 	//Does not print relations
 	public void printEntry(){
-		Debug.Log ("[ " + index.ToString() + "-> Guilt: " + guilt.ToString () + ", Weapon: " + weapon.ToString () + ", Loc: " + location + 
+		Debug.LogWarning ("[ " + index.ToString() + "-> Guilt: " + guilt.ToString () + ", Weapon: " + weapon.ToString () + ", Loc: " + location + 
 					", Trust: " + trust + " ]\n");
 		}
 

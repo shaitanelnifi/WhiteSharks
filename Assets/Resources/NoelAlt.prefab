@@ -61,18 +61,15 @@ MonoBehaviour:
   location: 3
   visible: 1
   defaultIcon: Walk_Icon
-  conversationObj: {fileID: 0}
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
   weaponProficiency: 5
   highClass: 1
   alibi: F
   scene: scene1
-  personalSentence: 'Oh well, you know... '
-  convo: Oh well, you know...  I was in the Finn.
-  convoBubble: {fileID: 0}
   trust: 0
   enumName: 7
+  relations: 040000000600000005000000070000000800000009000000
   mouseOverIcon: Speech_Icon
 --- !u!212 &21200000
 SpriteRenderer:

@@ -4,8 +4,8 @@ using System.Collections;
 public enum GuiltLevel
 {
 	guilty=1,
-	suspect,
-	witness,
+	suspect=2,
+	witness=3,
 	unrelated = -1
 };
 

@@ -20,6 +20,7 @@ public class Conversation {
 	//Most of these values should be set by game manager, but if somehow need change, this method
 	//will update them 
 	public void generateDialoguer(){
+	
 		
 		Dialoguer.StartDialogue ((int)discTree[0]);
 		
@@ -44,18 +45,25 @@ public class Conversation {
 		 */
 		
 		foreach (NPCNames i in discTree) {
-			
+
+			//Debug.LogError (i.ToString ());
+
 			DictEntry curr = convTopics.retrieveEntry(i);
-			
-			int idConversion = (int)curr.getIndex();
+
+			int idNum = (int)curr.getIndex ();
+			int idConversion = idNum;
 			idConversion = (2 * idConversion) - 7; //Some formula goes here
+
+			//Debug.LogWarning (idConversion);
+
+			Dialoguer.SetGlobalFloat(idNum - 3, curr.getTrust ());
 			
-			Dialoguer.SetGlobalString(idConversion, curr.getWeapon().ToString());
-			Dialoguer.SetGlobalFloat(idConversion, curr.getTrust ());
-			
-			if ((int)curr.getGuilt() >= (int) GuiltLevel.suspect)
-			Dialoguer.SetGlobalString(idConversion + 1, curr.getLocation());
-			
+			if ((int)curr.getGuilt() <= (int) GuiltLevel.suspect){
+				Dialoguer.SetGlobalString(idConversion, curr.getWeapon().ToString());
+				Dialoguer.SetGlobalString(idConversion + 1, curr.getLocation());
+			} else {
+				Dialoguer.SetGlobalString(idNum, curr.getWeapon().ToString());
+			}
 		}
 		
 		
@@ -71,11 +79,11 @@ public class Conversation {
 			journal.Instance.updateKnowledge (newInfo);
 		}
 		
-		public Conversation(string avatar, Dictionary npcKnow, List<NPCNames> theIndex){
+		public Conversation(string avatar, List<NPCNames> theIndex){
 			
 			discTree = theIndex;
 			archeType = avatar;
-			convTopics = npcKnow;
+			convTopics = new Dictionary(GameManager.Instance.getDict ());
 
 		}
 

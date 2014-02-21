@@ -59,18 +59,15 @@ MonoBehaviour:
   location: 4
   visible: 1
   defaultIcon: Walk_Icon
-  conversationObj: {fileID: 0}
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
-  weaponProficiency: -2
+  weaponProficiency: 4
   highClass: 0
   alibi: F
   scene: scene1
-  personalSentence: 'I''m glad you asked! '
-  convo: I'm glad you asked!  I was in the Belly.
-  convoBubble: {fileID: 0}
   trust: 0
   enumName: 9
+  relations: 040000000500000006000000070000000800000009000000
   mouseOverIcon: Speech_Icon
 --- !u!212 &21200000
 SpriteRenderer:

@@ -1,17 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &100100000
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications: []
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 0}
-  m_IsPrefabParent: 1
-  m_IsExploded: 1
 --- !u!1 &100000
 GameObject:
   m_ObjectHideFlags: 0
@@ -66,22 +54,19 @@ MonoBehaviour:
   elementName: Josh Susach
   description: He's a criminal. He's an artist. He's proud of both.
   profileImage: {fileID: 21300000, guid: afc84d6b7bbcc4640bfc029ee976f0e5, type: 3}
-  guilt: 2
+  guilt: 1
   location: 6
   visible: 1
   defaultIcon: Walk_Icon
-  conversationObj: {fileID: 0}
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
   weaponProficiency: 5
   highClass: 1
-  alibi: Gym
+  alibi: Office
   scene: scene1
-  personalSentence: 
-  convo: 
-  convoBubble: {fileID: 0}
   trust: 0
   enumName: 6
+  relations: 040000000500000006000000070000000800000009000000
   mouseOverIcon: Speech_Icon
 --- !u!212 &21200000
 SpriteRenderer:

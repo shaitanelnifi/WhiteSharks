@@ -176,8 +176,9 @@ public class GameManager : MonoBehaviour {
 
 		//Handle mouse updates here
 
-		GUI.DrawTexture (new Rect (Input.mousePosition.x - cursorSize / 2 + 1, (Screen.height - Input.mousePosition.y) - cursorSize / 2 + 1,
-		                      cursorSize, cursorSize), currMouse);
+		GUI.DrawTexture (new Rect (Input.mousePosition.x - cursorSize / 16, (Screen.height - Input.mousePosition.y) - cursorSize / 16,
+		                           cursorSize, cursorSize), currMouse);
+
 
 	}
 
@@ -194,6 +195,11 @@ public class GameManager : MonoBehaviour {
 	//Access function for printing the GameManager's dictionary
 	public void printGoal(){
 		idealGameState.printEntries ();
+	}
+
+	//Access function for copying the dictionary
+	public Dictionary getDict(){
+		return idealGameState;
 	}
 
 
@@ -226,6 +232,17 @@ public class GameManager : MonoBehaviour {
 		print (currMouse.ToString () + " WHEEEE");
 	}
 
+	private void addWitnesses(){
+
+		foreach (NPC n in witnessList) {
+
+			idealGameState.addNewEntry(new DictEntry(n.getEnumName(), GuiltLevel.witness,
+			                                         n.getWeaponProf(), n.getAlibi(), n.getTrust()));
+
+		}
+
+	}
+
 	//Testing purposes
 	void Start(){
 		//start location
@@ -234,9 +251,16 @@ public class GameManager : MonoBehaviour {
 		//For a changing cursor, load in all of its sprites into the list
 		setIcons ();
 
+		// Used for Dialoguer components
+		Debug.Log ("Persocets, Adderall, Ecstasy, PMW");
+		DialogueGUI dGUI = gameObject.AddComponent<DialogueGUI> ();
+		dGUI.setSkin(Resources.Load ("OldSchool") as GUISkin);
+		dGUI.setTexture(Resources.Load ("DialogueBoxDiagonalLines") as Texture2D);
+
 
 		roomIDList = new ArrayList ();
 		rooms = new string[5];
+		rooms[2] = "bar";
 		rooms[3] = "bellyRoom";
 		roomIDList.Add("stage1");
 		roomIDList.Add("stage2");
@@ -260,7 +284,9 @@ public class GameManager : MonoBehaviour {
 		generator = new CaseGenerator ();
 		generateCase ();
 
+		addWitnesses ();
 
+		printGoal ();
 	}
 
 	public static List<NPC> getSceneNPCList(int sceneID){ 

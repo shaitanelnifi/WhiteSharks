@@ -10,7 +10,7 @@ public class NPC : CaseElement {
 		conversation
 	};
 	
-	public GameObject conversationObj, playerObj;
+	public GameObject playerObj;
 	public BoxCollider2D box;
 
 	//NPC specific data fields
@@ -19,12 +19,10 @@ public class NPC : CaseElement {
 	public string alibi;			//A set of info that represents an alibi, requires another npc, location
 	public ArrayList animations;		//An array list of sprites representing the animation
 	public string scene;
-	public string personalSentence;
-	public string convo;
-	public GameObject convoBubble;
 
 	public float trust;
 	public NPCNames enumName;
+	public List<NPCNames> relations;
 	private Conversation convSetup;
 	
 	public Dictionary npcKnowledge;
@@ -33,21 +31,12 @@ public class NPC : CaseElement {
 	public string mouseOverIcon = "Speech_Icon";
 
 	void Start(){
-		convoBubble = GameObject.Find ("Conversation Bubble");
+
 
 		npcKnowledge = new Dictionary ();
 		npcKnowledge.addNewEntry (new DictEntry(enumName, guilt, weaponProficiency, scene, trust));
-		
-		List<NPCNames> indexSet = new List<NPCNames>();
-		
-		for (int i = 0; i < npcKnowledge.size (); i++){
-			DictEntry temp = npcKnowledge[i];
-			indexSet.Add (temp.getIndex ());
-		}
-		
-		indexSet.Insert (0, enumName);
-		
-		convSetup = new Conversation (GameManager.Instance.GetMainCharacter(), npcKnowledge, indexSet);
+
+		convSetup = new Conversation (GameManager.Instance.GetMainCharacter(), relations);
 
 	}
 	
@@ -60,7 +49,7 @@ public class NPC : CaseElement {
 		if(Input.GetMouseButton(0)){
 
 			convSetup.generateDialoguer();
-			GameManager.npcList.Find(x => x.elementName.CompareTo(this.elementName) == 0).setVisible(true);
+			//GameManager.npcList.Find(x => x.elementName.CompareTo(this.elementName) == 0).setVisible(true);
 
 			/*
 			//conversationObj.renderer.enabled = true;
@@ -85,6 +74,11 @@ public class NPC : CaseElement {
 	}
 	
 	public string getAlibi(){
+
+		if (alibi == "") {
+			alibi = (string) GameManager.Instance.roomIDList[location];
+		}
+
 		return alibi;
 	}
 	

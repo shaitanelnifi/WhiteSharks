@@ -63,6 +63,7 @@ public class CaseGenerator : Object {
 		categories.Remove (Category.PersonalItem);
 		categories.Remove (Category.Miscellaneous);
 		categories.Remove (Category.unrelated);
+
 		}
 
 
@@ -100,26 +101,31 @@ public class CaseGenerator : Object {
 		//Debug.LogError ("Categories are: " + categoryA +" and " + categoryB );
 
 		foreach (CaseObject w in weapons){
+			//Debug.LogWarning(w.getElementName());
 			if (w.category.CompareTo(categoryA) == 0){
 				weaponsA.Add(w);
 			}
 		}
 		Debug.LogError ("Made copy of categoryA weapons, size:" + weaponsA.Count + " and it is " + categoryA);
 		foreach (CaseObject w in weapons){
+			//Debug.LogWarning(w.getElementName());
 			if (w.category.CompareTo(categoryB) == 0){
 				weaponsB.Add(w);
+
 			}
 		}
 		Debug.LogError ("Made copy of categoryB weapons, size:" + weaponsB.Count+ " and it is " + categoryB);
 
 		foreach (CaseObject w in weapons){
+			//Debug.LogWarning(w.getElementName());
 			if (w.category.CompareTo(categoryC) == 0){
 				weaponsC.Add(w);
+
 			}
 		}
 
-		weaponA = weaponsA [Random.Range (0, weaponsA.Count)];
-		weaponB = weaponsB [Random.Range (0, weaponsB.Count)];
+		weaponA = weaponsA [Random.Range (0, weaponsA.Count-1)];
+		weaponB = weaponsB [Random.Range (0, weaponsB.Count-1)];
 
 		rooms.Shuffle (rng);
 		roomA = rooms [0];
@@ -148,7 +154,7 @@ public class CaseGenerator : Object {
 		theCase.setRoom (roomA);
 		theCase.setWeapon (weaponA);
 
-		GameManager.Instance.printGoal ();
+		//GameManager.Instance.printGoal ();
 
 		return theCase;
 	}
@@ -157,8 +163,8 @@ public class CaseGenerator : Object {
 	private NPC makeGuilty(NPC n, string r){
 		n.setGuilt (GuiltLevel.guilty);
 		n.alibi = r;
-		DictEntry newEntry = new DictEntry(n.getEnumName(), GuiltLevel.guilty, n.getWeaponProf(), n.getAlibi(), n.getTrust());
-		newEntry.printEntry ();
+		DictEntry newEntry = new DictEntry(n.getEnumName(), n.getGuilt (), n.getWeaponProf(), n.getAlibi(), n.getTrust());
+		//newEntry.printEntry ();
 		GameManager.Instance.updateDict( newEntry);
 		GameManager.guilty = n;
 		return n;
@@ -168,8 +174,8 @@ public class CaseGenerator : Object {
 	private NPC makeSuspect(NPC n, string r){
 		n.setGuilt (GuiltLevel.suspect);
 		n.alibi = r;
-		DictEntry newEntry = new DictEntry(n.getEnumName(), GuiltLevel.suspect, n.getWeaponProf(), n.getAlibi(), n.getTrust());
-		newEntry.printEntry ();
+		DictEntry newEntry = new DictEntry(n.getEnumName(), n.getGuilt(), n.getWeaponProf(), n.getAlibi(), n.getTrust());
+		//newEntry.printEntry ();
 		GameManager.Instance.updateDict( newEntry);
 
 		return n;

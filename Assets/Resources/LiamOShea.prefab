@@ -54,22 +54,19 @@ MonoBehaviour:
   elementName: Liam O'Shea
   description: Liam is a guard at the Fin.
   profileImage: {fileID: 21300000, guid: 8b98b68a3e5434fde8a6cef5f4ee29ca, type: 3}
-  guilt: 1
+  guilt: 2
   location: 3
   visible: 0
   defaultIcon: Walk_Icon
-  conversationObj: {fileID: 0}
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
   weaponProficiency: 1
   highClass: 1
-  alibi: Cafe
+  alibi: Gym
   scene: scene1
-  personalSentence: 
-  convo: 
-  convoBubble: {fileID: 0}
   trust: 0
   enumName: 4
+  relations: 040000000500000006000000070000000800000009000000
   mouseOverIcon: Speech_Icon
 --- !u!212 &21200000
 SpriteRenderer:
