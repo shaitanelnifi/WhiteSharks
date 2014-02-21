@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour {
 	public static Dictionary idealGameState;
 
 	//Handles mouse cursor information
-	public static int cursorSize = 64;
+	public static int cursorSize = 32;
 	public static List<Texture2D> mouseSprites;
 	public static string[] spriteIndex;
 	public static Texture2D currMouse;
