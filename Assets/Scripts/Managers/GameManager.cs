@@ -267,23 +267,23 @@ public class GameManager : MonoBehaviour {
 		roomIDList.Add("stage3");
 		roomIDList.Add("bar");
 		roomIDList.Add("stage4");
-		roomList.Add ("Gym");
-		roomList.Add ("Cafe");
 		roomList.Add ("Office");
+		roomList.Add ("Cafe");
+		roomList.Add ("Gym");
 		npcList.Add(Resources.Load<NPC>("LiamOShea"));
 		npcList.Add(Resources.Load<NPC>("NinaWalker"));
 		npcList.Add(Resources.Load<NPC>("JoshSusach"));
 		witnessList.Add(Resources.Load<NPC>("NoelAlt"));
 		witnessList.Add(Resources.Load<NPC>("PeijunShi"));
 		witnessList.Add(Resources.Load<NPC>("CarlosFranco"));
-		weaponList.Add(Resources.Load<CaseObject>("eSword"));
 		weaponList.Add(Resources.Load<CaseObject>("LaserPistol"));
+		weaponList.Add(Resources.Load<CaseObject>("eSword"));
 		weaponList.Add(Resources.Load<CaseObject>("MetalPipe"));
 		weaponList.Add(Resources.Load<CaseObject>("RadioactiveIceCubes"));
 		weaponList.Add(Resources.Load<CaseObject>("VSs"));
 		generator = new CaseGenerator ();
-		generateCase ();
-
+		//generateCase ();
+		theCase = generator.demo ();
 		addWitnesses ();
 
 		printGoal ();
