@@ -119,13 +119,17 @@ public class CaseGenerator : Object {
 		foreach (CaseObject w in weapons){
 			//Debug.LogWarning(w.getElementName());
 			if (w.category.CompareTo(categoryC) == 0){
+
 				weaponsC.Add(w);
 
 			}
 		}
 
+		Debug.LogError ("Made copy of categoryC weapons, size:" + weaponsC.Count+ " and it is " + categoryC);
+
 		weaponA = weaponsA [Random.Range (0, weaponsA.Count-1)];
 		weaponB = weaponsB [Random.Range (0, weaponsB.Count-1)];
+		weaponC = weaponsC [Random.Range (0, weaponsB.Count-1)];
 
 		rooms.Shuffle (rng);
 		roomA = rooms [0];
@@ -150,6 +154,7 @@ public class CaseGenerator : Object {
 		theCase.activeWeapons.Add (weaponA);
 		theCase.activeWeapons.Add (weaponB);
 		theCase.activeWeapons.Add (weaponC);
+		Debug.Log ("wpC "+ weaponC);
 		theCase.setGuilty (suspectA);
 		theCase.setRoom (roomA);
 		theCase.setWeapon (weaponA);
