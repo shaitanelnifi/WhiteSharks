@@ -57,7 +57,6 @@ MonoBehaviour:
   guilt: 2
   location: 3
   defaultIcon: Walk_Icon
-  conversationObj: {fileID: 0}
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
   placed: 0
@@ -65,11 +64,9 @@ MonoBehaviour:
   highClass: 1
   alibi: Gym
   scene: scene1
-  personalSentence: 
-  convo: 
-  convoBubble: {fileID: 0}
   trust: 0
   enumName: 4
+  relations: 040000000500000006000000070000000800000009000000
   mouseOverIcon: Speech_Icon
 --- !u!212 &21200000
 SpriteRenderer:

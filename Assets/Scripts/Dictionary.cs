@@ -10,9 +10,17 @@ public class Dictionary {
 	public Dictionary(){
 		entries = new List<DictEntry> ();
 	}
+
+	public Dictionary(Dictionary other){
+		entries = new List<DictEntry> (other.retrieveList ());
+	}
 	
 	public int size(){
 		return entries.Count;
+	}
+
+	public List<DictEntry> retrieveList(){
+		return entries;
 	}
 
 	//Search for the ListIndex (as int) of a DictEntry (its index is a string), returns -1 if not found

@@ -42,7 +42,7 @@ MonoBehaviour:
   elementName: Laser Pistol
   description: Pew pew pew.
   profileImage: {fileID: 0}
-  guilt: 0
+  guilt: 1
   location: 0
   visible: 0
   defaultIcon: Walk_Icon
