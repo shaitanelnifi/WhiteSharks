@@ -274,7 +274,7 @@ Transform:
   m_GameObject: {fileID: 644375707}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .00416666688, y: .00416666688, z: .00416666688}
+  m_LocalScale: {x: .00515463902, y: .00515463902, z: .00515463902}
   m_Children:
   - {fileID: 1440420576}
   - {fileID: 1316198425}
@@ -387,7 +387,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 884117123}
   - 114: {fileID: 884117122}
-  - 114: {fileID: 884117124}
   m_Layer: 9
   m_Name: Top layer
   m_TagString: Untagged
@@ -454,20 +453,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1316198425}
---- !u!114 &884117124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 884117121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0be27bbc755a84aabb4ef650691cbe46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  start: {fileID: 0}
-  options: {fileID: 0}
-  quit: {fileID: 0}
 --- !u!1 &894516797
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,7 +563,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 969305412}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ea502f8f20864769b1ead8488b6c082, type: 3}
   m_Name: 
@@ -1104,7 +1089,7 @@ MonoBehaviour:
   animateSmoothly: 0
   sorted: 1
   hideInactive: 1
-  keepWithinPanel: 1
+  keepWithinPanel: 0
 --- !u!1 &1938049273
 GameObject:
   m_ObjectHideFlags: 0
