@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour {
 	public static Dictionary idealGameState;
 
 	//Handles mouse cursor information
-	public static int cursorSize = 64;
+	public static int cursorSize = 32;
 	public static List<Texture2D> mouseSprites;
 	public static string[] spriteIndex;
 	public static Texture2D currMouse;
@@ -176,7 +176,7 @@ public class GameManager : MonoBehaviour {
 
 		//Handle mouse updates here
 
-		GUI.DrawTexture (new Rect (Input.mousePosition.x - cursorSize / 2 + 1, (Screen.height - Input.mousePosition.y) - cursorSize / 2 + 1,
+		GUI.DrawTexture (new Rect (Input.mousePosition.x - cursorSize/4 + 4, (Screen.height - Input.mousePosition.y) - cursorSize / 2 + 10,
 		                      cursorSize, cursorSize), currMouse);
 
 	}
@@ -223,7 +223,7 @@ public class GameManager : MonoBehaviour {
 	public void updateMouseIcon(string whichSprite){
 		currMouse = (Texture2D)mouseSprites [Array.IndexOf (spriteIndex, whichSprite)];
 
-		print (currMouse.ToString () + " WHEEEE");
+		//print (currMouse.ToString () + " WHEEEE");
 	}
 
 	//Testing purposes

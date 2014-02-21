@@ -12,6 +12,7 @@ public class NPC : CaseElement {
 	
 	public GameObject conversationObj, playerObj;
 	public BoxCollider2D box;
+	public bool placed = false;
 
 	//NPC specific data fields
 	public Category weaponProficiency;	//What kinds of weapons is the NPC skilled with
