@@ -48,6 +48,8 @@ public class NPC : CaseElement {
 	public void OnMouseDown(){
 		if(Input.GetMouseButton(0)){
 
+			playerScript temp = (playerScript) FindObjectOfType(typeof(playerScript));
+			temp.canWalk = false;
 			convSetup.generateDialoguer();
 			//GameManager.npcList.Find(x => x.elementName.CompareTo(this.elementName) == 0).setVisible(true);
 

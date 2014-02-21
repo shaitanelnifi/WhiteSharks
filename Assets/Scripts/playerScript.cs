@@ -23,7 +23,7 @@ public class playerScript : CaseElement {
 	Vector2 targetPosition;
 	Vector2 direction;
 	Vector2 closestColl;
-	public bool canWalk;
+	public bool canWalk = true;
 	public int currentRoom;
 	private int counter = 0;
 	public float[] scaleInfo = new float[4]{0f, 0f, 0f, 0f};
