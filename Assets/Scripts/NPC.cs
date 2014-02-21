@@ -36,7 +36,7 @@ public class NPC : CaseElement {
 		npcKnowledge = new Dictionary ();
 		npcKnowledge.addNewEntry (new DictEntry(enumName, guilt, weaponProficiency, scene, trust));
 
-		convSetup = new Conversation (GameManager.Instance.GetMainCharacter(), relations);
+		convSetup = new Conversation (GameManager.Instance.GetMainCharacter(), relations, npcKnowledge[0].getIndex());
 
 	}
 	

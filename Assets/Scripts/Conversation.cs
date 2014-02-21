@@ -14,16 +14,17 @@ public class Conversation {
 	private string archeType;		//Keeps track of which player archeType was chosen for inserting into strings		
 	
 	private List<NPCNames> discTree; //Indices to check the Dictionary with
+	private NPCNames whoAmI;
 	
 	//This method sets up the global variables in Dialoguer.  It translates from the DictEntry's in 
 	//convTopics to get the required strings and booleans that are the only types Dialoguer accepts
 	//Most of these values should be set by game manager, but if somehow need change, this method
 	//will update them 
 	public void generateDialoguer(){
-	
-		
-		Dialoguer.StartDialogue ((int)discTree[0]);
-		
+
+		Dialoguer.StartDialogue ((int)whoAmI);
+
+
 		DictEntry temp = convTopics.retrieveEntry (discTree[0]);
 		bool guilty = false;
 		if (temp.getGuilt () == GuiltLevel.guilty)
@@ -79,12 +80,12 @@ public class Conversation {
 			journal.Instance.updateKnowledge (newInfo);
 		}
 		
-		public Conversation(string avatar, List<NPCNames> theIndex){
+		public Conversation(string avatar, List<NPCNames> theIndex, NPCNames self){
 			
 			discTree = theIndex;
 			archeType = avatar;
 			convTopics = new Dictionary(GameManager.Instance.getDict ());
-
+			whoAmI = self;
 		}
 
 
