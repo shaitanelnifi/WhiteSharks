@@ -62,6 +62,7 @@ public class NPC : CaseElement {
 
 			convSetup.generateDialoguer();
 			GameManager.npcList.Find(x => x.elementName.CompareTo(this.elementName) == 0).setVisible(true);
+			Debug.Log (GameManager.theCase.activeWeapons[0] + " " +GameManager.theCase.activeWeapons[1] + " " +GameManager.theCase.activeWeapons[2]);
 
 			/*
 			//conversationObj.renderer.enabled = true;
