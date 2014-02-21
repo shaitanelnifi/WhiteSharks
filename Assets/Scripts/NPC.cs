@@ -12,6 +12,7 @@ public class NPC : CaseElement {
 	
 	public GameObject conversationObj, playerObj;
 	public BoxCollider2D box;
+	public bool placed = false;
 
 	//NPC specific data fields
 	public Category weaponProficiency;	//What kinds of weapons is the NPC skilled with
@@ -23,6 +24,10 @@ public class NPC : CaseElement {
 	public string convo;
 	public GameObject convoBubble;
 
+	public float trust;
+	public NPCNames enumName;
+	private Conversation convSetup;
+	
 	public Dictionary npcKnowledge;
 
 	//Mouse icon information
@@ -30,6 +35,21 @@ public class NPC : CaseElement {
 
 	void Start(){
 		convoBubble = GameObject.Find ("Conversation Bubble");
+
+		npcKnowledge = new Dictionary ();
+		npcKnowledge.addNewEntry (new DictEntry(enumName, guilt, weaponProficiency, scene, trust));
+		
+		List<NPCNames> indexSet = new List<NPCNames>();
+		
+		for (int i = 0; i < npcKnowledge.size (); i++){
+			DictEntry temp = npcKnowledge[i];
+			indexSet.Add (temp.getIndex ());
+		}
+		
+		indexSet.Insert (0, enumName);
+		
+		convSetup = new Conversation (GameManager.Instance.GetMainCharacter(), npcKnowledge, indexSet);
+
 	}
 	
 	public void OnMouseEnter(){
@@ -39,14 +59,36 @@ public class NPC : CaseElement {
 	//enable conversation object if left mouse button is clicked.
 	public void OnMouseDown(){
 		if(Input.GetMouseButton(0)){
+
+			convSetup.generateDialoguer();
+			GameManager.npcList.Find(x => x.elementName.CompareTo(this.elementName) == 0).setVisible(true);
+
+			/*
 			//conversationObj.renderer.enabled = true;
 			//conversationObj.collider2D.enabled = true;
 			GameManager.npcList.Find(x => x.elementName.CompareTo(this.elementName) == 0).setVisible(true);
 
 			convoBubble.GetComponentInChildren<UILabel>().text = convo;
-			convoBubble.GetComponentInChildren<UI2DSprite>().sprite2D = this.getProfileImage();
+			convoBubble.GetComponentInChildren<UI2DSprite>().sprite2D = this.getProfileImage();*/
 		}
 	}
+
+	public NPCNames getEnumName(){
+		return enumName;
+	}
+	
+	public Category getWeaponProf(){
+		return weaponProficiency;
+	}
+	
+	public float getTrust(){
+		return trust;
+	}
+	
+	public string getAlibi(){
+		return alibi;
+	}
+	
 	//switch the displaying order of the npc. 
 	void Update () {
 		/*if (transform.position.y < playerObj.transform.position.y) {

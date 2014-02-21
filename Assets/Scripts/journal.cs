@@ -9,6 +9,10 @@ public class journal : MonoBehaviour {
 	//private static int MAX_NPC = 3;
 	private static journal j;
 
+	//This is what the player eventually wants to fill out by talking to NPCs.  Score tracking and conversation starters (potentially)
+	public static Dictionary playerKnow;
+
+
 	public static journal Instance {
 		get {
 			if (instance == null) {
@@ -68,6 +72,12 @@ public class journal : MonoBehaviour {
 
 		//Weapon list once that's ready.
 		//weaponList = GameManager.weaponList;
+
+		playerKnow = new Dictionary ();
+		
+		foreach(NPC n in GameManager.npcList){
+			journal.Instance.addEntry(new DictEntry(n.getEnumName (), GuiltLevel.unrelated, Category.unrelated, "-1", -1));
+		}
 
 
 		//Listens for tab button presses in journal and runs onClick with button clicked as parameter.
@@ -231,13 +241,20 @@ public class journal : MonoBehaviour {
 		}
 	}
 
+	//Access function for updating the journal's dictionary
 	public void updateKnowledge(DictEntry postState){
-		//A stub because i don't know what this is.
+		playerKnow.updateDictionary (postState);
 	}
 
-	public Dictionary getKnowledge(){
-		//A stub because I dont' know what this is.
-		Dictionary pk = new Dictionary();
-		return pk;
+
+	//Access function for adding an entry to the journal's dictionary
+	public void addEntry(DictEntry newEntry){
+		playerKnow.addNewEntry (newEntry);
 	}
+
+	//Access function for printing the journal's dictionary
+	public void printKnowledge(){
+		playerKnow.printEntries ();
+	}
+
 }

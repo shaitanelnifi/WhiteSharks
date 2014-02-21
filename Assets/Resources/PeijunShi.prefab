@@ -69,7 +69,8 @@ MonoBehaviour:
   personalSentence: 'I''m glad you asked! '
   convo: I'm glad you asked!  I was in the Belly.
   convoBubble: {fileID: 0}
-  npcKnowledge: {fileID: 0}
+  trust: 0
+  enumName: 9
   mouseOverIcon: Speech_Icon
 --- !u!212 &21200000
 SpriteRenderer:

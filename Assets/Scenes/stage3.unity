@@ -226,7 +226,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCam: {fileID: 779115452}
-  right: 0
 --- !u!61 &168480580
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -885,8 +884,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
-  x: 14.2839003
-  y: -8.46453762
+  x: 15
+  y: -8.69999981
 --- !u!50 &756252716
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1651,7 +1650,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleX: .362595588
   scaleY: .362596005
-  id: 0
+  maxY: -5.5999999
+  minY: -7.5999999
+  minScale: .300000012
+  maxScale: .375
+  id: 3
 --- !u!1 &2010867274
 GameObject:
   m_ObjectHideFlags: 0

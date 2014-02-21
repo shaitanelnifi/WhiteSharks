@@ -70,7 +70,8 @@ MonoBehaviour:
   personalSentence: 'Hmmm... Let me think... '
   convo: Hmmm... Let me think...  I was in the Belly with Peijun Shi.
   convoBubble: {fileID: 0}
-  npcKnowledge: {fileID: 0}
+  trust: 0
+  enumName: 8
   mouseOverIcon: Speech_Icon
 --- !u!212 &21200000
 SpriteRenderer:

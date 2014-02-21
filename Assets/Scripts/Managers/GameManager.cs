@@ -27,8 +27,11 @@ public class GameManager : MonoBehaviour {
 	public static CaseObject weapon;
 	public static string room;
 
+	//This is the target state the player wishes to reach for maximum score
+	public static Dictionary idealGameState;
+
 	//Handles mouse cursor information
-	public static int cursorSize = 64;
+	public static int cursorSize = 32;
 	public static List<Texture2D> mouseSprites;
 	public static string[] spriteIndex;
 	public static Texture2D currMouse;
@@ -86,6 +89,7 @@ public class GameManager : MonoBehaviour {
 		_currLevel = "Level 1";
 		_name = "My Character";
 		_currentState = gameStates.INGAME;
+		idealGameState = new Dictionary ();
 
 		// Load character select screen
 		Application.LoadLevel ("CharacterSele");
@@ -172,14 +176,26 @@ public class GameManager : MonoBehaviour {
 
 		//Handle mouse updates here
 
-		GUI.DrawTexture (new Rect (Input.mousePosition.x - cursorSize / 2 + 1, (Screen.height - Input.mousePosition.y) - cursorSize / 2 + 1,
+		GUI.DrawTexture (new Rect (Input.mousePosition.x - cursorSize/4 + 4, (Screen.height - Input.mousePosition.y) - cursorSize / 2 + 10,
 		                      cursorSize, cursorSize), currMouse);
 
 	}
 
-	void Update() {
-		//print ("Test??");
+	//Access function for updating the GameManager's dictionary
+	public void addEntry(DictEntry newEntry){
+		idealGameState.addNewEntry (newEntry);
 	}
+	
+	//Access function for adding an entry to the GameManager's dictionary
+	public void updateDict(DictEntry newEntry){
+		idealGameState.updateDictionary (newEntry);
+	}
+	
+	//Access function for printing the GameManager's dictionary
+	public void printGoal(){
+		idealGameState.printEntries ();
+	}
+
 
 	//Initialize the sprite array for the mouse to draw
 	//Loads in from Sprites/Mouse Icons
@@ -207,7 +223,7 @@ public class GameManager : MonoBehaviour {
 	public void updateMouseIcon(string whichSprite){
 		currMouse = (Texture2D)mouseSprites [Array.IndexOf (spriteIndex, whichSprite)];
 
-		print (currMouse.ToString () + " WHEEEE");
+		//print (currMouse.ToString () + " WHEEEE");
 	}
 
 	//Testing purposes
@@ -243,6 +259,7 @@ public class GameManager : MonoBehaviour {
 		weaponList.Add(Resources.Load<CaseObject>("VSs"));
 		generator = new CaseGenerator ();
 		generateCase ();
+
 
 	}
 
