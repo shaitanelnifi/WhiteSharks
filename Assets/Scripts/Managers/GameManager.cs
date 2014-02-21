@@ -234,6 +234,11 @@ public class GameManager : MonoBehaviour {
 		//For a changing cursor, load in all of its sprites into the list
 		setIcons ();
 
+		// Used for Dialoguer components
+		Debug.Log ("Persocets, Adderall, Ecstasy, PMW");
+		DialogueGUI dGUI = gameObject.AddComponent<DialogueGUI> ();
+		dGUI.setSkin(Resources.Load ("OldSchool") as GUISkin);
+		dGUI.setTexture(Resources.Load ("DialogueBoxDiagonalLines") as Texture2D);
 
 		roomIDList = new ArrayList ();
 		rooms = new string[5];
