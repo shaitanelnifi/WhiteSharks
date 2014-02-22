@@ -25,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.29999995, y: -.709999979, z: 0}
+  m_LocalPosition: {x: 5.52724552, y: -.733729303, z: 0}
   m_LocalScale: {x: 1.23000002, y: 1.23000002, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,7 +62,7 @@ MonoBehaviour:
   box: {fileID: 6100000}
   weaponProficiency: 5
   highClass: 1
-  alibi: Office
+  alibi: Cafe
   scene: scene1
   trust: 0
   enumName: 6

@@ -58,17 +58,17 @@ MonoBehaviour:
   profileImage: {fileID: 21300000, guid: b203a331a825743cca86f0e03a60847f, type: 3}
   guilt: 3
   location: 4
+  visible: 0
   defaultIcon: Walk_Icon
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
-  placed: 0
   weaponProficiency: 2
   highClass: 1
   alibi: F
   scene: scene1
   trust: 0
   enumName: 8
-  relations: 040000000500000006000000070000000900000008000000
+  relations: 040000000500000006000000070000000800000009000000
   mouseOverIcon: Speech_Icon
 --- !u!212 &21200000
 SpriteRenderer:

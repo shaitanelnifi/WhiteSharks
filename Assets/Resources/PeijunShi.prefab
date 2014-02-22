@@ -67,7 +67,7 @@ MonoBehaviour:
   scene: scene1
   trust: 0
   enumName: 9
-  relations: 040000000500000006000000070000000800000009000000
+  relations: 040000000500000006000000070000000900000008000000
   mouseOverIcon: Speech_Icon
 --- !u!212 &21200000
 SpriteRenderer:

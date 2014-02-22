@@ -44,8 +44,8 @@ public class accusationPanel : MonoBehaviour {
 
 
 
-		answerSuspect = GameManager.guilty;
-		answerWeapon = GameManager.weapon;
+		answerSuspect = GameManager.theCase.getGuilty();
+		answerWeapon = GameManager.theCase.getWeapon();
 		answerRoom = GameManager.theCase.getRoom();
 
 		Debug.LogWarning ("Cheater: " + answerSuspect + " " + answerWeapon + " " + answerRoom);
