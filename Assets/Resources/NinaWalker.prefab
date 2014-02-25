@@ -52,11 +52,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementName: Nina Walker
-  description: Nina is a member of the YAP. A successful young teenager.
+  description: 'Nina is a member of the YAP. A successful young teenager. '
   profileImage: {fileID: 21300000, guid: 49d23c920db634c9c8c676eba195dcf1, type: 3}
   guilt: 2
   location: 5
-  visible: 0
+  visible: 1
   defaultIcon: Walk_Icon
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
@@ -86,9 +86,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 3
-  m_SortingOrder: 0
-  m_SortingLayerID: 1982072587
+  m_SortingLayer: 2
+  m_SortingOrder: 2
+  m_SortingLayerID: 2971093031
   m_Sprite: {fileID: 21300000, guid: 9a8a747252062430b88f5cb0739aa072, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000

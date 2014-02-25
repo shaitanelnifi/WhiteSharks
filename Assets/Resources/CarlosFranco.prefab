@@ -67,7 +67,7 @@ MonoBehaviour:
   alibi: F
   scene: scene1
   trust: 0
-  enumName: 8
+  enumName: 9
   relations: 040000000500000006000000070000000800000009000000
   mouseOverIcon: Speech_Icon
 --- !u!212 &21200000
