@@ -10,9 +10,8 @@ public class NPC : CaseElement {
 		conversation
 	};
 	
-	public GameObject conversationObj, playerObj;
+	public GameObject playerObj;
 	public BoxCollider2D box;
-	public bool placed = false;
 
 	//NPC specific data fields
 	public Category weaponProficiency;	//What kinds of weapons is the NPC skilled with
@@ -20,12 +19,10 @@ public class NPC : CaseElement {
 	public string alibi;			//A set of info that represents an alibi, requires another npc, location
 	public ArrayList animations;		//An array list of sprites representing the animation
 	public string scene;
-	public string personalSentence;
-	public string convo;
-	public GameObject convoBubble;
 
 	public float trust;
 	public NPCNames enumName;
+	public List<NPCNames> relations;
 	private Conversation convSetup;
 	
 	public Dictionary npcKnowledge;
@@ -34,21 +31,12 @@ public class NPC : CaseElement {
 	public string mouseOverIcon = "Speech_Icon";
 
 	void Start(){
-		convoBubble = GameObject.Find ("Conversation Bubble");
+
 
 		npcKnowledge = new Dictionary ();
 		npcKnowledge.addNewEntry (new DictEntry(enumName, guilt, weaponProficiency, scene, trust));
-		
-		List<NPCNames> indexSet = new List<NPCNames>();
-		
-		for (int i = 0; i < npcKnowledge.size (); i++){
-			DictEntry temp = npcKnowledge[i];
-			indexSet.Add (temp.getIndex ());
-		}
-		
-		indexSet.Insert (0, enumName);
-		
-		convSetup = new Conversation (GameManager.Instance.GetMainCharacter(), npcKnowledge, indexSet);
+
+		convSetup = new Conversation (GameManager.Instance.GetMainCharacter(), relations, npcKnowledge[0].getIndex());
 
 	}
 	
@@ -59,10 +47,26 @@ public class NPC : CaseElement {
 	//enable conversation object if left mouse button is clicked.
 	public void OnMouseDown(){
 		if(Input.GetMouseButton(0)){
-
+			Debug.LogError("HI");
+			if (this.elementName.CompareTo("Liam O'Shea")==0){
+				Debug.LogError("HI LIAM");
+				GameManager.npcList.Find(x => x.elementName.CompareTo("Liam O'Shea")==0).description = "Liam is a guard at the Fin. He can wield LASER PISTOLS. He says he was at the GYM.";
+				journal.Instance.updateNPCs();
+			}
+			else if (this.elementName.CompareTo("Nina Walker")==0){
+				Debug.LogError("HI NINA");
+				GameManager.npcList.Find(x => x.elementName.CompareTo("Nina Walker")==0).description = "Nina is a member of the YAP. A successful young teenager. She can wield the eSWORD. She says she was at the CAFÉ.";
+				journal.Instance.updateNPCs();
+			}
+			else if (this.elementName.CompareTo("Josh Susach")==0) {
+				Debug.LogError("HI JOSH");
+				GameManager.npcList.Find(x => x.elementName.CompareTo("Josh Susach")==0).description = "He's a criminal. He's an artist. He's proud of both. He can wield the METAL PIPE. He says he was at the GYM.";
+				journal.Instance.updateNPCs();
+			}
+			playerScript temp = (playerScript) FindObjectOfType(typeof(playerScript));
+			temp.canWalk = false;
 			convSetup.generateDialoguer();
-			GameManager.npcList.Find(x => x.elementName.CompareTo(this.elementName) == 0).setVisible(true);
-			Debug.Log (GameManager.theCase.activeWeapons[0] + " " +GameManager.theCase.activeWeapons[1] + " " +GameManager.theCase.activeWeapons[2]);
+			//GameManager.npcList.Find(x => x.elementName.CompareTo(this.elementName) == 0).setVisible(true);
 
 			/*
 			//conversationObj.renderer.enabled = true;
@@ -87,6 +91,11 @@ public class NPC : CaseElement {
 	}
 	
 	public string getAlibi(){
+
+		if (alibi == "") {
+			alibi = (string) GameManager.Instance.roomIDList[location];
+		}
+
 		return alibi;
 	}
 	

@@ -172,12 +172,13 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void OnGUI() {
-		GUI.TextArea(new Rect(1, 1, 100, 20), _currentState.ToString());
+		//GUI.TextArea(new Rect(1, 1, 100, 20), _currentState.ToString());
 
 		//Handle mouse updates here
 
-		GUI.DrawTexture (new Rect (Input.mousePosition.x - cursorSize/4 + 4, (Screen.height - Input.mousePosition.y) - cursorSize / 2 + 10,
-		                      cursorSize, cursorSize), currMouse);
+		GUI.DrawTexture (new Rect (Input.mousePosition.x - cursorSize / 16, (Screen.height - Input.mousePosition.y) - cursorSize / 16,
+		                           cursorSize, cursorSize), currMouse);
+
 
 	}
 
@@ -194,6 +195,11 @@ public class GameManager : MonoBehaviour {
 	//Access function for printing the GameManager's dictionary
 	public void printGoal(){
 		idealGameState.printEntries ();
+	}
+
+	//Access function for copying the dictionary
+	public Dictionary getDict(){
+		return idealGameState;
 	}
 
 
@@ -223,7 +229,18 @@ public class GameManager : MonoBehaviour {
 	public void updateMouseIcon(string whichSprite){
 		currMouse = (Texture2D)mouseSprites [Array.IndexOf (spriteIndex, whichSprite)];
 
-		//print (currMouse.ToString () + " WHEEEE");
+		print (currMouse.ToString () + " WHEEEE");
+	}
+
+	private void addWitnesses(){
+
+		foreach (NPC n in witnessList) {
+
+			idealGameState.addNewEntry(new DictEntry(n.getEnumName(), GuiltLevel.witness,
+			                                         n.getWeaponProf(), n.getAlibi(), n.getTrust()));
+
+		}
+
 	}
 
 	//Testing purposes
@@ -240,32 +257,36 @@ public class GameManager : MonoBehaviour {
 		dGUI.setSkin(Resources.Load ("OldSchool") as GUISkin);
 		dGUI.setTexture(Resources.Load ("DialogueBoxDiagonalLines") as Texture2D);
 
+
 		roomIDList = new ArrayList ();
 		rooms = new string[5];
+		rooms[2] = "bar";
 		rooms[3] = "bellyRoom";
 		roomIDList.Add("stage1");
 		roomIDList.Add("stage2");
 		roomIDList.Add("stage3");
 		roomIDList.Add("bar");
 		roomIDList.Add("stage4");
-		roomList.Add ("Gym");
-		roomList.Add ("Cafe");
 		roomList.Add ("Office");
+		roomList.Add ("Cafe");
+		roomList.Add ("Gym");
 		npcList.Add(Resources.Load<NPC>("LiamOShea"));
 		npcList.Add(Resources.Load<NPC>("NinaWalker"));
 		npcList.Add(Resources.Load<NPC>("JoshSusach"));
 		witnessList.Add(Resources.Load<NPC>("NoelAlt"));
 		witnessList.Add(Resources.Load<NPC>("PeijunShi"));
 		witnessList.Add(Resources.Load<NPC>("CarlosFranco"));
-		weaponList.Add(Resources.Load<CaseObject>("eSword"));
 		weaponList.Add(Resources.Load<CaseObject>("LaserPistol"));
+		weaponList.Add(Resources.Load<CaseObject>("eSword"));
 		weaponList.Add(Resources.Load<CaseObject>("MetalPipe"));
 		weaponList.Add(Resources.Load<CaseObject>("RadioactiveIceCubes"));
 		weaponList.Add(Resources.Load<CaseObject>("VSs"));
 		generator = new CaseGenerator ();
-		generateCase ();
+		//generateCase ();
+		theCase = generator.demo ();
+		addWitnesses ();
 
-
+		printGoal ();
 	}
 
 	public static List<NPC> getSceneNPCList(int sceneID){ 

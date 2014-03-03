@@ -40,11 +40,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementName: Laser Pistol
-  description: Pew pew pew.
+  description: Laser pistols have an incredible pew pew pew power. We have information
+    that this weapon was being USED at the time of the murder.
   profileImage: {fileID: 0}
-  guilt: 0
+  guilt: 1
   location: 0
-  visible: 0
+  visible: 1
   defaultIcon: Walk_Icon
   category: 5
   conversation: 

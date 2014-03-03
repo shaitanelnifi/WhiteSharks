@@ -3468,6 +3468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aef06130faf26344b272ac3ae7c0f0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  personsOfInterest: []
   viewTab1: {fileID: 100050}
   viewTab2: {fileID: 100048}
   viewTab3: {fileID: 100018}
