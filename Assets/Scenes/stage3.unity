@@ -193,7 +193,7 @@ Transform:
   m_PrefabInternal: {fileID: 1801424430}
   m_GameObject: {fileID: 118911261}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.526275516, y: -8.15106773, z: 0}
+  m_LocalPosition: {x: -.931091905, y: -8.15106773, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1432,11 +1432,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementName: Liam O'Shea
-  description: Liam is a guard at the Fin.  He can wield LASER PISTOLS. He says he
-    was at the GYM.
+  description: Liam is a guard at the Fin.
   profileImage: {fileID: 21300000, guid: 8b98b68a3e5434fde8a6cef5f4ee29ca, type: 3}
   guilt: 1
-  location: 3
+  location: 0
   visible: 1
   defaultIcon: Walk_Icon
   playerObj: {fileID: 0}
@@ -1625,7 +1624,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: c1b376aaa05771040bd4ba395cd96f45, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.526275516
+      value: -.931091905
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c1b376aaa05771040bd4ba395cd96f45, type: 2}
       propertyPath: m_LocalPosition.y
