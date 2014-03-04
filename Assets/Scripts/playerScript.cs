@@ -28,6 +28,7 @@ public class playerScript : CaseElement {
 	private int counter = 0;
 	public float[] scaleInfo = new float[4]{0f, 0f, 0f, 0f};
 	public bool canScale = true;
+	GameObject backEffect;
 
 
 
@@ -41,6 +42,7 @@ public class playerScript : CaseElement {
 				mainCam.transform.Translate(new Vector3(-9.273237f, 0, 0));
 				MoveCam.right = false;
 			}
+		backEffect = GameObject.Find ("effect");
 	}
 
 	public void moveTarget(Vector2 adjust){
@@ -154,6 +156,7 @@ public class playerScript : CaseElement {
 
 		if (doorObj != null || doorObj2 != null){ 
 			renderer.enabled = false;
+			backEffect.renderer.enabled = true;
 		}
 		else {
 			renderer.enabled = true;
