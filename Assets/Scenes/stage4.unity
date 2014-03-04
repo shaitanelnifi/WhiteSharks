@@ -147,7 +147,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.size
-      value: 18
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_LocalPosition.x
@@ -263,15 +263,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[10].y
-      value: -2.78415227
+      value: -3.69377923
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[11].x
-      value: 1.80340958
+      value: 1.70594954
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[11].y
-      value: -3.1888845
+      value: -4.13099861
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[12].x
@@ -291,34 +291,66 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[14].x
-      value: .136533022
+      value: .363939732
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[14].y
-      value: -3.74889731
+      value: -4.33365726
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[15].x
-      value: -1.52336979
+      value: -2.01066995
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[15].y
-      value: -3.64027429
+      value: -4.77730751
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[16].x
-      value: -1.6536386
+      value: -3.36675978
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[16].y
-      value: 3.45272183
+      value: -1.91757941
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[17].x
-      value: -3.73939419
+      value: -4.53304815
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[17].y
+      value: -2.73695159
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
+      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[18].x
+      value: -4.74748373
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
+      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[18].y
+      value: .0663084984
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
+      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[19].x
+      value: -2.07629347
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
+      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[19].y
+      value: .321440458
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
+      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[20].x
+      value: -1.6536386
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
+      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[20].y
+      value: 3.45272183
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
+      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[21].x
+      value: -3.73939419
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
+      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[21].y
       value: 5.24975491
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -491,7 +523,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 17.5500011, y: 4.67999983}
+  m_Size: {x: 17.5500011, y: 7}
   m_Center: {x: 0, y: 0}
 --- !u!212 &857630593
 SpriteRenderer:
@@ -524,7 +556,7 @@ Transform:
   m_PrefabInternal: {fileID: 1294379041}
   m_GameObject: {fileID: 857630589}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.70973897, y: -5.11369228, z: 0}
+  m_LocalPosition: {x: -3.67725301, y: -4.59390926, z: 0}
   m_LocalScale: {x: .140000001, y: 1, z: .949355006}
   m_Children: []
   m_Father: {fileID: 0}
@@ -597,11 +629,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: a469d30d1e765974c87160172a7f21e0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.70973897
+      value: -3.67725301
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a469d30d1e765974c87160172a7f21e0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -5.11369228
+      value: -4.59390926
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a469d30d1e765974c87160172a7f21e0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -638,6 +670,10 @@ Prefab:
     - target: {fileID: 100000, guid: a469d30d1e765974c87160172a7f21e0, type: 2}
       propertyPath: m_Name
       value: sceneDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: a469d30d1e765974c87160172a7f21e0, type: 2}
+      propertyPath: m_Size.y
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: a469d30d1e765974c87160172a7f21e0, type: 2}
@@ -712,12 +748,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementName: Nina Walker
-  description: "Nina is a member of the YAP. A successful young teenager. She can
-    wield the ESWORD. She says she was at the CAF\xC9."
+  description: 'Nina is a member of the YAP. A successful young teenager. '
   profileImage: {fileID: 21300000, guid: 49d23c920db634c9c8c676eba195dcf1, type: 3}
   guilt: 2
   location: 5
-  visible: 0
+  visible: 1
   defaultIcon: Walk_Icon
   playerObj: {fileID: 0}
   box: {fileID: 1334299043}
@@ -957,12 +992,16 @@ PolygonCollider2D:
       - {x: 4.56077909, y: .368674755}
       - {x: 3.19801164, y: 1.77305436}
       - {x: 2.95021796, y: 1.54627323}
-      - {x: 3.00254917, y: -2.78415227}
-      - {x: 1.80340958, y: -3.1888845}
+      - {x: 3.00254917, y: -3.69377923}
+      - {x: 1.70594954, y: -4.13099861}
       - {x: 1.78301907, y: 1.45091689}
       - {x: .0117294788, y: 2.770854}
-      - {x: .136533022, y: -3.74889731}
-      - {x: -1.52336979, y: -3.64027429}
+      - {x: .363939732, y: -4.33365726}
+      - {x: -2.01066995, y: -4.77730751}
+      - {x: -3.36675978, y: -1.91757941}
+      - {x: -4.53304815, y: -2.73695159}
+      - {x: -4.74748373, y: .0663084984}
+      - {x: -2.07629347, y: .321440458}
       - {x: -1.6536386, y: 3.45272183}
       - {x: -3.73939419, y: 5.24975491}
 --- !u!50 &1716145370
@@ -1140,8 +1179,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleX: 1
   scaleY: 1
-  maxY: -6.30000019
-  minY: -8.19999981
-  minScale: .25
-  maxScale: 1.20000005
+  maxY: -6.19966221
+  minY: -7.82064009
+  minScale: .200000003
+  maxScale: .899999976
   id: 5

@@ -2643,7 +2643,7 @@ GameObject:
   - 4: {fileID: 486398428}
   - 60: {fileID: 486398429}
   - 50: {fileID: 486398430}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: wall collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6698,6 +6698,10 @@ Prefab:
     - target: {fileID: 6000000, guid: 0de3ea12863632e48a1f96b262e4b1f0, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[6].y
       value: 5.86928844
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0de3ea12863632e48a1f96b262e4b1f0, type: 2}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0de3ea12863632e48a1f96b262e4b1f0, type: 2}
