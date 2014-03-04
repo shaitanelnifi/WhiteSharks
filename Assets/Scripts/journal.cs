@@ -23,7 +23,7 @@ public class journal : MonoBehaviour {
 		}
 	}
 	
-	private List<NPC> personsOfInterest;
+	public List<NPC> personsOfInterest;
 	private List<CaseObject>weaponList;
 	private List<string>roomList;
 
@@ -187,20 +187,24 @@ public class journal : MonoBehaviour {
 	void journalAccusationPanelToggle(GameObject button){
 		if (button == journalButton){
 			if (inMenu){
+				Time.timeScale = 1f;
 				accusationRoomButton.SetActive(true);
 				inMenu = false;
 			}
 			else {
+				Time.timeScale = 0f;
 				accusationRoomButton.SetActive(false);
 				inMenu = true;
 			}
 		}
 		else if (button == accusationRoomButton){
 			if (inMenu){
+				Time.timeScale = 1f;
 				journalButton.SetActive(true);
 				inMenu = false;
 			}
 			else {
+				Time.timeScale = 0f;
 				journalButton.SetActive(false);
 				inMenu = true;
 			}
@@ -330,5 +334,10 @@ public class journal : MonoBehaviour {
 		//A stub because I dont' know what this is.
 		Dictionary pk = new Dictionary();
 		return pk;
+	}
+
+	public void updateNPCs(){
+		//Persons of interest list.
+		personsOfInterest = GameManager.npcList;
 	}
 }

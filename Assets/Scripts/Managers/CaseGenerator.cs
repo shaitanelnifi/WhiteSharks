@@ -194,7 +194,7 @@ public class CaseGenerator : Object {
 
 	private CaseObject activateWeapon(CaseObject o){
 		o.setGuilt (GuiltLevel.guilty);
-		o.description += " We have information that this weapon was ACTIVE at the time of the murder.";
+		//o.description += " We have information that this weapon was ACTIVE at the time of the murder.";
 		//GameManager.theCase.setWeapon (o);
 		return o;
 	}

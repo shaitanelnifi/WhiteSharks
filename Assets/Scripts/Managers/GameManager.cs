@@ -172,7 +172,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void OnGUI() {
-		GUI.TextArea(new Rect(1, 1, 100, 20), _currentState.ToString());
+		//GUI.TextArea(new Rect(1, 1, 100, 20), _currentState.ToString());
 
 		//Handle mouse updates here
 

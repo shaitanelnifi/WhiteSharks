@@ -54,15 +54,15 @@ MonoBehaviour:
   elementName: Josh Susach
   description: He's a criminal. He's an artist. He's proud of both.
   profileImage: {fileID: 21300000, guid: afc84d6b7bbcc4640bfc029ee976f0e5, type: 3}
-  guilt: 1
+  guilt: 2
   location: 6
   visible: 1
   defaultIcon: Walk_Icon
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
-  weaponProficiency: 5
+  weaponProficiency: 2
   highClass: 1
-  alibi: Cafe
+  alibi: Gym
   scene: scene1
   trust: 0
   enumName: 6
