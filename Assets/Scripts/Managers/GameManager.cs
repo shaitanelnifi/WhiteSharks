@@ -75,6 +75,10 @@ public class GameManager : MonoBehaviour {
 	public string GetMainCharacter(){
 		return currentMainCharacter;
 	}
+	// get player script of main character
+ 	public playerScript getPlayerScript(){
+ 		return (playerScript)GameObject.Find (this.GetMainCharacter() + "(Clone)").GetComponent<playerScript> ();
+ 	}
 
 	/// <summary>
 	/// Starts the game state and sets initial values

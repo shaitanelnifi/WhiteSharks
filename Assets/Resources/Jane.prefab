@@ -15,7 +15,7 @@ GameObject:
   - 50: {fileID: 5000000}
   - 95: {fileID: 9500000}
   m_Layer: 10
-  m_Name: player
+  m_Name: Jane
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,7 +94,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: af3b2932e50424648b2bc68fac73d3ea, type: 2}
   m_CullingMode: 0
