@@ -1311,8 +1311,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleX: 1
   scaleY: 1
-  maxY: -6.19966221
-  minY: -7.82064009
-  minScale: .200000003
-  maxScale: .899999976
+  maxY: -2.18983006
+  minY: -3.68232894
+  minScale: .409999996
+  maxScale: 1
   id: 5

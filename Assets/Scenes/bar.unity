@@ -1175,10 +1175,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleX: 1
   scaleY: 1
-  maxY: -6.5999999
-  minY: -8
+  maxY: -2.99557304
+  minY: -3.89236689
   minScale: .579999983
-  maxScale: .800000012
+  maxScale: .720000029
   id: 4
 --- !u!1001 &2007506676
 Prefab:
