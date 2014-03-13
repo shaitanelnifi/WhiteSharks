@@ -58,6 +58,8 @@ public class journal : MonoBehaviour {
 
 	public UILabel descriptionLabel, panelNameLabel, timeLabel;
 
+	//Sprint 3 variables
+
 	//Destroys duplicate UI Roots.
 	void Awake () {
 		//journalButton.transform.position = new Vector3(275, 20, 0);
@@ -76,11 +78,28 @@ public class journal : MonoBehaviour {
 		//Default name for "invisible" person of interest.
 		emptyName = "?????";
 
+		/* Sprint 2 poi list
 		//Persons of interest list.
 		personsOfInterest = GameManager.npcList;
+		*/
 
+		//Sprint 3 persons of interest list
+		//updateJournal() will be used to receive first set of lists.
+		//---------- hard code for first stage -------------------//
+		NPC nina = (NPC)Resources.Load ("NinaWalker", typeof(NPC));
+		NPC josh = (NPC)Resources.Load ("JoshSusach", typeof(NPC));
+		personsOfInterest = new List<NPC> ();
+		personsOfInterest.Add (nina);
+		personsOfInterest.Add (josh);
+
+		/*Sprint 2 weapon list
 		//Weapon list once that's ready.
 		weaponList = GameManager.theCase.activeWeapons;
+		*/
+		CaseObject eSword = (CaseObject)Resources.Load("eSword", typeof(CaseObject));
+		weaponList = new List<CaseObject> ();
+		weaponList.Add(eSword);
+		//---------- hard code for first stage -------------------//
 
 		roomList = GameManager.roomList;
 
@@ -336,8 +355,14 @@ public class journal : MonoBehaviour {
 		return pk;
 	}
 
-	public void updateNPCs(){
-		//Persons of interest list.
+	public void updateJournal(){
+		/*Similar code will update the journal depending on the stage in the game.
 		personsOfInterest = GameManager.npcList;
+		weaponList = GameManager.theCase.activeWeapons;
+		*/
+	}
+
+	public void updateNPCs(){
+		//Doesn't do anything right now. there to stop complaining from gamemanager
 	}
 }
