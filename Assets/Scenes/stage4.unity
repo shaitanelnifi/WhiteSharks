@@ -536,7 +536,7 @@ Transform:
   m_PrefabInternal: {fileID: 1683388655}
   m_GameObject: {fileID: 742329251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.87839007, y: -4.03513527, z: 0}
+  m_LocalPosition: {x: -2.81203198, y: -4.66760206, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -573,6 +573,7 @@ MonoBehaviour:
   id: 3
   x: 1.62485898
   y: -3.1073451
+  mouseOverIcon: Door_Icon
 --- !u!50 &857630591
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1009,11 +1010,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: c1b376aaa05771040bd4ba395cd96f45, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.87839007
+      value: -2.81203198
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c1b376aaa05771040bd4ba395cd96f45, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.03513527
+      value: -4.66760206
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c1b376aaa05771040bd4ba395cd96f45, type: 2}
       propertyPath: m_LocalPosition.z
