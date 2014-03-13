@@ -207,7 +207,7 @@ public class journal : MonoBehaviour {
 		if (button == journalButton){
 			if (inMenu){
 				Time.timeScale = 1f;
-				accusationRoomButton.SetActive(true);
+				//accusationRoomButton.SetActive(true);
 				inMenu = false;
 			}
 			else {

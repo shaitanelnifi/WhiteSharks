@@ -1176,9 +1176,9 @@ MonoBehaviour:
   scaleX: 1
   scaleY: 1
   maxY: -2.99557304
-  minY: -3.89236689
+  minY: -4.30000019
   minScale: .579999983
-  maxScale: .720000029
+  maxScale: .850000024
   id: 4
 --- !u!1001 &2007506676
 Prefab:
