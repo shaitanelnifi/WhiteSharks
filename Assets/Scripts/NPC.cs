@@ -23,7 +23,7 @@ public class NPC : CaseElement {
 	public float trust;
 	public NPCNames enumName;
 	public List<NPCNames> relations;
-	private Conversation convSetup;
+	public int myConvo;
 	
 	public Dictionary npcKnowledge;
 
@@ -31,13 +31,7 @@ public class NPC : CaseElement {
 	public string mouseOverIcon = "Speech_Icon";
 
 	void Start(){
-
-
-		npcKnowledge = new Dictionary ();
-		npcKnowledge.addNewEntry (new DictEntry(enumName, guilt, weaponProficiency, scene, trust));
-
-		convSetup = new Conversation (GameManager.Instance.GetMainCharacter(), relations, npcKnowledge[0].getIndex());
-
+		myConvo = GameManager.npcConversations[(int)enumName];
 	}
 	
 	public void OnMouseEnter(){
@@ -65,7 +59,7 @@ public class NPC : CaseElement {
 			}
 			playerScript temp = (playerScript) FindObjectOfType(typeof(playerScript));
 			temp.canWalk = false;
-			convSetup.generateDialoguer();
+			Dialoguer.StartDialogue(myConvo);
 			string npcResource = (this.elementName + "Sprite").Replace(" ", string.Empty);
  			Texture2D npcTex = (Texture2D) Resources.Load (npcResource);
  			Debug.Log ("npcResource: " + npcResource);
