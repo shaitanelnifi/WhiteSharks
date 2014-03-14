@@ -12,8 +12,12 @@ public class GameManager : MonoBehaviour {
 
 	//Variables for case control
 	public static int currentEpisode = 0;
-	public static string[] episodeDialogues = new string[2]{"intro","case0"};
+	public static string[] episodeStartLevels = new String[12]{"JaneIntro","","","","","","","","","","",""};
+	public static string[] episodeDialogues = new string[12]{"case0","","","","","","","","","","",""};
 
+	public static bool dialogueJustFinished = false;
+
+	public bool playerInScene = false;
 	private static GameManager instance;
 	private gameStates _currentState;
 	private string _currLevel;			// Current level

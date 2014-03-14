@@ -51,8 +51,10 @@ namespace DialoguerCore{
 			reset();
 
 			//Debug.LogError ("DANGER");
+			GameManager.dialogueJustFinished = true;
 			playerScript temp = (playerScript) MonoBehaviour.FindObjectOfType(typeof(playerScript));
 			temp.canWalk = true;
+
 		}
 		
 		

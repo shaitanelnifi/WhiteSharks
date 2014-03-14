@@ -219,7 +219,7 @@ public class DialogueGUI : MonoBehaviour {
 			                           targetChar.height),
 			                 		   targetChar);
 		} else {
-			Debug.LogError ("TargetChar Texture is null!");
+			//Debug.LogError ("TargetChar Texture is null!");
 		}
 	}
 	
