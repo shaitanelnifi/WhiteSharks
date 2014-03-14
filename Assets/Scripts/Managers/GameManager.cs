@@ -40,6 +40,9 @@ public class GameManager : MonoBehaviour {
 	//This is the target state the player wishes to reach for maximum score
 	public static Dictionary idealGameState;
 
+	//Shammy 0, Noel 1, Carlos 2
+	public static int[] npcConversations = new int[7]{0, 0, 0, 0, 0, 0, 0};
+
 	//Handles mouse cursor information
 	public static int cursorSize = 32;
 	public static List<Texture2D> mouseSprites;
