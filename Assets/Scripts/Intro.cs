@@ -23,24 +23,35 @@ public class Intro : MonoBehaviour {
 						r.color = a;
 				} else if (!started) {
 						started = true;
-						initDialogue();
+						initDialogue(0);
 		}
 
-		if (GameManager.dialogueJustFinished && !theEnd) {
+		if (GameManager.dialogueJustFinished) {
 			GameManager.dialogueJustFinished = false;
-			if (!theEnd){
-				r.sprite = 	next;
-				Dialoguer.StartDialogue (0);
-				theEnd = true;
-			} else {
-				Application.LoadLevel("scene1");
-			}
+			change ();
 		}
 
 	}
 
-	void initDialogue(){
-		Dialoguer.StartDialogue(0);
+	IEnumerator test(){
+		yield return new WaitForSeconds (3);
+		initDialogue (6);
 	}
 
+	void initDialogue(int num){
+		Debug.Log ("aloha");
+		Dialoguer.StartDialogue(num);
+	}
+
+	void change(){
+		if (!theEnd){
+			Debug.Log ("emagherd");
+			r.sprite = 	next;
+			StartCoroutine("test");
+			theEnd = true;
+		} else {
+			Application.LoadLevel("stage1");
+		}	
+	}
+	
 }
