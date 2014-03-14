@@ -27,3 +27,5 @@ EditorBuildSettings:
     path: Assets/Scenes/bar.unity
   - enabled: 1
     path: Assets/Scenes/bellyRoom.unity
+  - enabled: 1
+    path: Assets/Scenes/JaneIntro.unity
