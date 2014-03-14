@@ -8,6 +8,12 @@ using System;
 
 public class GameManager : MonoBehaviour {
 	// Declare properties
+
+
+	//Variables for case control
+	public static int currentEpisode = 0;
+	public static string[] episodeDialogues = new string[2]{"intro","case0"};
+
 	private static GameManager instance;
 	private gameStates _currentState;
 	private string _currLevel;			// Current level
@@ -315,6 +321,10 @@ public class GameManager : MonoBehaviour {
 			}
 		}
 		return temp;
+	}
+
+	public void finishEpisode(){
+		currentEpisode++;
 	}
 
 }
