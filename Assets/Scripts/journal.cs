@@ -128,7 +128,6 @@ public class journal : MonoBehaviour {
 		roomList = new ArrayList ();
 		for (int i = 0; i < GameManager.Instance.roomIDList.Count; i++) {
 			roomList.Add(GameManager.Instance.roomIDList[i]);
-			//Debug.Log (roomList[i]);
 		}
 
 		initPoIView();
@@ -185,7 +184,6 @@ public class journal : MonoBehaviour {
 	void loadNewLocation(){
 		if(selectedLocation == alleywayFin){
 			//Application.LoadLevel("stage2");
-
 			Application.LoadLevel(roomList[1]);
 		}
 		else if(selectedLocation == alleywayBelly){
@@ -198,7 +196,6 @@ public class journal : MonoBehaviour {
 		}
 		else if(selectedLocation == plaza){
 			Application.LoadLevel(roomList[2]);
-			//Application.LoadLevel("stage3");
 		}
 		whereLabel.text = "";
 		selectedLocation = null;
