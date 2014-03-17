@@ -54,7 +54,6 @@ namespace DialoguerCore{
 			//Debug.LogError ("DANGER");
 			GameManager.dialogueJustFinished = true;
 			if (GameManager.Instance.playerInScene) {
-				Debug.Log("I'm stupid");
 								playerScript temp = (playerScript)MonoBehaviour.FindObjectOfType (typeof(playerScript));
 								temp.canWalk = true;
 						}
