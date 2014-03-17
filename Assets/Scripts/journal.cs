@@ -1,8 +1,5 @@
 //Adrian Williams
 //Journal
-//Things to work on:
-//	Could use GameObject.Find() to reduce number of public variables.
-//  Suspect/weapon buttons should be created at run-time for variable amounts of each. Map buttons too. Requires scroll view.
 using UnityEngine;
 using System;
 using System.Collections;
@@ -141,15 +138,12 @@ public class journal : MonoBehaviour {
 	void onClick(GameObject button){
 		if(viewTabList != null && viewTabList.Contains(button)){
 			changeView (viewTabList.IndexOf(button));
-			//Debug.Log ("won't happen yet~!~!~!~!~");
 		}
 		else if(poiButtonList.Contains(button)){
 			changePOI(poiButtonList.IndexOf(button));
-			//Debug.Log ("poiButton!");
 		}
 		else if (objectButtonList.Contains (button)){
 			changeObject(objectButtonList.IndexOf(button));
-			//Debug.Log ("objectbutton!");
 		}
 	}
 	//Bad way to do this.
