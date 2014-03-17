@@ -277,7 +277,7 @@ public class GameManager : MonoBehaviour {
 
 		roomIDList = new ArrayList ();
 		rooms = new string[5];
-		rooms[2] = "bar";
+		rooms[2] = "finoffice";
 		rooms[3] = "bellyRoom";
 		roomIDList.Add("finroom");
 		roomIDList.Add("finbalcony");

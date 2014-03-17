@@ -1,8 +1,5 @@
 //Adrian Williams
 //Journal
-//Things to work on:
-//	Could use GameObject.Find() to reduce number of public variables.
-//  Suspect/weapon buttons should be created at run-time for variable amounts of each. Map buttons too. Requires scroll view.
 using UnityEngine;
 using System;
 using System.Collections;
@@ -25,7 +22,6 @@ public class journal : MonoBehaviour {
 	
 	public List<NPC> personsOfInterest;
 	private List<CaseObject>weaponList;
-	private List<string>roomList;
 
 	//Defaults for non-visible NPC
 	public static Sprite emptyPortrait;
@@ -46,6 +42,7 @@ public class journal : MonoBehaviour {
 	public GameObject alleywayBelly, alleywayFin, janesRoom, plaza, yesButton, noButton;
 	public UILabel whereLabel;
 	private GameObject selectedLocation;
+	private ArrayList roomList;
 
 	//Grab buttons and textfield from view. Will change to use gameobject find. Three lists for three different types of buttons.
 	private static List<GameObject> viewTabList;
@@ -101,8 +98,6 @@ public class journal : MonoBehaviour {
 		weaponList.Add(eSword);
 		//---------- hard code for first stage -------------------//
 
-		roomList = GameManager.roomList;
-
 		//Listens for tab button presses in journal and runs onClick with button clicked as parameter.
 		UIEventListener.Get (viewTab1).onClick += this.onClick;
 		UIEventListener.Get (viewTab2).onClick += this.onClick;
@@ -130,6 +125,11 @@ public class journal : MonoBehaviour {
 		UIEventListener.Get (noButton).onClick += this.onClickMap;
 		selectedLocation = null;
 
+		roomList = new ArrayList ();
+		for (int i = 0; i < GameManager.Instance.roomIDList.Count; i++) {
+			roomList.Add(GameManager.Instance.roomIDList[i]);
+		}
+
 		initPoIView();
 		initObjView ();
 		changeView(0);
@@ -141,15 +141,12 @@ public class journal : MonoBehaviour {
 	void onClick(GameObject button){
 		if(viewTabList != null && viewTabList.Contains(button)){
 			changeView (viewTabList.IndexOf(button));
-			//Debug.Log ("won't happen yet~!~!~!~!~");
 		}
 		else if(poiButtonList.Contains(button)){
 			changePOI(poiButtonList.IndexOf(button));
-			//Debug.Log ("poiButton!");
 		}
 		else if (objectButtonList.Contains (button)){
 			changeObject(objectButtonList.IndexOf(button));
-			//Debug.Log ("objectbutton!");
 		}
 	}
 	//Bad way to do this.
@@ -186,16 +183,28 @@ public class journal : MonoBehaviour {
 	//Bad way to do this.
 	void loadNewLocation(){
 		if(selectedLocation == alleywayFin){
-			Application.LoadLevel("stage2");
+			GameManager.Instance.currentRoomIndex = 1;
+			GameManager.Instance.SetNextX(0.7014319f);
+			GameManager.Instance.SetNextY(0.9640977f);
+			Application.LoadLevel(""+roomList[1]);
 		}
 		else if(selectedLocation == alleywayBelly){
-			Application.LoadLevel("stage4");
+			GameManager.Instance.currentRoomIndex = 4;
+			GameManager.Instance.SetNextX(2.90425f);
+			GameManager.Instance.SetNextY(-5.316109f);
+			Application.LoadLevel(""+roomList[4]);
 		}
 		else if(selectedLocation == janesRoom){
-			Application.LoadLevel("finroom");
+			GameManager.Instance.currentRoomIndex = 0;
+			GameManager.Instance.SetNextX(-6.440672f);
+			GameManager.Instance.SetNextY(-5.890769f);
+			Application.LoadLevel(""+roomList[0]);
 		}
 		else if(selectedLocation == plaza){
-			Application.LoadLevel("stage3");
+			GameManager.Instance.currentRoomIndex = 2;
+			GameManager.Instance.SetNextX(12.76929f);
+			GameManager.Instance.SetNextY(-5.578114f);
+			Application.LoadLevel(""+roomList[2]);
 		}
 		whereLabel.text = "";
 		selectedLocation = null;
