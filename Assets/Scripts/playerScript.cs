@@ -19,7 +19,8 @@ public class playerScript : CaseElement {
 	public float minSpeed;
 	public Camera mainCam;
 	public Transform mainChar;
-	bool facingLeft = true;
+	public bool facingLeft = true;
+	public bool goingtLeft= true;
 	Animator anim;
 	Vector2 targetPosition;
 	Vector2 direction;
@@ -79,25 +80,28 @@ public class playerScript : CaseElement {
 						Vector2 toPoint = FindClosestPoint(targetPosition).transform.position;
 						distance = Vector2.Distance (transform.position, toPoint);
 						transform.position = Vector2.Lerp (transform.position, toPoint,Time.deltaTime* (modSpeed/distance));
-						anim.SetBool("walking",true);
-						Debug.Log ("start walking");
-					} else {
-						anim.SetBool("walking",false);
-						Debug.Log ("Stop walking");
-					}
+
+					} 
 				}
 				//else go straight to that location
 				else{
 					distance = Vector2.Distance (transform.position, targetPosition);
 					if(distance > 0){
 						transform.position = Vector2.Lerp (transform.position, targetPosition,Time.deltaTime* (modSpeed/distance));
-						anim.SetBool("walking",true);
-						Debug.Log ("start walking");
-
-					} else {
-						anim.SetBool("walking",false);
-						Debug.Log ("Stop walking");
-					}
+					} 
+				}
+				distance = Vector2.Distance (transform.position, targetPosition);
+				anim.SetFloat("distance",distance);
+				if((targetPosition.x - transform.position.x)<0 ){
+					goingtLeft = true;
+				}
+				else if((targetPosition.x - transform.position.x)>0 ) {	
+					goingtLeft = false;
+				}
+				if(facingLeft!=goingtLeft){
+					transform.Rotate(0,180,0);
+					facingLeft = !facingLeft;
+					//goingtLeft = !goingtLeft;
 				}
 			}
 		}
@@ -106,6 +110,7 @@ public class playerScript : CaseElement {
 			float scale = calcScale ();
 			transform.localScale = new Vector2 (scale, scale);
 		}
+
 	}
 
 	//Calculate the proper scaling for the avatar using scene traits

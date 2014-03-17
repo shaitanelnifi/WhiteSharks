@@ -32,4 +32,5 @@ public class Scene : MonoBehaviour {
 
 		GameManager.Instance.updateMouseIcon ("Walk_Icon");
 	}
+
 }
