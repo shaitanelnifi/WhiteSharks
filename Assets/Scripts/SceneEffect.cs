@@ -19,7 +19,6 @@ public class SceneEffect : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
 		if (fadeIn){
 			renderer.material.color = Color.Lerp(renderer.material.color,Color.clear, 0.1f);
 			if(renderer.material.color == Color.clear){
