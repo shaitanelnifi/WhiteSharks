@@ -59,17 +59,18 @@ public class NPC : CaseElement {
 			}
 			playerScript temp = (playerScript) FindObjectOfType(typeof(playerScript));
 			temp.canWalk = false;
+			Debug.Log("CANT WALK" + temp.canWalk);
 			Dialoguer.StartDialogue(myConvo);
 			string npcResource = (this.elementName + "Sprite").Replace(" ", string.Empty);
  			Texture2D npcTex = (Texture2D) Resources.Load (npcResource);
- 			Debug.Log ("npcResource: " + npcResource);
- 			Debug.LogError ("EleName: " + this.elementName);
- 			Debug.LogError ("Texture: " + npcTex.ToString());
+ 			//Debug.Log ("npcResource: " + npcResource);
+ 			//Debug.LogError ("EleName: " + this.elementName);
+ 			//Debug.LogError ("Texture: " + npcTex.ToString());
  
  			DialogueGUI dGUI = GameManager.Instance.GetComponent<DialogueGUI>();
  			Debug.LogError ("dgui: " + dGUI.ToString());
  			dGUI.setTargetTex(npcTex);
- 			dGUI.tweenCam();
+ 			//dGUI.tweenCam();
 			//GameManager.npcList.Find(x => x.elementName.CompareTo(this.elementName) == 0).setVisible(true);
 			
 			/*

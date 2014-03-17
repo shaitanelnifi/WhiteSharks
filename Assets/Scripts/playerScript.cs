@@ -15,7 +15,8 @@ using System.Collections;
 public class playerScript : CaseElement {
 
 	//public KeyCode moveLeft, moveRight, moveTop, moveBottom;
-	public float maxSpeed = 8f;
+	public float baseSpeed;
+	public float minSpeed;
 	public Camera mainCam;
 	public Transform mainChar;
 	bool facingLeft = true;
@@ -33,10 +34,6 @@ public class playerScript : CaseElement {
 
 
 	void Start(){
-		if(Application.loadedLevelName == "finbalcony") 
-			SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/Birds"), SoundManager.SoundType.Sfx);
-		if(Application.loadedLevelName == "finplaza")
-			SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/PlazaChatter"), SoundManager.SoundType.Sfx);
 		anim = GetComponent<Animator>();
 		canWalk = true;
 		canScale = true;
@@ -56,6 +53,14 @@ public class playerScript : CaseElement {
 	void FixedUpdate(){	
 		if(canWalk){
 			float distance;
+			//float modSpeed = Mathf.Sqrt(transform.localScale.y) * baseSpeed;
+			float modSpeed = (Mathf.Log(transform.localScale.y) + 1) * baseSpeed;
+			if (modSpeed < minSpeed){
+				modSpeed = minSpeed;
+			}
+
+			//Debug.LogError ("Speed: " + modSpeed.ToString());
+
 			if(Input.GetMouseButton(0)){
 				//get mouse clicked location and convert them to world point.
 				targetPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
@@ -72,14 +77,14 @@ public class playerScript : CaseElement {
 					if(objectOnWay(targetPosition)){
 						Vector2 toPoint = FindClosestPoint(targetPosition).transform.position;
 						distance = Vector2.Distance (transform.position, toPoint);
-						transform.position = Vector2.Lerp (transform.position, toPoint,Time.deltaTime* (maxSpeed/distance));
+						transform.position = Vector2.Lerp (transform.position, toPoint,Time.deltaTime* (modSpeed/distance));
 					}
 				}
 				//else go straight to that location
 				else{
 					distance = Vector2.Distance (transform.position, targetPosition);
 					if(distance > 0){
-						transform.position = Vector2.Lerp (transform.position, targetPosition,Time.deltaTime* (maxSpeed/distance));
+						transform.position = Vector2.Lerp (transform.position, targetPosition,Time.deltaTime* (modSpeed/distance));
 					}
 				}
 			}
@@ -148,7 +153,7 @@ public class playerScript : CaseElement {
 			}
 		}
 
-		Debug.Log ("closet point: " + closest.transform.position);
+		//Debug.Log ("closet point: " + closest.transform.position);
 		return closest;
 	}
 	//change scene when collide with door
@@ -171,10 +176,6 @@ public class playerScript : CaseElement {
 		else {
 			renderer.enabled = true;
 		}
-
-		//counter++;
-		//if (counter >= coolDown){
-	
 			string temp;
 			int tempIndex;
 
@@ -204,10 +205,8 @@ public class playerScript : CaseElement {
 				}
 				GameManager.Instance.SetNextX(doorObj2.x);
 				GameManager.Instance.SetNextY(doorObj2.y);
-				//DestoryPlayer();
 				Application.LoadLevel (temp);
 			}
-		//}
 
 	}
 
@@ -230,7 +229,7 @@ public class playerScript : CaseElement {
 void FixedUpdate(){
 	float move = Input.GetAxis ("Horizontal");
 	float moveVer = Input.GetAxis ("Vertical");
-	rigidbody2D.velocity = new Vector2 (move * maxSpeed, moveVer * maxSpeed);
+	rigidbody2D.velocity = new Vector2 (move * baseSpeed, moveVer * baseSpeed);
 	anim.SetFloat("Speed",Mathf.Abs(move));
 	
 	if(move < 0 && !facingLeft)

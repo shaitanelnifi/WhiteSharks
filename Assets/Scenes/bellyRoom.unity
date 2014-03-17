@@ -154,8 +154,9 @@ MonoBehaviour:
   alibi: Gym
   scene: scene1
   trust: 0
-  enumName: 6
+  enumName: 2
   relations: 040000000500000006000000070000000800000009000000
+  myConvo: 0
   mouseOverIcon: Speech_Icon
 --- !u!4 &33619893
 Transform:
@@ -288,6 +289,7 @@ MonoBehaviour:
   minY: -3.96002603
   minScale: .947153926
   maxScale: 1.15714097
+  baseSpeed: 8
   id: 6
 --- !u!1 &988993997
 GameObject:
@@ -414,6 +416,7 @@ MonoBehaviour:
   id: 1
   x: -1.68327105
   y: -5.14134598
+  mouseOverIcon: Door_Icon
 --- !u!50 &1071366514
 Rigidbody2D:
   m_ObjectHideFlags: 0

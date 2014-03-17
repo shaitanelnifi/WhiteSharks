@@ -10,9 +10,9 @@ public class MoveCam : MonoBehaviour {
 		right = true;
 	}
 
-	//void Update(){
+	void Update(){
 
-	//}
+		}
 
 	void OnTriggerEnter2D(Collider2D collider){
 		playerScript playerObj = collider.gameObject.GetComponent<playerScript> ();
