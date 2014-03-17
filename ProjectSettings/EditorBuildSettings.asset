@@ -14,13 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/charactersele.unity
   - enabled: 1
-    path: Assets/Scenes/accusation.unity
-  - enabled: 1
     path: Assets/Scenes/bellyalleyway.unity
-  - enabled: 0
-    path: Assets/Scenes/stage6.unity
-  - enabled: 0
-    path: Assets/Scenes/stage5.unity
   - enabled: 1
     path: Assets/Scenes/finplaza.unity
   - enabled: 1

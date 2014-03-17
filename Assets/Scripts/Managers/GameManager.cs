@@ -246,7 +246,7 @@ public class GameManager : MonoBehaviour {
 	public void updateMouseIcon(string whichSprite){
 		currMouse = (Texture2D)mouseSprites [Array.IndexOf (spriteIndex, whichSprite)];
 
-		print (currMouse.ToString () + " WHEEEE");
+		//print (currMouse.ToString () + " WHEEEE");
 	}
 
 	private void addWitnesses(){

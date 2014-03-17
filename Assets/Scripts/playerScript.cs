@@ -159,7 +159,9 @@ public class playerScript : CaseElement {
 			gameObject.collider2D.enabled = false;
 			renderer.enabled = false;
 			if (backEffect == null){
+				Debug.Log("Calling effect");
 				backEffect = (GameObject)Instantiate(Resources.Load("blackScreen"));
+				Debug.Log(backEffect);
 			}
 		}
 		else {
