@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour {
 	public static string[] episodeDialogues = new string[12]{"case0","","","","","","","","","","",""};
 
 	public static bool dialogueJustFinished = false;
+	public static bool firstTimeOffice = true;
 
 	public bool playerInScene = false;
 	private static GameManager instance;
