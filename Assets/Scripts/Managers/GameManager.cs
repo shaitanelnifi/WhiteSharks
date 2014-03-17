@@ -8,6 +8,16 @@ using System;
 
 public class GameManager : MonoBehaviour {
 	// Declare properties
+
+
+	//Variables for case control
+	public static int currentEpisode = 0;
+	public static string[] episodeStartLevels = new String[12]{"JaneIntro","","","","","","","","","","",""};
+	public static string[] episodeDialogues = new string[12]{"case0","","","","","","","","","","",""};
+
+	public static bool dialogueJustFinished = false;
+
+	public bool playerInScene = false;
 	private static GameManager instance;
 	private gameStates _currentState;
 	private string _currLevel;			// Current level
@@ -29,6 +39,9 @@ public class GameManager : MonoBehaviour {
 
 	//This is the target state the player wishes to reach for maximum score
 	public static Dictionary idealGameState;
+
+	//Shammy 0, Noel 1, Carlos 2
+	public static int[] npcConversations = new int[7]{0, 0, 0, 0, 0, 0, 0};
 
 	//Handles mouse cursor information
 	public static int cursorSize = 32;
@@ -75,6 +88,10 @@ public class GameManager : MonoBehaviour {
 	public string GetMainCharacter(){
 		return currentMainCharacter;
 	}
+	// get player script of main character
+ 	public playerScript getPlayerScript(){
+ 		return (playerScript)GameObject.Find (this.GetMainCharacter() + "(Clone)").GetComponent<playerScript> ();
+ 	}
 
 	/// <summary>
 	/// Starts the game state and sets initial values
@@ -311,6 +328,10 @@ public class GameManager : MonoBehaviour {
 			}
 		}
 		return temp;
+	}
+
+	public void finishEpisode(){
+		currentEpisode++;
 	}
 
 }

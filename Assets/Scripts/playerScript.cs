@@ -27,18 +27,22 @@ public class playerScript : CaseElement {
 	public int currentRoom;
 	private int counter = 0;
 	public float[] scaleInfo = new float[4]{0f, 0f, 0f, 0f};
+	public bool canScale = true;
+	GameObject backEffect = null;
 
 
 
 	void Start(){
 		anim = GetComponent<Animator>();
 		canWalk = true;
+		canScale = true;
 		mainCam = GameObject.Find("Main Camera").camera;
 		GameObject moveCam = GameObject.Find ("moveCam");
 			if(moveCam != null && transform.position.x < 1){
 				mainCam.transform.Translate(new Vector3(-9.273237f, 0, 0));
 				MoveCam.right = false;
 			}
+		//backEffect = GameObject.Find ("effect");
 	}
 
 	public void moveTarget(Vector2 adjust){
@@ -76,11 +80,11 @@ public class playerScript : CaseElement {
 				}
 			}
 		}
-	//Fixing scale (if it works lol)
-
-	float scale = calcScale ();
-	transform.localScale = new Vector2 (scale, scale);
-
+		//Fixing scale (if it works lol)
+		if(canScale){
+			float scale = calcScale ();
+			transform.localScale = new Vector2 (scale, scale);
+		}
 	}
 
 	//Calculate the proper scaling for the avatar using scene traits
@@ -145,12 +149,26 @@ public class playerScript : CaseElement {
 	}
 	//change scene when collide with door
 	void OnTriggerEnter2D(Collider2D collider){
-		int coolDown = 30;
-		counter++;
-		if (counter >= coolDown){
+
+		//canScale = false;
+		//int coolDown = 30;
+		DoorScript doorObj = collider.gameObject.GetComponent<DoorScript> ();
+		SceneDoor doorObj2 = collider.gameObject.GetComponent<SceneDoor> ();
+
+		if (doorObj != null || doorObj2 != null){ 
+			gameObject.collider2D.enabled = false;
+			renderer.enabled = false;
+			if (backEffect == null){
+				backEffect = (GameObject)Instantiate(Resources.Load("blackScreen"));
+			}
+		}
+		else {
+			renderer.enabled = true;
+		}
+
+		//counter++;
+		//if (counter >= coolDown){
 	
-			DoorScript doorObj = collider.gameObject.GetComponent<DoorScript> ();
-			SceneDoor doorObj2 = collider.gameObject.GetComponent<SceneDoor> ();
 			string temp;
 			int tempIndex;
 
@@ -166,24 +184,24 @@ public class playerScript : CaseElement {
 				GameManager.Instance.currentRoomIndex = tempIndex;
 				GameManager.Instance.SetNextX(doorObj.x);
 				GameManager.Instance.SetNextY(doorObj.y);
-				DestoryPlayer();
+				//DestoryPlayer();
 				Application.LoadLevel (temp);
 				}
-				else if(doorObj2 != null) {
-					if (doorObj2.id >1){
-						tempIndex = doorObj2.id;
-						temp = (string) GameManager.Instance.rooms[tempIndex];
-					}
-					else{
-						tempIndex = GameManager.Instance.currentRoomIndex;
-						temp = (string) GameManager.Instance.roomIDList[tempIndex];
-					}
-					GameManager.Instance.SetNextX(doorObj2.x);
-					GameManager.Instance.SetNextY(doorObj2.y);
-					DestoryPlayer();
-					Application.LoadLevel (temp);
+			else if(doorObj2 != null) {
+				if (doorObj2.id >1){
+					tempIndex = doorObj2.id;
+					temp = (string) GameManager.Instance.rooms[tempIndex];
+				}
+				else{
+					tempIndex = GameManager.Instance.currentRoomIndex;
+					temp = (string) GameManager.Instance.roomIDList[tempIndex];
+				}
+				GameManager.Instance.SetNextX(doorObj2.x);
+				GameManager.Instance.SetNextY(doorObj2.y);
+				//DestoryPlayer();
+				Application.LoadLevel (temp);
 			}
-		}
+		//}
 
 	}
 
