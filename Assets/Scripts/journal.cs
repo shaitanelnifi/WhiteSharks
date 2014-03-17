@@ -183,19 +183,28 @@ public class journal : MonoBehaviour {
 	//Bad way to do this.
 	void loadNewLocation(){
 		if(selectedLocation == alleywayFin){
-			//Application.LoadLevel("stage2");
-			Application.LoadLevel(roomList[1]);
+			GameManager.Instance.currentRoomIndex = 1;
+			GameManager.Instance.SetNextX(0.7014319f);
+			GameManager.Instance.SetNextY(0.9640977f);
+			Application.LoadLevel(""+roomList[1]);
 		}
 		else if(selectedLocation == alleywayBelly){
-			Application.LoadLevel(roomList[3]);
-			//Application.LoadLevel("stage4");
+			GameManager.Instance.currentRoomIndex = 4;
+			GameManager.Instance.SetNextX(2.90425f);
+			GameManager.Instance.SetNextY(-5.316109f);
+			Application.LoadLevel(""+roomList[4]);
 		}
 		else if(selectedLocation == janesRoom){
-			Application.LoadLevel(roomList[0]);
-			//Application.LoadLevel("stage1");
+			GameManager.Instance.currentRoomIndex = 0;
+			GameManager.Instance.SetNextX(-6.440672f);
+			GameManager.Instance.SetNextY(-5.890769f);
+			Application.LoadLevel(""+roomList[0]);
 		}
 		else if(selectedLocation == plaza){
-			Application.LoadLevel(roomList[2]);
+			GameManager.Instance.currentRoomIndex = 2;
+			GameManager.Instance.SetNextX(12.76929f);
+			GameManager.Instance.SetNextY(-5.578114f);
+			Application.LoadLevel(""+roomList[2]);
 		}
 		whereLabel.text = "";
 		selectedLocation = null;
