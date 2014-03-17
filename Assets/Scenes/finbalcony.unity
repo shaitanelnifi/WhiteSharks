@@ -900,10 +900,9 @@ MonoBehaviour:
   scaleX: .368005097
   scaleY: .358005792
   maxY: 2
-  minY: -2
-  minScale: .400000006
-  maxScale: 1.14999998
-  baseSpeed: 5
+  minY: .1817379
+  minScale: .449999988
+  maxScale: .75999999
   id: 2
 --- !u!1 &1650131400
 GameObject:

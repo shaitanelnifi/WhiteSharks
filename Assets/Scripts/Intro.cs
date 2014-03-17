@@ -11,6 +11,7 @@ public class Intro : MonoBehaviour {
 	bool fadeOut = true;
 	bool start = true;
 	bool fadeInDone = false;
+	bool playingSound = false;
 	public Sprite next;
 	// Use this for initialization
 	void Start () {
@@ -60,6 +61,11 @@ public class Intro : MonoBehaviour {
 					} else {
 					fadeInDone = true;
 				}
+				if(!playingSound) {
+					Debug.Log("play heli");
+					SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/Helicopter"), SoundManager.SoundType.Sfx);
+					playingSound = true;
+				}	
 			}
 			if (fadeInDone){
 				r.color = a;
@@ -76,6 +82,7 @@ public class Intro : MonoBehaviour {
 	}
 
 	IEnumerator wait(){
+		SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/Fin"));
 		yield return new WaitForSeconds (1.5f);
 		GameManager.Instance.playerInScene = true;
 		Application.LoadLevel("finroom");

@@ -9,7 +9,6 @@ public class Scene : MonoBehaviour {
 	public float scaleX, scaleY;
 	public float maxY, minY;
 	public float minScale, maxScale;
-	public float baseSpeed;
 
 	public int id;
 	// Use this for initialization
@@ -27,8 +26,6 @@ public class Scene : MonoBehaviour {
 		}
 		player.GetComponent<playerScript> ().currentRoom = this.id;
 		player.GetComponent<playerScript> ().scaleInfo = new float[4]{minScale, maxScale, minY, maxY};
-		player.GetComponent<playerScript> ().baseSpeed = baseSpeed;
-		player.GetComponent<playerScript> ().minSpeed = baseSpeed;
 
 		GameManager.Instance.updateMouseIcon ("Walk_Icon");
 	}
