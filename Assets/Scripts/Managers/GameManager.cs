@@ -246,7 +246,7 @@ public class GameManager : MonoBehaviour {
 	public void updateMouseIcon(string whichSprite){
 		currMouse = (Texture2D)mouseSprites [Array.IndexOf (spriteIndex, whichSprite)];
 
-		print (currMouse.ToString () + " WHEEEE");
+		//print (currMouse.ToString () + " WHEEEE");
 	}
 
 	private void addWitnesses(){
@@ -279,11 +279,12 @@ public class GameManager : MonoBehaviour {
 		rooms = new string[5];
 		rooms[2] = "bar";
 		rooms[3] = "bellyRoom";
-		roomIDList.Add("stage1");
-		roomIDList.Add("stage2");
-		roomIDList.Add("stage3");
-		roomIDList.Add("bar");
-		roomIDList.Add("stage4");
+		roomIDList.Add("finroom");
+		roomIDList.Add("finbalcony");
+		roomIDList.Add("finplaza");
+		roomIDList.Add("bellybar");
+		roomIDList.Add("bellyalleyway");
+		roomIDList.Add("bellyroom");
 		roomList.Add ("Office");
 		roomList.Add ("Cafe");
 		roomList.Add ("Gym");
