@@ -16,7 +16,6 @@ public class GameManager : MonoBehaviour {
 	public static string[] episodeDialogues = new string[12]{"case0","","","","","","","","","","",""};
 
 	public static bool dialogueJustFinished = false;
-	public static bool firstTimeOffice = true;
 
 	public bool playerInScene = false;
 	private static GameManager instance;
@@ -116,12 +115,12 @@ public class GameManager : MonoBehaviour {
 	/// <summary>
 	/// Generates the case
 	/// </summary>
-//	public void generateCase() {
-//		//Debug.Log (theCase.getRoom());
-//		theCase = generator.generateCase();
-//		//Debug.Log ("the case in GM " + guilty + " " + weapon + " " + room);
-//		//Debug.Log (theCase.getRoom());
-//	}
+	public void generateCase() {
+		//Debug.Log (theCase.getRoom());
+		theCase = generator.generateCase();
+		//Debug.Log ("the case in GM " + guilty + " " + weapon + " " + room);
+		//Debug.Log (theCase.getRoom());
+	}
 
 	/// <summary>
 	/// Calculates the score
@@ -273,10 +272,12 @@ public class GameManager : MonoBehaviour {
 		Debug.Log ("Persocets, Adderall, Ecstasy, PMW");
 		DialogueGUI dGUI = gameObject.AddComponent<DialogueGUI> ();
 		dGUI.setSkin(Resources.Load ("OldSchool") as GUISkin);
+		dGUI.setTexture(Resources.Load ("DialogueBoxDiagonalLines") as Texture2D);
+
 
 		roomIDList = new ArrayList ();
 		rooms = new string[5];
-		rooms[2] = "finoffice";
+		rooms[2] = "bar";
 		rooms[3] = "bellyRoom";
 		roomIDList.Add("finroom");
 		roomIDList.Add("finbalcony");
@@ -300,6 +301,7 @@ public class GameManager : MonoBehaviour {
 		weaponList.Add(Resources.Load<CaseObject>("VSs"));
 		generator = new CaseGenerator ();
 		//generateCase ();
+		theCase = generator.demo ();
 		addWitnesses ();
 
 		printGoal ();

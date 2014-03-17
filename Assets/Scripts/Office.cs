@@ -7,9 +7,9 @@ using System.Collections;
  * We'll probably want to change the way it's implemented later.
  */
 public class Office : MonoBehaviour {
-	
+
+	private bool firstTime = true;
 	public bool correctAnswer = false;
-	private bool started = false;
 	// Use this for initialization
 	void Start () {
 	
@@ -17,45 +17,31 @@ public class Office : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (GameManager.firstTimeOffice && !started) {
-			Debug.Log("Hey");
-			StartCoroutine ("firstDialogue");
-		} else if (!GameManager.firstTimeOffice && !started) {
-			Debug.Log("NO Hey");
+		if (firstTime) {
+						StartCoroutine ("firstDialogue");
+		} else if (!GameManager.dialogueJustFinished) {
 			StartCoroutine("secondDialogue");
 		}
-
-		if (GameManager.dialogueJustFinished) {
+		if (GameManager.dialogueJustFinished && firstTime) {
 			GameManager.dialogueJustFinished = false;
-			GameManager.firstTimeOffice = false;
-			StartCoroutine("goToPlaza");
-		} //else if (GameManager.dialogueJustFinished && !firstTime){ 
+		} else if (GameManager.dialogueJustFinished && !firstTime){ 
+			GameManager.dialogueJustFinished = false;
 			//We have to add something that checks if you've answered correctly
-			//if (correctAnswer){
-			//	GameManager.Instance.finishEpisode();
-			//} else {
-			//	StartCoroutine("goToPlaza");
-			//}
-		//}
+			if (correctAnswer){
+				GameManager.Instance.finishEpisode();
+			} else {
+				Application.LoadLevel("finplaza");
+			}
+		}
 	}
 
 	public IEnumerator firstDialogue(){
-		started = true;
-		DialogueGUI dGUI = GameManager.Instance.GetComponent<DialogueGUI>();
-		Debug.LogError ("dgui: " + dGUI.ToString());
-		//dGUI.setTargetTex();
 		yield return new WaitForSeconds (1.5f);
 		Dialoguer.StartDialogue(2);
 	}
 
 	public IEnumerator secondDialogue(){
-		started = true;
 		yield return new WaitForSeconds (1.5f);
 		Dialoguer.StartDialogue(5);
-	}
-
-	public IEnumerator goToPlaza(){
-		yield return new WaitForSeconds (1.5f);
-		Application.LoadLevel("finplaza");
 	}
 }

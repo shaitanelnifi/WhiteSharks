@@ -30,6 +30,7 @@ public class CameraManager : MonoBehaviour {
 		maxX = mapX / 2.0f - horzExtent;
 		minY = vertExtent - mapY / 2.0f;
 		maxY = mapY / 2.0f - vertExtent;
+		SoundManager.Instance.MoveSpeaker(Camera.main);
 	}
 
 	void LateUpdate() {
@@ -59,5 +60,6 @@ public class CameraManager : MonoBehaviour {
 		v3.x = Mathf.Clamp (v3.x, minX, maxX);
 		v3.y = Mathf.Clamp (v3.y, minY, maxY);
 		transform.position = v3;
+		SoundManager.Instance.MoveSpeaker(Camera.main);
 	}
 }

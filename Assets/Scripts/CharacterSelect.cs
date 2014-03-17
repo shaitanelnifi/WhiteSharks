@@ -12,11 +12,14 @@ public class CharacterSelect : MonoBehaviour {
 		if(Input.GetMouseButton(0)){
 			GameManager.Instance.SetMainCharacter(character);
 			//load level 1
-			//Application.LoadLevel (GameManager.episodeStartLevels[GameManager.currentEpisode]);
+			SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/" + GameManager.episodeStartLevels[GameManager.currentEpisode]));
+			Application.LoadLevel (GameManager.episodeStartLevels[GameManager.currentEpisode]);
 			//TEST
 			GameManager.Instance.playerInScene = true; 
-			Application.LoadLevel ("finroom");
+			//Application.LoadLevel ("finroom");
 			//END TEST
+			
+
 		}
 	}
 }

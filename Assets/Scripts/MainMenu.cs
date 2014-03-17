@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour {
 		UIEventListener.Get (start).onClick += this.onClick;
 		UIEventListener.Get (options).onClick += this.onClick;
 		UIEventListener.Get (quit).onClick += this.onClick;
-
+		SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/MainMenu"));
 	
 	}
 	
@@ -50,6 +50,7 @@ public class MainMenu : MonoBehaviour {
 
 		DontDestroyOnLoad(GameManager.Instance);
 		DontDestroyOnLoad(InputManager.Instance);
+		DontDestroyOnLoad(SoundManager.Instance);
 		GameManager.Instance.startState();
 
 		switch (GameManager.currentEpisode) {

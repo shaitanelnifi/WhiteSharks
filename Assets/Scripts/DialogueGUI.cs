@@ -5,7 +5,7 @@ public class DialogueGUI : MonoBehaviour {
 	
 	// GUI VARS
 	public GUISkin skin;
-	//public Texture2D diagonalLines;
+	public Texture2D diagonalLines;
 	
 //	public AudioSource audioText;
 //	public AudioSource audioTextEnd;
@@ -43,9 +43,6 @@ public class DialogueGUI : MonoBehaviour {
 	private Texture2D mainChar;
 	private Texture2D targetChar;
 
-	private float native_width = 1920;
-	private float native_height = 1080;
-
 	private bool isTween = false;
 	private float startTime;
 	private float duration = 175.0f;
@@ -53,6 +50,7 @@ public class DialogueGUI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		
 		addDialoguerEvents();
 		
 		_showDialogueBox = false;
@@ -72,11 +70,6 @@ public class DialogueGUI : MonoBehaviour {
 		else {
 			Debug.LogError ("NPC Texture is null in DialogueGUI.cs, method setTargetTex(Texture2D npcTex)");
 		}
-	}
-
-	public void setMainTex(Texture2D npcTex)
-	{
-			mainChar = npcTex;
 	}
 
 
@@ -137,10 +130,10 @@ public class DialogueGUI : MonoBehaviour {
 		this.skin = skin;
 	}
 
-//	public void setTexture(Texture2D diagonalLines)
-//	{
-//		this.diagonalLines = diagonalLines;
-//	}
+	public void setTexture(Texture2D diagonalLines)
+	{
+		this.diagonalLines = diagonalLines;
+	}
 	
 	#region Dialoguer
 	public void addDialoguerEvents(){
@@ -196,9 +189,7 @@ public class DialogueGUI : MonoBehaviour {
 		startWindowTweenOut();
 
 		// Resets the camera to default size
-//		Debug.Log ("yolooooooooooooooooooooooooooo");
 		Camera.main.orthographicSize = 6.0f;
-//		Debug.Log ("yoloooooooooooooooooooooooooooq2342343242342");
 	}
 	
 	private void onDialoguerMessageEvent(string message, string metadata){
@@ -209,63 +200,26 @@ public class DialogueGUI : MonoBehaviour {
 	#endregion
 
 	private void drawPortraits(){
-		//////
-		/// VERY SENSITIVE VALUES USED FOR PORTRAIT POSITIONING
-		/// to do: make them resolution independent
-		//////
-
-		float rx = Screen.width / native_width;
-		float ry = Screen.height / native_height;
-
-		// Used to make GUI resolution independent
-		GUI.matrix = Matrix4x4.TRS (new Vector3(0f,0f,0f), Quaternion.identity, new Vector3(rx, ry, 1f));
-
-		Color[] mainPixels;		// used for tinting
-		Color[] targetPixels;	// used for tinting
-		Color tint = new Color (0.25f, 0.25f, 0.25f, 0.9f);
-
-		float mainCharScale = 1.8f;
-		float targetCharScale = 1.5f;
 		// Main char texture
 		if (mainChar != null){
-			if (Dialoguer.GetGlobalBoolean(0) == false){	// Right side
-				GUI.DrawTexture (new Rect (1450f,
-			                           465f,
-			                           mainChar.width * mainCharScale * _windowTweenValue,
-			                           mainChar.height * mainCharScale * _windowTweenValue),
+			GUI.DrawTexture (new Rect (Screen.width - (mainChar.width / 1.5f),
+			                           Screen.height - (mainChar.height / 2.25f),
+			                           mainChar.width,
+			                           mainChar.height),
 			                 		   mainChar);
-			} else {
-				GUI.color = tint;
-				GUI.DrawTexture (new Rect (1450f,
-				                           465f,
-				                           mainChar.width * mainCharScale * _windowTweenValue,
-				                           mainChar.height * mainCharScale * _windowTweenValue),
-				                		   mainChar);
-				GUI.color = Color.white;
-			}
 		} else {
 			Debug.LogError ("MainChar Texture is null!");
 		}
 
 		// Other char texture
 		if (targetChar != null){
-			if (Dialoguer.GetGlobalBoolean(0) == true){		// Left side
-				GUI.DrawTexture (new Rect (160f,
-				                           550f,
-				                           targetChar.width * targetCharScale * _windowTweenValue,
-				                           targetChar.height * targetCharScale * _windowTweenValue),
-					                 	   targetChar);
-			} else {
-				GUI.color = tint;
-				GUI.DrawTexture (new Rect (160f,
-				                           550f,
-				                           targetChar.width * targetCharScale * _windowTweenValue,
-				                           targetChar.height * targetCharScale * _windowTweenValue),
-				                 		   targetChar);
-				GUI.color = Color.white;
-			}
+			GUI.DrawTexture (new Rect (0f,
+			                           Screen.height - targetChar.height,
+			                           targetChar.width,
+			                           targetChar.height),
+			                 		   targetChar);
 		} else {
-			Debug.LogError ("TargetChar Texture is null!");
+			//Debug.LogError ("TargetChar Texture is null!");
 		}
 	}
 	
@@ -273,15 +227,17 @@ public class DialogueGUI : MonoBehaviour {
 	void OnGUI(){
 		
 		if(!_showDialogueBox) return;
+
+		drawPortraits ();
 		
 		// Set GUI Skin
 		GUI.skin = skin;
 		GUI.depth = 10;
 		
 		float rectX = (!_usingPositionRect) ? Screen.width*0.5f : _positionRect.x;
-		float rectY = (!_usingPositionRect) ? Screen.height - 160 : _positionRect.y;
+		float rectY = (!_usingPositionRect) ? Screen.height - 100 : _positionRect.y;
 		float rectWidth = (!_usingPositionRect) ? Screen.width*0.95f : _positionRect.width;
-		float rectHeight = (!_usingPositionRect) ? 330 : _positionRect.height;
+		float rectHeight = (!_usingPositionRect) ? 180 : _positionRect.height;
 		
 		Rect dialogueBoxRect = centerRect(new Rect(rectX, rectY, rectWidth*_windowTweenValue, rectHeight*_windowTweenValue));
 		
@@ -291,7 +247,7 @@ public class DialogueGUI : MonoBehaviour {
 		
 		// Draw dialogue box
 		if(_theme == "good"){
-			drawDialogueBox(dialogueBoxRect, new Color(1.0f,1.0f,1.0f));
+			drawDialogueBox(dialogueBoxRect, new Color(0.2f,0.8f,0.4f));
 		}else if(_theme == "bad"){
 			drawDialogueBox(dialogueBoxRect, new Color(0.8f,0.2f,0.2f));
 		}else{
@@ -300,24 +256,24 @@ public class DialogueGUI : MonoBehaviour {
 
 		// Draw name box
 		if(_nameText != string.Empty){
-			Rect nameBoxRect = new Rect(dialogueBoxRect.x * 10.0f, dialogueBoxRect.y * 2.06f, Screen.width*0.75f * _windowTweenValue, 35 * _windowTweenValue);
+			Rect nameBoxRect = new Rect(dialogueBoxRect.x, dialogueBoxRect.y - 30, Screen.width*0.75f * _windowTweenValue, 35 * _windowTweenValue);
 			nameBoxRect.width = Mathf.Clamp(nameBoxRect.width, 32, 2000);
 			nameBoxRect.height = Mathf.Clamp(nameBoxRect.height, 32, 2000);
-			//drawDialogueBox(nameBoxRect);
+			drawDialogueBox(nameBoxRect);
 			drawShadowedText(new Rect(nameBoxRect.x + (15 * _windowTweenValue) - (5 * (1 - _windowTweenValue)), nameBoxRect.y + (5 * _windowTweenValue)  - (10 * (1 - _windowTweenValue)), nameBoxRect.width - (30 * _windowTweenValue), nameBoxRect.height - (5 * _windowTweenValue)), _nameText);
 		}
 		
-		Rect textLabelRect = new Rect(dialogueBoxRect.x + 160f + (20 * _windowTweenValue), dialogueBoxRect.y + (10 * _windowTweenValue) + 114f, dialogueBoxRect.width * 0.6f - (40 * _windowTweenValue), dialogueBoxRect.height - (20 * _windowTweenValue));
+		Rect textLabelRect = new Rect(dialogueBoxRect.x + (20 * _windowTweenValue), dialogueBoxRect.y + (10 * _windowTweenValue), dialogueBoxRect.width - (40 * _windowTweenValue), dialogueBoxRect.height - (20 * _windowTweenValue));
 		//_windowCurrentText = "This is a lot of text that I'm using as a test. Lorem ipsum! This is a lot of text that I'm using as a test. Lorem ipsum! This is a lot of text that I'm using as a test. Lorem ipsum!";
 		drawShadowedText(textLabelRect, _windowCurrentText);
 		
 		if(_isBranchedText && _windowCurrentText == _windowTargetText && _branchedTextChoices != null){
 			for(int i=0; i<_branchedTextChoices.Length; i++){
 				float spacing = 22f;
-				float choiceRectY = dialogueBoxRect.yMin + spacing*i + 114f;
+				float choiceRectY = dialogueBoxRect.yMin + spacing*i + 14f;
 				//float choiceRectY = (dialogueBoxRect.yMax - (((spacing) * _branchedTextChoices.Length) - (spacing*i)) - 18);
 				//float choiceRectY = dialogueBoxRect.yMax - spacing*i * _branchedTextChoices.Length;
-				Rect choiceRect = new Rect(dialogueBoxRect.x + 190f, choiceRectY, dialogueBoxRect.width - 80, 38);
+				Rect choiceRect = new Rect(dialogueBoxRect.x + 60, choiceRectY, dialogueBoxRect.width - 80, 38);
 
 				drawShadowedText(choiceRect, _branchedTextChoices[i]);
 
@@ -339,13 +295,11 @@ public class DialogueGUI : MonoBehaviour {
 			}
 		}
 
-		drawPortraits ();
-
 	}
 	
 	// Draws a dialogue box
 	private void drawDialogueBox(Rect rect){
-		drawDialogueBox(rect, new Color(255f/255.0F,255f/255.0F, 255f/255.0F));
+		drawDialogueBox(rect, new Color(45f/255.0F,111f/255.0F, 1f/255.0F));
 	}
 	
 	private void drawDialogueBox(Rect rect, Color color){
@@ -356,18 +310,18 @@ public class DialogueGUI : MonoBehaviour {
 		
 		// Background diagonal lines
 		GUI.color = new Color(0,0,0,0.25f);
-//		Rect diagonalLinesRect = new Rect(rect.x + 7, rect.y + 7, rect.width - 14, rect.height - 14);
-//		GUI.DrawTextureWithTexCoords(
-//			diagonalLinesRect,
-//			diagonalLines,
-//			new Rect(0, 0, diagonalLinesRect.width / diagonalLines.width, diagonalLinesRect.height / diagonalLines.height)
-//			);
+		Rect diagonalLinesRect = new Rect(rect.x + 7, rect.y + 7, rect.width - 14, rect.height - 14);
+		GUI.DrawTextureWithTexCoords(
+			diagonalLinesRect,
+			diagonalLines,
+			new Rect(0, 0, diagonalLinesRect.width / diagonalLines.width, diagonalLinesRect.height / diagonalLines.height)
+			);
 		GUI.color = GUI.contentColor;
 		
 		// Border
-//		GUI.depth = 20;
-//		GUI.Box(rect, string.Empty, GUI.skin.GetStyle("box_border"));
-//		GUI.depth = 10;
+		GUI.depth = 20;
+		GUI.Box(rect, string.Empty, GUI.skin.GetStyle("box_border"));
+		GUI.depth = 10;
 	}
 	
 	private void drawShadowedText(Rect rect, string text){

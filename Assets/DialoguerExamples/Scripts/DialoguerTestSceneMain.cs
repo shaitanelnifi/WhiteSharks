@@ -41,7 +41,7 @@ public class DialoguerTestSceneMain : MonoBehaviour {
 		if(GUI.Button (new Rect(25, 25 + 30 + 10, 125, 30), "Old School RPG")){
 			Dialoguer.events.ClearAll();
 			oldRpgDialogue.addDialoguerEvents();
-			Dialoguer.StartDialogue(1);	// Old SchoolRPG
+			Dialoguer.StartDialogue(DialoguerDialogues.OldSchoolRPG);	// Old SchoolRPG
 		}
 		
 		if(GUI.Button (new Rect(25, 25 + 60 + 20, 125, 30), "NextGen RPG")){

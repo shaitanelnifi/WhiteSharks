@@ -17,6 +17,7 @@ namespace DialoguerCore{
 		}
 		
 		public static void startDialogue(int dialogueId){
+			Debug.Log("been called");
 			if(dialogue != null){ 
 				DialoguerEventManager.dispatchOnSuddenlyEnded();
 			}
