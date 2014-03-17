@@ -13,14 +13,10 @@ public class CharacterSelect : MonoBehaviour {
 			GameManager.Instance.SetMainCharacter(character);
 			//load level 1
 			//Application.LoadLevel (GameManager.episodeStartLevels[GameManager.currentEpisode]);
-<<<<<<< HEAD
 			//TEST
 			GameManager.Instance.playerInScene = true; 
 			Application.LoadLevel ("finroom");
 			//END TEST
-=======
-			Application.LoadLevel ("finroom");
->>>>>>> scene name change prep
 		}
 	}
 }
