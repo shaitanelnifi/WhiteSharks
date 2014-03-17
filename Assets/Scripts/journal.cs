@@ -22,7 +22,6 @@ public class journal : MonoBehaviour {
 	
 	public List<NPC> personsOfInterest;
 	private List<CaseObject>weaponList;
-	private List<string>roomList;
 
 	//Defaults for non-visible NPC
 	public static Sprite emptyPortrait;
@@ -43,6 +42,7 @@ public class journal : MonoBehaviour {
 	public GameObject alleywayBelly, alleywayFin, janesRoom, plaza, yesButton, noButton;
 	public UILabel whereLabel;
 	private GameObject selectedLocation;
+	private ArrayList roomList;
 
 	//Grab buttons and textfield from view. Will change to use gameobject find. Three lists for three different types of buttons.
 	private static List<GameObject> viewTabList;
@@ -98,8 +98,6 @@ public class journal : MonoBehaviour {
 		weaponList.Add(eSword);
 		//---------- hard code for first stage -------------------//
 
-		roomList = GameManager.roomList;
-
 		//Listens for tab button presses in journal and runs onClick with button clicked as parameter.
 		UIEventListener.Get (viewTab1).onClick += this.onClick;
 		UIEventListener.Get (viewTab2).onClick += this.onClick;
@@ -126,6 +124,12 @@ public class journal : MonoBehaviour {
 		UIEventListener.Get (yesButton).onClick += this.onClickMap;
 		UIEventListener.Get (noButton).onClick += this.onClickMap;
 		selectedLocation = null;
+
+		roomList = new ArrayList ();
+		for (int i = 0; i < GameManager.Instance.roomIDList.Count; i++) {
+			roomList.Add(GameManager.Instance.roomIDList[i]);
+			Debug.Log (roomList[i]);
+		}
 
 		initPoIView();
 		initObjView ();
@@ -180,16 +184,20 @@ public class journal : MonoBehaviour {
 	//Bad way to do this.
 	void loadNewLocation(){
 		if(selectedLocation == alleywayFin){
-			Application.LoadLevel("stage2");
+			//Application.LoadLevel("stage2");
 		}
 		else if(selectedLocation == alleywayBelly){
-			Application.LoadLevel("stage4");
+			//Application.LoadLevel("stage4");
 		}
 		else if(selectedLocation == janesRoom){
+<<<<<<< HEAD
 			Application.LoadLevel("finroom");
+=======
+			//Application.LoadLevel("stage1");
+>>>>>>> scene name change prep
 		}
 		else if(selectedLocation == plaza){
-			Application.LoadLevel("stage3");
+			//Application.LoadLevel("stage3");
 		}
 		whereLabel.text = "";
 		selectedLocation = null;
