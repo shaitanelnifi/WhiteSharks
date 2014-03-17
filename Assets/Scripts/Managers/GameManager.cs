@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour {
 
 	public static bool dialogueJustFinished = false;
 	public static bool firstTimeOffice = true;
+	public static bool may = true;
 
 	public bool playerInScene = false;
 	private static GameManager instance;
