@@ -59,7 +59,7 @@ public class playerScript : CaseElement {
 				modSpeed = minSpeed;
 			}
 
-			Debug.LogError ("Speed: " + modSpeed.ToString());
+			//Debug.LogError ("Speed: " + modSpeed.ToString());
 
 			if(Input.GetMouseButton(0)){
 				//get mouse clicked location and convert them to world point.
@@ -153,7 +153,7 @@ public class playerScript : CaseElement {
 			}
 		}
 
-		Debug.Log ("closet point: " + closest.transform.position);
+		//Debug.Log ("closet point: " + closest.transform.position);
 		return closest;
 	}
 	//change scene when collide with door

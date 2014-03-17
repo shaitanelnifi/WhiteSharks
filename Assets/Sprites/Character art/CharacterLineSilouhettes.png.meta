@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: 0779406f82a7447d88deb3462359ea1b
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: CharacterLineSilouhettes_0
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 448
+        width: 425
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: CharacterLineSilouhettes_1
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 406
+        width: 671
+        height: 1926
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: CharacterLineSilouhettes_2
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 454
+        width: 480
+        height: 1767
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: CharacterLineSilouhettes_3
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 439
+        width: 563
+        height: 1681
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: CharacterLineSilouhettes_4
+      rect:
+        serializedVersion: 2
+        x: 2967
+        y: 1470
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: CharacterLineSilouhettes_5
+      rect:
+        serializedVersion: 2
+        x: 3715
+        y: 377
+        width: 762
+        height: 2017
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: CharacterLineSilouhettes_6
+      rect:
+        serializedVersion: 2
+        x: 4693
+        y: 386
+        width: 353
+        height: 1678
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: CharacterLineSilouhettes_7
+      rect:
+        serializedVersion: 2
+        x: 5296
+        y: 380
+        width: 526
+        height: 1832
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: CharacterLineSilouhettes_8
+      rect:
+        serializedVersion: 2
+        x: 2889
+        y: 380
+        width: 729
+        height: 1929
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 
