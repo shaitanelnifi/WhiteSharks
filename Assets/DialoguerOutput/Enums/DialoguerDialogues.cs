@@ -7,5 +7,4 @@ public enum DialoguerDialogues{
 	CarlosCase = 4,
 	AlexiaendCase = 5,
 	PilotIntro = 6,
-	AlexiaIntro2 = 8,
 }
