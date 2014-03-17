@@ -1294,7 +1294,8 @@ MonoBehaviour:
   scaleX: 1
   scaleY: 1
   maxY: -2.18983006
-  minY: -3.68232894
-  minScale: .409999996
-  maxScale: 1
+  minY: -4
+  minScale: .330000013
+  maxScale: 1.20000005
+  baseSpeed: 2
   id: 5
