@@ -28,7 +28,7 @@ public class playerScript : CaseElement {
 	private int counter = 0;
 	public float[] scaleInfo = new float[4]{0f, 0f, 0f, 0f};
 	public bool canScale = true;
-	GameObject backEffect;
+	GameObject backEffect = null;
 
 
 
@@ -149,21 +149,25 @@ public class playerScript : CaseElement {
 	}
 	//change scene when collide with door
 	void OnTriggerEnter2D(Collider2D collider){
+
 		//canScale = false;
-		int coolDown = 30;
+		//int coolDown = 30;
 		DoorScript doorObj = collider.gameObject.GetComponent<DoorScript> ();
 		SceneDoor doorObj2 = collider.gameObject.GetComponent<SceneDoor> ();
 
 		if (doorObj != null || doorObj2 != null){ 
+			gameObject.collider2D.enabled = false;
 			renderer.enabled = false;
-			backEffect = (GameObject)Instantiate(Resources.Load("blackScreen"));
+			if (backEffect == null){
+				backEffect = (GameObject)Instantiate(Resources.Load("blackScreen"));
+			}
 		}
 		else {
 			renderer.enabled = true;
 		}
 
-		counter++;
-		if (counter >= coolDown){
+		//counter++;
+		//if (counter >= coolDown){
 	
 			string temp;
 			int tempIndex;
@@ -197,7 +201,7 @@ public class playerScript : CaseElement {
 				//DestoryPlayer();
 				Application.LoadLevel (temp);
 			}
-		}
+		//}
 
 	}
 
