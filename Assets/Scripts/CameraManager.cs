@@ -35,7 +35,7 @@ public class CameraManager : MonoBehaviour {
 
 	void LateUpdate() {
 		// Can't put this in start because start is run before player instantiated
-		if (player == null) {;
+		if (player == null) {
 			player = GameManager.Instance.getPlayerScript();
 		} else {
 			getOnce = true;
