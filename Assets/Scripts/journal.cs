@@ -192,7 +192,7 @@ public class journal : MonoBehaviour {
 			Application.LoadLevel("stage4");
 		}
 		else if(selectedLocation == janesRoom){
-			Application.LoadLevel("stage1");
+			Application.LoadLevel("finroom");
 		}
 		else if(selectedLocation == plaza){
 			Application.LoadLevel("stage3");
