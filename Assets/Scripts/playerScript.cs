@@ -34,7 +34,8 @@ public class playerScript : CaseElement {
 
 
 	void Start(){
-		anim = GetComponent<Animator>();
+		anim = GetComponentInChildren<Animator>();
+		Debug.Log (anim);
 		canWalk = true;
 		canScale = true;
 		mainCam = GameObject.Find("Main Camera").camera;
@@ -78,6 +79,11 @@ public class playerScript : CaseElement {
 						Vector2 toPoint = FindClosestPoint(targetPosition).transform.position;
 						distance = Vector2.Distance (transform.position, toPoint);
 						transform.position = Vector2.Lerp (transform.position, toPoint,Time.deltaTime* (modSpeed/distance));
+						anim.SetBool("walking",true);
+						Debug.Log ("start walking");
+					} else {
+						anim.SetBool("walking",false);
+						Debug.Log ("Stop walking");
 					}
 				}
 				//else go straight to that location
@@ -85,6 +91,12 @@ public class playerScript : CaseElement {
 					distance = Vector2.Distance (transform.position, targetPosition);
 					if(distance > 0){
 						transform.position = Vector2.Lerp (transform.position, targetPosition,Time.deltaTime* (modSpeed/distance));
+						anim.SetBool("walking",true);
+						Debug.Log ("start walking");
+
+					} else {
+						anim.SetBool("walking",false);
+						Debug.Log ("Stop walking");
 					}
 				}
 			}

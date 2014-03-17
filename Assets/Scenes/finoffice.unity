@@ -152,6 +152,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctAnswer: 0
+  may: 1
+  maySprite: {fileID: 2800000, guid: ae077eceb54a74421ae84077cfc03fa6, type: 3}
+  alexiaSprite: {fileID: 2800000, guid: 036f6ea0067ef41a7b7561f5414dda4d, type: 3}
 --- !u!4 &903885457
 Transform:
   m_ObjectHideFlags: 0

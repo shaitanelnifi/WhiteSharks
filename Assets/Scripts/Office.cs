@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 
@@ -10,9 +10,14 @@ public class Office : MonoBehaviour {
 	
 	public bool correctAnswer = false;
 	private bool started = false;
+	public bool may = true;
+	public Texture2D maySprite;
+	public Texture2D alexiaSprite;
+
 	// Use this for initialization
 	void Start () {
-	
+		GameManager.Instance.playerInScene = false;
+		GameManager.dialogueJustFinished = false;
 	}
 	
 	// Update is called once per frame
@@ -27,8 +32,14 @@ public class Office : MonoBehaviour {
 
 		if (GameManager.dialogueJustFinished) {
 			GameManager.dialogueJustFinished = false;
-			GameManager.firstTimeOffice = false;
-			StartCoroutine("goToPlaza");
+			if (GameManager.may){
+				GameManager.firstTimeOffice = false;
+				GameManager.may = false;
+				StartCoroutine ("firstDialogueB");
+			}
+			else{
+				StartCoroutine("goToPlaza");
+			}
 		} //else if (GameManager.dialogueJustFinished && !firstTime){ 
 			//We have to add something that checks if you've answered correctly
 			//if (correctAnswer){
@@ -42,9 +53,18 @@ public class Office : MonoBehaviour {
 	public IEnumerator firstDialogue(){
 		started = true;
 		DialogueGUI dGUI = GameManager.Instance.GetComponent<DialogueGUI>();
-		Debug.LogError ("dgui: " + dGUI.ToString());
-		//dGUI.setTargetTex();
+		dGUI.setTargetTex(alexiaSprite);
+		dGUI.setMainTex (maySprite);
 		yield return new WaitForSeconds (1.5f);
+		Dialoguer.StartDialogue(7);
+	}
+
+	public IEnumerator firstDialogueB(){
+		started = true;
+		DialogueGUI dGUI = GameManager.Instance.GetComponent<DialogueGUI>();
+		dGUI.setTargetTex(alexiaSprite);
+		yield return new WaitForSeconds (1.5f);
+		dGUI.setMainTex ((Texture2D)Resources.Load ("JaneSprite"));
 		Dialoguer.StartDialogue(2);
 	}
 
@@ -56,6 +76,7 @@ public class Office : MonoBehaviour {
 
 	public IEnumerator goToPlaza(){
 		yield return new WaitForSeconds (1.5f);
+		GameManager.Instance.playerInScene = true;
 		Application.LoadLevel("finplaza");
 	}
 }
