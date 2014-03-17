@@ -272,8 +272,6 @@ public class GameManager : MonoBehaviour {
 		Debug.Log ("Persocets, Adderall, Ecstasy, PMW");
 		DialogueGUI dGUI = gameObject.AddComponent<DialogueGUI> ();
 		dGUI.setSkin(Resources.Load ("OldSchool") as GUISkin);
-		dGUI.setTexture(Resources.Load ("DialogueBoxDiagonalLines") as Texture2D);
-
 
 		roomIDList = new ArrayList ();
 		rooms = new string[5];
