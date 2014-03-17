@@ -41,6 +41,9 @@ public class Office : MonoBehaviour {
 
 	public IEnumerator firstDialogue(){
 		started = true;
+		DialogueGUI dGUI = GameManager.Instance.GetComponent<DialogueGUI>();
+		Debug.LogError ("dgui: " + dGUI.ToString());
+		//dGUI.setTargetTex();
 		yield return new WaitForSeconds (1.5f);
 		Dialoguer.StartDialogue(2);
 	}

@@ -74,6 +74,11 @@ public class DialogueGUI : MonoBehaviour {
 		}
 	}
 
+	public void setMainTex(Texture2D npcTex)
+	{
+			mainChar = npcTex;
+	}
+
 
 	// Update is called once per frame
 	void Update () {
@@ -191,9 +196,9 @@ public class DialogueGUI : MonoBehaviour {
 		startWindowTweenOut();
 
 		// Resets the camera to default size
-		Debug.Log ("yolooooooooooooooooooooooooooo");
+//		Debug.Log ("yolooooooooooooooooooooooooooo");
 		Camera.main.orthographicSize = 6.0f;
-		Debug.Log ("yoloooooooooooooooooooooooooooq2342343242342");
+//		Debug.Log ("yoloooooooooooooooooooooooooooq2342343242342");
 	}
 	
 	private void onDialoguerMessageEvent(string message, string metadata){
