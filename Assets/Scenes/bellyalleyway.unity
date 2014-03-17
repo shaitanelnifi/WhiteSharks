@@ -889,8 +889,9 @@ MonoBehaviour:
   alibi: Cafe
   scene: scene1
   trust: 0
-  enumName: 5
+  enumName: 1
   relations: 040000000500000006000000070000000800000009000000
+  myConvo: 0
   mouseOverIcon: Speech_Icon
 --- !u!4 &1334299046
 Transform:
@@ -1313,7 +1314,8 @@ MonoBehaviour:
   scaleX: 1
   scaleY: 1
   maxY: -2.18983006
-  minY: -3.68232894
-  minScale: .409999996
-  maxScale: 1
+  minY: -4
+  minScale: .330000013
+  maxScale: 1.20000005
+  baseSpeed: 2
   id: 5

@@ -377,8 +377,9 @@ MonoBehaviour:
   alibi: F
   scene: scene1
   trust: 0
-  enumName: 8
+  enumName: 5
   relations: 040000000500000006000000070000000900000008000000
+  myConvo: 0
   mouseOverIcon: Speech_Icon
 --- !u!212 &550110081
 SpriteRenderer:
@@ -854,8 +855,9 @@ MonoBehaviour:
   alibi: F
   scene: scene1
   trust: 0
-  enumName: 9
+  enumName: 4
   relations: 040000000500000006000000070000000800000009000000
+  myConvo: 0
   mouseOverIcon: Speech_Icon
 --- !u!4 &1481105400
 Transform:
@@ -1183,6 +1185,7 @@ MonoBehaviour:
   minY: -4.30000019
   minScale: .579999983
   maxScale: .850000024
+  baseSpeed: 6
   id: 4
 --- !u!1001 &2007506676
 Prefab:
