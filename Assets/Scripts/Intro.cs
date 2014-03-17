@@ -77,6 +77,7 @@ public class Intro : MonoBehaviour {
 
 	IEnumerator wait(){
 		yield return new WaitForSeconds (1.5f);
+		GameManager.Instance.playerInScene = true;
 		Application.LoadLevel("finroom");
 	}
 
