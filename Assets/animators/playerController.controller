@@ -8,7 +8,7 @@ AnimatorController:
   m_Name: playerController
   serializedVersion: 2
   m_AnimatorParameters:
-  - m_Name: Speed
+  - m_Name: distance
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -43,8 +43,8 @@ Transition:
   m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: walking
+  - m_ConditionMode: 3
+    m_ConditionEvent: distance
     m_EventTreshold: .100000001
     m_ExitTime: 1
   m_Atomic: 1
@@ -61,8 +61,8 @@ Transition:
   m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: walking
+  - m_ConditionMode: 4
+    m_ConditionEvent: distance
     m_EventTreshold: .100000001
     m_ExitTime: 1
   m_Atomic: 1
