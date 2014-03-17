@@ -167,10 +167,6 @@ public class playerScript : CaseElement {
 		else {
 			renderer.enabled = true;
 		}
-
-		//counter++;
-		//if (counter >= coolDown){
-	
 			string temp;
 			int tempIndex;
 
@@ -200,10 +196,8 @@ public class playerScript : CaseElement {
 				}
 				GameManager.Instance.SetNextX(doorObj2.x);
 				GameManager.Instance.SetNextY(doorObj2.y);
-				//DestoryPlayer();
 				Application.LoadLevel (temp);
 			}
-		//}
 
 	}
 
