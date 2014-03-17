@@ -77,7 +77,7 @@ public class Intro : MonoBehaviour {
 
 	IEnumerator wait(){
 		yield return new WaitForSeconds (1.5f);
-		Application.LoadLevel("stage1");
+		Application.LoadLevel("finroom");
 	}
 
 	void initDialogue(int num){
