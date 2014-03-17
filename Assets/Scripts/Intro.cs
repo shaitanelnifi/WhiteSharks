@@ -34,7 +34,6 @@ public class Intro : MonoBehaviour {
 		if (GameManager.dialogueJustFinished) {
 			GameManager.dialogueJustFinished = false;
 			if (!theEnd){
-				//Debug.Log ("emagherd");
 				change = true;
 
 			} else {
@@ -47,7 +46,7 @@ public class Intro : MonoBehaviour {
 			Debug.Log ("In Change " + r.color.a + " " + fadeOut);
 			if (r.color.a >= 0 && fadeOut) {
 					Debug.Log ("Fading out");
-					a.a -= 0.01f;
+					a.a -= 0.016f;
 					r.color = a;
 			} 
 			else {
@@ -72,12 +71,12 @@ public class Intro : MonoBehaviour {
 	}
 
 	IEnumerator test(){
-		yield return new WaitForSeconds (2);
+		yield return new WaitForSeconds (1.5f);
 		initDialogue (6);
 	}
 
 	IEnumerator wait(){
-		yield return new WaitForSeconds (2);
+		yield return new WaitForSeconds (1.5f);
 		Application.LoadLevel("stage1");
 	}
 
