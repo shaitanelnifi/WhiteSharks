@@ -116,12 +116,12 @@ public class GameManager : MonoBehaviour {
 	/// <summary>
 	/// Generates the case
 	/// </summary>
-	public void generateCase() {
-		//Debug.Log (theCase.getRoom());
-		theCase = generator.generateCase();
-		//Debug.Log ("the case in GM " + guilty + " " + weapon + " " + room);
-		//Debug.Log (theCase.getRoom());
-	}
+//	public void generateCase() {
+//		//Debug.Log (theCase.getRoom());
+//		theCase = generator.generateCase();
+//		//Debug.Log ("the case in GM " + guilty + " " + weapon + " " + room);
+//		//Debug.Log (theCase.getRoom());
+//	}
 
 	/// <summary>
 	/// Calculates the score
@@ -300,7 +300,6 @@ public class GameManager : MonoBehaviour {
 		weaponList.Add(Resources.Load<CaseObject>("VSs"));
 		generator = new CaseGenerator ();
 		//generateCase ();
-		theCase = generator.demo ();
 		addWitnesses ();
 
 		printGoal ();
