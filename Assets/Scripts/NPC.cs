@@ -106,6 +106,12 @@ public class NPC : CaseElement {
 	
 	//switch the displaying order of the npc. 
 	void Update () {
+		SpriteRenderer r = GetComponent<SpriteRenderer> ();
+		if (GameManager.firstTimeOffice && !this.name.Equals("Shammy")) {
+						r.color = Color.black;		
+				} else {
+			r.color = Color.white;		
+		}
 		/*if (transform.position.y < playerObj.transform.position.y) {
 			renderer.sortingLayerName= "foreground";
 			renderer.sortingOrder = 2;

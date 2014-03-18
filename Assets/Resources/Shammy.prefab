@@ -11,6 +11,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 212: {fileID: 21200000}
   - 61: {fileID: 6100000}
+  - 95: {fileID: 9500000}
   m_Layer: 10
   m_Name: Shammy
   m_TagString: Untagged
@@ -40,6 +41,20 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 1.64999998, y: 6.1500001}
   m_Center: {x: 0, y: 0}
+--- !u!95 &9500000
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -60,7 +75,11 @@ MonoBehaviour:
   defaultIcon: Walk_Icon
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
+  weaponProficiency: 0
+  highClass: 0
+  alibi: 
   scene: scene1
+  trust: 0
   enumName: 2
   relations: 040000000500000006000000070000000800000009000000
   myConvo: 0
