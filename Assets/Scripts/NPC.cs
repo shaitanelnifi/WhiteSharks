@@ -41,21 +41,9 @@ public class NPC : CaseElement {
 	//enable conversation object if left mouse button is clicked.
 	public void OnMouseDown(){
 		if(Input.GetMouseButton(0)){
-			Debug.LogError("HI");
-			if (this.elementName.CompareTo("Liam O'Shea")==0){
-				Debug.LogError("HI LIAM");
-				GameManager.npcList.Find(x => x.elementName.CompareTo("Liam O'Shea")==0).description = "Liam is a guard at the Fin. He can wield LASER PISTOLS. He says he was at the GYM.";
-				journal.Instance.updateNPCs();
-			}
-			else if (this.elementName.CompareTo("Nina Walker")==0){
-				Debug.LogError("HI NINA");
-				GameManager.npcList.Find(x => x.elementName.CompareTo("Nina Walker")==0).description = "Nina is a member of the YAP. A successful young teenager. She can wield the eSWORD. She says she was at the CAFÉ.";
-				journal.Instance.updateNPCs();
-			}
-			else if (this.elementName.CompareTo("Josh Susach")==0) {
-				Debug.LogError("HI JOSH");
-				GameManager.npcList.Find(x => x.elementName.CompareTo("Josh Susach")==0).description = "He's a criminal. He's an artist. He's proud of both. He can wield the METAL PIPE. He says he was at the GYM.";
-				journal.Instance.updateNPCs();
+			if (this.name.Equals("Shammy")){
+				Animator a = GetComponent<Animator>();
+				a.SetBool("active", false);
 			}
 			playerScript temp = (playerScript) FindObjectOfType(typeof(playerScript));
 			temp.canWalk = false;
