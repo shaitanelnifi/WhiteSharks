@@ -1669,8 +1669,8 @@ Your intraepidermal implant will send neurosignals that will visually enhance th
       <name>Shammy Intro</name>
       <startPage>8</startPage>
       <scrollPosition>
-        <x>500.027466</x>
-        <y>0</y>
+        <x>690.0403</x>
+        <y>1116.06812</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -1757,7 +1757,7 @@ a bracelet on you. Please find one soon, I can’t really talk to you if you’r
           <newWindow>false</newWindow>
           <choices>
             <string>Tell me more about White Shark.</string>
-            <string>Tell me more about yourself.</string>
+            <string>Who are you?</string>
             <string>What should I do next?</string>
           </choices>
           <waitType>Seconds</waitType>
@@ -1823,8 +1823,8 @@ a bracelet on you. Please find one soon, I can’t really talk to you if you’r
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>741.9951</x>
-            <y>815</y>
+            <x>851.9951</x>
+            <y>871</y>
           </position>
           <outs>
             <int>13</int>
@@ -1870,15 +1870,15 @@ a bracelet on you. Please find one soon, I can’t really talk to you if you’r
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>739.0066</x>
-            <y>1660.997</y>
+            <x>670.0066</x>
+            <y>1563.997</y>
           </position>
           <outs>
-            <int>12</int>
+            <int>17</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Go get a bracelet! They’re loads of fun! If you’re the new tenant of this room, I can assume that your boss, Dr. Ross, has it. You can get to the office from the plaza, accessible from the elevator nearby.</text>
+          <text>Go get a bracelet! They’re loads of fun! </text>
           <name>Shammy</name>
           <portrait />
           <audio />
@@ -1916,8 +1916,8 @@ a bracelet on you. Please find one soon, I can’t really talk to you if you’r
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>1045.00427</x>
-            <y>826.9885</y>
+            <x>1286.00427</x>
+            <y>889.9885</y>
           </position>
           <outs>
             <int>1</int>
@@ -1962,8 +1962,8 @@ a bracelet on you. Please find one soon, I can’t really talk to you if you’r
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>1070.00378</x>
-            <y>1659.997</y>
+            <x>1557.00378</x>
+            <y>1621.997</y>
           </position>
           <outs>
             <int>7</int>
@@ -2175,8 +2175,8 @@ a bracelet on you. Please find one soon, I can’t really talk to you if you’r
           <id>11</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>737.0205</x>
-            <y>1347.99438</y>
+            <x>676.0205</x>
+            <y>1292.99438</y>
           </position>
           <outs>
             <int>4</int>
@@ -2218,8 +2218,8 @@ a bracelet on you. Please find one soon, I can’t really talk to you if you’r
           <id>12</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>1073.02051</x>
-            <y>1346.99438</y>
+            <x>1543.02051</x>
+            <y>1403.99438</y>
           </position>
           <outs>
             <int>6</int>
@@ -2427,6 +2427,98 @@ a bracelet on you. Please find one soon, I can’t really talk to you if you’r
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>17</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>1001.04028</x>
+            <y>1497.06812</y>
+          </position>
+          <outs>
+            <int>18</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>If you’re the new tenant of this room, I can assume that your boss, Dr. Ross, has it. </text>
+          <name>Shammy</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>18</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>1227.04028</x>
+            <y>1377.06812</y>
+          </position>
+          <outs>
+            <int>12</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>You can get to the office from the plaza, accessible from the elevator nearby.</text>
+          <name />
+          <portrait>Shammy</portrait>
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
       </phases>
@@ -3926,8 +4018,8 @@ a bracelet on you. Please find one soon, I can’t really talk to you if you’r
       <name>Noel Case 1</name>
       <startPage>6</startPage>
       <scrollPosition>
-        <x>788.0469</x>
-        <y>627.9668</y>
+        <x>0</x>
+        <y>40.00244</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -4554,8 +4646,8 @@ a bracelet on you. Please find one soon, I can’t really talk to you if you’r
           <id>14</id>
           <type>TextPhase</type>
           <position>
-            <x>965.989</x>
-            <y>1400.96338</y>
+            <x>1047.989</x>
+            <y>1468.96338</y>
           </position>
           <outs>
             <int>11</int>
@@ -5303,8 +5395,8 @@ Thank you for your input.
       <name>Alexia end Case 1</name>
       <startPage>7</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>25</y>
+        <x>224.0149</x>
+        <y>618.0094</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -5312,15 +5404,15 @@ Thank you for your input.
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>19</x>
-            <y>426</y>
+            <x>295</x>
+            <y>937</y>
           </position>
           <outs>
-            <int>5</int>
+            <int>17</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Excellent deduction. Since Josh has no skill with electronics, it’s safe to assume Nina broke into Triple X. Since Noel is Nina’s supervisor, he can be responsible for her punishment.</text>
+          <text>Excellent deduction. Since Josh has no skill with electronics, it’s safe to assume Nina broke into Triple X. </text>
           <name>Alexia Ross</name>
           <portrait />
           <audio />
@@ -5358,8 +5450,8 @@ Thank you for your input.
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>331</x>
-            <y>427</y>
+            <x>10</x>
+            <y>886</y>
           </position>
           <outs>
             <int>6</int>
@@ -5404,16 +5496,15 @@ Thank you for your input.
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>655</x>
-            <y>427</y>
+            <x>979</x>
+            <y>779</y>
           </position>
           <outs>
-            <int>3</int>
+            <int>15</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Yes. We work fast here at White Shark. Keep in mind, with your current bracelet you’re only granted access to public areas of the Fin, but should you prove to be reliable we’ll grant you a higher level of clearance. We will begin discussing your job in more detail tomorrow but you’re done for the day. 
-You may head back to your room.</text>
+          <text>Yes. We work fast here at White Shark. </text>
           <name>Alexia Ross</name>
           <portrait />
           <audio />
@@ -5450,8 +5541,8 @@ You may head back to your room.</text>
           <id>3</id>
           <type>EndPhase</type>
           <position>
-            <x>880</x>
-            <y>309</y>
+            <x>1645</x>
+            <y>643</y>
           </position>
           <outs />
           <advanced>false</advanced>
@@ -5489,11 +5580,11 @@ You may head back to your room.</text>
           <id>4</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>12</x>
-            <y>895</y>
+            <x>372</x>
+            <y>14</y>
           </position>
           <outs>
-            <int>0</int>
+            <int>9</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -5532,8 +5623,8 @@ You may head back to your room.</text>
           <id>5</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>328</x>
-            <y>894.0134</y>
+            <x>1008</x>
+            <y>1142.01343</y>
           </position>
           <outs>
             <int>1</int>
@@ -5575,8 +5666,8 @@ You may head back to your room.</text>
           <id>6</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>648</x>
-            <y>896.0134</y>
+            <x>224</x>
+            <y>630.0134</y>
           </position>
           <outs>
             <int>2</int>
@@ -5618,8 +5709,8 @@ You may head back to your room.</text>
           <id>7</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>110</x>
-            <y>103</y>
+            <x>10</x>
+            <y>65</y>
           </position>
           <outs>
             <int>8</int>
@@ -5661,8 +5752,8 @@ You may head back to your room.</text>
           <id>8</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>428</x>
-            <y>103</y>
+            <x>90</x>
+            <y>39</y>
           </position>
           <outs>
             <int>4</int>
@@ -5698,6 +5789,414 @@ You may head back to your room.</text>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>4</variableSetValue>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>9</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>10</x>
+            <y>475</y>
+          </position>
+          <outs>
+            <int>10</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>So what are your thoughts on this case?</text>
+          <name>Alexia Ross</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>10</id>
+          <type>SetVariablePhase</type>
+          <position>
+            <x>321</x>
+            <y>351.010376</y>
+          </position>
+          <outs>
+            <int>11</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>false</variableSetValue>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>11</id>
+          <type>BranchedTextPhase</type>
+          <theme />
+          <position>
+            <x>539</x>
+            <y>284.013916</y>
+          </position>
+          <outs>
+            <int>13</int>
+            <int>14</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text />
+          <name>Jane Doe</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices>
+            <string>It had to be Nina!</string>
+            <string>I'm sure it was Josh.</string>
+          </choices>
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>12</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>971.998535</x>
+            <y>220.013916</y>
+          </position>
+          <outs>
+            <int>11</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>Are you sure? That doesn't sound right.</text>
+          <name>Alexia Ross</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>13</id>
+          <type>SetVariablePhase</type>
+          <position>
+            <x>1003.99854</x>
+            <y>683.0139</y>
+          </position>
+          <outs>
+            <int>0</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>true</variableSetValue>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>14</id>
+          <type>SetVariablePhase</type>
+          <position>
+            <x>860.998535</x>
+            <y>223.013916</y>
+          </position>
+          <outs>
+            <int xsi:nil="true" />
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>true</variableSetValue>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>15</id>
+          <type>TextPhase</type>
+          <position>
+            <x>1287.00366</x>
+            <y>785.0045</y>
+          </position>
+          <outs>
+            <int>16</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text>Keep in mind, with your current bracelet you’re only granted access to public areas of the Fin, but should you prove to be reliable we’ll grant you a higher level of clearance.</text>
+          <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>16</id>
+          <type>TextPhase</type>
+          <position>
+            <x>1595.00366</x>
+            <y>800.0045</y>
+          </position>
+          <outs>
+            <int>3</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text> We will begin discussing your job in more detail tomorrow but you’re done for the day. 
+You may head back to your room.</text>
+          <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>17</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>622.0149</x>
+            <y>992.0094</y>
+          </position>
+          <outs>
+            <int>5</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>Since Noel is Nina’s supervisor, he can be responsible for her punishment.</text>
+          <name>Alexia Ross</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
       </phases>
@@ -6692,5 +7191,5 @@ You may head back to your room.</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>3</currentDialogueId>
+  <currentDialogueId>5</currentDialogueId>
 </DialogueEditorMasterObject>
