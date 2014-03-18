@@ -35,6 +35,12 @@ public class playerScript : CaseElement {
 
 
 	void Start(){
+		if(Application.loadedLevelName == "finbalcony") 
+			SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/Birds"), SoundManager.SoundType.Sfx);
+		if(Application.loadedLevelName == "finplaza"){
+			SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/PlazaChatter"), SoundManager.SoundType.Sfx);
+			SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/Fin"));
+		}
 		anim = GetComponentInChildren<Animator>();
 		Debug.Log (anim);
 		canWalk = true;
