@@ -21,7 +21,7 @@ public class playerScript : CaseElement {
 	public Transform mainChar;
 	public bool facingLeft = true;
 	public bool goingtLeft= true;
-	Animator anim;
+	public Animator anim;
 	Vector2 targetPosition;
 	Vector2 direction;
 	Vector2 closestColl;
