@@ -47,6 +47,7 @@ public class NPC : CaseElement {
 			}
 			playerScript temp = (playerScript) FindObjectOfType(typeof(playerScript));
 			temp.canWalk = false;
+			temp.anim.SetBool("walking", false);
 			Debug.Log("CANT WALK" + temp.canWalk);
 			Dialoguer.StartDialogue(myConvo);
 			string npcResource = (this.elementName + "Sprite").Replace(" ", string.Empty);
