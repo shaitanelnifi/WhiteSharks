@@ -71,6 +71,8 @@ public class Office : MonoBehaviour {
 
 	public IEnumerator secondDialogue(){
 		started = true;
+		DialogueGUI dGUI = GameManager.Instance.GetComponent<DialogueGUI>();
+		dGUI.setTargetTex(alexiaSprite);
 		yield return new WaitForSeconds (1.5f);
 		Dialoguer.StartDialogue(5);
 	}
