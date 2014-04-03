@@ -300,14 +300,14 @@ public class DialogueGUI : MonoBehaviour {
 
 		// Draw name box
 		if(_nameText != string.Empty){
-			Rect nameBoxRect = new Rect(dialogueBoxRect.x * 10.0f, dialogueBoxRect.y * 2.06f, Screen.width*0.75f * _windowTweenValue, 35 * _windowTweenValue);
+			Rect nameBoxRect = new Rect(dialogueBoxRect.x * 10.0f, dialogueBoxRect.y*1.17f, Screen.width*0.75f * _windowTweenValue, 35 * _windowTweenValue);
 			nameBoxRect.width = Mathf.Clamp(nameBoxRect.width, 32, 2000);
 			nameBoxRect.height = Mathf.Clamp(nameBoxRect.height, 32, 2000);
 			//drawDialogueBox(nameBoxRect);
 			drawShadowedText(new Rect(nameBoxRect.x + (15 * _windowTweenValue) - (5 * (1 - _windowTweenValue)), nameBoxRect.y + (5 * _windowTweenValue)  - (10 * (1 - _windowTweenValue)), nameBoxRect.width - (30 * _windowTweenValue), nameBoxRect.height - (5 * _windowTweenValue)), _nameText);
 		}
 		
-		Rect textLabelRect = new Rect(dialogueBoxRect.x + 160f + (20 * _windowTweenValue), dialogueBoxRect.y + (10 * _windowTweenValue) + 114f, dialogueBoxRect.width * 0.6f - (40 * _windowTweenValue), dialogueBoxRect.height - (20 * _windowTweenValue));
+		Rect textLabelRect = new Rect(dialogueBoxRect.x + 310f + (20 * _windowTweenValue), dialogueBoxRect.y + (10 * _windowTweenValue) + 114f, dialogueBoxRect.width * 0.6f - (40 * _windowTweenValue), dialogueBoxRect.height - (20 * _windowTweenValue));
 		//_windowCurrentText = "This is a lot of text that I'm using as a test. Lorem ipsum! This is a lot of text that I'm using as a test. Lorem ipsum! This is a lot of text that I'm using as a test. Lorem ipsum!";
 		drawShadowedText(textLabelRect, _windowCurrentText);
 		
@@ -317,7 +317,7 @@ public class DialogueGUI : MonoBehaviour {
 				float choiceRectY = dialogueBoxRect.yMin + spacing*i + 114f;
 				//float choiceRectY = (dialogueBoxRect.yMax - (((spacing) * _branchedTextChoices.Length) - (spacing*i)) - 18);
 				//float choiceRectY = dialogueBoxRect.yMax - spacing*i * _branchedTextChoices.Length;
-				Rect choiceRect = new Rect(dialogueBoxRect.x + 190f, choiceRectY, dialogueBoxRect.width - 80, 38);
+				Rect choiceRect = new Rect(dialogueBoxRect.x + 310f, choiceRectY, dialogueBoxRect.width - 80, 38);
 
 				drawShadowedText(choiceRect, _branchedTextChoices[i]);
 
