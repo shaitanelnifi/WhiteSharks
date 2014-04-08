@@ -24,8 +24,7 @@ public class NPC : CaseElement {
 	public NPCNames enumName;
 	public List<NPCNames> relations;
 	public int myConvo;
-	
-	public Dictionary npcKnowledge;
+
 
 	//Mouse icon information
 	public string mouseOverIcon = "Speech_Icon";

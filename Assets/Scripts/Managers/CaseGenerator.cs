@@ -45,7 +45,6 @@ public class CaseGenerator : Object {
 
 			foreach(NPC n in GameManager.npcList){
 				npcs.Add(n);
-				GameManager.Instance.addEntry(new DictEntry(n.getEnumName(), n.getGuilt(), n.getWeaponProf(), n.getAlibi(), n.getTrust()));
 			}
 
 
@@ -174,9 +173,7 @@ public class CaseGenerator : Object {
 	private NPC makeGuilty(NPC n, string r){
 		n.setGuilt (GuiltLevel.guilty);
 		n.alibi = r;
-		DictEntry newEntry = new DictEntry(n.getEnumName(), n.getGuilt (), n.getWeaponProf(), n.getAlibi(), n.getTrust());
 		//newEntry.printEntry ();
-		GameManager.Instance.updateDict( newEntry);
 		GameManager.guilty = n;
 		return n;
 	}	
@@ -185,9 +182,6 @@ public class CaseGenerator : Object {
 	private NPC makeSuspect(NPC n, string r){
 		n.setGuilt (GuiltLevel.suspect);
 		n.alibi = r;
-		DictEntry newEntry = new DictEntry(n.getEnumName(), n.getGuilt(), n.getWeaponProf(), n.getAlibi(), n.getTrust());
-		//newEntry.printEntry ();
-		GameManager.Instance.updateDict( newEntry);
 
 		return n;
 	}

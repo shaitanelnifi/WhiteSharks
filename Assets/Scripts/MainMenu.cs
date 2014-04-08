@@ -58,6 +58,7 @@ public class MainMenu : MonoBehaviour {
 			GameManager.npcConversations[(int)NPCNames.Shammy] = 1;
 			GameManager.npcConversations[(int)NPCNames.CarlosFranco] = 4;
 			GameManager.npcConversations[(int)NPCNames.NoelAlt] = 3;
+			GameManager.Instance.offset = 8;
 			break;
 		}
 

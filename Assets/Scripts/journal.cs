@@ -354,15 +354,6 @@ public class journal : MonoBehaviour {
 		}
 	}
 
-	public void updateKnowledge(DictEntry postState){
-		//A stub because i don't know what this is.
-	}
-
-	public Dictionary getKnowledge(){
-		//A stub because I dont' know what this is.
-		Dictionary pk = new Dictionary();
-		return pk;
-	}
 
 	public void updateJournal(){
 		/*Similar code will update the journal depending on the stage in the game.
