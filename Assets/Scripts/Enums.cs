@@ -45,3 +45,9 @@ public enum NPCNames{
 	
 	unrelated = -2
 };
+
+public enum clickableID{
+	bed = 0,
+	finRoomWindow = 1,
+	finRoomProjector = 2,
+}

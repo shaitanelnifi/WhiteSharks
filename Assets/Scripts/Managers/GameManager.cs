@@ -39,9 +39,6 @@ public class GameManager : MonoBehaviour {
 	public static CaseObject weapon;
 	public static string room;
 
-	//This is the target state the player wishes to reach for maximum score
-	public static Dictionary idealGameState;
-
 	//Shammy 0, Noel 1, Carlos 2
 	public static int[] npcConversations = new int[7]{0, 0, 0, 0, 0, 0, 0};
 
@@ -50,6 +47,7 @@ public class GameManager : MonoBehaviour {
 	public static List<Texture2D> mouseSprites;
 	public static string[] spriteIndex;
 	public static Texture2D currMouse;
+	public int offset = 0;
 
 
 	public static GameManager Instance {
@@ -108,7 +106,6 @@ public class GameManager : MonoBehaviour {
 		_currLevel = "Level 1";
 		_name = "My Character";
 		_currentState = gameStates.INGAME;
-		idealGameState = new Dictionary ();
 
 		// Load character select screen
 		Application.LoadLevel ("CharacterSele");
@@ -201,26 +198,6 @@ public class GameManager : MonoBehaviour {
 
 	}
 
-	//Access function for updating the GameManager's dictionary
-	public void addEntry(DictEntry newEntry){
-		idealGameState.addNewEntry (newEntry);
-	}
-	
-	//Access function for adding an entry to the GameManager's dictionary
-	public void updateDict(DictEntry newEntry){
-		idealGameState.updateDictionary (newEntry);
-	}
-	
-	//Access function for printing the GameManager's dictionary
-	public void printGoal(){
-		idealGameState.printEntries ();
-	}
-
-	//Access function for copying the dictionary
-	public Dictionary getDict(){
-		return idealGameState;
-	}
-
 
 	//Initialize the sprite array for the mouse to draw
 	//Loads in from Sprites/Mouse Icons
@@ -249,17 +226,6 @@ public class GameManager : MonoBehaviour {
 		currMouse = (Texture2D)mouseSprites [Array.IndexOf (spriteIndex, whichSprite)];
 
 		//print (currMouse.ToString () + " WHEEEE");
-	}
-
-	private void addWitnesses(){
-
-		foreach (NPC n in witnessList) {
-
-			idealGameState.addNewEntry(new DictEntry(n.getEnumName(), GuiltLevel.witness,
-			                                         n.getWeaponProf(), n.getAlibi(), n.getTrust()));
-
-		}
-
 	}
 
 	//Testing purposes
@@ -300,10 +266,7 @@ public class GameManager : MonoBehaviour {
 		weaponList.Add(Resources.Load<CaseObject>("RadioactiveIceCubes"));
 		weaponList.Add(Resources.Load<CaseObject>("VSs"));
 		generator = new CaseGenerator ();
-		//generateCase ();
-		addWitnesses ();
 
-		printGoal ();
 	}
 
 	public static List<NPC> getSceneNPCList(int sceneID){ 
