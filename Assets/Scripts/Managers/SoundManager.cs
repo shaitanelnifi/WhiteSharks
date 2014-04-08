@@ -13,10 +13,13 @@ public class SoundManager : MonoBehaviour {
 
 	private AudioClip curClip = null;
 	private GameObject musicObj;
+	private GameObject walkNoise;
 
 	private float gameVolumeMax;
 
 	bool fading = false;
+
+	public bool isWalking = false;
 
 	public static SoundManager instance;
 
@@ -42,17 +45,37 @@ public class SoundManager : MonoBehaviour {
 	 * To call, simply run the code below with the soundfile in Resources/SoundEffects
 	 * SoundManager.instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/SOUND_FILE_NAME"), SoundManager.SoundType.Sfx);
 	 */
-	public void Play2DSound(AudioClip clip, SoundType type) {
+	public void Play2DSound(AudioClip clip, SoundType type, bool isDoor = false) {
 		//AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
 		GameObject newObj = new GameObject("SoundPlayer");
 		newObj.transform.position = Camera.main.transform.position;
-		newObj.transform.parent = Camera.main.transform;
+		if(isDoor) newObj.transform.parent = SoundManager.Instance.transform;
+		else newObj.transform.parent = Camera.main.transform;
 		AudioSource newSource = newObj.AddComponent<AudioSource>() as AudioSource;
 		newSource.audio.clip = clip;
 		newSource.audio.volume = Volume(newSource, type);
-		Debug.Log("clip " + clip.length);
 		newSource.audio.Play();
 		StartCoroutine("DeleteSource", newObj);
+	}
+
+	public void WalkSound() {
+		if(isWalking) return;
+		isWalking = true;
+		walkNoise = new GameObject("SoundPlayer");
+		walkNoise.transform.position = Camera.main.transform.position;
+		walkNoise.transform.parent = Camera.main.transform;
+		AudioSource newSource = walkNoise.AddComponent<AudioSource>() as AudioSource;
+		newSource.audio.clip = (AudioClip)Resources.Load("Sounds/SoundEffects/HeelsLoop");
+		newSource.audio.volume = Volume(newSource, SoundType.Sfx);
+		newSource.audio.loop = true;
+		newSource.audio.Play();
+	}
+
+	public void StopWalk() {
+		if(!isWalking) return;
+		isWalking = false;
+		walkNoise.audio.Stop();
+		Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/HeelsStep"), SoundType.Sfx);
 	}
 
 
@@ -143,7 +166,6 @@ public class SoundManager : MonoBehaviour {
 		float time = obj.audio.clip.length;
 		while(time > 0) {
 			time--;
-			Debug.Log("It Should!");
 			yield return new WaitForSeconds(1f);
 		}
 		Destroy(obj);
