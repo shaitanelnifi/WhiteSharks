@@ -92,12 +92,14 @@ public class playerScript : CaseElement {
 				//else go straight to that location
 				else{
 					distance = Vector2.Distance (transform.position, targetPosition);
-					if(distance > 0){
+					if(Mathf.Abs(distance) > 1 && !SoundManager.Instance.isWalking) SoundManager.Instance.WalkSound();
+					if(distance > 0) {
 						transform.position = Vector2.Lerp (transform.position, targetPosition,Time.deltaTime* (modSpeed/distance));
 					} 
 				}
 				distance = Vector2.Distance (transform.position, targetPosition);
-				anim.SetFloat("distance",distance);
+				anim.SetFloat("distance", distance);
+				if(Mathf.Abs(distance) < 1 && SoundManager.Instance.isWalking) SoundManager.Instance.StopWalk();
 				if((targetPosition.x - transform.position.x)<0 ){
 					goingtLeft = true;
 				}
@@ -215,9 +217,14 @@ public class playerScript : CaseElement {
 				GameManager.Instance.SetNextX(doorObj.x);
 				GameManager.Instance.SetNextY(doorObj.y);
 				//DestoryPlayer();
+				if((Application.loadedLevelName == "finbalcony" && temp == "finplaza") || (Application.loadedLevelName == "finplaza" && temp == "finbalcony"))
+					SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/FinElevator"), SoundManager.SoundType.Sfx, true);
+				else
+					SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/FinDoor"), SoundManager.SoundType.Sfx, true);
 				Application.LoadLevel (temp);
 				}
 			else if(doorObj2 != null) {
+				SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/FinDoor"), SoundManager.SoundType.Sfx, true);
 				if (doorObj2.id >1){
 					tempIndex = doorObj2.id;
 					temp = (string) GameManager.Instance.rooms[tempIndex];
