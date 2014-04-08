@@ -8,11 +8,11 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  - 212: {fileID: 21200000}
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
   - 20: {fileID: 2000000}
   - 50: {fileID: 5000000}
+  - 212: {fileID: 21200000}
   m_Layer: 10
   m_Name: Jane
   m_TagString: Player
@@ -151,6 +151,9 @@ MonoBehaviour:
   minSpeed: 0
   mainCam: {fileID: 0}
   mainChar: {fileID: 0}
+  facingLeft: 1
+  goingtLeft: 1
+  anim: {fileID: 0}
   canWalk: 0
   currentRoom: 0
   scaleInfo: []
@@ -161,7 +164,7 @@ SpriteRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
@@ -173,10 +176,10 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
-  m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 8deb9bab519b84eb5a9a1f0a7777910f, type: 3}
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: 1f11e758a90d34325afe310802d6ef48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21200002
 SpriteRenderer:

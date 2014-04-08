@@ -41,24 +41,13 @@ public class NPC : CaseElement {
 	//enable conversation object if left mouse button is clicked.
 	public void OnMouseDown(){
 		if(Input.GetMouseButton(0)){
-			Debug.LogError("HI");
-			if (this.elementName.CompareTo("Liam O'Shea")==0){
-				Debug.LogError("HI LIAM");
-				GameManager.npcList.Find(x => x.elementName.CompareTo("Liam O'Shea")==0).description = "Liam is a guard at the Fin. He can wield LASER PISTOLS. He says he was at the GYM.";
-				journal.Instance.updateNPCs();
-			}
-			else if (this.elementName.CompareTo("Nina Walker")==0){
-				Debug.LogError("HI NINA");
-				GameManager.npcList.Find(x => x.elementName.CompareTo("Nina Walker")==0).description = "Nina is a member of the YAP. A successful young teenager. She can wield the eSWORD. She says she was at the CAFÉ.";
-				journal.Instance.updateNPCs();
-			}
-			else if (this.elementName.CompareTo("Josh Susach")==0) {
-				Debug.LogError("HI JOSH");
-				GameManager.npcList.Find(x => x.elementName.CompareTo("Josh Susach")==0).description = "He's a criminal. He's an artist. He's proud of both. He can wield the METAL PIPE. He says he was at the GYM.";
-				journal.Instance.updateNPCs();
+			if (this.name.Equals("Shammy")){
+				Animator a = GetComponent<Animator>();
+				a.SetBool("active", false);
 			}
 			playerScript temp = (playerScript) FindObjectOfType(typeof(playerScript));
 			temp.canWalk = false;
+			temp.anim.SetBool("walking", false);
 			Debug.Log("CANT WALK" + temp.canWalk);
 			Dialoguer.StartDialogue(myConvo);
 			string npcResource = (this.elementName + "Sprite").Replace(" ", string.Empty);
@@ -106,6 +95,12 @@ public class NPC : CaseElement {
 	
 	//switch the displaying order of the npc. 
 	void Update () {
+		SpriteRenderer r = GetComponent<SpriteRenderer> ();
+		if (GameManager.firstTimeOffice && !this.name.Equals("Shammy")) {
+						r.color = Color.black;		
+				} else {
+			r.color = Color.white;		
+		}
 		/*if (transform.position.y < playerObj.transform.position.y) {
 			renderer.sortingLayerName= "foreground";
 			renderer.sortingOrder = 2;

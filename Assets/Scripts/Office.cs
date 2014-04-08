@@ -18,6 +18,7 @@ public class Office : MonoBehaviour {
 	void Start () {
 		GameManager.Instance.playerInScene = false;
 		GameManager.dialogueJustFinished = false;
+		SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/Office"));
 	}
 	
 	// Update is called once per frame
@@ -70,6 +71,8 @@ public class Office : MonoBehaviour {
 
 	public IEnumerator secondDialogue(){
 		started = true;
+		DialogueGUI dGUI = GameManager.Instance.GetComponent<DialogueGUI>();
+		dGUI.setTargetTex(alexiaSprite);
 		yield return new WaitForSeconds (1.5f);
 		Dialoguer.StartDialogue(5);
 	}

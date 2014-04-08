@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d44bc69c2ca5f943b845318866dc1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: b5083cfe83bb875479bd797c61594131, type: 3}
+  audioClip: {fileID: 8300000, guid: d818d97c75052d1428278fd2d7e40a9e, type: 3}
   trigger: 0
   volume: 1
   pitch: 1
@@ -3671,6 +3671,10 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 1395.85046
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: df5c29cd95afc4c048b62a857afcb321, type: 2}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d818d97c75052d1428278fd2d7e40a9e, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: df5c29cd95afc4c048b62a857afcb321, type: 2}
   m_RootGameObject: {fileID: 78167037}
@@ -5440,6 +5444,10 @@ Prefab:
       propertyPath: enumName
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b4ca0867b58c94ffe82dad5d181b8374, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
   m_RootGameObject: {fileID: 1634728010}
@@ -7004,6 +7012,7 @@ GameObject:
   - 114: {fileID: 1634728013}
   - 212: {fileID: 1634728012}
   - 61: {fileID: 1634728011}
+  - 95: {fileID: 1634728015}
   m_Layer: 10
   m_Name: Shammy
   m_TagString: Untagged
@@ -7088,6 +7097,21 @@ Transform:
   m_LocalScale: {x: .677597106, y: .677597404, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!95 &1634728015
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: d4ca5765567e743f5b7ad7717198a638,
+    type: 2}
+  m_PrefabInternal: {fileID: 1189909296}
+  m_GameObject: {fileID: 1634728010}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b4ca0867b58c94ffe82dad5d181b8374, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &1675740779
 GameObject:
   m_ObjectHideFlags: 0
