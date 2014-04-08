@@ -9,4 +9,7 @@ public enum DialoguerDialogues{
 	PilotIntro = 6,
 	AlexiaandMay = 7,
 	Bed = 8,
+	FinRoomView = 9,
+	Projector = 10,
+	Holobox = 11,
 }
