@@ -3489,6 +3489,7 @@ MonoBehaviour:
   descriptionLabel: {fileID: 11400134}
   panelNameLabel: {fileID: 11400000}
   timeLabel: {fileID: 11400138}
+  inventory: []
 --- !u!114 &11400054
 MonoBehaviour:
   m_ObjectHideFlags: 1
