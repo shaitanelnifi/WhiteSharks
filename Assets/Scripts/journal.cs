@@ -55,6 +55,8 @@ public class journal : MonoBehaviour {
 
 	public UILabel descriptionLabel, panelNameLabel, timeLabel;
 
+	public List<CaseObject> inventory = new List<CaseObject> ();
+
 	//Sprint 3 variables
 
 	//Destroys duplicate UI Roots.
@@ -129,6 +131,7 @@ public class journal : MonoBehaviour {
 		for (int i = 0; i < GameManager.Instance.roomIDList.Count; i++) {
 			roomList.Add(GameManager.Instance.roomIDList[i]);
 		}
+
 
 		initPoIView();
 		initObjView ();

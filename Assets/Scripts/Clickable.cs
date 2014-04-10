@@ -20,11 +20,14 @@ public class Clickable : MonoBehaviour {
 
 	public void OnMouseDown(){
 		if (Input.GetMouseButton (0)) {
-			Dialoguer.StartDialogue((int)diaNum + offset);
-
 			playerScript temp = (playerScript) FindObjectOfType(typeof(playerScript));
-			temp.canWalk = false;
-			temp.anim.SetBool("walking", false);
+			if (temp.canWalk == true){
+				Dialoguer.StartDialogue((int)diaNum + offset);
+				temp.setTarget(new Vector2(temp.transform.localPosition.x, temp.transform.localPosition.x));
+				temp.canWalk = false;
+				temp.anim.SetFloat("distance", 0f);
+				temp.anim.SetBool("walking", false);
+			}
 		}
 	}
 

@@ -26,6 +26,7 @@ public class playerScript : CaseElement {
 	Vector2 direction;
 	Vector2 closestColl;
 	public bool canWalk = true;
+	public int walkWait = 0;
 	public int currentRoom;
 	private int counter = 0;
 	public float[] scaleInfo = new float[4]{0f, 0f, 0f, 0f};
@@ -58,8 +59,12 @@ public class playerScript : CaseElement {
 		targetPosition = targetPosition + adjust;
 	}
 
+	public void setTarget(Vector2 moveHere){
+		targetPosition = moveHere;
+		}
+
 	void FixedUpdate(){	
-		if(canWalk){
+		if(canWalk && walkWait <= 0){
 			float distance;
 			//float modSpeed = Mathf.Sqrt(transform.localScale.y) * baseSpeed;
 			float modSpeed = (Mathf.Log(transform.localScale.y) + 1) * baseSpeed;
@@ -118,7 +123,8 @@ public class playerScript : CaseElement {
 			float scale = calcScale ();
 			transform.localScale = new Vector2 (scale, scale);
 		}
-
+		if (walkWait > 0)
+						walkWait--;
 	}
 
 	//Calculate the proper scaling for the avatar using scene traits
