@@ -9,8 +9,12 @@ public class MainMenu : MonoBehaviour {
 	private float _buttonWidth = 150;
 	private bool _mainMenu = true;
 	private string _wo;
+	private bool test_Mode = false;
 
 	// Use this for initialization
+	public MainMenu(int a){
+		test_Mode = true;
+	}
 	void Start () {
 		UIEventListener.Get (start).onClick += this.onClick;
 		UIEventListener.Get (options).onClick += this.onClick;
@@ -41,7 +45,7 @@ public class MainMenu : MonoBehaviour {
 		}
 	}
 
-	private void startGame() {
+	public void startGame() {
 		Debug.Log("Starting gameadsjbadsjbfdajbkadfj");
 		Debug.Log (GameManager.episodeDialogues [GameManager.currentEpisode]); 
 		Dialoguer.Initialize (GameManager.episodeDialogues[GameManager.currentEpisode]);
@@ -51,7 +55,7 @@ public class MainMenu : MonoBehaviour {
 		DontDestroyOnLoad(GameManager.Instance);
 		DontDestroyOnLoad(InputManager.Instance);
 		DontDestroyOnLoad(SoundManager.Instance);
-		GameManager.Instance.startState();
+		GameManager.Instance.startState(test_Mode);
 
 		switch (GameManager.currentEpisode) {
 		case 0:

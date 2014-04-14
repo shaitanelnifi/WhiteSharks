@@ -55,7 +55,7 @@ public class NPC : CaseElement {
 
 	 
 	 			DialogueGUI dGUI = GameManager.Instance.GetComponent<DialogueGUI>();
-	 			Debug.LogError ("dgui: " + dGUI.ToString());
+	 			//Debug.LogError ("dgui: " + dGUI.ToString());
 	 			dGUI.setTargetTex(npcTex);
 			}
  			//dGUI.tweenCam();

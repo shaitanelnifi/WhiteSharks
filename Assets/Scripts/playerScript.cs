@@ -161,9 +161,13 @@ public class playerScript : CaseElement {
 		// The ~ operator does this, it inverts a bitmask.
 		layerMask = ~layerMask;
 		//Physics2D.IgnoreRaycastLayer
+
 		RaycastHit2D tempHit = Physics2D.Raycast(transform.position, direct,dis,layerMask);
-		if (tempHit.collider.GetType() == typeof(PolygonCollider2D) &&tempHit.collider.GetType()!= null){
-			result = true;
+
+		if(tempHit.collider != null){
+			if (tempHit.collider.GetType() == typeof(PolygonCollider2D) &&tempHit.collider.GetType()!= null){
+				result = true;
+			}
 		}
 		return result;		 
 	}
@@ -177,14 +181,14 @@ public class playerScript : CaseElement {
 		foreach (GameObject point in points) {
 			if(!(point.transform.position.Equals(target))){
 				float curDistance = Vector2.Distance(point.transform.position,position);
-				if (curDistance < distance) {
+				if (curDistance < distance &&(!objectOnWay(point.transform.position))) {
 					closest = point;
 					distance = curDistance;
 				}
 			}
 		}
 
-		//Debug.Log ("closet point: " + closest.transform.position);
+		Debug.Log ("closet point: " + closest.transform.position);
 		return closest;
 	}
 	//change scene when collide with door
@@ -209,7 +213,7 @@ public class playerScript : CaseElement {
 		}
 			string temp;
 			int tempIndex;
-
+			SoundManager.Instance.StopWalk ();
 			if (doorObj != null) {
 				tempIndex = 0;
 				if (doorObj.id == 0)
@@ -243,6 +247,7 @@ public class playerScript : CaseElement {
 				GameManager.Instance.SetNextY(doorObj2.y);
 				Application.LoadLevel (temp);
 			}
+
 
 	}
 
