@@ -60,10 +60,16 @@ public class playerScript : CaseElement {
 	}
 
 	public void setTarget(Vector2 moveHere){
-		targetPosition = moveHere;
+		targetPosition = moveHere + new Vector2(0f, 0f);
 		}
 
 	void FixedUpdate(){	
+
+		if (walkWait > 0) {
+			walkWait--;
+			setTarget(new Vector2(transform.position.x, transform.position.y));
+		} else
+
 		if(canWalk && walkWait <= 0){
 			float distance;
 			//float modSpeed = Mathf.Sqrt(transform.localScale.y) * baseSpeed;
@@ -123,8 +129,7 @@ public class playerScript : CaseElement {
 			float scale = calcScale ();
 			transform.localScale = new Vector2 (scale, scale);
 		}
-		if (walkWait > 0)
-						walkWait--;
+
 	}
 
 	//Calculate the proper scaling for the avatar using scene traits

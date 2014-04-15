@@ -47,8 +47,9 @@ public class NPC : CaseElement {
 			playerScript temp = (playerScript) FindObjectOfType(typeof(playerScript));
 			if (temp.canWalk == true){
 				temp.canWalk = false;
+				temp.anim.SetFloat("distance", 0f);
 				temp.anim.SetBool("walking", false);
-				temp.setTarget(new Vector2(temp.transform.localPosition.x, temp.transform.localPosition.x));
+				temp.setTarget(new Vector2(temp.transform.position.x, temp.transform.position.y));
 				Dialoguer.StartDialogue(myConvo);
 				string npcResource = (this.elementName + "Sprite").Replace(" ", string.Empty);
 	 			Texture2D npcTex = (Texture2D) Resources.Load (npcResource);
