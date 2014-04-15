@@ -15,6 +15,9 @@ public class Intro : MonoBehaviour {
 	public Sprite next;
 	// Use this for initialization
 	void Start () {
+		Texture2D tex = (Texture2D)Resources.Load ("FrankSprite");
+		DialogueGUI dGUI = GameManager.Instance.GetComponent<DialogueGUI> ();
+		dGUI.setTargetTex (tex);
 		r = GetComponent<SpriteRenderer> ();
 		a = r.color;
 		a.a = 0;
@@ -83,6 +86,8 @@ public class Intro : MonoBehaviour {
 
 	IEnumerator wait(){
 		SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/Fin"));
+		SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/" + GameManager.episodeStartLevels[GameManager.currentEpisode]));
+		//Application.LoadLevel (GameManager.episodeStartLevels[GameManager.currentEpisode]);
 		yield return new WaitForSeconds (1.5f);
 		GameManager.Instance.playerInScene = true;
 		Application.LoadLevel("finroom");

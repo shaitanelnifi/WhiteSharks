@@ -9,6 +9,15 @@ public class gameStart : MonoBehaviour {
 	private float _buttonWidth = 150;
 	private bool _mainMenu = true;
 	private string _wo;
+	private bool test_Mode = false;
+
+	public gameStart(int a){
+		test_Mode = true;
+	}
+
+	public bool getTestMode(){
+		return test_Mode;
+	}
 
 	// Our Startscreen GUI
 	void OnGUI ()
@@ -40,7 +49,7 @@ public class gameStart : MonoBehaviour {
 
 	}
 	
-	private void startGame() {
+	public void startGame() {
 		Debug.Log("Starting gamedasadasDASAdssad");
 		Debug.Log (GameManager.episodeDialogues [GameManager.currentEpisode]); 
 		Dialoguer.Initialize (GameManager.episodeDialogues[GameManager.currentEpisode]);
@@ -49,7 +58,7 @@ public class gameStart : MonoBehaviour {
 		// Singleton pattern
 		DontDestroyOnLoad(GameManager.Instance);
 		DontDestroyOnLoad(InputManager.Instance);
-		GameManager.Instance.startState();
+		GameManager.Instance.startState(test_Mode);
 
 	}
 

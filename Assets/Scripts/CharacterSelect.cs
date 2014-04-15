@@ -15,7 +15,7 @@ public class CharacterSelect : MonoBehaviour {
 			SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/" + GameManager.episodeStartLevels[GameManager.currentEpisode]));
 			Application.LoadLevel (GameManager.episodeStartLevels[GameManager.currentEpisode]);
 			//TEST
-			GameManager.Instance.playerInScene = true; 
+			//GameManager.Instance.playerInScene = true; 
 			//Application.LoadLevel ("finroom");
 			//END TEST
 			
