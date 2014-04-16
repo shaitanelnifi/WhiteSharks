@@ -13,7 +13,7 @@ public class MoveCam : MonoBehaviour {
 	void Update(){
 
 		}
-
+	/*
 	void OnTriggerEnter2D(Collider2D collider){
 		playerScript playerObj = collider.gameObject.GetComponent<playerScript> ();
 		playerObj.renderer.enabled = true;
@@ -34,5 +34,5 @@ public class MoveCam : MonoBehaviour {
 		playerObj.renderer.enabled = true;
 	}
 
-
+*/
 }

@@ -11,6 +11,7 @@ note: add id 3 and another list for rooms
  */
 using UnityEngine;
 using System.Collections;
+using Pathfinding;
 
 public class playerScript : CaseElement {
 
@@ -22,7 +23,7 @@ public class playerScript : CaseElement {
 	public bool facingLeft = true;
 	public bool goingtLeft= true;
 	public Animator anim;
-	Vector2 targetPosition;
+	Vector3 targetPosition;
 	Vector2 direction;
 	Vector2 closestColl;
 	public bool canWalk = true;
@@ -33,9 +34,17 @@ public class playerScript : CaseElement {
 	public bool canScale = true;
 	GameObject backEffect = null;
 
+	int currentWayPoint;
+	Seeker seeker;
+	Path path;
+
+	float maxWayPointDistance=0.01f;
+	bool lastNode;
+
 
 
 	void Start(){
+		seeker = GetComponent<Seeker>();
 		if(Application.loadedLevelName == "finbalcony") 
 			SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/Birds"), SoundManager.SoundType.Sfx);
 		if(Application.loadedLevelName == "finplaza"){
@@ -46,85 +55,85 @@ public class playerScript : CaseElement {
 		Debug.Log (anim);
 		canWalk = true;
 		canScale = true;
-		mainCam = GameObject.Find("Main Camera").camera;
-		GameObject moveCam = GameObject.Find ("moveCam");
-			if(moveCam != null && transform.position.x < 1){
-				mainCam.transform.Translate(new Vector3(-9.273237f, 0, 0));
-				MoveCam.right = false;
-			}
 		//backEffect = GameObject.Find ("effect");
 	}
 
-	public void moveTarget(Vector2 adjust){
+/*	public void moveTarget(Vector2 adjust){
 		targetPosition = targetPosition + adjust;
-	}
+	}*/
 
 	public void setTarget(Vector2 moveHere){
 		targetPosition = moveHere;
 		}
 
+	public void OnPath(Path p){
+		if (!p.error) {
+			path = p;
+			currentWayPoint = 0;
+		}
+		else{
+			Debug.Log(p.error);
+		}
+	}
+
+
 	void FixedUpdate(){	
-		if(canWalk && walkWait <= 0){
-			float distance;
-			//float modSpeed = Mathf.Sqrt(transform.localScale.y) * baseSpeed;
-			float modSpeed = (Mathf.Log(transform.localScale.y) + 1) * baseSpeed;
-			if (modSpeed < minSpeed){
-				modSpeed = minSpeed;
-			}
+		lastNode = false;
+		float distance;
+		//float modSpeed = Mathf.Sqrt(transform.localScale.y) * baseSpeed;
+		float modSpeed = (Mathf.Log(transform.localScale.y) + 1) * baseSpeed;
+		if (modSpeed < minSpeed){
+			modSpeed = minSpeed;
+		}
+		if(Input.GetMouseButtonDown(0)){
+			Debug.Log("Pressed left click.");
+			//get mouse clicked location and convert them to world point.
+			targetPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y,0 );
+			Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(targetPosition.x, targetPosition.y, camera.nearClipPlane));
+			targetPosition.x = mousePosition.x;
+			targetPosition.y = mousePosition.y;
 
-			//Debug.LogError ("Speed: " + modSpeed.ToString());
+			seeker.StartPath (transform.position,targetPosition, OnPath);
+		}
+		if(path == null||currentWayPoint> path.vectorPath.Count){
+			return;
+		}
+		//Vector3 dir = (path.vectorPath[currentWayPoint]-transform.position).normalized *modSpeed*Time.deltaTime;
+		distance = Vector2.Distance (transform.position, targetPosition);
+		if(Mathf.Abs(distance) > 1 && !SoundManager.Instance.isWalking) SoundManager.Instance.WalkSound();
 
-			if(Input.GetMouseButton(0)){
-				//get mouse clicked location and convert them to world point.
-				targetPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-				Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(targetPosition.x, targetPosition.y, camera.nearClipPlane));
-				targetPosition.x = mousePosition.x;
-				targetPosition.y = mousePosition.y;
-			}
-
-			if (targetPosition.x != 0){
-				//if something is on the way, use find path
-				int layerMask = 1 << 10;
-				layerMask = ~layerMask;
-				if (Physics2D.Linecast(transform.position, targetPosition,layerMask)){	
-					if(objectOnWay(targetPosition)){
-						Vector2 toPoint = FindClosestPoint(targetPosition).transform.position;
-						distance = Vector2.Distance (transform.position, toPoint);
-						transform.position = Vector2.Lerp (transform.position, toPoint,Time.deltaTime* (modSpeed/distance));
-
-					} 
-				}
-				//else go straight to that location
-				else{
-					distance = Vector2.Distance (transform.position, targetPosition);
-					if(Mathf.Abs(distance) > 1 && !SoundManager.Instance.isWalking) SoundManager.Instance.WalkSound();
-					if(distance > 0) {
-						transform.position = Vector2.Lerp (transform.position, targetPosition,Time.deltaTime* (modSpeed/distance));
-					} 
-				}
-				distance = Vector2.Distance (transform.position, targetPosition);
-				anim.SetFloat("distance", distance);
-				if(Mathf.Abs(distance) < 1 && SoundManager.Instance.isWalking) SoundManager.Instance.StopWalk();
-				if((targetPosition.x - transform.position.x)<0 ){
-					goingtLeft = true;
-				}
-				else if((targetPosition.x - transform.position.x)>0 ) {	
-					goingtLeft = false;
-				}
-				if(facingLeft!=goingtLeft){
-					transform.Rotate(0,180,0);
-					facingLeft = !facingLeft;
-					//goingtLeft = !goingtLeft;
-				}
+		if(currentWayPoint < path.vectorPath.Count-1){
+			Debug.Log("count: " +path.vectorPath.Count);
+			if(Vector3.Distance(transform.position, path.vectorPath[currentWayPoint]) < 1.5f){
+				currentWayPoint++;	
+				Debug.Log("current way point:"+currentWayPoint);
 			}
 		}
-		//Fixing scale (if it works lol)
+		Debug.Log("Last way point222:"+currentWayPoint);
+		if(distance >0.1f){
+			Vector3 dir = (path.vectorPath[currentWayPoint]-transform.position).normalized *5f*Time.deltaTime;
+			transform.position = transform.position + dir;
+		}
+		if((targetPosition.x - transform.position.x)<0 ){
+			goingtLeft = true;
+		}
+		else if((targetPosition.x - transform.position.x)>0 ) {	
+			goingtLeft = false;
+		}
+		if(facingLeft!=goingtLeft&& Mathf.Abs(distance)>1){
+			transform.Rotate(0,180,0);
+			facingLeft = !facingLeft;
+			//goingtLeft = !goingtLeft;
+		}
+		anim.SetFloat("distance", distance);
+		if(Mathf.Abs(distance) < 1 && SoundManager.Instance.isWalking) SoundManager.Instance.StopWalk();
+
 		if(canScale){
 			float scale = calcScale ();
 			transform.localScale = new Vector2 (scale, scale);
 		}
 		if (walkWait > 0)
-						walkWait--;
+			walkWait--;
 	}
 
 	//Calculate the proper scaling for the avatar using scene traits
@@ -146,7 +155,7 @@ public class playerScript : CaseElement {
 		return scale;
 
 	}
-
+	/*
 	//returns true if the collide object is type PolygonCollider2D
 	public bool objectOnWay(Vector2 target){
 		bool result = false;
@@ -190,7 +199,7 @@ public class playerScript : CaseElement {
 
 		Debug.Log ("closet point: " + closest.transform.position);
 		return closest;
-	}
+	}*/
 	//change scene when collide with door
 	void OnTriggerEnter2D(Collider2D collider){
 
