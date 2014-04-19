@@ -53,26 +53,26 @@ public class Office : MonoBehaviour {
 
 	public IEnumerator firstDialogue(){
 		started = true;
-		DialogueGUI dGUI = GameManager.Instance.GetComponent<DialogueGUI>();
-		dGUI.setTargetTex(alexiaSprite);
-		dGUI.setMainTex (maySprite);
+		DialogueGUI_Test dGUI = GameManager.Instance.GetComponent<DialogueGUI_Test>();
+		dGUI.setLeftSpriteName (alexiaSprite.name);
+		dGUI.setRightSpriteName (maySprite.name);
 		yield return new WaitForSeconds (1.5f);
 		Dialoguer.StartDialogue(7);
 	}
 
 	public IEnumerator firstDialogueB(){
 		started = true;
-		DialogueGUI dGUI = GameManager.Instance.GetComponent<DialogueGUI>();
-		dGUI.setTargetTex(alexiaSprite);
+		DialogueGUI_Test dGUI = GameManager.Instance.GetComponent<DialogueGUI_Test>();
+		dGUI.setLeftSpriteName(alexiaSprite.name);
 		yield return new WaitForSeconds (1.5f);
-		dGUI.setMainTex ((Texture2D)Resources.Load ("JaneSprite"));
+		dGUI.setRightSpriteName ("JaneSprite");
 		Dialoguer.StartDialogue(2);
 	}
 
 	public IEnumerator secondDialogue(){
 		started = true;
-		DialogueGUI dGUI = GameManager.Instance.GetComponent<DialogueGUI>();
-		dGUI.setTargetTex(alexiaSprite);
+		DialogueGUI_Test dGUI = GameManager.Instance.GetComponent<DialogueGUI_Test>();
+		dGUI.setLeftSpriteName(alexiaSprite.name);
 		yield return new WaitForSeconds (1.5f);
 		Dialoguer.StartDialogue(5);
 	}

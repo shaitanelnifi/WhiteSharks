@@ -40,11 +40,167 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 7006119f8430349b6beacf1765e05c76, type: 2}
   mSprites:
-  - name: convbox
+  - name: alexiaProfile
     x: 0
-    y: 23
-    width: 992
-    height: 489
+    y: 24
+    width: 151
+    height: 271
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: CarlosFrancoSprite
+    x: 200
+    y: 199
+    width: 183
+    height: 183
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: conversation-template
+    x: 0
+    y: 616
+    width: 914
+    height: 408
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 42
+    paddingRight: 68
+    paddingTop: 82
+    paddingBottom: 22
+  - name: FrankSprite
+    x: 200
+    y: 15
+    width: 183
+    height: 183
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: JaneSprite
+    x: 0
+    y: 296
+    width: 199
+    height: 319
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 5
+    paddingTop: 0
+    paddingBottom: 0
+  - name: JoshSusachSprite
+    x: 436
+    y: 250
+    width: 174
+    height: 183
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 9
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: KoushikiSans_0
+    x: 620
+    y: 488
+    width: 255
+    height: 127
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 1
+    paddingTop: 0
+    paddingBottom: 1
+  - name: LiamO'SheaSprite
+    x: 436
+    y: 434
+    width: 183
+    height: 181
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 2
+    paddingBottom: 0
+  - name: mayProfile
+    x: 611
+    y: 74
+    width: 116
+    height: 189
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: NinaWalkerSprite
+    x: 611
+    y: 264
+    width: 183
+    height: 169
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 14
+    paddingBottom: 0
+  - name: NoelAltSprite
+    x: 436
+    y: 66
+    width: 135
+    height: 183
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 14
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PeijunShiSprite
+    x: 795
+    y: 277
+    width: 154
+    height: 156
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 2
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ShammytheSharkSprite
+    x: 200
+    y: 383
+    width: 235
+    height: 232
     borderLeft: 0
     borderRight: 0
     borderTop: 0

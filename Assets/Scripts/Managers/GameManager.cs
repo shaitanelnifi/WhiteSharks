@@ -245,9 +245,9 @@ public class GameManager : MonoBehaviour {
 		setIcons ();
 
 		// Used for Dialoguer components
-		Debug.Log ("Persocets, Adderall, Ecstasy, PMW");
-		DialogueGUI dGUI = gameObject.AddComponent<DialogueGUI> ();
-		dGUI.setSkin(Resources.Load ("OldSchool") as GUISkin);
+		//Debug.Log ("Persocets, Adderall, Ecstasy, PMW");
+		DialogueGUI_Test dGUI = gameObject.AddComponent<DialogueGUI_Test> ();
+		//dGUI.setSkin(Resources.Load ("OldSchool") as GUISkin);
 
 		roomIDList = new ArrayList ();
 		rooms = new string[5];
