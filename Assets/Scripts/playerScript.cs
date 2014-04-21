@@ -55,6 +55,9 @@ public class playerScript : CaseElement {
 		Debug.Log (anim);
 		canWalk = true;
 		canScale = true;
+
+		float scale = calcScale ();
+		transform.localScale = new Vector2 (scale, scale);
 		//backEffect = GameObject.Find ("effect");
 	}
 
@@ -85,8 +88,9 @@ public class playerScript : CaseElement {
 		if (modSpeed < minSpeed){
 			modSpeed = minSpeed;
 		}
-		if(Input.GetMouseButtonDown(0)){
-			Debug.Log("Pressed left click.");
+		if(Input.GetMouseButtonDown(0))
+		if (canWalk){
+			//Debug.Log("Pressed left click.");
 			//get mouse clicked location and convert them to world point.
 			targetPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y,0 );
 			Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(targetPosition.x, targetPosition.y, camera.nearClipPlane));
@@ -103,13 +107,13 @@ public class playerScript : CaseElement {
 		if(Mathf.Abs(distance) > 1 && !SoundManager.Instance.isWalking) SoundManager.Instance.WalkSound();
 
 		if(currentWayPoint < path.vectorPath.Count-1){
-			Debug.Log("count: " +path.vectorPath.Count);
+			//Debug.Log("count: " +path.vectorPath.Count);
 			if(Vector3.Distance(transform.position, path.vectorPath[currentWayPoint]) < 1.5f){
 				currentWayPoint++;	
-				Debug.Log("current way point:"+currentWayPoint);
+				//Debug.Log("current way point:"+currentWayPoint);
 			}
 		}
-		Debug.Log("Last way point222:"+currentWayPoint);
+		//Debug.Log("Last way point222:"+currentWayPoint);
 		if(distance >0.1f){
 			Vector3 dir = (path.vectorPath[currentWayPoint]-transform.position).normalized *5f*Time.deltaTime;
 			transform.position = transform.position + dir;
@@ -155,51 +159,7 @@ public class playerScript : CaseElement {
 		return scale;
 
 	}
-	/*
-	//returns true if the collide object is type PolygonCollider2D
-	public bool objectOnWay(Vector2 target){
-		bool result = false;
-		Vector2 direct;
-		direct.x = target.x - transform.position.x;
-		direct.y = target.y - transform.position.y;
-		float dis = Vector2.Distance (transform.position, target);
-		// Bit shift the index of the layer (8) to get a bit mask
-		int layerMask = 1 << 10;
-		// This would cast rays only against colliders in layer 8.
-		// But instead we want to collide against everything except layer 8. 
-		// The ~ operator does this, it inverts a bitmask.
-		layerMask = ~layerMask;
-		//Physics2D.IgnoreRaycastLayer
 
-		RaycastHit2D tempHit = Physics2D.Raycast(transform.position, direct,dis,layerMask);
-
-		if(tempHit.collider != null){
-			if (tempHit.collider.GetType() == typeof(PolygonCollider2D) &&tempHit.collider.GetType()!= null){
-				result = true;
-			}
-		}
-		return result;		 
-	}
-	//return closest pathPoint near player.
-	GameObject FindClosestPoint(Vector2 target) {
-		GameObject[] points;
-		points = GameObject.FindGameObjectsWithTag("point");
-		GameObject closest= null;
-		float distance = Mathf.Infinity;
-		Vector2 position = target;
-		foreach (GameObject point in points) {
-			if(!(point.transform.position.Equals(target))){
-				float curDistance = Vector2.Distance(point.transform.position,position);
-				if (curDistance < distance &&(!objectOnWay(point.transform.position))) {
-					closest = point;
-					distance = curDistance;
-				}
-			}
-		}
-
-		Debug.Log ("closet point: " + closest.transform.position);
-		return closest;
-	}*/
 	//change scene when collide with door
 	void OnTriggerEnter2D(Collider2D collider){
 

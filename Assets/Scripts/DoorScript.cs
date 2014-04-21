@@ -15,6 +15,13 @@ public class DoorScript : MonoBehaviour {
 	//Mouse icon information
 	public string mouseOverIcon = "Door_Icon";
 	private string defaultIcon = "Walk_Icon";		//The standard mouse icon when not hovering over an object
+	private playerScript player;
+
+	void Start(){
+
+		player = (playerScript) FindObjectOfType(typeof(playerScript));
+
+	}
 
 	public void OnMouseExit(){
 		GameManager.Instance.updateMouseIcon (defaultIcon);
