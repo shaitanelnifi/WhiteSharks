@@ -12,8 +12,6 @@ public abstract class CaseElement : MonoBehaviour {
 	public int location;			//Where is it during gameplay, every room/scene has a corresponding Int id
 	public bool visible=false;			//Is the element visible in the journal?
 
-	public string defaultIcon = "Walk_Icon";		//The standard mouse icon when not hovering over an object
-
 	protected playerScript player;
 
 	void Start (){
@@ -39,7 +37,7 @@ public abstract class CaseElement : MonoBehaviour {
 	}
 
 	public void OnMouseExit(){
-		GameManager.Instance.updateMouseIcon (defaultIcon);
+		GameManager.Instance.updateMouseIcon (GameManager.Instance.defaultIcon);
 	}
 
 	public void setProfileImage(Sprite someImage){

@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour {
 
 	//Handles mouse cursor information
 	public static int cursorSize = 32;
+	public string defaultIcon = "Walk_Icon";		//The standard mouse icon when not hovering over an object
 	public static List<Texture2D> mouseSprites;
 	public static string[] spriteIndex;
 	public static Texture2D currMouse;

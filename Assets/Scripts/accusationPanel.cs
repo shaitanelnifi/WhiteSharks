@@ -46,9 +46,7 @@ public class accusationPanel : MonoBehaviour {
 
 		answerSuspect = GameManager.theCase.getGuilty();
 		answerWeapon = GameManager.theCase.getWeapon();
-		answerRoom = GameManager.theCase.getRoom();
-
-		Debug.LogWarning ("Cheater: " + answerSuspect + " " + answerWeapon + " " + answerRoom);
+		answerRoom = GameManager.theCase.getRoom ();
 
 		attempts = 2;
 		attemptsLabel.text = "Remaining attempts: " + attempts;

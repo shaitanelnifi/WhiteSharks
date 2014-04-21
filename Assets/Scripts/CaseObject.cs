@@ -11,7 +11,6 @@ public class CaseObject : CaseElement {
 	public int offset;
 
 	public string mouseOverIcon = "Grab_Icon";
-	private string defaultIcon = "Walk_Icon";		//The standard mouse icon when not hovering over an object
 
 	public void addInfoGuilty(string newInfo){
 		infoGuilty.Add(newInfo);
@@ -25,10 +24,6 @@ public class CaseObject : CaseElement {
 		if (player != null)
 			if (player.canWalk)
 				GameManager.Instance.updateMouseIcon(mouseOverIcon);
-	}
-
-	public void OnMouseExit(){
-		GameManager.Instance.updateMouseIcon (defaultIcon);
 	}
 
 	public void OnMouseDown(){
