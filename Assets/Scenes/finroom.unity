@@ -8810,7 +8810,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_Layer
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
@@ -28829,7 +28829,7 @@ GameObject:
   - 4: {fileID: 2008275293}
   - 114: {fileID: 2008275292}
   - 61: {fileID: 2008275291}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
