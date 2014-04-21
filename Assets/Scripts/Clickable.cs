@@ -23,7 +23,7 @@ public class Clickable : MonoBehaviour {
 			playerScript temp = (playerScript) FindObjectOfType(typeof(playerScript));
 			if (temp.canWalk == true){
 				Dialoguer.StartDialogue((int)diaNum + offset);
-				temp.setTarget(new Vector2(temp.transform.localPosition.x, temp.transform.localPosition.x));
+				temp.setTarget(new Vector2(temp.transform.position.x, temp.transform.position.y));
 				temp.canWalk = false;
 				temp.anim.SetFloat("distance", 0f);
 				temp.anim.SetBool("walking", false);

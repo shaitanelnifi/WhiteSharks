@@ -47,8 +47,9 @@ public class NPC : CaseElement {
 			playerScript temp = (playerScript) FindObjectOfType(typeof(playerScript));
 			if (temp.canWalk == true){
 				temp.canWalk = false;
+				temp.anim.SetFloat("distance", 0f);
 				temp.anim.SetBool("walking", false);
-				temp.setTarget(new Vector2(temp.transform.localPosition.x, temp.transform.localPosition.x));
+				temp.setTarget(new Vector2(temp.transform.position.x, temp.transform.position.y));
 				Dialoguer.StartDialogue(myConvo);
 				
 	 			DialogueGUI_Test dGUI = GameManager.Instance.GetComponent<DialogueGUI_Test>();

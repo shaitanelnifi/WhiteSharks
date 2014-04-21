@@ -41,7 +41,7 @@ public class CaseObject : CaseElement {
 				//temp.canWalk = false;
 				temp.anim.SetBool("walking", false);
 				temp.anim.SetFloat("distance", 0f);
-				temp.setTarget(new Vector2(temp.transform.localPosition.x, temp.transform.localPosition.x));
+				temp.setTarget(new Vector2(temp.transform.position.x, temp.transform.position.y));
 				Debug.LogWarning ("Inventory: " + journal.Instance.inventory[0].name);
 			}
 			
