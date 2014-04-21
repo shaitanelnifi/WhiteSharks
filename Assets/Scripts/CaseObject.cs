@@ -22,7 +22,9 @@ public class CaseObject : CaseElement {
 	}
 
 	public void OnMouseEnter(){
-		GameManager.Instance.updateMouseIcon(mouseOverIcon);
+		if (player != null)
+			if (player.canWalk)
+				GameManager.Instance.updateMouseIcon(mouseOverIcon);
 	}
 
 	public void OnMouseExit(){
@@ -32,30 +34,19 @@ public class CaseObject : CaseElement {
 	public void OnMouseDown(){
 		if (Input.GetMouseButton (0)) {
 
-			playerScript temp = (playerScript) FindObjectOfType(typeof(playerScript));
-			if (temp.canWalk == true){
-				Debug.LogWarning ("Inventory Size Before: " + journal.Instance.inventory.Count);
+			if (player.canWalk){
+				//Debug.LogWarning ("Inventory Size Before: " + journal.Instance.inventory.Count);
 				//Dialoguer.StartDialogue((int)myEnumName + offset);
 				journal.Instance.inventory.Add(this);
 				Destroy(this.gameObject);
-				//temp.canWalk = false;
-				temp.anim.SetBool("walking", false);
-				temp.anim.SetFloat("distance", 0f);
-				temp.setTarget(new Vector2(temp.transform.position.x, temp.transform.position.y));
-				Debug.LogWarning ("Inventory: " + journal.Instance.inventory[0].name);
+				OnMouseExit();
+				player.anim.SetBool("walking", false);
+				player.anim.SetFloat("distance", 0f);
+				player.setTarget(new Vector2(player.transform.position.x, player.transform.position.y));
+				//Debug.LogWarning ("Inventory: " + journal.Instance.inventory[0].name);
 			}
 			
 		}
 	}
 
-
-	//Right now it just inputs preset sentences, replace with data driven stuff
-	void Start(){
-		this.addInfoGuilty ("There are fresh fingerprints in this weapon.");
-		this.addInfoGuilty ("I really can tell that someone used this...I think.");
-		this.addInfoGuilty ("I'm pretty confident that this is a trace.");
-		this.addInfoNotGuilty ("God, this has been here for ages.");
-		this.addInfoNotGuilty ("It's incredible how easily people tend to forget their stuff for ages.");
-		this.addInfoNotGuilty ("I'm sure this has been cold for a long while.");
-	}
 }

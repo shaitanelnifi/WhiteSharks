@@ -23,12 +23,21 @@ public class DoorScript : MonoBehaviour {
 
 	}
 
+	void Update(){
+
+		if (player == null)
+			player = (playerScript) FindObjectOfType(typeof(playerScript));
+
+	}
+
 	public void OnMouseExit(){
 		GameManager.Instance.updateMouseIcon (defaultIcon);
 	}
 
 	public void OnMouseEnter(){
-		GameManager.Instance.updateMouseIcon(mouseOverIcon);
+		if (player != null)
+			if (player.canWalk)
+				GameManager.Instance.updateMouseIcon(mouseOverIcon);
 	}
 
 }

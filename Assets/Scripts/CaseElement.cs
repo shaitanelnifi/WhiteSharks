@@ -14,6 +14,21 @@ public abstract class CaseElement : MonoBehaviour {
 
 	public string defaultIcon = "Walk_Icon";		//The standard mouse icon when not hovering over an object
 
+	protected playerScript player;
+
+	void Start (){
+
+		player = (playerScript) FindObjectOfType(typeof(playerScript));
+
+	}
+
+	void Update(){
+		
+		if (player == null)
+			player = (playerScript) FindObjectOfType(typeof(playerScript));
+		
+	}
+
 	//Setters for all Case Element fields
 	public void setElementName(string someName){
 		elementName = someName;

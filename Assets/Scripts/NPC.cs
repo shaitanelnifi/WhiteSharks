@@ -30,11 +30,15 @@ public class NPC : CaseElement {
 	public string mouseOverIcon = "Speech_Icon";
 
 	void Start(){
+
+		player = (playerScript) FindObjectOfType(typeof(playerScript));
 		myConvo = GameManager.npcConversations[(int)enumName];
 	}
 	
 	public void OnMouseEnter(){
-		GameManager.Instance.updateMouseIcon(mouseOverIcon);
+		if (player != null)
+			if (player.canWalk)
+				GameManager.Instance.updateMouseIcon(mouseOverIcon);
 	}
 
 	//enable conversation object if left mouse button is clicked.
@@ -44,28 +48,18 @@ public class NPC : CaseElement {
 				Animator a = GetComponent<Animator>();
 				a.SetBool("active", false);
 			}
-			playerScript temp = (playerScript) FindObjectOfType(typeof(playerScript));
-			if (temp.canWalk == true){
-				temp.canWalk = false;
-				temp.anim.SetFloat("distance", 0f);
-				temp.anim.SetBool("walking", false);
-				temp.setTarget(new Vector2(temp.transform.position.x, temp.transform.position.y));
+			if (player.canWalk == true){
+				player.canWalk = false;
+				player.anim.SetFloat("distance", 0f);
+				player.anim.SetBool("walking", false);
+				player.setTarget(new Vector2(player.transform.position.x, player.transform.position.y));
 				Dialoguer.StartDialogue(myConvo);
+				OnMouseExit();
 				
 	 			DialogueGUI_Test dGUI = GameManager.Instance.GetComponent<DialogueGUI_Test>();
 				Debug.Log ("LEFT SPRITE: " + this.elementName);
 				dGUI.setLeftSpriteName((this.elementName + "Sprite").Replace(" ", string.Empty));
 			}
- 			//dGUI.tweenCam();
-			//GameManager.npcList.Find(x => x.elementName.CompareTo(this.elementName) == 0).setVisible(true);
-			
-			/*
-			//conversationObj.renderer.enabled = true;
-			//conversationObj.collider2D.enabled = true;
-			GameManager.npcList.Find(x => x.elementName.CompareTo(this.elementName) == 0).setVisible(true);
-
-			convoBubble.GetComponentInChildren<UILabel>().text = convo;
-			convoBubble.GetComponentInChildren<UI2DSprite>().sprite2D = this.getProfileImage();*/
 		}
 	}
 
@@ -73,39 +67,17 @@ public class NPC : CaseElement {
 		return enumName;
 	}
 	
-	public Category getWeaponProf(){
-		return weaponProficiency;
-	}
-	
-	public float getTrust(){
-		return trust;
-	}
-	
-	public string getAlibi(){
-
-		if (alibi == "") {
-			alibi = (string) GameManager.Instance.roomIDList[location];
-		}
-
-		return alibi;
-	}
-	
 	//switch the displaying order of the npc. 
 	void Update () {
+
+		if (player == null)
+			player = (playerScript) FindObjectOfType(typeof(playerScript));
+
 		SpriteRenderer r = GetComponent<SpriteRenderer> ();
 		if (GameManager.firstTimeOffice && !this.name.Equals("Shammy")) {
 						r.color = Color.black;		
 				} else {
 			r.color = Color.white;		
 		}
-		/*if (transform.position.y < playerObj.transform.position.y) {
-			renderer.sortingLayerName= "foreground";
-			renderer.sortingOrder = 2;
-			box.isTrigger = true;
-		}
-		else{
-			renderer.sortingLayerName= "middleground";
-			box.isTrigger = false;
-		}*/
 	}
 }
