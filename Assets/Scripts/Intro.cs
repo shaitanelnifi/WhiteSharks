@@ -15,9 +15,6 @@ public class Intro : MonoBehaviour {
 	public Sprite next;
 	// Use this for initialization
 	void Start () {
-		Texture2D tex = (Texture2D)Resources.Load ("FrankSprite");
-		DialogueGUI dGUI = GameManager.Instance.GetComponent<DialogueGUI> ();
-		dGUI.setTargetTex (tex);
 		r = GetComponent<SpriteRenderer> ();
 		a = r.color;
 		a.a = 0;
@@ -47,7 +44,7 @@ public class Intro : MonoBehaviour {
 		}
 
 		if (change) {
-			Debug.Log ("In Change " + r.color.a + " " + fadeOut);
+			//Debug.Log ("In Change " + r.color.a + " " + fadeOut);
 			if (r.color.a >= 0 && fadeOut) {
 					Debug.Log ("Fading out");
 					a.a -= 0.016f;
@@ -57,8 +54,8 @@ public class Intro : MonoBehaviour {
 				fadeOut = false;
 				r.sprite = 	next;
 					if (r.color.a < 1) {
-					Debug.Log ("a " + a.a);
-					Debug.Log ("r " + r.color.a);
+					//Debug.Log ("a " + a.a);
+					//Debug.Log ("r " + r.color.a);
 					a.a += 0.01f;
 					r.color = a;
 					} else {

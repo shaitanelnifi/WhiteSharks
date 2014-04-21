@@ -51,13 +51,10 @@ public class NPC : CaseElement {
 				temp.anim.SetBool("walking", false);
 				temp.setTarget(new Vector2(temp.transform.position.x, temp.transform.position.y));
 				Dialoguer.StartDialogue(myConvo);
-				string npcResource = (this.elementName + "Sprite").Replace(" ", string.Empty);
-	 			Texture2D npcTex = (Texture2D) Resources.Load (npcResource);
-
-	 
-	 			DialogueGUI dGUI = GameManager.Instance.GetComponent<DialogueGUI>();
-	 			//Debug.LogError ("dgui: " + dGUI.ToString());
-	 			dGUI.setTargetTex(npcTex);
+				
+	 			DialogueGUI_Test dGUI = GameManager.Instance.GetComponent<DialogueGUI_Test>();
+				Debug.Log ("LEFT SPRITE: " + this.elementName);
+				dGUI.setLeftSpriteName((this.elementName + "Sprite").Replace(" ", string.Empty));
 			}
  			//dGUI.tweenCam();
 			//GameManager.npcList.Find(x => x.elementName.CompareTo(this.elementName) == 0).setVisible(true);
