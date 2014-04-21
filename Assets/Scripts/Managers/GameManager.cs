@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour {
 	public static NPC guilty;
 	public static CaseObject weapon;
 	public static string room;
+	public float maxDist = 2f;
 
 	//Shammy 0, Noel 1, Carlos 2
 	public static int[] npcConversations = new int[7]{0, 0, 0, 0, 0, 0, 0};

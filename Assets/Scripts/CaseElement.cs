@@ -13,11 +13,13 @@ public abstract class CaseElement : MonoBehaviour {
 	public bool visible=false;			//Is the element visible in the journal?
 
 	protected playerScript player;
+	public float maxDist = 1f;
 
 	void Start (){
 
 		player = (playerScript) FindObjectOfType(typeof(playerScript));
-
+		if (maxDist < GameManager.Instance.maxDist)
+			maxDist = GameManager.Instance.maxDist;
 	}
 
 	void Update(){
