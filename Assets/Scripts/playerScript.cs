@@ -100,7 +100,6 @@ public class playerScript : CaseElement {
 		}
 		//Vector3 dir = (path.vectorPath[currentWayPoint]-transform.position).normalized *modSpeed*Time.deltaTime;
 		distance = Vector2.Distance (transform.position, targetPosition);
-		if(Mathf.Abs(distance) > 1 && !SoundManager.Instance.isWalking) SoundManager.Instance.WalkSound();
 
 		if(currentWayPoint < path.vectorPath.Count-1){
 			Debug.Log("count: " +path.vectorPath.Count);
@@ -113,6 +112,8 @@ public class playerScript : CaseElement {
 		if(distance >0.1f){
 			Vector3 dir = (path.vectorPath[currentWayPoint]-transform.position).normalized *5f*Time.deltaTime;
 			transform.position = transform.position + dir;
+			if(Mathf.Abs(distance) > 1 && !SoundManager.Instance.isWalking) SoundManager.Instance.WalkSound();
+			else if(Mathf.Abs(distance) <= 1 && SoundManager.Instance.isWalking) SoundManager.Instance.StopWalk();
 		}
 		if((targetPosition.x - transform.position.x)<0 ){
 			goingtLeft = true;
@@ -126,8 +127,6 @@ public class playerScript : CaseElement {
 			//goingtLeft = !goingtLeft;
 		}
 		anim.SetFloat("distance", distance);
-		if(Mathf.Abs(distance) < 1 && SoundManager.Instance.isWalking) SoundManager.Instance.StopWalk();
-
 		if(canScale){
 			float scale = calcScale ();
 			transform.localScale = new Vector2 (scale, scale);
@@ -222,8 +221,8 @@ public class playerScript : CaseElement {
 		}
 			string temp;
 			int tempIndex;
-			SoundManager.Instance.StopWalk ();
 			if (doorObj != null) {
+				SoundManager.Instance.StopWalk();
 				tempIndex = 0;
 				if (doorObj.id == 0)
 					tempIndex = GameManager.Instance.currentRoomIndex - 1;
