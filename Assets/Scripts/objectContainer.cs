@@ -7,7 +7,6 @@ public class objectContainer : MonoBehaviour {
 
 	//Mouse icon information
 	private string mouseOverIcon = "Examine_Icon";	
-	private string defaultIcon = "Walk_Icon";		//The standard mouse icon when not hovering over an object
 	public int offset;
 	
 	public void OnMouseEnter(){
@@ -15,7 +14,7 @@ public class objectContainer : MonoBehaviour {
 	}
 	
 	public void OnMouseExit(){
-		GameManager.Instance.updateMouseIcon (defaultIcon);
+		GameManager.Instance.updateMouseIcon (GameManager.Instance.defaultIcon);
 	}
 
 	public void OnMouseDown(){

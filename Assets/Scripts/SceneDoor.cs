@@ -7,13 +7,24 @@ public class SceneDoor : MonoBehaviour {
 
 	//Mouse icon information
 	public string mouseOverIcon = "Door_Icon";
-	private string defaultIcon = "Walk_Icon";		//The standard mouse icon when not hovering over an object
+	private playerScript player;
+
+	void Start(){
+		player = (playerScript) FindObjectOfType(typeof(playerScript));
+	}
+
+	void Update(){
+		if (player == null)
+			player = (playerScript) FindObjectOfType(typeof(playerScript));
+	}
 	
 	public void OnMouseExit(){
-		GameManager.Instance.updateMouseIcon (defaultIcon);
+		GameManager.Instance.updateMouseIcon (GameManager.Instance.defaultIcon);
 	}
 	
 	public void OnMouseEnter(){
-		GameManager.Instance.updateMouseIcon(mouseOverIcon);
+		if (player != null)
+			if (player.canWalk)
+				GameManager.Instance.updateMouseIcon(mouseOverIcon);
 	}
 }
