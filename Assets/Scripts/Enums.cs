@@ -50,4 +50,5 @@ public enum clickableID{
 	bed = 0,
 	finRoomWindow = 1,
 	finRoomProjector = 2,
+	wall = 3,
 }
