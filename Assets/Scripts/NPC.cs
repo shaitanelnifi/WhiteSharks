@@ -22,15 +22,16 @@ public class NPC : CaseElement {
 
 	public float trust;
 	public NPCNames enumName;
-	public List<NPCNames> relations;
 	public int myConvo;
+	public bool clickedOnSomething = false;
 
 
 	//Mouse icon information
 	public string mouseOverIcon = "Speech_Icon";
 
 	void Start(){
-
+		if (maxDist < GameManager.Instance.maxDist)
+			maxDist = GameManager.Instance.maxDist;
 		player = (playerScript) FindObjectOfType(typeof(playerScript));
 		myConvo = GameManager.npcConversations[(int)enumName];
 	}
@@ -48,18 +49,8 @@ public class NPC : CaseElement {
 				Animator a = GetComponent<Animator>();
 				a.SetBool("active", false);
 			}
-			if (player.canWalk == true){
-				player.canWalk = false;
-				player.anim.SetFloat("distance", 0f);
-				player.anim.SetBool("walking", false);
-				player.setTarget(new Vector2(player.transform.position.x, player.transform.position.y));
-				Dialoguer.StartDialogue(myConvo);
-				OnMouseExit();
-				
-	 			DialogueGUI_Test dGUI = GameManager.Instance.GetComponent<DialogueGUI_Test>();
-				Debug.Log ("LEFT SPRITE: " + this.elementName);
-				dGUI.setLeftSpriteName((this.elementName + "Sprite").Replace(" ", string.Empty));
-			}
+			if (player.canWalk == true)	
+				clickedOnSomething = true;
 		}
 	}
 
@@ -70,8 +61,33 @@ public class NPC : CaseElement {
 	//switch the displaying order of the npc. 
 	void Update () {
 
+		if (Input.GetMouseButton (0)) {
+			
+			RaycastHit hit = new RaycastHit ();        
+			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+			
+			if (Physics.Raycast (ray, out hit))
+				if (hit.collider.gameObject != this.gameObject)
+					clickedOnSomething = false;
+		}
+
 		if (player == null)
 			player = (playerScript) FindObjectOfType(typeof(playerScript));
+
+		if (player.canWalk == true)
+		if (Vector3.Distance(player.transform.position, transform.position) <= maxDist && clickedOnSomething){
+			Dialoguer.StartDialogue(myConvo);
+			player.setTarget(new Vector2(player.transform.position.x, player.transform.position.y));
+			player.canWalk = false;
+			player.anim.SetFloat("distance", 0f);
+			player.anim.SetBool("walking", false);
+			OnMouseExit();
+			clickedOnSomething = false;
+
+			DialogueGUI_Test dGUI = GameManager.Instance.GetComponent<DialogueGUI_Test>();
+			Debug.Log ("LEFT SPRITE: " + this.elementName);
+			dGUI.setLeftSpriteName((this.elementName + "Sprite").Replace(" ", string.Empty));
+		}
 
 		SpriteRenderer r = GetComponent<SpriteRenderer> ();
 		if (GameManager.firstTimeOffice && !this.name.Equals("Shammy")) {

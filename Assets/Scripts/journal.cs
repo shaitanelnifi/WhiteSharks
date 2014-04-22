@@ -306,7 +306,7 @@ public class journal : MonoBehaviour {
 	//Initialize PoI view. 
 	//Code for sprint 2 journal.
 	public void initPoIView(){
-		Debug.LogWarning ("INIT JOURNAL");
+		//Debug.LogWarning ("INIT JOURNAL");
 		//Add buttons to poi button list and put them in UI event listener.
 		foreach (Transform child in poiButtonGrid.transform){
 			UIEventListener.Get(child.gameObject).onClick += this.onClick;

@@ -468,6 +468,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diaNum: 0
   offset: 0
+  clickedOnSomething: 0
+  maxDist: 1
 --- !u!60 &44521453
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3206,6 +3208,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diaNum: 0
   offset: 0
+  clickedOnSomething: 0
+  maxDist: 1
 --- !u!60 &551225300
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4430,6 +4434,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diaNum: 0
   offset: 0
+  clickedOnSomething: 0
+  maxDist: 1
 --- !u!60 &807297123
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4535,6 +4541,10 @@ Prefab:
     - target: {fileID: 6100000, guid: 2047e213014c52d43a59ea7afb6d6c1f, type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2047e213014c52d43a59ea7afb6d6c1f, type: 2}
+      propertyPath: maxDist
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2047e213014c52d43a59ea7afb6d6c1f, type: 2}
@@ -6488,6 +6498,10 @@ Prefab:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: maxDist
+      value: 2.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
   m_RootGameObject: {fileID: 1418088586}
@@ -6563,6 +6577,10 @@ Prefab:
     - target: {fileID: 100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: maxDist
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
@@ -7506,6 +7524,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diaNum: 2
   offset: 0
+  clickedOnSomething: 0
+  maxDist: 2.5
 --- !u!4 &1418088589
 Transform:
   m_ObjectHideFlags: 0
@@ -7573,6 +7593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iHoldThis: {fileID: 11400000, guid: 803f9062bb91647b7a86cab23a9c223d, type: 2}
   offset: 0
+  maxDist: 3
 --- !u!61 &1432209360
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7662,6 +7683,10 @@ Prefab:
     - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_Center.y
       value: -.0856056213
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: maxDist
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
@@ -8365,7 +8390,7 @@ MonoBehaviour:
   guilt: 2
   location: 6
   visible: 1
-  defaultIcon: Walk_Icon
+  maxDist: 8
   playerObj: {fileID: 0}
   box: {fileID: 1634728011}
   weaponProficiency: 0
@@ -8374,8 +8399,8 @@ MonoBehaviour:
   scene: scene1
   trust: 0
   enumName: 6
-  relations: 040000000500000006000000070000000800000009000000
   myConvo: 0
+  clickedOnSomething: 0
   mouseOverIcon: Speech_Icon
 --- !u!4 &1634728014
 Transform:
@@ -8446,6 +8471,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diaNum: 2
   offset: 0
+  clickedOnSomething: 0
+  maxDist: 2.5
 --- !u!4 &1640107967
 Transform:
   m_ObjectHideFlags: 0
@@ -8811,6 +8838,10 @@ Prefab:
     - target: {fileID: 100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: maxDist
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
@@ -28543,6 +28574,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diaNum: 0
   offset: 0
+  clickedOnSomething: 0
+  maxDist: 1
 --- !u!60 &1897387586
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -28819,6 +28852,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diaNum: 0
   offset: 0
+  clickedOnSomething: 0
+  maxDist: 3
 --- !u!1 &2008275290
 GameObject:
   m_ObjectHideFlags: 0
@@ -28862,6 +28897,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diaNum: 1
   offset: 0
+  clickedOnSomething: 0
+  maxDist: 5
 --- !u!4 &2008275293
 Transform:
   m_ObjectHideFlags: 0

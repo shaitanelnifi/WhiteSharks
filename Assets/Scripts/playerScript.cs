@@ -230,20 +230,3 @@ public class playerScript : CaseElement {
 		Destroy (Scene.player);
 	}
 }
-	
-
-
-/*
-//old update function
-void FixedUpdate(){
-	float move = Input.GetAxis ("Horizontal");
-	float moveVer = Input.GetAxis ("Vertical");
-	rigidbody2D.velocity = new Vector2 (move * baseSpeed, moveVer * baseSpeed);
-	anim.SetFloat("Speed",Mathf.Abs(move));
-	
-	if(move < 0 && !facingLeft)
-		Flip();
-	else if(move>0 && facingLeft)
-		Flip();
-}
-*/
