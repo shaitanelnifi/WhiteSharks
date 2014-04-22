@@ -32,6 +32,7 @@ public class playerScript : CaseElement {
 	private int counter = 0;
 	public float[] scaleInfo = new float[4]{0f, 0f, 0f, 0f};
 	public bool canScale = true;
+	public bool talking = false;
 	GameObject backEffect = null;
 
 	int currentWayPoint;
@@ -156,6 +157,14 @@ public class playerScript : CaseElement {
 			scale = scaleInfo[0];
 
 		return scale;
+
+	}
+
+	public void stopMove(){
+
+		setTarget(new Vector2(player.transform.position.x, player.transform.position.y));
+		canWalk = false;
+		anim.SetFloat("distance", 0f);
 
 	}
 

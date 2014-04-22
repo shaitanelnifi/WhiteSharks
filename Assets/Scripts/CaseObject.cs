@@ -12,8 +12,6 @@ public class CaseObject : CaseElement {
 
 	public string mouseOverIcon = "Grab_Icon";
 
-	public bool clickedOnSomething = false;
-
 	public void addInfoGuilty(string newInfo){
 		infoGuilty.Add(newInfo);
 	}
@@ -29,37 +27,37 @@ public class CaseObject : CaseElement {
 	}
 
 	public void OnMouseDown(){
-		if (Input.GetMouseButton (0)) 
-			if (player.canWalk)
-				clickedOnSomething = true;
+		if (Input.GetMouseButtonDown (0)) 
+		if (player.canWalk){
+			clickedOnSomething = true;
+			player.setTarget(new Vector3(transform.position.x, transform.position.y, 0));
+		}
 	}
+
+	public void pickUpItem(){
+
+		//player.talking = true;
+		player.stopMove ();
+		clickedOnSomething = false;
+		journal.Instance.inventory.Add(this);
+		GameManager.Instance.updateMouseIcon(mouseOverIcon);
+		player.canWalk = true;
+		Destroy(this.gameObject);
+
+	}
+
 
 	void Update(){
 
 		if (player == null)
 			player = (playerScript) FindObjectOfType(typeof(playerScript));
 
-		if (Input.GetMouseButton (0)) {
-			
-			RaycastHit hit = new RaycastHit ();        
-			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-			
-			if (Physics.Raycast (ray, out hit))
-				if (hit.collider.gameObject != this.gameObject)
-					clickedOnSomething = false;
-		}
+		if (Input.GetMouseButton (0)) 
+			onMouseMiss ();
 
-		if (Vector3.Distance (player.transform.position, transform.position) <= maxDist && clickedOnSomething) {
-
-			player.setTarget(new Vector2(player.transform.position.x, player.transform.position.y));
-			player.canWalk = true;
-			player.anim.SetFloat("distance", 0f);
-			player.anim.SetBool("walking", false);
-			OnMouseExit();
-			clickedOnSomething = false;
-			journal.Instance.inventory.Add(this);
-			Destroy(this.gameObject);
-		}
+		if (player.canWalk == true && clickedOnSomething)
+			if (pDist.isCloseEnough (player.transform.position))
+				pickUpItem ();
 
 	}
 

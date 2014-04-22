@@ -11,9 +11,10 @@ public class Clickable : MonoBehaviour {
 	private string defaultIcon = "Walk_Icon";		//The standard mouse icon when not hovering over an object
 	private playerScript player;
 	public bool wall;
+	private bool clickedOnSomething;
+	private distanceCheck pDist;
 	
 	public void OnMouseEnter(){
-		Debug.Log("1111111111111111111111111111111111111111111111");
 		if (player != null && !wall)
 			if (player.canWalk)
 				GameManager.Instance.updateMouseIcon(mouseOverIcon);
@@ -21,32 +22,44 @@ public class Clickable : MonoBehaviour {
 	
 	public void OnMouseExit(){
 		GameManager.Instance.updateMouseIcon (defaultIcon);
-		if (wall){
+		if (wall && !player.talking){
 			player.canWalk = true;
 		}
 	}
 	
 	public void OnMouseDown(){
-		if (Input.GetMouseButtonDown (0)) {
-			Debug.Log("solo");
-			if (player.canWalk == true){
-				if(!wall){
-					Dialoguer.StartDialogue((int)diaNum + offset);
-					OnMouseExit();
-				}
-				player.setTarget(new Vector2(player.transform.position.x, player.transform.position.y));
-				player.canWalk = false;
-				player.anim.SetFloat("distance", 0f);
-				player.anim.SetBool("walking", false);
-				
-			}
+		if (Input.GetMouseButtonDown (0)) 
+		if (player.canWalk){
+			clickedOnSomething = true;
+			player.setTarget(new Vector3(transform.position.x, transform.position.y, 0));
 		}
+		
+	}
+
+	public void onMouseMiss(){
+		
+		RaycastHit hit = new RaycastHit ();        
+		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+		
+		if (Physics.Raycast (ray, out hit))
+			if (hit.collider.gameObject != this.gameObject)
+				clickedOnSomething = false;
+	}
+
+	public void startDialogue(){
+		if(!wall){
+			Dialoguer.StartDialogue((int)diaNum + offset);
+		}
+		player.stopMove();
+		GameManager.Instance.updateMouseIcon(mouseOverIcon);
+		clickedOnSomething = false;
+		player.talking = true;
 	}
 	
 	public void Start(){
-		Debug.Log("wrwerewrwerwerwerwerew");
 		player = (playerScript) FindObjectOfType(typeof(playerScript));
 		offset = GameManager.Instance.offset;
+		pDist = gameObject.GetComponent<distanceCheck>();
 	}
 	
 	void Update(){
@@ -54,7 +67,19 @@ public class Clickable : MonoBehaviour {
 		
 		if (player == null)
 			player = (playerScript) FindObjectOfType(typeof(playerScript));
-		
+
+		if (Input.GetMouseButtonDown (0))
+			onMouseMiss ();
+
+		if (!wall) {
+			if (player.canWalk == true && clickedOnSomething) 
+				if (pDist.isCloseEnough (player.transform.position))
+						startDialogue ();
+		} else if (wall && clickedOnSomething){
+			player.stopMove();
+			clickedOnSomething = false;
+		}
+
 	}
 	
 }

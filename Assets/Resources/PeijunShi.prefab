@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21200000}
   - 114: {fileID: 11400000}
   - 61: {fileID: 6100000}
+  - 114: {fileID: 11400002}
   m_Layer: 10
   m_Name: PeijunShi
   m_TagString: Untagged
@@ -58,7 +59,8 @@ MonoBehaviour:
   guilt: 1
   location: 4
   visible: 1
-  defaultIcon: Walk_Icon
+  clickedOnSomething: 0
+  maxDist: 1
   playerObj: {fileID: 0}
   box: {fileID: 6100000}
   weaponProficiency: 4
@@ -67,9 +69,20 @@ MonoBehaviour:
   scene: scene1
   trust: 0
   enumName: 5
-  relations: 040000000500000006000000070000000900000008000000
   myConvo: 0
   mouseOverIcon: Speech_Icon
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 3
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

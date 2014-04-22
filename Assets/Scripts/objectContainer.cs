@@ -11,6 +11,7 @@ public class objectContainer : MonoBehaviour {
 	public float maxDist = 1f;
 	private bool clickedOnSomething = false;
 	private playerScript player;
+	private distanceCheck pDist;
 	
 	public void OnMouseEnter(){
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);
@@ -21,9 +22,11 @@ public class objectContainer : MonoBehaviour {
 	}
 
 	public void OnMouseDown(){
-		if (Input.GetMouseButton (0)) 
-			if (player.canWalk == true)	
-				clickedOnSomething = true;
+		if (Input.GetMouseButtonDown (0)) 
+		if (player.canWalk){
+			clickedOnSomething = true;
+			player.setTarget(new Vector3(transform.position.x, transform.position.y, 0));
+		}
 	}
 
 	// Use this for initialization
@@ -32,36 +35,44 @@ public class objectContainer : MonoBehaviour {
 			maxDist = GameManager.Instance.maxDist;
 		player = (playerScript) FindObjectOfType(typeof(playerScript));
 		offset = GameManager.Instance.offset + 3;
+		pDist = gameObject.GetComponent<distanceCheck>();
 
+	}
+
+	public void revealItem(){
+
+		player.talking = true;
+		player.stopMove ();
+		Dialoguer.StartDialogue(offset);
+		clickedOnSomething = false;
+		Instantiate(iHoldThis, new Vector3(transform.localPosition.x, transform.localPosition.y, -1), Quaternion.identity);
+		Destroy(this.gameObject);
+		GameManager.Instance.updateMouseIcon(mouseOverIcon);
+
+	}
+
+	public void onMouseMiss(){
+		
+		RaycastHit hit = new RaycastHit ();        
+		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+		
+		if (Physics.Raycast (ray, out hit))
+			if (hit.collider.gameObject != this.gameObject)
+				clickedOnSomething = false;
+		
 	}
 
 	void Update(){
 
-		if (Input.GetMouseButton (0)) {
-			
-			RaycastHit hit = new RaycastHit ();        
-			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-			
-			if (Physics.Raycast (ray, out hit))
-				if (hit.collider.gameObject != this.gameObject)
-					clickedOnSomething = false;
-		}
+		if (Input.GetMouseButton (0))
+			onMouseMiss();
 
 		if (player == null)
 			player = (playerScript) FindObjectOfType(typeof(playerScript));
 
-		if (player.canWalk == true)
-		if (Vector3.Distance (player.transform.position, transform.position) <= maxDist && clickedOnSomething) {
-			Dialoguer.StartDialogue(offset);
-			player.setTarget(new Vector2(player.transform.position.x, player.transform.position.y));
-			player.canWalk = false;
-			player.anim.SetFloat("distance", 0f);
-			player.anim.SetBool("walking", false);
-			OnMouseExit();
-			clickedOnSomething = false;
-			Instantiate(iHoldThis, new Vector3(transform.localPosition.x, transform.localPosition.y, -1), Quaternion.identity);
-			Destroy(this.gameObject);
-		}
+		if (player.canWalk == true  && clickedOnSomething)
+		if (pDist.isCloseEnough(player.transform.position)) 
+			revealItem();
 
 	}
 }
