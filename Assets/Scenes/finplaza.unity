@@ -127,11 +127,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: a469d30d1e765974c87160172a7f21e0, type: 2}
       propertyPath: m_Size.x
-      value: 14.3748703
+      value: 27.563385
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: a469d30d1e765974c87160172a7f21e0, type: 2}
       propertyPath: m_Center.x
-      value: .105837107
+      value: .881636739
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: a469d30d1e765974c87160172a7f21e0, type: 2}
@@ -542,9 +542,9 @@ PolygonCollider2D:
       - {x: .659457862, y: -.879980087}
       - {x: -.724998772, y: -.857365727}
       - {x: -1.56302214, y: -1.94720137}
-      - {x: -3.25292015, y: -1.75987542}
-      - {x: -2.38462353, y: -.592648327}
-      - {x: -1.05856538, y: 1.09259331}
+      - {x: -3.40807915, y: -1.87509251}
+      - {x: -2.46220326, y: -.55424273}
+      - {x: -.98098594, y: 1.63027275}
 --- !u!114 &178796355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,11 +715,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[7].x
-      value: -11.2125463
+      value: -11.9107618
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[7].y
-      value: -3.64781189
+      value: -3.91933966
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[0].x
@@ -1322,27 +1322,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[8].x
-      value: -3.25292015
+      value: -3.40807915
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[8].y
-      value: -1.75987542
+      value: -1.87509251
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[9].x
-      value: -2.38462353
+      value: -2.46220326
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[9].y
-      value: -.592648327
+      value: -.55424273
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[10].x
-      value: -1.05856538
+      value: -.98098594
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[10].y
-      value: 1.09259331
+      value: 1.63027275
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
@@ -1409,8 +1409,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 14.3748703, y: 4.67999983}
-  m_Center: {x: .105837107, y: 0}
+  m_Size: {x: 27.563385, y: 4.67999983}
+  m_Center: {x: .881636739, y: 0}
 --- !u!212 &756252718
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2703,7 +2703,7 @@ PolygonCollider2D:
       - {x: -7.00788307, y: -.428735733}
       - {x: -6.84331322, y: -2.08050323}
       - {x: -7.38878155, y: -3.70495701}
-      - {x: -11.2125463, y: -3.64781189}
+      - {x: -11.9107618, y: -3.91933966}
       - {x: -9.6770153, y: -2.11161709}
       - {x: -8.77770042, y: -1.52595687}
       - {x: -8.13502884, y: -.537652969}
