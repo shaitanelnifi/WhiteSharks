@@ -234,8 +234,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 85014037}
-  - 50: {fileID: 85014036}
   - 60: {fileID: 85014035}
+  - 114: {fileID: 85014038}
+  - 114: {fileID: 85014036}
   m_Layer: 0
   m_Name: wallcollider4
   m_TagString: Untagged
@@ -251,29 +252,27 @@ PolygonCollider2D:
   m_GameObject: {fileID: 85014034}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Poly:
     m_Paths:
-    - - {x: -1.50681686, y: 5.02185345}
-      - {x: 1.65485859, y: 5.08630657}
-      - {x: 1.42727423, y: 1.34193373}
+    - - {x: -1.79332924, y: 6.00417948}
+      - {x: 1.36834812, y: 5.82305098}
       - {x: 1.50571442, y: -.863852859}
       - {x: -1.69801426, y: -.117811441}
---- !u!50 &85014036
-Rigidbody2D:
+--- !u!114 &85014036
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 85014034}
-  m_Mass: 1001
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diaNum: 3
+  offset: 0
+  wall: 1
 --- !u!4 &85014037
 Transform:
   m_ObjectHideFlags: 0
@@ -285,6 +284,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &85014038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 85014034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 0
 --- !u!1 &182867072
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,8 +304,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 182867075}
-  - 50: {fileID: 182867074}
   - 60: {fileID: 182867073}
+  - 114: {fileID: 182867076}
+  - 114: {fileID: 182867074}
   m_Layer: 0
   m_Name: wallcollider2
   m_TagString: Untagged
@@ -310,7 +322,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 182867072}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Poly:
     m_Paths:
     - - {x: .278041124, y: 4.2717061}
@@ -318,22 +330,24 @@ PolygonCollider2D:
       - {x: 1.60334861, y: -.522670388}
       - {x: -.0820325613, y: -.141793609}
       - {x: -1.36661506, y: -.281816721}
+      - {x: -1.49248266, y: 2.69327927}
+      - {x: -4.2983079, y: 2.69809198}
+      - {x: -4.27335501, y: 4.22305489}
       - {x: -1.60438812, y: 4.1004777}
---- !u!50 &182867074
-Rigidbody2D:
+--- !u!114 &182867074
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 182867072}
-  m_Mass: 1001
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diaNum: 3
+  offset: 0
+  wall: 1
 --- !u!4 &182867075
 Transform:
   m_ObjectHideFlags: 0
@@ -345,6 +359,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &182867076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 182867072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 0
 --- !u!1 &270694623
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,8 +405,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 404272400}
-  - 50: {fileID: 404272399}
   - 60: {fileID: 404272398}
+  - 114: {fileID: 404272401}
+  - 114: {fileID: 404272399}
   m_Layer: 0
   m_Name: wallcollider
   m_TagString: Untagged
@@ -396,31 +423,28 @@ PolygonCollider2D:
   m_GameObject: {fileID: 404272397}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Poly:
     m_Paths:
     - - {x: -1.45490241, y: 1.85427701}
-      - {x: 14.7986689, y: -5.69783545}
+      - {x: 15.6107378, y: -5.87185049}
       - {x: 8.98381329, y: -5.83650017}
-      - {x: -9.61858273, y: -5.93197632}
-      - {x: -9.52808666, y: 5.79862118}
-      - {x: .00240921974, y: 5.95223188}
-      - {x: .0138347149, y: 1.99826455}
---- !u!50 &404272399
-Rigidbody2D:
+      - {x: -11.5907507, y: -6.33801126}
+      - {x: -11.7902794, y: 6.08864594}
+      - {x: .207060337, y: 5.99316263}
+      - {x: .13662529, y: 1.99826455}
+--- !u!114 &404272399
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 404272397}
-  m_Mass: 1001
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 0
 --- !u!4 &404272400
 Transform:
   m_ObjectHideFlags: 0
@@ -432,6 +456,20 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &404272401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 404272397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diaNum: 3
+  offset: 0
+  wall: 1
 --- !u!1 &767310065
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,8 +478,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 767310068}
-  - 50: {fileID: 767310067}
   - 60: {fileID: 767310066}
+  - 114: {fileID: 767310069}
+  - 114: {fileID: 767310067}
   m_Layer: 0
   m_Name: wallcollider3
   m_TagString: Untagged
@@ -457,29 +496,34 @@ PolygonCollider2D:
   m_GameObject: {fileID: 767310065}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Poly:
     m_Paths:
-    - - {x: .422905445, y: 3.45323658}
-      - {x: .196704865, y: 1.79245663}
+    - - {x: .700845718, y: 4.73870993}
+      - {x: 2.64462185, y: 5.29792929}
+      - {x: 2.33372211, y: 3.36996698}
+      - {x: .52084446, y: 3.07698488}
+      - {x: .474645138, y: 1.75771427}
       - {x: .294458389, y: -1.20405078}
-      - {x: -1.70293236, y: -.817711949}
-      - {x: -1.71143293, y: 3.53596401}
---- !u!50 &767310067
-Rigidbody2D:
+      - {x: -1.91138768, y: -.852454424}
+      - {x: -1.8682549, y: 2.87414789}
+      - {x: -3.24654722, y: 2.63046646}
+      - {x: -3.59024596, y: 4.60426426}
+      - {x: -1.85040331, y: 4.61298227}
+--- !u!114 &767310067
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 767310065}
-  m_Mass: 1001
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diaNum: 3
+  offset: 0
+  wall: 1
 --- !u!4 &767310068
 Transform:
   m_ObjectHideFlags: 0
@@ -487,10 +531,22 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 767310065}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.80893421, y: 2.35405445, z: -2.40234375}
+  m_LocalPosition: {x: 5.80893421, y: 2.43591499, z: -2.40234375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &767310069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 767310065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 0
 --- !u!1 &936188413
 GameObject:
   m_ObjectHideFlags: 0
@@ -5421,7 +5477,7 @@ GameObject:
   - 4: {fileID: 1569644981}
   - 212: {fileID: 1569644980}
   - 114: {fileID: 1569644982}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: scene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
