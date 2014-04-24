@@ -40,8 +40,6 @@ public class journal : MonoBehaviour {
 	public GameObject accusationRoomButton;
 	private bool inMenu;
 	public GameObject alleywayBelly, alleywayFin, janesRoom, plaza, yesButton, noButton;
-	//public AstarPath aStar;
-	public GameObject aStar;
 	public UILabel whereLabel;
 	private GameObject selectedLocation;
 	private ArrayList roomList;
@@ -128,8 +126,6 @@ public class journal : MonoBehaviour {
 		UIEventListener.Get (yesButton).onClick += this.onClickMap;
 		UIEventListener.Get (noButton).onClick += this.onClickMap;
 		selectedLocation = null;
-
-		aStar = GameObject.Find ("A_");
 
 		roomList = new ArrayList ();
 		//for (int i = 0; i < GameManager.Instance.roomIDList.Count; i++) {
@@ -223,14 +219,12 @@ public class journal : MonoBehaviour {
 		if (button == journalButton){
 			if (inMenu){
 				Time.timeScale = 1f;
-				aStar.SetActive(true);
 				//accusationRoomButton.SetActive(true);
 				inMenu = false;
 			}
 			else {
 				Time.timeScale = 0f;
 				accusationRoomButton.SetActive(false);
-				aStar.SetActive(false);
 				inMenu = true;
 			}
 		}
