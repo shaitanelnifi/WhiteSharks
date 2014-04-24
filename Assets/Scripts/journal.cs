@@ -128,9 +128,9 @@ public class journal : MonoBehaviour {
 		selectedLocation = null;
 
 		roomList = new ArrayList ();
-		for (int i = 0; i < GameManager.Instance.roomIDList.Count; i++) {
-			roomList.Add(GameManager.Instance.roomIDList[i]);
-		}
+		//for (int i = 0; i < GameManager.Instance.roomIDList.Count; i++) {
+		//	roomList.Add(GameManager.Instance.roomIDList[i]);
+		//}
 
 
 		initPoIView();

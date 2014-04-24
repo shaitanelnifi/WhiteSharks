@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
+  id: finplaza
   x: -1.399544
   y: -3.69468403
   mouseOverIcon: Door_Icon
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 1
+  id: bellyalleyway
   x: 2.90424991
   y: -5.31610918
   mouseOverIcon: Door_Icon
@@ -5268,6 +5268,10 @@ Prefab:
     - target: {fileID: 21200000, guid: a469d30d1e765974c87160172a7f21e0, type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a469d30d1e765974c87160172a7f21e0, type: 2}
+      propertyPath: id
+      value: bellyalleyway
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a469d30d1e765974c87160172a7f21e0, type: 2}
