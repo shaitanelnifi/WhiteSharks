@@ -7604,7 +7604,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diaNum: 2
+<<<<<<< HEAD
   offset: 8
+=======
+  offset: 0
+>>>>>>> 9e38577ad87a62bb03c51224451d44184a559f1e
   wall: 0
 --- !u!4 &1418088589
 Transform:
@@ -8554,7 +8558,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diaNum: 2
+<<<<<<< HEAD
   offset: 8
+=======
+  offset: 0
+>>>>>>> 9e38577ad87a62bb03c51224451d44184a559f1e
   wall: 0
 --- !u!4 &1640107967
 Transform:
@@ -8930,10 +8938,13 @@ Prefab:
       propertyPath: wall
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: offset
       value: 8
       objectReference: {fileID: 0}
+=======
+>>>>>>> 9e38577ad87a62bb03c51224451d44184a559f1e
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
   m_RootGameObject: {fileID: 2008275290}
@@ -28877,7 +28888,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diaNum: 0
+<<<<<<< HEAD
   offset: 8
+=======
+  offset: 0
+>>>>>>> 9e38577ad87a62bb03c51224451d44184a559f1e
   wall: 0
 --- !u!1 &2008275290
 GameObject:
@@ -28921,7 +28936,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diaNum: 1
+<<<<<<< HEAD
   offset: 8
+=======
+  offset: 0
+>>>>>>> 9e38577ad87a62bb03c51224451d44184a559f1e
   wall: 0
 --- !u!4 &2008275293
 Transform:
