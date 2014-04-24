@@ -331,7 +331,8 @@ GameObject:
   - 212: {fileID: 550110081}
   - 114: {fileID: 550110080}
   - 61: {fileID: 550110079}
-  m_Layer: 10
+  - 114: {fileID: 550110083}
+  m_Layer: 0
   m_Name: PeijunShi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +370,8 @@ MonoBehaviour:
   guilt: 1
   location: 4
   visible: 1
-  defaultIcon: Walk_Icon
+  clickedOnSomething: 0
+  maxDist: 1
   playerObj: {fileID: 0}
   box: {fileID: 550110079}
   weaponProficiency: 4
@@ -378,7 +380,6 @@ MonoBehaviour:
   scene: scene1
   trust: 0
   enumName: 5
-  relations: 040000000500000006000000070000000900000008000000
   myConvo: 0
   mouseOverIcon: Speech_Icon
 --- !u!212 &550110081
@@ -416,6 +417,19 @@ Transform:
   m_LocalScale: {x: .62973839, y: .629738033, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &550110083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: e95b9d1a228e644d7bcddf8736d250c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 2098888338}
+  m_GameObject: {fileID: 550110078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 4
 --- !u!1001 &1057503745
 Prefab:
   m_ObjectHideFlags: 0
@@ -5437,7 +5451,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
@@ -5592,6 +5606,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
   m_RootGameObject: {fileID: 1481105396}
@@ -5605,9 +5623,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1455022871}
-  - 50: {fileID: 1455022870}
   - 60: {fileID: 1455022869}
-  m_Layer: 0
+  - 114: {fileID: 1455022872}
+  - 114: {fileID: 1455022870}
+  m_Layer: 2
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5623,7 +5642,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1455022868}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Poly:
     m_Paths:
     - - {x: 12.5708284, y: 6.3685689}
@@ -5643,22 +5662,19 @@ PolygonCollider2D:
       - {x: -14.3928995, y: 1.02198279}
       - {x: -14.4899826, y: 6.37703705}
       - {x: -8.47450256, y: 6.25060606}
---- !u!50 &1455022870
-Rigidbody2D:
+--- !u!114 &1455022870
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000000, guid: 9d9776557ac29114191862a17c9e81ce,
+  m_PrefabParentObject: {fileID: 11400002, guid: 9d9776557ac29114191862a17c9e81ce,
     type: 2}
   m_PrefabInternal: {fileID: 1103748186}
   m_GameObject: {fileID: 1455022868}
-  m_Mass: 1000
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 0
 --- !u!4 &1455022871
 Transform:
   m_ObjectHideFlags: 0
@@ -5670,6 +5686,21 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1455022872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9d9776557ac29114191862a17c9e81ce,
+    type: 2}
+  m_PrefabInternal: {fileID: 1103748186}
+  m_GameObject: {fileID: 1455022868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diaNum: 3
+  offset: 0
+  wall: 1
 --- !u!1 &1481105396
 GameObject:
   m_ObjectHideFlags: 0
@@ -5681,7 +5712,8 @@ GameObject:
   - 114: {fileID: 1481105399}
   - 212: {fileID: 1481105398}
   - 61: {fileID: 1481105397}
-  m_Layer: 10
+  - 114: {fileID: 1481105401}
+  m_Layer: 0
   m_Name: CarlosFranco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5744,7 +5776,8 @@ MonoBehaviour:
   guilt: 3
   location: 4
   visible: 0
-  defaultIcon: Walk_Icon
+  clickedOnSomething: 0
+  maxDist: 1
   playerObj: {fileID: 0}
   box: {fileID: 1481105397}
   weaponProficiency: 2
@@ -5753,7 +5786,6 @@ MonoBehaviour:
   scene: scene1
   trust: 0
   enumName: 4
-  relations: 040000000500000006000000070000000800000009000000
   myConvo: 0
   mouseOverIcon: Speech_Icon
 --- !u!4 &1481105400
@@ -5767,6 +5799,19 @@ Transform:
   m_LocalScale: {x: .910000026, y: .910000026, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1481105401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 9cd4a299eda5848e98323344f2b5c521,
+    type: 2}
+  m_PrefabInternal: {fileID: 1303097515}
+  m_GameObject: {fileID: 1481105396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 4
 --- !u!1 &1489870363
 GameObject:
   m_ObjectHideFlags: 0
@@ -6232,6 +6277,10 @@ Prefab:
     - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_LocalScale.y
       value: .629738033
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}

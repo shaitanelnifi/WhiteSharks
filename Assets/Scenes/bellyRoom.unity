@@ -85,6 +85,7 @@ GameObject:
   - 114: {fileID: 33619892}
   - 212: {fileID: 33619891}
   - 61: {fileID: 33619890}
+  - 114: {fileID: 33619894}
   m_Layer: 10
   m_Name: JoshSusach
   m_TagString: Untagged
@@ -146,7 +147,8 @@ MonoBehaviour:
   guilt: 2
   location: 6
   visible: 1
-  defaultIcon: Walk_Icon
+  clickedOnSomething: 0
+  maxDist: 1
   playerObj: {fileID: 0}
   box: {fileID: 33619890}
   weaponProficiency: 2
@@ -155,7 +157,6 @@ MonoBehaviour:
   scene: scene1
   trust: 0
   enumName: 2
-  relations: 040000000500000006000000070000000800000009000000
   myConvo: 0
   mouseOverIcon: Speech_Icon
 --- !u!4 &33619893
@@ -169,6 +170,19 @@ Transform:
   m_LocalScale: {x: 1.23000002, y: 1.23000002, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &33619894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: f96a0d45c4d0449d7a663ea6d8130974,
+    type: 2}
+  m_PrefabInternal: {fileID: 1392739244}
+  m_GameObject: {fileID: 33619889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 4
 --- !u!1 &68703568
 GameObject:
   m_ObjectHideFlags: 0
@@ -5549,8 +5563,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1466228183}
-  - 50: {fileID: 1466228182}
   - 60: {fileID: 1466228181}
+  - 114: {fileID: 1466228184}
+  - 114: {fileID: 1466228182}
   m_Layer: 0
   m_Name: wall
   m_TagString: Untagged
@@ -5567,10 +5582,10 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1466228180}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Poly:
     m_Paths:
-    - - {x: 7.63022566, y: 9.17609501}
+    - - {x: 7.71193838, y: 9.99321747}
       - {x: 7.24627352, y: .779788256}
       - {x: .587785244, y: .716107845}
       - {x: -.102518082, y: 1.30536103}
@@ -5581,24 +5596,21 @@ PolygonCollider2D:
       - {x: -5.62469625, y: 7.4614377}
       - {x: -5.59739876, y: 1.9089694}
       - {x: -8.02297974, y: 1.98019481}
-      - {x: -20.0704136, y: -2.04128933}
-      - {x: -20.375309, y: 9.00234604}
---- !u!50 &1466228182
-Rigidbody2D:
+      - {x: -20.4789753, y: -2.1230011}
+      - {x: -20.375309, y: 10.0646048}
+--- !u!114 &1466228182
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000000, guid: 9d9776557ac29114191862a17c9e81ce,
+  m_PrefabParentObject: {fileID: 11400002, guid: 9d9776557ac29114191862a17c9e81ce,
     type: 2}
   m_PrefabInternal: {fileID: 1767106921}
   m_GameObject: {fileID: 1466228180}
-  m_Mass: 1000
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 0
 --- !u!4 &1466228183
 Transform:
   m_ObjectHideFlags: 0
@@ -5610,6 +5622,21 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1466228184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9d9776557ac29114191862a17c9e81ce,
+    type: 2}
+  m_PrefabInternal: {fileID: 1767106921}
+  m_GameObject: {fileID: 1466228180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diaNum: 3
+  offset: 0
+  wall: 1
 --- !u!1001 &1677589888
 Prefab:
   m_ObjectHideFlags: 0
@@ -5728,11 +5755,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[0].y
-      value: 9.17609501
+      value: 9.99321747
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[0].x
-      value: 7.63022566
+      value: 7.71193838
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[1].x
@@ -5808,11 +5835,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[11].x
-      value: -20.0704136
+      value: -20.4789753
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[11].y
-      value: -2.04128933
+      value: -2.1230011
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[12].x
@@ -5820,7 +5847,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[12].y
-      value: 9.00234604
+      value: 10.0646048
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[13].x
