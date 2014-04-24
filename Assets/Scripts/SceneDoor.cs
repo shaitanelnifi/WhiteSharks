@@ -26,6 +26,7 @@ public class SceneDoor : MonoBehaviour {
 		SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/FinDoor"), SoundManager.SoundType.Sfx, true);
 		GameManager.Instance.SetNextX(x);
 		GameManager.Instance.SetNextY(y);
+		GameManager.Instance.currRoom = id;
 		Application.LoadLevel (id);
 	}
 	

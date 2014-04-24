@@ -174,9 +174,8 @@ public class playerScript : CaseElement {
 		//canScale = false;
 		//int coolDown = 30;
 		DoorScript doorObj = collider.gameObject.GetComponent<DoorScript> ();
-		SceneDoor doorObj2 = collider.gameObject.GetComponent<SceneDoor> ();
 
-		if (doorObj != null || doorObj2 != null){ 
+		if (doorObj != null){ 
 			gameObject.collider2D.enabled = false;
 			renderer.enabled = false;
 			if (backEffect == null){
@@ -188,33 +187,11 @@ public class playerScript : CaseElement {
 		else {
 			renderer.enabled = true;
 		}
-			string temp;
-			int tempIndex;
-			if (doorObj != null) {
-				SoundManager.Instance.StopWalk();
-				tempIndex = 0;
-				if (doorObj.id == 0)
-					tempIndex = GameManager.Instance.currentRoomIndex - 1;
-				else if(doorObj.id ==1)
-					tempIndex = GameManager.Instance.currentRoomIndex + 1;
-				Debug.Log("Temp index:" + tempIndex);
-				temp = (string) GameManager.Instance.roomIDList[tempIndex];
-				Debug.Log("Room obtained:" + temp);
-				GameManager.Instance.currentRoomIndex = tempIndex;
-				GameManager.Instance.SetNextX(doorObj.x);
-				GameManager.Instance.SetNextY(doorObj.y);
-				//DestoryPlayer();
-				if((Application.loadedLevelName == "finbalcony" && temp == "finplaza") || (Application.loadedLevelName == "finplaza" && temp == "finbalcony"))
-					SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/FinElevator"), SoundManager.SoundType.Sfx, true);
-				else
-					SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/FinDoor"), SoundManager.SoundType.Sfx, true);
-				Application.LoadLevel (temp);
-				}
-			else if(doorObj2 != null) {
-				doorObj2.switchScene();
-			}
-
-
+		string temp;
+		int tempIndex;
+		if (doorObj != null) {
+			doorObj.useDoor();
+		}
 	}
 
 	//flips the sprite or animation
