@@ -211,18 +211,7 @@ public class playerScript : CaseElement {
 				Application.LoadLevel (temp);
 				}
 			else if(doorObj2 != null) {
-				SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/FinDoor"), SoundManager.SoundType.Sfx, true);
-				if (doorObj2.id >1){
-					tempIndex = doorObj2.id;
-					temp = (string) GameManager.Instance.rooms[tempIndex];
-				}
-				else{
-					tempIndex = GameManager.Instance.currentRoomIndex;
-					temp = (string) GameManager.Instance.roomIDList[tempIndex];
-				}
-				GameManager.Instance.SetNextX(doorObj2.x);
-				GameManager.Instance.SetNextY(doorObj2.y);
-				Application.LoadLevel (temp);
+				doorObj2.switchScene();
 			}
 
 

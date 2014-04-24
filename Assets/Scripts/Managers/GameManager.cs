@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour {
 	public static List<NPC> witnessList = new List<NPC>();
 	public static List<CaseObject> weaponList= new List<CaseObject>();
 	public ArrayList roomIDList;
-	public string[] rooms;
+	public string[] rooms = new string[10]{"mainmenu", "finoffice", "bellyRoom", "finbalcony", "finroom", "", "", "", "", ""};
 	public int currentRoomIndex;
 	private string currentMainCharacter;
 	public CaseGenerator generator;
