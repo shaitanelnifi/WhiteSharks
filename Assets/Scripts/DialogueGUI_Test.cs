@@ -28,6 +28,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 	private UISprite leftChar;
 	private UISprite rightChar;
 	private UILabel nameLabel;
+	private GameObject UI_Cam;
 
 	private string leftSpriteName;
 	private string rightSpriteName;
@@ -70,7 +71,6 @@ public class DialogueGUI_Test : MonoBehaviour {
 	}
 	
 	private void onDialogueEndedHandler(){
-		Debug.Log ("onDialogueEndedHandler()");
 		_ending = true;
 
 		if (convoBubble != null)
@@ -156,6 +156,18 @@ public class DialogueGUI_Test : MonoBehaviour {
 
 		updatePortraits();
 
+		if (UI_Cam == null)
+		{
+			UI_Cam = findCamera();
+			Debug.Log ("Finding camera");
+		}
+
+		if (UI_Cam != null)
+		{
+			//UI_Cam.camera.orthographicSize = 6.0f;
+			Debug.Log ("Found camera: " + UI_Cam);
+		}
+
 		# region test things
 		if (Input.GetKeyDown(KeyCode.G)) 
 		{
@@ -193,22 +205,23 @@ public class DialogueGUI_Test : MonoBehaviour {
 		{
 			foreach (UILabel label in choices)
 			{
-				Debug.Log ("hello pls");
 				label.text = "";
 			}
 		}
+	}
+
+	private GameObject findCamera()
+	{
+		return GameObject.Find ("Camera");
 	}
 
 	private void updatePortraits()
 	{
 		nameLabel.text = _nameText;
 
-		Debug.Log ("leftSprite: " + leftSpriteName);
 		leftChar.spriteName = leftSpriteName;
 		leftChar.MarkAsChanged();
 
-		Debug.Log ("rightSpriteName: " + rightSpriteName);
-		Debug.Log ("_nameText: " + _nameText);
 		if (_nameText.Equals("Jane Doe"))
 		{
 			rightSpriteName = "JaneSprite";
@@ -254,6 +267,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 	{
 		convoBubble = (GameObject)Instantiate(Resources.Load ("Conversation Bubble"));
 		convoBubble.name = "Conversation Bubble";
+
 		label = GameObject.Find("Conversation Text").GetComponent<UILabel>();
 		runOnce = true;
 
