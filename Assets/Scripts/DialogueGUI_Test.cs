@@ -28,7 +28,6 @@ public class DialogueGUI_Test : MonoBehaviour {
 	private UISprite leftChar;
 	private UISprite rightChar;
 	private UILabel nameLabel;
-	private GameObject UI_Cam;
 
 	private string leftSpriteName;
 	private string rightSpriteName;
@@ -43,6 +42,8 @@ public class DialogueGUI_Test : MonoBehaviour {
 		addDialoguerEvents();
 
 		_showDialogueBox = false;
+
+
 
 //		UISprite spr = GameObject.Find ("LeftCharacter").GetComponent<UISprite> ();
 //		spr.spriteName = "LiamO'SheaSprite";
@@ -117,6 +118,16 @@ public class DialogueGUI_Test : MonoBehaviour {
 			return;
 		}
 
+		// Set position of conversation bubble
+		if (convoBubble != null && runOnce)
+		{
+			// This may need to be fixed ~~~~~
+			Vector3 pos = new Vector3 (convoBubble.transform.position.x, -Screen.height/400f, convoBubble.transform.position.z);
+			convoBubble.transform.position = pos;
+			Debug.Log ("convoBubblepos: " + convoBubble.transform.position);
+			runOnce = false;
+		}
+
 		// Setup
 		if (!GameObject.Find ("Conversation Bubble"))
 		{
@@ -126,6 +137,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 			nameLabel = GameObject.Find ("Name").GetComponent<UILabel>();
 		}
 
+		// Mouse click interval delay
 		time += Time.deltaTime;
 
 		if (_isBranchedText && _windowCurrentText == _windowTargetText && _branchedTextChoices != null)
@@ -155,18 +167,6 @@ public class DialogueGUI_Test : MonoBehaviour {
 		}
 
 		updatePortraits();
-
-		if (UI_Cam == null)
-		{
-			UI_Cam = findCamera();
-			Debug.Log ("Finding camera");
-		}
-
-		if (UI_Cam != null)
-		{
-			//UI_Cam.camera.orthographicSize = 6.0f;
-			Debug.Log ("Found camera: " + UI_Cam);
-		}
 
 		# region test things
 		if (Input.GetKeyDown(KeyCode.G)) 
