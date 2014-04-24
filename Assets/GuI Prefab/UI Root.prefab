@@ -3482,6 +3482,7 @@ MonoBehaviour:
   plaza: {fileID: 100012}
   yesButton: {fileID: 100038}
   noButton: {fileID: 100030}
+  aStar: {fileID: 0}
   whereLabel: {fileID: 11400250}
   poiButtonGrid: {fileID: 100094}
   objectButtonGrid: {fileID: 100074}
