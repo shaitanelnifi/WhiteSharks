@@ -12,6 +12,8 @@ public class objectContainer : MonoBehaviour {
 	private bool clickedOnSomething = false;
 	private playerScript player;
 	private distanceCheck pDist;
+
+    private GameObject journal;
 	
 	public void OnMouseEnter(){
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);
@@ -36,7 +38,7 @@ public class objectContainer : MonoBehaviour {
 		player = (playerScript) FindObjectOfType(typeof(playerScript));
 		offset = GameManager.Instance.offset + 3;
 		pDist = gameObject.GetComponent<distanceCheck>();
-
+        journal = GameObject.Find("UI Root");
 	}
 
 	public void revealItem(){
@@ -46,6 +48,7 @@ public class objectContainer : MonoBehaviour {
 		Dialoguer.StartDialogue(offset);
 		clickedOnSomething = false;
 		Instantiate(iHoldThis, new Vector3(transform.localPosition.x, transform.localPosition.y, -1), Quaternion.identity);
+        journal.SendMessage("addObject", iHoldThis);
 		Destroy(this.gameObject);
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);
 
