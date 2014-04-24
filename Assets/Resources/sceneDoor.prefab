@@ -26,8 +26,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.81246591, y: .206103325, z: 0}
-  m_LocalScale: {x: .140000001, y: 1, z: .949355006}
+  m_LocalPosition: {x: 2.08452988, y: 6.61513615, z: 0}
+  m_LocalScale: {x: .231924891, y: 1.65660608, z: .949355006}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!50 &5000000
@@ -54,8 +54,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 17.5500011, y: 7}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 22.5242348, y: 1.92847896}
+  m_Center: {x: -5.17149115, y: -2.53580165}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -64,10 +64,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a679c3e68773fb48b69687ccd070cf4, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 3
+  id: finoffice
   x: 1.62485898
   y: -3.1073451
   mouseOverIcon: Door_Icon

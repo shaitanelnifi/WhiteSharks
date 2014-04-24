@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour {
 	public static List<NPC> witnessList = new List<NPC>();
 	public static List<CaseObject> weaponList= new List<CaseObject>();
 	public ArrayList roomIDList;
-	public string[] rooms;
+	public string currRoom;
 	public int currentRoomIndex;
 	private string currentMainCharacter;
 	public CaseGenerator generator;
@@ -251,19 +251,6 @@ public class GameManager : MonoBehaviour {
 		DialogueGUI_Test dGUI = gameObject.AddComponent<DialogueGUI_Test> ();
 		//dGUI.setSkin(Resources.Load ("OldSchool") as GUISkin);
 
-		roomIDList = new ArrayList ();
-		rooms = new string[5];
-		rooms[2] = "finoffice";
-		rooms[3] = "bellyRoom";
-		roomIDList.Add("finroom");
-		roomIDList.Add("finbalcony");
-		roomIDList.Add("finplaza");
-		roomIDList.Add("bellybar");
-		roomIDList.Add("bellyalleyway");
-		roomIDList.Add("bellyroom");
-		roomList.Add ("Office");
-		roomList.Add ("Cafe");
-		roomList.Add ("Gym");
 		npcList.Add(Resources.Load<NPC>("LiamOShea"));
 		npcList.Add(Resources.Load<NPC>("NinaWalker"));
 		npcList.Add(Resources.Load<NPC>("JoshSusach"));

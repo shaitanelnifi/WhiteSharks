@@ -9,7 +9,7 @@ using System.Collections;
 public class DoorScript : MonoBehaviour {
 	
 	//id = 0 means go back one room, 1 means go to next room
-	public int id;
+	public string id;
 	public float x, y;
 
 	//Mouse icon information
@@ -26,6 +26,21 @@ public class DoorScript : MonoBehaviour {
 
 		if (player == null)
 			player = (playerScript) FindObjectOfType(typeof(playerScript));
+
+	}
+
+	public void useDoor(){
+
+		GameManager.Instance.currRoom = id;
+		SoundManager.Instance.StopWalk ();
+		GameManager.Instance.SetNextX(x);
+		GameManager.Instance.SetNextY(y);
+		//DestoryPlayer();
+		if((Application.loadedLevelName == "finbalcony" && id == "finplaza") || (Application.loadedLevelName == "finplaza" && id == "finbalcony"))
+			SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/FinElevator"), SoundManager.SoundType.Sfx, true);
+		else
+			SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/FinDoor"), SoundManager.SoundType.Sfx, true);
+		Application.LoadLevel (id);
 
 	}
 

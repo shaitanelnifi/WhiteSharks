@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class SceneDoor : MonoBehaviour {
-	public int id;
+	public string id;
 	public float x, y;
 
 	//Mouse icon information
@@ -20,6 +20,14 @@ public class SceneDoor : MonoBehaviour {
 	
 	public void OnMouseExit(){
 		GameManager.Instance.updateMouseIcon (GameManager.Instance.defaultIcon);
+	}
+
+	public void switchScene(){
+		SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/FinDoor"), SoundManager.SoundType.Sfx, true);
+		GameManager.Instance.SetNextX(x);
+		GameManager.Instance.SetNextY(y);
+		GameManager.Instance.currRoom = id;
+		Application.LoadLevel (id);
 	}
 	
 	public void OnMouseEnter(){
