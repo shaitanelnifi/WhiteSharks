@@ -60,7 +60,7 @@ public class SoundManager : MonoBehaviour {
 
 	public void WalkSound() {
 		isWalking = true;
-		//if(walkNoise != null) {
+		if(walkNoise == null) {
 			walkNoise = new GameObject("SoundPlayer");
 			walkNoise.transform.position = Camera.main.transform.position;
 			walkNoise.transform.parent = Camera.main.transform;
@@ -68,7 +68,7 @@ public class SoundManager : MonoBehaviour {
 			newSource.audio.clip = (AudioClip)Resources.Load("Sounds/SoundEffects/HeelsLoop");
 			newSource.audio.volume = Volume(newSource, SoundType.Sfx);
 			newSource.audio.loop = true;
-		//}
+		}
 		walkNoise.audio.Play();
 	}
 
