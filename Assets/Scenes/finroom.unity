@@ -83,7 +83,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 24022500}
   - 114: {fileID: 24022501}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Suspect/Object View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   - 114: {fileID: 39277165}
   - 114: {fileID: 39277164}
   - 114: {fileID: 1690675652}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Journal Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -448,6 +448,7 @@ GameObject:
   - 4: {fileID: 44521454}
   - 60: {fileID: 44521453}
   - 114: {fileID: 44521452}
+  - 114: {fileID: 44521455}
   m_Layer: 2
   m_Name: wall
   m_TagString: Untagged
@@ -497,6 +498,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &44521455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 44521451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 0
 --- !u!1 &78148438
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,7 +522,7 @@ GameObject:
   - 114: {fileID: 78148442}
   - 114: {fileID: 78148441}
   - 114: {fileID: 78148440}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Map View button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -627,7 +640,7 @@ GameObject:
   - 54: {fileID: 78167039}
   - 114: {fileID: 1331425693}
   - 114: {fileID: 78167042}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: UI Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -747,7 +760,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 85384873}
   - 114: {fileID: 85384874}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Object Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -836,7 +849,7 @@ GameObject:
   - 4: {fileID: 92191235}
   - 114: {fileID: 92191238}
   - 65: {fileID: 235805406}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Yes Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -920,7 +933,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 100875088}
   - 114: {fileID: 100875089}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Suspect Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -988,7 +1001,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 116903236}
   - 114: {fileID: 116903237}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Room Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1076,7 +1089,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 137172674}
   - 114: {fileID: 137172675}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Room Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1164,7 +1177,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 203707736}
   - 114: {fileID: 203707737}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Suspect Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1245,7 +1258,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 250463466}
   - 114: {fileID: 391901091}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1573,7 +1586,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 286330859}
   - 114: {fileID: 286330863}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: 'Travel To:'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1772,7 +1785,7 @@ GameObject:
   - 4: {fileID: 287926654}
   - 20: {fileID: 287926656}
   - 114: {fileID: 287926655}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1805,7 +1818,7 @@ MonoBehaviour:
   eventType: 1
   eventReceiverMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4
   debug: 0
   useMouse: 1
   useTouch: 1
@@ -1851,7 +1864,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4096
+    m_Bits: 4
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
@@ -1866,7 +1879,7 @@ GameObject:
   - 4: {fileID: 288019079}
   - 114: {fileID: 288019080}
   - 65: {fileID: 1769857168}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: No Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1933,7 +1946,7 @@ GameObject:
   - 114: {fileID: 305354919}
   - 114: {fileID: 305354918}
   - 65: {fileID: 305354917}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Room Selection Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2075,7 +2088,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 315639724}
   - 114: {fileID: 315639725}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: TimeLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2163,7 +2176,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 332222588}
   - 114: {fileID: 332222589}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Object Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2251,7 +2264,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 365992526}
   - 114: {fileID: 39277162}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2327,7 +2340,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 391901090}
   - 114: {fileID: 1287462092}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2415,7 +2428,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 393325612}
   - 114: {fileID: 393325613}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Room Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2483,7 +2496,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 394777730}
   - 114: {fileID: 394777731}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Suspect Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2551,7 +2564,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 458031387}
   - 114: {fileID: 458031388}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Object Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2766,8 +2779,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 21.7853756, y: 4.40231657}
-  m_Center: {x: -1.93158126, y: .138841286}
+  m_Size: {x: 23.8763885, y: 4.84861422}
+  m_Center: {x: -2.97707653, y: .234475911}
 --- !u!212 &467432652
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2798,8 +2811,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 467432649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.2263279, y: -1.99263382, z: 0}
-  m_LocalScale: {x: .0964506119, y: 1.12483442, z: .949355006}
+  m_LocalPosition: {x: -11.1053209, y: -1.34726429, z: 0}
+  m_LocalScale: {x: .0964506119, y: 1.58162701, z: .949355006}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &467432654
@@ -2828,7 +2841,7 @@ GameObject:
   - 114: {fileID: 508601243}
   - 114: {fileID: 508601242}
   - 65: {fileID: 508601241}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Suspect Selection Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2949,7 +2962,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 512498547}
   - 114: {fileID: 512498548}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Hints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3040,7 +3053,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 516124431}
   - 114: {fileID: 516124432}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Name Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3130,7 +3143,7 @@ GameObject:
   - 114: {fileID: 1485963524}
   - 65: {fileID: 541797429}
   - 114: {fileID: 541797428}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Object Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3191,6 +3204,7 @@ GameObject:
   - 4: {fileID: 551225301}
   - 60: {fileID: 551225300}
   - 114: {fileID: 551225298}
+  - 114: {fileID: 551225299}
   m_Layer: 0
   m_Name: wall
   m_TagString: Untagged
@@ -3212,6 +3226,18 @@ MonoBehaviour:
   diaNum: 3
   offset: 0
   wall: 1
+--- !u!114 &551225299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 551225297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 0
 --- !u!60 &551225300
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3248,7 +3274,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 562497442}
   - 114: {fileID: 562497443}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Room Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3388,7 +3414,7 @@ GameObject:
   - 114: {fileID: 653648005}
   - 65: {fileID: 653648004}
   - 114: {fileID: 653648003}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Suspect Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3547,7 +3573,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 725088775}
   - 114: {fileID: 725088776}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Room Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3635,7 +3661,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 749159758}
   - 114: {fileID: 749159759}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Suspect Button Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3687,7 +3713,7 @@ GameObject:
   - 114: {fileID: 767306239}
   - 65: {fileID: 767306238}
   - 114: {fileID: 767306237}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Object Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3796,7 +3822,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 780709831}
   - 114: {fileID: 780709832}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: HUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4274,7 +4300,7 @@ GameObject:
   - 114: {fileID: 790796791}
   - 65: {fileID: 790796790}
   - 114: {fileID: 790796789}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Suspect Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4383,7 +4409,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 802077115}
   - 114: {fileID: 802077116}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Suspect Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4472,6 +4498,7 @@ GameObject:
   - 4: {fileID: 807297124}
   - 60: {fileID: 807297123}
   - 114: {fileID: 807297121}
+  - 114: {fileID: 807297122}
   m_Layer: 2
   m_Name: wall
   m_TagString: Untagged
@@ -4493,6 +4520,18 @@ MonoBehaviour:
   diaNum: 3
   offset: 0
   wall: 1
+--- !u!114 &807297122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 807297120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 0
 --- !u!60 &807297123
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4619,7 +4658,7 @@ GameObject:
   - 114: {fileID: 286330860}
   - 65: {fileID: 1331425694}
   - 114: {fileID: 1232859748}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Jane's Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4667,7 +4706,7 @@ GameObject:
   - 114: {fileID: 835575690}
   - 114: {fileID: 835575689}
   - 65: {fileID: 835575688}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Room Selection Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4769,7 +4808,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 847694622}
   - 114: {fileID: 847694623}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Object Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4857,7 +4896,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 890713218}
   - 114: {fileID: 890713219}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Object Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4925,7 +4964,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 904749514}
   - 114: {fileID: 904749515}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Object Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4993,7 +5032,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 906050206}
   - 114: {fileID: 906050207}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5126,7 +5165,7 @@ GameObject:
   - 114: {fileID: 934470912}
   - 114: {fileID: 934470911}
   - 65: {fileID: 934470910}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Suspect Selection Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5228,7 +5267,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 950128054}
   - 114: {fileID: 950128055}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5318,7 +5357,7 @@ GameObject:
   - 114: {fileID: 968060503}
   - 114: {fileID: 968060502}
   - 65: {fileID: 968060501}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Object Selection Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5420,7 +5459,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 968431912}
   - 114: {fileID: 968431913}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Description Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5696,7 +5735,7 @@ GameObject:
   - 114: {fileID: 1022311246}
   - 114: {fileID: 1022311245}
   - 65: {fileID: 1022311244}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Object Selection Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6071,7 +6110,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1048269209}
   - 114: {fileID: 1048269210}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Suspect Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6161,7 +6200,7 @@ GameObject:
   - 65: {fileID: 1077584608}
   - 114: {fileID: 1077584607}
   - 114: {fileID: 1077584606}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Object View button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6263,7 +6302,7 @@ GameObject:
   - 114: {fileID: 1096992462}
   - 114: {fileID: 1096992461}
   - 65: {fileID: 1096992460}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Room Selection Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6369,7 +6408,7 @@ GameObject:
   - 114: {fileID: 1100248063}
   - 114: {fileID: 1100248062}
   - 114: {fileID: 1100248061}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Accusation Room Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6675,7 +6714,7 @@ GameObject:
   - 114: {fileID: 1204588712}
   - 65: {fileID: 1204588711}
   - 114: {fileID: 1204588710}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Submit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6775,7 +6814,7 @@ GameObject:
   - 114: {fileID: 39277158}
   - 114: {fileID: 39277159}
   - 114: {fileID: 39277160}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Journal Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6836,7 +6875,7 @@ GameObject:
   - 114: {fileID: 286330862}
   - 65: {fileID: 250463469}
   - 114: {fileID: 286330861}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Alleyway Fin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6882,7 +6921,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1240946558}
   - 114: {fileID: 250463468}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6911,7 +6950,7 @@ GameObject:
   - 114: {fileID: 1245287274}
   - 65: {fileID: 286330864}
   - 114: {fileID: 820293237}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Alleyway Belly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6975,7 +7014,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1272829641}
   - 114: {fileID: 1272829642}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7057,7 +7096,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1287462091}
   - 114: {fileID: 250463467}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7145,7 +7184,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1306349916}
   - 114: {fileID: 1306349917}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Suspect Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7233,7 +7272,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1331425691}
   - 114: {fileID: 1331425692}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Attempts Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7371,7 +7410,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1343019479}
   - 114: {fileID: 1343019480}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Name Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7459,7 +7498,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1364666430}
   - 114: {fileID: 1364666431}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Room Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7568,6 +7607,7 @@ GameObject:
   - 4: {fileID: 1418088589}
   - 114: {fileID: 1418088588}
   - 61: {fileID: 1418088587}
+  - 114: {fileID: 1418088590}
   m_Layer: 0
   m_Name: Projector
   m_TagString: Untagged
@@ -7613,6 +7653,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1418088590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: f9b971af2a87b7045b837214a1258b99,
+    type: 2}
+  m_PrefabInternal: {fileID: 1123822917}
+  m_GameObject: {fileID: 1418088586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 4
 --- !u!1 &1432209357
 GameObject:
   m_ObjectHideFlags: 0
@@ -7624,6 +7677,7 @@ GameObject:
   - 61: {fileID: 1432209360}
   - 114: {fileID: 1432209359}
   - 212: {fileID: 1432209358}
+  - 114: {fileID: 1432209362}
   m_Layer: 0
   m_Name: Digibox
   m_TagString: Untagged
@@ -7693,6 +7747,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1432209362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 2047e213014c52d43a59ea7afb6d6c1f,
+    type: 2}
+  m_PrefabInternal: {fileID: 817253106}
+  m_GameObject: {fileID: 1432209357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 6
 --- !u!1001 &1446204853
 Prefab:
   m_ObjectHideFlags: 0
@@ -7778,7 +7845,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1477320228}
   - 114: {fileID: 1477320229}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7850,7 +7917,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1481848476}
   - 114: {fileID: 1481848477}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7920,7 +7987,7 @@ GameObject:
   - 114: {fileID: 365992527}
   - 65: {fileID: 1485963525}
   - 114: {fileID: 39277163}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Object Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8010,7 +8077,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1489713757}
   - 114: {fileID: 1489713758}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8173,7 +8240,7 @@ GameObject:
   - 4: {fileID: 1584356973}
   - 114: {fileID: 1584356975}
   - 114: {fileID: 1584356974}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Journal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8405,6 +8472,7 @@ GameObject:
   - 212: {fileID: 1634728012}
   - 61: {fileID: 1634728011}
   - 95: {fileID: 1634728015}
+  - 114: {fileID: 1634728016}
   m_Layer: 0
   m_Name: Shammy
   m_TagString: Untagged
@@ -8466,6 +8534,7 @@ MonoBehaviour:
   guilt: 2
   location: 6
   visible: 1
+  clickedOnSomething: 0
   maxDist: 8
   playerObj: {fileID: 0}
   box: {fileID: 1634728011}
@@ -8476,7 +8545,6 @@ MonoBehaviour:
   trust: 0
   enumName: 6
   myConvo: 0
-  clickedOnSomething: 0
   mouseOverIcon: Speech_Icon
 --- !u!4 &1634728014
 Transform:
@@ -8504,6 +8572,19 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!114 &1634728016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: d4ca5765567e743f5b7ad7717198a638,
+    type: 2}
+  m_PrefabInternal: {fileID: 1189909296}
+  m_GameObject: {fileID: 1634728010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 6
 --- !u!1 &1640107964
 GameObject:
   m_ObjectHideFlags: 0
@@ -8514,6 +8595,7 @@ GameObject:
   - 4: {fileID: 1640107967}
   - 114: {fileID: 1640107966}
   - 61: {fileID: 1640107965}
+  - 114: {fileID: 1640107968}
   m_Layer: 0
   m_Name: Projector
   m_TagString: Untagged
@@ -8559,6 +8641,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1640107968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: f9b971af2a87b7045b837214a1258b99,
+    type: 2}
+  m_PrefabInternal: {fileID: 1446204853}
+  m_GameObject: {fileID: 1640107964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 4
 --- !u!1 &1675740779
 GameObject:
   m_ObjectHideFlags: 0
@@ -8594,7 +8689,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1683653167}
   - 114: {fileID: 1683653168}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Where
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8687,7 +8782,7 @@ GameObject:
   - 4: {fileID: 1690675651}
   - 114: {fileID: 1690675654}
   - 114: {fileID: 1690675653}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Accusation Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8856,11 +8951,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.742808521
+      value: 5.77140141
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.71024728
+      value: 1.37916982
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_LocalPosition.z
@@ -8892,15 +8987,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_Center.y
-      value: -1.32500982
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_Size.x
-      value: 13.928894
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_Center.x
-      value: 6.46444702
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: diaNum
@@ -8938,7 +9033,7 @@ GameObject:
   - 114: {fileID: 1712085062}
   - 114: {fileID: 1712085061}
   - 65: {fileID: 1712085060}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Object Selection Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9040,7 +9135,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1736404571}
   - 114: {fileID: 1736404572}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Make A Claim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9130,7 +9225,7 @@ GameObject:
   - 114: {fileID: 1769857167}
   - 65: {fileID: 1769857166}
   - 114: {fileID: 92191237}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Suspect Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28567,6 +28662,7 @@ GameObject:
   - 4: {fileID: 1897387587}
   - 60: {fileID: 1897387586}
   - 114: {fileID: 1897387585}
+  - 114: {fileID: 1897387588}
   m_Layer: 0
   m_Name: wall
   m_TagString: Untagged
@@ -28621,6 +28717,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1897387588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1897387584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 0
 --- !u!1 &1980025661
 GameObject:
   m_ObjectHideFlags: 0
@@ -28632,7 +28740,7 @@ GameObject:
   - 114: {fileID: 1980025665}
   - 114: {fileID: 1980025664}
   - 65: {fileID: 1980025663}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Suspect Selection Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28736,7 +28844,7 @@ GameObject:
   - 114: {fileID: 1999064681}
   - 65: {fileID: 24022503}
   - 114: {fileID: 24022502}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Plaza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28802,6 +28910,7 @@ GameObject:
   - 60: {fileID: 2004265436}
   - 50: {fileID: 2004265438}
   - 114: {fileID: 2004265439}
+  - 114: {fileID: 2004265440}
   m_Layer: 0
   m_Name: bed collider
   m_TagString: Untagged
@@ -28867,6 +28976,18 @@ MonoBehaviour:
   diaNum: 0
   offset: 0
   wall: 0
+--- !u!114 &2004265440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004265435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 4
 --- !u!1 &2008275290
 GameObject:
   m_ObjectHideFlags: 0
@@ -28877,6 +28998,7 @@ GameObject:
   - 4: {fileID: 2008275293}
   - 114: {fileID: 2008275292}
   - 61: {fileID: 2008275291}
+  - 114: {fileID: 2008275294}
   m_Layer: 0
   m_Name: Window
   m_TagString: Untagged
@@ -28894,8 +29016,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 13.928894, y: 3.65001965}
-  m_Center: {x: 6.46444702, y: -1.32500982}
+  m_Size: {x: 14, y: 3.65001965}
+  m_Center: {x: 0, y: 0}
 --- !u!114 &2008275292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28918,10 +29040,23 @@ Transform:
   m_PrefabInternal: {fileID: 1692288815}
   m_GameObject: {fileID: 2008275290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.742808521, y: 2.71024728, z: 0}
+  m_LocalPosition: {x: 5.77140141, y: 1.37916982, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &2008275294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: f9b971af2a87b7045b837214a1258b99,
+    type: 2}
+  m_PrefabInternal: {fileID: 1692288815}
+  m_GameObject: {fileID: 2008275290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 4
 --- !u!1 &2035104936
 GameObject:
   m_ObjectHideFlags: 0
@@ -28931,7 +29066,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2035104937}
   - 114: {fileID: 2035104938}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Map View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29013,7 +29148,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2096334737}
   - 114: {fileID: 2096334738}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Object Button Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29065,7 +29200,7 @@ GameObject:
   - 65: {fileID: 2139350528}
   - 114: {fileID: 2139350527}
   - 114: {fileID: 2139350526}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: PoI View button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29165,7 +29300,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2140334518}
   - 114: {fileID: 2140334519}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: View Tab Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}

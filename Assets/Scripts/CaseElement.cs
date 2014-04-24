@@ -13,13 +13,32 @@ public abstract class CaseElement : MonoBehaviour {
 	public bool visible=false;			//Is the element visible in the journal?
 
 	protected playerScript player;
+	protected distanceCheck pDist;
+	public bool clickedOnSomething;
 	public float maxDist = 1f;
 
 	void Start (){
+		Init ();
+	}
+
+	protected void Init(){
 
 		player = (playerScript) FindObjectOfType(typeof(playerScript));
+		pDist = gameObject.GetComponent<distanceCheck>();
 		if (maxDist < GameManager.Instance.maxDist)
 			maxDist = GameManager.Instance.maxDist;
+
+	}
+
+	public void onMouseMiss(){
+		
+		RaycastHit hit = new RaycastHit ();        
+		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+		
+		if (Physics.Raycast (ray, out hit))
+			if (hit.collider.gameObject != this.gameObject)
+				clickedOnSomething = false;
+		
 	}
 
 	void Update(){
