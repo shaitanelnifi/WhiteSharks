@@ -112,7 +112,7 @@ public class GameManager : MonoBehaviour {
 
 		if (!test_Mode){
 			// Load character select screen
-			Application.LoadLevel ("CharacterSele");
+			Application.LoadLevel ("chapter1intronarration");
 		}
 		else{
 			GameManager.Instance.SetMainCharacter("Jane");

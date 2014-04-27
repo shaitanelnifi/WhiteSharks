@@ -6,22 +6,42 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/mainmenu.unity
+    path: Assets/Scenes/0 Main Menu/mainmenu.unity
   - enabled: 1
-    path: Assets/Scenes/finroom.unity
+    path: Assets/Scenes/Others/finroom.unity
   - enabled: 1
-    path: Assets/Scenes/finbalcony.unity
+    path: Assets/Scenes/Others/finbalcony.unity
   - enabled: 1
-    path: Assets/Scenes/charactersele.unity
+    path: Assets/Scenes/Others/CharacterSele.unity
   - enabled: 1
-    path: Assets/Scenes/bellyalleyway.unity
+    path: Assets/Scenes/Others/bellyalleyway.unity
   - enabled: 1
-    path: Assets/Scenes/finplaza.unity
+    path: Assets/Scenes/Others/finplaza.unity
   - enabled: 1
-    path: Assets/Scenes/bellybar.unity
+    path: Assets/Scenes/Others/bellybar.unity
   - enabled: 1
-    path: Assets/Scenes/bellyRoom.unity
+    path: Assets/Scenes/Others/bellyRoom.unity
   - enabled: 1
-    path: Assets/Scenes/janeintro.unity
+    path: Assets/Scenes/Others/JaneIntro.unity
   - enabled: 1
-    path: Assets/Scenes/finoffice.unity
+    path: Assets/Scenes/Others/finoffice.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 1/Chapter/chapter1finbalcony.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 1/Chapter/chapter1finoffice.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 1/Chapter/chapter1finplaza.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 1/Chapter/chapter1finroom0.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 1/Chapter/chapter1finroom1.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 1/Chapter/chapter1finroom10.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 1/0 Intro/chapter1intronarration.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 1/0 Intro/chapter1introbrainroom.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 1/0 Intro/chapter1introfinroom.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 1/0 Intro/chapter1introfinbalcony.unity
