@@ -82,7 +82,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 309699931}
-  - 114: {fileID: 309699930}
+  - 114: {fileID: 309699932}
   m_Layer: 0
   m_Name: SceneBehaviour
   m_TagString: Untagged
@@ -90,17 +90,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &309699930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 309699929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07531f7a8f27743be93859968784e3e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &309699931
 Transform:
   m_ObjectHideFlags: 0
@@ -112,6 +101,24 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &309699932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 309699929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426b90a7f8d0fd14398f752965840431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugMe: HEYO
+  playMe: {fileID: 8300000, guid: 8d5082d1704383c4cbb3ae363656fba7, type: 3}
+  waitThisLong: 4
+  whatCharacter: Frank
+  nextLevel: chapter1introbrainroom
+  isTherePlayer: 0
+  needGUI: 0
 --- !u!1 &1697760719
 GameObject:
   m_ObjectHideFlags: 0

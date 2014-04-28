@@ -15,6 +15,7 @@ public class Clickable : MonoBehaviour {
 	private distanceCheck pDist;
 	
 	public void OnMouseEnter(){
+		//Debug.LogWarning ("Stop? Go?: " + player.canWalk);
 		if (player != null && !wall)
 			if (player.canWalk)
 				GameManager.Instance.updateMouseIcon(mouseOverIcon);
@@ -22,6 +23,7 @@ public class Clickable : MonoBehaviour {
 	
 	public void OnMouseExit(){
 		GameManager.Instance.updateMouseIcon (defaultIcon);
+		//Debug.Log ("Talking " + player.talking);
 		if (wall && !player.talking){
 			player.canWalk = true;
 		}

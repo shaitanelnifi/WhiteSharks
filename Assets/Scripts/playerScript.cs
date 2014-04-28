@@ -54,7 +54,7 @@ public class playerScript : CaseElement {
 		}
 		anim = GetComponentInChildren<Animator>();
 		Debug.Log (anim);
-		canWalk = true;
+		//canWalk = true;
 		canScale = true;
 
 		float scale = calcScale ();

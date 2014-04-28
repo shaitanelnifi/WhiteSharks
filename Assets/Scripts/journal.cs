@@ -135,11 +135,21 @@ public class journal : MonoBehaviour {
 			if (inMenu){
 				Time.timeScale = 1f;
 				inMenu = false;
+				playerScript player = (playerScript) FindObjectOfType(typeof(playerScript));
+				
+				player.canWalk = true;
+				player.talking = false;
+				Debug.LogWarning("Ding");
 			}
 			else {
 				Time.timeScale = 0f;
 				accusationRoomButton.SetActive(false);
 				inMenu = true;
+				playerScript player = (playerScript) FindObjectOfType(typeof(playerScript));
+				
+				player.canWalk = false;
+				player.talking = true;
+				Debug.LogWarning("Dong");
 			}
 		}
 		else if (button == accusationRoomButton){
