@@ -198,4 +198,5 @@ MonoBehaviour:
   whatCharacter: Frank
   nextLevel: chapter1introfinbalcony
   isTherePlayer: 1
+  spawnHereAfter: {x: .70143187, y: .964097679}
   needGUI: 1

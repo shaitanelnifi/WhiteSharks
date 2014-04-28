@@ -148,7 +148,8 @@ MonoBehaviour:
   guilt: 0
   location: 0
   visible: 0
-  defaultIcon: Walk_Icon
+  clickedOnSomething: 0
+  maxDist: 1
   baseSpeed: 0
   minSpeed: 0
   mainCam: {fileID: 0}
@@ -161,6 +162,7 @@ MonoBehaviour:
   currentRoom: 0
   scaleInfo: []
   canScale: 1
+  talking: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -231,7 +233,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 1f11e758a90d34325afe310802d6ef48, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8deb9bab519b84eb5a9a1f0a7777910f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21200002
 SpriteRenderer:

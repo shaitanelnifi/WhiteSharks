@@ -10,6 +10,7 @@ public class genericScene : MonoBehaviour {
 	public string whatCharacter;
 	public string nextLevel;
 	public bool isTherePlayer;
+	public Vector2 spawnHereAfter;
 
 	private bool done = false;
 	public bool needGUI = false;
@@ -17,7 +18,7 @@ public class genericScene : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		
+		GameManager.dialogueJustFinished = false;
 	}
 	
 	// Update is called once per frame
@@ -41,7 +42,11 @@ public class genericScene : MonoBehaviour {
 		yield return new WaitForSeconds (waitThisLong);
 		GameManager.Instance.playerInScene = isTherePlayer;
 		done = true;
-		GameManager.Instance.SetMainCharacter(whatCharacter);
+		if (isTherePlayer) {
+			GameManager.Instance.SetMainCharacter (whatCharacter);
+			GameManager.Instance.SetNextX (spawnHereAfter.x);
+			GameManager.Instance.SetNextX (spawnHereAfter.y);
+		}
 		Application.LoadLevel(nextLevel);
 	}
 }

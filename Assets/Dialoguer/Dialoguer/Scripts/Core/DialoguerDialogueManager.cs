@@ -17,7 +17,8 @@ namespace DialoguerCore{
 		}
 		
 		public static void startDialogue(int dialogueId){
-			if(dialogue != null){ 
+			if(dialogue != null){
+				GameManager.dialogueJustFinished = false;
 				DialoguerEventManager.dispatchOnSuddenlyEnded();
 			}
 			
@@ -58,7 +59,6 @@ namespace DialoguerCore{
 				temp.walkWait = 30;
 				temp.talking = false;
 				temp.anim.SetFloat("distance", 0f);
-				temp.anim.SetBool("walking", false);
 				temp.setTarget(new Vector2(temp.transform.position.x, temp.transform.position.y));
 			}
 
