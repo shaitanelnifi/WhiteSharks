@@ -217,13 +217,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugMe: 
-  playMe: {fileID: 0}
-  waitThisLong: 0
-  whatCharacter: 
-  nextLevel: 
+  playMe: {fileID: 8300000, guid: 4c281b7a78264434faea95625cf11996, type: 3}
+  waitThisLong: 2
+  whatCharacter: Jane
+  nextLevel: chapter1finoffice
   isTherePlayer: 0
   spawnHereAfter: {x: 0, y: 0}
   dialoguer: chapter1
   needGUI: 0
-  dialogue: 0
-  setOffset: 0
+  dialogue: 04000000
+  setOffset: 24

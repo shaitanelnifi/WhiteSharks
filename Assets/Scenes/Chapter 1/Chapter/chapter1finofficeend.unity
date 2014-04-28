@@ -148,13 +148,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 903885455}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca2fccdc87dda40369d8fa962f1e1677, type: 3}
+  m_Script: {fileID: 11500000, guid: 426b90a7f8d0fd14398f752965840431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctAnswer: 0
-  may: 1
-  maySprite: {fileID: 2800000, guid: ae077eceb54a74421ae84077cfc03fa6, type: 3}
-  alexiaSprite: {fileID: 2800000, guid: 036f6ea0067ef41a7b7561f5414dda4d, type: 3}
+  debugMe: 
+  playMe: {fileID: 8300000, guid: 4c281b7a78264434faea95625cf11996, type: 3}
+  waitThisLong: 2
+  whatCharacter: Jane
+  nextLevel: chapter1finplaza
+  isTherePlayer: 1
+  spawnHereAfter: {x: 0, y: 0}
+  dialoguer: chapter1
+  needGUI: 0
+  dialogue: 0500000006000000
+  setOffset: 24
 --- !u!4 &903885457
 Transform:
   m_ObjectHideFlags: 0
