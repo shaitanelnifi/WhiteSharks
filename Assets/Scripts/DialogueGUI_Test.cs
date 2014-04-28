@@ -265,7 +265,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 
 	private void setup()
 	{
-		convoBubble = (GameObject)Instantiate(Resources.Load ("Conversation Bubble"));
+		convoBubble = Instantiate(Resources.Load ("Conversation Bubble")) as GameObject;
 		convoBubble.name = "Conversation Bubble";
 
 		label = GameObject.Find("Conversation Text").GetComponent<UILabel>();
