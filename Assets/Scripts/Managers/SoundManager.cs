@@ -125,7 +125,7 @@ public class SoundManager : MonoBehaviour {
 
 	IEnumerator FadeIn() {
 		while(musicObj.audio.volume <= gameVolumeMax && !fading) {
-			musicObj.audio.volume += 0.005f;
+			musicObj.audio.volume += 0.01f;
 			yield return new WaitForSeconds(0.001f);
 		}
 	}
@@ -133,7 +133,7 @@ public class SoundManager : MonoBehaviour {
 	IEnumerator FadeOut(AudioClip clip) {
 		while(musicObj.audio.volume > 0) {
 			fading = true;
-			musicObj.audio.volume -= 0.005f;
+			musicObj.audio.volume -= 0.01f;
 			yield return new WaitForSeconds(0.001f);
 		}
 		Destroy(musicObj);
