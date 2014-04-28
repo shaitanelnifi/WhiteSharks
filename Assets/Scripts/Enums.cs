@@ -69,6 +69,7 @@ public enum clickableID {
 
 
 public enum Convo {
+	none = -1,
 	openingNarration = 0,
 	frankPartnerBRoom = 1,
 	frankPartnerBalcony = 2,

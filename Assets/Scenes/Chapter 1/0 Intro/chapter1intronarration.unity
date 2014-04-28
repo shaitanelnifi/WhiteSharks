@@ -118,7 +118,10 @@ MonoBehaviour:
   whatCharacter: Frank
   nextLevel: chapter1introbrainroom
   isTherePlayer: 0
+  spawnHereAfter: {x: 0, y: 0}
   needGUI: 0
+  dialogue: 0
+  setOffset: 0
 --- !u!1 &1697760719
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,8 +168,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1697760719}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0541026592, y: -.108207226, z: 0}
-  m_LocalScale: {x: 2.77999997, y: 2.99000001, z: 1}
+  m_LocalPosition: {x: -.0541026592, y: -.108207226, z: 20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &2041039059
@@ -229,7 +232,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 2
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

@@ -61,7 +61,7 @@ public class Clickable : MonoBehaviour {
 	
 	public void Start(){
 		player = (playerScript) FindObjectOfType(typeof(playerScript));
-		offset = GameManager.Instance.offset;
+		offset = GameManager.offset;
 		pDist = gameObject.GetComponent<distanceCheck>();
 	}
 	

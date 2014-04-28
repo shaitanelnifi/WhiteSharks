@@ -41,7 +41,9 @@ public class CameraManager : MonoBehaviour {
 			getOnce = true;
 		}
 
-		Vector3 playerPos = player.transform.position;
+		Vector3 playerPos = new Vector3 (0, 0, -10);
+			if (player != null)
+				playerPos = player.transform.position;
 		Vector3 nudgeVal = transform.position;
 		// negative
 		if (playerPos.x < 0 && Mathf.Abs(playerPos.x) > quarterX * 0.80f) {

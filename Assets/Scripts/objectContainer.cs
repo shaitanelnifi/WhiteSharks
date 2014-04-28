@@ -7,8 +7,8 @@ public class objectContainer : MonoBehaviour {
 
 	//Mouse icon information
 	private string mouseOverIcon = "Examine_Icon";	
-	public int offset;
 	public float maxDist = 1f;
+	public Convo convoID;
 	private bool clickedOnSomething = false;
 	private playerScript player;
 	private distanceCheck pDist;
@@ -36,7 +36,6 @@ public class objectContainer : MonoBehaviour {
 		if (maxDist < GameManager.Instance.maxDist)
 			maxDist = GameManager.Instance.maxDist;
 		player = (playerScript) FindObjectOfType(typeof(playerScript));
-		offset = GameManager.Instance.offset + 3;
 		pDist = gameObject.GetComponent<distanceCheck>();
         journal = GameObject.Find("UI Root");
 	}
@@ -46,7 +45,7 @@ public class objectContainer : MonoBehaviour {
 		player.talking = true;
 		player.stopMove ();
 		SoundManager.Instance.StopWalk();
-		Dialoguer.StartDialogue(offset);
+		Dialoguer.StartDialogue((int)convoID);
 		clickedOnSomething = false;
 		Instantiate(iHoldThis, new Vector3(transform.localPosition.x, transform.localPosition.y, -1), Quaternion.identity);
         journal.SendMessage("addObject", iHoldThis);

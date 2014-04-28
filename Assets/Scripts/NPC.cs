@@ -22,14 +22,13 @@ public class NPC : CaseElement {
 
 	public float trust;
 	public NPCNames enumName;
-	public int myConvo;
+	public Convo myConvo;
 
 	//Mouse icon information
 	public string mouseOverIcon = "Speech_Icon";
 
 	void Start(){
 		base.Init ();
-		myConvo = GameManager.npcConversations[(int)enumName];
 	}
 	
 	public void OnMouseEnter(){
@@ -57,7 +56,7 @@ public class NPC : CaseElement {
 
 	public void startDialogue(){
 
-		Dialoguer.StartDialogue(myConvo);
+		Dialoguer.StartDialogue((int)myConvo);
 		player.stopMove();
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);
 		clickedOnSomething = false;

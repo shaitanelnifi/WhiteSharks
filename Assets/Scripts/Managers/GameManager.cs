@@ -12,8 +12,6 @@ public class GameManager : MonoBehaviour {
 
 	//Variables for case control
 	public static int currentEpisode = 0;
-	public static string[] episodeStartLevels = new String[12]{"JaneIntro","","","","","","","","","","",""};
-	public static string[] episodeDialogues = new string[12]{"case0","","","","","","","","","","",""};
 
 	public static bool dialogueJustFinished = false;
 	public static bool firstTimeOffice = true;
@@ -49,7 +47,7 @@ public class GameManager : MonoBehaviour {
 	public static List<Texture2D> mouseSprites;
 	public static string[] spriteIndex;
 	public static Texture2D currMouse;
-	public int offset = 0;
+	public static int offset = 0;
 
 
 	public static GameManager Instance {
