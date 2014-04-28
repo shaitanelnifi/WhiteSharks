@@ -5,6 +5,7 @@ public class genericScene : MonoBehaviour {
 	//Implement when dialoguer/animation ends, go to first scene.
 
 	public string debugMe;
+	public bool autoPlay;
 	public AudioClip playMe;
 	public float waitThisLong;
 	public string whatCharacter;
@@ -26,9 +27,9 @@ public class genericScene : MonoBehaviour {
 		if (GameManager.offset == 0)
 			GameManager.offset = setOffset;
 
-		if (Dialoguer.isInitialized ())
+		if (Dialoguer.isInitialized () && autoPlay)
 			Dialoguer.StartDialogue ((int)dialogue[curDia]);
-		else {
+		else if (autoPlay) {
 			
 			Dialoguer.Initialize(dialoguer);
 			Dialoguer.StartDialogue ((int)dialogue[curDia]);
