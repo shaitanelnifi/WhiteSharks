@@ -161,7 +161,7 @@ MonoBehaviour:
   dialoguer: chapter1
   needGUI: 0
   dialogue: 0500000006000000
-  setOffset: 24
+  setOffset: 18
 --- !u!4 &903885457
 Transform:
   m_ObjectHideFlags: 0

@@ -186,7 +186,7 @@ MonoBehaviour:
   dialoguer: chapter1
   needGUI: 0
   dialogue: 02000000
-  setOffset: 0
+  setOffset: 18
 --- !u!1 &1843275054
 GameObject:
   m_ObjectHideFlags: 0

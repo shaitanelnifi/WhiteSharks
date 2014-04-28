@@ -202,4 +202,4 @@ MonoBehaviour:
   dialoguer: chapter1
   needGUI: 1
   dialogue: 01000000
-  setOffset: 0
+  setOffset: 18
