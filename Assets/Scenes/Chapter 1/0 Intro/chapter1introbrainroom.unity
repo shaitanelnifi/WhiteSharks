@@ -193,6 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugMe: HEY
+  autoPlay: 1
   playMe: {fileID: 8300000, guid: 9ebafcb1e8e05ee4aacf13042ea36fd5, type: 3}
   waitThisLong: 0
   whatCharacter: Frank
