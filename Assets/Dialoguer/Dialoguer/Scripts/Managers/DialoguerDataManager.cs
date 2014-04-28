@@ -9,6 +9,7 @@ namespace DialoguerCore{
 	public class DialoguerDataManager{
 		
 		private static DialoguerData _data;
+		private static bool initialized = false;
 		
 		public static void Initialize(){
 			
@@ -17,6 +18,7 @@ namespace DialoguerCore{
 			DialogueEditorMasterObject editorData = (DialogueEditorMasterObject)deserializer.Deserialize(xmlReader);
 			
 			_data = editorData.getDialoguerData();
+			initialized = true;
 			
 			/*
 			Debug.Log (
@@ -36,6 +38,9 @@ namespace DialoguerCore{
 			DialogueEditorMasterObject editorData = (DialogueEditorMasterObject)deserializer.Deserialize(xmlReader);
 			
 			_data = editorData.getDialoguerData();
+			initialized = true;
+
+
 			
 			/*
 			Debug.Log (
@@ -46,6 +51,10 @@ namespace DialoguerCore{
 				_data.globalVariables.strings.Count+" Global Strings\n"
 			);
 			*/
+		}
+
+		public static bool isInitialized(){
+			return initialized;
 		}
 		
 		#region Saving and Loading

@@ -27,6 +27,10 @@ public class Dialoguer{
 		DialoguerEventManager.onMessageEvent += events.handler_MessageEvent;
 	}
 
+	public static bool isInitialized(){
+		return DialoguerDataManager.isInitialized ();
+	}
+
 	public static void Initialize(string filename){
 		events = new DialoguerEvents();
 		// Initialize DialoguerDataManager

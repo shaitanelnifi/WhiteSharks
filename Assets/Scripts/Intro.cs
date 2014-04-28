@@ -83,7 +83,6 @@ public class Intro : MonoBehaviour {
 
 	IEnumerator wait(){
 		SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/Fin"));
-		SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/" + GameManager.episodeStartLevels[GameManager.currentEpisode]));
 		//Application.LoadLevel (GameManager.episodeStartLevels[GameManager.currentEpisode]);
 		yield return new WaitForSeconds (1.5f);
 		GameManager.Instance.playerInScene = true;

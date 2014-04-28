@@ -46,9 +46,7 @@ public class MainMenu : MonoBehaviour {
 	}
 
 	public void startGame() {
-		Debug.Log("Starting gameadsjbadsjbfdajbkadfj");
-		Debug.Log (GameManager.episodeDialogues [GameManager.currentEpisode]); 
-		Dialoguer.Initialize (GameManager.episodeDialogues[GameManager.currentEpisode]);
+		Dialoguer.Initialize ("chapter1");
 		// Initialize various managers for the game
 		// Singleton pattern
 
@@ -59,10 +57,10 @@ public class MainMenu : MonoBehaviour {
 
 		switch (GameManager.currentEpisode) {
 		case 0:
-			GameManager.npcConversations[(int)NPCNames.Shammy] = 1;
-			GameManager.npcConversations[(int)NPCNames.CarlosFranco] = 4;
-			GameManager.npcConversations[(int)NPCNames.NoelAlt] = 3;
-			GameManager.Instance.offset = 8;
+			//GameManager.npcConversations[(int)NPCNames.Shammy] = 1;
+			//GameManager.npcConversations[(int)NPCNames.CarlosFranco] = 4;
+			//GameManager.npcConversations[(int)NPCNames.NoelAlt] = 3;
+			//GameManager.offset = 8;
 			break;
 		}
 
