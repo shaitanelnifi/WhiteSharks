@@ -13,10 +13,10 @@ public class genericScene : MonoBehaviour {
 	public Vector2 spawnHereAfter;
 	public string dialoguer = "chapter1";
 
-	private bool done = false;
+	protected bool done = false;
 	public bool needGUI = false;
 	public Convo[] dialogue;
-	private int curDia = 0;
+	protected int curDia = 0;
 
 	public int setOffset;
 	

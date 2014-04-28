@@ -293,14 +293,19 @@ public class journal : MonoBehaviour {
 	}
 
 
-	public void updateJournal(){
-		/*Similar code will update the journal depending on the stage in the game.
-		personsOfInterest = GameManager.npcList;
-		inventory = GameManager.theCase.activeWeapons;
-		*/
-	}
+	public bool isItemInInventory(GameObject item){
 
-	public void updateNPCs(){
-		//Doesn't do anything right now. there to stop complaining from gamemanager
+		bool matchFound = false;
+		for (int i = 0; i < inventory.Count; i++) {
+
+			CaseObject itemCO = item.GetComponent<CaseObject>();
+			CaseObject invenCO = item.GetComponent<CaseObject>();
+			if (itemCO.elementName == invenCO.elementName)
+				matchFound = true;
+
+		}
+
+		return matchFound;
+
 	}
 }

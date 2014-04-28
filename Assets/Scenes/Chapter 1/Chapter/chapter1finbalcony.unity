@@ -542,6 +542,7 @@ GameObject:
   - 212: {fileID: 576624421}
   - 61: {fileID: 576624420}
   - 114: {fileID: 576624419}
+  - 114: {fileID: 576624424}
   m_Layer: 10
   m_Name: NoelAlt
   m_TagString: Untagged
@@ -642,6 +643,33 @@ Transform:
   m_LocalScale: {x: 1.22557151, y: 1.22557354, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &576624424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 576624418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc984f8ee7430345b86b7381a0f78f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugMe: 
+  playMe: {fileID: 8300000, guid: 4c281b7a78264434faea95625cf11996, type: 3}
+  waitThisLong: 3
+  whatCharacter: Jane
+  nextLevel: chapter1finofficeend
+  isTherePlayer: 0
+  spawnHereAfter: {x: 0, y: 0}
+  dialoguer: chapter1
+  needGUI: 0
+  dialogue: 0e000000
+  setOffset: 0
+  getTheseToProceed:
+  - {fileID: 0}
+  - {fileID: 0}
+  talkToThisManyToProceed: 0
+  talkedToThisMany: 0
 --- !u!1 &759421174
 GameObject:
   m_ObjectHideFlags: 0
