@@ -1901,7 +1901,7 @@ Camera:
   far clip plane: 10
   field of view: 60
   orthographic: 1
-  orthographic size: 3.36635494
+  orthographic size: 6
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -2596,6 +2596,54 @@ MonoBehaviour:
   mMat: {fileID: 0}
   mShader: {fileID: 4800000, guid: e75727d9555d9d14ca51d91908c681bc, type: 3}
   nextSprite: {fileID: 0}
+--- !u!1001 &440386389
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 8bcc5a7383eaf4283b5d64a246eba873, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.49319172
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8bcc5a7383eaf4283b5d64a246eba873, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.84039164
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8bcc5a7383eaf4283b5d64a246eba873, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8bcc5a7383eaf4283b5d64a246eba873, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8bcc5a7383eaf4283b5d64a246eba873, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8bcc5a7383eaf4283b5d64a246eba873, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8bcc5a7383eaf4283b5d64a246eba873, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8bcc5a7383eaf4283b5d64a246eba873, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .767529011
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8bcc5a7383eaf4283b5d64a246eba873, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .76752913
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8bcc5a7383eaf4283b5d64a246eba873, type: 2}
+  m_RootGameObject: {fileID: 1190664835}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &458031386
 GameObject:
   m_ObjectHideFlags: 0
@@ -4532,6 +4580,110 @@ MonoBehaviour:
   mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
+--- !u!1 &802553711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 3ac0d3532517a463f950d0b7ec4db1c5, type: 2}
+  m_PrefabInternal: {fileID: 1180365073}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 802553716}
+  - 114: {fileID: 802553715}
+  - 212: {fileID: 802553714}
+  - 61: {fileID: 802553713}
+  - 114: {fileID: 802553712}
+  m_Layer: 0
+  m_Name: brokenBracelet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &802553712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 3ac0d3532517a463f950d0b7ec4db1c5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1180365073}
+  m_GameObject: {fileID: 802553711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 4
+--- !u!61 &802553713
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100000, guid: 3ac0d3532517a463f950d0b7ec4db1c5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1180365073}
+  m_GameObject: {fileID: 802553711}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 3.37905192, y: 2.57283711}
+  m_Center: {x: .0954732895, y: -.0318245888}
+--- !u!212 &802553714
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200000, guid: 3ac0d3532517a463f950d0b7ec4db1c5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1180365073}
+  m_GameObject: {fileID: 802553711}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_SortingLayerID: 1982072587
+  m_Sprite: {fileID: 21300000, guid: 41e1df6964cbb4c0099f165216194b7e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &802553715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 3ac0d3532517a463f950d0b7ec4db1c5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1180365073}
+  m_GameObject: {fileID: 802553711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8176f69eb181690498446187bf0de721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementName: Broken Bracelet
+  description: An example of technology exclusive to White Shark, broken. Better have
+    May do her hacker magic on this.
+  profileImage: {fileID: 0}
+  guilt: 1
+  location: 0
+  visible: 1
+  clickedOnSomething: 0
+  maxDist: 1
+  category: 3
+  myEnumName: 0
+  offset: 0
+  mouseOverIcon: Grab_Icon
+--- !u!4 &802553716
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 3ac0d3532517a463f950d0b7ec4db1c5, type: 2}
+  m_PrefabInternal: {fileID: 1180365073}
+  m_GameObject: {fileID: 802553711}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.13597059, y: -4.44528437, z: 10}
+  m_LocalScale: {x: .605049431, y: .605049253, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &807297120
 GameObject:
   m_ObjectHideFlags: 0
@@ -6671,6 +6823,54 @@ Prefab:
   m_RootGameObject: {fileID: 1418088586}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1001 &1180365073
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 3ac0d3532517a463f950d0b7ec4db1c5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6.13597059
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3ac0d3532517a463f950d0b7ec4db1c5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.44528437
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3ac0d3532517a463f950d0b7ec4db1c5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3ac0d3532517a463f950d0b7ec4db1c5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3ac0d3532517a463f950d0b7ec4db1c5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3ac0d3532517a463f950d0b7ec4db1c5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3ac0d3532517a463f950d0b7ec4db1c5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3ac0d3532517a463f950d0b7ec4db1c5, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .605049431
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3ac0d3532517a463f950d0b7ec4db1c5, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .605049253
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3ac0d3532517a463f950d0b7ec4db1c5, type: 2}
+  m_RootGameObject: {fileID: 802553711}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1001 &1189909296
 Prefab:
   m_ObjectHideFlags: 0
@@ -6755,6 +6955,110 @@ Prefab:
   m_RootGameObject: {fileID: 1634728010}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1190664835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 8bcc5a7383eaf4283b5d64a246eba873, type: 2}
+  m_PrefabInternal: {fileID: 440386389}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1190664840}
+  - 114: {fileID: 1190664839}
+  - 212: {fileID: 1190664838}
+  - 61: {fileID: 1190664837}
+  - 114: {fileID: 1190664836}
+  m_Layer: 0
+  m_Name: partnerBlood
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1190664836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 8bcc5a7383eaf4283b5d64a246eba873,
+    type: 2}
+  m_PrefabInternal: {fileID: 440386389}
+  m_GameObject: {fileID: 1190664835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 4
+--- !u!61 &1190664837
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100000, guid: 8bcc5a7383eaf4283b5d64a246eba873,
+    type: 2}
+  m_PrefabInternal: {fileID: 440386389}
+  m_GameObject: {fileID: 1190664835}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 3.37905192, y: 2.57283711}
+  m_Center: {x: .0954732895, y: -.0318245888}
+--- !u!212 &1190664838
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200000, guid: 8bcc5a7383eaf4283b5d64a246eba873,
+    type: 2}
+  m_PrefabInternal: {fileID: 440386389}
+  m_GameObject: {fileID: 1190664835}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_SortingLayerID: 1982072587
+  m_Sprite: {fileID: 21300000, guid: 41e1df6964cbb4c0099f165216194b7e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1190664839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8bcc5a7383eaf4283b5d64a246eba873,
+    type: 2}
+  m_PrefabInternal: {fileID: 440386389}
+  m_GameObject: {fileID: 1190664835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8176f69eb181690498446187bf0de721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementName: Terminal Blood Smear
+  description: An unexplained blood splatter next to a terminal. Noel and Alexia are
+    convinced this is relavant to other cases.
+  profileImage: {fileID: 0}
+  guilt: 1
+  location: 0
+  visible: 1
+  clickedOnSomething: 0
+  maxDist: 1
+  category: 3
+  myEnumName: 0
+  offset: 0
+  mouseOverIcon: Grab_Icon
+--- !u!4 &1190664840
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 8bcc5a7383eaf4283b5d64a246eba873, type: 2}
+  m_PrefabInternal: {fileID: 440386389}
+  m_GameObject: {fileID: 1190664835}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.49319172, y: -1.84039164, z: 10}
+  m_LocalScale: {x: .767529011, y: .76752913, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1204588708
 GameObject:
   m_ObjectHideFlags: 0

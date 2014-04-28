@@ -1788,7 +1788,7 @@ Camera:
   far clip plane: 10
   field of view: 60
   orthographic: 1
-  orthographic size: 3.36635494
+  orthographic size: 6
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -4676,7 +4676,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 2047e213014c52d43a59ea7afb6d6c1f, type: 2}
       propertyPath: iHoldThis
       value: 
-      objectReference: {fileID: 11400000, guid: 803f9062bb91647b7a86cab23a9c223d,
+      objectReference: {fileID: 11400000, guid: e0718d06710294bdba42a3e7ca65a2a0,
         type: 2}
     - target: {fileID: 6100000, guid: 2047e213014c52d43a59ea7afb6d6c1f, type: 2}
       propertyPath: m_IsTrigger
@@ -4685,6 +4685,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 2047e213014c52d43a59ea7afb6d6c1f, type: 2}
       propertyPath: maxDist
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2047e213014c52d43a59ea7afb6d6c1f, type: 2}
+      propertyPath: convoID
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2047e213014c52d43a59ea7afb6d6c1f, type: 2}
@@ -7826,9 +7830,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f58b271e8cd4f734fa627dfc1d2fb578, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iHoldThis: {fileID: 11400000, guid: 803f9062bb91647b7a86cab23a9c223d, type: 2}
+  iHoldThis: {fileID: 11400000, guid: e0718d06710294bdba42a3e7ca65a2a0, type: 2}
   maxDist: 3
-  convoID: 0
+  convoID: 16
 --- !u!61 &1432209360
 BoxCollider2D:
   m_ObjectHideFlags: 0
