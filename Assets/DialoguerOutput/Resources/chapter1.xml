@@ -1030,8 +1030,8 @@
       <name>Frank + Partner 3</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>0</y>
+        <x>286.018066</x>
+        <y>5094.31055</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -1754,7 +1754,7 @@
             <y>4075.03467</y>
           </position>
           <outs>
-            <int xsi:nil="true" />
+            <int>17</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -1843,7 +1843,7 @@
             <y>4536.052</y>
           </position>
           <outs>
-            <int xsi:nil="true" />
+            <int>19</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -17331,5 +17331,5 @@ out the files.</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>17</currentDialogueId>
+  <currentDialogueId>3</currentDialogueId>
 </DialogueEditorMasterObject>
