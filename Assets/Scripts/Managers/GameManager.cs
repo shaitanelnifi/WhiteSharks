@@ -70,6 +70,7 @@ public class GameManager : MonoBehaviour {
 	}
 	//return the nextX value
 	public float GetNextX(){
+		Debug.Log ("Next X is " + nextX);
 		return nextX;
 	}
 	//set the nextY value
@@ -78,10 +79,12 @@ public class GameManager : MonoBehaviour {
 	}
 	//return the nextY value
 	public float GetNextY(){
+		Debug.Log ("Next Y is " + nextY);
 		return nextY;
 	}
 	//set the main character that the player is currently playing
 	public void SetMainCharacter(string main){
+		Debug.Log ("Setting main character to " + main);
 		currentMainCharacter = main;
 	}
 	//return the main character.
