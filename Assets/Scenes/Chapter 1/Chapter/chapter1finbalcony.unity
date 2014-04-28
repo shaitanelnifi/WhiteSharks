@@ -663,7 +663,7 @@ MonoBehaviour:
   spawnHereAfter: {x: 0, y: 0}
   dialoguer: chapter1
   needGUI: 0
-  dialogue: 0e000000
+  dialogue: 0b000000
   setOffset: 0
   getTheseToProceed:
   - {fileID: 100000, guid: 3ac0d3532517a463f950d0b7ec4db1c5, type: 2}

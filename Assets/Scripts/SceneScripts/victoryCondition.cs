@@ -7,6 +7,8 @@ public class victoryCondition : genericScene {
 	public int talkToThisManyToProceed;
 	public int talkedToThisMany;
 
+	private bool startEnd = false;
+
 	// Use this for initialization
 	void Start () {
 		GameManager.dialogueJustFinished = false;
@@ -34,6 +36,16 @@ public class victoryCondition : genericScene {
 	}
 
 	IEnumerator wait(){
+
+		if (!startEnd) 
+			if (gotThem()){
+			GameManager.dialogueJustFinished = false;
+			Dialoguer.StartDialogue((int)dialogue[curDia]);
+			playerScript player = FindObjectOfType(typeof(playerScript)) as playerScript;
+			player.stopMove();
+			startEnd = !startEnd;
+		}
+
 		SoundManager.Instance.Play2DMusic(playMe);
 		//Debug.Log (debugMe);
 		if (GameManager.dialogueJustFinished && curDia < dialogue.Length - 1) {

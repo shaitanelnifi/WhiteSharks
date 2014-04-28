@@ -9,7 +9,7 @@ public class genericScene : MonoBehaviour {
 	public float waitThisLong;
 	public string whatCharacter;
 	public string nextLevel;
-	public bool isTherePlayer;
+	public bool isTherePlayer = false;
 	public Vector2 spawnHereAfter;
 	public string dialoguer = "chapter1";
 

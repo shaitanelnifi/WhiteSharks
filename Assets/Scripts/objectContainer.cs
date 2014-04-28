@@ -48,7 +48,7 @@ public class objectContainer : MonoBehaviour {
 		Dialoguer.StartDialogue((int)convoID);
 		clickedOnSomething = false;
 		Instantiate(iHoldThis, new Vector3(transform.localPosition.x, transform.localPosition.y, -1), Quaternion.identity);
-        journal.SendMessage("addObject", iHoldThis);
+        //journal.SendMessage("addObject", iHoldThis);
 		Destroy(this.gameObject);
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);
 
