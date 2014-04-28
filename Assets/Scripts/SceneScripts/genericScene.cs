@@ -15,7 +15,8 @@ public class genericScene : MonoBehaviour {
 
 	private bool done = false;
 	public bool needGUI = false;
-	public Convo dialogue;
+	public Convo[] dialogue;
+	private int curDia = 0;
 
 	public int setOffset;
 	
@@ -26,11 +27,11 @@ public class genericScene : MonoBehaviour {
 			GameManager.offset = setOffset;
 
 		if (Dialoguer.isInitialized ())
-			Dialoguer.StartDialogue ((int)dialogue);
+			Dialoguer.StartDialogue ((int)dialogue[curDia]);
 		else {
 			
 			Dialoguer.Initialize(dialoguer);
-			Dialoguer.StartDialogue ((int)dialogue);
+			Dialoguer.StartDialogue ((int)dialogue[curDia]);
 			
 		}
 	}
@@ -54,7 +55,14 @@ public class genericScene : MonoBehaviour {
 	IEnumerator wait(){
 		SoundManager.Instance.Play2DMusic(playMe);
 		//Debug.Log (debugMe);
-		if ((int)dialogue >= 0 && GameManager.dialogueJustFinished) {
+		if (GameManager.dialogueJustFinished && curDia < dialogue.Length - 1) {
+
+			GameManager.dialogueJustFinished = false;
+			curDia ++;
+			Dialoguer.StartDialogue((int)dialogue[curDia]);
+
+		} else 
+		if ((int)dialogue[curDia] >= 0 && GameManager.dialogueJustFinished && curDia == dialogue.Length - 1) {
 			yield return new WaitForSeconds (waitThisLong);
 			GameManager.Instance.playerInScene = isTherePlayer;
 			done = true;

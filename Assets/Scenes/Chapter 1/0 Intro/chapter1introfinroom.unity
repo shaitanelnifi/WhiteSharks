@@ -204,11 +204,11 @@ MonoBehaviour:
   waitThisLong: 2
   whatCharacter: Jane
   nextLevel: chapter1finlobby
-  isTherePlayer: 1
-  spawnHereAfter: {x: 1, y: 1}
+  isTherePlayer: 0
+  spawnHereAfter: {x: 0, y: 0}
   dialoguer: chapter1
   needGUI: 0
-  dialogue: 3
+  dialogue: 03000000
   setOffset: 0
 --- !u!212 &623330654
 SpriteRenderer:

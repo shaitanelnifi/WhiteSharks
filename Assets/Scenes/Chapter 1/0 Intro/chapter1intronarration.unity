@@ -119,8 +119,9 @@ MonoBehaviour:
   nextLevel: chapter1introbrainroom
   isTherePlayer: 0
   spawnHereAfter: {x: 0, y: 0}
+  dialoguer: chapter1
   needGUI: 0
-  dialogue: 0
+  dialogue: 00000000
   setOffset: 0
 --- !u!1 &1697760719
 GameObject:

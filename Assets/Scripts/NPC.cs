@@ -77,6 +77,7 @@ public class NPC : CaseElement {
 		if (Input.GetMouseButtonDown (0))
 			onMouseMiss ();
 
+		if (player != null)
 		if (player.canWalk == true && clickedOnSomething)
 				if (pDist.isCloseEnough (player.transform.position))
 						startDialogue ();
