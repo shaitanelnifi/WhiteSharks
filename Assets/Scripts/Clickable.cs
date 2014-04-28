@@ -53,6 +53,7 @@ public class Clickable : MonoBehaviour {
 			Dialoguer.StartDialogue((int)diaNum + offset);
 		}
 		player.stopMove();
+		SoundManager.Instance.StopWalk();
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);
 		clickedOnSomething = false;
 		player.talking = true;

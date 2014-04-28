@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugMe: HEYO
-  playMe: {fileID: 8300000, guid: 8d5082d1704383c4cbb3ae363656fba7, type: 3}
+  playMe: {fileID: 8300000, guid: 9ebafcb1e8e05ee4aacf13042ea36fd5, type: 3}
   waitThisLong: 3
   whatCharacter: Frank
   nextLevel: chapter1introfinbalcony

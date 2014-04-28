@@ -38,6 +38,7 @@ public class CaseObject : CaseElement {
 
 		//player.talking = true;
 		player.stopMove ();
+		SoundManager.Instance.StopWalk();
 		clickedOnSomething = false;
 		journal.Instance.inventory.Add(this);
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);
