@@ -45,6 +45,7 @@ public class objectContainer : MonoBehaviour {
 
 		player.talking = true;
 		player.stopMove ();
+		SoundManager.Instance.StopWalk();
 		Dialoguer.StartDialogue(offset);
 		clickedOnSomething = false;
 		Instantiate(iHoldThis, new Vector3(transform.localPosition.x, transform.localPosition.y, -1), Quaternion.identity);

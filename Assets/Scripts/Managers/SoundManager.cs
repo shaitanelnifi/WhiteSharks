@@ -60,7 +60,7 @@ public class SoundManager : MonoBehaviour {
 
 	public void WalkSound() {
 		isWalking = true;
-		//if(walkNoise != null) {
+		if(walkNoise == null) {
 			walkNoise = new GameObject("SoundPlayer");
 			walkNoise.transform.position = Camera.main.transform.position;
 			walkNoise.transform.parent = Camera.main.transform;
@@ -68,7 +68,7 @@ public class SoundManager : MonoBehaviour {
 			newSource.audio.clip = (AudioClip)Resources.Load("Sounds/SoundEffects/HeelsLoop");
 			newSource.audio.volume = Volume(newSource, SoundType.Sfx);
 			newSource.audio.loop = true;
-		//}
+		}
 		walkNoise.audio.Play();
 	}
 
@@ -125,7 +125,7 @@ public class SoundManager : MonoBehaviour {
 
 	IEnumerator FadeIn() {
 		while(musicObj.audio.volume <= gameVolumeMax && !fading) {
-			musicObj.audio.volume += 0.005f;
+			musicObj.audio.volume += 0.01f;
 			yield return new WaitForSeconds(0.001f);
 		}
 	}
@@ -133,7 +133,7 @@ public class SoundManager : MonoBehaviour {
 	IEnumerator FadeOut(AudioClip clip) {
 		while(musicObj.audio.volume > 0) {
 			fading = true;
-			musicObj.audio.volume -= 0.005f;
+			musicObj.audio.volume -= 0.01f;
 			yield return new WaitForSeconds(0.001f);
 		}
 		Destroy(musicObj);
