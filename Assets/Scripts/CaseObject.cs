@@ -4,8 +4,16 @@ using System.Collections;
 public class CaseObject : CaseElement {
 
 	public int offset;
+	private GameObject journal;
 
 	public string mouseOverIcon = "Grab_Icon";
+
+	void Start(){
+	
+		base.Init ();
+		journal = GameObject.Find("UI Root");
+	
+	}
 
 	public void OnMouseEnter(){
 		if (player != null)
@@ -24,10 +32,13 @@ public class CaseObject : CaseElement {
 	public void pickUpItem(){
 
 		//player.talking = true;
+		Debug.LogError ("GOT IT: " + elementName);
 		player.stopMove ();
-		SoundManager.Instance.StopWalk();
+		//SoundManager.Instance.StopWalk();
 		clickedOnSomething = false;
-		journal.Instance.inventory.Add(this);
+		//journal.inventory.Add(this);
+		journal.SendMessage("addObject", this.gameObject);
+		//Debug.LogError ("Inventory: " + journal.inventory[0]);
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);
 		player.canWalk = true;
 		Destroy(this.gameObject);

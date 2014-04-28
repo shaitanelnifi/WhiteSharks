@@ -56,7 +56,7 @@ public class journal : MonoBehaviour {
 
 	public UILabel descriptionLabel, panelNameLabel, timeLabel;
 
-	public List<CaseObject> inventory = new List<CaseObject> ();
+	public static List<CaseObject> inventory = new List<CaseObject> ();
 	
 	//Destroys duplicate UI Roots.
 	void Awake () {
@@ -211,6 +211,7 @@ public class journal : MonoBehaviour {
 	//Changes object/weapon being viewed when portrait is clicked.
 	void changeObject(int objectNumber){
 		if (inventory.Count > 0) {
+			Debug.LogWarning("Count: " +inventory.Count + " " + inventory[objectNumber]);
 			descriptionLabel.text = inventory[objectNumber].getDescription();
 			poiPortrait.sprite2D = inventory[objectNumber].GetComponent<SpriteRenderer>().sprite;
 			Debug.Log (inventory[objectNumber].getElementName ());
