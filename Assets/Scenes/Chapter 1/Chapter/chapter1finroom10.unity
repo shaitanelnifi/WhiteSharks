@@ -6746,6 +6746,10 @@ Prefab:
       propertyPath: maxDist
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: myConvo
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
   m_RootGameObject: {fileID: 1634728010}
@@ -7771,8 +7775,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iHoldThis: {fileID: 11400000, guid: 803f9062bb91647b7a86cab23a9c223d, type: 2}
-  offset: 0
   maxDist: 3
+  convoID: 0
 --- !u!61 &1432209360
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8485,7 +8489,7 @@ MonoBehaviour:
   scene: scene1
   trust: 0
   enumName: 6
-  myConvo: 0
+  myConvo: 4
   mouseOverIcon: Speech_Icon
 --- !u!4 &1634728014
 Transform:
@@ -8940,7 +8944,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: diaNum
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_IsTrigger
@@ -28918,7 +28922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diaNum: 0
+  diaNum: 7
   offset: 0
   wall: 0
 --- !u!114 &2004265440
@@ -28975,7 +28979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diaNum: 1
+  diaNum: 10
   offset: 0
   wall: 0
 --- !u!4 &2008275293

@@ -1033,6 +1033,115 @@ MonoBehaviour:
   mMat: {fileID: 0}
   mShader: {fileID: 4800000, guid: e75727d9555d9d14ca51d91908c681bc, type: 3}
   nextSprite: {fileID: 0}
+--- !u!1 &110126559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
+  m_PrefabInternal: {fileID: 195794085}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 110126564}
+  - 114: {fileID: 110126563}
+  - 212: {fileID: 110126562}
+  - 61: {fileID: 110126561}
+  - 114: {fileID: 110126560}
+  m_Layer: 10
+  m_Name: LiamOShea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &110126560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: dd72aa61d2de34ba4b04c27282d212d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 195794085}
+  m_GameObject: {fileID: 110126559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 4
+--- !u!61 &110126561
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100000, guid: dd72aa61d2de34ba4b04c27282d212d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 195794085}
+  m_GameObject: {fileID: 110126559}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.64999998, y: 6.1500001}
+  m_Center: {x: 0, y: 0}
+--- !u!212 &110126562
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200000, guid: dd72aa61d2de34ba4b04c27282d212d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 195794085}
+  m_GameObject: {fileID: 110126559}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 2
+  m_SortingOrder: 2
+  m_SortingLayerID: 2971093031
+  m_Sprite: {fileID: 21300000, guid: 3401e01ddcafe4131af79f39bb485590, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &110126563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: dd72aa61d2de34ba4b04c27282d212d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 195794085}
+  m_GameObject: {fileID: 110126559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e55abf860691c541a849b33c21c6089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementName: Liam O'Shea
+  description: Liam is a guard at the Fin.
+  profileImage: {fileID: 21300000, guid: 8b98b68a3e5434fde8a6cef5f4ee29ca, type: 3}
+  guilt: 1
+  location: 0
+  visible: 1
+  clickedOnSomething: 0
+  maxDist: 1
+  playerObj: {fileID: 0}
+  box: {fileID: 110126561}
+  weaponProficiency: 5
+  highClass: 1
+  alibi: Gym
+  scene: scene1
+  trust: 0
+  enumName: 0
+  myConvo: 9
+  mouseOverIcon: Speech_Icon
+--- !u!4 &110126564
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
+  m_PrefabInternal: {fileID: 195794085}
+  m_GameObject: {fileID: 110126559}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.04123974, y: .155391693, z: 0}
+  m_LocalScale: {x: 1.11051202, y: 1.11050916, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &116903235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,6 +1318,58 @@ MonoBehaviour:
   mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
+--- !u!1001 &195794085
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.04123974
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .155391693
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.11050916
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.11051202
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
+      propertyPath: myConvo
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
+  m_RootGameObject: {fileID: 110126559}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &203707735
 GameObject:
   m_ObjectHideFlags: 0
@@ -2868,8 +3029,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter1finbalcony
-  x: .70143187
-  y: .964097679
+  x: 6.0999999
+  y: .100000001
   mouseOverIcon: Door_Icon
 --- !u!1 &508601238
 GameObject:
@@ -6796,6 +6957,10 @@ Prefab:
       propertyPath: maxDist
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: myConvo
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
   m_RootGameObject: {fileID: 1634728010}
@@ -7821,8 +7986,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iHoldThis: {fileID: 11400000, guid: 803f9062bb91647b7a86cab23a9c223d, type: 2}
-  offset: 0
   maxDist: 3
+  convoID: 0
 --- !u!61 &1432209360
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8535,7 +8700,7 @@ MonoBehaviour:
   scene: scene1
   trust: 0
   enumName: 6
-  myConvo: 0
+  myConvo: 4
   mouseOverIcon: Speech_Icon
 --- !u!4 &1634728014
 Transform:
@@ -8990,7 +9155,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: diaNum
-      value: 1
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_IsTrigger
@@ -28968,7 +29133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diaNum: 0
+  diaNum: 9
   offset: 0
   wall: 0
 --- !u!114 &2004265440
@@ -29025,7 +29190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diaNum: 1
+  diaNum: 12
   offset: 0
   wall: 0
 --- !u!4 &2008275293
