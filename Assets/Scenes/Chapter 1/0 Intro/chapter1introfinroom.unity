@@ -209,7 +209,7 @@ MonoBehaviour:
   dialoguer: chapter1
   needGUI: 0
   dialogue: 03000000
-  setOffset: 0
+  setOffset: 18
 --- !u!212 &623330654
 SpriteRenderer:
   m_ObjectHideFlags: 0
