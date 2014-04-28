@@ -39,15 +39,15 @@ public class genericScene : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		StartCoroutine ("wait");
-		Debug.Log ("ALIVE");
+		//Debug.Log ("ALIVE");
 
 	}
 
 	void OnGUI() {
 		if (needGUI) {
-			GUI.Box (new Rect (0, 0, Screen.width / 2, Screen.height / 2), "DIALOGUER CONVERSATION FOR BRAIN ROOM.");
+				//GUI.Box (new Rect (0, 0, Screen.width / 2, Screen.height / 2), "DIALOGUER CONVERSATION FOR BRAIN ROOM.");
 			if (done) {
-					GUI.Box (new Rect (0, 0, Screen.width / 2, Screen.height / 2), "DONE.");
+				//GUI.Box (new Rect (0, 0, Screen.width / 2, Screen.height / 2), "DONE.");
 			}
 		}
 	}
@@ -67,9 +67,13 @@ public class genericScene : MonoBehaviour {
 			GameManager.Instance.playerInScene = isTherePlayer;
 			done = true;
 			if (isTherePlayer) {
-					GameManager.Instance.SetMainCharacter (whatCharacter);
-					GameManager.Instance.SetNextX (spawnHereAfter.x);
-					GameManager.Instance.SetNextX (spawnHereAfter.y);
+				if (!GameManager.Instance.playerInScene){
+					GameManager.Instance.playerInScene = true;
+				}
+				Debug.Log("Setting nexts to " + spawnHereAfter.x + " and " + spawnHereAfter.y);
+				GameManager.Instance.SetMainCharacter (whatCharacter);
+				GameManager.Instance.SetNextX (spawnHereAfter.x);
+				GameManager.Instance.SetNextY (spawnHereAfter.y);
 			}
 			GameManager.dialogueJustFinished = false;
 			Application.LoadLevel (nextLevel);

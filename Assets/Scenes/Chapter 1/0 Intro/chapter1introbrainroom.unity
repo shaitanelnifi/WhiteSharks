@@ -194,11 +194,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debugMe: HEY
   playMe: {fileID: 8300000, guid: 9ebafcb1e8e05ee4aacf13042ea36fd5, type: 3}
-  waitThisLong: 3
+  waitThisLong: 0
   whatCharacter: Frank
   nextLevel: chapter1introfinbalcony
-  isTherePlayer: 0
-  spawnHereAfter: {x: .70143187, y: .964097679}
+  isTherePlayer: 1
+  spawnHereAfter: {x: 9.32999992, y: -1.60000002}
   dialoguer: chapter1
   needGUI: 1
   dialogue: 01000000
