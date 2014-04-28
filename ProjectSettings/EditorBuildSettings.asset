@@ -47,3 +47,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 1/0 Intro/chapter1introfinbalcony.unity
   - enabled: 1
     path: Assets/Scenes/Chapter 1/Chapter/chapter1finlobby.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 1/Chapter/chapter1finofficeend.unity

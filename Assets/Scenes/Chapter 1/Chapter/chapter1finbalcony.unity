@@ -123,11 +123,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 12.1389809
+      value: 11.3445206
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.44006729
+      value: 1.81831527
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -151,7 +151,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalScale.x
-      value: 1.22557151
+      value: -1.22557199
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalScale.y
@@ -542,6 +542,7 @@ GameObject:
   - 212: {fileID: 576624421}
   - 61: {fileID: 576624420}
   - 114: {fileID: 576624419}
+  - 114: {fileID: 576624424}
   m_Layer: 10
   m_Name: NoelAlt
   m_TagString: Untagged
@@ -638,10 +639,37 @@ Transform:
   m_PrefabInternal: {fileID: 51413040}
   m_GameObject: {fileID: 576624418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.1389809, y: 2.44006729, z: 0}
-  m_LocalScale: {x: 1.22557151, y: 1.22557354, z: 1}
+  m_LocalPosition: {x: 11.3445206, y: 1.81831527, z: 0}
+  m_LocalScale: {x: -1.22557199, y: 1.22557354, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &576624424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 576624418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc984f8ee7430345b86b7381a0f78f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugMe: 
+  playMe: {fileID: 8300000, guid: 4c281b7a78264434faea95625cf11996, type: 3}
+  waitThisLong: 3
+  whatCharacter: Jane
+  nextLevel: chapter1finofficeend
+  isTherePlayer: 0
+  spawnHereAfter: {x: 0, y: 0}
+  dialoguer: chapter1
+  needGUI: 0
+  dialogue: 0b000000
+  setOffset: 0
+  getTheseToProceed:
+  - {fileID: 100000, guid: 3ac0d3532517a463f950d0b7ec4db1c5, type: 2}
+  - {fileID: 100000, guid: e0718d06710294bdba42a3e7ca65a2a0, type: 2}
+  talkToThisManyToProceed: 0
+  talkedToThisMany: 0
 --- !u!1 &759421174
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,6 +21,8 @@ public class distanceCheck : MonoBehaviour {
 
 	public bool isCloseEnough(Vector3 toMe){
 
+		Debug.LogWarning (Vector3.Distance (toMe, transform.position));
+
 		return (Vector3.Distance(toMe, transform.position) <= maxDist);
 
 	}

@@ -101,27 +101,15 @@ public class CaseGenerator : Object {
 
 		foreach (CaseObject w in weapons){
 			//Debug.LogWarning(w.getElementName());
-			if (w.category.CompareTo(categoryA) == 0){
-				weaponsA.Add(w);
-			}
 		}
 		//Debug.LogError ("Made copy of categoryA weapons, size:" + weaponsA.Count + " and it is " + categoryA);
 		foreach (CaseObject w in weapons){
 			//Debug.LogWarning(w.getElementName());
-			if (w.category.CompareTo(categoryB) == 0){
-				weaponsB.Add(w);
-
-			}
 		}
 		//Debug.LogError ("Made copy of categoryB weapons, size:" + weaponsB.Count+ " and it is " + categoryB);
 
 		foreach (CaseObject w in weapons){
 			//Debug.LogWarning(w.getElementName());
-			if (w.category.CompareTo(categoryC) == 0){
-
-				weaponsC.Add(w);
-
-			}
 		}
 
 		//Debug.LogError ("Made copy of categoryC weapons, size:" + weaponsC.Count+ " and it is " + categoryC);
@@ -207,26 +195,6 @@ public class CaseGenerator : Object {
 		suspectA.weaponProficiency = categoryA;
 		suspectB.weaponProficiency = categoryB;
 		suspectC.weaponProficiency = categoryC;
-		
-		foreach (CaseObject w in weapons){
-			if (w.category.CompareTo(categoryA) == 0){
-				weaponsA.Add(w);
-			}
-		}
-
-		foreach (CaseObject w in weapons){
-			if (w.category.CompareTo(categoryB) == 0){
-				weaponsB.Add(w);
-				
-			}
-		}
-		
-		foreach (CaseObject w in weapons){
-			if (w.category.CompareTo(categoryC) == 0){
-				weaponsC.Add(w);
-				
-			}
-		}
 		
 		weaponA = weaponsA [0];
 		weaponB = weaponsB [0];

@@ -9,14 +9,14 @@ public class genericScene : MonoBehaviour {
 	public float waitThisLong;
 	public string whatCharacter;
 	public string nextLevel;
-	public bool isTherePlayer;
+	public bool isTherePlayer = false;
 	public Vector2 spawnHereAfter;
 	public string dialoguer = "chapter1";
 
-	private bool done = false;
+	protected bool done = false;
 	public bool needGUI = false;
 	public Convo[] dialogue;
-	private int curDia = 0;
+	protected int curDia = 0;
 
 	public int setOffset;
 	

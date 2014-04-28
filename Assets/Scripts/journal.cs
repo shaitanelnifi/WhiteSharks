@@ -56,7 +56,7 @@ public class journal : MonoBehaviour {
 
 	public UILabel descriptionLabel, panelNameLabel, timeLabel;
 
-	public List<CaseObject> inventory = new List<CaseObject> ();
+	public static Inventory inventory;
 	
 	//Destroys duplicate UI Roots.
 	void Awake () {
@@ -86,7 +86,7 @@ public class journal : MonoBehaviour {
 		personsOfInterest.Add (josh);
 
 		CaseObject eSword = (CaseObject)Resources.Load("eSword", typeof(CaseObject));
-		inventory = new List<CaseObject> ();
+		inventory = new Inventory();
 		//---------- hard code for first stage -------------------//
 
 		//Listens for tab button presses in journal and runs onClick with button clicked as parameter.
@@ -211,10 +211,9 @@ public class journal : MonoBehaviour {
 	//Changes object/weapon being viewed when portrait is clicked.
 	void changeObject(int objectNumber){
 		if (inventory.Count > 0) {
-			descriptionLabel.text = inventory[objectNumber].getDescription();
-			poiPortrait.sprite2D = inventory[objectNumber].GetComponent<SpriteRenderer>().sprite;
-			Debug.Log (inventory[objectNumber].getElementName ());
-			panelNameLabel.text = inventory[objectNumber].getElementName ();
+			descriptionLabel.text = inventory.getDescription(objectNumber);
+			poiPortrait.sprite2D = inventory.getIcon(objectNumber);
+			panelNameLabel.text = inventory.getName(objectNumber);
 		}
 		else {
 			descriptionLabel.text = emptyName;
@@ -254,8 +253,8 @@ public class journal : MonoBehaviour {
 		}
 		//Put suspect names on poi button labels.
 		for (int i = 0; i < inventory.Count; i++) {
-			if(inventory[i] != null){
-				objectButtonList[i].gameObject.GetComponentInChildren<UILabel>().text = inventory[i].getElementName();
+			if( inventory.getName(i) != ""){
+				objectButtonList[i].gameObject.GetComponentInChildren<UILabel>().text = inventory.getName(i);
 			}
 			else {
 				objectButtonList[i].gameObject.GetComponentInChildren<UILabel>().text = emptyName;
@@ -268,7 +267,7 @@ public class journal : MonoBehaviour {
 		inventory.Add (newObject);
 		GameObject tempButton = (GameObject)Instantiate (buttonPrefab, objectButtonGrid.transform.position, objectButtonGrid.transform.rotation);
 		tempButton.transform.parent = objectButtonGrid.transform;
-		tempButton.transform.GetComponentInChildren<UILabel>().text = inventory[inventory.IndexOf(newObject)].elementName;
+		tempButton.transform.GetComponentInChildren<UILabel>().text = inventory.getName (inventory.Count - 1);
 		tempButton.transform.localScale = new Vector3(1,1,1);
 		UIEventListener.Get (tempButton).onClick += this.onClick;
 		objectButtonList.Add (tempButton);
@@ -293,14 +292,19 @@ public class journal : MonoBehaviour {
 	}
 
 
-	public void updateJournal(){
-		/*Similar code will update the journal depending on the stage in the game.
-		personsOfInterest = GameManager.npcList;
-		inventory = GameManager.theCase.activeWeapons;
-		*/
-	}
+	public bool isItemInInventory(GameObject item){
 
-	public void updateNPCs(){
-		//Doesn't do anything right now. there to stop complaining from gamemanager
+		bool matchFound = false;
+		for (int i = 0; i < inventory.Count; i++) {
+
+			string itemString = item.GetComponent<CaseObject>().elementName;
+			string invenString = inventory.getName(i);
+			if (itemString == invenString)
+				matchFound = true;
+
+		}
+
+		return matchFound;
+
 	}
 }

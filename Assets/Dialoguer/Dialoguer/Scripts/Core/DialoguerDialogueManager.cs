@@ -55,11 +55,13 @@ namespace DialoguerCore{
 			GameManager.dialogueJustFinished = true;
 			if (GameManager.Instance.playerInScene) {
 				playerScript temp = (playerScript)MonoBehaviour.FindObjectOfType (typeof(playerScript));
+				if (temp != null){
 				temp.canWalk = true;
 				temp.walkWait = 30;
 				temp.talking = false;
 				temp.anim.SetFloat("distance", 0f);
 				temp.setTarget(new Vector2(temp.transform.position.x, temp.transform.position.y));
+				}
 			}
 
 		}

@@ -169,8 +169,9 @@ public class playerScript : CaseElement {
 
 	public void stopMove(){
 
-		setTarget(new Vector2(player.transform.position.x, player.transform.position.y));
+		setTarget(new Vector2(transform.position.x, transform.position.y));
 		canWalk = false;
+		if (anim != null)
 		anim.SetFloat("distance", 0f);
 
 	}

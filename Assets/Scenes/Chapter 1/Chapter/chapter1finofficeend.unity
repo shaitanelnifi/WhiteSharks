@@ -155,13 +155,13 @@ MonoBehaviour:
   playMe: {fileID: 8300000, guid: 4c281b7a78264434faea95625cf11996, type: 3}
   waitThisLong: 2
   whatCharacter: Jane
-  nextLevel: chapter1finplaza
+  nextLevel: mainmenu
   isTherePlayer: 1
   spawnHereAfter: {x: 0, y: 0}
   dialoguer: chapter1
   needGUI: 0
-  dialogue: 0500000006000000
-  setOffset: 24
+  dialogue: 0c0000000d0000000e000000
+  setOffset: 18
 --- !u!4 &903885457
 Transform:
   m_ObjectHideFlags: 0
