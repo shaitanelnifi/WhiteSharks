@@ -522,9 +522,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e55abf860691c541a849b33c21c6089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementName: Liam O'Shea
+  elementName: Alexia
   description: Liam is a guard at the Fin.
-  profileImage: {fileID: 21300000, guid: 8b98b68a3e5434fde8a6cef5f4ee29ca, type: 3}
+  profileImage: {fileID: 21300000, guid: 036f6ea0067ef41a7b7561f5414dda4d, type: 3}
   guilt: 1
   location: 0
   visible: 1
@@ -1083,6 +1083,15 @@ Prefab:
     - target: {fileID: 400000, guid: 3509238f305c34b98ba8a54256b016f9, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 3509238f305c34b98ba8a54256b016f9, type: 2}
+      propertyPath: profileImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 036f6ea0067ef41a7b7561f5414dda4d,
+        type: 3}
+    - target: {fileID: 11400000, guid: 3509238f305c34b98ba8a54256b016f9, type: 2}
+      propertyPath: elementName
+      value: Alexia
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3509238f305c34b98ba8a54256b016f9, type: 2}
