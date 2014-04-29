@@ -1119,7 +1119,7 @@ MonoBehaviour:
   debugMe: 
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 4c281b7a78264434faea95625cf11996, type: 3}
-  waitThisLong: 3
+  waitThisLong: 20
   whatCharacter: Jane
   nextLevel: chapter1finplaza
   isTherePlayer: 1
