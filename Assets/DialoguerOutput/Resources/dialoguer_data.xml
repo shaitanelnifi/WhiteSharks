@@ -2203,7 +2203,7 @@
       <name>Jane + Shammy 1</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>1010.05261</x>
+        <x>780.037964</x>
         <y>2004.00488</y>
       </scrollPosition>
       <phases>
@@ -5051,7 +5051,7 @@
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>572.0349</y>
+        <y>40.9960938</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -5419,8 +5419,8 @@
       <name>Jane + Nina</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>944.0637</x>
-        <y>4198.096</y>
+        <x>350.0183</x>
+        <y>552.03186</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -5550,7 +5550,7 @@
             <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
-          <variableSetValue>true</variableSetValue>
+          <variableSetValue>false</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
           <variableGetValue>true</variableGetValue>
         </DialogueEditorPhaseObject>
@@ -5558,8 +5558,8 @@
           <id>3</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>342.002441</x>
-            <y>661</y>
+            <x>246.002441</x>
+            <y>663</y>
           </position>
           <outs>
             <int>4</int>
@@ -5602,8 +5602,8 @@
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>664.002441</x>
-            <y>661</y>
+            <x>635.002441</x>
+            <y>707</y>
           </position>
           <outs>
             <int>5</int>
@@ -5647,8 +5647,8 @@
           <id>5</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>345.010254</x>
-            <y>1113</y>
+            <x>100.010254</x>
+            <y>1115</y>
           </position>
           <outs>
             <int>6</int>
@@ -5680,7 +5680,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>26</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -7694,8 +7694,8 @@
       <name>Jane + May</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>168.010254</x>
-        <y>5242.01855</y>
+        <x>130.007935</x>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -10671,7 +10671,7 @@
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>2259.999</y>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -11110,7 +11110,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>26</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -16308,7 +16308,7 @@ out the files.</text>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>201</y>
+        <y>70</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -16782,7 +16782,7 @@ out the files.</text>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>206</y>
+        <y>75</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -17019,7 +17019,7 @@ out the files.</text>
       <startPage>0</startPage>
       <scrollPosition>
         <x>66.00342</x>
-        <y>136.0083</y>
+        <y>81</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -17331,5 +17331,5 @@ out the files.</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>17</currentDialogueId>
+  <currentDialogueId>8</currentDialogueId>
 </DialogueEditorMasterObject>
