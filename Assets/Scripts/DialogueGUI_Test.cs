@@ -112,6 +112,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		if (!_dialogue || !_showDialogueBox)
 		{
 			setScaleZero ();
@@ -219,16 +220,23 @@ public class DialogueGUI_Test : MonoBehaviour {
 	{
 		nameLabel.text = _nameText;
 
+		if (leftChar.spriteName.Equals ("") || ! leftChar.spriteName.Equals (_nameText.Replace(" ", string.Empty) + "Sprite")) {
+			Debug.LogWarning ("Left char's name is " + _nameText);
+			leftSpriteName = _nameText.Replace(" ", string.Empty) + "Sprite";
+		}
+
 		leftChar.spriteName = leftSpriteName;
 		leftChar.MarkAsChanged();
 
-		if (_nameText.Equals("Jane Doe"))
-		{
-			rightSpriteName = "JaneSprite";
-		}
-
-		rightChar.spriteName = rightSpriteName;
-		rightChar.MarkAsChanged();
+//		if (_nameText.Equals("Jane Doe"))
+//		{
+//			rightSpriteName = "JaneSprite";
+//		} else if (_nameText.Equals("Frank")) {
+//			rightSpriteName = "FrankSprite";
+//		}
+//
+//		rightChar.spriteName = rightSpriteName;
+//		rightChar.MarkAsChanged();
 	}
 
 	// Enable and Disable Colliders are used to keep
