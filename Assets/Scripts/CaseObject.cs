@@ -38,6 +38,9 @@ public class CaseObject : CaseElement {
 		clickedOnSomething = false;
 		journal.inventory.Add(this);
 		uiThing.SendMessage("addObject", this);
+		if(this.elementName.Equals("Nina's Phone")){
+			Dialoguer.SetGlobalBoolean(1, true);
+		}
 		//Debug.LogError ("Inventory: " + journal.inventory[0]);
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);
 		player.canWalk = true;
