@@ -11929,7 +11929,7 @@ Animator:
   m_GameObject: {fileID: 378105845}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6839f59c67524e34911c5380a813a7a, type: 2}
   m_CullingMode: 0
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
@@ -11944,7 +11944,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.64999998, y: 6.1500001}
+  m_Size: {x: 4.98000002, y: 4.38000011}
   m_Center: {x: 0, y: 0}
 --- !u!212 &378105849
 SpriteRenderer:
@@ -12175,6 +12175,10 @@ Prefab:
       propertyPath: minY
       value: -4.92999983
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
+      propertyPath: baseSpeed
+      value: 9.99999997e-07
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
   m_RootGameObject: {fileID: 1069922174}
@@ -12214,7 +12218,7 @@ MonoBehaviour:
   minY: -4.92999983
   minScale: .109999999
   maxScale: .319999993
-  baseSpeed: 1
+  baseSpeed: 9.99999997e-07
   id: 3
 --- !u!4 &1069922176
 Transform:
@@ -12338,7 +12342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: chapter1finroom10
+  id: chapter1finoffice
   x: -8.72952461
   y: -5.3029108
   mouseOverIcon: Door_Icon
@@ -12530,11 +12534,71 @@ Prefab:
       propertyPath: enumName
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: m_Size.x
+      value: 4.98000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: m_Size.y
+      value: 4.38000011
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a6839f59c67524e34911c5380a813a7a, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
   m_RootGameObject: {fileID: 378105845}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1738930176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1738930178}
+  - 60: {fileID: 1738930177}
+  m_Layer: 0
+  m_Name: Wall1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!60 &1738930177
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1738930176}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Poly:
+    m_Paths:
+    - - {x: -7.87874556, y: -4.51134491}
+      - {x: -7.9034071, y: 3.53924704}
+      - {x: 7.34089756, y: 3.56667233}
+      - {x: 7.30781889, y: -4.46818161}
+      - {x: 4.44923735, y: -4.43404913}
+      - {x: .537066221, y: -2.80523634}
+      - {x: -.0306507647, y: -1.43035805}
+      - {x: -.587784767, y: -1.38034749}
+      - {x: -1.1198262, y: -2.75457096}
+      - {x: -5.13650942, y: -4.50614071}
+--- !u!4 &1738930178
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1738930176}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .339768857, y: -.56530273, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1001 &1858980340
 Prefab:
   m_ObjectHideFlags: 0
@@ -12577,6 +12641,10 @@ Prefab:
     - target: {fileID: 400000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
       propertyPath: m_LocalScale.x
       value: .0232995991
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
+      propertyPath: id
+      value: chapter1finoffice
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
