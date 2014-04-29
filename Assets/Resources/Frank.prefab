@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438b05127308f8940bf9d5802302b150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementName: 
+  elementName: Frank
   description: 
   profileImage: {fileID: 0}
   guilt: 0
