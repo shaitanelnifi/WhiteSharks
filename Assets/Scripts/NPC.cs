@@ -56,6 +56,7 @@ public class NPC : CaseElement {
 
 	public void startDialogue(){
 
+		Debug.Log (Dialoguer.GetGlobalBoolean (1));
 		Dialoguer.StartDialogue((int)myConvo);
 		player.stopMove();
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);

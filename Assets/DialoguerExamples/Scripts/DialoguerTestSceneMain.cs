@@ -15,6 +15,12 @@ public class DialoguerTestSceneMain : MonoBehaviour {
 		
 		// Initialize the Dialoguer
 		Dialoguer.Initialize();
+		Dialoguer.SetGlobalBoolean(0,false);
+		Dialoguer.SetGlobalBoolean(1,false);
+		Dialoguer.SetGlobalBoolean(2,false);
+		Dialoguer.SetGlobalBoolean(3,false);
+		Dialoguer.SetGlobalBoolean(4,false);
+		Dialoguer.SetGlobalBoolean(5,false);
 		
 		// If the Global Variables state already exists, LOAD it into Dialoguer
 		if(PlayerPrefs.HasKey(GLOBAL_VARIABLE_SAVE_KEY)){
