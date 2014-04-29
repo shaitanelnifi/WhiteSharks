@@ -157,7 +157,7 @@ MonoBehaviour:
   facingLeft: 1
   goingtLeft: 1
   anim: {fileID: 0}
-  canWalk: 0
+  canWalk: 1
   walkWait: 0
   currentRoom: 0
   scaleInfo: []
