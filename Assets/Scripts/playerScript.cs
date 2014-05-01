@@ -46,19 +46,19 @@ public class playerScript : CaseElement {
 
 	void Start(){
 		seeker = GetComponent<Seeker>();
-		if(Application.loadedLevelName == "chapter1finbalcony"){
-			SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/Birds"), SoundManager.SoundType.Sfx);
+		if(Application.loadedLevelName == "chapter1finbalcony") {
+			//SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/Birds"), SoundManager.SoundType.Sfx);
 			SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/Fin"));
 		}
 		if(Application.loadedLevelName == "chapter1finplaza") {
 			SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/PlazaChatter"), SoundManager.SoundType.Sfx);
-			SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/Fin"));
+			//SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/Fin"));
 		}
-		if(Application.loadedLevelName == "chapter1finoffice" || Application.loadedLevelName == "chapter1finofficeend")
+		/*if(Application.loadedLevelName == "chapter1finoffice" || Application.loadedLevelName == "chapter1finofficeend")
 			SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/Music/Office"), SoundManager.SoundType.Sfx);
 		if(Application.loadedLevelName == "chapter1finroom0" || Application.loadedLevelName == "chapter1finroom1" 
 				|| Application.loadedLevelName == "chapter1finroom10")
-			SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/Fin"));
+			SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/Fin"));*/
 		anim = GetComponentInChildren<Animator>();
 		Debug.Log (anim);
 		//canWalk = true;

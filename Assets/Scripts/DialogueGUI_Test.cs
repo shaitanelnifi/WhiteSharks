@@ -67,7 +67,8 @@ public class DialogueGUI_Test : MonoBehaviour {
 
 		if (convoBubble != null)
 		{
-			setScaleFull ();
+			setScaleFull();
+			SoundManager.Instance.CantWalk();
 		}
 	}
 	
@@ -77,6 +78,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 		if (convoBubble != null)
 		{
 			setScaleZero();
+			SoundManager.Instance.CanWalk();
 		}
 	}
 	
