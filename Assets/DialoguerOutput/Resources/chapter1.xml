@@ -660,7 +660,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>We have to go! What’s taking so long?</text>
+          <text>We have to go! What's taking so long?</text>
           <name>Frank</name>
           <portrait />
           <audio />
@@ -792,7 +792,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I KNOW! It’s just that… ARGH!</text>
+          <text>I KNOW! It's just that-- ARGH!</text>
           <name>Chase</name>
           <portrait />
           <audio />
@@ -927,7 +927,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I just ripped off some skin taking this thing off. Let’s go!</text>
+          <text>I just ripped off some skin taking this thing off. Let's go!</text>
           <name>Chase</name>
           <portrait />
           <audio />
@@ -1164,7 +1164,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Can you open the room for me? My arm hurts. It’s room 10.</text>
+          <text>Can you open the room for me? My arm hurts. It's room 10.</text>
           <name>Chase</name>
           <portrait />
           <audio />
@@ -1401,7 +1401,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Are you ok? That’s gonna leave a nasty scar.</text>
+          <text>Are you ok? That's gonna leave a nasty scar.</text>
           <name>Frank</name>
           <portrait />
           <audio />
@@ -1490,7 +1490,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I’ll be fine, I don’t even feel it right now.</text>
+          <text>I'll be fine, I don't even feel it right now.</text>
           <name>Chase</name>
           <portrait />
           <audio />
@@ -1849,7 +1849,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I hope you’re joking.</text>
+          <text>I hope you're joking.</text>
           <name>Frank</name>
           <portrait />
           <audio />
@@ -2027,7 +2027,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I don’t think that’s the main problem here.</text>
+          <text>I don't think that's the main problem here.</text>
           <name>Frank</name>
           <portrait />
           <audio />
@@ -2116,7 +2116,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I’ll be right back.</text>
+          <text>I'll be right back.</text>
           <name>Chase</name>
           <portrait />
           <audio />
@@ -2205,7 +2205,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Don’t- </text>
+          <text>Don't- </text>
           <name>Frank</name>
           <portrait />
           <audio />
@@ -2294,7 +2294,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Whatever. Do your thing, I’m feeling a bit dizzy.</text>
+          <text>Whatever. Do your thing, I'm feeling a bit dizzy.</text>
           <name>Frank</name>
           <portrait />
           <audio />
@@ -2802,7 +2802,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>What’s the magic word?</text>
+          <text>What's the magic word?</text>
           <name>Shammy</name>
           <portrait />
           <audio />
@@ -4109,7 +4109,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>And it’s exactly the same?</text>
+          <text>And it's exactly the same?</text>
           <name>Alexia Ross</name>
           <portrait />
           <audio />
@@ -4198,7 +4198,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Just like the others. Everything’s in the report.</text>
+          <text>Just like the others. Everything's in the report.</text>
           <name>Noel Alt</name>
           <portrait />
           <audio />
@@ -4376,7 +4376,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I just said, everything’s in the report.</text>
+          <text>I just said, everything's in the report.</text>
           <name>Noel Alt</name>
           <portrait />
           <audio />
@@ -4465,7 +4465,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Perfect, I’ll take a look. You’re dismissed, but don’t go too far.</text>
+          <text>Perfect, I'll take a look. You're dismissed, but don't go too far.</text>
           <name>Alexia Ross</name>
           <portrait />
           <audio />
@@ -4748,7 +4748,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>We don’t have a lot of time, the witnesses have been in lockdown since this morning.</text>
+          <text>We don't have a lot of time, the witnesses have been in lockdown since this morning.</text>
           <name>Alexia Ross</name>
           <portrait />
           <audio />
@@ -5018,7 +5018,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>We’ve also discovered that photographic evidence was… posted in a social network, but the post lacks sufficient detail.</text>
+          <text>We've also discovered that photographic evidence was… posted in a social network, but the post lacks sufficient detail.</text>
           <name>Alexia Ross</name>
           <portrait />
           <audio />
@@ -5285,7 +5285,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Understood. I’ll come back as soon as I can.</text>
+          <text>Understood. I'll come back as soon as I can.</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -5743,7 +5743,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>It’s this way. Alexia asked me to babysit you, so don’t worry about getting lost.</text>
+          <text>It's this way. Alexia asked me to babysit you, so don't worry about getting lost.</text>
           <name>Noel Alt</name>
           <portrait />
           <audio />
@@ -5832,7 +5832,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I don’t know what I would do without your help…</text>
+          <text>I don't know what I would do without your help…</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -6246,7 +6246,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>You’re the one that posted evidence online? Can I please see your phone?</text>
+          <text>You're the one that posted evidence online? Can I please see your phone?</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -6552,7 +6552,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>If you don’t give me your password, I’ll take you in for obstruction to justice.</text>
+          <text>If you don't give me your password, I'll take you in for obstruction to justice.</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -6641,7 +6641,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>You’re not even a cop. You’re not even from here.</text>
+          <text>You're not even a cop. You're not even from here.</text>
           <name>Nina Walker</name>
           <portrait />
           <audio />
@@ -6908,7 +6908,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>So… What’s your password?</text>
+          <text>So… What's your password?</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -6997,7 +6997,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Really? You’re asking me what’s “your password”?</text>
+          <text>Really? You're asking me what's “your password”?</text>
           <name>Nina Walker</name>
           <portrait />
           <audio />
@@ -7086,7 +7086,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>No, I’m asking you what’s your password, not mine…</text>
+          <text>No, I'm asking you what's your password, not mine…</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -7587,7 +7587,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I seriously hate these lockdowns. You’ve made me miss my shift, and that’s going to cost me a lot of overtime. I’m obviously innocent, we all work for the same people here. Can you please excuse me?</text>
+          <text>I seriously hate these lockdowns. You've made me miss my shift, and that's going to cost me a lot of overtime. I'm obviously innocent, we all work for the same people here. Can you please excuse me?</text>
           <name>Liam O'Shea</name>
           <portrait />
           <audio />
@@ -7676,7 +7676,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Not until we’ve searched the crime scene.</text>
+          <text>Not until we've searched the crime scene.</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -8005,7 +8005,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>In case you weren’t aware, this place is on lockdown until we’re done. If I were you, I’d make sure I’ve got everything.</text>
+          <text>In case you weren't aware, this place is on lockdown until we're done. If I were you, I'd make sure I've got everything.</text>
           <name />
           <portrait />
           <audio />
@@ -8242,7 +8242,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>It seems you’ve searched the place high and low. Let’s report back to Alexia.</text>
+          <text>It seems you've searched the place high and low. Let's report back to Alexia.</text>
           <name />
           <portrait />
           <audio />
@@ -8568,7 +8568,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>The bracelet? Sure, it’s here.</text>
+          <text>The bracelet? Sure, it's here.</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -8795,7 +8795,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Okay, got it! The guy’s an outcast from the Belly!</text>
+          <text>Okay, got it! The guy's an outcast from the Belly!</text>
           <name>May</name>
           <portrait />
           <audio />
@@ -9019,7 +9019,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>That means it’s gonna be harder to find him.</text>
+          <text>That means it's gonna be harder to find him.</text>
           <name>May</name>
           <portrait />
           <audio />
@@ -9108,7 +9108,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>So… He doesn’t have a name?</text>
+          <text>So… He doesn't have a name?</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -9243,7 +9243,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>And you had a picture, right? It can’t be that hard, even for you!</text>
+          <text>And you had a picture, right? It can't be that hard, even for you!</text>
           <name>May</name>
           <portrait />
           <audio />
@@ -10014,7 +10014,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>What’s wrong? Is he a common offender?</text>
+          <text>What's wrong? Is he a common offender?</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -10103,7 +10103,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>No, it’s… Something different. </text>
+          <text>No, it's… Something different. </text>
           <name>Alexia Ross</name>
           <portrait />
           <audio />
@@ -10281,7 +10281,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>He didn’t do it. Call it a gut feeling, if you want, but I know it wasn’t him.</text>
+          <text>He didn't do it. Call it a gut feeling, if you want, but I know it wasn't him.</text>
           <name>Alexia Ross</name>
           <portrait />
           <audio />
@@ -10819,7 +10819,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>But if he’s not guilty, why is it so important to find him?</text>
+          <text>But if he's not guilty, why is it so important to find him?</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -10908,7 +10908,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Because it’s obvious that someone else did it, and we don’t have enough information yet. </text>
+          <text>Because it's obvious that someone else did it, and we don't have enough information yet. </text>
           <name>Alexia Ross</name>
           <portrait />
           <audio />
@@ -11633,7 +11633,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I wanted to remind you to keep your guard up and remember your “real” reason for being here. Don’t forget your “lucky charm”.</text>
+          <text>I wanted to remind you to keep your guard up and remember your “real” reason for being here. Don't forget your “lucky charm”.</text>
           <name>Noel Alt</name>
           <portrait />
           <audio />
@@ -11679,7 +11679,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I’m also not going with you to the Belly.</text>
+          <text>I'm also not going with you to the Belly.</text>
           <name>Noel Alt</name>
           <portrait />
           <audio />
@@ -11768,7 +11768,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Oh, I’m going to be SO lost without you. Such a tragedy.</text>
+          <text>Oh, I'm going to be SO lost without you. Such a tragedy.</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -12180,7 +12180,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Great find, detective! Usually our drones are much better at picking up garbage, but you’re a professional it seems! The nearby terminal has a trash chute you can use to dispose of that!</text>
+          <text>Great find, detective! Usually our drones are much better at picking up garbage, but you're a professional it seems! The nearby terminal has a trash chute you can use to dispose of that!</text>
           <name>Shammy</name>
           <portrait />
           <audio />
@@ -12269,7 +12269,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>We’re not throwing away evidence...</text>
+          <text>We're not throwing away evidence...</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -12463,7 +12463,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Here’s Nina’s phone.</text>
+          <text>Here's Nina's phone.</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -13682,7 +13682,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I’m not even going to complain, at least it’s unlocked.</text>
+          <text>I'm not even going to complain, at least it's unlocked.</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -13728,7 +13728,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>The original selfie seems to be here, I’ll upload it to the journal.</text>
+          <text>The original selfie seems to be here, I'll upload it to the journal.</text>
           <name />
           <portrait />
           <audio />
@@ -14202,7 +14202,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I can’t believe people like this character.</text>
+          <text>I can't believe people like this character.</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -14956,7 +14956,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>What happened here? Is this what Alexia and Noel were talking about? I’ll have to check 
+          <text>What happened here? Is this what Alexia and Noel were talking about? I'll have to check 
 out the files.</text>
           <name>Jane Doe</name>
           <portrait />
