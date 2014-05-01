@@ -14,14 +14,7 @@ public class NPC : CaseElement {
 	public BoxCollider2D box;
 
 	//NPC specific data fields
-	public Category weaponProficiency;	//What kinds of weapons is the NPC skilled with
-	public bool highClass;				//Does the NPC belong to the higher class society (top floors) or not?
-	public string alibi;			//A set of info that represents an alibi, requires another npc, location
-	public ArrayList animations;		//An array list of sprites representing the animation
-	public string scene;
-
-	public float trust;
-	public NPCNames enumName;
+	
 	public Convo myConvo;
 
 	//Mouse icon information
@@ -50,11 +43,11 @@ public class NPC : CaseElement {
 		}
 	}
 
-	public NPCNames getEnumName(){
-		return enumName;
-	}
-
 	public void startDialogue(){
+
+		var temp = gameObject.GetComponent<victoryCondition> ();
+		if (temp != null)
+			//temp.curDia -= 1;
 
 		Debug.Log (Dialoguer.GetGlobalBoolean (1));
 		Dialoguer.StartDialogue((int)myConvo);

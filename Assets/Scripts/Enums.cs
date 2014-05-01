@@ -65,7 +65,7 @@ public enum clickableID {
 	bellyExitBlockedStart = 15,
 	leftExitBlockedStart = 16,
 
-}
+};
 
 
 public enum Convo {
@@ -90,4 +90,10 @@ public enum Convo {
 	janeNinasPhone = 17,
 
 
-}
+};
+
+public enum GlobalBools {
+
+
+
+};
