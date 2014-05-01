@@ -18,7 +18,7 @@ public class Office : MonoBehaviour {
 	void Start () {
 		GameManager.Instance.playerInScene = false;
 		GameManager.dialogueJustFinished = false;
-		SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/Office"));
+		//SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/Office"));
 	}
 	
 	// Update is called once per frame

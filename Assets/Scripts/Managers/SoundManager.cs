@@ -21,6 +21,8 @@ public class SoundManager : MonoBehaviour {
 
 	public bool isWalking = false;
 
+	bool canWalk = true;
+
 	public static SoundManager instance;
 
 	//From what I understand, this creates an instance of soundmanager once and then allows it to be called
@@ -59,23 +61,35 @@ public class SoundManager : MonoBehaviour {
 	}
 
 	public void WalkSound() {
-		isWalking = true;
-		if(walkNoise == null) {
-			walkNoise = new GameObject("SoundPlayer");
-			walkNoise.transform.position = Camera.main.transform.position;
-			walkNoise.transform.parent = Camera.main.transform;
-			AudioSource newSource = walkNoise.AddComponent<AudioSource>() as AudioSource;
-			newSource.audio.clip = (AudioClip)Resources.Load("Sounds/SoundEffects/HeelsLoop");
-			newSource.audio.volume = Volume(newSource, SoundType.Sfx);
-			newSource.audio.loop = true;
+		if(canWalk) {
+			isWalking = true;
+			if(walkNoise == null) {
+				walkNoise = new GameObject("SoundPlayer");
+				walkNoise.transform.position = Camera.main.transform.position;
+				walkNoise.transform.parent = Camera.main.transform;
+				AudioSource newSource = walkNoise.AddComponent<AudioSource>() as AudioSource;
+				newSource.audio.clip = (AudioClip)Resources.Load("Sounds/SoundEffects/HeelsLoop");
+				newSource.audio.volume = Volume(newSource, SoundType.Sfx);
+				newSource.audio.loop = true;
+			}
+			walkNoise.audio.Play();
 		}
-		walkNoise.audio.Play();
 	}
 
 	public void StopWalk() {
 		isWalking = false;
 		walkNoise.audio.Stop();
 		Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/HeelsStep"), SoundType.Sfx);
+	}
+
+	public void CantWalk() {
+		canWalk = false;
+		walkNoise.audio.Stop();
+	}
+
+	public void CanWalk() {
+		canWalk = true;
+		isWalking = false;
 	}
 
 	/*Plays 2D Music by selecting the empty object defined at the top and attaching a sound clip to it. 

@@ -359,7 +359,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -63.7289848, y: -506.593414, z: 0}
+  m_LocalPosition: {x: 111.847771, y: -521.90686, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400020}
@@ -450,8 +450,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4618, y: 1338, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4121.92578, y: 1066.21875, z: 0}
+  m_Center: {x: -58.6269531, y: -78.3984375, z: 0}
 --- !u!111 &11100000
 Animation:
   m_ObjectHideFlags: 1
@@ -460,9 +460,10 @@ Animation:
   m_GameObject: {fileID: 100022}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 70efac79b7653481c9489a705a3590a7, type: 2}
+  m_Animation: {fileID: 7400000, guid: e7cf6e25b246a4dea9412436437be8d3, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 70efac79b7653481c9489a705a3590a7, type: 2}
+  - {fileID: 7400000, guid: e7cf6e25b246a4dea9412436437be8d3, type: 2}
+  - {fileID: 7400000, guid: e7cf6e25b246a4dea9412436437be8d3, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -1411,7 +1412,7 @@ MonoBehaviour:
   clipName: 
   trigger: 0
   playDirection: 1
-  resetOnPlay: 0
+  resetOnPlay: 1
   clearSelection: 0
   ifDisabledOnPlay: 0
   disableWhenFinished: 0
