@@ -2099,8 +2099,8 @@ MonoBehaviour:
   onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
-  from: {x: -275, y: 2500, z: 0}
-  to: {x: -275, y: 0, z: 0}
+  from: {x: 0, y: 2500, z: 0}
+  to: {x: 0, y: 0, z: 0}
 --- !u!114 &11400046
 MonoBehaviour:
   m_ObjectHideFlags: 1
