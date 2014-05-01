@@ -115,7 +115,7 @@ MonoBehaviour:
   debugMe: HEYO
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 63c652436484b444d85416bf583aaa79, type: 3}
-  waitThisLong: 4
+  waitThisLong: 0
   whatCharacter: Frank
   nextLevel: chapter1introbrainroom
   isTherePlayer: 0
@@ -123,6 +123,7 @@ MonoBehaviour:
   dialoguer: chapter1
   needGUI: 0
   dialogue: 00000000
+  curDia: 0
   setOffset: 18
 --- !u!1 &1697760719
 GameObject:
@@ -170,8 +171,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1697760719}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0541026592, y: -.0199999996, z: 20}
-  m_LocalScale: {x: 1.35000002, y: 1.5, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &2041039059
@@ -234,7 +235,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 3.98000002
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
