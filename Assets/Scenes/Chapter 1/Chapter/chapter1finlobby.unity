@@ -11988,9 +11988,9 @@ MonoBehaviour:
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
+  myConvo: 4
   playerObj: {fileID: 0}
   box: {fileID: 378105848}
-  myConvo: 4
   mouseOverIcon: Speech_Icon
 --- !u!4 &378105851
 Transform:
@@ -12470,7 +12470,7 @@ MonoBehaviour:
   whatCharacter: Jane
   nextLevel: chapter1finoffice
   isTherePlayer: 1
-  spawnHereAfter: {x: 1.22000003, y: -5.71999979}
+  spawnHereAfter: {x: -1.37899995, y: -4.33699989}
   dialoguer: chapter1
   needGUI: 0
   dialogue: 04000000
