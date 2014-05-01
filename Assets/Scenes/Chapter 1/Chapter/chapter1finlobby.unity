@@ -11985,19 +11985,11 @@ MonoBehaviour:
   elementName: Shammy the Shark
   description: He's a criminal. He's an artist. He's proud of both.
   profileImage: {fileID: 21300000, guid: 7f860ab72ad7d49e2a3fc0301000c7e5, type: 3}
-  guilt: 2
-  location: 6
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
   playerObj: {fileID: 0}
   box: {fileID: 378105848}
-  weaponProficiency: 0
-  highClass: 0
-  alibi: 
-  scene: scene1
-  trust: 0
-  enumName: 6
   myConvo: 4
   mouseOverIcon: Speech_Icon
 --- !u!4 &378105851
@@ -12474,7 +12466,7 @@ MonoBehaviour:
   debugMe: 
   autoPlay: 0
   playMe: {fileID: 8300000, guid: 4c281b7a78264434faea95625cf11996, type: 3}
-  waitThisLong: 2
+  waitThisLong: -1
   whatCharacter: Jane
   nextLevel: chapter1finoffice
   isTherePlayer: 1
@@ -12482,6 +12474,7 @@ MonoBehaviour:
   dialoguer: chapter1
   needGUI: 0
   dialogue: 04000000
+  curDia: 0
   setOffset: 18
 --- !u!1001 &1548542348
 Prefab:

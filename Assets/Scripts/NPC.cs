@@ -13,10 +13,6 @@ public class NPC : CaseElement {
 	public GameObject playerObj;
 	public BoxCollider2D box;
 
-	//NPC specific data fields
-	
-	public Convo myConvo;
-
 	//Mouse icon information
 	public string mouseOverIcon = "Speech_Icon";
 

@@ -15,6 +15,8 @@ public abstract class CaseElement : MonoBehaviour {
 	public bool clickedOnSomething;
 	public float maxDist = 1f;
 
+	public Convo myConvo = Convo.none;
+
 	void Start (){
 		Init ();
 	}
