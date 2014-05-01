@@ -839,7 +839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debugMe: 
   autoPlay: 1
-  playMe: {fileID: 8300000, guid: 9ebafcb1e8e05ee4aacf13042ea36fd5, type: 3}
+  playMe: {fileID: 8300000, guid: 258ccc3c9d307944a837f2dcef189496, type: 3}
   waitThisLong: 120
   whatCharacter: Jane
   nextLevel: chapter1introfinroom
