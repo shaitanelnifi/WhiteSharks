@@ -1794,7 +1794,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: 7758ba481a31d4fb6b58480f035b944e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -12.6199999
+      value: .0629873276
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: 7758ba481a31d4fb6b58480f035b944e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6675,7 +6675,7 @@ Transform:
   m_PrefabInternal: {fileID: 434299637}
   m_GameObject: {fileID: 1516948254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -12.6199999, z: 5}
+  m_LocalPosition: {x: 0, y: .0629873276, z: 5}
   m_LocalScale: {x: .00277777785, y: .00277777785, z: .00277777785}
   m_Children:
   - {fileID: 101046718}
@@ -28778,7 +28778,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3011
+  startingRenderQueue: 3010
   mAlpha: 1
   mClipping: 3
   mClipRange: {x: 0, y: 0, z: 230, w: 180}
