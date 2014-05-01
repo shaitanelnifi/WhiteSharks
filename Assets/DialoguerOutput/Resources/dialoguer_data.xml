@@ -6,8 +6,8 @@
       <name>Opening Narration</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>30.0024414</x>
-        <y>170.009766</y>
+        <x>178.011475</x>
+        <y>224.01062</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -153,7 +153,7 @@
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>xWhite shark is an idea,</text>
+          <text>White shark is an idea,</text>
           <name />
           <portrait />
           <audio />
@@ -372,8 +372,7 @@
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>x
-Thanks to our advanced level of security, we have been able to keep safe secrets from every country at times of war, managing to keep peace between them.</text>
+          <text>Thanks to our advanced level of security, we have been able to keep safe secrets from every country at times of war, managing to keep peace between them.</text>
           <name />
           <portrait />
           <audio />
@@ -455,8 +454,8 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
           <id>10</id>
           <type>TextPhase</type>
           <position>
-            <x>784.002441</x>
-            <y>288.009766</y>
+            <x>771.002441</x>
+            <y>323.009766</y>
           </position>
           <outs>
             <int>7</int>
@@ -512,11 +511,11 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>1</id>
-      <name>Frank+Partner 1</name>
+      <name>Frank and Partner one</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>0</y>
+        <x>252.015381</x>
+        <y>614.9346</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -1016,11 +1015,11 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>2</id>
-      <name>Frank + Partner 2</name>
+      <name>Frank and Partner two</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>8.000488</x>
-        <y>0</y>
+        <x>132.008057</x>
+        <y>274.005859</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -1253,11 +1252,11 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>3</id>
-      <name>Frank + Partner 3</name>
+      <name>Frank and Partner three</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>0</y>
+        <x>110.006714</x>
+        <y>5334.32227</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -1537,7 +1536,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I'm just glad we're no one's left on our tail, haha...</text>
+          <text>I'm just glad no one's left on our tail, haha...</text>
           <name>Chase</name>
           <portrait />
           <audio />
@@ -1653,7 +1652,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>26</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -1980,7 +1979,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
             <y>4075.03467</y>
           </position>
           <outs>
-            <int xsi:nil="true" />
+            <int>17</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -2069,7 +2068,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
             <y>4536.052</y>
           </position>
           <outs>
-            <int xsi:nil="true" />
+            <int>19</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -2426,11 +2425,11 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>4</id>
-      <name>Jane + Shammy 1</name>
+      <name>Jane and Shammy one</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>780.037964</x>
-        <y>2004.00488</y>
+        <x>669.0711</x>
+        <y>747.105</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -2916,7 +2915,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>20.00122</y>
+            <y>14</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -3005,7 +3004,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>26</y>
+            <y>14</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -3133,7 +3132,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>26</y>
+            <y>14</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -3332,11 +3331,11 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
             <y>3377.08179</y>
           </position>
           <outs>
-            <int>18</int>
+            <int>32</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>At a crime scene everyone and thing is on lockdown until a certified detective, such as yourself, verifies the existence of all available evidence. Is there anything else I can help you with?</text>
+          <text>At a crime scene everyone and thing is on lockdown... until a certified detective, such as yourself, verifies the existence of all available evidence. Is there anything else I can help you with?</text>
           <name>Shammy</name>
           <portrait />
           <audio />
@@ -3421,11 +3420,11 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
             <y>3336.08618</y>
           </position>
           <outs>
-            <int>18</int>
+            <int>29</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Since crimes of the homicide variety are spotted easily by everyones bracelets, we can easily lockdown a place where a murder occurred, leaving everyone left inside a suspect. Detectives of White Shark are to interrogate everyone in lockdown before any of them may leave. Is there anything else I can help you with?</text>
+          <text>Since crimes of the homicide variety are spotted easily by everyones bracelets, we can easily lockdown a place where a murder occurred. </text>
           <name>Shammy</name>
           <portrait />
           <audio />
@@ -3715,6 +3714,236 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
           <variableSetValue>1</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>29</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>1976.10071</x>
+            <y>3784.08179</y>
+          </position>
+          <outs>
+            <int>30</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>Leaving everyone left inside a suspect!</text>
+          <name>Shammy</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>30</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>2319.10059</x>
+            <y>3788.082</y>
+          </position>
+          <outs>
+            <int>31</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>Detectives of White Shark are to interrogate everyone in lockdown before anyone may leave.</text>
+          <name>Shammy</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>31</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>2661.10059</x>
+            <y>3785.10547</y>
+          </position>
+          <outs>
+            <int>18</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>Is there anything else I may help you with?</text>
+          <name>Shammy</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>32</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>1325.95654</x>
+            <y>3842.10254</y>
+          </position>
+          <outs>
+            <int>33</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>Until a certified detective, such as yourself, verifies the existence of all available evidence.</text>
+          <name>Shammy</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>33</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>1652.955</x>
+            <y>3845.105</y>
+          </position>
+          <outs>
+            <int>18</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>Is there anything else I can help you with?</text>
+          <name>Shammy</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
       </phases>
       <floats>
         <variables />
@@ -3731,11 +3960,11 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>5</id>
-      <name>Noel + Alexia</name>
+      <name>Noel and Alexia</name>
       <startPage>1</startPage>
       <scrollPosition>
         <x>52.0031738</x>
-        <y>1664.10156</y>
+        <y>2051</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -4324,11 +4553,11 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>6</id>
-      <name>Jane + Alexia 1</name>
+      <name>Jane and Alexia one</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>3194.97485</y>
+        <x>352.9873</x>
+        <y>3813.01221</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -4739,11 +4968,11 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
             <y>2112</y>
           </position>
           <outs>
-            <int>10</int>
+            <int>21</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>We have two witnesses, and the scout drones have been able to recover a bracelet fragment. May tried to analyze it, but she needs the whole thing.</text>
+          <text>We have two witnesses, and the scout drones have been able to recover a bracelet fragment. </text>
           <name>Alexia Ross</name>
           <portrait />
           <audio />
@@ -4963,11 +5192,11 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
             <y>3465</y>
           </position>
           <outs>
-            <int>20</int>
+            <int>22</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Yes. Ask questions, get all the info you can. Recover the rest of that bracelet and the original photo then come report.</text>
+          <text>Yes. Ask questions, get all the info you can. </text>
           <name>Alexia Ross</name>
           <portrait />
           <audio />
@@ -5037,7 +5266,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>20.00122</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -5257,6 +5486,98 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
           <variableSetValue>1</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>21</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>961.0122</x>
+            <y>2111.128</y>
+          </position>
+          <outs>
+            <int>10</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>May tried to analyze it, but she needs the whole thing.</text>
+          <name>Alexia Ross</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>22</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>972.010254</x>
+            <y>3463.20654</y>
+          </position>
+          <outs>
+            <int>20</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>Recover the rest of that bracelet and the original photo then come report.</text>
+          <name>Alexia Ross</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
       </phases>
       <floats>
         <variables />
@@ -5273,7 +5594,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>7</id>
-      <name>Jane + Noel 1</name>
+      <name>Jane and Noel one</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
@@ -5642,11 +5963,11 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>8</id>
-      <name>Jane + Nina</name>
+      <name>Jane and Nina</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>350.0183</x>
-        <y>552.03186</y>
+        <x>175.137848</x>
+        <y>225.69986</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -5739,12 +6060,12 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
           <id>2</id>
           <type>ConditionalPhase</type>
           <position>
-            <x>417</x>
-            <y>326</y>
+            <x>478</x>
+            <y>332</y>
           </position>
           <outs>
-            <int>3</int>
             <int>12</int>
+            <int>3</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -5776,7 +6097,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
             <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
-          <variableSetValue>false</variableSetValue>
+          <variableSetValue>true</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
           <variableGetValue>true</variableGetValue>
         </DialogueEditorPhaseObject>
@@ -5906,7 +6227,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>26</y>
+            <y>14</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -6272,7 +6593,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
             <y>1122.0354</y>
           </position>
           <outs>
-            <int xsi:nil="true" />
+            <int>15</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -6927,7 +7248,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
           <variableId>5</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>26</y>
+            <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -7117,11 +7438,11 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>9</id>
-      <name>Jane + Liam</name>
+      <name>Jane and Liam</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>32.0019531</x>
-        <y>702</y>
+        <x>0</x>
+        <y>706.0021</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -7262,7 +7583,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
             <y>330</y>
           </position>
           <outs>
-            <int>4</int>
+            <int>7</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -7427,6 +7748,98 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>7</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>1017</x>
+            <y>328.988037</y>
+          </position>
+          <outs>
+            <int>8</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>You've made me miss my shift, and that's going to cost me a lot of overtime.</text>
+          <name>Liam O'Shea</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>8</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>1372.99219</x>
+            <y>330</y>
+          </position>
+          <outs>
+            <int>4</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>I'm obviously innocent, we all work for the same people here. Can you please excuse me?</text>
+          <name>Liam O'Shea</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
       </phases>
       <floats>
         <variables />
@@ -7443,7 +7856,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>10</id>
-      <name>Jane + Noel 2</name>
+      <name>Jane and Noel two</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
@@ -7680,7 +8093,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>11</id>
-      <name>Jane + Noel 3</name>
+      <name>Jane and Noel three</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
@@ -7917,7 +8330,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>12</id>
-      <name>Jane + May</name>
+      <name>Jane and May</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>130.007935</x>
@@ -8961,7 +9374,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>13</id>
-      <name>Jane + Alexia 2</name>
+      <name>Jane and Alexia two</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>236.0144</x>
@@ -10893,7 +11306,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>14</id>
-      <name>Jane + Noel 4</name>
+      <name>Jane and Noel four</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
@@ -11618,7 +12031,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>15</id>
-      <name>Jane + Shammy 2</name>
+      <name>Jane and Shammy two</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>18.98999</x>
@@ -11944,7 +12357,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>16</id>
-      <name>Jane + cute box</name>
+      <name>Jane and cute box</name>
       <startPage>4</startPage>
       <scrollPosition>
         <x>0</x>
@@ -12181,7 +12594,7 @@ Thanks to our advanced level of security, we have been able to keep safe secrets
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>17</id>
-      <name>Jane + Nina's phone</name>
+      <name>Jane and Nina's phone</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
@@ -15001,7 +15414,7 @@ out the files.</text>
     </DialogueEditorDialogueObject>
     <DialogueEditorDialogueObject>
       <id>24</id>
-      <name>Jane + Shammy Case</name>
+      <name>Jane and Shammy Case</name>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
@@ -15349,7 +15762,7 @@ out the files.</text>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>56.00464</y>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -17557,5 +17970,5 @@ out the files.</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>0</currentDialogueId>
+  <currentDialogueId>8</currentDialogueId>
 </DialogueEditorMasterObject>
