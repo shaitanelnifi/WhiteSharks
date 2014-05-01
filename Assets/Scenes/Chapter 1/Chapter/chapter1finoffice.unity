@@ -83,11 +83,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.32930517
+      value: -.990776062
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.49083424
+      value: -3.66010451
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -219,9 +219,9 @@ MonoBehaviour:
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
+  myConvo: 7
   playerObj: {fileID: 0}
   box: {fileID: 72480852}
-  myConvo: 7
   mouseOverIcon: Speech_Icon
 --- !u!4 &72480855
 Transform:
@@ -230,7 +230,7 @@ Transform:
   m_PrefabInternal: {fileID: 48374894}
   m_GameObject: {fileID: 72480850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.32930517, y: -3.49083424, z: 0}
+  m_LocalPosition: {x: -.990776062, y: -3.66010451, z: 0}
   m_LocalScale: {x: .412753493, y: .412753761, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -520,9 +520,9 @@ MonoBehaviour:
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
+  myConvo: 6
   playerObj: {fileID: 0}
   box: {fileID: 470879638}
-  myConvo: 6
   mouseOverIcon: Speech_Icon
 --- !u!4 &470879641
 Transform:
@@ -1082,6 +1082,60 @@ Prefab:
   m_RootGameObject: {fileID: 470879636}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &598078565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 598078568}
+  - 61: {fileID: 598078567}
+  - 114: {fileID: 598078566}
+  m_Layer: 0
+  m_Name: Door
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &598078566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598078565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: chapter1finbalcony
+  x: 9.92000008
+  y: -1.74000001
+  mouseOverIcon: Door_Icon
+--- !u!61 &598078567
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598078565}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 9.64999962, y: 1}
+  m_Center: {x: 0, y: 0}
+--- !u!4 &598078568
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598078565}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.00599139929, y: -5.21717501, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &903885455
 GameObject:
   m_ObjectHideFlags: 0

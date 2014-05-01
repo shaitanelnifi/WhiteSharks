@@ -201,7 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debugMe: 
   autoPlay: 1
-  playMe: {fileID: 8300000, guid: 9ebafcb1e8e05ee4aacf13042ea36fd5, type: 3}
+  playMe: {fileID: 8300000, guid: 258ccc3c9d307944a837f2dcef189496, type: 3}
   waitThisLong: 2
   whatCharacter: Jane
   nextLevel: chapter1finlobby
@@ -210,6 +210,7 @@ MonoBehaviour:
   dialoguer: chapter1
   needGUI: 0
   dialogue: 03000000
+  curDia: 0
   setOffset: 18
 --- !u!212 &623330654
 SpriteRenderer:
@@ -322,19 +323,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
       propertyPath: minScale
-      value: .949999988
+      value: .769999981
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
       propertyPath: maxScale
-      value: .949999988
+      value: .769999981
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
       propertyPath: scaleX
-      value: .949999988
+      value: .769999981
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
       propertyPath: scaleY
-      value: .949999988
+      value: .769999981
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
       propertyPath: maxY
@@ -377,12 +378,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 546e4042cc205e14bb0c655ff9ec24f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleX: .949999988
-  scaleY: .949999988
+  scaleX: .769999981
+  scaleY: .769999981
   maxY: -2.8900001
   minY: -5.30000019
-  minScale: .949999988
-  maxScale: .949999988
+  minScale: .769999981
+  maxScale: .769999981
   baseSpeed: 1
   id: 3
 --- !u!4 &1994282977
