@@ -12335,8 +12335,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter1finoffice
-  x: -8.72952461
-  y: -5.3029108
+  x: 1.29999995
+  y: -4.65999985
   mouseOverIcon: Door_Icon
 --- !u!50 &1183584704
 Rigidbody2D:
@@ -12470,7 +12470,7 @@ MonoBehaviour:
   whatCharacter: Jane
   nextLevel: chapter1finoffice
   isTherePlayer: 1
-  spawnHereAfter: {x: -1.37899995, y: -4.33699989}
+  spawnHereAfter: {x: 1.29999995, y: -3.66000009}
   dialoguer: chapter1
   needGUI: 0
   dialogue: 04000000
@@ -12638,6 +12638,14 @@ Prefab:
     - target: {fileID: 11400000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
       propertyPath: id
       value: chapter1finoffice
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
+      propertyPath: x
+      value: 1.29999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
+      propertyPath: y
+      value: -4.65999985
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}

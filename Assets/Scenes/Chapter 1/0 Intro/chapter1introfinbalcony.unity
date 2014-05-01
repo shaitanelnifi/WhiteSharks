@@ -538,8 +538,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter1introfinroom
-  x: 3.58899999
-  y: -4
+  x: 4.30000019
+  y: -2.79999995
   mouseOverIcon: Door_Icon
 --- !u!50 &1053749166
 Rigidbody2D:
@@ -1076,11 +1076,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
       propertyPath: x
-      value: 3.58899999
+      value: 4.30000019
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
       propertyPath: y
-      value: -4
+      value: -2.79999995
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
