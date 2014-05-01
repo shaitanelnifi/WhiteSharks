@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <DialogueEditorMasterObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <dialogues>
     <DialogueEditorDialogueObject>
@@ -2428,8 +2428,8 @@
       <name>Jane and Shammy one</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>1525.99866</x>
-        <y>3734.105</y>
+        <x>669.0711</x>
+        <y>747.105</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -2915,7 +2915,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>20.00122</y>
+            <y>14</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -3004,7 +3004,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>26</y>
+            <y>14</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -3132,7 +3132,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>26</y>
+            <y>14</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -5966,8 +5966,8 @@
       <name>Jane and Nina</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>898.056</x>
-        <y>1576.09192</y>
+        <x>175.137848</x>
+        <y>225.69986</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -6060,12 +6060,12 @@
           <id>2</id>
           <type>ConditionalPhase</type>
           <position>
-            <x>417</x>
-            <y>326</y>
+            <x>478</x>
+            <y>332</y>
           </position>
           <outs>
-            <int>3</int>
             <int>12</int>
+            <int>3</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -6097,7 +6097,7 @@
             <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
-          <variableSetValue>false</variableSetValue>
+          <variableSetValue>true</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
           <variableGetValue>true</variableGetValue>
         </DialogueEditorPhaseObject>
@@ -6227,7 +6227,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>26</y>
+            <y>14</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -17970,5 +17970,5 @@ out the files.</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>4</currentDialogueId>
+  <currentDialogueId>8</currentDialogueId>
 </DialogueEditorMasterObject>

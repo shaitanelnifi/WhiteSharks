@@ -87,6 +87,7 @@ public class genericScene : MonoBehaviour {
 					GameManager.Instance.SetNextY (spawnHereAfter.y);
 				}
 				GameManager.dialogueJustFinished = false;
+				SoundManager.Instance.CantWalk();
 				Application.LoadLevel (nextLevel);
 			}
 		}

@@ -46,6 +46,7 @@ public class playerScript : CaseElement {
 
 	void Start(){
 		seeker = GetComponent<Seeker>();
+		SoundManager.Instance.CanWalk();
 		if(Application.loadedLevelName == "chapter1finbalcony") {
 			//SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/Birds"), SoundManager.SoundType.Sfx);
 			SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/Fin"));
