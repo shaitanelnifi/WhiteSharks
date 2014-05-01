@@ -28,10 +28,28 @@ public class journal : MonoBehaviour {
 	
 	public GameObject viewTab1;
 	public GameObject viewTab2;
+<<<<<<< HEAD
 	public GameObject poiObjectView;
 	public GameObject journalButton;
 	private bool inMenu;
 	
+=======
+	//public GameObject viewTab3;
+
+	public GameObject poiObjectView;
+	//public GameObject mapView;
+
+	//Grab two main journal activation buttons and boolean to check when in menu.
+	public GameObject journalButton;
+	//public GameObject accusationRoomButton;
+	private bool inMenu;
+	//public GameObject alleywayBelly, alleywayFin, janesRoom, plaza, yesButton, noButton;
+	//public UILabel whereLabel;
+	private GameObject selectedLocation;
+	//private ArrayList roomList;
+
+	//Grab buttons and textfield from view. Will change to use gameobject find. Three lists for three different types of buttons.
+>>>>>>> e67e13ae5042edcbd4180d8cfda977f6e08e9da6
 	private static List<GameObject> viewTabList;
 	private static List<GameObject> poiButtonList;
 	private static List<GameObject> objectButtonList;
@@ -49,10 +67,17 @@ public class journal : MonoBehaviour {
 	void Awake () {
 		if(!j){
 			j = this;
+<<<<<<< HEAD
 			DontDestroyOnLoad(gameObject.transform.parent.gameObject);
 		}
 		else {
 			Destroy (gameObject.transform.parent.gameObject);
+=======
+			DontDestroyOnLoad(gameObject.transform.parent);
+		}
+		else {
+			Destroy (gameObject.transform.parent);
+>>>>>>> e67e13ae5042edcbd4180d8cfda977f6e08e9da6
 		}
 	}
 	
@@ -69,15 +94,32 @@ public class journal : MonoBehaviour {
 		personsOfInterest.Add (nina);
 		personsOfInterest.Add (josh);
 
+<<<<<<< HEAD
+=======
+//		CaseObject eSword = (CaseObject)Resources.Load("eSword", typeof(CaseObject));
+		//gameObject.AddComponent("Inventory");
+>>>>>>> e67e13ae5042edcbd4180d8cfda977f6e08e9da6
 		inventory = new Inventory();
 
 		UIEventListener.Get (viewTab1).onClick += this.onClick;
 		UIEventListener.Get (viewTab2).onClick += this.onClick;
+<<<<<<< HEAD
 		UIEventListener.Get (journalButton).onClick += this.journalAccusationPanelToggle;
+=======
+		//UIEventListener.Get (viewTab3).onClick += this.onClick;
+
+		//Listens for journal/accusation room buttons to make sure only one is active at a time.
+		UIEventListener.Get (journalButton).onClick += this.journalAccusationPanelToggle;
+		//UIEventListener.Get (accusationRoomButton).onClick += this.journalAccusationPanelToggle;
+>>>>>>> e67e13ae5042edcbd4180d8cfda977f6e08e9da6
 
 		viewTabList = new List<GameObject>();
 		viewTabList.Add(viewTab1);
 		viewTabList.Add(viewTab2);
+<<<<<<< HEAD
+=======
+		//viewTabList.Add(viewTab3);
+>>>>>>> e67e13ae5042edcbd4180d8cfda977f6e08e9da6
 
 		poiButtonList = new List<GameObject>();
 		objectButtonList = new List<GameObject>();
@@ -115,6 +157,10 @@ public class journal : MonoBehaviour {
 			}
 			else {
 				Time.timeScale = 0f;
+<<<<<<< HEAD
+=======
+				//accusationRoomButton.SetActive(false);
+>>>>>>> e67e13ae5042edcbd4180d8cfda977f6e08e9da6
 				inMenu = true;
 				playerScript player = (playerScript) FindObjectOfType(typeof(playerScript));
 				
@@ -123,6 +169,21 @@ public class journal : MonoBehaviour {
 				Debug.LogWarning("Dong");
 			}
 		}
+<<<<<<< HEAD
+=======
+		/*else if (button == accusationRoomButton){
+			if (inMenu){
+				Time.timeScale = 1f;
+				journalButton.SetActive(true);
+				inMenu = false;
+			}
+			else {
+				Time.timeScale = 0f;
+				journalButton.SetActive(false);
+				inMenu = true;
+			}
+		}*/
+>>>>>>> e67e13ae5042edcbd4180d8cfda977f6e08e9da6
 	}
 
 	//----- Button type functions
@@ -132,16 +193,33 @@ public class journal : MonoBehaviour {
 		switch (viewNumber) {
 			case 0://PoI
 				poiObjectView.SetActive(true);
+<<<<<<< HEAD
+=======
+				//mapView.SetActive(false);
+>>>>>>> e67e13ae5042edcbd4180d8cfda977f6e08e9da6
 				objectButtonGrid.SetActive(false);
 				poiButtonGrid.SetActive(true);
 				changePOI(0);
 				break;
 			case 1://Object
 				poiObjectView.SetActive(true);
+<<<<<<< HEAD
+=======
+				//mapView.SetActive(false);
+>>>>>>> e67e13ae5042edcbd4180d8cfda977f6e08e9da6
 				objectButtonGrid.SetActive(true);
 				poiButtonGrid.SetActive(false);
 				changeObject(0);
 				break;
+<<<<<<< HEAD
+=======
+			/*case 2://Map
+				poiObjectView.SetActive(false);
+				//mapView.SetActive(true);
+				objectButtonGrid.SetActive(false);
+				poiButtonGrid.SetActive(false);
+				break;*/
+>>>>>>> e67e13ae5042edcbd4180d8cfda977f6e08e9da6
 		}
 	}
 
