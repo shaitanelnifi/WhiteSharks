@@ -362,11 +362,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 12.3939066
+      value: 12.4158411
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.12338877
+      value: 1.67433357
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -390,11 +390,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalScale.x
-      value: -1.40267897
+      value: -1.54799998
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.40268254
+      value: 1.54800332
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: myConvo
@@ -2172,8 +2172,8 @@ Transform:
   m_PrefabInternal: {fileID: 51413040}
   m_GameObject: {fileID: 576624418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.3939066, y: 2.12338877, z: 0}
-  m_LocalScale: {x: -1.40267897, y: 1.40268254, z: 1}
+  m_LocalPosition: {x: 12.4158411, y: 1.67433357, z: 0}
+  m_LocalScale: {x: -1.54799998, y: 1.54800332, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &576624424
@@ -3538,7 +3538,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3011
+  startingRenderQueue: 3010
   mAlpha: 1
   mClipping: 3
   mClipRange: {x: 0, y: 0, z: 230, w: 180}
