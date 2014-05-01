@@ -20,6 +20,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 	private UILabel label;
 	private bool runOnce = false;
 	private GameObject convoBubble;
+	private UIRoot uiroot;
 
 	private int fullScale = 1;
 	private int noScale = 0;
@@ -35,7 +36,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 
 	private int choiceIndex;
 	private float time;
-	private float delay = 0.33f;
+	private float delay = 0.16f;
 
 	// Use this for initialization
 	void Start () {
@@ -96,13 +97,27 @@ public class DialogueGUI_Test : MonoBehaviour {
 		_isBranchedText = data.windowType == DialoguerTextPhaseType.BranchedText;
 		_branchedTextChoices = data.choices;
 		_currentChoice = 0;
+
+		if (uiroot != null)
+		{
+			uiroot.scalingStyle = UIRoot.Scaling.FixedSize;
+			uiroot.manualHeight = 600;
+			if (GameObject.Find ("Journal"))
+			{
+				uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(1.5f, 1.5f, 1f);
+			}
+			else
+			{
+				uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(1f, 1f, 1f);
+			}
+		}
 	}
 	
 	private void onDialogueWindowCloseHandler(){
 		// Resets the camera to default size
 		_dialogue = false;
 		_showDialogueBox = false;
-		Camera.main.orthographicSize = 6.0f;
+		//Camera.main.orthographicSize = 6.0f;
 	}
 	
 	private void onDialoguerMessageEvent(string message, string metadata){
@@ -120,13 +135,32 @@ public class DialogueGUI_Test : MonoBehaviour {
 		}
 
 		// Set position of conversation bubble
-		if (convoBubble != null && runOnce)
+		if (convoBubble != null)
 		{
-			// This may need to be fixed ~~~~~
-			Vector3 pos = new Vector3 (convoBubble.transform.position.x, -Screen.height/400f, convoBubble.transform.position.z);
-			convoBubble.transform.position = pos;
-			Debug.Log ("convoBubblepos: " + convoBubble.transform.position);
-			runOnce = false;
+			///
+			///
+			///		HACKY STUFF
+			///
+			///
+			uiroot = GameObject.Find ("UI Root").GetComponent<UIRoot>();
+
+			if (uiroot != null)
+			{
+				uiroot.scalingStyle = UIRoot.Scaling.FixedSize;
+				uiroot.manualHeight = 600;
+				if (GameObject.Find ("Journal"))
+				{
+					uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(1.5f, 1.5f, 1f);
+				}
+				else
+				{
+					uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(1f, 1f, 1f);
+				}
+			}
+
+			uiroot.transform.Find("Conversation Bubble").transform.localPosition = new Vector3(0f, -Screen.height, 1f);
+
+			//runOnce = false;
 		}
 
 		// Setup
@@ -141,6 +175,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 		// Mouse click interval delay
 		time += Time.deltaTime;
 
+		// Branched Text
 		if (_isBranchedText && _windowCurrentText == _windowTargetText && _branchedTextChoices != null)
 		{
 			enableColliders();
@@ -151,12 +186,14 @@ public class DialogueGUI_Test : MonoBehaviour {
 				choices[i].text = _branchedTextChoices[i];
 			}
 		}
+		// Regular text
 		else
 		{
 			clearBranchedText();
 			label.text = _windowTargetText;
 		}
 
+		// Regular text progression
 		if (!_isBranchedText)
 		{
 			disableColliders();
