@@ -86,7 +86,10 @@ public class SoundManager : MonoBehaviour {
 
 	public void CantWalk() {
 		canWalk = false;
-		walkNoise.audio.Stop();
+		if (walkNoise != null)
+		{
+			walkNoise.audio.Stop();
+		}
 	}
 
 	public void CanWalk() {
