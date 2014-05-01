@@ -12,7 +12,7 @@ GameObject:
   - 65: {fileID: 6500006}
   - 114: {fileID: 11400036}
   - 114: {fileID: 11400008}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Suspect Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32,7 +32,7 @@ GameObject:
   - 114: {fileID: 11400032}
   - 114: {fileID: 11400010}
   - 114: {fileID: 11400000}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Suspect Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400006}
   - 114: {fileID: 11400038}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400008}
   - 114: {fileID: 11400040}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Suspect Button Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400010}
   - 114: {fileID: 11400044}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: TimeLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400012}
   - 114: {fileID: 11400046}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Description Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - 114: {fileID: 11400104}
   - 114: {fileID: 11400020}
   - 114: {fileID: 11400014}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Journal Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400016}
   - 114: {fileID: 11400050}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: HUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   - 114: {fileID: 11400052}
   - 114: {fileID: 11400054}
   - 114: {fileID: 11400118}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Journal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - 4: {fileID: 400022}
   - 114: {fileID: 11400058}
   - 114: {fileID: 11400082}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Object Button Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   - 114: {fileID: 11400088}
   - 114: {fileID: 11400012}
   - 114: {fileID: 11400006}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Suspect Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ GameObject:
   - 114: {fileID: 11400074}
   - 114: {fileID: 11400018}
   - 114: {fileID: 11400002}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: PoI View button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   - 114: {fileID: 11400078}
   - 114: {fileID: 11400016}
   - 114: {fileID: 11400004}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Object View button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400042}
   - 114: {fileID: 11400092}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   - 114: {fileID: 11400084}
   - 114: {fileID: 11400090}
   - 54: {fileID: 5400000}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Scroll View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +279,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400046}
   - 114: {fileID: 11400086}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: View Tab Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,7 +295,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400048}
   - 114: {fileID: 11400094}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,7 +311,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400050}
   - 114: {fileID: 11400096}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Suspect/Object View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400052}
   - 114: {fileID: 11400108}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400054}
   - 114: {fileID: 11400110}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Name Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ GameObject:
   - 4: {fileID: 400056}
   - 20: {fileID: 2000000}
   - 114: {fileID: 11400112}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,7 +378,7 @@ GameObject:
   - 114: {fileID: 11400116}
   - 114: {fileID: 11400114}
   - 54: {fileID: 5400002}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: UI Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -487,7 +487,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -275, y: 2500, z: 0}
+  m_LocalPosition: {x: 0, y: 2500, z: 0}
   m_LocalScale: {x: 3.50999999, y: 3.50999999, z: 1}
   m_Children:
   - {fileID: 400044}
@@ -672,7 +672,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 20480
+    m_Bits: 4100
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
@@ -1564,8 +1564,8 @@ MonoBehaviour:
   onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
-  from: {x: -275, y: 2500, z: 0}
-  to: {x: -275, y: 0, z: 0}
+  from: {x: 0, y: 2500, z: 0}
+  to: {x: 0, y: 0, z: 0}
 --- !u!114 &11400058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2184,7 +2184,7 @@ MonoBehaviour:
   eventType: 1
   eventReceiverMask:
     serializedVersion: 2
-    m_Bits: 20480
+    m_Bits: 20484
   debug: 0
   useMouse: 1
   useTouch: 1

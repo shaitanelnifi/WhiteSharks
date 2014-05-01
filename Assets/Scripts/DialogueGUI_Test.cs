@@ -106,7 +106,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 			uiroot.manualHeight = 600;
 			if (GameObject.Find ("Journal"))
 			{
-				uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(1.5f, 1.5f, 1f);
+				uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(0.84f, 0.84f, 1f);
 			}
 			else
 			{
@@ -152,7 +152,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 				uiroot.manualHeight = 600;
 				if (GameObject.Find ("Journal"))
 				{
-					uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(1.5f, 1.5f, 1f);
+					uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(0.84f, 0.84f, 1f);
 				}
 				else
 				{

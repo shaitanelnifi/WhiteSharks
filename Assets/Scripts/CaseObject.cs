@@ -11,7 +11,7 @@ public class CaseObject : CaseElement {
 	void Start(){
 	
 		base.Init ();
-		uiThing = GameObject.Find("UI Root");
+		uiThing = GameObject.Find("Journal");
 	
 	}
 

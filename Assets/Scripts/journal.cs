@@ -21,30 +21,17 @@ public class journal : MonoBehaviour {
 	}
 	
 	public List<NPC> personsOfInterest;
-	//private List<CaseObject>weaponList;
 
 	//Defaults for non-visible NPC
 	public static Sprite emptyPortrait;
 	private string emptyName;
-
-	//Grab view tab buttons. Will change to use gameobject find.
+	
 	public GameObject viewTab1;
 	public GameObject viewTab2;
-	//public GameObject viewTab3;
-
 	public GameObject poiObjectView;
-	//public GameObject mapView;
-
-	//Grab two main journal activation buttons and boolean to check when in menu.
 	public GameObject journalButton;
-	//public GameObject accusationRoomButton;
 	private bool inMenu;
-	//public GameObject alleywayBelly, alleywayFin, janesRoom, plaza, yesButton, noButton;
-	//public UILabel whereLabel;
-	private GameObject selectedLocation;
-	//private ArrayList roomList;
-
-	//Grab buttons and textfield from view. Will change to use gameobject find. Three lists for three different types of buttons.
+	
 	private static List<GameObject> viewTabList;
 	private static List<GameObject> poiButtonList;
 	private static List<GameObject> objectButtonList;
@@ -60,13 +47,12 @@ public class journal : MonoBehaviour {
 	
 	//Destroys duplicate UI Roots.
 	void Awake () {
-		//journalButton.transform.position = new Vector3(275, 20, 0);
 		if(!j){
 			j = this;
-			DontDestroyOnLoad(gameObject.transform.parent);
+			DontDestroyOnLoad(gameObject.transform.parent.gameObject);
 		}
 		else {
-			Destroy (gameObject.transform.parent);
+			Destroy (gameObject.transform.parent.gameObject);
 		}
 	}
 	
@@ -76,8 +62,6 @@ public class journal : MonoBehaviour {
 		//Default name for "invisible" person of interest.
 		emptyName = "?????";
 
-		//Sprint 3 persons of interest list
-		//updateJournal() will be used to receive first set of lists.
 		//---------- hard code for first stage -------------------//
 		NPC nina = (NPC)Resources.Load ("NinaWalker", typeof(NPC));
 		NPC josh = (NPC)Resources.Load ("JoshSusach", typeof(NPC));
@@ -85,32 +69,20 @@ public class journal : MonoBehaviour {
 		personsOfInterest.Add (nina);
 		personsOfInterest.Add (josh);
 
-//		CaseObject eSword = (CaseObject)Resources.Load("eSword", typeof(CaseObject));
-		//gameObject.AddComponent("Inventory");
 		inventory = new Inventory();
-		//---------- hard code for first stage -------------------//
 
-		//Listens for tab button presses in journal and runs onClick with button clicked as parameter.
 		UIEventListener.Get (viewTab1).onClick += this.onClick;
 		UIEventListener.Get (viewTab2).onClick += this.onClick;
-		//UIEventListener.Get (viewTab3).onClick += this.onClick;
-
-		//Listens for journal/accusation room buttons to make sure only one is active at a time.
 		UIEventListener.Get (journalButton).onClick += this.journalAccusationPanelToggle;
-		//UIEventListener.Get (accusationRoomButton).onClick += this.journalAccusationPanelToggle;
 
-		//Want to get rid of this too.
 		viewTabList = new List<GameObject>();
 		viewTabList.Add(viewTab1);
 		viewTabList.Add(viewTab2);
-		//viewTabList.Add(viewTab3);
 
-		//List of person of interest portrait buttons.
 		poiButtonList = new List<GameObject>();
 		objectButtonList = new List<GameObject>();
 
 		initPoIView();
-		//initObjView ();
 		changeView(0);
 		changePOI (0);
 		StartCoroutine (UpdateTime ());
@@ -129,8 +101,7 @@ public class journal : MonoBehaviour {
 		}
 	}
 
-	//Toggles either the journal or the accusation room panel.
-	//Only one active at a time.
+	//No longer toggles.
 	void journalAccusationPanelToggle(GameObject button){
 		if (button == journalButton){
 			if (inMenu){
@@ -144,7 +115,6 @@ public class journal : MonoBehaviour {
 			}
 			else {
 				Time.timeScale = 0f;
-				//accusationRoomButton.SetActive(false);
 				inMenu = true;
 				playerScript player = (playerScript) FindObjectOfType(typeof(playerScript));
 				
@@ -153,46 +123,25 @@ public class journal : MonoBehaviour {
 				Debug.LogWarning("Dong");
 			}
 		}
-		/*else if (button == accusationRoomButton){
-			if (inMenu){
-				Time.timeScale = 1f;
-				journalButton.SetActive(true);
-				inMenu = false;
-			}
-			else {
-				Time.timeScale = 0f;
-				journalButton.SetActive(false);
-				inMenu = true;
-			}
-		}*/
 	}
 
 	//----- Button type functions
 	//Changes view when view tab is clicked.
-	//Will make helper function for grid/view SetActive. Use enum?
 	void changeView(int viewNumber){
 		clearLabels ();
 		switch (viewNumber) {
 			case 0://PoI
 				poiObjectView.SetActive(true);
-				//mapView.SetActive(false);
 				objectButtonGrid.SetActive(false);
 				poiButtonGrid.SetActive(true);
 				changePOI(0);
 				break;
 			case 1://Object
 				poiObjectView.SetActive(true);
-				//mapView.SetActive(false);
 				objectButtonGrid.SetActive(true);
 				poiButtonGrid.SetActive(false);
 				changeObject(0);
 				break;
-			/*case 2://Map
-				poiObjectView.SetActive(false);
-				//mapView.SetActive(true);
-				objectButtonGrid.SetActive(false);
-				poiButtonGrid.SetActive(false);
-				break;*/
 		}
 	}
 
@@ -273,7 +222,6 @@ public class journal : MonoBehaviour {
 		UIEventListener.Get (tempButton).onClick += this.onClick;
 		objectButtonList.Add (tempButton);
 		objectButtonGrid.GetComponent<UIGrid>().Reposition();
-		//changeObject(inventory.IndexOf (newObject));
 	}
 
 	//Clear description labels. Might rename and add obj/poi grid on/off.
