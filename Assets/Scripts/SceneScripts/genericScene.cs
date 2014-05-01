@@ -17,7 +17,7 @@ public class genericScene : MonoBehaviour {
 	protected bool done = false;
 	public bool needGUI = false;
 	public Convo[] dialogue;
-	protected int curDia = 0;
+	public int curDia = 0;
 
 	public int setOffset;
 	
@@ -27,13 +27,22 @@ public class genericScene : MonoBehaviour {
 		if (GameManager.offset == 0)
 			GameManager.offset = setOffset;
 
-		if (Dialoguer.isInitialized () && autoPlay)
-			Dialoguer.StartDialogue ((int)dialogue[curDia]);
-		else if (autoPlay) {
+		if (Dialoguer.isInitialized () && autoPlay) 
+			playDialogue();
+		else if (autoPlay) 
+			playDialogue();
 			
-			Dialoguer.Initialize(dialoguer);
-			Dialoguer.StartDialogue ((int)dialogue[curDia]);
-			
+		
+	}
+
+	void playDialogue(){
+
+		Dialoguer.Initialize(dialoguer);
+		Dialoguer.StartDialogue ((int)dialogue[curDia]);
+		var player = (playerScript) FindObjectOfType(typeof(playerScript));
+		if (player != null) {
+			player.stopMove ();
+			player.talking = true;
 		}
 	}
 	
@@ -64,20 +73,22 @@ public class genericScene : MonoBehaviour {
 
 		} else 
 		if ((int)dialogue[curDia] >= 0 && GameManager.dialogueJustFinished && curDia == dialogue.Length - 1) {
-			yield return new WaitForSeconds (waitThisLong);
-			GameManager.Instance.playerInScene = isTherePlayer;
-			done = true;
-			if (isTherePlayer) {
-				if (!GameManager.Instance.playerInScene){
-					GameManager.Instance.playerInScene = true;
+			if (waitThisLong != -1){
+				yield return new WaitForSeconds (waitThisLong);
+				GameManager.Instance.playerInScene = isTherePlayer;
+				done = true;
+				if (isTherePlayer) {
+					if (!GameManager.Instance.playerInScene){
+						GameManager.Instance.playerInScene = true;
+					}
+					Debug.Log("Setting nexts to " + spawnHereAfter.x + " and " + spawnHereAfter.y);
+					GameManager.Instance.SetMainCharacter (whatCharacter);
+					GameManager.Instance.SetNextX (spawnHereAfter.x);
+					GameManager.Instance.SetNextY (spawnHereAfter.y);
 				}
-				Debug.Log("Setting nexts to " + spawnHereAfter.x + " and " + spawnHereAfter.y);
-				GameManager.Instance.SetMainCharacter (whatCharacter);
-				GameManager.Instance.SetNextX (spawnHereAfter.x);
-				GameManager.Instance.SetNextY (spawnHereAfter.y);
+				GameManager.dialogueJustFinished = false;
+				Application.LoadLevel (nextLevel);
 			}
-			GameManager.dialogueJustFinished = false;
-			Application.LoadLevel (nextLevel);
 		}
 	}
 }

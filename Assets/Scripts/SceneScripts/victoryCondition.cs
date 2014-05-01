@@ -4,8 +4,7 @@ using System.Collections;
 public class victoryCondition : genericScene {
 
 	public GameObject[] getTheseToProceed;
-	public int talkToThisManyToProceed;
-	public int talkedToThisMany;
+	public int[] getTheseGlobalBools;
 
 	private bool startEnd = false;
 
@@ -18,7 +17,7 @@ public class victoryCondition : genericScene {
 	void Update () {
 		StartCoroutine ("wait");
 		Debug.Log ("ALIVE");	
-	}
+	}	
 
 	private bool gotThem(){
 
@@ -31,41 +30,50 @@ public class victoryCondition : genericScene {
 				return false;
 		}
 
+		for (int i = 0; i < getTheseGlobalBools.Length; i++) {
+
+			bool current = Dialoguer.GetGlobalBoolean(getTheseGlobalBools[i]);
+
+			if (!current)
+				return false;
+
+		}
+
 		return true;
 
 	}
 
 	IEnumerator wait(){
 
-		if (!startEnd) 
-			if (gotThem()){
-			GameManager.dialogueJustFinished = false;
-			Dialoguer.StartDialogue((int)dialogue[curDia]);
-			playerScript player = FindObjectOfType(typeof(playerScript)) as playerScript;
-			player.stopMove();
-			startEnd = !startEnd;
-		}
+	if (!startEnd) 
+	if (gotThem ()) {
+		GameManager.dialogueJustFinished = false;
+		Dialoguer.StartDialogue ((int)dialogue [curDia]);
+		playerScript player = FindObjectOfType (typeof(playerScript)) as playerScript;
+		player.stopMove ();
+		startEnd = !startEnd;
 
-		SoundManager.Instance.Play2DMusic(playMe);
+
+		SoundManager.Instance.Play2DMusic (playMe);
 		//Debug.Log (debugMe);
 		if (GameManager.dialogueJustFinished && curDia < dialogue.Length - 1) {
-			
-			GameManager.dialogueJustFinished = false;
-			curDia ++;
-			Dialoguer.StartDialogue((int)dialogue[curDia]);
-			
-		} else 
-		if ((int)dialogue[curDia] >= 0 && GameManager.dialogueJustFinished && curDia == dialogue.Length - 1) {
-			yield return new WaitForSeconds (waitThisLong);
-			GameManager.Instance.playerInScene = isTherePlayer;
-			done = true;
-			if (isTherePlayer) {
-				GameManager.Instance.SetMainCharacter (whatCharacter);
-				GameManager.Instance.SetNextX (spawnHereAfter.x);
-				GameManager.Instance.SetNextX (spawnHereAfter.y);
+
+				GameManager.dialogueJustFinished = false;
+				curDia ++;
+				Dialoguer.StartDialogue ((int)dialogue [curDia]);
+
+		} else if ((int)dialogue [curDia] >= 0 && GameManager.dialogueJustFinished && curDia == dialogue.Length - 1) {
+				yield return new WaitForSeconds (waitThisLong);
+				GameManager.Instance.playerInScene = isTherePlayer;
+				done = true;
+				if (isTherePlayer) {
+						GameManager.Instance.SetMainCharacter (whatCharacter);
+						GameManager.Instance.SetNextX (spawnHereAfter.x);
+						GameManager.Instance.SetNextX (spawnHereAfter.y);
+				}
+				GameManager.dialogueJustFinished = false;
+				Application.LoadLevel (nextLevel);
 			}
-			GameManager.dialogueJustFinished = false;
-			Application.LoadLevel (nextLevel);
 		}
 	}
 

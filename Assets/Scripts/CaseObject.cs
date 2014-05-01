@@ -44,6 +44,8 @@ public class CaseObject : CaseElement {
 		//Debug.LogError ("Inventory: " + journal.inventory[0]);
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);
 		player.canWalk = true;
+		if (myConvo != Convo.none)
+			Dialoguer.StartDialogue ((int)myConvo);
 		this.gameObject.SetActive(false);
 
 	}

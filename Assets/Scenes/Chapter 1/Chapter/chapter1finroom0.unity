@@ -1794,7 +1794,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: 7758ba481a31d4fb6b58480f035b944e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .0629873276
+      value: -12.6199999
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: 7758ba481a31d4fb6b58480f035b944e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -28778,7 +28778,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3010
+  startingRenderQueue: 3011
   mAlpha: 1
   mClipping: 3
   mClipRange: {x: 0, y: 0, z: 230, w: 180}

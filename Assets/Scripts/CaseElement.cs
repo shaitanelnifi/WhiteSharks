@@ -8,14 +8,14 @@ public abstract class CaseElement : MonoBehaviour {
 	public string description;	//A text description of it
 	public Sprite profileImage; //Its base image (square mug-shot)
 
-	public GuiltLevel guilt;		//How is it related to the case?  
-	public int location;			//Where is it during gameplay, every room/scene has a corresponding Int id
 	public bool visible=false;			//Is the element visible in the journal?
 
 	protected playerScript player;
 	protected distanceCheck pDist;
 	public bool clickedOnSomething;
 	public float maxDist = 1f;
+
+	public Convo myConvo = Convo.none;
 
 	void Start (){
 		Init ();
@@ -66,14 +66,6 @@ public abstract class CaseElement : MonoBehaviour {
 		profileImage = someImage;
 	}
 
-	public void setGuilt(GuiltLevel level){
-		guilt = level;
-	}
-
-
-	public void setLocation(int somePlace){
-		location = somePlace;
-	}
 
 	//Getters for all Case Element fields
 	public string getElementName( ){
@@ -87,15 +79,6 @@ public abstract class CaseElement : MonoBehaviour {
 
 	public Sprite getProfileImage( ){
 		return profileImage;
-	}
-	
-	public GuiltLevel getGuilt( ){
-		return guilt;
-	}
-
-
-	public int getLocation( ){
-		return location;
 	}
 
 	public bool isVisible(){

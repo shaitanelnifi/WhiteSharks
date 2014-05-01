@@ -737,7 +737,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 85014034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.77804089, y: 1.10049105, z: -2.40234375}
+  m_LocalPosition: {x: 9.77804089, y: 1.10049105, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -812,7 +812,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 182867072}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .942635179, y: 2.25390959, z: -2.40234375}
+  m_LocalPosition: {x: .942635179, y: 2.25390959, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1648,7 +1648,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 404272397}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.09337115, y: .0494980812, z: -2.40234375}
+  m_LocalPosition: {x: -2.09337115, y: .0494980812, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2150,19 +2150,11 @@ MonoBehaviour:
     and psychology, Noel is the person to get in touch with if you ever feel in need
     of help.
   profileImage: {fileID: 21300000, guid: 7123055adce4b417d874c7110aaa8326, type: 3}
-  guilt: 2
-  location: 3
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
   playerObj: {fileID: 0}
   box: {fileID: 576624420}
-  weaponProficiency: 5
-  highClass: 1
-  alibi: F
-  scene: scene1
-  trust: 0
-  enumName: 3
   myConvo: 10
   mouseOverIcon: Speech_Icon
 --- !u!4 &576624423
@@ -2202,8 +2194,7 @@ MonoBehaviour:
   getTheseToProceed:
   - {fileID: 100000, guid: 3ac0d3532517a463f950d0b7ec4db1c5, type: 2}
   - {fileID: 100000, guid: e0718d06710294bdba42a3e7ca65a2a0, type: 2}
-  talkToThisManyToProceed: 0
-  talkedToThisMany: 0
+  getTheseGlobalBools: 
 --- !u!1 &588377802
 GameObject:
   m_ObjectHideFlags: 0
@@ -3076,7 +3067,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 767310065}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.80893421, y: 2.43591499, z: -2.40234375}
+  m_LocalPosition: {x: 5.80893421, y: 2.43591499, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10542,6 +10533,7 @@ Prefab:
     - target: {fileID: 400108, guid: 7758ba481a31d4fb6b58480f035b944e, type: 2}
       propertyPath: m_LocalPosition.y
       value: .106983185
+      value: -12.6199999
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: 7758ba481a31d4fb6b58480f035b944e, type: 2}
       propertyPath: m_LocalPosition.z

@@ -216,19 +216,11 @@ MonoBehaviour:
     and psychology, Noel is the person to get in touch with if you ever feel in need
     of help.
   profileImage: {fileID: 21300000, guid: 7123055adce4b417d874c7110aaa8326, type: 3}
-  guilt: 2
-  location: 3
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
   playerObj: {fileID: 0}
   box: {fileID: 72480852}
-  weaponProficiency: 5
-  highClass: 1
-  alibi: F
-  scene: scene1
-  trust: 0
-  enumName: 3
   myConvo: 7
   mouseOverIcon: Speech_Icon
 --- !u!4 &72480855
@@ -525,19 +517,11 @@ MonoBehaviour:
   elementName: Alexia
   description: Liam is a guard at the Fin.
   profileImage: {fileID: 21300000, guid: 036f6ea0067ef41a7b7561f5414dda4d, type: 3}
-  guilt: 1
-  location: 0
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
   playerObj: {fileID: 0}
   box: {fileID: 470879638}
-  weaponProficiency: 5
-  highClass: 1
-  alibi: Gym
-  scene: scene1
-  trust: 0
-  enumName: 0
   myConvo: 6
   mouseOverIcon: Speech_Icon
 --- !u!4 &470879641
@@ -1128,7 +1112,7 @@ MonoBehaviour:
   debugMe: 
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 4c281b7a78264434faea95625cf11996, type: 3}
-  waitThisLong: 20
+  waitThisLong: -1
   whatCharacter: Jane
   nextLevel: chapter1finbalcony
   isTherePlayer: 1
@@ -1136,6 +1120,7 @@ MonoBehaviour:
   dialoguer: chapter1
   needGUI: 0
   dialogue: 05000000
+  curDia: 0
   setOffset: 18
 --- !u!4 &903885457
 Transform:

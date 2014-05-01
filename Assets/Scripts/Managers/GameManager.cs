@@ -30,7 +30,6 @@ public class GameManager : MonoBehaviour {
 	public string currRoom;
 	public int currentRoomIndex;
 	private string currentMainCharacter;
-	public CaseGenerator generator;
 	public static Case theCase = new Case(); //Generate this!
 	public float nextX, nextY;
 	public static NPC guilty;
@@ -263,32 +262,7 @@ public class GameManager : MonoBehaviour {
 		weaponList.Add(Resources.Load<CaseObject>("MetalPipe"));
 		weaponList.Add(Resources.Load<CaseObject>("RadioactiveIceCubes"));
 		weaponList.Add(Resources.Load<CaseObject>("VSs"));
-		generator = new CaseGenerator ();
 
-	}
-
-	public static List<NPC> getSceneNPCList(int sceneID){ 
-		List<NPC> temp = new List<NPC>();
-		foreach (NPC n in npcList) {
-			Debug.Log (n.location + " " + n.name);
-			Debug.Log (sceneID);
-			if (n.location == sceneID){
-				//Debug.Log("Match found");
-				temp.Add(n);
-			}
-				}
-		return temp;
-	}
-
-	public static List<NPC> getSceneWitnessList(int sceneID){ 
-		List<NPC> temp = new List<NPC>();
-		foreach (NPC n in witnessList) {
-			if (n.location == sceneID){
-				//Debug.Log("Match found");
-				temp.Add(n);
-			}
-		}
-		return temp;
 	}
 
 	public void finishEpisode(){
