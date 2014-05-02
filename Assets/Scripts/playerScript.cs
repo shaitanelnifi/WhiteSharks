@@ -97,16 +97,20 @@ public class playerScript : CaseElement {
 		if (modSpeed < minSpeed){
 			modSpeed = minSpeed;
 		}
-		if(Input.GetMouseButtonDown(0))
-		if (canWalk){
-			//Debug.Log("Pressed left click.");
-			//get mouse clicked location and convert them to world point.
-			targetPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y,0 );
-			Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(targetPosition.x, targetPosition.y, camera.nearClipPlane));
-			targetPosition.x = mousePosition.x;
-			targetPosition.y = mousePosition.y;
+		if (Input.GetMouseButtonDown (0)) {
+			if((Input.mousePosition.x <= Screen.width)  && (Input.mousePosition.x >= 0) 
+			   &&(Input.mousePosition.y <= Screen.height) && (Input.mousePosition.y >= 0)){
+				if (canWalk) {
+				//Debug.Log("Pressed left click.");
+				//get mouse clicked location and convert them to world point.
+				targetPosition = new Vector3 (Input.mousePosition.x, Input.mousePosition.y, 0);
+				Vector3 mousePosition = Camera.main.ScreenToWorldPoint (new Vector3 (targetPosition.x, targetPosition.y, camera.nearClipPlane));
+				targetPosition.x = mousePosition.x;
+				targetPosition.y = mousePosition.y;
 
-			seeker.StartPath (transform.position,targetPosition, OnPath);
+				seeker.StartPath (transform.position, targetPosition, OnPath);
+				}
+			}
 		}
 		if(path == null||currentWayPoint> path.vectorPath.Count){
 			return;
