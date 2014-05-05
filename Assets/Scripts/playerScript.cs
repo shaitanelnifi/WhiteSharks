@@ -100,16 +100,16 @@ public class playerScript : CaseElement {
 		if (Input.GetMouseButtonDown (0)) {
 			if((Input.mousePosition.x <= Screen.width)  && (Input.mousePosition.x >= 0) 
 			   &&(Input.mousePosition.y <= Screen.height) && (Input.mousePosition.y >= 0)){
-				if (canWalk) {
-				//Debug.Log("Pressed left click.");
-				//get mouse clicked location and convert them to world point.
-				targetPosition = new Vector3 (Input.mousePosition.x, Input.mousePosition.y, 0);
-				Vector3 mousePosition = Camera.main.ScreenToWorldPoint (new Vector3 (targetPosition.x, targetPosition.y, camera.nearClipPlane));
-				targetPosition.x = mousePosition.x;
-				targetPosition.y = mousePosition.y;
-
-				seeker.StartPath (transform.position, targetPosition, OnPath);
-				}
+				   if(canWalk) {
+					   //Debug.Log("Pressed left click.");
+					   //get mouse clicked location and convert them to world point.
+					   targetPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
+					   Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(targetPosition.x, targetPosition.y, camera.nearClipPlane));
+					   targetPosition.x = mousePosition.x;
+					   targetPosition.y = mousePosition.y;
+					   SoundManager.Instance.CanWalk();
+					   seeker.StartPath(transform.position, targetPosition, OnPath);
+				   }
 			}
 		}
 		if(path == null||currentWayPoint> path.vectorPath.Count){
@@ -128,9 +128,16 @@ public class playerScript : CaseElement {
 		//Debug.Log("Last way point222:"+currentWayPoint);
 		if(distance >0.1f){
 			Vector3 dir = (path.vectorPath[currentWayPoint]-transform.position).normalized *5f*Time.deltaTime;
+			Vector3 temp = transform.position + dir;
+			Debug.Log("sum : " + temp + ", position: " + transform.position + ", dir: " + dir);
 			transform.position = transform.position + dir;
-			if(Mathf.Abs(distance) > 1 && !SoundManager.Instance.isWalking) SoundManager.Instance.WalkSound();
-			else if(Mathf.Abs(distance) <= 1 && SoundManager.Instance.isWalking) SoundManager.Instance.StopWalk();
+
+
+			
+				
+				if(Mathf.Abs(distance) > 1 && !SoundManager.Instance.isWalking) SoundManager.Instance.WalkSound();
+				else if(Mathf.Abs(distance) <= 1 && SoundManager.Instance.isWalking) SoundManager.Instance.StopWalk();
+			
 		}
 		if((targetPosition.x - transform.position.x)<0 ){
 			goingtLeft = true;
@@ -176,6 +183,7 @@ public class playerScript : CaseElement {
 
 		setTarget(new Vector2(transform.position.x, transform.position.y));
 		canWalk = false;
+		SoundManager.Instance.CantWalk();
 		if (anim != null)
 		anim.SetFloat("distance", 0f);
 
