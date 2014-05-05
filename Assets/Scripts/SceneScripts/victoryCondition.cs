@@ -45,31 +45,33 @@ public class victoryCondition : genericScene {
 
 	IEnumerator wait(){
 
-	if (!startEnd) 
-	if (gotThem ()) {
-		GameManager.dialogueJustFinished = false;
-		Dialoguer.StartDialogue ((int)dialogue [curDia]);
-		playerScript player = FindObjectOfType (typeof(playerScript)) as playerScript;
-		player.stopMove ();
-		startEnd = !startEnd;
+		if (!startEnd) {
+			if (gotThem ()) {
+					GameManager.dialogueJustFinished = false;
+					Dialoguer.StartDialogue ((int)dialogue [curDia]);
+					playerScript player = FindObjectOfType (typeof(playerScript)) as playerScript;
+					player.stopMove ();
+					startEnd = !startEnd;
 
 
-		SoundManager.Instance.Play2DMusic (playMe);
-		//Debug.Log (debugMe);
-		if (GameManager.dialogueJustFinished && curDia < dialogue.Length - 1) {
-
+					SoundManager.Instance.Play2DMusic (playMe);
+					//Debug.Log (debugMe);
+			}
+		} else {
+			if (GameManager.dialogueJustFinished && curDia < dialogue.Length - 1) {
+				
 				GameManager.dialogueJustFinished = false;
 				curDia ++;
 				Dialoguer.StartDialogue ((int)dialogue [curDia]);
-
-		} else if ((int)dialogue [curDia] >= 0 && GameManager.dialogueJustFinished && curDia == dialogue.Length - 1) {
+				
+			} else if ((int)dialogue [curDia] >= 0 && GameManager.dialogueJustFinished && curDia == dialogue.Length - 1) {
 				yield return new WaitForSeconds (waitThisLong);
 				GameManager.Instance.playerInScene = isTherePlayer;
 				done = true;
 				if (isTherePlayer) {
-						GameManager.Instance.SetMainCharacter (whatCharacter);
-						GameManager.Instance.SetNextX (spawnHereAfter.x);
-						GameManager.Instance.SetNextX (spawnHereAfter.y);
+					GameManager.Instance.SetMainCharacter (whatCharacter);
+					GameManager.Instance.SetNextX (spawnHereAfter.x);
+					GameManager.Instance.SetNextX (spawnHereAfter.y);
 				}
 				GameManager.dialogueJustFinished = false;
 				Application.LoadLevel (nextLevel);
