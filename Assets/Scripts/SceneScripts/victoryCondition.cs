@@ -16,7 +16,7 @@ public class victoryCondition : genericScene {
 	// Update is called once per frame
 	void Update () {
 		StartCoroutine ("wait");
-		Debug.Log ("ALIVE");	
+		//Debug.Log ("ALIVE");	
 	}	
 
 	private bool gotThem(){

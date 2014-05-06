@@ -116,6 +116,7 @@ public class journal : MonoBehaviour {
 				playerScript player = (playerScript) FindObjectOfType(typeof(playerScript));
 				
 				player.canWalk = false;
+				SoundManager.Instance.CantWalk();
 				player.talking = true;
 				Debug.LogWarning("Dong");
 			}
