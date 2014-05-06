@@ -359,7 +359,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -242.377625, z: 0}
+  m_LocalPosition: {x: 231.255447, y: 3184.93213, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400020}
@@ -476,9 +476,9 @@ Animation:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 70efac79b7653481c9489a705a3590a7, type: 2}
+  m_Animation: {fileID: 0}
   m_Animations:
-  - {fileID: 7400000, guid: 70efac79b7653481c9489a705a3590a7, type: 2}
+  - {fileID: 0}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -491,9 +491,9 @@ Animation:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 70efac79b7653481c9489a705a3590a7, type: 2}
+  m_Animation: {fileID: 0}
   m_Animations:
-  - {fileID: 7400000, guid: 70efac79b7653481c9489a705a3590a7, type: 2}
+  - {fileID: 0}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -506,9 +506,9 @@ Animation:
   m_GameObject: {fileID: 100004}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 70efac79b7653481c9489a705a3590a7, type: 2}
+  m_Animation: {fileID: 0}
   m_Animations:
-  - {fileID: 7400000, guid: 70efac79b7653481c9489a705a3590a7, type: 2}
+  - {fileID: 0}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -521,9 +521,9 @@ Animation:
   m_GameObject: {fileID: 100006}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 70efac79b7653481c9489a705a3590a7, type: 2}
+  m_Animation: {fileID: 0}
   m_Animations:
-  - {fileID: 7400000, guid: 70efac79b7653481c9489a705a3590a7, type: 2}
+  - {fileID: 0}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -536,9 +536,9 @@ Animation:
   m_GameObject: {fileID: 100008}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 70efac79b7653481c9489a705a3590a7, type: 2}
+  m_Animation: {fileID: 0}
   m_Animations:
-  - {fileID: 7400000, guid: 70efac79b7653481c9489a705a3590a7, type: 2}
+  - {fileID: 0}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -551,9 +551,9 @@ Animation:
   m_GameObject: {fileID: 100010}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 70efac79b7653481c9489a705a3590a7, type: 2}
+  m_Animation: {fileID: 0}
   m_Animations:
-  - {fileID: 7400000, guid: 70efac79b7653481c9489a705a3590a7, type: 2}
+  - {fileID: 0}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -628,8 +628,8 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 23.2909088
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 72025224d642248f9ac88ad65023a438, type: 2}
+  mTrueTypeFont: {fileID: 355770028, guid: 0000000000000000d000000000000000, type: 0}
+  mFont: {fileID: 0}
   mText: 
   mFontSize: 32
   mFontStyle: 0
@@ -721,8 +721,8 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 23.2909088
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 72025224d642248f9ac88ad65023a438, type: 2}
+  mTrueTypeFont: {fileID: 355770028, guid: 0000000000000000d000000000000000, type: 0}
+  mFont: {fileID: 0}
   mText: 
   mFontSize: 32
   mFontStyle: 0
@@ -814,8 +814,8 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 23.2909088
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 72025224d642248f9ac88ad65023a438, type: 2}
+  mTrueTypeFont: {fileID: 355770028, guid: 0000000000000000d000000000000000, type: 0}
+  mFont: {fileID: 0}
   mText: 
   mFontSize: 32
   mFontStyle: 0
@@ -907,8 +907,8 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 23.2909088
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 72025224d642248f9ac88ad65023a438, type: 2}
+  mTrueTypeFont: {fileID: 355770028, guid: 0000000000000000d000000000000000, type: 0}
+  mFont: {fileID: 0}
   mText: 
   mFontSize: 32
   mFontStyle: 0
@@ -1000,8 +1000,8 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 23.2909088
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 72025224d642248f9ac88ad65023a438, type: 2}
+  mTrueTypeFont: {fileID: 355770028, guid: 0000000000000000d000000000000000, type: 0}
+  mFont: {fileID: 0}
   mText: 
   mFontSize: 32
   mFontStyle: 0
@@ -1093,8 +1093,8 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 23.2909088
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 72025224d642248f9ac88ad65023a438, type: 2}
+  mTrueTypeFont: {fileID: 355770028, guid: 0000000000000000d000000000000000, type: 0}
+  mFont: {fileID: 0}
   mText: 
   mFontSize: 32
   mFontStyle: 0
@@ -1171,7 +1171,7 @@ MonoBehaviour:
   aspectRatio: 5.30000019
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 72025224d642248f9ac88ad65023a438, type: 2}
+  mFont: {fileID: 0}
   mText: JaneFrankName
   mFontSize: 32
   mFontStyle: 0
@@ -1326,8 +1326,8 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 3.60869575
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 72025224d642248f9ac88ad65023a438, type: 2}
+  mTrueTypeFont: {fileID: 355770028, guid: 0000000000000000d000000000000000, type: 0}
+  mFont: {fileID: 0}
   mText: 
   mFontSize: 32
   mFontStyle: 0
