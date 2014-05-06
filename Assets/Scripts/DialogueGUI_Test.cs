@@ -139,28 +139,41 @@ public class DialogueGUI_Test : MonoBehaviour {
 		// Set position of conversation bubble
 		if (convoBubble != null)
 		{
-			///
-			///
-			///		HACKY STUFF
-			///
-			///
 			uiroot = GameObject.Find ("UI Root").GetComponent<UIRoot>();
 
 			if (uiroot != null)
 			{
+				Transform convo = uiroot.transform.Find("Conversation Bubble");
 				uiroot.scalingStyle = UIRoot.Scaling.FixedSize;
 				uiroot.manualHeight = 600;
 				if (GameObject.Find ("Journal"))
 				{
-					uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(0.84f, 0.84f, 1f);
+					convo.transform.localScale = new Vector3(0.84f, 0.84f, 1f);
 				}
 				else
 				{
-					uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(1f, 1f, 1f);
+					convo.transform.localScale = new Vector3(1f, 1f, 1f);
+				}
+
+				convo.transform.localPosition = new Vector3(0f, -Screen.height, 1f);
+
+				// Used for switching between conversation template backgrounds
+				// For text where there is no character speaking,
+				// display a different background
+				Transform convoText = convo.Find("Conversation Text");
+				if (_nameText == "")
+				{
+					convo.GetComponent<UISprite>().spriteName = "regulartext";
+					convoText.GetComponent<UIWidget>().pivot = UIWidget.Pivot.Top;
+					convo.GetComponent<UISprite>().MarkAsChanged();
+				}
+				else
+				{
+					convo.GetComponent<UISprite>().spriteName = "conversation-template";
+					convoText.GetComponent<UIWidget>().pivot = UIWidget.Pivot.TopLeft;
+					convo.GetComponent<UISprite>().MarkAsChanged();
 				}
 			}
-
-			uiroot.transform.Find("Conversation Bubble").transform.localPosition = new Vector3(0f, -Screen.height, 1f);
 
 			//runOnce = false;
 		}
