@@ -12,6 +12,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   m_Layer: 10
   m_Name: door10
   m_TagString: Untagged
@@ -71,6 +72,18 @@ MonoBehaviour:
   x: -8.72952461
   y: -5.3029108
   mouseOverIcon: Door_Icon
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolText: 
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

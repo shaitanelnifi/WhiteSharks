@@ -547,6 +547,7 @@ GameObject:
   - 61: {fileID: 1053749167}
   - 50: {fileID: 1053749166}
   - 114: {fileID: 1053749165}
+  - 114: {fileID: 1053749170}
   m_Layer: 10
   m_Name: door10
   m_TagString: Untagged
@@ -633,6 +634,19 @@ Transform:
   m_LocalScale: {x: .0641381219, y: .782176375, z: .949355006}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1053749170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 99870bb5d1c6240c1bcd84e40a9d3e47,
+    type: 2}
+  m_PrefabInternal: {fileID: 1853210604}
+  m_GameObject: {fileID: 1053749164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolText: To Room 10
 --- !u!1001 &1187974895
 Prefab:
   m_ObjectHideFlags: 0
@@ -1110,6 +1124,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
       propertyPath: y
       value: -2.79999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
+      propertyPath: toolText
+      value: To Room 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}

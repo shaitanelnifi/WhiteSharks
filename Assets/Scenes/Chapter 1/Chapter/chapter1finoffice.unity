@@ -1276,6 +1276,7 @@ GameObject:
   - 4: {fileID: 598078568}
   - 61: {fileID: 598078567}
   - 114: {fileID: 598078566}
+  - 114: {fileID: 598078569}
   m_Layer: 9
   m_Name: Door
   m_TagString: Untagged
@@ -1320,6 +1321,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &598078569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598078565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolText: To Balcony
 --- !u!1 &903885455
 GameObject:
   m_ObjectHideFlags: 0
