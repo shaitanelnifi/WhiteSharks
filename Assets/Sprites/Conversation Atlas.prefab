@@ -133,7 +133,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: KoushikiSans_0
     x: 915
-    y: 1676
+    y: 1646
     width: 255
     height: 127
     borderLeft: 0
@@ -146,7 +146,11 @@ MonoBehaviour:
     paddingBottom: 1
   - name: mayProfile
     x: 236
+<<<<<<< HEAD
     y: 1266
+=======
+    y: 1293
+>>>>>>> Modified Conversation Bubble and Atlas prefabs
     width: 116
     height: 189
     borderLeft: 0
@@ -171,8 +175,8 @@ MonoBehaviour:
     paddingTop: 14
     paddingBottom: 0
   - name: NoelAltSprite
-    x: 1326
-    y: 1654
+    x: 236
+    y: 1143
     width: 130
     height: 149
     borderLeft: 0
@@ -184,8 +188,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: PeijunShiSprite
-    x: 1171
-    y: 1647
+    x: 236
+    y: 1483
     width: 154
     height: 156
     borderLeft: 0
@@ -211,16 +215,16 @@ MonoBehaviour:
     paddingBottom: 0
   - name: regulartext
     x: 915
-    y: 1804
+    y: 1774
     width: 1024
-    height: 244
+    height: 274
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
-    paddingTop: 186
+    paddingTop: 156
     paddingBottom: 82
   - name: ShammySprite
     x: 0
