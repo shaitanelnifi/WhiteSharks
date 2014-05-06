@@ -653,6 +653,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
+      propertyPath: wall
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
@@ -779,8 +783,6 @@ GameObject:
   - 114: {fileID: 551225304}
   - 114: {fileID: 551225303}
   - 114: {fileID: 551225302}
-  - 114: {fileID: 551225298}
-  - 114: {fileID: 551225299}
   m_Layer: 2
   m_Name: wall
   m_TagString: Untagged
@@ -788,32 +790,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &551225298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 551225297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  diaNum: 3
-  offset: 0
-  wall: 1
---- !u!114 &551225299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 551225297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDist: 0
 --- !u!60 &551225300
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -885,7 +861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diaNum: 9
   offset: 0
-  wall: 0
+  wall: 1
 --- !u!1 &623330652
 GameObject:
   m_ObjectHideFlags: 0
@@ -5598,8 +5574,6 @@ GameObject:
   - 114: {fileID: 807297127}
   - 114: {fileID: 807297126}
   - 114: {fileID: 807297125}
-  - 114: {fileID: 807297121}
-  - 114: {fileID: 807297122}
   m_Layer: 2
   m_Name: wall
   m_TagString: Untagged
@@ -5607,32 +5581,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &807297121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 807297120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  diaNum: 3
-  offset: 0
-  wall: 1
---- !u!114 &807297122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 807297120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDist: 0
 --- !u!60 &807297123
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5703,7 +5651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diaNum: 9
   offset: 0
-  wall: 0
+  wall: 1
 --- !u!1 &930962146
 GameObject:
   m_ObjectHideFlags: 0
@@ -5929,6 +5877,10 @@ Prefab:
     - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[9].y
       value: 4.28829861
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
+      propertyPath: wall
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
@@ -6178,6 +6130,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
       propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
+      propertyPath: wall
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -6653,8 +6609,6 @@ GameObject:
   - 114: {fileID: 1897387591}
   - 114: {fileID: 1897387590}
   - 114: {fileID: 1897387589}
-  - 114: {fileID: 1897387585}
-  - 114: {fileID: 1897387588}
   m_Layer: 0
   m_Name: wall
   m_TagString: Untagged
@@ -6662,20 +6616,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1897387585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1897387584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  diaNum: 3
-  offset: 0
-  wall: 1
 --- !u!60 &1897387586
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6709,18 +6649,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &1897387588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1897387584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDist: 0
 --- !u!114 &1897387589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6762,7 +6690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diaNum: 9
   offset: 0
-  wall: 0
+  wall: 1
 --- !u!1 &2004265435
 GameObject:
   m_ObjectHideFlags: 0
