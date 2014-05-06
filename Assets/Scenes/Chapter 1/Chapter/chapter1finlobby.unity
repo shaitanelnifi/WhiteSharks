@@ -5671,6 +5671,7 @@ GameObject:
   - 61: {fileID: 1183584705}
   - 50: {fileID: 1183584704}
   - 114: {fileID: 1183584703}
+  - 114: {fileID: 1183584708}
   m_Layer: 10
   m_Name: door10
   m_TagString: Untagged
@@ -5757,6 +5758,19 @@ Transform:
   m_LocalScale: {x: .0232995991, y: .171834528, z: .949355006}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1183584708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 99870bb5d1c6240c1bcd84e40a9d3e47,
+    type: 2}
+  m_PrefabInternal: {fileID: 1858980340}
+  m_GameObject: {fileID: 1183584702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolText: To Office
 --- !u!1 &1330363805
 GameObject:
   m_ObjectHideFlags: 0
@@ -6037,6 +6051,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
       propertyPath: y
       value: -4.65999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
+      propertyPath: toolText
+      value: To Office
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}

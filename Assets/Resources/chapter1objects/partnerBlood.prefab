@@ -12,6 +12,7 @@ GameObject:
   - 212: {fileID: 21200000}
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400002}
+  - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: partnerBlood
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,11 +57,10 @@ MonoBehaviour:
   description: An unexplained blood splatter next to a terminal. Noel and Alexia are
     convinced this is relavant to other cases.
   profileImage: {fileID: 0}
-  guilt: 1
-  location: 0
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
+  myConvo: -1
   offset: 0
   mouseOverIcon: Grab_Icon
 --- !u!114 &11400002
@@ -75,6 +75,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDist: 4
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolText: Examine Blood
+  sizeOfFont: 24
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
