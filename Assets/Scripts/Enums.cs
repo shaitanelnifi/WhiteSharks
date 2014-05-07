@@ -92,6 +92,12 @@ public enum Convo {
 
 };
 
+public enum FadeType {
+	fadeIn = 0,
+	fadeOut = 1,
+	cycle = 2,
+};
+
 public enum GlobalBools {
 
 
