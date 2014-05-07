@@ -182,8 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccb9f51047d84ff0b564902671eb650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typeOfFade: 0
-  time: 1
+  typeOfFade: 2
+  time: 2
 --- !u!212 &962584754
 SpriteRenderer:
   m_ObjectHideFlags: 0
