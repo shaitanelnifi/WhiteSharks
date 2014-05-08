@@ -129,14 +129,9 @@ public class playerScript : CaseElement {
 		if(distance >0.1f){
 			Vector3 dir = (path.vectorPath[currentWayPoint]-transform.position).normalized *5f*Time.deltaTime;
 			Vector3 temp = transform.position + dir;
-			Debug.Log("sum : " + temp + ", position: " + transform.position + ", dir: " + dir);
 			transform.position = transform.position + dir;
-
-
-			
-				
-				if(Mathf.Abs(distance) > 1 && !SoundManager.Instance.isWalking) SoundManager.Instance.WalkSound();
-				else if(Mathf.Abs(distance) <= 1 && SoundManager.Instance.isWalking) SoundManager.Instance.StopWalk();
+			if(Mathf.Abs(distance) > 1 && !SoundManager.Instance.isWalking) SoundManager.Instance.WalkSound();
+			else if(Mathf.Abs(distance) <= 1 && SoundManager.Instance.isWalking) SoundManager.Instance.StopWalk();
 			
 		}
 		if((targetPosition.x - transform.position.x)<0 ){
