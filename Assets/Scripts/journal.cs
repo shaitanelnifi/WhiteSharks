@@ -48,10 +48,10 @@ public class journal : MonoBehaviour {
 	void Awake () {
 		if(!j){
 			j = this;
-			DontDestroyOnLoad(gameObject.transform.parent.gameObject);
+			DontDestroyOnLoad(gameObject);
 		}
 		else {
-			Destroy (gameObject.transform.parent.gameObject);
+			Destroy (gameObject);
 		}
 	}
 	
