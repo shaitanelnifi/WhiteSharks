@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .349999994, y: .349999994, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!61 &6100000
@@ -40,8 +40,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 3.37905192, y: 2.57283711}
-  m_Center: {x: .0954732895, y: -.0318245888}
+  m_Size: {x: 2, y: 3}
+  m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -59,7 +59,7 @@ MonoBehaviour:
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
-  myConvo: -1
+  myConvo: 17
   offset: 0
   conditions: 06000000
   mouseOverIcon: Grab_Icon
