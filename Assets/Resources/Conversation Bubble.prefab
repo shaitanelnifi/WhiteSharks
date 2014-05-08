@@ -1127,7 +1127,7 @@ MonoBehaviour:
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: .873417735
-  mAtlas: {fileID: 0}
+  mAtlas: {fileID: 11400000, guid: 2e1312de4b5c84e1ca11d1f70f1aaca8, type: 2}
   mSpriteName: JaneDoeSprite
   mType: 0
   mFillDirection: 4
@@ -1283,7 +1283,7 @@ MonoBehaviour:
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 3.45142007
-  mAtlas: {fileID: 0}
+  mAtlas: {fileID: 11400000, guid: 2e1312de4b5c84e1ca11d1f70f1aaca8, type: 2}
   mSpriteName: conversation-template-new
   mType: 0
   mFillDirection: 4
