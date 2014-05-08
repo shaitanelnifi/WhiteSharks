@@ -2428,8 +2428,13 @@
       <name>Jane and Shammy one</name>
       <startPage>0</startPage>
       <scrollPosition>
+<<<<<<< HEAD
         <x>251.04071</x>
         <y>232.01416</y>
+=======
+        <x>669.0711</x>
+        <y>747.105</y>
+>>>>>>> FETCH_HEAD
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -12781,8 +12786,13 @@
       <name>Jane and Nina's phone</name>
       <startPage>0</startPage>
       <scrollPosition>
+<<<<<<< HEAD
+        <x>2291.32544</x>
+        <y>2050.00928</y>
+=======
         <x>2080.327</x>
         <y>2455.328</y>
+>>>>>>> FETCH_HEAD
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -13904,8 +13914,13 @@
           <type>TextPhase</type>
           <theme />
           <position>
+<<<<<<< HEAD
             <x>2923.02954</x>
             <y>2697.02832</y>
+=======
+            <x>2581.02954</x>
+            <y>2921.02832</y>
+>>>>>>> FETCH_HEAD
           </position>
           <outs>
             <int>26</int>
@@ -13992,8 +14007,13 @@
           <id>27</id>
           <type>EndPhase</type>
           <position>
+<<<<<<< HEAD
+            <x>3278.32544</x>
+            <y>2743.01025</y>
+=======
             <x>3134.327</x>
             <y>2940.328</y>
+>>>>>>> FETCH_HEAD
           </position>
           <outs />
           <advanced>false</advanced>

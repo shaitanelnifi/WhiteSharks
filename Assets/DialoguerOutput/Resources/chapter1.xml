@@ -12781,8 +12781,8 @@
       <name>Jane and Nina's phone</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>2291.32544</x>
-        <y>2050.00928</y>
+        <x>2080.327</x>
+        <y>2455.328</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -13904,8 +13904,8 @@
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>2923.02954</x>
-            <y>2697.02832</y>
+            <x>2581.02954</x>
+            <y>2921.02832</y>
           </position>
           <outs>
             <int>26</int>
@@ -13992,8 +13992,8 @@
           <id>27</id>
           <type>EndPhase</type>
           <position>
-            <x>3278.32544</x>
-            <y>2743.01025</y>
+            <x>3134.327</x>
+            <y>2940.328</y>
           </position>
           <outs />
           <advanced>false</advanced>
