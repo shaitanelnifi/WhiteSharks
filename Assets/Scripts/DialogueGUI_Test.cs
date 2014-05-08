@@ -184,7 +184,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 					convo.GetComponent<UISprite>().spriteName = "conversation-template-new";
 					Vector3 scale = new Vector3(0.75f, 0.75f, 1.0f);
 					Vector3 pos = convo.transform.localPosition;
-					float offset = 200f;	// for shifting the prefab position
+					float offset = 0f;	// for shifting the prefab position
 					Vector3 newPos = new Vector3(pos.x + offset, pos.y, pos.z);
 					convo.GetComponent<UIWidget>().width = 4618;
 					convo.transform.localPosition = newPos;
