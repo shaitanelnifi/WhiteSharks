@@ -67,29 +67,48 @@ public class genericScene : MonoBehaviour {
 		//Debug.Log (debugMe);
 		if (GameManager.dialogueJustFinished && curDia < dialogue.Length - 1) {
 
-			GameManager.dialogueJustFinished = false;
-			curDia ++;
-			Dialoguer.StartDialogue((int)dialogue[curDia]);
+						GameManager.dialogueJustFinished = false;
+						curDia ++;
+						Dialoguer.StartDialogue ((int)dialogue [curDia]);
 
-		} else 
-		if ((int)dialogue[curDia] >= 0 && GameManager.dialogueJustFinished && curDia == dialogue.Length - 1) {
-			if (waitThisLong != -1){
-				yield return new WaitForSeconds (waitThisLong);
-				GameManager.Instance.playerInScene = isTherePlayer;
-				done = true;
-				if (isTherePlayer) {
-					if (!GameManager.Instance.playerInScene){
-						GameManager.Instance.playerInScene = true;
+				} else 
+		if ((int)dialogue [curDia] >= 0 && GameManager.dialogueJustFinished && curDia == dialogue.Length - 1) {
+						if (waitThisLong != -1) {
+								yield return new WaitForSeconds (waitThisLong);
+								GameManager.Instance.playerInScene = isTherePlayer;
+								done = true;
+								if (isTherePlayer) {
+										if (!GameManager.Instance.playerInScene) {
+												GameManager.Instance.playerInScene = true;
+										}
+										Debug.Log ("Setting nexts to " + spawnHereAfter.x + " and " + spawnHereAfter.y);
+										GameManager.Instance.SetMainCharacter (whatCharacter);
+										GameManager.Instance.SetNextX (spawnHereAfter.x);
+										GameManager.Instance.SetNextY (spawnHereAfter.y);
+								}
+								GameManager.dialogueJustFinished = false;
+								SoundManager.Instance.CantWalk ();
+								Application.LoadLevel (nextLevel);
+						}
+				} else if (dialogue [curDia].Equals (Convo.none)) {
+					if (waitThisLong != -1) {
+						yield return new WaitForSeconds (waitThisLong);
+						GameManager.Instance.playerInScene = isTherePlayer;
+						done = true;
+						if (isTherePlayer) {
+							if (!GameManager.Instance.playerInScene) {
+								GameManager.Instance.playerInScene = true;
+							}
+							Debug.Log ("Setting nexts to " + spawnHereAfter.x + " and " + spawnHereAfter.y);
+							GameManager.Instance.SetMainCharacter (whatCharacter);
+							GameManager.Instance.SetNextX (spawnHereAfter.x);
+							GameManager.Instance.SetNextY (spawnHereAfter.y);
+						}
+						GameManager.dialogueJustFinished = false;
+						SoundManager.Instance.CantWalk ();
+						Application.LoadLevel (nextLevel);
 					}
-					Debug.Log("Setting nexts to " + spawnHereAfter.x + " and " + spawnHereAfter.y);
-					GameManager.Instance.SetMainCharacter (whatCharacter);
-					GameManager.Instance.SetNextX (spawnHereAfter.x);
-					GameManager.Instance.SetNextY (spawnHereAfter.y);
-				}
-				GameManager.dialogueJustFinished = false;
-				SoundManager.Instance.CantWalk();
-				Application.LoadLevel (nextLevel);
-			}
+				
 		}
 	}
 }
