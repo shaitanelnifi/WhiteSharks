@@ -17886,6 +17886,114 @@ out the files.</text>
         <selection>0</selection>
       </booleans>
     </DialogueEditorDialogueObject>
+    <DialogueEditorDialogueObject>
+      <id>35</id>
+      <name>Journal Add</name>
+      <startPage>0</startPage>
+      <scrollPosition>
+        <x>0</x>
+        <y>0</y>
+      </scrollPosition>
+      <phases>
+        <DialogueEditorPhaseObject>
+          <id>0</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>166</x>
+            <y>143</y>
+          </position>
+          <outs>
+            <int>1</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>I'll add this to my journal.</text>
+          <name>Jane Doe</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>1</id>
+          <type>EndPhase</type>
+          <position>
+            <x>727</x>
+            <y>103</y>
+          </position>
+          <outs />
+          <advanced>false</advanced>
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+      </phases>
+      <floats>
+        <variables />
+        <selection>0</selection>
+      </floats>
+      <strings>
+        <variables />
+        <selection>0</selection>
+      </strings>
+      <booleans>
+        <variables />
+        <selection>0</selection>
+      </booleans>
+    </DialogueEditorDialogueObject>
   </dialogues>
   <globals>
     <booleans>
@@ -17972,5 +18080,5 @@ out the files.</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>34</currentDialogueId>
+  <currentDialogueId>35</currentDialogueId>
 </DialogueEditorMasterObject>

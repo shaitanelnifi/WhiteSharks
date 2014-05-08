@@ -59,12 +59,12 @@ public class CaseObject : CaseElement {
 			journal.inventory.Add(this);
 			uiThing.SendMessage("addObject", this);
 			DestroyObject(gameObject);
+			Dialoguer.StartDialogue(GameManager.pickUpConvo);
 		} else if (myConvo != Convo.none) {
 			Dialoguer.StartDialogue ((int)myConvo);
 			player.talking = true;
 			player.canWalk = false;
 		}
-
 
 
 
