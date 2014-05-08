@@ -108,7 +108,6 @@ public class genericScene : MonoBehaviour {
 						SoundManager.Instance.CantWalk ();
 						Application.LoadLevel (nextLevel);
 					}
-				
 		}
 	}
 }
