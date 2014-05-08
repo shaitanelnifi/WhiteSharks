@@ -104,14 +104,17 @@ public class DialogueGUI_Test : MonoBehaviour {
 		{
 			uiroot.scalingStyle = UIRoot.Scaling.FixedSize;
 			uiroot.manualHeight = 600;
-			if (GameObject.Find ("Journal"))
-			{
-				uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(0.84f, 0.84f, 1f);
-			}
-			else
-			{
-				uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(1f, 1f, 1f);
-			}
+			uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(0.75f, 0.75f, 1f);
+
+			// This part possibly no longer necessary
+//			if (GameObject.Find ("Journal"))
+//			{
+//				uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(0.75f, 0.75f, 1f);
+//			}
+//			else
+//			{
+//				uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(0.75f, 0.75f, 1f);
+//			}
 		}
 	}
 	
@@ -146,14 +149,17 @@ public class DialogueGUI_Test : MonoBehaviour {
 				Transform convo = uiroot.transform.Find("Conversation Bubble");
 				uiroot.scalingStyle = UIRoot.Scaling.FixedSize;
 				uiroot.manualHeight = 600;
-				if (GameObject.Find ("Journal"))
-				{
-					convo.transform.localScale = new Vector3(0.84f, 0.84f, 1f);
-				}
-				else
-				{
-					convo.transform.localScale = new Vector3(1f, 1f, 1f);
-				}
+				convo.transform.localScale = new Vector3(0.75f, 0.75f, 1f);
+
+				// This part possibly no longer necessary
+//				if (GameObject.Find ("Journal"))
+//				{
+//					convo.transform.localScale = new Vector3(0.75f, 0.75f, 1f);
+//				}
+//				else
+//				{
+//					convo.transform.localScale = new Vector3(0.75f, 0.75f, 1f);
+//				}
 
 				convo.transform.localPosition = new Vector3(0f, -Screen.height, 1f);
 
@@ -164,12 +170,24 @@ public class DialogueGUI_Test : MonoBehaviour {
 				if (_nameText == "")
 				{
 					convo.GetComponent<UISprite>().spriteName = "regulartext";
+					Vector3 scale = new Vector3(3.0f, 0.75f, 1.0f);
+					Vector3 pos = convo.transform.localPosition;
+					float offset = 200f;	// for shifting the prefab position
+					Vector3 newPos = new Vector3(pos.x - offset, pos.y, pos.z);
+					convo.GetComponent<UIWidget>().width = 8000;
+					convo.transform.localPosition = newPos;
 					convoText.GetComponent<UIWidget>().pivot = UIWidget.Pivot.Top;
 					convo.GetComponent<UISprite>().MarkAsChanged();
 				}
 				else
 				{
-					convo.GetComponent<UISprite>().spriteName = "conversation-template";
+					convo.GetComponent<UISprite>().spriteName = "conversation-template-new";
+					Vector3 scale = new Vector3(0.75f, 0.75f, 1.0f);
+					Vector3 pos = convo.transform.localPosition;
+					float offset = 0f;	// for shifting the prefab position
+					Vector3 newPos = new Vector3(pos.x + offset, pos.y, pos.z);
+					convo.GetComponent<UIWidget>().width = 4618;
+					convo.transform.localPosition = newPos;
 					convoText.GetComponent<UIWidget>().pivot = UIWidget.Pivot.TopLeft;
 					convo.GetComponent<UISprite>().MarkAsChanged();
 				}
