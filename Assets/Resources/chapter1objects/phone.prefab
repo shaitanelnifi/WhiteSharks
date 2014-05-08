@@ -61,6 +61,7 @@ MonoBehaviour:
   maxDist: 1
   myConvo: -1
   offset: 0
+  conditions: 06000000
   mouseOverIcon: Grab_Icon
 --- !u!114 &11400002
 MonoBehaviour:

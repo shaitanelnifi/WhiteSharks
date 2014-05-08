@@ -5,6 +5,7 @@ public class CaseObject : CaseElement {
 
 	public int offset;
 	private GameObject uiThing;
+	public int[] conditions;
 
 	public string mouseOverIcon = "Grab_Icon";
 
@@ -29,24 +30,44 @@ public class CaseObject : CaseElement {
 		}
 	}
 
+	bool checkCondis(){
+
+		bool fulfilled = true;
+
+		for (int i = 0; i < conditions.Length; i++) {
+
+			Debug.LogWarning (conditions[i] + ": " + Dialoguer.GetGlobalBoolean(i));
+			if (!Dialoguer.GetGlobalBoolean(conditions[i])){
+				fulfilled = false;
+			}
+			Debug.LogWarning(fulfilled);
+
+		}
+		return fulfilled;
+
+	}
+
 	public void pickUpItem(){
 
-		//player.talking = true;
-		//Debug.LogError ("GOT IT: " + elementName);
 		player.stopMove ();
-		//SoundManager.Instance.StopWalk();
 		clickedOnSomething = false;
-		journal.inventory.Add(this);
-		uiThing.SendMessage("addObject", this);
-		if(this.elementName.Equals("Nina's Phone")){
-			Dialoguer.SetGlobalBoolean(1, true);
-		}
+
 		//Debug.LogError ("Inventory: " + journal.inventory[0]);
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);
-		player.canWalk = true;
-		if (myConvo != Convo.none)
+
+		if (checkCondis()) {
+			journal.inventory.Add(this);
+			uiThing.SendMessage("addObject", this);
+			DestroyObject(gameObject);
+		} else if (myConvo != Convo.none) {
 			Dialoguer.StartDialogue ((int)myConvo);
-		this.gameObject.SetActive(false);
+			player.talking = true;
+			player.canWalk = false;
+		}
+
+
+
+
 
 	}
 
