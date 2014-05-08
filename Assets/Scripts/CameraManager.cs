@@ -19,6 +19,8 @@ public class CameraManager : MonoBehaviour {
 	private float minY;
 	private float maxY;
 
+	private float bounds = .1f;
+
 	// Use this for initialization
 	void Start () {
 
@@ -46,12 +48,12 @@ public class CameraManager : MonoBehaviour {
 				playerPos = player.transform.position;
 		Vector3 nudgeVal = transform.position;
 		// negative
-		if (playerPos.x < 0 && Mathf.Abs(playerPos.x) > quarterX * 0.60f) {
+		if (playerPos.x < 0 && Mathf.Abs(playerPos.x) > quarterX * bounds) {
 			//nudgeVal.x += -0.05f;
 			nudgeVal.x = Mathf.Clamp(nudgeVal.x - 0.1f, -quarterX, quarterX);
 			transform.position = nudgeVal;
 		}
-		else if (playerPos.x > 0 && Mathf.Abs (playerPos.x) > quarterX * 0.60f) {
+		else if (playerPos.x > 0 && Mathf.Abs (playerPos.x) > quarterX * bounds) {
 			//nudgeVal.x += 0.05f;
 			nudgeVal.x = Mathf.Clamp (nudgeVal.x + 0.1f, -quarterX, quarterX);
 			transform.position = nudgeVal;
