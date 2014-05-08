@@ -13,8 +13,8 @@ public class journal : MonoBehaviour {
 	public static journal Instance {
 		get {
 			if (instance == null) {
-				Debug.Log("JOURNAL: Instance null, creating new Journal");
-				instance = new GameObject("journal").AddComponent<journal>();
+				Debug.Log("JOURNAL: Instance null, setting journal to self.");
+				instance = j;
 			}
 			return instance;
 		}
@@ -48,11 +48,11 @@ public class journal : MonoBehaviour {
 	void Awake () {
 		if(!j){
 			j = this;
-			DontDestroyOnLoad(gameObject.transform.parent.gameObject);
+			DontDestroyOnLoad(gameObject.transform.parent.transform.parent.gameObject);
 		}
 		else {
 			if (gameObject.transform.parent.gameObject != null)
-			Destroy (gameObject.transform.parent.gameObject);
+			Destroy (gameObject.transform.parent.transform.parent.gameObject);
 		}
 	}
 	
