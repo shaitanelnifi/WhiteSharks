@@ -64,6 +64,7 @@ public enum clickableID {
 	cafeExitBlockedStart = 14,
 	bellyExitBlockedStart = 15,
 	leftExitBlockedStart = 16,
+	projector = 17,
 
 };
 
