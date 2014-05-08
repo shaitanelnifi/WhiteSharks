@@ -7,6 +7,8 @@ public class CaseObject : CaseElement {
 	private GameObject uiThing;
 	public int[] conditions;
 
+	public CaseObject[] associatedObjects;
+
 	public string mouseOverIcon = "Grab_Icon";
 
 	void Start(){
@@ -56,9 +58,8 @@ public class CaseObject : CaseElement {
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);
 
 		if (checkCondis()) {
-			journal.inventory.Add(this);
-			uiThing.SendMessage("addObject", this);
-			DestroyObject(gameObject);
+			handleAssociated();
+			collectItems();
 			Dialoguer.StartDialogue(GameManager.pickUpConvo);
 		} else if (myConvo != Convo.none) {
 			Dialoguer.StartDialogue ((int)myConvo);
@@ -66,11 +67,23 @@ public class CaseObject : CaseElement {
 			player.canWalk = false;
 		}
 
+	}
 
 
+	public void handleAssociated(){
+
+		for (int i = 0; i < associatedObjects.Length; i++) {
+			var temp = Instantiate(associatedObjects[i]) as CaseObject;
+			temp.collectItems();
+		}
 
 	}
 
+	public void collectItems(){
+		journal.inventory.Add(this);
+		uiThing.SendMessage("addObject", this);
+		DestroyObject(gameObject);
+	}
 
 	void Update(){
 
