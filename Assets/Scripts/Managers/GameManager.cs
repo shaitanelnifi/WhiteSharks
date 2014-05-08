@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour {
 	public static string[] spriteIndex;
 	public static Texture2D currMouse;
 	public static int offset = 0;
+	public static int pickUpConvo = 36;
 
 
 	public static GameManager Instance {
