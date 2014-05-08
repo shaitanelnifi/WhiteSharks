@@ -12597,8 +12597,8 @@
       <name>Jane and Nina's phone</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>0</y>
+        <x>2080.327</x>
+        <y>2455.328</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -13769,7 +13769,7 @@
             <y>2471</y>
           </position>
           <outs>
-            <int>25</int>
+            <int>27</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -13802,6 +13802,45 @@
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>27</id>
+          <type>EndPhase</type>
+          <position>
+            <x>3134.327</x>
+            <y>2940.328</y>
+          </position>
+          <outs />
+          <advanced>false</advanced>
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
       </phases>
@@ -18142,8 +18181,13 @@ out the files.</text>
           <variable>false</variable>
           <id>5</id>
         </DialogueEditorVariableObject>
+        <DialogueEditorVariableObject>
+          <name>unlockedPhone</name>
+          <variable>false</variable>
+          <id>6</id>
+        </DialogueEditorVariableObject>
       </variables>
-      <selection>5</selection>
+      <selection>6</selection>
     </booleans>
     <floats>
       <variables>
@@ -18189,5 +18233,5 @@ out the files.</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>36</currentDialogueId>
+  <currentDialogueId>17</currentDialogueId>
 </DialogueEditorMasterObject>
