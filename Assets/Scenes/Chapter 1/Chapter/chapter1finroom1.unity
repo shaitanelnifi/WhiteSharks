@@ -899,6 +899,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: .5
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 2047e213014c52d43a59ea7afb6d6c1f, type: 2}
+      propertyPath: toolText
+      value: Deactivate Hologram
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2047e213014c52d43a59ea7afb6d6c1f, type: 2}
   m_RootGameObject: {fileID: 1432209357}
@@ -1732,6 +1736,7 @@ GameObject:
   - 114: {fileID: 1432209359}
   - 212: {fileID: 1432209358}
   - 114: {fileID: 1432209362}
+  - 114: {fileID: 1432209363}
   m_Layer: 0
   m_Name: Digibox
   m_TagString: Untagged
@@ -1814,6 +1819,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDist: 6
+--- !u!114 &1432209363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 2047e213014c52d43a59ea7afb6d6c1f,
+    type: 2}
+  m_PrefabInternal: {fileID: 817253106}
+  m_GameObject: {fileID: 1432209357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolText: Deactivate Hologram
+  sizeOfFont: 24
 --- !u!1 &1463012534
 GameObject:
   m_ObjectHideFlags: 0
@@ -2005,6 +2024,7 @@ GameObject:
   - 61: {fileID: 1634728011}
   - 95: {fileID: 1634728015}
   - 114: {fileID: 1634728016}
+  - 114: {fileID: 1634728017}
   m_Layer: 0
   m_Name: Shammy
   m_TagString: Untagged
@@ -2109,6 +2129,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDist: 6
+--- !u!114 &1634728017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: d4ca5765567e743f5b7ad7717198a638,
+    type: 2}
+  m_PrefabInternal: {fileID: 1189909296}
+  m_GameObject: {fileID: 1634728010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolText: Talk
+  sizeOfFont: 24
 --- !u!1 &1675740779
 GameObject:
   m_ObjectHideFlags: 0
@@ -21939,6 +21973,7 @@ GameObject:
   - 212: {fileID: 2097457555}
   - 61: {fileID: 2097457554}
   - 114: {fileID: 2097457553}
+  - 114: {fileID: 2097457558}
   m_Layer: 10
   m_Name: NinaWalker
   m_TagString: Untagged
@@ -22028,3 +22063,17 @@ Transform:
   m_LocalScale: {x: .649999976, y: .649999976, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &2097457558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: e272233e040da41df924bf5730188f88,
+    type: 2}
+  m_PrefabInternal: {fileID: 1222521169}
+  m_GameObject: {fileID: 2097457552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolText: Talk
+  sizeOfFont: 24
