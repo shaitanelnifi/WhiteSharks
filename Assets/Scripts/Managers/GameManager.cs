@@ -200,6 +200,8 @@ public class GameManager : MonoBehaviour {
 
 	public void OnGUI() {
 		//GUI.TextArea(new Rect(1, 1, 100, 20), _currentState.ToString());
+		GUI.Label (new Rect (Screen.width / 3.5f, Screen.height - 20f, Screen.width, 50f),
+		           "ALPHA - NOT REPRESENTATIVE OF FINAL GAMEPLAY");
 
 		//Handle mouse updates here
 
@@ -250,6 +252,7 @@ public class GameManager : MonoBehaviour {
 		// Used for Dialoguer components
 		//Debug.Log ("Persocets, Adderall, Ecstasy, PMW");
 		DialogueGUI_Test dGUI = gameObject.AddComponent<DialogueGUI_Test> ();
+
 		//dGUI.setSkin(Resources.Load ("OldSchool") as GUISkin);
 
 		npcList.Add(Resources.Load<NPC>("LiamOShea"));
