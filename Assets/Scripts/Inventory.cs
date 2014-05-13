@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Inventory : MonoBehaviour {
+public class Inventory {
 
 	public List<string> names = new List<string>();
 	public List<Sprite> icons = new List<Sprite>();
