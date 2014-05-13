@@ -43,7 +43,7 @@ public class journal : MonoBehaviour {
 
 	public UILabel descriptionLabel, panelNameLabel, timeLabel;
 
-	public static Inventory inventory;
+	public static Inventory inventory = new Inventory();
 	
 	void Awake () {
 		if(!j){
@@ -67,7 +67,7 @@ public class journal : MonoBehaviour {
 		personsOfInterest.Add (nina);
 		personsOfInterest.Add (josh);
 
-		inventory = new Inventory();
+		//inventory = new Inventory();
 
 		UIEventListener.Get (viewTab1).onClick += this.onClick;
 		UIEventListener.Get (viewTab2).onClick += this.onClick;
