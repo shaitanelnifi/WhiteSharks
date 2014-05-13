@@ -12,10 +12,15 @@ public class CaseObject : CaseElement {
 	public string mouseOverIcon = "Grab_Icon";
 
 	void Start(){
-	
+		Debug.Log ("asda");
+		Debug.Log (this.elementName);
+		if (journal.inventory.Contain (this)) {	
+			Debug.Log ("inside");
+			DestroyObject (gameObject);
+		}
 		base.Init ();
 		uiThing = GameObject.Find("Journal");
-	
+
 	}
 
 	public void OnMouseEnter(){
@@ -90,8 +95,8 @@ public class CaseObject : CaseElement {
 		if (player == null)
 			player = (playerScript) FindObjectOfType(typeof(playerScript));
 
-		if (Input.GetMouseButton (0)) 
-			onMouseMiss ();
+		//if (Input.GetMouseButton (0)) 
+		//	onMouseMiss ();
 
 		if (player.canWalk == true && clickedOnSomething)
 			if (pDist.isCloseEnough (player.transform.position))

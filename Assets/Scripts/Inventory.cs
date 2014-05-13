@@ -2,7 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 
+
 public class Inventory {
+
 
 	public List<string> names = new List<string>();
 	public List<Sprite> icons = new List<Sprite>();
@@ -20,12 +22,24 @@ public class Inventory {
 		//Debug.LogError ("What Am I? " + addMe);
 		if (!names.Contains (addMe.elementName)) {
 			names.Add (addMe.elementName);
+
 			icons.Add (addMe.profileImage);
 			descriptions.Add (addMe.description);
 			Count++;
+			Debug.Log("John is testing this "+ names.Count.ToString());
+
 		} else
 			Debug.Log ("Object already held: " + addMe.elementName);
 
+	}
+	public bool Contain(CaseObject obj){
+
+		bool result = names.Contains (obj.elementName);
+		Debug.Log (result.ToString());
+
+		Debug.Log (names.Count.ToString ());
+
+		return result;
 	}
 
 	public string getName(int which){

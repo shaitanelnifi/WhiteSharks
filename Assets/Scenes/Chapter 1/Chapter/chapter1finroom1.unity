@@ -357,7 +357,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
       propertyPath: m_Layer
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[3].x
@@ -728,7 +728,7 @@ GameObject:
   - 114: {fileID: 807297127}
   - 114: {fileID: 807297126}
   - 114: {fileID: 807297125}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
