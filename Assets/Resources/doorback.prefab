@@ -9,10 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
-  - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
+  - 60: {fileID: 6000000}
   m_Layer: 10
   m_Name: doorback
   m_TagString: Untagged
@@ -46,8 +46,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!61 &6100000
-BoxCollider2D:
+--- !u!60 &6000000
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -55,8 +55,12 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 17.5500011, y: 4.67999983}
-  m_Center: {x: 0, y: 0}
+  m_Poly:
+    m_Paths:
+    - - {x: -8.77500057, y: 2.3394289}
+      - {x: -8.77500057, y: -2.3394289}
+      - {x: 8.77500057, y: -2.3394289}
+      - {x: 8.77500057, y: 2.3394289}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -84,6 +88,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolText: 
+  sizeOfFont: 24
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

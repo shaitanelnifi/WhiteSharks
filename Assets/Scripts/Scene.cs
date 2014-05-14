@@ -14,7 +14,7 @@ public class Scene : MonoBehaviour {
 	public int id;
 	// Use this for initialization
 	void Start () {
-
+		AstarPath.active.Scan ();
 		backEffect = (GameObject)Instantiate(Resources.Load("effect"));
 		string temp = (string)GameManager.Instance.GetMainCharacter ();
 		player = (GameObject)Instantiate(Resources.Load((temp)));

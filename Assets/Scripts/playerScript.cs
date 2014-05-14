@@ -43,8 +43,13 @@ public class playerScript : CaseElement {
 	bool lastNode;
 
 
+	float baseScale;
+	float scaleAmount;
+
+
 
 	void Start(){
+		baseScale = 0;
 		seeker = GetComponent<Seeker>();
 		SoundManager.Instance.CanWalk();
 		if(Application.loadedLevelName == "chapter1finbalcony") {
@@ -88,6 +93,19 @@ public class playerScript : CaseElement {
 		}
 	}
 
+/*	public void scale(Vector3 oldPosition){
+		float difference = transform.position.y - oldPosition.y;
+		baseScale = baseScale + difference;
+		if (baseScale > scaleTrigger) {
+			baseScale = 0;
+			transform.localScale = new Vector2 (-scaleAmount, -scaleAmount);
+		}
+		else if (baseScale < scaleTrigger){
+			transform.localScale = new Vector2 (scaleAmount, scaleAmount);
+			baseScale = 0;
+		}
+	
+	}*/
 
 	void FixedUpdate(){	
 		lastNode = false;
@@ -115,21 +133,23 @@ public class playerScript : CaseElement {
 		if(path == null||currentWayPoint> path.vectorPath.Count){
 			return;
 		}
-		//Vector3 dir = (path.vectorPath[currentWayPoint]-transform.position).normalized *modSpeed*Time.deltaTime;
+
 		distance = Vector2.Distance (transform.position, targetPosition);
 
 		if(currentWayPoint < path.vectorPath.Count-1){
 			//Debug.Log("count: " +path.vectorPath.Count);
-			if(Vector3.Distance(transform.position, path.vectorPath[currentWayPoint]) < 1.5f){
+			if(Vector3.Distance(transform.position, path.vectorPath[currentWayPoint]) < 0.5f){
+
 				currentWayPoint++;	
-				//Debug.Log("current way point:"+currentWayPoint);
+
 			}
 		}
-		//Debug.Log("Last way point222:"+currentWayPoint);
+
 		if(distance >0.1f){
-			Vector3 dir = (path.vectorPath[currentWayPoint]-transform.position).normalized *5f*Time.deltaTime;
-			Vector3 temp = transform.position + dir;
+			Vector3 dir = (path.vectorPath[currentWayPoint]-transform.position).normalized *baseSpeed*Time.deltaTime;
+			Vector3 oldPosition = transform.position;
 			transform.position = transform.position + dir;
+		
 			if(Mathf.Abs(distance) > 1 && !SoundManager.Instance.isWalking) SoundManager.Instance.WalkSound();
 			else if(Mathf.Abs(distance) <= 1 && SoundManager.Instance.isWalking) SoundManager.Instance.StopWalk();
 			
@@ -187,11 +207,24 @@ public class playerScript : CaseElement {
 	//change scene when collide with door
 	void OnTriggerEnter2D(Collider2D collider){
 
-		//canScale = false;
-		//int coolDown = 30;
-		DoorScript doorObj = collider.gameObject.GetComponent<DoorScript> ();
+		DoorTrigger (collider);
+	
+	}
 
+	void scaleTrigger(Collider2D collider){
+		toggleScale scaleToggleObj = collider.gameObject.GetComponent<toggleScale> ();
+		if (scaleToggleObj != null) {
+			canScale = !canScale;
+		}
+	}
+
+
+	void DoorTrigger(Collider2D collider ){
+
+		DoorScript doorObj = collider.gameObject.GetComponent<DoorScript> ();
+		
 		if (doorObj != null){ 
+			canScale = false;
 			gameObject.collider2D.enabled = false;
 			renderer.enabled = false;
 			if (backEffect == null){
@@ -203,11 +236,12 @@ public class playerScript : CaseElement {
 		else {
 			renderer.enabled = true;
 		}
-		string temp;
+		
 		int tempIndex;
 		if (doorObj != null) {
 			doorObj.useDoor();
 		}
+	
 	}
 
 	//flips the sprite or animation
