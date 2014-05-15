@@ -174,7 +174,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 //					convo.transform.localScale = new Vector3(0.75f, 0.75f, 1f);
 //				}
 
-				convo.transform.localPosition = new Vector3(0f, -Screen.height, 1f);
+				convo.transform.localPosition = new Vector3(0f, -Screen.height*0.6f, 1f);
 
 				// Used for switching between conversation template backgrounds
 				// For text where there is no character speaking,
