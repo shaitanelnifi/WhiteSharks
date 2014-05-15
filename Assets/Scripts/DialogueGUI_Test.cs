@@ -85,6 +85,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 	}
 	
 	private void onDialogueTextPhaseHandler(DialoguerTextData data){
+		resetChoiceColor ();
 		_windowCurrentText = string.Empty;
 		_windowTargetText = data.text;
 		
@@ -129,7 +130,19 @@ public class DialogueGUI_Test : MonoBehaviour {
 		}
 		return list;
 	}
-	
+
+	private void resetChoiceColor()
+	{
+		if (GameObject.Find ("BranchedChoices"))
+		{
+			Component[] buttons = GameObject.Find ("BranchedChoices").GetComponentsInChildren(typeof(UIWidget));
+			foreach (Component button in buttons)
+			{
+				button.GetComponent<UIWidget>().color = new Color(255f, 255f, 255f);
+			}
+		}
+	}
+
 	// Update is called once per frame
 	void Update () {
 
