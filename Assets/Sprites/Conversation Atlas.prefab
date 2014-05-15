@@ -41,8 +41,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 7006119f8430349b6beacf1765e05c76, type: 2}
   mSprites:
   - name: AlexiaRossSprite
-    x: 3525
-    y: 3743
+    x: 3348
+    y: 3736
     width: 135
     height: 183
     borderLeft: 0
@@ -197,8 +197,8 @@ MonoBehaviour:
     paddingTop: 14
     paddingBottom: 0
   - name: NoelAltSprite
-    x: 3348
-    y: 3736
+    x: 3525
+    y: 3743
     width: 135
     height: 183
     borderLeft: 0
