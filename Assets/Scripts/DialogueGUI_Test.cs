@@ -33,6 +33,8 @@ public class DialogueGUI_Test : MonoBehaviour {
 	private string leftSpriteName;
 	private string rightSpriteName;
 	private string name;
+	private string _metadata;
+	private List<string[]> _parsedmetadata;
 
 	private int choiceIndex;
 	private float time;
@@ -43,12 +45,6 @@ public class DialogueGUI_Test : MonoBehaviour {
 		addDialoguerEvents();
 
 		_showDialogueBox = false;
-
-
-
-//		UISprite spr = GameObject.Find ("LeftCharacter").GetComponent<UISprite> ();
-//		spr.spriteName = "LiamO'SheaSprite";
-//		spr.MarkAsChanged ();
 	}
 
 	#region Dialoguer
@@ -100,21 +96,15 @@ public class DialogueGUI_Test : MonoBehaviour {
 		_branchedTextChoices = data.choices;
 		_currentChoice = 0;
 
+		// Parse the metadata
+		_metadata = data.metadata;
+		_parsedmetadata = parseString(data.metadata.Split(' '));
+
 		if (uiroot != null)
 		{
 			uiroot.scalingStyle = UIRoot.Scaling.FixedSize;
 			uiroot.manualHeight = 600;
 			uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(0.75f, 0.75f, 1f);
-
-			// This part possibly no longer necessary
-//			if (GameObject.Find ("Journal"))
-//			{
-//				uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(0.75f, 0.75f, 1f);
-//			}
-//			else
-//			{
-//				uiroot.transform.Find("Conversation Bubble").transform.localScale = new Vector3(0.75f, 0.75f, 1f);
-//			}
 		}
 	}
 	
@@ -129,6 +119,16 @@ public class DialogueGUI_Test : MonoBehaviour {
 
 	}
 	#endregion
+
+	List<string[]> parseString(string[] str)
+	{
+		List<string[]> list = new List<string[]>();
+		for (int i = 0; i < str.Length; ++i)
+		{
+			list.Add (str[i].Split(':'));
+		}
+		return list;
+	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -213,10 +213,58 @@ public class DialogueGUI_Test : MonoBehaviour {
 		{
 			enableColliders();
 			repopulateChoices();
-			for (int i = 0; i < _branchedTextChoices.Length; ++i)
+			label.text = "";	// Clear conversation text field
+			if (_metadata == "")
 			{
-				label.text = "";	// Clear conversation text field
-				choices[i].text = _branchedTextChoices[i];
+				for (int i = 0; i < _branchedTextChoices.Length; ++i)
+				{
+					choices[i].text = _branchedTextChoices[i];		
+				}
+			}
+			else
+			{
+				/// For parsing metadata
+				List<int> mylist = new List<int>();
+				List<int> newlist = new List<int>();
+				for (int i = 1; i <= _branchedTextChoices.Length; ++i)
+				{
+					mylist.Add(i);
+					newlist.Add(i);
+				}
+				List<int> metalist = new List<int>();
+				List<int> varlist = new List<int>();
+				foreach (string[] ele in _parsedmetadata)
+				{
+					metalist.Add (int.Parse(ele[0].Trim(',')));
+					varlist.Add (int.Parse (ele[2].Trim(',')));
+				}
+				foreach (int i in mylist)
+				{
+					foreach(int j in metalist)
+					{
+						if (i == j)
+						{
+							newlist.Remove(i);
+						}
+					}
+				}
+				foreach (int i in newlist)
+				{
+					choices[i-1].text = _branchedTextChoices[i-1];
+				}
+				int itor = 0;
+				foreach (int i in metalist)
+				{
+					if (Dialoguer.GetGlobalBoolean(varlist[itor]))
+					{
+						choices[i-1].text = _branchedTextChoices[i-1];
+					}
+					else
+					{
+						choices[i-1].text = "";
+					}
+					++itor;
+				}
 			}
 		}
 		// Regular text
@@ -378,5 +426,15 @@ public class DialogueGUI_Test : MonoBehaviour {
 		{
 			this.rightSpriteName = rightSpriteName;
 		}
+	}
+
+	public string getMetadata()
+	{
+		if (_metadata == null)
+		{
+			Debug.LogError("Metadata is null!");
+		}
+
+		return _metadata;
 	}
 }
