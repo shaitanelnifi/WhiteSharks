@@ -95,13 +95,18 @@ public class CaseObject : CaseElement {
 		if (player == null)
 			player = (playerScript) FindObjectOfType(typeof(playerScript));
 
-		//if (Input.GetMouseButton (0)) 
-		//	onMouseMiss ();
+		if (clickedOnSomething) 
+			onMouseMiss ();
 
-		if (player.canWalk == true && clickedOnSomething)
+		if (clickedOnSomething)
 			if (pDist.isCloseEnough (player.transform.position))
 				pickUpItem ();
 
+		if (pDist.isCloseEnough (player.transform.position) && checkCondis () && !player.talking) {
+			handleAssociated();
+			collectItems();
+			Dialoguer.StartDialogue(GameManager.pickUpConvo);
+		}
 	}
 
 }

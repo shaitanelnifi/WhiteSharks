@@ -13,7 +13,7 @@ public class objectContainer : MonoBehaviour {
 	private playerScript player;
 	private distanceCheck pDist;
 
-    private GameObject journal;
+    private GameObject uiThing;
 	
 	public void OnMouseEnter(){
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);
@@ -37,7 +37,14 @@ public class objectContainer : MonoBehaviour {
 			maxDist = GameManager.Instance.maxDist;
 		player = (playerScript) FindObjectOfType(typeof(playerScript));
 		pDist = gameObject.GetComponent<distanceCheck>();
-        journal = GameObject.Find("UI Root");
+        
+
+		if (journal.inventory.Contain (iHoldThis)) {	
+			Debug.Log ("inside");
+			DestroyObject (gameObject);
+		}
+
+		uiThing = GameObject.Find("Journal");
 	}
 
 	public void revealItem(){
@@ -56,19 +63,23 @@ public class objectContainer : MonoBehaviour {
 
 	public void onMouseMiss(){
 		
-		RaycastHit hit = new RaycastHit ();        
-		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-		
-		if (Physics.Raycast (ray, out hit))
-			if (hit.collider.gameObject != this.gameObject)
+		if (Input.GetMouseButton (0)) {
+			//Debug.LogWarning("Checking click.");      
+			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+			if (hit.collider != null) {
+				Debug.LogWarning ("Ray hit object");
+				if (hit.collider.gameObject != this.gameObject) 
+					clickedOnSomething = false;
+			} else 
 				clickedOnSomething = false;
+		}
 		
 	}
 
 	void Update(){
 
-		if (Input.GetMouseButton (0))
-			onMouseMiss();
+		if (clickedOnSomething) 
+			onMouseMiss ();
 
 		if (player == null)
 			player = (playerScript) FindObjectOfType(typeof(playerScript));

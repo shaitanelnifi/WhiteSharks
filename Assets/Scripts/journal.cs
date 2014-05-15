@@ -223,6 +223,17 @@ public class journal : MonoBehaviour {
 		objectButtonGrid.GetComponent<UIGrid>().Reposition();
 	}
 
+	public void addObject(objectContainer newObject){
+		changeView (1);
+		GameObject tempButton = (GameObject)Instantiate (buttonPrefab, objectButtonGrid.transform.position, objectButtonGrid.transform.rotation);
+		tempButton.transform.parent = objectButtonGrid.transform;
+		tempButton.transform.GetComponentInChildren<UILabel>().text = inventory.getName (inventory.Count - 1);
+		tempButton.transform.localScale = new Vector3(1,1,1);
+		UIEventListener.Get (tempButton).onClick += this.onClick;
+		objectButtonList.Add (tempButton);
+		objectButtonGrid.GetComponent<UIGrid>().Reposition();
+	}
+
 	//Clear description labels. Might rename and add obj/poi grid on/off.
 	void clearLabels(){
 		panelNameLabel.text = "";

@@ -40,12 +40,17 @@ public class Clickable : MonoBehaviour {
 
 	public void onMouseMiss(){
 		
-		RaycastHit hit = new RaycastHit ();        
-		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-		
-		if (Physics.Raycast (ray, out hit))
-			if (hit.collider.gameObject != this.gameObject)
+		if (Input.GetMouseButton (0)) {
+			//Debug.LogWarning("Checking click.");      
+			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+			if (hit.collider != null) {
+				Debug.LogWarning ("Ray hit object");
+				if (hit.collider.gameObject != this.gameObject) 
+					clickedOnSomething = false;
+			} else 
 				clickedOnSomething = false;
+		}
+		
 	}
 
 	public void startDialogue(){
@@ -71,7 +76,7 @@ public class Clickable : MonoBehaviour {
 		if (player == null)
 			player = (playerScript) FindObjectOfType(typeof(playerScript));
 
-		if (Input.GetMouseButtonDown (0))
+		if (clickedOnSomething) 
 			onMouseMiss ();
 
 		if (!wall) {
