@@ -6150,8 +6150,8 @@
       <name>Jane and Nina</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>812.8014</x>
-        <y>469.8001</y>
+        <x>246.025391</x>
+        <y>414.866821</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -6422,8 +6422,8 @@
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>655.010254</x>
-            <y>1111.011</y>
+            <x>647.010254</x>
+            <y>1157.011</y>
           </position>
           <outs>
             <int>7</int>
@@ -6806,7 +6806,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>47</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -7432,7 +7432,7 @@
           <variableId>5</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>47</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -12781,8 +12781,8 @@
       <name>Jane and Nina's phone</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>334.017334</x>
-        <y>1318.08228</y>
+        <x>54.0032959</x>
+        <y>168.010254</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -12875,8 +12875,8 @@
           <id>2</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>353</x>
-            <y>307</y>
+            <x>319</x>
+            <y>325</y>
           </position>
           <outs>
             <int>3</int>
@@ -12905,13 +12905,13 @@
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>Boolean</variableType>
-          <variableId>0</variableId>
+          <variableId>1</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>26</y>
+            <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
-          <variableSetValue>false</variableSetValue>
+          <variableSetValue>true</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
@@ -13270,7 +13270,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>26</y>
+            <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -13313,7 +13313,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>47</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
