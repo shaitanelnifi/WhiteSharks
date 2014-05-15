@@ -12,7 +12,7 @@ public class toggleScale : MonoBehaviour {
 		}
 		
 	}
-	void OnTriggerExit2D(Collider collider) {
+	void OnTriggerExit2D(Collider2D collider) {
 		playerScript playerObj = collider.gameObject.GetComponent<playerScript> ();
 		if (playerObj != null) {
 			playerObj.canScale = true;		

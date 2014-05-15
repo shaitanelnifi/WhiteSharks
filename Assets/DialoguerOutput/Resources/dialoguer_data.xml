@@ -12781,8 +12781,8 @@
       <name>Jane and Nina's phone</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>2080.327</x>
-        <y>2455.328</y>
+        <x>334.017334</x>
+        <y>1318.08228</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -12976,7 +12976,7 @@
             <int>21</int>
           </outs>
           <advanced>true</advanced>
-          <metadata>2:bool:2, 3:bool:3, 4:bool:4, 5:bool:5</metadata>
+          <metadata>2:boolIsTrue:2, 3:boolIsTrue:3, 4:boolIsTrue:4, 5:boolIsTrue:5</metadata>
           <text />
           <name>Jane Doe</name>
           <portrait />
@@ -13002,7 +13002,7 @@
             <string>SharkLight</string>
             <string>Shammy</string>
             <string>Noel</string>
-            <string>your password</string>
+            <string>Your password</string>
           </choices>
           <waitType>Seconds</waitType>
           <waitDuration>0</waitDuration>
@@ -13053,7 +13053,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>47</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -13491,7 +13491,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>26</y>
+            <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
