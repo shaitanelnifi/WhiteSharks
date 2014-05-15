@@ -18236,6 +18236,7 @@ out the files.</text>
         <DialogueEditorPhaseObject>
           <id>0</id>
           <type>TextPhase</type>
+          <theme />
           <position>
             <x>245</x>
             <y>118</y>
@@ -18243,10 +18244,10 @@ out the files.</text>
           <outs>
             <int>1</int>
           </outs>
-          <advanced>false</advanced>
+          <advanced>true</advanced>
           <metadata />
           <text>I'll add this to my journal.</text>
-          <name />
+          <name>Jane Doe</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -18415,7 +18416,7 @@ out the files.</text>
   </themes>
   <selectorScrollPosition>
     <x>0</x>
-    <y>20</y>
+    <y>92</y>
   </selectorScrollPosition>
-  <currentDialogueId>17</currentDialogueId>
+  <currentDialogueId>36</currentDialogueId>
 </DialogueEditorMasterObject>
