@@ -32,6 +32,7 @@ public class Inventory {
 			Debug.Log ("Object already held: " + addMe.elementName);
 
 	}
+
 	public bool Contain(CaseObject obj){
 
 		bool result = names.Contains (obj.elementName);
