@@ -249,6 +249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Talk
   sizeOfFont: 24
+  textAdjusts: {x: 157, y: 600}
 --- !u!1 &103631384
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,6 +654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Talk
   sizeOfFont: 24
+  textAdjusts: {x: 157, y: 330}
 --- !u!1 &529652769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1372,6 +1374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: To Balcony
   sizeOfFont: 24
+  textAdjusts: {x: 157, y: 75}
 --- !u!1 &903885455
 GameObject:
   m_ObjectHideFlags: 0

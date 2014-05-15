@@ -505,6 +505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: To Balcony
   sizeOfFont: 24
+  textAdjusts: {x: 150, y: 30}
 --- !u!1 &551225297
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,6 +569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: 
   sizeOfFont: 24
+  textAdjusts: {x: 150, y: 30}
 --- !u!114 &551225303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -778,6 +780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: 
   sizeOfFont: 24
+  textAdjusts: {x: 150, y: 30}
 --- !u!114 &807297126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -941,6 +944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: 
   sizeOfFont: 24
+  textAdjusts: {x: 150, y: 30}
 --- !u!114 &886007507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1614,6 +1618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Examine Poster (Sharklight)
   sizeOfFont: 24
+  textAdjusts: {x: 150, y: 30}
 --- !u!1001 &1189909296
 Prefab:
   m_ObjectHideFlags: 0
@@ -1917,6 +1922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Deactivate Hologram
   sizeOfFont: 24
+  textAdjusts: {x: 150, y: 30}
 --- !u!1 &1463012534
 GameObject:
   m_ObjectHideFlags: 0
@@ -2021,6 +2027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Examine Photo
   sizeOfFont: 24
+  textAdjusts: {x: 150, y: 30}
 --- !u!1001 &1494727541
 Prefab:
   m_ObjectHideFlags: 0
@@ -2275,6 +2282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Talk
   sizeOfFont: 24
+  textAdjusts: {x: 150, y: 30}
 --- !u!1 &1675740779
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,6 +2413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Examine Plushie
   sizeOfFont: 24
+  textAdjusts: {x: 150, y: 30}
 --- !u!1001 &1692288815
 Prefab:
   m_ObjectHideFlags: 0
@@ -2487,6 +2496,14 @@ Prefab:
     - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: toolText
       value: Examine Window
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: textAdjusts.x
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: textAdjusts.y
+      value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
@@ -21940,6 +21957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: 
   sizeOfFont: 24
+  textAdjusts: {x: 150, y: 30}
 --- !u!114 &1897387590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22001,6 +22019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: 
   sizeOfFont: 24
+  textAdjusts: {x: 150, y: 30}
 --- !u!114 &1963327970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22113,6 +22132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Examine Bed
   sizeOfFont: 24
+  textAdjusts: {x: 150, y: 30}
 --- !u!114 &2004265442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22225,6 +22245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Examine Window
   sizeOfFont: 24
+  textAdjusts: {x: 450, y: 90}
 --- !u!1 &2097457552
 GameObject:
   m_ObjectHideFlags: 0
@@ -22341,3 +22362,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Talk
   sizeOfFont: 24
+  textAdjusts: {x: 150, y: 485}

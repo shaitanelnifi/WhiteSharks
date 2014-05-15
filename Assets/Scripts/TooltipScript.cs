@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class TooltipScript : MonoBehaviour {
@@ -12,6 +12,11 @@ public class TooltipScript : MonoBehaviour {
 	private GUIStyle guiStyleBack;
 
 	private playerScript player;
+
+	private static bool revealAll = false;
+	private Vector3 point;
+
+	public Vector2 textAdjusts = new Vector2(157, 30);
 
 	// Use this for initialization
 	void Start(){
@@ -47,13 +52,32 @@ public class TooltipScript : MonoBehaviour {
 	}
 
 	void OnGUI(){
-		if (currText != ""){
-			var x = Input.mousePosition.x;
-			var y = Input.mousePosition.y;
+		if (currText != "" && !revealAll) {
+			float x = Input.mousePosition.x;
+			float y = Input.mousePosition.y;
 
-			GUI.Label (new Rect (x - 150, Screen.height - y - 30, 300, 60), currText, guiStyleBack);
-			GUI.Label (new Rect (x - 151, Screen.height - y - 29, 300, 60), currText, guiStyleFore);
+			GUI.Label (new Rect (x - textAdjusts.x, Screen.height - y - textAdjusts.y, 300, 60), currText, guiStyleBack);
+			GUI.Label (new Rect (x - textAdjusts.x + 1, Screen.height - y - textAdjusts.y + 1, 300, 60), currText, guiStyleFore);
+		} else if (revealAll) {
+			float x = point.x;
+			float y = point.y; // bottom left corner set to the 3D point
+
+			//Debug.LogWarning("SPACE2");
+
+			GUI.Label (new Rect (x - textAdjusts.x , Screen.height - y - textAdjusts.y * transform.localScale.y + 30, 300, 60), toolText, guiStyleBack);
+			GUI.Label (new Rect (x - textAdjusts.x + 1 , Screen.height - y - textAdjusts.y * transform.localScale.y + 31, 300, 60), toolText, guiStyleFore);
 		}
+	}
+
+	void Update(){
+
+			if (Input.GetKey (KeyCode.Space)) {
+				revealAll = true;
+				point = Camera.main.WorldToScreenPoint(transform.position);
+			} else {
+				revealAll = false;
+			}
+
 	}
 
 }
