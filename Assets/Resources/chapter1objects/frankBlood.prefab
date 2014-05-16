@@ -61,6 +61,8 @@ MonoBehaviour:
   maxDist: 1
   myConvo: -1
   offset: 0
+  conditions: 
+  associatedObjects: []
   mouseOverIcon: Grab_Icon
 --- !u!114 &11400002
 MonoBehaviour:
@@ -87,6 +89,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Examine Blood
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
