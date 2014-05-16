@@ -6238,8 +6238,8 @@
       <name>Jane and Nina</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>1128.02979</x>
-        <y>3995.085</y>
+        <x>499.9939</x>
+        <y>1864.95276</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -6824,7 +6824,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>If you don’t give me your password, I’ll take you in for obstruction to justice.</text>
+          <text>If you don’t give me your password, I’ll take you in for obstructing an investigation.</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -6894,7 +6894,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>47</y>
+            <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -6913,7 +6913,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>You’re not even a cop. You’re not even from here.</text>
+          <text>You’re not a cop. You’re not even from here.</text>
           <name>Nina Walker</name>
           <portrait />
           <audio />
@@ -7180,7 +7180,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>So… What’s your password?</text>
+          <text>So… what’s your password?</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -18691,5 +18691,5 @@ out the files.</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>4</currentDialogueId>
+  <currentDialogueId>8</currentDialogueId>
 </DialogueEditorMasterObject>
