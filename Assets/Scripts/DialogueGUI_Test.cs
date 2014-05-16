@@ -358,18 +358,16 @@ public class DialogueGUI_Test : MonoBehaviour {
 
 		leftChar.spriteName = leftSpriteName;
 		leftChar.MarkAsChanged();
-	}
 
-	// Enable single collider
-	private void enableCollider(UILabel choice)
-	{
-		choice.GetComponent<BoxCollider> ().enabled = true;
-	}
-
-	// Disable single colldier
-	private void disableCollider(UILabel choice)
-	{
-		choice.GetComponent<BoxCollider> ().enabled = false;
+//		if (_nameText.Equals("Jane Doe"))
+//		{
+//			rightSpriteName = "JaneSprite";
+//		} else if (_nameText.Equals("Frank")) {
+//			rightSpriteName = "FrankSprite";
+//		}
+//
+//		rightChar.spriteName = rightSpriteName;
+//		rightChar.MarkAsChanged();
 	}
 
 	// Enable single collider
