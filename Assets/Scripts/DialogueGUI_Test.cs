@@ -264,6 +264,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 				foreach (int i in newlist)
 				{
 					choices[i-1].text = _branchedTextChoices[i-1];
+					enableCollider(choices[i-1]);
 				}
 				int itor = 0;
 				foreach (int i in metalist)
@@ -271,10 +272,12 @@ public class DialogueGUI_Test : MonoBehaviour {
 					if (Dialoguer.GetGlobalBoolean(varlist[itor]))
 					{
 						choices[i-1].text = _branchedTextChoices[i-1];
+						enableCollider(choices[i-1]);
 					}
 					else
 					{
 						choices[i-1].text = "";
+						disableCollider(choices[i-1]);
 					}
 					++itor;
 				}
@@ -358,16 +361,18 @@ public class DialogueGUI_Test : MonoBehaviour {
 
 		leftChar.spriteName = leftSpriteName;
 		leftChar.MarkAsChanged();
+	}
 
-//		if (_nameText.Equals("Jane Doe"))
-//		{
-//			rightSpriteName = "JaneSprite";
-//		} else if (_nameText.Equals("Frank")) {
-//			rightSpriteName = "FrankSprite";
-//		}
-//
-//		rightChar.spriteName = rightSpriteName;
-//		rightChar.MarkAsChanged();
+	// Enable single collider
+	private void enableCollider(UILabel choice)
+	{
+		choice.GetComponent<BoxCollider> ().enabled = true;
+	}
+
+	// Disable single colldier
+	private void disableCollider(UILabel choice)
+	{
+		choice.GetComponent<BoxCollider> ().enabled = false;
 	}
 
 	// Enable and Disable Colliders are used to keep
