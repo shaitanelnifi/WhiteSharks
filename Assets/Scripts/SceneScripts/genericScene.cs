@@ -12,6 +12,7 @@ public class genericScene : MonoBehaviour {
 	public string nextLevel;
 	public bool isTherePlayer = false;
 	public Vector2 spawnHereAfter;
+	public bool loadNewXML = false;
 	public string dialoguer = "chapter1";
 
 	protected bool done = false;
@@ -27,9 +28,7 @@ public class genericScene : MonoBehaviour {
 		if (GameManager.offset == 0)
 			GameManager.offset = setOffset;
 
-		if (Dialoguer.isInitialized () && autoPlay) 
-			playDialogue();
-		else if (autoPlay) 
+		if (autoPlay) 
 			playDialogue();
 			
 		
@@ -37,7 +36,8 @@ public class genericScene : MonoBehaviour {
 
 	void playDialogue(){
 
-		Dialoguer.Initialize(dialoguer);
+		if (loadNewXML || !Dialoguer.isInitialized ())
+			Dialoguer.Initialize(dialoguer);
 		Dialoguer.StartDialogue ((int)dialogue[curDia]);
 		var player = (playerScript) FindObjectOfType(typeof(playerScript));
 		if (player != null) {

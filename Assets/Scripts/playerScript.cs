@@ -160,7 +160,7 @@ public class playerScript : CaseElement {
 		else if((targetPosition.x - transform.position.x)>0 ) {	
 			goingtLeft = false;
 		}
-		if(facingLeft!=goingtLeft&& Mathf.Abs(distance)>1){
+		if(facingLeft!=goingtLeft&& Mathf.Abs(distance)>.1f){
 			transform.Rotate(0,180,0);
 			facingLeft = !facingLeft;
 			//goingtLeft = !goingtLeft;
