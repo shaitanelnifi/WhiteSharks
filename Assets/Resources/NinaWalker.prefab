@@ -88,7 +88,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Talk
   sizeOfFont: 24
-  textAdjusts: {x: 150, y: 735}
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 320}
+  scale: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

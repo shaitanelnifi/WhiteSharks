@@ -303,6 +303,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Talk
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 540}
+  scale: {x: 0, y: 0}
 --- !u!1001 &195794085
 Prefab:
   m_ObjectHideFlags: 0
@@ -588,8 +591,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolText: 
+  toolText: Examine Projector
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!114 &388590591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -866,6 +872,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: To Balcony
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!1 &551225297
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,6 +938,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: 
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!114 &551225303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6155,6 +6167,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: 
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!114 &807297126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6716,6 +6731,10 @@ Prefab:
       propertyPath: diaNum
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: toolText
+      value: Examine Projector
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
   m_RootGameObject: {fileID: 1921553895}
@@ -6984,6 +7003,10 @@ Prefab:
       propertyPath: diaNum
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: toolText
+      value: Examine Projector
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
   m_RootGameObject: {fileID: 388590589}
@@ -7121,6 +7144,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Talk
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!1 &1675740779
 GameObject:
   m_ObjectHideFlags: 0
@@ -7301,6 +7327,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: 
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!114 &1897387590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7360,8 +7389,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolText: 
+  toolText: Examine Projector
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!114 &1921553897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7519,6 +7551,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Examine Bed
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!1 &2008275290
 GameObject:
   m_ObjectHideFlags: 0
@@ -7603,3 +7638,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Examine Window
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}

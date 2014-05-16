@@ -80,6 +80,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: 
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
