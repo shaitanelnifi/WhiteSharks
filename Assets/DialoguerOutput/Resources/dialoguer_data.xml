@@ -514,8 +514,8 @@
       <name>Frank and Partner one</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>252.015381</x>
-        <y>614.9346</y>
+        <x>74.00452</x>
+        <y>1697</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -641,7 +641,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>68</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -1018,7 +1018,7 @@
       <name>Frank and Partner two</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>132.008057</x>
+        <x>268.016357</x>
         <y>274.005859</y>
       </scrollPosition>
       <phases>
@@ -1145,7 +1145,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>68</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -1255,7 +1255,7 @@
       <name>Frank and Partner three</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>110.006714</x>
+        <x>0</x>
         <y>5334.32227</y>
       </scrollPosition>
       <phases>
@@ -1760,7 +1760,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Did I?...You think it's safe outside?</text>
+          <text>Did I? Do you... think it's safe outside?</text>
           <name>Chase</name>
           <portrait />
           <audio />
@@ -2428,8 +2428,8 @@
       <name>Jane and Shammy one</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>328.022461</y>
+        <x>2172.13257</x>
+        <y>3268.07642</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -3335,7 +3335,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>At a crime scene everyone and thing is on lockdown... until a certified detective, such as yourself, verifies the existence of all available evidence. Is there anything else I can help you with?</text>
+          <text>At a crime scene everyone and thing is on lockdown... </text>
           <name>Shammy</name>
           <portrait />
           <audio />
@@ -4235,8 +4235,8 @@
       <name>Noel and Alexia</name>
       <startPage>1</startPage>
       <scrollPosition>
-        <x>52.0031738</x>
-        <y>2051</y>
+        <x>220.013428</x>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -4559,7 +4559,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>So… His brain is gone?</text>
+          <text>So… his brain is gone?</text>
           <name>Alexia Ross</name>
           <portrait />
           <audio />
@@ -4828,8 +4828,8 @@
       <name>Jane and Alexia one</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>352.9873</x>
-        <y>3813.01221</y>
+        <x>0</x>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -5869,8 +5869,8 @@
       <name>Jane and Noel one</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>40.9960938</y>
+        <x>44.0026855</x>
+        <y>684.027344</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -6085,7 +6085,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>68</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -6238,8 +6238,8 @@
       <name>Jane and Nina</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>499.9939</x>
-        <y>1864.95276</y>
+        <x>1310.04028</x>
+        <y>4198.096</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -7520,7 +7520,7 @@
           <variableId>5</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>47</y>
+            <y>68</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -7713,8 +7713,8 @@
       <name>Jane and Liam</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>40.0473976</x>
-        <y>0</y>
+        <x>470.026855</x>
+        <y>702</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -8131,8 +8131,8 @@
       <name>Jane and Noel two</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>299.834076</x>
-        <y>0</y>
+        <x>0</x>
+        <y>296.0061</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -8368,8 +8368,8 @@
       <name>Jane and Noel three</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>76</y>
+        <x>200.0122</x>
+        <y>195</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -8605,8 +8605,8 @@
       <name>Jane and May</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>130.007935</x>
-        <y>0</y>
+        <x>110.005493</x>
+        <y>1015.76062</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -8751,7 +8751,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Miss Alexia will be back soon, so … You have my thing?!</text>
+          <text>Miss Alexia will be back soon, so … you have my thing?!</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -9380,7 +9380,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>So… He doesn’t have a name?</text>
+          <text>So… he doesn’t have a name?</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -9649,8 +9649,8 @@
       <name>Jane and Alexia two</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>236.0144</x>
-        <y>8212.498</y>
+        <x>1.99584961</x>
+        <y>689.0447</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -9973,7 +9973,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Just Frank… An outcast, hm? What about that picture, do we have the original yet?</text>
+          <text>Just Frank, hm? An outcast. What about that picture, do we have the original yet?</text>
           <name>Alexia Ross</name>
           <portrait />
           <audio />
@@ -10375,7 +10375,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>No, it’s… Something different. </text>
+          <text>No, it’s… something different. </text>
           <name>Alexia Ross</name>
           <portrait />
           <audio />
@@ -11443,7 +11443,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Just tru… Please, trust me.</text>
+          <text>Just tru… please, trust me.</text>
           <name>Alexia Ross</name>
           <portrait />
           <audio />
@@ -11582,7 +11582,7 @@
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>0</y>
+        <y>1852.113</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -12306,8 +12306,8 @@
       <name>Jane and Shammy two</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>18.98999</x>
-        <y>528.032837</y>
+        <x>58.99243</x>
+        <y>214.013672</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -12869,8 +12869,8 @@
       <name>Jane and Nina's phone</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>1570.09839</x>
-        <y>1540.0957</y>
+        <x>2584.16162</x>
+        <y>2034.12622</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -13776,7 +13776,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Ughh… Thank God. I'll try another password.</text>
+          <text>Ughh… thank God. I'll try another password.</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -14314,8 +14314,8 @@
       <name>Horrible Movie Poster</name>
       <startPage>4</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>108.005371</y>
+        <x>616</x>
+        <y>404.024658</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -14594,8 +14594,8 @@
       <name>Shammy Swag</name>
       <startPage>4</startPage>
       <scrollPosition>
-        <x>196.0083</x>
-        <y>234.001221</y>
+        <x>308.015137</x>
+        <y>294.017334</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -14874,8 +14874,8 @@
       <name>Frank's Bracelet</name>
       <startPage>4</startPage>
       <scrollPosition>
-        <x>18.0010986</x>
-        <y>5.998535</y>
+        <x>300.0183</x>
+        <y>220</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -15111,8 +15111,8 @@
       <name>Frank's Blood Puddle</name>
       <startPage>4</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>0</y>
+        <x>152.009277</x>
+        <y>231.000488</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -15348,8 +15348,8 @@
       <name>Partner's Blood Puddle</name>
       <startPage>4</startPage>
       <scrollPosition>
-        <x>70.00366</x>
-        <y>30.00122</y>
+        <x>256.015</x>
+        <y>222</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -15586,8 +15586,8 @@ out the files.</text>
       <name>Noel's Picture</name>
       <startPage>5</startPage>
       <scrollPosition>
-        <x>240.014648</x>
-        <y>0</y>
+        <x>472.0288</x>
+        <y>847.0039</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -16019,8 +16019,8 @@ out the files.</text>
       <name>Hideout Bed</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>109.9939</y>
+        <x>136.0083</x>
+        <y>200</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -16256,8 +16256,8 @@ out the files.</text>
       <name>Nina Bed</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>0</y>
+        <x>142.008667</x>
+        <y>199</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -16493,8 +16493,8 @@ out the files.</text>
       <name>Liam Bed</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>48.00293</x>
-        <y>84.00513</y>
+        <x>146.008911</x>
+        <y>213</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -16730,8 +16730,8 @@ out the files.</text>
       <name>Hideout Window</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>1.987793</y>
+        <x>42.0025635</x>
+        <y>202</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -16967,8 +16967,8 @@ out the files.</text>
       <name>Nina Window</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>39</y>
+        <x>96.00586</x>
+        <y>205</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -17204,8 +17204,8 @@ out the files.</text>
       <name>Liam Window</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>174.01062</x>
-        <y>148.008423</y>
+        <x>70.00427</x>
+        <y>204</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -17441,8 +17441,8 @@ out the files.</text>
       <name>Office Exit</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>35</y>
+        <x>116.00708</x>
+        <y>201</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -17678,8 +17678,8 @@ out the files.</text>
       <name>Café Exit</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>74.00391</y>
+        <x>94.00574</x>
+        <y>206</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -17915,8 +17915,8 @@ out the files.</text>
       <name>Belly Exit</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>40</y>
+        <x>64.00391</x>
+        <y>206</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -18153,7 +18153,7 @@ out the files.</text>
       <startPage>0</startPage>
       <scrollPosition>
         <x>66.00342</x>
-        <y>46</y>
+        <y>212</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -18498,7 +18498,7 @@ out the files.</text>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>0</y>
+        <y>34</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -18689,7 +18689,7 @@ out the files.</text>
   </themes>
   <selectorScrollPosition>
     <x>0</x>
-    <y>0</y>
+    <y>151</y>
   </selectorScrollPosition>
-  <currentDialogueId>8</currentDialogueId>
+  <currentDialogueId>36</currentDialogueId>
 </DialogueEditorMasterObject>
