@@ -1060,7 +1060,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.size
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1140,35 +1140,35 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[4].x
-      value: 4.81438541
-      objectReference: {fileID: 0}
-    - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
-      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[4].y
-      value: 6.65809679
-      objectReference: {fileID: 0}
-    - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
-      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[5].x
-      value: 4.76810789
-      objectReference: {fileID: 0}
-    - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
-      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[5].y
-      value: 4.8743639
-      objectReference: {fileID: 0}
-    - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
-      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[6].x
       value: 7.05138731
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
-      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[6].y
+      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[4].y
       value: 4.86370754
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
-      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[7].x
+      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[5].x
       value: 7.00491667
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
-      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[7].y
+      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[5].y
       value: 3.28114581
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
+      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[6].x
+      value: 6.29599524
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
+      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[6].y
+      value: 3.32116628
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
+      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[7].x
+      value: 5.51473284
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
+      propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[7].y
+      value: 4.28829861
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
       propertyPath: m_IsTrigger
@@ -1176,11 +1176,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[8].x
-      value: 6.29599524
+      value: 5.51473284
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[8].y
-      value: 3.32116628
+      value: 4.28829861
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[9].x
@@ -21968,8 +21968,6 @@ PolygonCollider2D:
       - {x: -8.44140911, y: 12.2022514}
       - {x: 7.02198935, y: 11.8457289}
       - {x: 7.11187553, y: 6.5023098}
-      - {x: 4.81438541, y: 6.65809679}
-      - {x: 4.76810789, y: 4.8743639}
       - {x: 7.05138731, y: 4.86370754}
       - {x: 7.00491667, y: 3.28114581}
       - {x: 6.29599524, y: 3.32116628}
