@@ -89,7 +89,7 @@ public enum Convo {
 	janeShammyBracelet = 15,
 	janeCuteBox = 16,
 	janeNinasPhone = 17,
-
+	janeShammyCase = 24,
 
 };
 
