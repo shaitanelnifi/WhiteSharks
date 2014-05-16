@@ -41,7 +41,7 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 7006119f8430349b6beacf1765e05c76, type: 2}
   mSprites:
   - name: AlexiaRossSprite
-    x: 3348
+    x: 3523
     y: 3736
     width: 135
     height: 183
@@ -119,7 +119,7 @@ MonoBehaviour:
     paddingTop: 4
     paddingBottom: 0
   - name: JaneDoeSprite
-    x: 3348
+    x: 3523
     y: 3920
     width: 176
     height: 176
@@ -145,8 +145,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: JoshSusachSprite
-    x: 3164
-    y: 3733
+    x: 3348
+    y: 3913
     width: 174
     height: 183
     borderLeft: 0
@@ -183,22 +183,9 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 2
     paddingBottom: 0
-  - name: NinaWalkerSprite
-    x: 3525
-    y: 3927
-    width: 183
-    height: 169
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 14
-    paddingBottom: 0
   - name: NoelAltSprite
-    x: 3525
-    y: 3743
+    x: 3348
+    y: 3729
     width: 135
     height: 183
     borderLeft: 0
@@ -210,7 +197,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: NoelMugshot
-    x: 3864
+    x: 3855
     y: 3947
     width: 130
     height: 149
@@ -223,7 +210,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: PeijunShiSprite
-    x: 3709
+    x: 3700
     y: 3940
     width: 154
     height: 156
@@ -234,6 +221,19 @@ MonoBehaviour:
     paddingLeft: 2
     paddingRight: 0
     paddingTop: 0
+    paddingBottom: 0
+  - name: NinaWalkerSprite
+    x: 3164
+    y: 3736
+    width: 180
+    height: 180
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 2
+    paddingRight: 1
+    paddingTop: 3
     paddingBottom: 0
   - name: regulartext
     x: 915
