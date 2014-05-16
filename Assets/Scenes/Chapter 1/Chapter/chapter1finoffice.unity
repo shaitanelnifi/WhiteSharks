@@ -125,6 +125,22 @@ Prefab:
       propertyPath: myConvo
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
+      propertyPath: scale.x
+      value: .75
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
+      propertyPath: scale.y
+      value: .75
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
+      propertyPath: iconMod.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
+      propertyPath: iconMod.x
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
   m_RootGameObject: {fileID: 72480850}
@@ -249,7 +265,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Talk
   sizeOfFont: 24
-  textAdjusts: {x: 157, y: 600}
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 8, y: 180}
+  scale: {x: .75, y: .75}
 --- !u!1 &103631384
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,7 +672,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Talk
   sizeOfFont: 24
-  textAdjusts: {x: 157, y: 330}
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: .75, y: .75}
 --- !u!1 &529652769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,6 +1321,14 @@ Prefab:
       propertyPath: elementName
       value: Alexia
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 3509238f305c34b98ba8a54256b016f9, type: 2}
+      propertyPath: scale.x
+      value: .75
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 3509238f305c34b98ba8a54256b016f9, type: 2}
+      propertyPath: scale.y
+      value: .75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3509238f305c34b98ba8a54256b016f9, type: 2}
   m_RootGameObject: {fileID: 470879636}
@@ -1374,7 +1402,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: To Balcony
   sizeOfFont: 24
-  textAdjusts: {x: 157, y: 75}
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!1 &903885455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,6 +1440,7 @@ MonoBehaviour:
   nextLevel: chapter1finbalcony
   isTherePlayer: 1
   spawnHereAfter: {x: 11.8699999, y: -1.63}
+  loadNewXML: 0
   dialoguer: chapter1
   needGUI: 0
   dialogue: 05000000

@@ -333,6 +333,10 @@ Prefab:
       propertyPath: myConvo
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
+      propertyPath: iconMod.y
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
   m_RootGameObject: {fileID: 576624418}
@@ -464,6 +468,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Center.y
       value: -.553870082
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: scale
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
@@ -1184,6 +1192,7 @@ MonoBehaviour:
   nextLevel: chapter1finofficeend
   isTherePlayer: 0
   spawnHereAfter: {x: 0, y: 0}
+  loadNewXML: 0
   dialoguer: chapter1
   needGUI: 0
   dialogue: 0b000000
@@ -1207,6 +1216,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Talk
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 16, y: 300}
+  scale: {x: 0, y: 0}
 --- !u!1 &674667616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1660,8 +1672,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolText: To Plaza (Blocked)
+  toolText: 
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!1 &767310065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1921,6 +1936,10 @@ Prefab:
       propertyPath: m_Center.y
       value: -.288945436
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: scale
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
   m_RootGameObject: {fileID: 1354061147}
@@ -2043,6 +2062,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: To Room 1
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!1 &1002630039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2194,7 +2216,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: toolText
-      value: To Plaza (Blocked)
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_Layer
@@ -2816,6 +2838,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: To Room 10
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!1 &1356355844
 GameObject:
   m_ObjectHideFlags: 0
@@ -3047,6 +3072,10 @@ Prefab:
     - target: {fileID: 6000000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[4].y
       value: -1.89630723
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: scale
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
@@ -9005,6 +9034,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: To Room 0
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!1 &1879666966
 GameObject:
   m_ObjectHideFlags: 0

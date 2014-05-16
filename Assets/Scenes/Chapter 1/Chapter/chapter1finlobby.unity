@@ -362,6 +362,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Talk
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!1001 &415254089
 Prefab:
   m_ObjectHideFlags: 0
@@ -5795,6 +5798,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: To Office
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: .75, y: .75}
 --- !u!1 &1330363805
 GameObject:
   m_ObjectHideFlags: 0
@@ -5865,6 +5871,7 @@ MonoBehaviour:
   nextLevel: chapter1finoffice
   isTherePlayer: 1
   spawnHereAfter: {x: 1.29999995, y: -3.66000009}
+  loadNewXML: 0
   dialoguer: chapter1
   needGUI: 0
   dialogue: 04000000
@@ -5929,6 +5936,18 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: a6839f59c67524e34911c5380a813a7a, type: 2}
+    - target: {fileID: 11400004, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: scale
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: scale.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
   m_RootGameObject: {fileID: 378105845}
@@ -6075,6 +6094,18 @@ Prefab:
     - target: {fileID: 11400002, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
       propertyPath: toolText
       value: To Office
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
+      propertyPath: scale
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
+      propertyPath: scale.x
+      value: .75
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
+      propertyPath: scale.y
+      value: .75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
