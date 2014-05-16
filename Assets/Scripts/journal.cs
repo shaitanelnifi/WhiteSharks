@@ -252,8 +252,9 @@ public class journal : MonoBehaviour {
 	IEnumerator UpdateTime(){
 		while (true) {
 			DateTime currentTime = System.DateTime.Now;
-			timeLabel.text = currentTime.ToString("HH:mm");
-			timeLabel.text += "//";
+			//timeLabel.text = currentTime.ToString("HH:mm");
+			//timeLabel.text += "//";
+			timeLabel.text = "";
 			yield return new WaitForSeconds(0.2f);
 		}
 	}

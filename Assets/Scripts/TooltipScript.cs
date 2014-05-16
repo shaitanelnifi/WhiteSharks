@@ -52,12 +52,12 @@ public class TooltipScript : MonoBehaviour {
 	}
 
 	void OnGUI(){
-		if (currText != "" && !revealAll) {
+		if (currText != "") {
 			float x = Input.mousePosition.x;
 			float y = Input.mousePosition.y;
 
-			GUI.Label (new Rect (x - textAdjusts.x, Screen.height - y - textAdjusts.y, 300, 60), currText, guiStyleBack);
-			GUI.Label (new Rect (x - textAdjusts.x + 1, Screen.height - y - textAdjusts.y + 1, 300, 60), currText, guiStyleFore);
+			GUI.Label (new Rect (x - textAdjusts.x, Screen.height - y - 30, 300, 60), currText, guiStyleBack);
+			GUI.Label (new Rect (x - textAdjusts.x + 1, Screen.height - y - 29, 300, 60), currText, guiStyleFore);
 		} else if (revealAll) {
 			float x = point.x;
 			float y = point.y; // bottom left corner set to the 3D point
