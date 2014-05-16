@@ -55,6 +55,14 @@ public class journal : MonoBehaviour {
 			Destroy (gameObject.transform.parent.transform.parent.gameObject);
 		}
 	}
+
+	void OnLevelWasLoaded(int level){
+
+		if (level == 0) {
+			Destroy (gameObject.transform.parent.transform.parent.gameObject);
+		}
+
+	}
 	
 	void Start () {
 		////----    Journal Panel Init    ----//////////////////////////////////////////////////////
