@@ -12,7 +12,7 @@ public class ExitConversation : MonoBehaviour {
 
 	void onClick(GameObject button)
 	{
-		if (button == exitButton)
+		if (button == exitButton && Input.GetMouseButtonUp(0))
 		{
 			Debug.Log ("Exit Dialogue");
 			Dialoguer.EndDialogue();
