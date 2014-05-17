@@ -66,8 +66,9 @@ public class genericScene : MonoBehaviour {
 	IEnumerator wait(){
 		SoundManager.Instance.Play2DMusic(playMe);
 		//Debug.Log (debugMe);
-		if (!GameManager.dialogueJustFinished) {
-			var player = (playerScript) FindObjectOfType(typeof(playerScript));
+		var player = (playerScript) FindObjectOfType(typeof(playerScript));
+		if (!GameManager.dialogueJustFinished && player.canWalk != false ) {
+
 			if (player != null) {
 				player.stopMove ();
 				player.talking = true;
