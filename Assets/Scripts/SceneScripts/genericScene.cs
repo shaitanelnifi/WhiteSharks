@@ -43,6 +43,7 @@ public class genericScene : MonoBehaviour {
 		if (player != null) {
 			player.stopMove ();
 			player.talking = true;
+			Debug.LogWarning("TALKING");
 		}
 	}
 	
@@ -65,6 +66,15 @@ public class genericScene : MonoBehaviour {
 	IEnumerator wait(){
 		SoundManager.Instance.Play2DMusic(playMe);
 		//Debug.Log (debugMe);
+		if (!GameManager.dialogueJustFinished) {
+			var player = (playerScript) FindObjectOfType(typeof(playerScript));
+			if (player != null) {
+				player.stopMove ();
+				player.talking = true;
+				Debug.LogWarning("TALKING");
+			}
+		}
+
 		if (GameManager.dialogueJustFinished && curDia < dialogue.Length - 1) {
 
 						GameManager.dialogueJustFinished = false;
