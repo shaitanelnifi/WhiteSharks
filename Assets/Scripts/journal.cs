@@ -110,24 +110,21 @@ public class journal : MonoBehaviour {
 	//No longer toggles.
 	void journalAccusationPanelToggle(GameObject button){
 		if (button == journalButton){
+			playerScript player = (playerScript) FindObjectOfType(typeof(playerScript));
 			if (inMenu){
-				Time.timeScale = 1f;
-				inMenu = false;
-				playerScript player = (playerScript) FindObjectOfType(typeof(playerScript));
-				
+				player.stopMove();
 				player.canWalk = true;
 				player.talking = false;
+				Time.timeScale = 1f;
+				inMenu = false;
 				Debug.LogWarning("Ding");
 			}
 			else {
-				Time.timeScale = 0f;
-				inMenu = true;
-				playerScript player = (playerScript) FindObjectOfType(typeof(playerScript));
-				
-				player.canWalk = false;
-				SoundManager.Instance.CantWalk();
+				player.stopMove();
 				player.talking = true;
+				inMenu = true;	
 				Debug.LogWarning("Dong");
+				Time.timeScale = 0f;
 			}
 		}
 	}

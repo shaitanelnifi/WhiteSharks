@@ -108,6 +108,9 @@ public class playerScript : CaseElement {
 	}*/
 
 	void FixedUpdate(){	
+
+		Debug.DrawLine (transform.position, targetPosition, Color.red);
+
 		lastNode = false;
 		float distance;
 		//float modSpeed = Mathf.Sqrt(transform.localScale.y) * baseSpeed;
