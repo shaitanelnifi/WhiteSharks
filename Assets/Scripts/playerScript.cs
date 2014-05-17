@@ -199,6 +199,7 @@ public class playerScript : CaseElement {
 
 	public void stopMove(){
 
+		Debug.LogWarning ("STOP");
 		setTarget(new Vector2(transform.position.x, transform.position.y));
 		canWalk = false;
 		SoundManager.Instance.CantWalk();
