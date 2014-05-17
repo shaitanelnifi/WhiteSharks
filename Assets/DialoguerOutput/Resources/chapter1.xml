@@ -6,8 +6,8 @@
       <name>Opening Narration</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>178.011475</x>
-        <y>224.01062</y>
+        <x>0</x>
+        <y>150.009155</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -2428,8 +2428,8 @@
       <name>Jane and Shammy one</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>850.432</x>
-        <y>2259.00342</y>
+        <x>634.4237</x>
+        <y>102.871948</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -4050,7 +4050,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Your boss, Dr. Ross, is waiting for you upstairs!</text>
-          <name />
+          <name>Shammy</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -8518,7 +8518,7 @@
       <startPage>0</startPage>
       <scrollPosition>
         <x>110.005493</x>
-        <y>1015.76062</y>
+        <y>149.707764</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -8664,7 +8664,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Miss Alexia will be back soon, so … you have my thing?!</text>
-          <name>Jane Doe</name>
+          <name>May</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -12781,8 +12781,8 @@
       <name>Jane and Nina's phone</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>232.019287</x>
-        <y>1561.25049</y>
+        <x>2370.14917</x>
+        <y>2525.31274</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -13491,7 +13491,7 @@
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>68</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -13913,7 +13913,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>The original selfie seems to be here, I’ll upload it to the journal.</text>
-          <name />
+          <name>Jane Doe</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -13992,8 +13992,8 @@
           <id>27</id>
           <type>EndPhase</type>
           <position>
-            <x>3134.327</x>
-            <y>2940.328</y>
+            <x>3255.327</x>
+            <y>2910.328</y>
           </position>
           <outs />
           <advanced>false</advanced>
@@ -19207,7 +19207,7 @@ out the files.</text>
   </themes>
   <selectorScrollPosition>
     <x>0</x>
-    <y>0</y>
+    <y>12.0007324</y>
   </selectorScrollPosition>
-  <currentDialogueId>17</currentDialogueId>
+  <currentDialogueId>12</currentDialogueId>
 </DialogueEditorMasterObject>
