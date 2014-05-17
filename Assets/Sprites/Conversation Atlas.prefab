@@ -41,16 +41,16 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 7006119f8430349b6beacf1765e05c76, type: 2}
   mSprites:
   - name: AlexiaRossSprite
-    x: 3768
-    y: 3736
-    width: 135
+    x: 3593
+    y: 3729
+    width: 136
     height: 183
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
     paddingLeft: 0
-    paddingRight: 16
+    paddingRight: 15
     paddingTop: 0
     paddingBottom: 0
   - name: CarlosFrancoSprite
@@ -210,16 +210,16 @@ MonoBehaviour:
     paddingTop: 3
     paddingBottom: 0
   - name: NoelAltSprite
-    x: 3593
-    y: 3729
-    width: 135
-    height: 183
+    x: 3768
+    y: 3770
+    width: 130
+    height: 149
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 14
+    paddingLeft: 1
+    paddingRight: 18
     paddingTop: 0
     paddingBottom: 0
   - name: NoelMugshot
