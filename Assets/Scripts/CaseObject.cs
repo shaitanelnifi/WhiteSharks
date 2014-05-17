@@ -10,6 +10,7 @@ public class CaseObject : CaseElement {
 	public CaseObject[] associatedObjects;
 
 	public string mouseOverIcon = "Grab_Icon";
+	public bool autoPickupPostConvo = false;
 
 	void Start(){
 		Debug.Log ("asda");
@@ -102,6 +103,7 @@ public class CaseObject : CaseElement {
 			if (pDist.isCloseEnough (player.transform.position))
 				pickUpItem ();
 
+		if (autoPickupPostConvo)
 		if (pDist.isCloseEnough (player.transform.position) && checkCondis () && !player.talking) {
 			handleAssociated();
 			collectItems();
