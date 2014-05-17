@@ -64,6 +64,7 @@ MonoBehaviour:
   conditions: 06000000
   associatedObjects: []
   mouseOverIcon: Grab_Icon
+  autoPickupPostConvo: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
