@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: playerController
+  m_Name: frankController
   serializedVersion: 2
   m_AnimatorParameters:
   - m_Name: distance
@@ -77,7 +77,7 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: b28be964e7e0aef49a0acf025630da56, type: 2}
+  - {fileID: 7400000, guid: 6a1eb84f2e26cdd4b8c2f110266a0974, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 168, y: -84, z: 0}
   m_IKOnFeet: 0
@@ -92,7 +92,7 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: 40464154b2384294991f83fcd16d0310, type: 2}
+  - {fileID: 7400000, guid: b61a38c1824461345b5b07fa8a176f3d, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: -108, y: 24, z: 0}
   m_IKOnFeet: 0
@@ -113,13 +113,13 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110232349}
-      second:
-      - {fileID: 110100000}
-    data:
       first: {fileID: 110200000}
       second:
       - {fileID: 110156270}
+    data:
+      first: {fileID: 110232349}
+      second:
+      - {fileID: 110100000}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 144, y: 36, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

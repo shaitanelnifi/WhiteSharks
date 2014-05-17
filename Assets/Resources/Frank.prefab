@@ -124,9 +124,9 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: af3b2932e50424648b2bc68fac73d3ea, type: 2}
+  m_Controller: {fileID: 9100000, guid: f97cbc2527e605641ac9dd78f8ae3c62, type: 2}
   m_CullingMode: 0
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 1
@@ -194,11 +194,10 @@ MonoBehaviour:
   elementName: Frank
   description: 
   profileImage: {fileID: 0}
-  guilt: 0
-  location: 0
   visible: 0
   clickedOnSomething: 0
   maxDist: 1
+  myConvo: -1
   baseSpeed: 0
   minSpeed: 0
   mainCam: {fileID: 0}
@@ -233,7 +232,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: bd2b98626d4774a1393c5ee430c553a8, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21200002
 SpriteRenderer:
