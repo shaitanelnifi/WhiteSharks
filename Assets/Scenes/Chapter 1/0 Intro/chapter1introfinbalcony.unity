@@ -409,7 +409,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
       propertyPath: baseSpeed
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
@@ -682,6 +682,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: To Room 10
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!1001 &1187974895
 Prefab:
   m_ObjectHideFlags: 0
@@ -893,6 +896,7 @@ MonoBehaviour:
   nextLevel: chapter1introfinroom
   isTherePlayer: 1
   spawnHereAfter: {x: 0, y: 0}
+  loadNewXML: 0
   dialoguer: chapter1
   needGUI: 0
   dialogue: 02000000
@@ -1299,7 +1303,7 @@ MonoBehaviour:
   minY: -1.60000002
   minScale: .389999986
   maxScale: .800000012
-  baseSpeed: 4
+  baseSpeed: 6
   id: 3
 --- !u!4 &1921366843
 Transform:
