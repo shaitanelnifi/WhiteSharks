@@ -41,7 +41,7 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 7006119f8430349b6beacf1765e05c76, type: 2}
   mSprites:
   - name: AlexiaRossSprite
-    x: 3523
+    x: 3768
     y: 3736
     width: 135
     height: 183
@@ -105,8 +105,21 @@ MonoBehaviour:
     paddingRight: 9
     paddingTop: 11
     paddingBottom: 10
-  - name: FrankSprite
+  - name: exitbutton
     x: 3164
+    y: 3852
+    width: 244
+    height: 244
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 5
+    paddingRight: 7
+    paddingTop: 7
+    paddingBottom: 5
+  - name: FrankSprite
+    x: 3409
     y: 3917
     width: 183
     height: 179
@@ -119,7 +132,7 @@ MonoBehaviour:
     paddingTop: 4
     paddingBottom: 0
   - name: JaneDoeSprite
-    x: 3523
+    x: 3768
     y: 3920
     width: 176
     height: 176
@@ -145,7 +158,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: JoshSusachSprite
-    x: 3348
+    x: 3593
     y: 3913
     width: 174
     height: 183
@@ -183,8 +196,21 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 2
     paddingBottom: 0
+  - name: NinaWalkerSprite
+    x: 3409
+    y: 3736
+    width: 180
+    height: 180
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 2
+    paddingRight: 1
+    paddingTop: 3
+    paddingBottom: 0
   - name: NoelAltSprite
-    x: 3348
+    x: 3593
     y: 3729
     width: 135
     height: 183
@@ -197,7 +223,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: NoelMugshot
-    x: 3855
+    x: 3945
     y: 3947
     width: 130
     height: 149
@@ -210,8 +236,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: PeijunShiSprite
-    x: 3700
-    y: 3940
+    x: 3164
+    y: 3695
     width: 154
     height: 156
     borderLeft: 0
@@ -221,19 +247,6 @@ MonoBehaviour:
     paddingLeft: 2
     paddingRight: 0
     paddingTop: 0
-    paddingBottom: 0
-  - name: NinaWalkerSprite
-    x: 3164
-    y: 3736
-    width: 180
-    height: 180
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 2
-    paddingRight: 1
-    paddingTop: 3
     paddingBottom: 0
   - name: regulartext
     x: 915
