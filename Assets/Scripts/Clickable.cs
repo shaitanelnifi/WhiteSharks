@@ -24,7 +24,7 @@ public class Clickable : MonoBehaviour {
 	public void OnMouseExit(){
 		GameManager.Instance.updateMouseIcon (defaultIcon);
 		//Debug.Log ("Talking " + player.talking);
-		if (wall && !player.talking){
+		if (player == null || (wall && !player.talking) ){
 			player.canWalk = true;
 		}
 	}
