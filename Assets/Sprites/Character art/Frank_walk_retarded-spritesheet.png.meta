@@ -52,7 +52,7 @@ TextureImporter:
         y: 1024
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_1
       rect:
@@ -61,7 +61,7 @@ TextureImporter:
         y: 1024
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_2
       rect:
@@ -70,7 +70,7 @@ TextureImporter:
         y: 1024
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_3
       rect:
@@ -79,7 +79,7 @@ TextureImporter:
         y: 1024
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_4
       rect:
@@ -88,7 +88,7 @@ TextureImporter:
         y: 768
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_5
       rect:
@@ -97,7 +97,7 @@ TextureImporter:
         y: 768
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_6
       rect:
@@ -106,7 +106,7 @@ TextureImporter:
         y: 768
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_7
       rect:
@@ -115,7 +115,7 @@ TextureImporter:
         y: 768
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_8
       rect:
@@ -124,7 +124,7 @@ TextureImporter:
         y: 512
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_9
       rect:
@@ -133,7 +133,7 @@ TextureImporter:
         y: 512
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_10
       rect:
@@ -142,7 +142,7 @@ TextureImporter:
         y: 512
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_11
       rect:
@@ -151,7 +151,7 @@ TextureImporter:
         y: 512
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_12
       rect:
@@ -160,7 +160,7 @@ TextureImporter:
         y: 256
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_13
       rect:
@@ -169,7 +169,7 @@ TextureImporter:
         y: 256
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_14
       rect:
@@ -178,7 +178,7 @@ TextureImporter:
         y: 256
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_15
       rect:
@@ -187,7 +187,7 @@ TextureImporter:
         y: 256
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_16
       rect:
@@ -196,7 +196,7 @@ TextureImporter:
         y: 0
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_17
       rect:
@@ -205,7 +205,7 @@ TextureImporter:
         y: 0
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_18
       rect:
@@ -214,7 +214,7 @@ TextureImporter:
         y: 0
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: Frank_walk_retarded-spritesheet_19
       rect:
@@ -223,7 +223,7 @@ TextureImporter:
         y: 0
         width: 256
         height: 256
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
   spritePackingTag: 
   userData: 
