@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.101191208, y: -3.69972992, z: -1}
+  m_LocalPosition: {x: -1, y: -3.69972992, z: -1}
   m_LocalScale: {x: .339987904, y: .339987278, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -88,7 +88,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Talk
   sizeOfFont: 24
-  textAdjusts: {x: 157, y: 330}
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

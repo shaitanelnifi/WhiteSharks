@@ -25,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -43,15 +43,15 @@ MonoBehaviour:
   elementName: Radioactive Ice Cubes
   description: Don't use these, duh!
   profileImage: {fileID: 0}
-  guilt: 0
-  location: 0
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
-  category: 4
-  myEnumName: 0
+  myConvo: -1
   offset: 0
+  conditions: 
+  associatedObjects: []
   mouseOverIcon: Grab_Icon
+  autoPickupPostConvo: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
