@@ -5664,6 +5664,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400004, guid: 0269d62a56b778c43837adf042842990, type: 2}
+      propertyPath: conditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0269d62a56b778c43837adf042842990, type: 2}
       propertyPath: m_LocalPosition.x
       value: 11.3757915
@@ -5734,6 +5738,10 @@ Prefab:
     - target: {fileID: 6100000, guid: 0269d62a56b778c43837adf042842990, type: 2}
       propertyPath: m_Center.x
       value: .0120162964
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 0269d62a56b778c43837adf042842990, type: 2}
+      propertyPath: conditions.Array.data[0]
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0269d62a56b778c43837adf042842990, type: 2}
@@ -5851,7 +5859,7 @@ MonoBehaviour:
   maxDist: 4
   myConvo: 26
   offset: 0
-  conditions: 
+  conditions: 0a000000
   associatedObjects: []
   mouseOverIcon: Grab_Icon
   autoPickupPostConvo: 1
