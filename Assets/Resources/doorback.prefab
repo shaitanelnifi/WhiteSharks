@@ -69,16 +69,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51a2a268bd181ea43b3064a7728d1db2, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: chapter2bellyalleypremoe
-  x: -1.68327105
-  y: -5.14134598
+  id: 
+  x: 0
+  y: 0
   mouseOverIcon: Door_Icon
-  getTheseToProceed: []
-  getTheseGlobalBools: 00000000
-  dontGotIt: 21
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
