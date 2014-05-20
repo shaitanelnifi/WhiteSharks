@@ -102,14 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e658c681fb004ceea1797ea8b5f078a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  s0: {fileID: 0}
-  s1: {fileID: 0}
-  s2: {fileID: 0}
-  s3: {fileID: 0}
-  s4: {fileID: 0}
-  s5: {fileID: 0}
-  s6: {fileID: 0}
-  s7: {fileID: 0}
+  a: {fileID: 0}
 --- !u!4 &309699931
 Transform:
   m_ObjectHideFlags: 0
@@ -157,6 +150,7 @@ GameObject:
   - 212: {fileID: 1697760720}
   - 114: {fileID: 1697760722}
   - 114: {fileID: 1697760723}
+  - 95: {fileID: 1697760724}
   m_Layer: 0
   m_Name: intronarrationplaceholder
   m_TagString: Untagged
@@ -222,14 +216,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e658c681fb004ceea1797ea8b5f078a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  s0: {fileID: 21300000, guid: a8ea45efd37cf44b89420606647803f5, type: 3}
-  s1: {fileID: 21300000, guid: 9874f96951e03d14bac88ab303af60c0, type: 3}
-  s2: {fileID: 21300000, guid: c4798d30e3090f747a7d83f7c6bcf7cc, type: 3}
-  s3: {fileID: 21300000, guid: 1f11e758a90d34325afe310802d6ef48, type: 3}
-  s4: {fileID: 21300000, guid: 459a536942b82bd4f8c2044cc221c477, type: 3}
-  s5: {fileID: 21300000, guid: 7b721c91f337a4d26af99a503cfa3486, type: 3}
-  s6: {fileID: 21300000, guid: e3a55fe2873bf4266898f10e44dc6e33, type: 3}
-  s7: {fileID: 21300000, guid: 1f11e758a90d34325afe310802d6ef48, type: 3}
+  a: {fileID: 1697760724}
+--- !u!95 &1697760724
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1697760719}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ee992b1e155b442cb8fdfee416aa6eb3, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &2041039059
 GameObject:
   m_ObjectHideFlags: 0
