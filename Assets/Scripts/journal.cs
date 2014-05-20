@@ -40,6 +40,11 @@ public class journal : MonoBehaviour {
 	public GameObject objectButtonGrid;
 	public GameObject buttonPrefab;
 	public UI2DSprite poiPortrait;
+
+	private GameObject mainCam;
+	private int ignoreRaycastLayer;
+	private int guiLayer;
+	public LayerMask cullingMask;
 	
 	public UILabel descriptionLabel, panelNameLabel, timeLabel;
 	
@@ -57,6 +62,14 @@ public class journal : MonoBehaviour {
 	}
 	
 	void OnLevelWasLoaded(int level){
+		//Sets camera culling to ignore this object's layer.
+		/*ignoreRaycastLayer = 4; //bit 4
+		guiLayer = 10;  //bit 10
+		cullingMask = ~((1 << ignoreRaycastLayer) | (1 << guiLayer));
+		mainCam.camera.cullingMask = cullingMask;*/
+		mainCam = GameObject.Find ("Main Camera");
+		mainCam.camera.cullingMask = cullingMask;
+
 		if (level == 0) {
 			Destroy (gameObject.transform.parent.transform.parent.gameObject);
 		}
