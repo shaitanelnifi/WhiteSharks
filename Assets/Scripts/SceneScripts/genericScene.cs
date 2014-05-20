@@ -100,7 +100,7 @@ public class genericScene : MonoBehaviour {
 								SoundManager.Instance.CantWalk ();
 								Application.LoadLevel (nextLevel);
 						}
-				} else if (dialogue [curDia].Equals (Convo.none)) {
+				} else if (dialogue [curDia].Equals (Convo.ch0none)) {
 					if (waitThisLong != -1) {
 						yield return new WaitForSeconds (waitThisLong);
 						GameManager.Instance.playerInScene = isTherePlayer;
