@@ -200,7 +200,9 @@ MonoBehaviour:
   nextLevel: chapter1introfinbalcony
   isTherePlayer: 1
   spawnHereAfter: {x: 9.32999992, y: -1.60000002}
+  loadNewXML: 1
   dialoguer: chapter1
   needGUI: 1
   dialogue: 01000000
+  curDia: 0
   setOffset: 18

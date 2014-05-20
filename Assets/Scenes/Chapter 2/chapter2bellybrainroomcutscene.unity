@@ -187,7 +187,7 @@ MonoBehaviour:
   waitThisLong: 2
   whatCharacter: Jane
   nextLevel: mainmenu
-  isTherePlayer: 1
+  isTherePlayer: 0
   spawnHereAfter: {x: 0, y: 0}
   loadNewXML: 0
   dialoguer: chapter2

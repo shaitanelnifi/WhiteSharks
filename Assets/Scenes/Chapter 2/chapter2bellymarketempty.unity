@@ -5281,11 +5281,11 @@ MonoBehaviour:
   waitThisLong: -1
   whatCharacter: Jane
   nextLevel: chapter2bellyalleyprefranksroom
-  isTherePlayer: 1
+  isTherePlayer: 0
   spawnHereAfter: {x: 0, y: 0}
   loadNewXML: 0
   dialoguer: chapter2
-  needGUI: 1
+  needGUI: 0
   dialogue: 0a000000
   curDia: 0
   setOffset: 0
@@ -5472,3 +5472,49 @@ Prefab:
   m_RootGameObject: {fileID: 925798570}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1396074941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1396074944}
+  - 114: {fileID: 1396074942}
+  m_Layer: 8
+  m_Name: scene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1396074942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1396074941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546e4042cc205e14bb0c655ff9ec24f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleX: 1
+  scaleY: 1
+  maxY: 1
+  minY: 1
+  minScale: 1
+  maxScale: 1
+  baseSpeed: 1
+  id: 1
+--- !u!4 &1396074944
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1396074941}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1.00999999, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
