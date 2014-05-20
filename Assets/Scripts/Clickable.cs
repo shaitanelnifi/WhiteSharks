@@ -24,16 +24,21 @@ public class Clickable : MonoBehaviour {
 	public void OnMouseExit(){
 		GameManager.Instance.updateMouseIcon (defaultIcon);
 		//Debug.Log ("Talking " + player.talking);
-		if (player == null || (wall && !player.talking) ){
-			player.canWalk = true;
+		if (player != null) {
+				if (wall && !player.talking) {
+					player.canWalk = true;
+			}
 		}
 	}
 	
 	public void OnMouseDown(){
-		if (Input.GetMouseButtonDown (0)) 
-		if (player.canWalk){
-			clickedOnSomething = true;
-			player.setTarget(new Vector3(transform.position.x, transform.position.y, 0));
+		if (Input.GetMouseButtonDown (0)) {
+			if (player != null) {
+				if (player.canWalk){
+					clickedOnSomething = true;
+					player.setTarget(new Vector3(transform.position.x, transform.position.y, 0));
+				}
+			}
 		}
 		
 	}

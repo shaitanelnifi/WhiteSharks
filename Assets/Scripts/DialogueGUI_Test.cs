@@ -294,7 +294,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 		if (!_isBranchedText)
 		{
 			disableColliders();
-			if (Input.GetMouseButtonDown(0) && time > delay)
+			if (Input.GetMouseButtonUp(0) && time > delay)
 			{
 				time = 0;
 				Dialoguer.ContinueDialogue(0);
