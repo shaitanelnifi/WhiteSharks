@@ -394,7 +394,14 @@ public class DialogueGUI_Test : MonoBehaviour {
 		GameObject[] objs = GameObject.FindGameObjectsWithTag ("choice");
 		foreach (GameObject obj in objs)
 		{
-			obj.GetComponent<BoxCollider>().enabled = true;
+			if (obj.GetComponent<UILabel>().text == "")
+			{
+				obj.GetComponent<BoxCollider>().enabled = false;
+			}
+			else
+			{
+				obj.GetComponent<BoxCollider>().enabled = true;
+			}
 		}
 	}
 
