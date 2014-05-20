@@ -145,7 +145,6 @@ public class DialogueGUI_Test : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
 		if (!_dialogue || !_showDialogueBox)
 		{
 			setScaleZero ();
@@ -204,6 +203,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 					convoText.GetComponent<UIWidget>().pivot = UIWidget.Pivot.TopLeft;
 					convo.GetComponent<UISprite>().MarkAsChanged();
 				}
+				convo.GetComponent<UISprite> ().enabled = true;
 			}
 
 			//runOnce = false;
