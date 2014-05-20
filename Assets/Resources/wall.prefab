@@ -11,7 +11,7 @@ GameObject:
   - 60: {fileID: 6000000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
