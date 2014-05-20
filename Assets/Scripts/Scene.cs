@@ -6,10 +6,13 @@ using System.Collections;
 
 public class Scene : MonoBehaviour {
 	public static GameObject player, backEffect;
-	public float scaleX, scaleY;
-	public float maxY, minY;
-	public float minScale, maxScale;
-	public float baseSpeed;
+	public float scaleX = 1f;
+	public float scaleY = 1f;
+	public float maxY = 1f;
+	public float minY = 1f;
+	public float minScale = 1f;
+	public float maxScale = 1f;
+	public float baseSpeed = 1f;
 
 	public int id;
 	// Use this for initialization
