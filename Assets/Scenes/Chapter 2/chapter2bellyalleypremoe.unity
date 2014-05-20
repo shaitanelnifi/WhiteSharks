@@ -107,7 +107,7 @@ MonoBehaviour:
   waitThisLong: -1
   whatCharacter: Jane
   nextLevel: chapter2moesroom
-  isTherePlayer: 1
+  isTherePlayer: 0
   spawnHereAfter: {x: 0, y: 0}
   loadNewXML: 0
   dialoguer: chapter2
@@ -434,16 +434,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 576202008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51a2a268bd181ea43b3064a7728d1db2, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter2moesroom
-  x: -1.68327105
-  y: -5.14134598
+  x: 0
+  y: 0
   mouseOverIcon: Door_Icon
-  getTheseToProceed: []
-  getTheseGlobalBools: 00000000
-  dontGotIt: 21
 --- !u!60 &576202010
 PolygonCollider2D:
   m_ObjectHideFlags: 0
