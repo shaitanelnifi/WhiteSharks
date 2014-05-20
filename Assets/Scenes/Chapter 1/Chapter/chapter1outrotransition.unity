@@ -235,9 +235,9 @@ MonoBehaviour:
   playMe: {fileID: 0}
   waitThisLong: 4
   whatCharacter: Jane
-  nextLevel: mainmenu
+  nextLevel: chapter2introtransition
   isTherePlayer: 0
-  spawnHereAfter: {x: 0, y: 0}
+  spawnHereAfter: {x: 2.4000001, y: -5}
   loadNewXML: 0
   dialoguer: chapter1
   needGUI: 0

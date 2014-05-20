@@ -22,8 +22,8 @@ public class Scene : MonoBehaviour {
 		tempVec.x = GameManager.Instance.GetNextX ();
 		tempVec.y = GameManager.Instance.GetNextY ();
 
-		Debug.LogWarning("X, Y: " + tempVec.x + ", " + tempVec.y);
-		                 player.transform.position = tempVec;
+		//Debug.LogWarning("X, Y: " + tempVec.x + ", " + tempVec.y);
+		player.transform.position = tempVec;
 		//scale the player sprite
 		if (scaleX != 0 && scaleY != 0) {
 			player.transform.localScale = new Vector3(scaleX, scaleY, 1);	

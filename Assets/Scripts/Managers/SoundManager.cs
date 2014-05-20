@@ -135,7 +135,7 @@ public class SoundManager : MonoBehaviour {
 		newSource.audio.loop = true;
 		gameVolumeMax = Volume(newSource, SoundType.Music);
 		newSource.audio.volume = 0;
-		Debug.Log("playing");
+		//Debug.Log("playing");
 		newSource.audio.Play();
 		fading = false;
 		StartCoroutine("FadeIn");

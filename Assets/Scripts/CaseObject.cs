@@ -13,10 +13,8 @@ public class CaseObject : CaseElement {
 	public bool autoPickupPostConvo = false;
 
 	void Start(){
-		Debug.Log ("asda");
 		Debug.Log (this.elementName);
 		if (journal.inventory.Contain (this)) {	
-			Debug.Log ("inside");
 			DestroyObject (gameObject);
 		}
 		base.Init ();

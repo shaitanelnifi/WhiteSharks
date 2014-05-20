@@ -206,7 +206,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: b8763e039219445cfbafab98f1b6403b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e8e05600956d304c9cbc83c3da380ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &962584755
 Transform:
@@ -235,11 +235,11 @@ MonoBehaviour:
   playMe: {fileID: 0}
   waitThisLong: 4
   whatCharacter: Jane
-  nextLevel: chapter1finlobby
+  nextLevel: chapter2finofficewalkway
   isTherePlayer: 1
-  spawnHereAfter: {x: 2.4000001, y: -5}
-  loadNewXML: 0
-  dialoguer: chapter1
+  spawnHereAfter: {x: 1.55027294, y: -3.39677405}
+  loadNewXML: 1
+  dialoguer: chapter2
   needGUI: 0
   dialogue: ffffffff
   curDia: 0
