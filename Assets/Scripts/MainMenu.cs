@@ -46,7 +46,7 @@ public class MainMenu : MonoBehaviour {
 	}
 
 	public void startGame() {
-		Dialoguer.Initialize ("chapter1");
+		Dialoguer.Initialize ("chapter2");
 		// Initialize various managers for the game
 		// Singleton pattern
 
