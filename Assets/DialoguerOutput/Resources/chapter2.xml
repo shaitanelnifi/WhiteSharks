@@ -3073,8 +3073,8 @@
       <name>MayFranksJournal</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>900.199951</y>
+        <x>342.021484</x>
+        <y>1042.20862</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -4030,7 +4030,7 @@
             <y>1294.2</y>
           </position>
           <outs>
-            <int>22</int>
+            <int>23</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -4071,8 +4071,8 @@
           <id>22</id>
           <type>EndPhase</type>
           <position>
-            <x>758</x>
-            <y>1334.2</y>
+            <x>1097</x>
+            <y>1307.2</y>
           </position>
           <outs />
           <advanced>false</advanced>
@@ -4104,6 +4104,49 @@
             <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>23</id>
+          <type>SetVariablePhase</type>
+          <position>
+            <x>769.0215</x>
+            <y>1250.20862</y>
+          </position>
+          <outs>
+            <int>22</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>7</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>68</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>true</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
       </phases>
@@ -13581,8 +13624,13 @@
           <variable>false</variable>
           <id>6</id>
         </DialogueEditorVariableObject>
+        <DialogueEditorVariableObject>
+          <name>readJournal</name>
+          <variable>false</variable>
+          <id>7</id>
+        </DialogueEditorVariableObject>
       </variables>
-      <selection>6</selection>
+      <selection>7</selection>
     </booleans>
     <floats>
       <variables>
@@ -13631,7 +13679,7 @@
   </themes>
   <selectorScrollPosition>
     <x>0</x>
-    <y>341</y>
+    <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>61</currentDialogueId>
+  <currentDialogueId>19</currentDialogueId>
 </DialogueEditorMasterObject>
