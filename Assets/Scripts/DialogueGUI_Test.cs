@@ -315,6 +315,11 @@ public class DialogueGUI_Test : MonoBehaviour {
 			Debug.Log ("ENABLE~~~~~~~~~~~~~~~");
 			setScaleFull();
 		}
+
+		if (Input.GetKeyUp (KeyCode.F))
+		{
+			Dialoguer.EndDialogue();
+		}
 		#endregion
 	}
 
