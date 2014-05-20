@@ -355,7 +355,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 		nameLabel.text = _nameText;
 
 		if (leftChar.spriteName.Equals ("") || ! leftChar.spriteName.Equals (_nameText.Replace(" ", string.Empty) + "Sprite")) {
-			Debug.LogWarning ("Left char's name is " + _nameText);
+			//Debug.LogWarning ("Left char's name is " + _nameText);
 			leftSpriteName = _nameText.Replace(" ", string.Empty) + "Sprite";
 		}
 

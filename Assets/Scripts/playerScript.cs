@@ -66,7 +66,6 @@ public class playerScript : CaseElement {
 				|| Application.loadedLevelName == "chapter1finroom10")
 			SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/Fin"));*/
 		anim = GetComponentInChildren<Animator>();
-		Debug.Log (anim);
 		//canWalk = true;
 		canScale = true;
 
@@ -198,8 +197,7 @@ public class playerScript : CaseElement {
 	}
 
 	public void stopMove(){
-
-		Debug.LogWarning ("STOP");
+		//Debug.LogWarning ("STOP");
 		setTarget(new Vector2(transform.position.x, transform.position.y));
 		canWalk = false;
 		SoundManager.Instance.CantWalk();
@@ -232,9 +230,9 @@ public class playerScript : CaseElement {
 			gameObject.collider2D.enabled = false;
 			renderer.enabled = false;
 			if (backEffect == null){
-				Debug.Log("Calling effect");
+				//Debug.Log("Calling effect");
 				backEffect = (GameObject)Instantiate(Resources.Load("blackScreen"));
-				Debug.Log(backEffect);
+				//Debug.Log(backEffect);
 			}
 		}
 		else {
