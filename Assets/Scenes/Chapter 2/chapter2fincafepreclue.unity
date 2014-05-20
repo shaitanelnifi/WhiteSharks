@@ -437,6 +437,10 @@ Prefab:
       propertyPath: description
       value: Frank's jacket must contain some sort of clue!
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 4472ac579a526424ea5c6964d85fb6a2, type: 2}
+      propertyPath: conditions.Array.data[0]
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4472ac579a526424ea5c6964d85fb6a2, type: 2}
   m_RootGameObject: {fileID: 1551934856}
@@ -921,7 +925,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
       propertyPath: getTheseGlobalBools.Array.data[0]
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
@@ -1103,7 +1107,7 @@ MonoBehaviour:
   maxDist: 4
   myConvo: 41
   offset: 0
-  conditions: 00000000
+  conditions: 0c000000
   associatedObjects: []
   mouseOverIcon: Grab_Icon
   autoPickupPostConvo: 1
@@ -1221,7 +1225,7 @@ MonoBehaviour:
   y: 0
   mouseOverIcon: Door_Icon
   getTheseToProceed: []
-  getTheseGlobalBools: 09000000
+  getTheseGlobalBools: 0b000000
   dontGotIt: 21
 --- !u!60 &1880728885
 PolygonCollider2D:
