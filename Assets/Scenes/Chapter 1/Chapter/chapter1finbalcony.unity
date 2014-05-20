@@ -1913,9 +1913,9 @@ GameObject:
   - 4: {fileID: 936188418}
   - 212: {fileID: 936188417}
   - 50: {fileID: 936188415}
-  - 114: {fileID: 936188414}
   - 114: {fileID: 936188419}
   - 60: {fileID: 936188416}
+  - 114: {fileID: 936188414}
   m_Layer: 10
   m_Name: door1
   m_TagString: Untagged
@@ -2649,9 +2649,9 @@ GameObject:
   - 4: {fileID: 1354061152}
   - 212: {fileID: 1354061151}
   - 50: {fileID: 1354061149}
-  - 114: {fileID: 1354061148}
   - 114: {fileID: 1354061153}
   - 60: {fileID: 1354061150}
+  - 114: {fileID: 1354061148}
   m_Layer: 10
   m_Name: door10
   m_TagString: Untagged
@@ -2994,6 +2994,18 @@ Prefab:
     - target: {fileID: 11400002, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: scale
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: id
+      value: chapter1finroom0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: x
+      value: -8.72952461
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: y
+      value: -5.3029108
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
@@ -8819,9 +8831,9 @@ GameObject:
   - 4: {fileID: 1838341072}
   - 212: {fileID: 1838341071}
   - 50: {fileID: 1838341069}
-  - 114: {fileID: 1838341068}
   - 114: {fileID: 1838341073}
   - 60: {fileID: 1838341070}
+  - 114: {fileID: 1838341068}
   m_Layer: 10
   m_Name: door0
   m_TagString: Untagged
