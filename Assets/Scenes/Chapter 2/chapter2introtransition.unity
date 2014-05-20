@@ -237,7 +237,7 @@ MonoBehaviour:
   whatCharacter: Jane
   nextLevel: chapter2finofficewalkway
   isTherePlayer: 1
-  spawnHereAfter: {x: 1.55027294, y: -3.39677405}
+  spawnHereAfter: {x: 0, y: 0}
   loadNewXML: 1
   dialoguer: chapter2
   needGUI: 0
