@@ -140,7 +140,7 @@ MonoBehaviour:
   nextLevel: chapter1introbrainroom
   isTherePlayer: 0
   spawnHereAfter: {x: 0, y: 0}
-  loadNewXML: 0
+  loadNewXML: 1
   dialoguer: chapter1
   needGUI: 0
   dialogue: 00000000

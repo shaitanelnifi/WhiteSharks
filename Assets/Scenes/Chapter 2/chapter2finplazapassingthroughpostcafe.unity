@@ -1096,14 +1096,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 546e4042cc205e14bb0c655ff9ec24f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleX: 0
-  scaleY: 0
-  maxY: 0
-  minY: 0
-  minScale: 0
-  maxScale: 0
-  baseSpeed: 0
-  id: 0
+  scaleX: .362595588
+  scaleY: .362596005
+  maxY: -2.365376
+  minY: -5.05575895
+  minScale: .25
+  maxScale: .370669812
+  baseSpeed: 1
+  id: 3
 --- !u!212 &1601164760
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6621,16 +6621,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2092327717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51a2a268bd181ea43b3064a7728d1db2, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter2fincafepassingthrough
   x: -8.72952461
   y: -5.3029108
   mouseOverIcon: Door_Icon
-  getTheseToProceed: []
-  getTheseGlobalBools: 00000000
-  dontGotIt: 21
 --- !u!50 &2092327721
 Rigidbody2D:
   m_ObjectHideFlags: 0
