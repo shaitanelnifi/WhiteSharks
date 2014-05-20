@@ -235,11 +235,11 @@ MonoBehaviour:
   playMe: {fileID: 0}
   waitThisLong: 4
   whatCharacter: Jane
-  nextLevel: chapter2introtransition
+  nextLevel: chapter2finofficewalkway
   isTherePlayer: 0
   spawnHereAfter: {x: 0, y: 0}
-  loadNewXML: 0
-  dialoguer: chapter1
+  loadNewXML: 1
+  dialoguer: chapter2
   needGUI: 0
   dialogue: ffffffff
   curDia: 0
