@@ -81,7 +81,7 @@ public enum clickableID {
 
 
 public enum Convo {
-	ch0none = -1,
+	none = -1,
 	//chapter 1
 	ch1openingNarration = 0,
 	ch1frankPartnerBRoom = 1,
