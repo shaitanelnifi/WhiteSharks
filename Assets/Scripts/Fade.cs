@@ -18,15 +18,15 @@ public class Fade : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (typeOfFade.Equals(FadeType.fadeIn));
-		Debug.Log (typeOfFade.Equals(FadeType.fadeOut));
+		//Debug.Log (typeOfFade.Equals(FadeType.fadeIn));
+		//Debug.Log (typeOfFade.Equals(FadeType.fadeOut));
 		if (typeOfFade.Equals(FadeType.fadeIn)) {
-			Debug.Log(r.color.a);
+			//Debug.Log(r.color.a);
 			if (r.color.a < 1) {
 				a.a += 0.01f;
-				Debug.Log (a.a);
+				//Debug.Log (a.a);
 				r.color = a;
-				Debug.Log (r.color.a);
+				//Debug.Log (r.color.a);
 						}
 				} 
 		else if (typeOfFade.Equals(FadeType.cycle)){
@@ -34,9 +34,9 @@ public class Fade : MonoBehaviour {
 		} else if (typeOfFade.Equals(FadeType.fadeOut)) {
 			if (r.color.a > 0) {
 				a.a -= 0.01f;
-				Debug.Log (a.a);
+				//Debug.Log (a.a);
 				r.color = a;
-				Debug.Log (r.color.a);
+				//Debug.Log (r.color.a);
 			}
 		
 		}
