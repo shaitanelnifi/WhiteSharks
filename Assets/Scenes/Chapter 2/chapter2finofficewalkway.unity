@@ -84,9 +84,9 @@ GameObject:
   - 4: {fileID: 7597261}
   - 212: {fileID: 7597260}
   - 50: {fileID: 7597259}
-  - 114: {fileID: 7597258}
   - 114: {fileID: 7597257}
   - 60: {fileID: 7597256}
+  - 114: {fileID: 7597258}
   m_Layer: 10
   m_Name: doorback
   m_TagString: Untagged
@@ -142,8 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter2finplazafirstarrival
-  x: -8.72952461
-  y: -5.3029108
+  x: 0
+  y: 0
   mouseOverIcon: Door_Icon
 --- !u!50 &7597259
 Rigidbody2D:
@@ -603,6 +603,10 @@ Prefab:
     - target: {fileID: 6000000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[9].y
       value: 2.3394289
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: id
+      value: chapter2finplazafirstarrival
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: id
