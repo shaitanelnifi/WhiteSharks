@@ -84,9 +84,9 @@ GameObject:
   - 4: {fileID: 7597261}
   - 212: {fileID: 7597260}
   - 50: {fileID: 7597259}
-  - 114: {fileID: 7597258}
   - 114: {fileID: 7597257}
   - 60: {fileID: 7597256}
+  - 114: {fileID: 7597258}
   m_Layer: 10
   m_Name: doorback
   m_TagString: Untagged
@@ -138,13 +138,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7597255}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
+  m_Script: {fileID: 11500000, guid: 51a2a268bd181ea43b3064a7728d1db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter2finplazafirstarrival
-  x: -8.72952461
-  y: -5.3029108
+  x: -1.68327105
+  y: -5.14134598
   mouseOverIcon: Door_Icon
+  getTheseToProceed: []
+  getTheseGlobalBools: 00000000
+  dontGotIt: 21
 --- !u!50 &7597259
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -314,7 +317,7 @@ Transform:
   m_PrefabInternal: {fileID: 398096604}
   m_GameObject: {fileID: 10449643}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.74923515, y: -4.00792122, z: -1}
+  m_LocalPosition: {x: -4.74923515, y: -3.39677405, z: -1}
   m_LocalScale: {x: .316350222, y: .316350013, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -626,7 +629,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.00792122
+      value: -3.39677405
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1125,7 +1128,7 @@ MonoBehaviour:
   whatCharacter: Jane
   nextLevel: chapter2finplazafirstarrival
   isTherePlayer: 1
-  spawnHereAfter: {x: 0, y: 0}
+  spawnHereAfter: {x: 1.55027294, y: -3.39677405}
   loadNewXML: 1
   dialoguer: chapter2
   needGUI: 0
