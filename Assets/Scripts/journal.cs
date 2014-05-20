@@ -64,7 +64,10 @@ public class journal : MonoBehaviour {
 	}
 	
 	void resetObjectButtonList(){
-		objectButtonList.Clear();
+		if (objectButtonList != null)
+		{
+			objectButtonList.Clear();
+		}
 		foreach (Transform child in objectButtonGrid.transform){
 			objectButtonList.Add (child.gameObject);
 		}
