@@ -84,7 +84,7 @@ public enum clickableID {
 	janechapter2fincafespeakersprehack = 39,
 	janechapter2fincafespeakersposthack = 40,
 	janechapter2fincafecoat = 41,
-	maychapter2finplazawrongway = 46,
+	//maychapter2finplazawrongway = 46,
 	maychapter2bellybarbyemay = 54,
 	maychapter2bellyalleypassingthroughwrongway = 56,
 
@@ -92,7 +92,7 @@ public enum clickableID {
 
 
 public enum Convo {
-	none = -1,
+	ch0none = -1,
 	//chapter 1
 	openingNarration = 0,
 	frankPartnerBRoom = 1,
@@ -139,7 +139,7 @@ public enum Convo {
 	robotchapter2bellybarpostcafe = 53,
 	maychapter2bellyalleypassingthroughwaiting = 55,
 	maychapter2bellymarketpassingthroughwaiting = 59,
-	peijunchapter2bellymarketwaiting = 60,
+	//peijunchapter2bellymarketwaiting = 60,
 	maychapter2fincafewaiting = 61,
 
 };
