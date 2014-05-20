@@ -53,7 +53,7 @@ public class NPC : CaseElement {
 		player.talking = true;
 		
 		DialogueGUI_Test dGUI = GameManager.Instance.GetComponent<DialogueGUI_Test>();
-		Debug.Log ("LEFT SPRITE: " + this.elementName);
+		//Debug.Log ("LEFT SPRITE: " + this.elementName);
 		dGUI.setLeftSpriteName((this.elementName + "Sprite").Replace(" ", string.Empty));
 
 	}

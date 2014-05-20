@@ -66,19 +66,19 @@ public class InputManager : MonoBehaviour {
 
 	void OnGUI() {
 		// This condition used for triggering pause menu
-		if (_isPause) {
-			if (GUI.Button (new Rect (Screen.width/2 - _buttonWidth, Screen.height/2, _buttonWidth, 30), "Unpause")) {
-				_isPause = !_isPause;
-				GameManager.Instance.setState(gameStates.INGAME);
-				Time.timeScale = 1;
-			}
-
-			if (GUI.Button (new Rect (Screen.width/2 - _buttonWidth, Screen.height/2 + 40, _buttonWidth, 30), "Exit to Main Menu")) {
-				_isPause = !_isPause;
-				GameManager.Instance.setState(gameStates.MAINMENU);
-				Application.LoadLevel ("mainmenu");
-			}
-		}
+//		if (_isPause) {
+//			if (GUI.Button (new Rect (Screen.width/2 - _buttonWidth, Screen.height/2, _buttonWidth, 30), "Unpause")) {
+//				_isPause = !_isPause;
+//				GameManager.Instance.setState(gameStates.INGAME);
+//				Time.timeScale = 1;
+//			}
+//
+//			if (GUI.Button (new Rect (Screen.width/2 - _buttonWidth, Screen.height/2 + 40, _buttonWidth, 30), "Exit to Main Menu")) {
+//				_isPause = !_isPause;
+//				GameManager.Instance.setState(gameStates.MAINMENU);
+//				Application.LoadLevel ("mainmenu");
+//			}
+//		}
 	}
 
 	// Use this for initialization
@@ -89,14 +89,14 @@ public class InputManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		// Gets the last key pressed
-		if (Input.anyKeyDown) {
-			_prevKeyPressed = FetchKey ();
-		}
-
-		// Input to open pause menu
-		if (Input.GetKeyDown(KeyCode.Escape) && Application.loadedLevelName != "mainmenu") {
-			PauseMenu ();
-		}
+//		if (Input.anyKeyDown) {
+//			_prevKeyPressed = FetchKey ();
+//		}
+//
+//		// Input to open pause menu
+//		if (Input.GetKeyDown(KeyCode.Escape) && Application.loadedLevelName != "mainmenu") {
+//			PauseMenu ();
+//		}
 	}
 }
 

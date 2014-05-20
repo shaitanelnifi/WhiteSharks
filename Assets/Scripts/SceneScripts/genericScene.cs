@@ -43,7 +43,7 @@ public class genericScene : MonoBehaviour {
 		if (player != null) {
 			player.stopMove ();
 			player.talking = true;
-			Debug.LogWarning("TALKING");
+			//Debug.LogWarning("TALKING");
 		}
 	}
 	
@@ -71,7 +71,7 @@ public class genericScene : MonoBehaviour {
 			if (player != null) {
 				player.stopMove ();
 				player.talking = true;
-				Debug.LogWarning("TALKING");
+				//Debug.LogWarning("TALKING");
 			}
 		}
 
@@ -91,7 +91,7 @@ public class genericScene : MonoBehaviour {
 										if (!GameManager.Instance.playerInScene) {
 												GameManager.Instance.playerInScene = true;
 										}
-										Debug.Log ("Setting nexts to " + spawnHereAfter.x + " and " + spawnHereAfter.y);
+										//Debug.Log ("Setting nexts to " + spawnHereAfter.x + " and " + spawnHereAfter.y);
 										GameManager.Instance.SetMainCharacter (whatCharacter);
 										GameManager.Instance.SetNextX (spawnHereAfter.x);
 										GameManager.Instance.SetNextY (spawnHereAfter.y);

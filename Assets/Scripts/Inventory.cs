@@ -36,9 +36,9 @@ public class Inventory {
 	public bool Contain(CaseObject obj){
 
 		bool result = names.Contains (obj.elementName);
-		Debug.Log (result.ToString());
+		//Debug.Log (result.ToString());
 
-		Debug.Log (names.Count.ToString ());
+		//Debug.Log (names.Count.ToString ());
 
 		return result;
 	}
