@@ -14,7 +14,7 @@ GameObject:
   - 60: {fileID: 6000000}
   - 114: {fileID: 11400000}
   m_Layer: 10
-  m_Name: doorback
+  m_Name: conditionalDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,9 +72,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51a2a268bd181ea43b3064a7728d1db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: chapter2bellyalleypremoe
-  x: -1.68327105
-  y: -5.14134598
+  id: 
+  x: 0
+  y: 0
   mouseOverIcon: Door_Icon
   getTheseToProceed: []
   getTheseGlobalBools: 00000000

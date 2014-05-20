@@ -14,7 +14,7 @@ public class DoorScript : MonoBehaviour {
 
 	//Mouse icon information
 	public string mouseOverIcon = "Door_Icon";
-	private playerScript player;
+	protected playerScript player;
 
 	void Start(){
 
