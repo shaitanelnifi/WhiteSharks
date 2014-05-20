@@ -6251,11 +6251,11 @@ MonoBehaviour:
   waitThisLong: -1
   whatCharacter: Jane
   nextLevel: chapter2bellybarfirstarrival
-  isTherePlayer: 1
+  isTherePlayer: 0
   spawnHereAfter: {x: 0, y: 0}
   loadNewXML: 0
   dialoguer: chapter2
-  needGUI: 1
+  needGUI: 0
   dialogue: 03000000
   curDia: 0
   setOffset: 0
