@@ -32,8 +32,8 @@ public class journal : MonoBehaviour {
 	public GameObject journalButton;
 	private bool inMenu;
 
-	private List<GameObject> viewTabList;
-	private List<GameObject> poiButtonList;
+	private static List<GameObject> viewTabList;
+	private static List<GameObject> poiButtonList;
 	private static List<GameObject> objectButtonList;
 
 	public GameObject poiButtonGrid;
@@ -57,17 +57,11 @@ public class journal : MonoBehaviour {
 	}
 
 	void OnLevelWasLoaded(int level){
+
 		if (level == 0) {
 			Destroy (gameObject.transform.parent.transform.parent.gameObject);
 		}
-		resetObjectButtonList();
-	}
 
-	void resetObjectButtonList(){
-		objectButtonList.Clear();
-		foreach (Transform child in objectButtonGrid.transform){
-			objectButtonList.Add (child.gameObject);
-		}
 	}
 	
 	void Start () {
@@ -93,6 +87,7 @@ public class journal : MonoBehaviour {
 
 		poiButtonList = new List<GameObject>();
 		objectButtonList = new List<GameObject>();
+
 		initPoIView();
 		changeView(0);
 		changePOI (0);
@@ -101,7 +96,6 @@ public class journal : MonoBehaviour {
 
 	//Single onclick function for any button in the journal.
 	void onClick(GameObject button){
-		resetObjectButtonList();
 		if(viewTabList != null && viewTabList.Contains(button)){
 			changeView (viewTabList.IndexOf(button));
 		}
@@ -205,7 +199,7 @@ public class journal : MonoBehaviour {
 
 	//Initialize obj view.
 	//Not being used for scroll view.
-/*	public void initObjView(){
+	public void initObjView(){
 		//Add buttons to obj button list and put them in UI event listener.
 		foreach (Transform child in objectButtonGrid.transform){
 			UIEventListener.Get(child.gameObject).onClick += this.onClick;
@@ -220,7 +214,7 @@ public class journal : MonoBehaviour {
 				objectButtonList[i].gameObject.GetComponentInChildren<UILabel>().text = emptyName;
 			}
 		}
-	}*/
+	}
 
 	public void addObject(CaseObject newObject){
 		changeView (1);
