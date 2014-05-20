@@ -2058,6 +2058,9 @@ MonoBehaviour:
   objectButtonGrid: {fileID: 100016}
   buttonPrefab: {fileID: 100000, guid: 64d4793b759e75249921ded8eb8fde6a, type: 2}
   poiPortrait: {fileID: 11400088}
+  cullingMask:
+    serializedVersion: 2
+    m_Bits: 4294963195
   descriptionLabel: {fileID: 11400056}
   panelNameLabel: {fileID: 11400074}
   timeLabel: {fileID: 11400072}
