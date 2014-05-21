@@ -4199,8 +4199,8 @@ I’m going to double check outside, I’ll be back soon.</text>
       <name>Noel and Alexia</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>14.0014648</x>
-        <y>786.9734</y>
+        <x>0</x>
+        <y>470.91333</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -4560,7 +4560,7 @@ She has been here long enough, and she’s proved capable.</text>
             <xMax>0</xMax>
             <yMax>0</yMax>
           </rect>
-          <newWindow>true</newWindow>
+          <newWindow>false</newWindow>
           <choices />
           <waitType>Seconds</waitType>
           <waitDuration>0</waitDuration>
@@ -4626,7 +4626,7 @@ She has been here long enough, and she’s proved capable.</text>
           <theme />
           <position>
             <x>10</x>
-            <y>931.999</y>
+            <y>1431.999</y>
           </position>
           <outs>
             <int>10</int>
@@ -4671,8 +4671,8 @@ She has been here long enough, and she’s proved capable.</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>334</x>
-            <y>935.999</y>
+            <x>336</x>
+            <y>1559.999</y>
           </position>
           <outs>
             <int>11</int>
@@ -4718,8 +4718,8 @@ We don’t have a lot of time, the witnesses have been in lockdown since this mo
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>641</x>
-            <y>934.999</y>
+            <x>656</x>
+            <y>1558.999</y>
           </position>
           <outs>
             <int>12</int>
@@ -4764,8 +4764,8 @@ We don’t have a lot of time, the witnesses have been in lockdown since this mo
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>10</x>
-            <y>1076.999</y>
+            <x>13</x>
+            <y>1707.999</y>
           </position>
           <outs>
             <int>13</int>
@@ -4810,8 +4810,8 @@ We don’t have a lot of time, the witnesses have been in lockdown since this mo
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>324</x>
-            <y>1079.999</y>
+            <x>337</x>
+            <y>1706.999</y>
           </position>
           <outs>
             <int>14</int>
@@ -4858,8 +4858,8 @@ Their profiles are being uploaded to your journal as we speak.</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>643</x>
-            <y>1076.999</y>
+            <x>648</x>
+            <y>1686.999</y>
           </position>
           <outs>
             <int>15</int>
@@ -4904,8 +4904,8 @@ Their profiles are being uploaded to your journal as we speak.</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>11</x>
-            <y>1233.99731</y>
+            <x>10</x>
+            <y>2012.99731</y>
           </position>
           <outs>
             <int>16</int>
@@ -4950,8 +4950,8 @@ Their profiles are being uploaded to your journal as we speak.</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>328</x>
-            <y>1228.99731</y>
+            <x>340</x>
+            <y>1697.99731</y>
           </position>
           <outs>
             <int>17</int>
@@ -4997,8 +4997,8 @@ Their profiles are being uploaded to your journal as we speak.</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>648</x>
-            <y>1221.99731</y>
+            <x>681</x>
+            <y>1697.99731</y>
           </position>
           <outs>
             <int>18</int>
@@ -5045,7 +5045,7 @@ Their profiles are being uploaded to your journal as we speak.</text>
           <theme />
           <position>
             <x>10</x>
-            <y>1696.99731</y>
+            <y>2307.99731</y>
           </position>
           <outs>
             <int>19</int>
@@ -5090,8 +5090,8 @@ Their profiles are being uploaded to your journal as we speak.</text>
           <id>19</id>
           <type>EndPhase</type>
           <position>
-            <x>338</x>
-            <y>1700.99731</y>
+            <x>368</x>
+            <y>2319.99731</y>
           </position>
           <outs />
           <advanced>false</advanced>
@@ -19871,5 +19871,5 @@ Why am I… feeling… so… dizzy?</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>0</currentDialogueId>
+  <currentDialogueId>5</currentDialogueId>
 </DialogueEditorMasterObject>
