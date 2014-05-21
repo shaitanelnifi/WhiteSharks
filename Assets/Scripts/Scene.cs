@@ -31,10 +31,10 @@ public class Scene : MonoBehaviour {
 		if (scaleX != 0 && scaleY != 0) {
 			player.transform.localScale = new Vector3(scaleX, scaleY, 1);	
 		}
-		player.GetComponent<playerScript> ().currentRoom = this.id;
+//		player.GetComponent<playerScript> ().currentRoom = this.id;
 		player.GetComponent<playerScript> ().scaleInfo = new float[4]{minScale, maxScale, minY, maxY};
 		player.GetComponent<playerScript> ().baseSpeed = baseSpeed;
-		player.GetComponent<playerScript> ().minSpeed = baseSpeed;
+//		player.GetComponent<playerScript> ().minSpeed = baseSpeed;
 
 		GameManager.Instance.updateMouseIcon ("Walk_Icon");
 	}
