@@ -94,6 +94,7 @@ public enum Convo {
 	frankPartnerBRoom = 1,
 	frankPartnerBalcony = 2,
 	frankPartnerBedRoom = 3,
+	frankBalconyIntro = 37,
 	janeShammyPreOffice = 4,
 	noelAlexiaOffice = 5,
 	janeAlexiaOfficeStart = 6,
@@ -109,7 +110,7 @@ public enum Convo {
 	janeCuteBox = 16,
 	janeNinasPhone = 17,
 	janeShammyCase = 24,
-
+	
 	//chapter 2
 	maychapter2finofficewalkwaystart = 0,
 	maychapter2finofficewalkwaywaiting = 1,

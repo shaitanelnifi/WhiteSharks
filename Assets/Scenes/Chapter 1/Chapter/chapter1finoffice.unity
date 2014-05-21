@@ -1439,7 +1439,7 @@ MonoBehaviour:
   debugMe: 
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 4c281b7a78264434faea95625cf11996, type: 3}
-  waitThisLong: -1
+  waitThisLong: .5
   whatCharacter: Jane
   nextLevel: chapter1finbalcony
   isTherePlayer: 1
@@ -1552,7 +1552,7 @@ GameObject:
   - 60: {fileID: 1864717042}
   - 114: {fileID: 1864717041}
   - 114: {fileID: 1864717040}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
