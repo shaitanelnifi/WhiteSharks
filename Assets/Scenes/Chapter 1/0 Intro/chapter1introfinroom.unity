@@ -367,10 +367,10 @@ MonoBehaviour:
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 258ccc3c9d307944a837f2dcef189496, type: 3}
   waitThisLong: .5
-  whatCharacter: Jane
-  nextLevel: chapter1introtransition
-  isTherePlayer: 1
-  spawnHereAfter: {x: 2.4000001, y: -5}
+  whatCharacter: 
+  nextLevel: chapter1introfinbalconyfrank
+  isTherePlayer: 0
+  spawnHereAfter: {x: 0, y: 0}
   loadNewXML: 0
   dialoguer: chapter1
   needGUI: 0
@@ -1187,7 +1187,7 @@ GameObject:
   - 60: {fileID: 1845470570}
   - 114: {fileID: 1845470569}
   - 114: {fileID: 1845470568}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: wall collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

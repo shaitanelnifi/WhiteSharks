@@ -28,6 +28,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter 1/Chapter/chapter1finbalcony.unity
   - enabled: 1
+    path: Assets/Scenes/Chapter 1/0 Intro/chapter1introfinbalconyfrank.unity
+  - enabled: 1
     path: Assets/Scenes/Chapter 1/Chapter/chapter1finoffice.unity
   - enabled: 1
     path: Assets/Scenes/Chapter 1/Chapter/chapter1finplaza.unity
