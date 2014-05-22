@@ -5605,58 +5605,6 @@ Transform:
   m_LocalScale: {x: .174357697, y: 1.19759154, z: .949355006}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1 &1159405160
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1159405162}
-  - 114: {fileID: 1159405161}
-  m_Layer: 0
-  m_Name: SceneBehavior
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1159405161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1159405160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 426b90a7f8d0fd14398f752965840431, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  debugMe: 
-  autoPlay: 1
-  playMe: {fileID: 0}
-  waitThisLong: -1
-  whatCharacter: Jane
-  nextLevel: chapter2bellymarketpeijun
-  isTherePlayer: 0
-  spawnHereAfter: {x: 0, y: 0}
-  loadNewXML: 0
-  dialoguer: chapter2
-  needGUI: 0
-  dialogue: 18000000
-  curDia: 0
-  setOffset: 0
---- !u!4 &1159405162
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1159405160}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
 --- !u!1001 &1251355223
 Prefab:
   m_ObjectHideFlags: 0
@@ -5813,6 +5761,62 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1477815170}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &1748926250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1748926252}
+  - 114: {fileID: 1748926251}
+  m_Layer: 0
+  m_Name: SceneBehavior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1748926251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1748926250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426b90a7f8d0fd14398f752965840431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  playMe: {fileID: 0}
+  waitThisLong: -1
+  whatCharacter: Jane
+  nextLevel: chapter2bellyalleyprepeijunpassingthrough
+  isTherePlayer: 0
+  spawnHereAfter: {x: 0, y: 0}
+  loadNewXML: 0
+  dialoguer: chapter2
+  needGUI: 0
+  dialogue: 10000000
+  setOffset: 0
+  player: {fileID: 0}
+  maxY: -2.0162971
+  minY: -3.96002603
+  minScale: .947153926
+  maxScale: 1.15714097
+  baseSpeed: 8
+--- !u!4 &1748926252
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1748926250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}

@@ -306,6 +306,62 @@ Prefab:
   m_RootGameObject: {fileID: 1118359190}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &573131544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 573131546}
+  - 114: {fileID: 573131545}
+  m_Layer: 0
+  m_Name: SceneBehavior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &573131545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 573131544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426b90a7f8d0fd14398f752965840431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  playMe: {fileID: 0}
+  waitThisLong: -1
+  whatCharacter: Jane
+  nextLevel: chapter2bellybarpostcafe
+  isTherePlayer: 0
+  spawnHereAfter: {x: 0, y: 0}
+  loadNewXML: 0
+  dialoguer: chapter2
+  needGUI: 0
+  dialogue: 03000000
+  setOffset: 0
+  player: {fileID: 0}
+  maxY: -2.365376
+  minY: -5.05575895
+  minScale: .25
+  maxScale: .370669812
+  baseSpeed: 1
+--- !u!4 &573131546
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 573131544}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &775922539
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,58 +709,6 @@ Prefab:
   m_RootGameObject: {fileID: 1405135720}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &1085850462
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1085850464}
-  - 114: {fileID: 1085850463}
-  m_Layer: 0
-  m_Name: SceneBehavior
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1085850463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1085850462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 426b90a7f8d0fd14398f752965840431, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  debugMe: 
-  autoPlay: 0
-  playMe: {fileID: 0}
-  waitThisLong: 0
-  whatCharacter: 
-  nextLevel: 
-  isTherePlayer: 0
-  spawnHereAfter: {x: 0, y: 0}
-  loadNewXML: 0
-  dialoguer: chapter1
-  needGUI: 0
-  dialogue: 
-  curDia: 0
-  setOffset: 0
---- !u!4 &1085850464
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1085850462}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
 --- !u!1 &1118359190
 GameObject:
   m_ObjectHideFlags: 0
