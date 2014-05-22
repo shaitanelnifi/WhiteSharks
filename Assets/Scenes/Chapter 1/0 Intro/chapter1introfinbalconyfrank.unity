@@ -820,10 +820,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426b90a7f8d0fd14398f752965840431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugMe: 
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 258ccc3c9d307944a837f2dcef189496, type: 3}
-  waitThisLong: 2
+  waitThisLong: .5
   whatCharacter: Frank
   nextLevel: chapter1introtransition
   isTherePlayer: 0
@@ -832,7 +831,6 @@ MonoBehaviour:
   dialoguer: chapter1
   needGUI: 0
   dialogue: 25000000
-  curDia: 0
   setOffset: 18
   player: {fileID: 0}
   maxY: 2
