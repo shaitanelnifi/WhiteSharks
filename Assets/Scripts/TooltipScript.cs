@@ -57,7 +57,7 @@ public class TooltipScript : MonoBehaviour {
 
 		if (player == null)
 			player = FindObjectOfType (typeof(playerScript)) as playerScript;
-
+		else
 		if (player.canWalk)
 			currText = toolText;
 	}

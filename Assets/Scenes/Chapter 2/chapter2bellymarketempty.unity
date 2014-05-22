@@ -221,7 +221,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &925798571
 MonoBehaviour:
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 4
+  maxDist: 5
 --- !u!61 &925798573
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5501,8 +5501,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleX: 1
   scaleY: 1
-  maxY: 1
-  minY: 1
+  maxY: 5
+  minY: -5
   minScale: 1
   maxScale: 1
   baseSpeed: 1

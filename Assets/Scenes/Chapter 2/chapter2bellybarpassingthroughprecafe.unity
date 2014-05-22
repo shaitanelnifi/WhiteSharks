@@ -104,12 +104,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleX: 1
   scaleY: 1
-  maxY: 1
-  minY: 1
-  minScale: 1
-  maxScale: 1
-  baseSpeed: 1
-  id: 1
+  maxY: -2.99557304
+  minY: -4.30000019
+  minScale: .579999983
+  maxScale: .850000024
+  baseSpeed: 6
+  id: 4
 --- !u!212 &129443573
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -709,7 +709,7 @@ Transform:
   m_PrefabInternal: {fileID: 1874258337}
   m_GameObject: {fileID: 917725583}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.00006199, y: -.41382885, z: -2.40234375}
+  m_LocalPosition: {x: 1.00006199, y: -.41382885, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1127,10 +1127,6 @@ Prefab:
     - target: {fileID: 400000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_LocalPosition.y
       value: -.41382885
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -2.40234375
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9d9776557ac29114191862a17c9e81ce, type: 2}
       propertyPath: m_LocalRotation.x

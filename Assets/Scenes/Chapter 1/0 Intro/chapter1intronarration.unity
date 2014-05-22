@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   a: {fileID: 0}
+  varName: 
 --- !u!4 &309699931
 Transform:
   m_ObjectHideFlags: 0
@@ -125,7 +126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426b90a7f8d0fd14398f752965840431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugMe: HEYO
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 63c652436484b444d85416bf583aaa79, type: 3}
   waitThisLong: 0
@@ -139,6 +139,12 @@ MonoBehaviour:
   dialogue: 00000000
   curDia: 0
   setOffset: 18
+  player: {fileID: 0}
+  maxY: 2
+  minY: 1
+  minScale: 1
+  maxScale: 1
+  baseSpeed: 1
 --- !u!1 &1697760719
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,6 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   a: {fileID: 1697760724}
+  varName: 
 --- !u!95 &1697760724
 Animator:
   serializedVersion: 2

@@ -11,6 +11,7 @@ public class victoryCondition : genericScene {
 	// Use this for initialization
 	void Start () {
 		GameManager.dialogueJustFinished = false;
+		sceneInit ();
 	}
 	
 	// Update is called once per frame

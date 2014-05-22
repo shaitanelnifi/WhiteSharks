@@ -91,7 +91,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &106425900
 MonoBehaviour:
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 4
+  maxDist: 5
 --- !u!61 &106425902
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5301,7 +5301,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1085850464}
-  - 114: {fileID: 1085850463}
   m_Layer: 0
   m_Name: SceneBehavior
   m_TagString: Untagged
@@ -5309,31 +5308,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1085850463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1085850462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 426b90a7f8d0fd14398f752965840431, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  debugMe: 
-  autoPlay: 0
-  playMe: {fileID: 0}
-  waitThisLong: -1
-  whatCharacter: Jane
-  nextLevel: chapter2franksroom
-  isTherePlayer: 0
-  spawnHereAfter: {x: 0, y: 0}
-  loadNewXML: 0
-  dialoguer: chapter2
-  needGUI: 1
-  dialogue: 0d000000
-  curDia: 0
-  setOffset: 0
 --- !u!4 &1085850464
 Transform:
   m_ObjectHideFlags: 0
@@ -5414,7 +5388,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &1134262489
 MonoBehaviour:
@@ -5445,7 +5419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 4
+  maxDist: 5
 --- !u!61 &1134262491
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6174,7 +6148,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &1987488049
 MonoBehaviour:
@@ -6205,7 +6179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 4
+  maxDist: 5
 --- !u!61 &1987488051
 BoxCollider2D:
   m_ObjectHideFlags: 0
