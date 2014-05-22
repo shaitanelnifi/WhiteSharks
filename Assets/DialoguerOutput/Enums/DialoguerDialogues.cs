@@ -37,4 +37,5 @@ public enum DialoguerDialogues{
 	LeftExit = 34,
 	Projector = 35,
 	JournalAdd = 36,
+	FrankBalcony = 37,
 }
