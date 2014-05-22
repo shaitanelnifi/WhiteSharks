@@ -143,12 +143,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   priority: 1
-  smoothType: 2
+  smoothType: 0
   subdivisions: 2
-  iterations: 2
-  strength: .5
+  iterations: 1
+  strength: .569999993
   uniformLength: 1
-  maxSegmentLength: 2
+  maxSegmentLength: 1
   bezierTangentLength: .400000006
   offset: .200000003
   factor: .100000001
@@ -198,19 +198,15 @@ MonoBehaviour:
   clickedOnSomething: 0
   maxDist: 1
   myConvo: -1
-  baseSpeed: 0
-  minSpeed: 0
-  mainCam: {fileID: 0}
-  mainChar: {fileID: 0}
-  facingLeft: 1
-  goingtLeft: 1
+  scaleInfo: []
+  canScale: 1
   anim: {fileID: 0}
   canWalk: 0
   walkWait: 0
-  currentRoom: 0
-  scaleInfo: []
-  canScale: 1
+  facingLeft: 1
+  goingtLeft: 1
   talking: 0
+  baseSpeed: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
