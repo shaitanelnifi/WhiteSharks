@@ -85,6 +85,11 @@ public enum clickableID {
 	maychapter2bellyalleypassingthroughwrongway = 56,
 
 	//chapter 3
+	noelchapter3finofficenote = 2,
+	joshchapter3fincafepostpeijunpreorder = 13,
+	//14, //merged with 13
+	maychapter3finofficepostpeijun = 15,
+	shammychapter3finofficeliamsroom = 16,
 
 };
 
@@ -155,6 +160,23 @@ public enum Convo {
 	maychapter2bellymarketpassingthroughwaiting = 59,
 	//peijunchapter2bellymarketwaiting = 60,
 	maychapter2fincafewaiting = 61,
+
+	//chapter 3
+	maychapter3finofficelobbystart = 0,
+	maychapter3finofficestart = 1,
+	noelchapter3finofficenote = 2,
+	liamchapter3finplazabeforepeijun = 3,
+	ninachapter3finbalconybeforepeijun = 4,
+	joshchapter3fincafebeforepeijun = 5,
+	robotchapter3bellybarbeforepeijun = 6,
+	peijunchapter3bellymarketbeforepeijun = 7,
+	peijunchapter3bellypeijunsroom = 8,
+	ninachapter3bellymarketpostpeijun = 9,
+	robotchapter3bellybarpostpeijun = 10,
+	liamchapter3finplazapostpeijun = 11,
+	joshchapter3fincafepostpeijun = 12,
+	peijunchapter3bellypeijunroomendcutscene = 17,
+	alexiachapter3bellypeijunroomnetworkendcutscene = 18,
 
 };
 
