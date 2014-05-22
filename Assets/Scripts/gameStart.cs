@@ -8,7 +8,6 @@ public class gameStart : MonoBehaviour {
 	// Declare properties
 	private float _buttonWidth = 150;
 	private bool _mainMenu = true;
-	private string _wo;
 	private bool test_Mode = false;
 
 	public gameStart(int a){
@@ -36,7 +35,6 @@ public class gameStart : MonoBehaviour {
 			}
 		} else {
 			//GUI.TextField(new Rect(50, 50, 50, 50), "He", 44);
-			_wo = GUI.TextArea(new Rect(50, 50, 50, 50), "He", 3);
 			GUI.Label(new Rect(150, 150, 50, 50), "Testing");
 
 			if (GUI.Button (new Rect(100, 100, 100, 100), "Go Back")) {
@@ -57,7 +55,6 @@ public class gameStart : MonoBehaviour {
 		// Initialize various managers for the game
 		// Singleton pattern
 		DontDestroyOnLoad(GameManager.Instance);
-		DontDestroyOnLoad(InputManager.Instance);
 		GameManager.Instance.startState(test_Mode);
 
 	}
@@ -66,7 +63,6 @@ public class gameStart : MonoBehaviour {
 		print ("Entering Options menu");
 
 		_mainMenu = false;
-		DontDestroyOnLoad (InputManager.Instance);
 	}
 
 	private void quitGame() {

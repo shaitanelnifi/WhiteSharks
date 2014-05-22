@@ -5,14 +5,13 @@ using System.Collections.Generic;
 public class DialogueGUI_Test : MonoBehaviour {
 
 	private bool _dialogue;
-	private bool _ending;
+	//private bool _ending;
 	private bool _showDialogueBox;
 
 	private string _nameText = string.Empty;
 	
 	private bool _isBranchedText;
 	private string[] _branchedTextChoices;
-	private int _currentChoice;
 
 	private string _windowTargetText = string.Empty;
 	private string _windowCurrentText = string.Empty;
@@ -22,17 +21,13 @@ public class DialogueGUI_Test : MonoBehaviour {
 	private GameObject convoBubble;
 	private UIRoot uiroot;
 
-	private int fullScale = 1;
-	private int noScale = 0;
-
 	private List<UILabel> choices = new List<UILabel> ();
 	private UISprite leftChar;
-	private UISprite rightChar;
+	//private UISprite rightChar;
 	private UILabel nameLabel;
 
 	private string leftSpriteName;
-	private string rightSpriteName;
-	private string name;
+	//private string rightSpriteName;
 	private string _metadata;
 	private List<string[]> _parsedmetadata;
 
@@ -72,7 +67,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 	}
 	
 	private void onDialogueEndedHandler(){
-		_ending = true;
+		//_ending = true;
 
 		if (convoBubble != null)
 		{
@@ -97,7 +92,6 @@ public class DialogueGUI_Test : MonoBehaviour {
 		
 		_isBranchedText = data.windowType == DialoguerTextPhaseType.BranchedText;
 		_branchedTextChoices = data.choices;
-		_currentChoice = 0;
 
 		// Parse the metadata
 		_metadata = data.metadata;
@@ -193,7 +187,6 @@ public class DialogueGUI_Test : MonoBehaviour {
 					if (_nameText == "")
 					{
 						convo.GetComponent<UISprite>().spriteName = "regulartext";
-						Vector3 scale = new Vector3(3.0f, 0.75f, 1.0f);
 						Vector3 pos = convo.transform.localPosition;
 						float offset = 200f;	// for shifting the prefab position
 						Vector3 newPos = new Vector3(pos.x - offset, pos.y, pos.z);
@@ -205,7 +198,6 @@ public class DialogueGUI_Test : MonoBehaviour {
 					else
 					{
 						convo.GetComponent<UISprite>().spriteName = "conversation-template-new";
-						Vector3 scale = new Vector3(0.75f, 0.75f, 1.0f);
 						Vector3 pos = convo.transform.localPosition;
 						float offset = 0f;	// for shifting the prefab position
 						Vector3 newPos = new Vector3(pos.x + offset, pos.y, pos.z);
@@ -231,7 +223,6 @@ public class DialogueGUI_Test : MonoBehaviour {
 		{
 			setup ();
 			leftChar = GameObject.Find("LeftCharacter").GetComponent<UISprite>();
-			rightChar = GameObject.Find("RightCharacter").GetComponent<UISprite>();
 			nameLabel = GameObject.Find ("Name").GetComponent<UILabel>();
 		}
 
@@ -469,18 +460,6 @@ public class DialogueGUI_Test : MonoBehaviour {
 		else
 		{
 			this.leftSpriteName = leftSpriteName;
-		}
-	}
-
-	public void setRightSpriteName(string rightSpriteName)
-	{
-		if (rightSpriteName == null)
-		{
-			Debug.LogError ("Null value error for string rightSpriteName in setRightSpriteName in DialogueGUI.cs");
-		}
-		else
-		{
-			this.rightSpriteName = rightSpriteName;
 		}
 	}
 

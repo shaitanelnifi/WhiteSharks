@@ -123,7 +123,6 @@ public class playerScript : CaseElement {
 		//move towards next node
 		if(distance >0.1f){
 			Vector3 dir = (path.vectorPath[currentWayPoint]-transform.position).normalized *baseSpeed*Time.deltaTime;
-			Vector3 oldPosition = transform.position;
 			transform.position = transform.position + dir;
 
 		

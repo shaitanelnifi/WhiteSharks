@@ -5,7 +5,6 @@ public class Fade : MonoBehaviour {
 
 	public FadeType typeOfFade = FadeType.fadeIn;
 	public float time = 1f;
-	private bool isFading = false;
 	SpriteRenderer r;
 	Color a;
 	// Use this for initialization

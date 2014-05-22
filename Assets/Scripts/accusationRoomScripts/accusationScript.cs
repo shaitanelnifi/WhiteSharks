@@ -13,7 +13,7 @@ public class accusationScript : MonoBehaviour {
 	public GameObject mapButton1, mapButton2, suspectButton1, suspectButton2,
 	weaponButton1, weaponButton2, backButton;// alexiaChat;
 
-	private Color clear = Color.clear;
+	//private Color clear = Color.clear;
 	private Color original;
 
 	private string hint = "";
@@ -23,10 +23,10 @@ public class accusationScript : MonoBehaviour {
 				"you're almost there...",
 				"you solved it."
 		};
-	private string hint0 = "you're wrong, sweetie...";
-	private string hint1 = "you're on the right track...";
-	private string hint2 = "you're almost there...";
-	private string hint3 = "you solved it.";
+	//private string hint0 = "you're wrong, sweetie...";
+	//private string hint1 = "you're on the right track...";
+	//private string hint2 = "you're almost there...";
+	//private string hint3 = "you solved it.";
 
 	//gonna need to do some calls to get this
 	//but for now default to 1

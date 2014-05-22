@@ -4,12 +4,11 @@ using System.Collections;
 public class CameraManager : MonoBehaviour {
 
 	playerScript player;
-	private bool getOnce = false;	// Run getPlayer only once
 
 	// Can get these values from Box Collider 2D
 	private float mapX = 27.31f;
 	private float mapY = 12.0f;
-	private float halfX = 27.31f / 2.0f;
+	//private float halfX = 27.31f / 2.0f;
 	private float quarterX = 27.31f / 4.0f;
 
 //	public Transform leftmostObject;
@@ -39,8 +38,6 @@ public class CameraManager : MonoBehaviour {
 		// Can't put this in start because start is run before player instantiated
 		if (player == null) {
 			player = (playerScript)FindObjectOfType(typeof(playerScript));
-		} else {
-			getOnce = true;
 		}
 
 		Vector3 playerPos = new Vector3 (0, 0, -10);
