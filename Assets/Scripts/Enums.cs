@@ -89,7 +89,7 @@ public enum clickableID {
 	joshchapter3fincafepostpeijunpreorder = 13,
 	//14, //merged with 13
 	maychapter3finofficepostpeijun = 15,
-	shammychapter3finofficeliamsroom = 16,
+	cantenter = 19,
 
 };
 
