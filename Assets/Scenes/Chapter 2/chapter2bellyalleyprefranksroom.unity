@@ -257,7 +257,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &354946281
 MonoBehaviour:
@@ -5198,7 +5198,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &1061884470
 MonoBehaviour:
@@ -5313,11 +5313,12 @@ MonoBehaviour:
   dialogue: 
   setOffset: 0
   player: {fileID: 0}
-  maxY: -2.18983006
-  minY: -4
-  minScale: .330000013
-  maxScale: 1.20000005
+  maxY: -2.8599999
+  minY: -3.81999993
+  minScale: .709999979
+  maxScale: 1.29999995
   baseSpeed: 2
+  placeTop: 0
 --- !u!4 &1085850464
 Transform:
   m_ObjectHideFlags: 0

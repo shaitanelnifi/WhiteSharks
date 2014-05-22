@@ -5269,11 +5269,12 @@ MonoBehaviour:
   dialogue: 10000000
   setOffset: 0
   player: {fileID: 0}
-  maxY: -2.0162971
-  minY: -3.96002603
-  minScale: .947153926
-  maxScale: 1.15714097
+  maxY: -2.60934496
+  minY: -5.44000006
+  minScale: .99000001
+  maxScale: 1.20000005
   baseSpeed: 8
+  placeTop: 0
 --- !u!4 &1085850464
 Transform:
   m_ObjectHideFlags: 0
@@ -5836,7 +5837,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &1926322044
 MonoBehaviour:
