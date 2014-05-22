@@ -1010,7 +1010,7 @@ MonoBehaviour:
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 4c281b7a78264434faea95625cf11996, type: 3}
   waitThisLong: .5
-  whatCharacter: Jane
+  whatCharacter: May
   nextLevel: chapter3finofficelobbybeforepeijun
   isTherePlayer: 1
   spawnHereAfter: {x: 11.8699999, y: -1.63}
