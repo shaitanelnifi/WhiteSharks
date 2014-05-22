@@ -1006,6 +1006,7 @@ GameObject:
   - 61: {fileID: 576624420}
   - 114: {fileID: 576624419}
   - 114: {fileID: 576624425}
+  - 95: {fileID: 576624424}
   m_Layer: 10
   m_Name: NoelAlt
   m_TagString: Untagged
@@ -1098,6 +1099,20 @@ Transform:
   m_LocalScale: {x: -1.34297204, y: 1.34297335, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!95 &576624424
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 576624418}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c983d7913baa94c3fb51254c30016e7a, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!114 &576624425
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b3d7b8128df364b4f9ebe1e0c860dce2
+guid: 9ae18c80217ba41f793b42cd627aeceb
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -49,49 +49,49 @@ TextureImporter:
     compressionQuality: 50
   spriteSheet:
     sprites:
-    - name: NinaWalkerIdle_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0, y: 0}
-    - name: NinaWalkerIdle_1
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1024
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0, y: 0}
-    - name: NinaWalkerIdle_2
-      rect:
-        serializedVersion: 2
-        x: 2048
-        y: 1024
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0, y: 0}
-    - name: NinaWalkerIdle_3
-      rect:
-        serializedVersion: 2
-        x: 3072
-        y: 1024
-        width: 1024
-        height: 1024
-      alignment: 7
-      pivot: {x: 0, y: 0}
-    - name: NinaWalkerIdle_4
+    - name: CarlosIdle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 1024
+        width: 512
+        height: 512
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: CarlosIdle_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: CarlosIdle_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: CarlosIdle_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: CarlosIdle_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 512
+        height: 512
       alignment: 7
       pivot: {x: 0, y: 0}
   spritePackingTag: 

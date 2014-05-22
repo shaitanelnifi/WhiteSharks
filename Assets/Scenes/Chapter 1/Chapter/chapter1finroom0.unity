@@ -87,6 +87,7 @@ GameObject:
   - 61: {fileID: 110126561}
   - 114: {fileID: 110126560}
   - 114: {fileID: 110126565}
+  - 95: {fileID: 110126566}
   m_Layer: 10
   m_Name: LiamOShea
   m_TagString: Untagged
@@ -193,6 +194,20 @@ MonoBehaviour:
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 540}
   scale: {x: 0, y: 0}
+--- !u!95 &110126566
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 110126559}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9213df5b4b8354871b63ebed3ddde41a, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &195794085
 Prefab:
   m_ObjectHideFlags: 0
