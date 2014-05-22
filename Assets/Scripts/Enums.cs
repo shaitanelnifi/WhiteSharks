@@ -84,6 +84,8 @@ public enum clickableID {
 	maychapter2bellybarbyemay = 54,
 	maychapter2bellyalleypassingthroughwrongway = 56,
 
+	//chapter 3
+
 };
 
 
