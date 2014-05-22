@@ -1522,11 +1522,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: e272233e040da41df924bf5730188f88, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.62332392
+      value: 3.4367516
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e272233e040da41df924bf5730188f88, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.31497192
+      value: -3.59871793
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e272233e040da41df924bf5730188f88, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1546,11 +1546,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e272233e040da41df924bf5730188f88, type: 2}
       propertyPath: m_LocalScale.x
-      value: .649999976
+      value: .608083725
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e272233e040da41df924bf5730188f88, type: 2}
       propertyPath: m_LocalScale.y
-      value: .649999976
+      value: .608083487
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: e272233e040da41df924bf5730188f88, type: 2}
       propertyPath: myConvo
@@ -22246,6 +22246,7 @@ GameObject:
   - 61: {fileID: 2097457554}
   - 114: {fileID: 2097457553}
   - 114: {fileID: 2097457558}
+  - 95: {fileID: 2097457560}
   - 95: {fileID: 2097457559}
   m_Layer: 10
   m_Name: NinaWalker
@@ -22332,8 +22333,8 @@ Transform:
   m_PrefabInternal: {fileID: 1222521169}
   m_GameObject: {fileID: 2097457552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.62332392, y: -3.31497192, z: -1}
-  m_LocalScale: {x: .649999976, y: .649999976, z: 1}
+  m_LocalPosition: {x: 3.4367516, y: -3.59871793, z: -1}
+  m_LocalScale: {x: .608083725, y: .608083487, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &2097457558
@@ -22359,6 +22360,21 @@ Animator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2097457552}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 93b91735a6ad843128a4bcef1472f2a9, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
+--- !u!95 &2097457560
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: e272233e040da41df924bf5730188f88,
+    type: 2}
+  m_PrefabInternal: {fileID: 1222521169}
   m_GameObject: {fileID: 2097457552}
   m_Enabled: 1
   m_Avatar: {fileID: 0}

@@ -83,11 +83,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.990776062
+      value: -1.2169199
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.89597797
+      value: -4.82058573
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -111,11 +111,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalScale.x
-      value: .412753493
+      value: .20295389
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalScale.y
-      value: .412753761
+      value: .202954486
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_Enabled
@@ -163,6 +163,7 @@ GameObject:
   - 61: {fileID: 72480852}
   - 114: {fileID: 72480851}
   - 114: {fileID: 72480856}
+  - 95: {fileID: 72480857}
   m_Layer: 10
   m_Name: NoelAlt
   m_TagString: Untagged
@@ -217,7 +218,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 2
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 063256c10c35f44b4ad8e4ccb59f3bc6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5fe8e500da1bf49ec886d1ff302fe7a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &72480854
 MonoBehaviour:
@@ -251,8 +252,8 @@ Transform:
   m_PrefabInternal: {fileID: 48374894}
   m_GameObject: {fileID: 72480850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.990776062, y: -4.89597797, z: 0}
-  m_LocalScale: {x: .412753493, y: .412753761, z: 1}
+  m_LocalPosition: {x: -1.2169199, y: -4.82058573, z: 0}
+  m_LocalScale: {x: .20295389, y: .202954486, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &72480856
@@ -272,6 +273,21 @@ MonoBehaviour:
   ClickRevealer: {fileID: 0}
   iconMod: {x: 8, y: 180}
   scale: {x: .75, y: .75}
+--- !u!95 &72480857
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: 147f6141f4730475db67483bbd79c4b0,
+    type: 2}
+  m_PrefabInternal: {fileID: 48374894}
+  m_GameObject: {fileID: 72480850}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c983d7913baa94c3fb51254c30016e7a, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &163012505
 Prefab:
   m_ObjectHideFlags: 0
@@ -1345,7 +1361,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426b90a7f8d0fd14398f752965840431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugMe: 
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 4c281b7a78264434faea95625cf11996, type: 3}
   waitThisLong: .5
@@ -1357,7 +1372,6 @@ MonoBehaviour:
   dialoguer: chapter1
   needGUI: 0
   dialogue: 05000000
-  curDia: 0
   setOffset: 18
   player: {fileID: 0}
   maxY: -2.365376
