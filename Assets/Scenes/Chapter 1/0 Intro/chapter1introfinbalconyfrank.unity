@@ -348,79 +348,6 @@ Prefab:
   m_RootGameObject: {fileID: 511483719}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1001 &348021895
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-      propertyPath: maxScale
-      value: .800000012
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-      propertyPath: minScale
-      value: .389999986
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-      propertyPath: scaleX
-      value: .800000012
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-      propertyPath: scaleY
-      value: .800000012
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-      propertyPath: maxY
-      value: 1.55999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-      propertyPath: minY
-      value: -1.60000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-      propertyPath: baseSpeed
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-  m_ParentPrefab: {fileID: 100100000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-  m_RootGameObject: {fileID: 1921366841}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &511483719
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,7 +824,7 @@ MonoBehaviour:
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 258ccc3c9d307944a837f2dcef189496, type: 3}
   waitThisLong: 2
-  whatCharacter: Jane
+  whatCharacter: Frank
   nextLevel: chapter1introtransition
   isTherePlayer: 0
   spawnHereAfter: {x: 0, y: 0}
@@ -907,6 +834,12 @@ MonoBehaviour:
   dialogue: 25000000
   curDia: 0
   setOffset: 18
+  player: {fileID: 0}
+  maxY: 2
+  minY: 1
+  minScale: 1
+  maxScale: 1
+  baseSpeed: 1
 --- !u!114 &1569644983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1274,32 +1207,6 @@ Prefab:
   m_RootGameObject: {fileID: 1053749164}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &1921366841
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-  m_PrefabInternal: {fileID: 348021895}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1921366843}
-  m_Layer: 8
-  m_Name: Scene template
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1921366843
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
-  m_PrefabInternal: {fileID: 348021895}
-  m_GameObject: {fileID: 1921366841}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.00999999, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
 --- !u!1001 &1989355512
 Prefab:
   m_ObjectHideFlags: 0

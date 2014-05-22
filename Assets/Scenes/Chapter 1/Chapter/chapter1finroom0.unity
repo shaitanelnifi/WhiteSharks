@@ -962,17 +962,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 623330652}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 546e4042cc205e14bb0c655ff9ec24f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 426b90a7f8d0fd14398f752965840431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleX: 1
-  scaleY: 1
+  autoPlay: 0
+  playMe: {fileID: 0}
+  waitThisLong: -1
+  whatCharacter: 
+  nextLevel: 
+  isTherePlayer: 0
+  spawnHereAfter: {x: 0, y: 0}
+  loadNewXML: 0
+  dialoguer: chapter1
+  needGUI: 0
+  dialogue: 
+  setOffset: 0
+  player: {fileID: 0}
   maxY: -3.8599999
   minY: -5.5
   minScale: .899999976
   maxScale: 1.14999998
   baseSpeed: 4
-  id: 1
 --- !u!212 &623330654
 SpriteRenderer:
   m_ObjectHideFlags: 0
