@@ -24,6 +24,9 @@ public class genericScene : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
+		if (loadNewXML || !Dialoguer.isInitialized ())
+			Dialoguer.Initialize(dialoguer);
+
 		GameManager.dialogueJustFinished = false;
 		if (GameManager.offset == 0)
 			GameManager.offset = setOffset;
@@ -36,8 +39,7 @@ public class genericScene : MonoBehaviour {
 
 	void playDialogue(){
 
-		if (loadNewXML || !Dialoguer.isInitialized ())
-			Dialoguer.Initialize(dialoguer);
+
 		Dialoguer.StartDialogue ((int)dialogue[curDia]);
 		var player = (playerScript) FindObjectOfType(typeof(playerScript));
 		if (player != null) {

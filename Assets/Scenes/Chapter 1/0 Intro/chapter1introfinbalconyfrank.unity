@@ -411,7 +411,12 @@ Prefab:
       propertyPath: baseSpeed
       value: 6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 57abf2799344a4fcbb284bc2115c60d0, type: 2}
   m_RootGameObject: {fileID: 1921366841}
   m_IsPrefabParent: 0
@@ -1277,7 +1282,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1921366843}
-  - 114: {fileID: 1921366842}
   m_Layer: 8
   m_Name: Scene template
   m_TagString: Untagged
@@ -1285,26 +1289,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1921366842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 57abf2799344a4fcbb284bc2115c60d0,
-    type: 2}
-  m_PrefabInternal: {fileID: 348021895}
-  m_GameObject: {fileID: 1921366841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 546e4042cc205e14bb0c655ff9ec24f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scaleX: .800000012
-  scaleY: .800000012
-  maxY: 1.55999994
-  minY: -1.60000002
-  minScale: .389999986
-  maxScale: .800000012
-  baseSpeed: 6
-  id: 3
 --- !u!4 &1921366843
 Transform:
   m_ObjectHideFlags: 0
