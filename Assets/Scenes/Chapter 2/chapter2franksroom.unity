@@ -276,7 +276,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 533708520}
   - 212: {fileID: 533708519}
-  - 114: {fileID: 533708518}
   m_Layer: 8
   m_Name: belly-room-line
   m_TagString: Untagged
@@ -284,25 +283,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &533708518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 533708517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 546e4042cc205e14bb0c655ff9ec24f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scaleX: 0
-  scaleY: 0
-  maxY: -2.0162971
-  minY: -3.96002603
-  minScale: .947153926
-  maxScale: 1.15714097
-  baseSpeed: 8
-  id: 6
 --- !u!212 &533708519
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5276,7 +5256,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426b90a7f8d0fd14398f752965840431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugMe: 
   autoPlay: 1
   playMe: {fileID: 0}
   waitThisLong: -1
@@ -5288,8 +5267,13 @@ MonoBehaviour:
   dialoguer: chapter2
   needGUI: 0
   dialogue: 10000000
-  curDia: 0
   setOffset: 0
+  player: {fileID: 0}
+  maxY: -2.0162971
+  minY: -3.96002603
+  minScale: .947153926
+  maxScale: 1.15714097
+  baseSpeed: 8
 --- !u!4 &1085850464
 Transform:
   m_ObjectHideFlags: 0

@@ -1295,7 +1295,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1208279629}
   - 212: {fileID: 1208279628}
-  - 114: {fileID: 1208279627}
   m_Layer: 8
   m_Name: Belly-alleyway-line
   m_TagString: Untagged
@@ -1303,25 +1302,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1208279627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1208279626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 546e4042cc205e14bb0c655ff9ec24f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scaleX: 1
-  scaleY: 1
-  maxY: -2.18983006
-  minY: -4
-  minScale: .330000013
-  maxScale: 1.20000005
-  baseSpeed: 2
-  id: 5
 --- !u!212 &1208279628
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6188,3 +6168,59 @@ Prefab:
   m_RootGameObject: {fileID: 1548078399}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &2134835888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2134835890}
+  - 114: {fileID: 2134835889}
+  m_Layer: 0
+  m_Name: SceneBehavior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2134835889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2134835888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426b90a7f8d0fd14398f752965840431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  playMe: {fileID: 0}
+  waitThisLong: -1
+  whatCharacter: Jane
+  nextLevel: chapter2moesroom
+  isTherePlayer: 0
+  spawnHereAfter: {x: 1.55027294, y: -3.39677405}
+  loadNewXML: 0
+  dialoguer: chapter2
+  needGUI: 0
+  dialogue: 
+  setOffset: 0
+  player: {fileID: 0}
+  maxY: -2.18983006
+  minY: -4
+  minScale: .330000013
+  maxScale: 1.20000005
+  baseSpeed: 2
+--- !u!4 &2134835890
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2134835888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}

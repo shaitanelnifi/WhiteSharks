@@ -170,7 +170,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 285852858}
   - 212: {fileID: 285852857}
-  - 114: {fileID: 285852856}
   - 114: {fileID: 285852855}
   m_Layer: 8
   m_Name: belly-bar-line
@@ -190,7 +189,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426b90a7f8d0fd14398f752965840431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugMe: 
   autoPlay: 1
   playMe: {fileID: 0}
   waitThisLong: -1
@@ -202,27 +200,13 @@ MonoBehaviour:
   dialoguer: chapter2
   needGUI: 1
   dialogue: 06000000
-  curDia: 0
   setOffset: 0
---- !u!114 &285852856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 285852854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 546e4042cc205e14bb0c655ff9ec24f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scaleX: 1
-  scaleY: 1
+  player: {fileID: 0}
   maxY: -2.99557304
   minY: -4.30000019
   minScale: .579999983
   maxScale: .850000024
   baseSpeed: 6
-  id: 4
 --- !u!212 &285852857
 SpriteRenderer:
   m_ObjectHideFlags: 0
