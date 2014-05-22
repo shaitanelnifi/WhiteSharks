@@ -21,7 +21,7 @@ public class ConditionDoor : DoorScript {
 	}
 
 
-
+	//rename this 
 	public bool gotThem(){
 		
 		//Check the journal inventory for these things
