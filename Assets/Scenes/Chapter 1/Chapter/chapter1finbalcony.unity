@@ -1011,6 +1011,7 @@ GameObject:
   - 61: {fileID: 576624420}
   - 114: {fileID: 576624419}
   - 114: {fileID: 576624425}
+  - 95: {fileID: 576624426}
   - 95: {fileID: 576624424}
   m_Layer: 10
   m_Name: NoelAlt
@@ -1135,6 +1136,21 @@ MonoBehaviour:
   ClickRevealer: {fileID: 0}
   iconMod: {x: 16, y: 300}
   scale: {x: 0, y: 0}
+--- !u!95 &576624426
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: 147f6141f4730475db67483bbd79c4b0,
+    type: 2}
+  m_PrefabInternal: {fileID: 51413040}
+  m_GameObject: {fileID: 576624418}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c983d7913baa94c3fb51254c30016e7a, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &674667616
 GameObject:
   m_ObjectHideFlags: 0
@@ -8283,7 +8299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 0
   playMe: {fileID: 8300000, guid: 8d5082d1704383c4cbb3ae363656fba7, type: 3}
-  waitThisLong: 3
+  waitThisLong: .200000003
   whatCharacter: Jane
   nextLevel: chapter1finofficeend
   isTherePlayer: 0
