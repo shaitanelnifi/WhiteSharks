@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour {
 
 	public bool playerInScene = false;
 	private static GameManager instance;
-	private gameStates _currentState;
 	private string _currLevel;			// Current level
 	private string _name;				// Character name
 	public static List<string> roomList = new List<string>();
@@ -109,7 +108,6 @@ public class GameManager : MonoBehaviour {
 		// Set default properties
 		_currLevel = "Level 1";
 		_name = "My Character";
-		_currentState = gameStates.INGAME;
 
 		if (!test_Mode){
 			// Load character select screen
@@ -194,12 +192,7 @@ public class GameManager : MonoBehaviour {
 		_name = newName;
 	}
 
-	public void setState(gameStates state) {
-		_currentState = state;
-	}
-
 	public void OnGUI() {
-		//GUI.TextArea(new Rect(1, 1, 100, 20), _currentState.ToString());
 		GUI.Label (new Rect (Screen.width / 3.5f, Screen.height - 20f, Screen.width, 50f),
 		           "ALPHA - NOT REPRESENTATIVE OF FINAL GAMEPLAY");
 
@@ -249,9 +242,8 @@ public class GameManager : MonoBehaviour {
 		//For a changing cursor, load in all of its sprites into the list
 		setIcons ();
 
-		// Used for Dialoguer components
-		//Debug.Log ("Persocets, Adderall, Ecstasy, PMW");
-		DialogueGUI_Test dGUI = gameObject.AddComponent<DialogueGUI_Test> ();
+		// Used to create the Dialoguer system
+		gameObject.AddComponent<DialogueGUI_Test> ();
 
 		//dGUI.setSkin(Resources.Load ("OldSchool") as GUISkin);
 
