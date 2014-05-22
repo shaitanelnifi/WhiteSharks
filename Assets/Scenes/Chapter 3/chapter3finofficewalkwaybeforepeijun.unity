@@ -857,7 +857,7 @@ MonoBehaviour:
   playMe: {fileID: 0}
   waitThisLong: -1
   whatCharacter: May
-  nextLevel: chapter2finplazafirstarrival
+  nextLevel: chapter3finplazabeforepeijun
   isTherePlayer: 0
   spawnHereAfter: {x: 1.55027294, y: -3.39677405}
   loadNewXML: 0
