@@ -5624,7 +5624,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 859018825}
   - 212: {fileID: 859018824}
-  - 114: {fileID: 859018823}
   - 114: {fileID: 859018822}
   m_Layer: 8
   m_Name: belly-bar-line
@@ -5662,25 +5661,6 @@ MonoBehaviour:
   minScale: .579999983
   maxScale: .850000024
   baseSpeed: 6
---- !u!114 &859018823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 859018821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 546e4042cc205e14bb0c655ff9ec24f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scaleX: 1
-  scaleY: 1
-  maxY: -2.99557304
-  minY: -4.30000019
-  minScale: .579999983
-  maxScale: .850000024
-  baseSpeed: 6
-  id: 4
 --- !u!212 &859018824
 SpriteRenderer:
   m_ObjectHideFlags: 0

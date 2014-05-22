@@ -6258,7 +6258,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 2002626061}
   - 212: {fileID: 2002626060}
-  - 114: {fileID: 2002626059}
   m_Layer: 8
   m_Name: scene
   m_TagString: Untagged
@@ -6266,25 +6265,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2002626059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2002626058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 546e4042cc205e14bb0c655ff9ec24f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scaleX: .362595588
-  scaleY: .362596005
-  maxY: -2.365376
-  minY: -5.05575895
-  minScale: .25
-  maxScale: .370669812
-  baseSpeed: 1
-  id: 3
 --- !u!212 &2002626060
 SpriteRenderer:
   m_ObjectHideFlags: 0

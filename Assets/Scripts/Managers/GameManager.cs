@@ -117,7 +117,7 @@ public class GameManager : MonoBehaviour {
 		}
 		else{
 			GameManager.Instance.SetMainCharacter("Jane");
-			GameManager.Instance.playerInScene = true;
+			GameManager.Instance.playerInScene = false;
 			Application.LoadLevel("chapter2introtransition");
 		}
 	}

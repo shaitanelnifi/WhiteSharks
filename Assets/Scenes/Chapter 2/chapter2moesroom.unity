@@ -5705,7 +5705,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1477815173}
   - 212: {fileID: 1477815172}
-  - 114: {fileID: 1477815171}
   m_Layer: 8
   m_Name: belly-room-line
   m_TagString: Untagged
@@ -5713,25 +5712,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1477815171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1477815170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 546e4042cc205e14bb0c655ff9ec24f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scaleX: 0
-  scaleY: 0
-  maxY: -2.0162971
-  minY: -3.96002603
-  minScale: .947153926
-  maxScale: 1.15714097
-  baseSpeed: 8
-  id: 6
 --- !u!212 &1477815172
 SpriteRenderer:
   m_ObjectHideFlags: 0

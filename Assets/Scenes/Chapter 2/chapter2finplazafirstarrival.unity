@@ -498,7 +498,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 0a049ab7b70c54df4aaac45eebf67129, type: 2}
   m_RootGameObject: {fileID: 2053799908}
   m_IsPrefabParent: 0
@@ -6901,7 +6902,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 2053799911}
   - 212: {fileID: 2053799910}
-  - 114: {fileID: 2053799909}
   m_Layer: 8
   m_Name: cgjcjh
   m_TagString: Untagged
@@ -6909,26 +6909,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2053799909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 0a049ab7b70c54df4aaac45eebf67129,
-    type: 2}
-  m_PrefabInternal: {fileID: 213691707}
-  m_GameObject: {fileID: 2053799908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 546e4042cc205e14bb0c655ff9ec24f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scaleX: .362595588
-  scaleY: .362596005
-  maxY: -2.365376
-  minY: -5.05575895
-  minScale: .25
-  maxScale: .370669812
-  baseSpeed: 1
-  id: 3
 --- !u!212 &2053799910
 SpriteRenderer:
   m_ObjectHideFlags: 0
