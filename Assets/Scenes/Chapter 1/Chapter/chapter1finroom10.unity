@@ -172,6 +172,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: 
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!114 &233192609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 4
+  maxDist: 5
 --- !u!61 &233192610
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -615,7 +618,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
       propertyPath: m_Layer
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[3].x
@@ -763,6 +766,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: To Balcony
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!1 &551225297
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,7 +786,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!60 &551225300
 PolygonCollider2D:
@@ -826,6 +832,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: 
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!114 &551225303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -838,7 +847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 4
+  maxDist: 6
 --- !u!114 &551225304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -986,12 +995,12 @@ GameObject:
   - 114: {fileID: 807297127}
   - 114: {fileID: 807297126}
   - 114: {fileID: 807297125}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!60 &807297123
 PolygonCollider2D:
@@ -1036,6 +1045,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: 
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!114 &807297126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1048,7 +1060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 4
+  maxDist: 6
 --- !u!114 &807297127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1581,6 +1593,10 @@ Prefab:
       propertyPath: diaNum
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
+      propertyPath: maxDist
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
   m_RootGameObject: {fileID: 2004265435}
@@ -1628,6 +1644,10 @@ Prefab:
     - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: diaNum
       value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: maxDist
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
@@ -1773,6 +1793,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: 
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!114 &1370953901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1785,7 +1808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 4
+  maxDist: 5
 --- !u!61 &1370953902
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2070,6 +2093,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Talk
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!1 &1675740779
 GameObject:
   m_ObjectHideFlags: 0
@@ -21578,7 +21604,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!60 &1897387586
 PolygonCollider2D:
@@ -21627,6 +21653,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: 
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!114 &1897387590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21639,7 +21668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 4
+  maxDist: 6
 --- !u!114 &1897387591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21698,6 +21727,10 @@ Prefab:
       propertyPath: diaNum
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: maxDist
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
   m_RootGameObject: {fileID: 1370953899}
@@ -21721,7 +21754,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!60 &2004265436
 PolygonCollider2D:
@@ -21781,6 +21814,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Examine Bed
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
 --- !u!114 &2004265442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21793,7 +21829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 4
+  maxDist: 6
 --- !u!114 &2004265443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21893,3 +21929,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toolText: Examine Window
   sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}

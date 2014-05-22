@@ -101,9 +101,11 @@ public class playerScript : CaseElement {
 				   }
 			}
 		}
+
 		//if theres no path or already at the last node of path, break
 		if(path == null||currentWayPoint> path.vectorPath.Count){
 			SoundManager.Instance.StopWalk();
+			anim.SetFloat("distance", 0f);
 			return;
 		}
 
@@ -123,6 +125,7 @@ public class playerScript : CaseElement {
 			Vector3 dir = (path.vectorPath[currentWayPoint]-transform.position).normalized *baseSpeed*Time.deltaTime;
 			Vector3 oldPosition = transform.position;
 			transform.position = transform.position + dir;
+
 		
 			if(Mathf.Abs(distance) > nodeTriggerDistace && !SoundManager.Instance.isWalking) SoundManager.Instance.WalkSound();
 			else if(Mathf.Abs(distance) <= nodeTriggerDistace && SoundManager.Instance.isWalking) SoundManager.Instance.StopWalk();
@@ -142,6 +145,7 @@ public class playerScript : CaseElement {
 			facingLeft = !facingLeft;
 			//goingtLeft = !goingtLeft;
 		}
+
 		//play the animation
 		anim.SetFloat("distance", distance);
 
