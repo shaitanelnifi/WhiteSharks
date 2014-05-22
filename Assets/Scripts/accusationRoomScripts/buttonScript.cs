@@ -7,8 +7,8 @@ public class buttonScript : MonoBehaviour {
 	private int number;
 
 	public int currentSuspect = 0;
-	private int currentWeapon = 0;
-	private int currentRoom = 0;
+	//private int currentWeapon = 0;
+	//private int currentRoom = 0;
 
 	private Color original;
 
