@@ -1379,6 +1379,7 @@ MonoBehaviour:
   minScale: .25
   maxScale: .370669812
   baseSpeed: 1.5
+  placeTop: 1
 --- !u!4 &903885457
 Transform:
   m_ObjectHideFlags: 0
