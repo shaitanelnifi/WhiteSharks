@@ -5780,7 +5780,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426b90a7f8d0fd14398f752965840431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugMe: 
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 4c281b7a78264434faea95625cf11996, type: 3}
   waitThisLong: -1
@@ -5792,7 +5791,6 @@ MonoBehaviour:
   dialoguer: chapter1
   needGUI: 0
   dialogue: 04000000
-  curDia: 0
   setOffset: 18
   player: {fileID: 0}
   maxY: -2.72000003
