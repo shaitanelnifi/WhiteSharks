@@ -289,6 +289,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeOfFade: 0
   time: 1
+--- !u!1001 &194275551
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .311182857
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.32233357
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .635606408
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .635606587
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d48ef75dbf7804870bccb459abe188a3, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+  m_RootGameObject: {fileID: 674490209}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1001 &325148743
 Prefab:
   m_ObjectHideFlags: 0
@@ -481,6 +533,143 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.77804089, y: 1.10049105, z: -2.40234375}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &674490209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+  m_PrefabInternal: {fileID: 194275551}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 674490216}
+  - 114: {fileID: 674490215}
+  - 212: {fileID: 674490214}
+  - 61: {fileID: 674490213}
+  - 114: {fileID: 674490212}
+  - 114: {fileID: 674490211}
+  - 95: {fileID: 674490210}
+  m_Layer: 10
+  m_Name: CarlosFranco
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &674490210
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: 9cd4a299eda5848e98323344f2b5c521,
+    type: 2}
+  m_PrefabInternal: {fileID: 194275551}
+  m_GameObject: {fileID: 674490209}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d48ef75dbf7804870bccb459abe188a3, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
+--- !u!114 &674490211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 9cd4a299eda5848e98323344f2b5c521,
+    type: 2}
+  m_PrefabInternal: {fileID: 194275551}
+  m_GameObject: {fileID: 674490209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolText: Talk
+  sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
+--- !u!114 &674490212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 9cd4a299eda5848e98323344f2b5c521,
+    type: 2}
+  m_PrefabInternal: {fileID: 194275551}
+  m_GameObject: {fileID: 674490209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 4
+--- !u!61 &674490213
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100000, guid: 9cd4a299eda5848e98323344f2b5c521,
+    type: 2}
+  m_PrefabInternal: {fileID: 194275551}
+  m_GameObject: {fileID: 674490209}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.64999998, y: 6.1500001}
+  m_Center: {x: 0, y: 0}
+--- !u!212 &674490214
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200000, guid: 9cd4a299eda5848e98323344f2b5c521,
+    type: 2}
+  m_PrefabInternal: {fileID: 194275551}
+  m_GameObject: {fileID: 674490209}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 2
+  m_SortingOrder: 2
+  m_SortingLayerID: 2971093031
+  m_Sprite: {fileID: 21300000, guid: 7f9ff9d7ffb584414b776e63a442aee8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &674490215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9cd4a299eda5848e98323344f2b5c521,
+    type: 2}
+  m_PrefabInternal: {fileID: 194275551}
+  m_GameObject: {fileID: 674490209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e55abf860691c541a849b33c21c6089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementName: Carlos Franco
+  description: Carlos is a worker of the Belly who lives and enjoys a simple life.
+    He's an example of White Shark's founders point of view, as in him we can see
+    that we're not all equal.
+  profileImage: {fileID: 21300000, guid: b203a331a825743cca86f0e03a60847f, type: 3}
+  visible: 0
+  clickedOnSomething: 0
+  maxDist: 1
+  myConvo: 0
+  playerObj: {fileID: 0}
+  box: {fileID: 674490213}
+  mouseOverIcon: Speech_Icon
+--- !u!4 &674490216
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+  m_PrefabInternal: {fileID: 194275551}
+  m_GameObject: {fileID: 674490209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .311182857, y: 1.32233357, z: -1}
+  m_LocalScale: {x: .635606408, y: .635606587, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &939621633
@@ -1109,70 +1298,6 @@ MonoBehaviour:
   minScale: .389999986
   maxScale: .800000012
   baseSpeed: 6
---- !u!1 &1715059133
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1715059135}
-  - 212: {fileID: 1715059134}
-  - 114: {fileID: 1715059136}
-  m_Layer: 0
-  m_Name: Frank
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1715059134
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1715059133}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 3
-  m_SortingOrder: 0
-  m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 7f9ff9d7ffb584414b776e63a442aee8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &1715059135
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1715059133}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .494463682, y: 1.39554882, z: 0}
-  m_LocalScale: {x: .687914491, y: .687914431, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
---- !u!114 &1715059136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1715059133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eccb9f51047d84ff0b564902671eb650, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  typeOfFade: 0
-  time: 1
 --- !u!1 &1772587678
 GameObject:
   m_ObjectHideFlags: 0

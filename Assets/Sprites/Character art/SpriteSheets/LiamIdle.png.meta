@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b3d7b8128df364b4f9ebe1e0c860dce2
+guid: bcb6ffa8476c441b3af37fd9ad771db4
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -49,7 +49,7 @@ TextureImporter:
     compressionQuality: 50
   spriteSheet:
     sprites:
-    - name: NinaWalkerIdle_0
+    - name: LiamIdle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -58,7 +58,7 @@ TextureImporter:
         height: 1024
       alignment: 7
       pivot: {x: 0, y: 0}
-    - name: NinaWalkerIdle_1
+    - name: LiamIdle_1
       rect:
         serializedVersion: 2
         x: 1024
@@ -67,7 +67,7 @@ TextureImporter:
         height: 1024
       alignment: 7
       pivot: {x: 0, y: 0}
-    - name: NinaWalkerIdle_2
+    - name: LiamIdle_2
       rect:
         serializedVersion: 2
         x: 2048
@@ -76,7 +76,7 @@ TextureImporter:
         height: 1024
       alignment: 7
       pivot: {x: 0, y: 0}
-    - name: NinaWalkerIdle_3
+    - name: LiamIdle_3
       rect:
         serializedVersion: 2
         x: 3072
@@ -85,7 +85,7 @@ TextureImporter:
         height: 1024
       alignment: 7
       pivot: {x: 0, y: 0}
-    - name: NinaWalkerIdle_4
+    - name: LiamIdle_4
       rect:
         serializedVersion: 2
         x: 0

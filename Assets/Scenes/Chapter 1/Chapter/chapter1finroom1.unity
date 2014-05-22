@@ -22246,6 +22246,7 @@ GameObject:
   - 61: {fileID: 2097457554}
   - 114: {fileID: 2097457553}
   - 114: {fileID: 2097457558}
+  - 95: {fileID: 2097457559}
   m_Layer: 10
   m_Name: NinaWalker
   m_TagString: Untagged
@@ -22352,3 +22353,17 @@ MonoBehaviour:
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 480}
   scale: {x: 0, y: 0}
+--- !u!95 &2097457559
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2097457552}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 93b91735a6ad843128a4bcef1472f2a9, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
