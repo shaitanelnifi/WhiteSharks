@@ -19,4 +19,5 @@ public enum DialoguerDialogues{
 	TerminalLiamsRoom = 16,
 	chaptercutscene = 17,
 	cutsceneNetwork = 18,
+	cantenter = 19,
 }
