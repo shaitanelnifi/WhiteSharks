@@ -13,6 +13,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
+  - 95: {fileID: 9500000}
   m_Layer: 10
   m_Name: NoelAlt
   m_TagString: Untagged
@@ -42,6 +43,20 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 1, y: 5}
   m_Center: {x: 0, y: 2.5}
+--- !u!95 &9500000
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c983d7913baa94c3fb51254c30016e7a, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
