@@ -6344,13 +6344,13 @@ MonoBehaviour:
   loadNewXML: 0
   dialoguer: chapter2
   needGUI: 0
-  dialogue: 03000000
+  dialogue: ffffffff
   setOffset: 0
   player: {fileID: 0}
-  maxY: -2.365376
-  minY: -5.05575895
+  maxY: .519999981
+  minY: -2.5999999
   minScale: .25
-  maxScale: .370669812
+  maxScale: .349999994
   baseSpeed: 1
   placeTop: 0
 --- !u!4 &2104545173
