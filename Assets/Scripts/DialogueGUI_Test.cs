@@ -40,6 +40,8 @@ public class DialogueGUI_Test : MonoBehaviour {
 	private float time;
 	private float delay = 0.16f;
 
+	private genericScene[] genericSceneObj;
+
 	// Use this for initialization
 	void Start () {
 		addDialoguerEvents();
@@ -163,50 +165,65 @@ public class DialogueGUI_Test : MonoBehaviour {
 				uiroot.manualHeight = 600;
 				convo.transform.localScale = new Vector3(0.75f, 0.75f, 1f);
 
-				// This part possibly no longer necessary
-//				if (GameObject.Find ("Journal"))
-//				{
-//					convo.transform.localScale = new Vector3(0.75f, 0.75f, 1f);
-//				}
-//				else
-//				{
-//					convo.transform.localScale = new Vector3(0.75f, 0.75f, 1f);
-//				}
+				// For determining whether convo displays top or bottom of screen
+				if (runOnce == false)
+				{
+					genericSceneObj = FindObjectsOfType(typeof(genericScene)) as genericScene[];
+					if (genericSceneObj != null)
+					{
+						foreach (genericScene scene in genericSceneObj)
+						{
+							// If want to place on top of screen, else...
+							if (scene.getPlaceTop())
+							{
+								convo.transform.localPosition = new Vector3(0f, Screen.height, 1f);
+							}
+							else
+							{
+								convo.transform.localPosition = new Vector3(0f, -Screen.height*0.6f, 1f);
+							}
+						}
+						runOnce = true;
+					}
 
-				convo.transform.localPosition = new Vector3(0f, -Screen.height*0.6f, 1f);
+					// Used for switching between conversation template backgrounds
+					// For text where there is no character speaking,
+					// display a different background
+					Transform convoText = convo.Find("Conversation Text");
+					if (_nameText == "")
+					{
+						convo.GetComponent<UISprite>().spriteName = "regulartext";
+						Vector3 scale = new Vector3(3.0f, 0.75f, 1.0f);
+						Vector3 pos = convo.transform.localPosition;
+						float offset = 200f;	// for shifting the prefab position
+						Vector3 newPos = new Vector3(pos.x - offset, pos.y, pos.z);
+						convo.GetComponent<UIWidget>().width = 8000;
+						convo.transform.localPosition = newPos;
+						convoText.GetComponent<UIWidget>().pivot = UIWidget.Pivot.Top;
+						convo.GetComponent<UISprite>().MarkAsChanged();
+					}
+					else
+					{
+						convo.GetComponent<UISprite>().spriteName = "conversation-template-new";
+						Vector3 scale = new Vector3(0.75f, 0.75f, 1.0f);
+						Vector3 pos = convo.transform.localPosition;
+						float offset = 0f;	// for shifting the prefab position
+						Vector3 newPos = new Vector3(pos.x + offset, pos.y, pos.z);
+						convo.GetComponent<UIWidget>().width = 4618;
+						convo.transform.localPosition = newPos;
+						convoText.GetComponent<UIWidget>().pivot = UIWidget.Pivot.TopLeft;
+						convo.GetComponent<UISprite>().MarkAsChanged();
+					}
+				}
 
-				// Used for switching between conversation template backgrounds
-				// For text where there is no character speaking,
-				// display a different background
-				Transform convoText = convo.Find("Conversation Text");
 				if (_nameText == "")
 				{
-					convo.GetComponent<UISprite>().spriteName = "regulartext";
-					Vector3 scale = new Vector3(3.0f, 0.75f, 1.0f);
-					Vector3 pos = convo.transform.localPosition;
-					float offset = 200f;	// for shifting the prefab position
-					Vector3 newPos = new Vector3(pos.x - offset, pos.y, pos.z);
-					convo.GetComponent<UIWidget>().width = 8000;
-					convo.transform.localPosition = newPos;
-					convoText.GetComponent<UIWidget>().pivot = UIWidget.Pivot.Top;
-					convo.GetComponent<UISprite>().MarkAsChanged();
+					runOnce = false;
 				}
-				else
-				{
-					convo.GetComponent<UISprite>().spriteName = "conversation-template-new";
-					Vector3 scale = new Vector3(0.75f, 0.75f, 1.0f);
-					Vector3 pos = convo.transform.localPosition;
-					float offset = 0f;	// for shifting the prefab position
-					Vector3 newPos = new Vector3(pos.x + offset, pos.y, pos.z);
-					convo.GetComponent<UIWidget>().width = 4618;
-					convo.transform.localPosition = newPos;
-					convoText.GetComponent<UIWidget>().pivot = UIWidget.Pivot.TopLeft;
-					convo.GetComponent<UISprite>().MarkAsChanged();
-				}
+			
 				convo.GetComponent<UISprite> ().enabled = true;
 			}
-
-			//runOnce = false;
+	
 		}
 
 		// Setup
@@ -435,7 +452,6 @@ public class DialogueGUI_Test : MonoBehaviour {
 		convoBubble.name = "Conversation Bubble";
 
 		label = GameObject.Find("Conversation Text").GetComponent<UILabel>();
-		runOnce = true;
 
 		foreach (Transform child in GameObject.Find ("BranchedChoices").transform)
 		{
@@ -476,5 +492,10 @@ public class DialogueGUI_Test : MonoBehaviour {
 		}
 
 		return _metadata;
+	}
+
+	public void resetRunOnce()
+	{
+		runOnce = false;
 	}
 }
