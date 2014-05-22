@@ -41,23 +41,23 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 7006119f8430349b6beacf1765e05c76, type: 2}
   mSprites:
   - name: AlexiaRossSprite
-    x: 3593
-    y: 3729
-    width: 136
-    height: 183
+    x: 3837
+    y: 3806
+    width: 229
+    height: 290
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 15
+    paddingLeft: 44
+    paddingRight: 17
     paddingTop: 0
     paddingBottom: 0
-  - name: CarlosFrancoSprite
-    x: 2158
-    y: 3747
-    width: 183
-    height: 183
+  - name: BartenderSprite
+    x: 3546
+    y: 3806
+    width: 290
+    height: 290
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -66,8 +66,21 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: CarlosFrancoSprite
+    x: 0
+    y: 2538
+    width: 290
+    height: 284
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 6
+    paddingBottom: 0
   - name: ChaseSprite
-    x: 2342
+    x: 1922
     y: 3749
     width: 183
     height: 181
@@ -106,8 +119,8 @@ MonoBehaviour:
     paddingTop: 11
     paddingBottom: 10
   - name: exitbutton
-    x: 3164
-    y: 3852
+    x: 0
+    y: 1105
     width: 244
     height: 244
     borderLeft: 0
@@ -119,21 +132,21 @@ MonoBehaviour:
     paddingTop: 7
     paddingBottom: 5
   - name: FrankSprite
-    x: 3409
-    y: 3917
-    width: 183
-    height: 179
+    x: 0
+    y: 2823
+    width: 290
+    height: 285
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
-    paddingTop: 4
+    paddingTop: 5
     paddingBottom: 0
   - name: JaneDoeSprite
-    x: 3768
-    y: 3920
+    x: 2290
+    y: 3754
     width: 176
     height: 176
     borderLeft: 0
@@ -145,8 +158,8 @@ MonoBehaviour:
     paddingTop: 7
     paddingBottom: 0
   - name: JaneSprite
-    x: 2964
-    y: 3777
+    x: 0
+    y: 1350
     width: 199
     height: 319
     borderLeft: 0
@@ -158,20 +171,20 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: JoshSusachSprite
-    x: 3593
-    y: 3913
-    width: 174
-    height: 183
+    x: 0
+    y: 2247
+    width: 278
+    height: 290
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 9
+    paddingLeft: 12
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: LiamOSheaSprite
-    x: 2526
+    x: 2106
     y: 3749
     width: 183
     height: 181
@@ -184,47 +197,60 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 0
   - name: LiamO'SheaSprite
-    x: 2710
-    y: 3749
-    width: 183
-    height: 181
+    x: 3255
+    y: 3806
+    width: 290
+    height: 290
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
-    paddingTop: 2
+    paddingTop: 0
     paddingBottom: 0
-  - name: NinaWalkerSprite
-    x: 3409
-    y: 3736
-    width: 180
-    height: 180
+  - name: MayTaylorSprite
+    x: 2964
+    y: 3806
+    width: 290
+    height: 290
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 2
-    paddingRight: 1
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: NinaWalkerSprite
+    x: 0
+    y: 3109
+    width: 290
+    height: 287
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
     paddingTop: 3
     paddingBottom: 0
   - name: NoelAltSprite
-    x: 3768
-    y: 3770
-    width: 130
-    height: 149
+    x: 0
+    y: 1670
+    width: 228
+    height: 290
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 1
-    paddingRight: 18
+    paddingLeft: 10
+    paddingRight: 52
     paddingTop: 0
     paddingBottom: 0
   - name: NoelMugshot
-    x: 3945
-    y: 3947
+    x: 2467
+    y: 3781
     width: 130
     height: 149
     borderLeft: 0
@@ -236,17 +262,17 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: PeijunShiSprite
-    x: 3164
-    y: 3695
-    width: 154
-    height: 156
+    x: 0
+    y: 1961
+    width: 277
+    height: 285
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 2
+    paddingLeft: 13
     paddingRight: 0
-    paddingTop: 0
+    paddingTop: 5
     paddingBottom: 0
   - name: regulartext
     x: 915
@@ -262,10 +288,10 @@ MonoBehaviour:
     paddingTop: 81
     paddingBottom: 10
   - name: ShammySprite
-    x: 1922
-    y: 3698
-    width: 235
-    height: 232
+    x: 0
+    y: 3397
+    width: 290
+    height: 290
     borderLeft: 0
     borderRight: 0
     borderTop: 0
