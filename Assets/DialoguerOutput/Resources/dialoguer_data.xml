@@ -4305,7 +4305,7 @@
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>191</y>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -5462,5 +5462,5 @@
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>13</currentDialogueId>
+  <currentDialogueId>16</currentDialogueId>
 </DialogueEditorMasterObject>

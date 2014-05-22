@@ -904,13 +904,13 @@ MonoBehaviour:
   playMe: {fileID: 8300000, guid: 4c281b7a78264434faea95625cf11996, type: 3}
   waitThisLong: .5
   whatCharacter: Jane
-  nextLevel: chapter1finbalcony
+  nextLevel: chapter3finofficelobbybeforepeijun
   isTherePlayer: 1
   spawnHereAfter: {x: 11.8699999, y: -1.63}
   loadNewXML: 0
-  dialoguer: chapter1
+  dialoguer: chapter3
   needGUI: 0
-  dialogue: 05000000
+  dialogue: 01000000
   setOffset: 18
   player: {fileID: 0}
   maxY: -2.365376
@@ -1021,12 +1021,12 @@ GameObject:
   - 60: {fileID: 1864717042}
   - 114: {fileID: 1864717041}
   - 114: {fileID: 1864717040}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &1864717040
 MonoBehaviour:
