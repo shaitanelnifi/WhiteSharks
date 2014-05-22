@@ -798,16 +798,17 @@ MonoBehaviour:
   isTherePlayer: 0
   spawnHereAfter: {x: 0, y: 0}
   loadNewXML: 0
-  dialoguer: chapter1
+  dialoguer: chapter2
   needGUI: 0
-  dialogue: 
+  dialogue: ffffffff
   setOffset: 0
   player: {fileID: 0}
-  maxY: 2
-  minY: 1
-  minScale: 1
-  maxScale: 1
+  maxY: -1.35435796
+  minY: -3.95000005
+  minScale: .469999999
+  maxScale: .74000001
   baseSpeed: 1
+  placeTop: 0
 --- !u!4 &1085850464
 Transform:
   m_ObjectHideFlags: 0
