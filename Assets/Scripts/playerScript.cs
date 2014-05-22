@@ -205,8 +205,21 @@ public class playerScript : CaseElement {
 	void DoorTrigger(Collider2D collider ){
 
 		DoorScript doorObj = collider.gameObject.GetComponent<DoorScript> ();
-		
-		if (doorObj != null){ 
+		ConditionDoor condObj = collider.gameObject.GetComponent<ConditionDoor>();
+
+		if (condObj != null) {
+			if (condObj.gotThem()){
+				canScale = false;
+				gameObject.collider2D.enabled = false;
+				renderer.enabled = false;
+				if (backEffect == null){
+					//Debug.Log("Calling effect");
+					backEffect = (GameObject)Instantiate(Resources.Load("blackScreen"));
+					//Debug.Log(backEffect);
+				}
+				condObj.useDoor();
+			}
+		} else if (doorObj != null){ 
 			canScale = false;
 			gameObject.collider2D.enabled = false;
 			renderer.enabled = false;
@@ -215,16 +228,11 @@ public class playerScript : CaseElement {
 				backEffect = (GameObject)Instantiate(Resources.Load("blackScreen"));
 				//Debug.Log(backEffect);
 			}
+			doorObj.useDoor();
 		}
 		else {
 			renderer.enabled = true;
 		}
-		
-		int tempIndex;
-		if (doorObj != null) {
-			doorObj.useDoor();
-		}
-	
 	}
 
 	//flips the sprite or animation

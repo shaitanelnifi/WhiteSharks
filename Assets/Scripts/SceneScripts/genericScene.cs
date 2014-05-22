@@ -4,6 +4,7 @@ using System.Collections;
 public class genericScene : MonoBehaviour {
 	//Implement when dialoguer/animation ends, go to first scene.
 
+	//For use with dialogue
 	public string debugMe;
 	public bool autoPlay;
 	public AudioClip playMe;
@@ -21,9 +22,24 @@ public class genericScene : MonoBehaviour {
 	public int curDia = 0;
 
 	public int setOffset;
+
+	//For handling the player in the scene
+	public static GameObject backEffect;
+	public playerScript player;
+	public float scaleX = 1f;
+	public float scaleY = 1f;
+	public float maxY = 2f;
+	public float minY = 1f;
+	public float minScale = 1f;
+	public float maxScale = 1f;
+	public float baseSpeed = 1f;
 	
 	// Use this for initialization
 	void Start () {
+		player = (playerScript) FindObjectOfType(typeof(playerScript));
+
+		sceneInit ();
+
 		if (loadNewXML || !Dialoguer.isInitialized ())
 			Dialoguer.Initialize(dialoguer);
 
@@ -39,9 +55,8 @@ public class genericScene : MonoBehaviour {
 
 	void playDialogue(){
 
-
 		Dialoguer.StartDialogue ((int)dialogue[curDia]);
-		var player = (playerScript) FindObjectOfType(typeof(playerScript));
+
 		if (player != null) {
 			player.stopMove ();
 			player.talking = true;
@@ -65,11 +80,33 @@ public class genericScene : MonoBehaviour {
 		}
 	}
 
+	public void sceneInit(){
+		AstarPath.active.Scan ();
+		backEffect = (GameObject)Instantiate(Resources.Load("effect"));
+		if (GameManager.Instance.playerInScene) {
+			string temp = (string)GameManager.Instance.GetMainCharacter ();
+			player = (playerScript)Instantiate (Resources.Load ((temp)));
+			Vector2 tempVec = transform.position;
+			tempVec.x = GameManager.Instance.GetNextX ();
+			tempVec.y = GameManager.Instance.GetNextY ();
+
+			player.transform.position = tempVec;
+			//scale the player sprite
+			if (scaleX != 0 && scaleY != 0) {
+					player.transform.localScale = new Vector3 (scaleX, scaleY, 1);	
+			}
+			player.GetComponent<playerScript> ().scaleInfo = new float[4]{minScale, maxScale, minY, maxY};
+			player.GetComponent<playerScript> ().baseSpeed = baseSpeed;
+		}
+		
+		GameManager.Instance.updateMouseIcon ("Walk_Icon");
+	}
+
 	IEnumerator wait(){
 		SoundManager.Instance.Play2DMusic(playMe);
 		//Debug.Log (debugMe);
 		if (!GameManager.dialogueJustFinished) {
-			var player = (playerScript) FindObjectOfType(typeof(playerScript));
+			player = (playerScript) FindObjectOfType(typeof(playerScript));
 			if (player != null) {
 				player.stopMove ();
 				player.talking = true;
@@ -87,12 +124,11 @@ public class genericScene : MonoBehaviour {
 		if ((int)dialogue [curDia] >= 0 && GameManager.dialogueJustFinished && curDia == dialogue.Length - 1) {
 						if (waitThisLong != -1) {
 								yield return new WaitForSeconds (waitThisLong);
-								GameManager.Instance.playerInScene = isTherePlayer;
 								done = true;
+								GameManager.Instance.playerInScene = isTherePlayer;
+				
 								if (isTherePlayer) {
-										if (!GameManager.Instance.playerInScene) {
-												GameManager.Instance.playerInScene = true;
-										}
+										
 										//Debug.Log ("Setting nexts to " + spawnHereAfter.x + " and " + spawnHereAfter.y);
 										GameManager.Instance.SetMainCharacter (whatCharacter);
 										GameManager.Instance.SetNextX (spawnHereAfter.x);

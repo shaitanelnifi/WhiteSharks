@@ -22,7 +22,7 @@ public class ConditionDoor : DoorScript {
 
 
 
-	private bool gotThem(){
+	public bool gotThem(){
 		
 		//Check the journal inventory for these things
 		for (int i = 0; i < getTheseToProceed.Length; i++) {

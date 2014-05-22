@@ -5048,16 +5048,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 422799275}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51a2a268bd181ea43b3064a7728d1db2, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter2bellymarketpassingthrough
   x: -8.72952461
   y: -5.3029108
   mouseOverIcon: Door_Icon
-  getTheseToProceed: []
-  getTheseGlobalBools: 00000000
-  dontGotIt: 21
 --- !u!50 &422799279
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -5719,7 +5716,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &1481522342
 MonoBehaviour:
@@ -5750,7 +5747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 4
+  maxDist: 5
 --- !u!61 &1481522344
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5817,14 +5814,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 546e4042cc205e14bb0c655ff9ec24f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleX: 0
-  scaleY: 0
-  maxY: 0
-  minY: 0
-  minScale: 0
-  maxScale: 0
-  baseSpeed: 0
-  id: 0
+  scaleX: 1
+  scaleY: 1
+  maxY: -2.18983006
+  minY: -4
+  minScale: .330000013
+  maxScale: 1.20000005
+  baseSpeed: 2
+  id: 5
 --- !u!212 &1659778551
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5944,7 +5941,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &1737142150
 MonoBehaviour:
@@ -5975,7 +5972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 4
+  maxDist: 5
 --- !u!61 &1737142152
 BoxCollider2D:
   m_ObjectHideFlags: 0
