@@ -10,10 +10,13 @@ public class MainMenu : MonoBehaviour {
 	private bool _mainMenu = true;
 	private string _wo;
 	private bool test_Mode = false;
+	private string sceneName;
+
 
 	// Use this for initialization
-	public MainMenu(int a){
+	public MainMenu(string name){
 		test_Mode = true;
+		sceneName = name;
 	}
 	void Start () {
 		UIEventListener.Get (start).onClick += this.onClick;
@@ -53,7 +56,7 @@ public class MainMenu : MonoBehaviour {
 		DontDestroyOnLoad(GameManager.Instance);
 		DontDestroyOnLoad(InputManager.Instance);
 		DontDestroyOnLoad(SoundManager.Instance);
-		GameManager.Instance.startState(test_Mode);
+		GameManager.Instance.startState(test_Mode, sceneName);
 
 		switch (GameManager.currentEpisode) {
 		case 0:
