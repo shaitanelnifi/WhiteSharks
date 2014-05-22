@@ -1297,7 +1297,8 @@ MonoBehaviour:
   minY: -1.60000002
   minScale: .389999986
   maxScale: .800000012
-  baseSpeed: 6
+  baseSpeed: 4
+  placeTop: 0
 --- !u!1 &1772587678
 GameObject:
   m_ObjectHideFlags: 0

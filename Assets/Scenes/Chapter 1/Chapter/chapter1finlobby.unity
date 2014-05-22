@@ -5869,7 +5869,7 @@ MonoBehaviour:
   minY: -4.92999983
   minScale: .109999999
   maxScale: .319999993
-  baseSpeed: 3
+  baseSpeed: 2.4000001
   placeTop: 0
 --- !u!1001 &1548542348
 Prefab:
