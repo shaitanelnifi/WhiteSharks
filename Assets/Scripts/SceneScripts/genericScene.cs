@@ -30,7 +30,10 @@ public class genericScene : MonoBehaviour {
 	public float minScale = 1f;
 	public float maxScale = 1f;
 	public float baseSpeed = 1f;
-	
+
+	// For determining whether to place conversation bubble top or bottom
+	public bool placeTop = false;
+
 	// Use this for initialization
 	void Start () {
 		player = (playerScript) FindObjectOfType(typeof(playerScript));
@@ -48,6 +51,11 @@ public class genericScene : MonoBehaviour {
 			playDialogue();
 			
 		
+	}
+
+	public bool getPlaceTop()
+	{
+		return placeTop;
 	}
 
 	void playDialogue(){
@@ -134,6 +142,7 @@ public class genericScene : MonoBehaviour {
 							}
 							GameManager.dialogueJustFinished = false;
 							SoundManager.Instance.CantWalk ();
+							GameManager.Instance.GetComponent<DialogueGUI_Test>().resetRunOnce();
 							Application.LoadLevel (nextLevel);
 					}
 			} else if (dialogue [curDia].Equals (Convo.ch0none)) {
@@ -152,6 +161,7 @@ public class genericScene : MonoBehaviour {
 							}
 							GameManager.dialogueJustFinished = false;
 							SoundManager.Instance.CantWalk ();
+							GameManager.Instance.GetComponent<DialogueGUI_Test>().resetRunOnce();
 							Application.LoadLevel (nextLevel);
 					}
 			}
@@ -169,6 +179,7 @@ public class genericScene : MonoBehaviour {
 			}
 			GameManager.dialogueJustFinished = false;
 			SoundManager.Instance.CantWalk ();
+			GameManager.Instance.GetComponent<DialogueGUI_Test>().resetRunOnce();
 			Application.LoadLevel (nextLevel);
 		}
 	}
