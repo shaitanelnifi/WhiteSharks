@@ -3,18 +3,23 @@ using System.Collections;
 
 public class TestMode : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
+	private MainMenu debugMode;
+	private bool ready = false;
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey (KeyCode.F12)) {
+		if (Input.GetKey (KeyCode.Alpha2)) {
+			debugMode = new MainMenu("chapter2introtransition");
+			ready = true;
+		}
+		else if (Input.GetKey (KeyCode.Alpha1)) {
+			debugMode = new MainMenu("chapter1introtransition");
+			ready = true;
+		}
 
-			MainMenu GS = new MainMenu(2);
-			GS.startGame();
 
+		if (ready == true) {
+			debugMode.startGame();		
 		}
 	
 	}

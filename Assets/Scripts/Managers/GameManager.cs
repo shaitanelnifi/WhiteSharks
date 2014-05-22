@@ -100,7 +100,7 @@ public class GameManager : MonoBehaviour {
 	/// Starts the game state and sets initial values
 	/// Should be called during gameStart
 	/// </summary>
-	public void startState(bool test_Mode) {
+	public void startState(bool test_Mode, string sceneName) {
 
 		Debug.Log("Creating a new game state");
 		//CaseGenerator c = new CaseGenerator("","");
@@ -118,7 +118,7 @@ public class GameManager : MonoBehaviour {
 		else{
 			GameManager.Instance.SetMainCharacter("Jane");
 			GameManager.Instance.playerInScene = false;
-			Application.LoadLevel("chapter2introtransition");
+			Application.LoadLevel(sceneName);
 		}
 	}
 
