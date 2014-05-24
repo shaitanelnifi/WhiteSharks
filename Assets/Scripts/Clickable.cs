@@ -39,6 +39,7 @@ public class Clickable : MonoBehaviour {
 					player.setTarget(new Vector3(transform.position.x, transform.position.y, 0));
 				} else {
 					player.stopMove();
+					player.canWalk = true;
 				}
 			}
 		}

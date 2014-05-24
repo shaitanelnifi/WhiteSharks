@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolText: ??? Room
+  toolText: ???'s Room
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
@@ -495,11 +495,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_LocalPosition.x
-      value: .139455736
+      value: 4.90813112
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -5.63759422
+      value: -.933798611
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_LocalPosition.z
@@ -523,19 +523,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_Size.x
-      value: 19.5915527
+      value: 2.94988537
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_Center.x
-      value: -.811040401
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_Size.y
-      value: .675583839
+      value: 1.77854443
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_Center.y
-      value: -.16220808
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: diaNum
@@ -5326,7 +5326,7 @@ MonoBehaviour:
   loadNewXML: 0
   dialoguer: chapter2
   needGUI: 0
-  dialogue: 
+  dialogue: 0d000000
   setOffset: 0
   player: {fileID: 0}
   maxY: -2.8599999
@@ -5962,7 +5962,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: toolText
-      value: ??? Room
+      value: ???'s Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
@@ -6229,8 +6229,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 19.5915527, y: .675583839}
-  m_Center: {x: -.811040401, y: -.16220808}
+  m_Size: {x: 2.94988537, y: 1.77854443}
+  m_Center: {x: 0, y: 0}
 --- !u!114 &1987488052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6253,7 +6253,7 @@ Transform:
   m_PrefabInternal: {fileID: 421892001}
   m_GameObject: {fileID: 1987488048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .139455736, y: -5.63759422, z: 0}
+  m_LocalPosition: {x: 4.90813112, y: -.933798611, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
