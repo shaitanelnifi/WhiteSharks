@@ -5515,8 +5515,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter2bellyalleyprepeijunpassingthrough
-  x: -1.68327105
-  y: -5.14134598
+  x: 2.95918012
+  y: -3.7854259
   mouseOverIcon: Door_Icon
   getTheseToProceed:
   - {fileID: 100000, guid: 0269d62a56b778c43837adf042842990, type: 2}
@@ -5975,11 +5975,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
       propertyPath: x
-      value: -1.68327105
+      value: 2.95918012
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
       propertyPath: y
-      value: -5.14134598
+      value: -3.7854259
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
       propertyPath: getTheseGlobalBools.Array.data[0]
