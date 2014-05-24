@@ -107,12 +107,12 @@ MonoBehaviour:
   waitThisLong: -1
   whatCharacter: Jane
   nextLevel: chapter4bellybrainroom
-  isTherePlayer: 0
+  isTherePlayer: 1
   spawnHereAfter: {x: 0, y: 0}
   loadNewXML: 0
   dialoguer: chapter4
   needGUI: 1
-  dialogue: ffffffff
+  dialogue: 06000000
   setOffset: 0
   player: {fileID: 0}
   maxY: -2.99557304

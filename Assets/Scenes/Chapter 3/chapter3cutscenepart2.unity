@@ -321,7 +321,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 2ceaca1260e11fb42bb55011fd9c11b2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d74acab258d6d1545873f84959665b7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &260692481
 Transform:
@@ -735,7 +735,7 @@ GameObject:
   - 114: {fileID: 2067476006}
   - 114: {fileID: 2067476005}
   m_Layer: 10
-  m_Name: May
+  m_Name: MayNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
