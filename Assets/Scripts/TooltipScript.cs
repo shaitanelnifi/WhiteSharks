@@ -11,7 +11,7 @@ public class TooltipScript : MonoBehaviour {
 	private GUIStyle guiStyleFore;
 	private GUIStyle guiStyleBack;
 
-	private playerScript player;
+	private static playerScript player;
 	private DoorScript doorscript;
 
 	private static bool revealAll = false;
@@ -36,6 +36,9 @@ public class TooltipScript : MonoBehaviour {
 			scale.x = transform.localScale.x;
 			scale.y = transform.localScale.y;
 		}
+
+		if (player == null)
+			player = FindObjectOfType (typeof(playerScript)) as playerScript;
 
 		doorscript = GetComponent<DoorScript>();
 
