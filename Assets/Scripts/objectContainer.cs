@@ -12,8 +12,6 @@ public class objectContainer : MonoBehaviour {
 	private bool clickedOnSomething = false;
 	private playerScript player;
 	private distanceCheck pDist;
-
-    private GameObject uiThing;
 	
 	public void OnMouseEnter(){
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);
@@ -43,8 +41,6 @@ public class objectContainer : MonoBehaviour {
 			Debug.Log ("inside");
 			DestroyObject (gameObject);
 		}
-
-		uiThing = GameObject.Find("Journal");
 	}
 
 	public void revealItem(){

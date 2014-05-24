@@ -6,8 +6,6 @@ public class MainMenu : MonoBehaviour {
 	public GameObject start;
 	public GameObject options;
 	public GameObject quit;
-	private float _buttonWidth = 150;
-	private bool _mainMenu = true;
 	private string _wo;
 	private bool test_Mode = false;
 	private string sceneName;
@@ -54,7 +52,6 @@ public class MainMenu : MonoBehaviour {
 		// Singleton pattern
 
 		DontDestroyOnLoad(GameManager.Instance);
-		DontDestroyOnLoad(InputManager.Instance);
 		DontDestroyOnLoad(SoundManager.Instance);
 		GameManager.Instance.startState(test_Mode, sceneName);
 
@@ -71,9 +68,6 @@ public class MainMenu : MonoBehaviour {
 	
 	private void optionsMenu() {
 		print ("Entering Options menu");
-		
-		//_mainMenu = false;
-		DontDestroyOnLoad (InputManager.Instance);
 	}
 	
 	private void quitGame() {

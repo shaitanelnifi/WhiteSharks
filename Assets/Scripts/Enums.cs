@@ -89,7 +89,7 @@ public enum clickableID {
 	joshchapter3fincafepostpeijunpreorder = 13,
 	//14, //merged with 13
 	maychapter3finofficepostpeijun = 15,
-	shammychapter3finofficeliamsroom = 16,
+	cantenter = 19,
 
 };
 
@@ -175,6 +175,7 @@ public enum Convo {
 	robotchapter3bellybarpostpeijun = 10,
 	liamchapter3finplazapostpeijun = 11,
 	joshchapter3fincafepostpeijun = 12,
+	shammychapter3finofficeliamsroom = 16,
 	peijunchapter3bellypeijunroomendcutscene = 17,
 	alexiachapter3bellypeijunroomnetworkendcutscene = 18,
 
