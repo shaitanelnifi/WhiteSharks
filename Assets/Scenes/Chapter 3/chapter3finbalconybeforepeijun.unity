@@ -7829,7 +7829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlay: 1
-  playMe: {fileID: 0}
+  playMe: {fileID: 8300000, guid: 8d5082d1704383c4cbb3ae363656fba7, type: 3}
   waitThisLong: -1
   whatCharacter: May
   nextLevel: chapter3finplazabeforepeijun
