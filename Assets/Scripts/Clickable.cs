@@ -34,9 +34,11 @@ public class Clickable : MonoBehaviour {
 	public void OnMouseDown(){
 		if (Input.GetMouseButtonDown (0)) {
 			if (player != null) {
-				if (player.canWalk){
+				if (player.canWalk && !wall){
 					clickedOnSomething = true;
 					player.setTarget(new Vector3(transform.position.x, transform.position.y, 0));
+				} else {
+					player.stopMove();
 				}
 			}
 		}

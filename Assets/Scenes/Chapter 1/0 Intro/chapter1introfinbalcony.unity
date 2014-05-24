@@ -336,6 +336,22 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: d48ef75dbf7804870bccb459abe188a3, type: 2}
+    - target: {fileID: 6100000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+      propertyPath: m_Center.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+      propertyPath: iconMod.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
+      propertyPath: iconMod.x
+      value: -10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
   m_RootGameObject: {fileID: 674490209}
@@ -586,7 +602,7 @@ MonoBehaviour:
   toolText: Talk
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
-  iconMod: {x: 0, y: 0}
+  iconMod: {x: -10, y: 180}
   scale: {x: 0, y: 0}
 --- !u!114 &674490212
 MonoBehaviour:
@@ -611,8 +627,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.64999998, y: 6.1500001}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 1.64999998, y: 5}
+  m_Center: {x: 0, y: 2.5}
 --- !u!212 &674490214
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -869,7 +885,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!1001 &1187974895
 Prefab:
   m_ObjectHideFlags: 0
@@ -1583,6 +1599,14 @@ Prefab:
     - target: {fileID: 6100000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
       propertyPath: m_Center.y
       value: .474395663
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
+      propertyPath: scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
+      propertyPath: scale.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}

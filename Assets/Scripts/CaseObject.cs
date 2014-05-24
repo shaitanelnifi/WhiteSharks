@@ -64,11 +64,12 @@ public class CaseObject : CaseElement {
 		if (checkCondis()) {
 			handleAssociated();
 			collectItems();
+			player.stopMove ();
 			Dialoguer.StartDialogue(GameManager.pickUpConvo);
 		} else if (myConvo != Convo.ch0none) {
 			Dialoguer.StartDialogue ((int)myConvo);
 			player.talking = true;
-			player.canWalk = false;
+			player.stopMove ();
 		}
 
 	}
