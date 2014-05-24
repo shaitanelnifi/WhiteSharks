@@ -294,6 +294,22 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 5fe8e500da1bf49ec886d1ff302fe7a3,
         type: 3}
+    - target: {fileID: 6100000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
+      propertyPath: m_Size.y
+      value: 10.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
+      propertyPath: m_Center.y
+      value: 5.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
+      propertyPath: m_Size.x
+      value: 2.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
+      propertyPath: m_Center.x
+      value: -.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
   m_RootGameObject: {fileID: 576624418}
@@ -1072,8 +1088,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1, y: 5}
-  m_Center: {x: 0, y: 2.5}
+  m_Size: {x: 2.25, y: 10.25}
+  m_Center: {x: -.25, y: 5.125}
 --- !u!212 &576624421
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8348,6 +8364,7 @@ MonoBehaviour:
   minScale: .400000006
   maxScale: 1.14999998
   baseSpeed: 4
+  placeTop: 0
   getTheseToProceed:
   - {fileID: 100000, guid: 3ac0d3532517a463f950d0b7ec4db1c5, type: 2}
   - {fileID: 100000, guid: e0718d06710294bdba42a3e7ca65a2a0, type: 2}

@@ -11,6 +11,8 @@ public class DoorScript : MonoBehaviour {
 	//id = 0 means go back one room, 1 means go to next room
 	public string id;
 	public float x, y;
+	private int order;
+	private int orderCount = 0;
 
 	//Mouse icon information
 	public string mouseOverIcon = "Door_Icon";
@@ -19,6 +21,8 @@ public class DoorScript : MonoBehaviour {
 	void Start(){
 
 		player = (playerScript) FindObjectOfType(typeof(playerScript));
+		orderCount++;
+		order = orderCount;
 
 	}
 
@@ -35,6 +39,7 @@ public class DoorScript : MonoBehaviour {
 		SoundManager.Instance.StopWalk ();
 		GameManager.Instance.SetNextX(x);
 		GameManager.Instance.SetNextY(y);
+		orderCount = 0;
 		//DestoryPlayer();
 		if((Application.loadedLevelName == "finbalcony" && id == "finplaza") || (Application.loadedLevelName == "finplaza" && id == "finbalcony"))
 			SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/FinElevator"), SoundManager.SoundType.Sfx, true);
@@ -43,6 +48,10 @@ public class DoorScript : MonoBehaviour {
 		Application.LoadLevel (id);
 
 	}
+
+	public int getOrder(){
+				return order;
+		}
 
 	public void OnMouseExit(){
 		GameManager.Instance.updateMouseIcon (GameManager.Instance.defaultIcon);
