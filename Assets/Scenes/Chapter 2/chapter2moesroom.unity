@@ -5518,8 +5518,9 @@ MonoBehaviour:
   x: -1.68327105
   y: -5.14134598
   mouseOverIcon: Door_Icon
-  getTheseToProceed: []
-  getTheseGlobalBools: 08000000
+  getTheseToProceed:
+  - {fileID: 100000, guid: 0269d62a56b778c43837adf042842990, type: 2}
+  getTheseGlobalBools: 
   dontGotIt: 21
 --- !u!60 &961372215
 PolygonCollider2D:
@@ -5932,6 +5933,14 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: getTheseToProceed.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: getTheseGlobalBools.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
       propertyPath: m_LocalPosition.x
       value: 2.71798682
@@ -5976,6 +5985,10 @@ Prefab:
       propertyPath: getTheseGlobalBools.Array.data[0]
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: getTheseToProceed.Array.data[0]
+      value: 
+      objectReference: {fileID: 100000, guid: 0269d62a56b778c43837adf042842990, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
   m_RootGameObject: {fileID: 961372213}

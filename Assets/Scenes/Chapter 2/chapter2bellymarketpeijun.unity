@@ -118,7 +118,8 @@ MonoBehaviour:
   minY: 1
   minScale: 1
   maxScale: 1
-  baseSpeed: 1
+  baseSpeed: 3
+  placeTop: 0
 --- !u!4 &374970098
 Transform:
   m_ObjectHideFlags: 0
@@ -342,6 +343,22 @@ Prefab:
       propertyPath: myConvo
       value: 31
       objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_Center.y
+      value: 3.89454865
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_Center.x
+      value: -.203446746
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_Size.y
+      value: 7.50969648
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_Size.x
+      value: 1.87794292
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
   m_RootGameObject: {fileID: 1735621742}
@@ -379,7 +396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: chapter2bellyalleypostpeijunpassingthrough
+  id: chapter2bellyallypostpeijunpassingthrough
   x: 0
   y: 0
   mouseOverIcon: Door_Icon
@@ -698,7 +715,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: id
-      value: chapter2bellyalleypostpeijunpassingthrough
+      value: chapter2bellyallypostpeijunpassingthrough
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
@@ -840,6 +857,7 @@ GameObject:
   - 61: {fileID: 1735621745}
   - 114: {fileID: 1735621744}
   - 114: {fileID: 1735621743}
+  - 95: {fileID: 1735621749}
   m_Layer: 10
   m_Name: PeijunShi
   m_TagString: Untagged
@@ -887,8 +905,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.587304, y: 5.41710043}
-  m_Center: {x: -.14414978, y: -.0314495564}
+  m_Size: {x: 1.87794292, y: 7.50969648}
+  m_Center: {x: -.203446746, y: 3.89454865}
 --- !u!114 &1735621746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -947,6 +965,21 @@ Transform:
   m_LocalScale: {x: .522976518, y: .522976637, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!95 &1735621749
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: e95b9d1a228e644d7bcddf8736d250c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 776884810}
+  m_GameObject: {fileID: 1735621742}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bc2059febb1b649609e9345800449302, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &2003196242
 GameObject:
   m_ObjectHideFlags: 0

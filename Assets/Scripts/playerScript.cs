@@ -41,7 +41,7 @@ public class playerScript : CaseElement {
 
 	//sets up scale, path, and animation stuff
 	void Start(){
-
+		canWalk = true;
 		seeker = GetComponent<Seeker>();
 		SoundManager.Instance.CanWalk();
 		if(Application.loadedLevelName == "chapter1finbalcony") {
@@ -77,6 +77,7 @@ public class playerScript : CaseElement {
 
 
 	void FixedUpdate(){	
+
 
 		Debug.DrawLine (transform.position, targetPosition, Color.red);
 
