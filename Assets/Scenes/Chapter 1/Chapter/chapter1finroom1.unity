@@ -580,6 +580,7 @@ MonoBehaviour:
   minScale: .899999976
   maxScale: 1.14999998
   baseSpeed: 4
+  placeTop: 0
 --- !u!1 &705674850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,6 +1569,10 @@ Prefab:
       propertyPath: m_SortingLayerID
       value: 1982072587
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e272233e040da41df924bf5730188f88, type: 2}
+      propertyPath: maxDist
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e272233e040da41df924bf5730188f88, type: 2}
   m_RootGameObject: {fileID: 2097457552}
@@ -1764,7 +1769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 8
+  maxDist: 6.5
 --- !u!61 &1463012539
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22267,7 +22272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 4
+  maxDist: 5
 --- !u!61 &2097457554
 BoxCollider2D:
   m_ObjectHideFlags: 0
