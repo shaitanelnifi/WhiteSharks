@@ -75,8 +75,19 @@ public class playerScript : CaseElement {
 		}
 	}
 
+	public void skipToNextScene(){
+		
+		GameObject door = GameObject.FindWithTag ("door");
+		Collider2D doorCollider = door.collider2D;
+		DoorTrigger (doorCollider);	
+		
+		
+	}
 
 	void FixedUpdate(){	
+		if (Input.GetKey (KeyCode.S)) {
+			skipToNextScene();		
+		}
 
 
 		Debug.DrawLine (transform.position, targetPosition, Color.red);

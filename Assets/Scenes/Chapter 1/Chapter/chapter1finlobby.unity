@@ -5689,7 +5689,7 @@ GameObject:
   - 114: {fileID: 1183584708}
   m_Layer: 10
   m_Name: door10
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6142,6 +6142,10 @@ Prefab:
     - target: {fileID: 6100000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
       propertyPath: m_Center.x
       value: -1.86195445
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
+      propertyPath: m_TagString
+      value: door
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}

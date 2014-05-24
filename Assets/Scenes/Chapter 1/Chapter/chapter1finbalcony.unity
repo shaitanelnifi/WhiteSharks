@@ -1973,7 +1973,7 @@ GameObject:
   - 114: {fileID: 936188414}
   m_Layer: 10
   m_Name: door1
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2709,7 +2709,7 @@ GameObject:
   - 114: {fileID: 1354061148}
   m_Layer: 10
   m_Name: door10
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8909,7 +8909,7 @@ GameObject:
   - 114: {fileID: 1838341068}
   m_Layer: 10
   m_Name: door0
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

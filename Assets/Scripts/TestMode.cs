@@ -16,6 +16,13 @@ public class TestMode : MonoBehaviour {
 			debugMode = new MainMenu("chapter1introtransition");
 			ready = true;
 		}
+		else if (Input.GetKey (KeyCode.Alpha3)) {
+			debugMode = new MainMenu("chapter3introtransition");
+			ready = true;
+		}else if (Input.GetKey (KeyCode.Alpha4)) {
+			debugMode = new MainMenu("chapter4introtransition");
+			ready = true;
+		}
 
 
 		if (ready == true) {

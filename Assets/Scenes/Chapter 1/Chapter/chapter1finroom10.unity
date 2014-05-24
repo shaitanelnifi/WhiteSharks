@@ -658,7 +658,7 @@ GameObject:
   - 114: {fileID: 467432655}
   m_Layer: 10
   m_Name: door
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1109,6 +1109,7 @@ MonoBehaviour:
   minScale: .899999976
   maxScale: 1.14999998
   baseSpeed: 4
+  placeTop: 0
 --- !u!212 &623330654
 SpriteRenderer:
   m_ObjectHideFlags: 0
