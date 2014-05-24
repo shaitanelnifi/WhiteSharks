@@ -5531,11 +5531,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter2bellyalleypremoe
-  x: 0
-  y: 0
+  x: 2.14816999
+  y: -3.66165709
   mouseOverIcon: Door_Icon
-  getTheseToProceed: []
-  getTheseGlobalBools: 07000000
+  getTheseToProceed:
+  - {fileID: 100000, guid: b83be8c1098085841be24fd1cce993cd, type: 2}
+  getTheseGlobalBools: 
   dontGotIt: 21
 --- !u!60 &1398532195
 PolygonCollider2D:
@@ -5656,6 +5657,14 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .990334272
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 64253a334a51c5d4283fe92b7c48b695, type: 2}
+      propertyPath: maxDist
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 64253a334a51c5d4283fe92b7c48b695, type: 2}
+      propertyPath: maxDist
+      value: 6.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64253a334a51c5d4283fe92b7c48b695, type: 2}
   m_RootGameObject: {fileID: 1918062533}
@@ -5668,6 +5677,14 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: getTheseToProceed.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: getTheseGlobalBools.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
       propertyPath: m_LocalPosition.x
       value: 2.76183057
@@ -5704,6 +5721,18 @@ Prefab:
       propertyPath: id
       value: chapter2bellyalleypremoe
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: getTheseToProceed.Array.data[0]
+      value: 
+      objectReference: {fileID: 100000, guid: b83be8c1098085841be24fd1cce993cd, type: 2}
+    - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: x
+      value: 2.14816999
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: y
+      value: -3.66165709
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
   m_RootGameObject: {fileID: 1398532193}
@@ -5722,6 +5751,7 @@ GameObject:
   - 114: {fileID: 1918062536}
   - 114: {fileID: 1918062535}
   - 114: {fileID: 1918062534}
+  - 114: {fileID: 1918062540}
   m_Layer: 0
   m_Name: eJournalLocked
   m_TagString: Untagged
@@ -5742,7 +5772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iHoldThis: {fileID: 11400000, guid: b83be8c1098085841be24fd1cce993cd, type: 2}
-  maxDist: 4
+  maxDist: 6.5
   convoID: 18
 --- !u!114 &1918062535
 MonoBehaviour:
@@ -5773,7 +5803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 4
+  maxDist: 6.5
 --- !u!61 &1918062537
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5821,6 +5851,20 @@ Transform:
   m_LocalScale: {x: .349999994, y: .349999994, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1918062540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1918062533}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diaNum: 0
+  offset: 0
+  wall: 0
 --- !u!1 &1926322043
 GameObject:
   m_ObjectHideFlags: 0

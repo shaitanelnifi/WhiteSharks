@@ -237,7 +237,7 @@ MonoBehaviour:
   nextLevel: chapter1finlobby
   isTherePlayer: 1
   spawnHereAfter: {x: 2.4000001, y: -5}
-  loadNewXML: 0
+  loadNewXML: 1
   dialoguer: chapter1
   needGUI: 0
   dialogue: 
@@ -248,3 +248,4 @@ MonoBehaviour:
   minScale: 1
   maxScale: 1
   baseSpeed: 1
+  placeTop: 0

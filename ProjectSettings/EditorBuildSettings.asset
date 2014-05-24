@@ -95,3 +95,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 2/chapter2moesroom.unity
   - enabled: 1
     path: Assets/Scenes/Chapter 2/chapter2introtransition.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 2/chapter2bellyallypostpeijunpassingthrough.unity

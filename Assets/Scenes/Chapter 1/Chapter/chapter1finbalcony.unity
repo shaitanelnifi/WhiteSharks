@@ -8348,6 +8348,7 @@ MonoBehaviour:
   minScale: .400000006
   maxScale: 1.14999998
   baseSpeed: 4
+  placeTop: 0
   getTheseToProceed:
   - {fileID: 100000, guid: 3ac0d3532517a463f950d0b7ec4db1c5, type: 2}
   - {fileID: 100000, guid: e0718d06710294bdba42a3e7ca65a2a0, type: 2}
