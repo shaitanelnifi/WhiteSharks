@@ -233,7 +233,7 @@ MonoBehaviour:
   autoPlay: 1
   playMe: {fileID: 0}
   waitThisLong: 4
-  whatCharacter: Jane
+  whatCharacter: May
   nextLevel: chapter2finofficewalkway
   isTherePlayer: 1
   spawnHereAfter: {x: 2.945086, y: -2.47189498}
