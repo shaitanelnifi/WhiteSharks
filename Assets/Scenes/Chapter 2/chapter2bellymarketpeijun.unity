@@ -379,7 +379,7 @@ GameObject:
   - 114: {fileID: 799475997}
   m_Layer: 10
   m_Name: doorback
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -744,7 +744,7 @@ GameObject:
   - 114: {fileID: 1664819163}
   - 114: {fileID: 1664819162}
   m_Layer: 10
-  m_Name: May
+  m_Name: MayNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1003,7 +1003,7 @@ GameObject:
   - 114: {fileID: 2003196243}
   m_Layer: 10
   m_Name: doorForward
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

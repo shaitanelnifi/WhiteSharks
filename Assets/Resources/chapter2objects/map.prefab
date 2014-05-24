@@ -8,13 +8,11 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  - 212: {fileID: 21200000}
   - 61: {fileID: 6100000}
-  - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
-  - 114: {fileID: 11400004}
+  - 212: {fileID: 21200000}
   m_Layer: 0
-  m_Name: moePic
+  m_Name: map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,8 +25,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.2257919, y: 1.51494837, z: -1}
-  m_LocalScale: {x: .613635182, y: .613635421, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalScale: {x: .349999994, y: .349999994, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!61 &6100000
@@ -40,37 +38,9 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 2, y: 3}
   m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toolText: Examine Picture
-  sizeOfFont: 24
-  ClickRevealer: {fileID: 0}
-  iconMod: {x: 0, y: 0}
-  scale: {x: 1, y: 1}
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDist: 8
---- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -81,19 +51,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8176f69eb181690498446187bf0de721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementName: Examine Picture
-  description: "REPORT\r\nName of Victim: Moe\r\nFormer Occupation: Bartender\r\nCause
-    of Death: Blood loss and brain removal\r"
-  profileImage: {fileID: 21300000, guid: 65f09a00f2b108f42b5ae00a619ac1f7, type: 3}
+  elementName: Frank's Map
+  description: It's a map of the belly.  There's a circle around where the bar would
+    be.
+  profileImage: {fileID: 21300000, guid: f0a992aff77e1b64a96b6544807c3df0, type: 3}
   visible: 1
   clickedOnSomething: 0
   maxDist: 4
-  myConvo: 26
-  pickUpConvo: 62
-  conditions: 0a000000
+  myConvo: -1
+  pickUpConvo: 0
+  conditions: 
   associatedObjects: []
   mouseOverIcon: Grab_Icon
-  autoPickupPostConvo: 1
+  autoPickupPostConvo: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -112,11 +82,11 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
-  m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 7d89f3c830cc9bd429335f07c69b0f79, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: f0a992aff77e1b64a96b6544807c3df0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

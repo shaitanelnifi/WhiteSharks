@@ -5,6 +5,7 @@ public class CaseObject : CaseElement {
 
 	public int pickUpConvo;
 	private GameObject uiThing;
+	private bool tookItem = false;
 	public int[] conditions;
 
 	public CaseObject[] associatedObjects;
@@ -13,7 +14,8 @@ public class CaseObject : CaseElement {
 	public bool autoPickupPostConvo = false;
 
 	void Start(){
-		Debug.Log (this.elementName);
+
+
 		if (journal.inventory.Contain (this)) {	
 			DestroyObject (gameObject);
 		}
@@ -67,12 +69,12 @@ public class CaseObject : CaseElement {
 			handleAssociated();
 			collectItems();
 			player.stopMove ();
-			Dialoguer.StartDialogue((int)myConvo);
 			player.talking = true;
+			Dialoguer.StartDialogue((int)myConvo);
 		} else if (myConvo != Convo.ch0none) {
-			Dialoguer.StartDialogue ((int)myConvo);
 			player.talking = true;
 			player.stopMove ();
+			Dialoguer.StartDialogue ((int)myConvo);
 		}
 
 	}
@@ -81,8 +83,12 @@ public class CaseObject : CaseElement {
 	public void handleAssociated(){
 
 		for (int i = 0; i < associatedObjects.Length; i++) {
+
 			var temp = Instantiate(associatedObjects[i]) as CaseObject;
-			temp.collectItems();
+			Debug.LogError(temp.elementName + i.ToString());
+			journal.inventory.Add(temp);
+			uiThing.SendMessage("addObject", temp);
+			Destroy(temp.gameObject);
 		}
 
 	}
@@ -90,7 +96,7 @@ public class CaseObject : CaseElement {
 	public void collectItems(){
 		journal.inventory.Add(this);
 		uiThing.SendMessage("addObject", this);
-		DestroyObject(gameObject);
+		Destroy(this.gameObject);
 	}
 
 	void Update(){
@@ -105,11 +111,10 @@ public class CaseObject : CaseElement {
 			if (pDist.isCloseEnough (player.transform.position))
 				pickUpItem ();
 
-		if (autoPickupPostConvo)
-		if (pDist.isCloseEnough (player.transform.position) && checkCondis () && !player.talking) {
-			handleAssociated();
-			collectItems();
-			Dialoguer.StartDialogue(GameManager.pickUpConvo);
+		if (autoPickupPostConvo && GameManager.dialogueJustFinished)
+		if (pDist.isCloseEnough (player.transform.position) && !player.talking) {
+			pickUpItem ();
+			autoPickupPostConvo = false;
 		}
 	}
 
