@@ -179,6 +179,25 @@ public enum Convo {
 	peijunchapter3bellypeijunroomendcutscene = 17,
 	alexiachapter3bellypeijunroomnetworkendcutscene = 18,
 
+	//chapter4
+	alexiachapter4networkpeijunroomstart = 0,
+	maychapter4networkofficestart = 1,
+	maychapter4networkofficewrongway = 2,
+	maychapter4networkmapstart = 3,
+	janechapter4networkmapcelldoor = 4,
+	janechapter4mapbots = 5,
+	robotchapter4bellybar = 6,
+	janechapter4bellybarwrongway = 7,
+	janechapter4bellybrainroomstart = 8,
+	janechapter4bellybrainroomwrongway = 9,
+	janechapter4bellybrainroomterminal = 10,
+	shammychapter4networkbrainroomstart = 11,
+	janechapter4bellybrainroomshowdown = 12,
+	founderchapter4networkbrainroomrip = 13,
+	janechapter4endcutscene = 14,
+	founderchapter4lostbuttonmash = 15,
+	alexiachapter4endnarration = 23,
+	
 };
 
 public enum FadeType {

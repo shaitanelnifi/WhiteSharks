@@ -142,6 +142,26 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter 3/chapter3finofficewalkwaybeforepeijun.unity
   - enabled: 1
+    path: Assets/Scenes/Chapter 4/chapter4bellybar.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 4/chapter4bellybrainroom.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 4/chapter4bellybrainroomshowdown.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 4/chapter4endcutscene.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 4/chapter4introtransition.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 4/chapter4networkbrainroom.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 4/chapter4networkbrainroomrip.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 4/chapter4networkmap.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 4/chapter4networkoffice.unity
+  - enabled: 1
+    path: Assets/Scenes/Chapter 4/chapter4networkpeijunroom.unity
+  - enabled: 1
     path: Assets/Scenes/Chapter 3/chapter3finofficewalkwaypostpeijun.unity
   - enabled: 1
     path: Assets/Scenes/Chapter 3/chapter3finplazabeforepeijun.unity
