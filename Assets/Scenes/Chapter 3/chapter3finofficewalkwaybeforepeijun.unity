@@ -679,11 +679,11 @@ MonoBehaviour:
   whatCharacter: May
   nextLevel: chapter3finplazabeforepeijun
   isTherePlayer: 1
-  spawnHereAfter: {x: 1.55027294, y: -3.39677405}
+  spawnHereAfter: {x: -.219999999, y: -4.51999998}
   loadNewXML: 0
   dialoguer: chapter3
   needGUI: 0
-  dialogue: ffffffff
+  dialogue: 00000000
   setOffset: 0
   player: {fileID: 0}
   maxY: -2.365376
