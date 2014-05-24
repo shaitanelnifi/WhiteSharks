@@ -90,7 +90,8 @@ MonoBehaviour:
   myConvo: 41
   pickUpConvo: 62
   conditions: 0c000000
-  associatedObjects: []
+  associatedObjects:
+  - {fileID: 11400000, guid: 86789d4e374869e45bb04d2c5c50c064, type: 2}
   mouseOverIcon: Grab_Icon
   autoPickupPostConvo: 1
 --- !u!212 &21200000
