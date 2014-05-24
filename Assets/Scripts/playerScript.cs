@@ -132,10 +132,10 @@ public class playerScript : CaseElement {
 		}
 
 		//check if the player is going to the left or right
-		if((targetPosition.x - transform.position.x)<0 ){
+		if((path.vectorPath[currentWayPoint].x - transform.position.x)<0 ){
 			goingtLeft = true;
 		}
-		else if((targetPosition.x - transform.position.x)>0 ) {	
+		else if((path.vectorPath[currentWayPoint].x - transform.position.x)>0 ) {	
 			goingtLeft = false;
 		}
 

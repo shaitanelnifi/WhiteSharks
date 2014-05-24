@@ -12,6 +12,7 @@ public class TooltipScript : MonoBehaviour {
 	private GUIStyle guiStyleBack;
 
 	private playerScript player;
+	private DoorScript doorscript;
 
 	private static bool revealAll = false;
 	private Vector3 point;
@@ -35,6 +36,8 @@ public class TooltipScript : MonoBehaviour {
 			scale.x = transform.localScale.x;
 			scale.y = transform.localScale.y;
 		}
+
+		doorscript = GetComponent<DoorScript>();
 
 		//iconMod.x *= transform.localScale.x;
 		//iconMod.x *= transform.localScale.y;
@@ -81,6 +84,11 @@ public class TooltipScript : MonoBehaviour {
 
 			GUI.DrawTexture(new Rect(x - (32 + iconMod.x) * scale.x, Screen.height - y - (32 + iconMod.y) * scale.y, 
 			                         iconSize * scale.x, iconSize * scale.y), ClickRevealer);
+
+			if (doorscript != null){
+				GUI.Label (new Rect(x - (32 + iconMod.x) * scale.x, Screen.height - y - (32 + iconMod.y) * scale.y, 20, 20), doorscript.getOrder ().ToString(), guiStyleFore);
+				GUI.Label (new Rect(x - (32 + iconMod.x) * scale.x, Screen.height - y - (31 + iconMod.y) * scale.y, 20, 20), doorscript.getOrder ().ToString(), guiStyleBack);
+			}
 			//GUI.Label (new Rect (x - iconMod.x - 150, Screen.height - y - iconMod.y * transform.localScale.y -30, 300, 60), toolText, guiStyleBack);
 			//GUI.Label (new Rect (x - textAdjusts.x + 1 , Screen.height - y - textAdjusts.y * transform.localScale.y + 31, 300, 60), toolText, guiStyleFore);
 		}
