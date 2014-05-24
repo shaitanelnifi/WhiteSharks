@@ -199,6 +199,7 @@ GameObject:
   - 92: {fileID: 181398068}
   - 124: {fileID: 181398067}
   - 81: {fileID: 181398066}
+  - 114: {fileID: 181398071}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -267,6 +268,17 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &181398071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 181398065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11858f771d8e47748b0a678d9977e67d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &533708517
 GameObject:
   m_ObjectHideFlags: 0
@@ -5513,7 +5525,7 @@ GameObject:
   - 114: {fileID: 1398532194}
   m_Layer: 10
   m_Name: conditionalDoor
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5703,7 +5715,6 @@ GameObject:
   - 114: {fileID: 1918062536}
   - 114: {fileID: 1918062535}
   - 114: {fileID: 1918062534}
-  - 114: {fileID: 1918062540}
   m_Layer: 0
   m_Name: eJournalLocked
   m_TagString: Untagged
@@ -5803,21 +5814,6 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &1918062540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400006, guid: 64253a334a51c5d4283fe92b7c48b695,
-    type: 2}
-  m_PrefabInternal: {fileID: 2002651738}
-  m_GameObject: {fileID: 1918062533}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  diaNum: 0
-  offset: 0
-  wall: 0
 --- !u!1 &1926322043
 GameObject:
   m_ObjectHideFlags: 0

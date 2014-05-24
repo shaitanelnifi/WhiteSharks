@@ -89,7 +89,7 @@ MonoBehaviour:
   clickedOnSomething: 0
   maxDist: 4
   myConvo: 26
-  offset: 0
+  pickUpConvo: 62
   conditions: 0a000000
   associatedObjects: []
   mouseOverIcon: Grab_Icon
