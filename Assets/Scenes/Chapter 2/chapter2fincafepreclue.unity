@@ -789,7 +789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlay: 1
-  playMe: {fileID: 0}
+  playMe: {fileID: 8300000, guid: 0cf61564d4abd7d42ac423e075563590, type: 3}
   waitThisLong: -1
   whatCharacter: Jane
   nextLevel: chapter2finplazapassingthroughpostcafe
