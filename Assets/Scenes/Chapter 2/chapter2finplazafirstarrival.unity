@@ -464,7 +464,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -632,7 +632,7 @@ GameObject:
   - 114: {fileID: 455248532}
   - 114: {fileID: 455248531}
   m_Layer: 10
-  m_Name: May
+  m_Name: MayNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6403,7 +6403,7 @@ MonoBehaviour:
   minY: -2.5999999
   minScale: .25
   maxScale: .349999994
-  baseSpeed: 1
+  baseSpeed: 3
   placeTop: 0
 --- !u!4 &1085850464
 Transform:
@@ -6641,11 +6641,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: .182204366
+      value: -.631376982
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.6985321
+      value: -1.74061155
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6669,11 +6669,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalScale.x
-      value: .203523934
+      value: .110773213
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalScale.y
-      value: .252096891
+      value: .236798525
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: id
@@ -6812,8 +6812,8 @@ Transform:
   m_PrefabInternal: {fileID: 1135732147}
   m_GameObject: {fileID: 1397021236}
   m_LocalRotation: {x: 0, y: 0, z: -.00386222801, w: -.999992549}
-  m_LocalPosition: {x: .182204366, y: -1.6985321, z: 0}
-  m_LocalScale: {x: .203523934, y: .252096891, z: .949355006}
+  m_LocalPosition: {x: -.631376982, y: -1.74061155, z: 0}
+  m_LocalScale: {x: .110773213, y: .236798525, z: .949355006}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &1883932231
