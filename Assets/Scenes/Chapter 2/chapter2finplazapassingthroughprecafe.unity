@@ -74,184 +74,6 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
---- !u!1 &46607262
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-  m_PrefabInternal: {fileID: 49892826}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 46607267}
-  - 212: {fileID: 46607266}
-  - 61: {fileID: 46607265}
-  - 50: {fileID: 46607264}
-  - 114: {fileID: 46607263}
-  m_Layer: 10
-  m_Name: doorBar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &46607263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 3b9780f550f334e4290a8c255561d574,
-    type: 2}
-  m_PrefabInternal: {fileID: 49892826}
-  m_GameObject: {fileID: 46607262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: chapter2bellybarpassingthroughprecafe
-  x: 6.13299322
-  y: -5.18787384
-  mouseOverIcon: Door_Icon
---- !u!50 &46607264
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000000, guid: 3b9780f550f334e4290a8c255561d574,
-    type: 2}
-  m_PrefabInternal: {fileID: 49892826}
-  m_GameObject: {fileID: 46607262}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_FixedAngle: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
---- !u!61 &46607265
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100000, guid: 3b9780f550f334e4290a8c255561d574,
-    type: 2}
-  m_PrefabInternal: {fileID: 49892826}
-  m_GameObject: {fileID: 46607262}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: 82.0594254, y: 4.1811676}
-  m_Center: {x: 9.57820606, y: -.208027005}
---- !u!212 &46607266
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 21200000, guid: 3b9780f550f334e4290a8c255561d574,
-    type: 2}
-  m_PrefabInternal: {fileID: 49892826}
-  m_GameObject: {fileID: 46607262}
-  m_Enabled: 0
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_SortingLayerID: 2971093031
-  m_Sprite: {fileID: 21300000, guid: e96794755b5845643a0fd96f68744c05, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &46607267
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-  m_PrefabInternal: {fileID: 49892826}
-  m_GameObject: {fileID: 46607262}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.255150139, y: -1.56642699, z: 0}
-  m_LocalScale: {x: .0452894829, y: .313902646, z: .949355006}
-  m_Children: []
-  m_Father: {fileID: 0}
---- !u!1001 &49892826
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -.255150139
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.56642699
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-      propertyPath: m_LocalScale.x
-      value: .0452894829
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-      propertyPath: m_LocalScale.y
-      value: .313902646
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-      propertyPath: m_Size.x
-      value: 82.0594254
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-      propertyPath: m_Size.y
-      value: 4.1811676
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-      propertyPath: m_Center.x
-      value: 9.57820606
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-      propertyPath: m_Center.y
-      value: -.208027005
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-      propertyPath: id
-      value: chapter2bellybarpassingthroughprecafe
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-      propertyPath: m_Name
-      value: doorBar
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-      propertyPath: x
-      value: 6.13299322
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-      propertyPath: y
-      value: -5.18787384
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
-  m_RootGameObject: {fileID: 46607262}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &75125464
 GameObject:
   m_ObjectHideFlags: 0
@@ -6029,6 +5851,126 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &1478956686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+  m_PrefabInternal: {fileID: 2014495247}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1478956692}
+  - 212: {fileID: 1478956691}
+  - 50: {fileID: 1478956690}
+  - 114: {fileID: 1478956689}
+  - 60: {fileID: 1478956688}
+  - 114: {fileID: 1478956687}
+  m_Layer: 10
+  m_Name: barDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1478956687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8,
+    type: 2}
+  m_PrefabInternal: {fileID: 2014495247}
+  m_GameObject: {fileID: 1478956686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: chapter2bellybarpostcafe
+  x: 6.13299322
+  y: -5.18787384
+  mouseOverIcon: Door_Icon
+--- !u!60 &1478956688
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6000000, guid: 569fc5d6af77b96428b903f376398da8,
+    type: 2}
+  m_PrefabInternal: {fileID: 2014495247}
+  m_GameObject: {fileID: 1478956686}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Poly:
+    m_Paths:
+    - - {x: -8.77500057, y: 2.3394289}
+      - {x: -8.77500057, y: -2.3394289}
+      - {x: 8.77500057, y: -2.3394289}
+      - {x: 8.77500057, y: 2.3394289}
+--- !u!114 &1478956689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 569fc5d6af77b96428b903f376398da8,
+    type: 2}
+  m_PrefabInternal: {fileID: 2014495247}
+  m_GameObject: {fileID: 1478956686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolText: To Belly
+  sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
+--- !u!50 &1478956690
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5000000, guid: 569fc5d6af77b96428b903f376398da8,
+    type: 2}
+  m_PrefabInternal: {fileID: 2014495247}
+  m_GameObject: {fileID: 1478956686}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!212 &1478956691
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200000, guid: 569fc5d6af77b96428b903f376398da8,
+    type: 2}
+  m_PrefabInternal: {fileID: 2014495247}
+  m_GameObject: {fileID: 1478956686}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_SortingLayerID: 2971093031
+  m_Sprite: {fileID: 21300000, guid: e96794755b5845643a0fd96f68744c05, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1478956692
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+  m_PrefabInternal: {fileID: 2014495247}
+  m_GameObject: {fileID: 1478956686}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.700814247, y: -1.57300162, z: 0}
+  m_LocalScale: {x: .0878930986, y: .283513725, z: .949355006}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1001 &1779119726
 Prefab:
   m_ObjectHideFlags: 0
@@ -6307,6 +6249,74 @@ Transform:
   m_LocalScale: {x: 1, y: 1.00999999, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1001 &2014495247
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.700814247
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.57300162
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .0878930986
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .283513725
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: id
+      value: chapter2bellybarpostcafe
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: x
+      value: 6.13299322
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: y
+      value: -5.18787384
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: toolText
+      value: To Belly
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: m_Name
+      value: barDoor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+  m_RootGameObject: {fileID: 1478956686}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &2104545171
 GameObject:
   m_ObjectHideFlags: 0
@@ -6344,7 +6354,7 @@ MonoBehaviour:
   loadNewXML: 0
   dialoguer: chapter2
   needGUI: 0
-  dialogue: ffffffff
+  dialogue: 
   setOffset: 0
   player: {fileID: 0}
   maxY: .519999981

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CaseObject : CaseElement {
 
-	public int offset;
+	public int pickUpConvo;
 	private GameObject uiThing;
 	public int[] conditions;
 
@@ -20,6 +20,8 @@ public class CaseObject : CaseElement {
 		base.Init ();
 		uiThing = GameObject.Find("Journal");
 
+		if (GameManager.pickUpConvo != pickUpConvo)
+			GameManager.pickUpConvo = pickUpConvo;
 	}
 
 	public void OnMouseEnter(){
