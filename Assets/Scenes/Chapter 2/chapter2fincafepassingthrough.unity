@@ -791,7 +791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlay: 0
-  playMe: {fileID: 0}
+  playMe: {fileID: 8300000, guid: 0cf61564d4abd7d42ac423e075563590, type: 3}
   waitThisLong: 0
   whatCharacter: 
   nextLevel: 

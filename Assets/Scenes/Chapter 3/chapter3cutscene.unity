@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlay: 1
-  playMe: {fileID: 8300000, guid: 63c652436484b444d85416bf583aaa79, type: 3}
+  playMe: {fileID: 8300000, guid: 310540221002056449fe867ca45f78f7, type: 3}
   waitThisLong: 0
   whatCharacter: May
   nextLevel: chapter3cutscenepart2
