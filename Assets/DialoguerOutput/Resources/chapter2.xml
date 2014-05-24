@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <DialogueEditorMasterObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <dialogues>
     <DialogueEditorDialogueObject>
@@ -23,7 +23,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Hey newbie! The doctor asked me to come with you so you don’t get lost down there!</text>
+          <text>Hey newbie! The doctor asked me to come with you so you don�t get lost down there!</text>
           <name>May</name>
           <portrait />
           <audio />
@@ -138,7 +138,7 @@
           <newWindow>false</newWindow>
           <choices>
             <string>Of course!</string>
-            <string>Of… course?</string>
+            <string>Of� course?</string>
           </choices>
           <waitType>Seconds</waitType>
           <waitDuration>0</waitDuration>
@@ -165,7 +165,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Oook, just making sure! I’ll follow you!</text>
+          <text>Oook, just making sure! I�ll follow you!</text>
           <name>May</name>
           <portrait />
           <audio />
@@ -211,7 +211,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>You’re overflowing with confidence... Follow me!</text>
+          <text>You�re overflowing with confidence... Follow me!</text>
           <name>May</name>
           <portrait />
           <audio />
@@ -3164,8 +3164,8 @@
       <name>MayFranksJournal</name>
       <startPage>24</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>42.0025635</y>
+        <x>419.599976</x>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -3226,7 +3226,7 @@
             <int>2</int>
             <int>6</int>
             <int>10</int>
-            <int>18</int>
+            <int>25</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -3660,7 +3660,7 @@
           <variableId>3</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>204</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -4278,6 +4278,49 @@
           <variableScrollPosition>
             <x>0</x>
             <y>89</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>true</variableSetValue>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>25</id>
+          <type>SetVariablePhase</type>
+          <position>
+            <x>882.6</x>
+            <y>396</y>
+          </position>
+          <outs>
+            <int>18</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>7</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>84</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -15826,6 +15869,114 @@
         <selection>0</selection>
       </booleans>
     </DialogueEditorDialogueObject>
+    <DialogueEditorDialogueObject>
+      <id>62</id>
+      <name>AddToJournal</name>
+      <startPage>0</startPage>
+      <scrollPosition>
+        <x>0</x>
+        <y>0</y>
+      </scrollPosition>
+      <phases>
+        <DialogueEditorPhaseObject>
+          <id>0</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>190</x>
+            <y>59</y>
+          </position>
+          <outs>
+            <int>1</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>I'll add this to my journal.</text>
+          <name>Jane Doe</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>1</id>
+          <type>EndPhase</type>
+          <position>
+            <x>607</x>
+            <y>40</y>
+          </position>
+          <outs />
+          <advanced>false</advanced>
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+      </phases>
+      <floats>
+        <variables />
+        <selection>0</selection>
+      </floats>
+      <strings>
+        <variables />
+        <selection>0</selection>
+      </strings>
+      <booleans>
+        <variables />
+        <selection>0</selection>
+      </booleans>
+    </DialogueEditorDialogueObject>
   </dialogues>
   <globals>
     <booleans>
@@ -15960,7 +16111,7 @@
   </themes>
   <selectorScrollPosition>
     <x>0</x>
-    <y>145</y>
+    <y>124</y>
   </selectorScrollPosition>
-  <currentDialogueId>41</currentDialogueId>
+  <currentDialogueId>19</currentDialogueId>
 </DialogueEditorMasterObject>

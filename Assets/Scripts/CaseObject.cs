@@ -67,7 +67,8 @@ public class CaseObject : CaseElement {
 			handleAssociated();
 			collectItems();
 			player.stopMove ();
-			Dialoguer.StartDialogue(GameManager.pickUpConvo);
+			Dialoguer.StartDialogue((int)myConvo);
+			player.talking = true;
 		} else if (myConvo != Convo.ch0none) {
 			Dialoguer.StartDialogue ((int)myConvo);
 			player.talking = true;
