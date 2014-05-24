@@ -305,7 +305,7 @@ MonoBehaviour:
   loadNewXML: 0
   dialoguer: chapter2
   needGUI: 1
-  dialogue: ffffffff
+  dialogue: 
   setOffset: 0
   player: {fileID: 0}
   maxY: -1.91999996
@@ -6124,7 +6124,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: c1b88a4ba2ce175479d3249f470dfad6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0b95d120e1eb8428792d5c3f931bc7c9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1993266777
 MonoBehaviour:
