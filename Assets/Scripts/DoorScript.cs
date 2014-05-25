@@ -11,8 +11,8 @@ public class DoorScript : MonoBehaviour {
 	//id = 0 means go back one room, 1 means go to next room
 	public string id;
 	public float x, y;
-	private int order;
-	private int orderCount = 0;
+	protected int order;
+	protected int orderCount = 0;
 
 	//Mouse icon information
 	public string mouseOverIcon = "Door_Icon";
