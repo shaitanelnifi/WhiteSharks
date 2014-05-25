@@ -127,11 +127,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: x
-      value: -8.72952461
+      value: 1.36943996
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: y
-      value: -5.3029108
+      value: -3.28587294
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: id
@@ -599,6 +599,7 @@ GameObject:
   - 92: {fileID: 181398068}
   - 124: {fileID: 181398067}
   - 81: {fileID: 181398066}
+  - 114: {fileID: 181398071}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -667,6 +668,17 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &181398071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 181398065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11858f771d8e47748b0a678d9977e67d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &213691707
 Prefab:
   m_ObjectHideFlags: 0
@@ -741,8 +753,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter3finbalconybeforepeijun
-  x: -8.72952461
-  y: -5.3029108
+  x: 9.47895432
+  y: -2.36171389
   mouseOverIcon: Door_Icon
 --- !u!60 &237556973
 PolygonCollider2D:
@@ -1704,11 +1716,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: x
-      value: -8.72952461
+      value: 9.47895432
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: y
-      value: -5.3029108
+      value: -2.36171389
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: id
@@ -1829,8 +1841,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter3finofficewalkwaybeforepeijun
-  x: -8.72952461
-  y: -5.3029108
+  x: 1.36943996
+  y: -3.28587294
   mouseOverIcon: Door_Icon
 --- !u!60 &1098740364
 PolygonCollider2D:
