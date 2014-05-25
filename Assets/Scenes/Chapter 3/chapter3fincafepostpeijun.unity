@@ -124,8 +124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter3finplazapostpeijun
-  x: 1.29999995
-  y: -4.65999985
+  x: 5.970222
+  y: -3.85303402
   mouseOverIcon: Door_Icon
 --- !u!50 &38744549
 Rigidbody2D:
@@ -5820,11 +5820,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
       propertyPath: x
-      value: 1.29999995
+      value: 5.970222
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
       propertyPath: y
-      value: -4.65999985
+      value: -3.85303402
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
       propertyPath: toolText

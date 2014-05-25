@@ -734,7 +734,7 @@ MonoBehaviour:
   whatCharacter: May
   nextLevel: chapter3bellyalleypostpeijun
   isTherePlayer: 0
-  spawnHereAfter: {x: 0, y: 0}
+  spawnHereAfter: {x: 4.80501986, y: -2.5267911}
   loadNewXML: 0
   dialoguer: chapter3
   needGUI: 0

@@ -5874,8 +5874,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter3finofficewalkwaybeforepeijun
-  x: 9.92000008
-  y: -1.74000001
+  x: 2.945086
+  y: -2.47189498
   mouseOverIcon: Door_Icon
 --- !u!61 &1531734943
 BoxCollider2D:
