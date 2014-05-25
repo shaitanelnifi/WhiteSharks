@@ -80,8 +80,15 @@ public class playerScript : CaseElement {
 		GameObject door = GameObject.FindWithTag ("door");
 		Collider2D doorCollider = door.collider2D;
 		DoorTrigger (doorCollider);	
-		
-		
+	}
+
+	public static void turnOffSmoothMod(){
+		GameObject playerObj;
+		do{
+			playerObj = GameObject.FindWithTag ("Player");
+		}while (playerObj == null);
+		((SimpleSmoothModifier)playerObj.GetComponent<SimpleSmoothModifier>()).enabled = false;
+
 	}
 
 	void FixedUpdate(){	
