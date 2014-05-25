@@ -7,7 +7,7 @@
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>0</y>
+        <y>2340</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -70,7 +70,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>But... are you okay?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -300,7 +300,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Didn't you tell me that Noel got the USB with the virus?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -392,7 +392,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Alexia, you know I would do anything for you but... why do you need me here?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -531,7 +531,7 @@ I'm inexperienced with navigating this world, I can barely move around without l
           <advanced>true</advanced>
           <metadata />
           <text>I mean... couldn't you do it yourself? You were able to manipulate a bot in the end.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1053,7 +1053,7 @@ I'm inexperienced with navigating this world, I can barely move around without l
           <advanced>true</advanced>
           <metadata />
           <text>Ok, so... in her table...</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1163,7 +1163,7 @@ I'm inexperienced with navigating this world, I can barely move around without l
           <text>Of course, I could just leave now.
 
 It's not like I have anything important to do, right?</text>
-          <name />
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1300,7 +1300,7 @@ It's not like I have anything important to do, right?</text>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>0</y>
+        <y>240</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -1317,7 +1317,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>Jane? Can you hear me?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1409,7 +1409,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>Jane, calm down. I'm talking to you through your bracelet and projecting my words into your mind.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1501,7 +1501,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>That doesn't matter now. It is time to get you out. I am going to unlock your cell.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1591,7 +1591,7 @@ It's not like I have anything important to do, right?</text>
       <name>janeNmapcelldoor</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
+        <x>322.049133</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -1655,7 +1655,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>Gimme two seconds.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1798,8 +1798,8 @@ It's not like I have anything important to do, right?</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>252</x>
-            <y>10</y>
+            <x>169</x>
+            <y>86</y>
           </position>
           <outs>
             <int>1</int>
@@ -1807,7 +1807,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>All right, they're down. Head out of your cell and enter the open cell next door. In it should be your flash drive. Once you have your flash drive, walk down the hall. There should be a door which leads to a back entrance to the bar. When you get there, you need to head into the brain room.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1844,8 +1844,8 @@ It's not like I have anything important to do, right?</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>578</x>
-            <y>10</y>
+            <x>611</x>
+            <y>73</y>
           </position>
           <outs>
             <int>2</int>
@@ -1944,7 +1944,7 @@ It's not like I have anything important to do, right?</text>
       <startPage>0</startPage>
       <scrollPosition>
         <x>468.599945</x>
-        <y>1236.29993</y>
+        <y>341.2998</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -2829,7 +2829,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>Now I need you to upload your virus on that terminal. Once you do, it should destroy the core of White Shark and end all of this.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -3091,7 +3091,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>Don't get cocky, someone else is in here with me. Isn't that right... Shammy?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -3227,8 +3227,8 @@ It's not like I have anything important to do, right?</text>
       <name>NBRoomstart</name>
       <startPage>11</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>4942</y>
+        <x>140.0236</x>
+        <y>3300</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -3291,7 +3291,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>Oh, I actually do. I know better than you, as a fact!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -3429,7 +3429,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>Ah, really? Then if you're so sure, why don't you prove it creepy Shark?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -3615,7 +3615,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text />
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -3836,7 +3836,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>Not so fast Sharkie! My turn now!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -3883,7 +3883,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text />
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -4210,7 +4210,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text />
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -4480,7 +4480,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>"How very observant of you." Hah. Ok, so since it's my turn, I'm gonna ask...</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -4527,7 +4527,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text />
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -4716,7 +4716,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text />
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -4858,7 +4858,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>And that means I've won the right to have my third round. Ok, knowledge owner, this is my next question: if you're so good, who would you experiment with little girls?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -4904,7 +4904,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>May! I've got this!</text>
-          <name />
+          <name>Jane Doe</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -4995,7 +4995,7 @@ It's not like I have anything important to do, right?</text>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>0</y>
+        <y>300</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -5104,7 +5104,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>Jane?!?!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -5196,7 +5196,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>Don't think it's gonna be so easy, you old man! I can play this too!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -5286,8 +5286,8 @@ It's not like I have anything important to do, right?</text>
       <name>NBRoomRIP</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>0</y>
+        <x>316.645233</x>
+        <y>1341</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -5350,7 +5350,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>Making sure that you will never succeed, that you will never be able to control all these people.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -5488,7 +5488,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>To save them? You were the only menace they were exposed to!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -5626,7 +5626,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>Listen to yourself. You're not even a human being anymore. You always had big words about human evolution, but stopped being one of us a long time ago.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -5902,7 +5902,7 @@ It's not like I have anything important to do, right?</text>
           <advanced>true</advanced>
           <metadata />
           <text>Well then... I'm sorry to disappoint you, but chaos is part of creation. All data is destined to be corrupted with time. Disorder has been there from the beginning... and now it's going to kick your ass!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -6038,8 +6038,8 @@ It's not like I have anything important to do, right?</text>
       <name>EndCutsceneBRoom1</name>
       <startPage>4</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>4263</y>
+        <x>740</x>
+        <y>4672</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -8208,7 +8208,7 @@ For White Shark.</text>
       <startPage>12</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>1</y>
+        <y>897</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -8271,7 +8271,7 @@ For White Shark.</text>
           <advanced>true</advanced>
           <metadata />
           <text>Where are you?! Why are you here?! He said you were...</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -8547,7 +8547,7 @@ For White Shark.</text>
           <advanced>true</advanced>
           <metadata />
           <text>...</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -8819,7 +8819,7 @@ For White Shark.</text>
       <startPage>4</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>0</y>
+        <y>240</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -9258,8 +9258,8 @@ For White Shark.</text>
       <name>endscenecafe1</name>
       <startPage>3</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>0</y>
+        <x>48.61724</x>
+        <y>240</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -9501,8 +9501,8 @@ For White Shark.</text>
       <name>endscenecafe2</name>
       <startPage>1</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>0</y>
+        <x>74.18631</x>
+        <y>360</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -9790,8 +9790,8 @@ For White Shark.</text>
       <name>endsceneFranks</name>
       <startPage>3</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>0</y>
+        <x>445.3533</x>
+        <y>408</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -10370,7 +10370,7 @@ For White Shark.</text>
       <startPage>3</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>120</y>
+        <y>882</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -10837,6 +10837,114 @@ For White Shark.</text>
         <selection>0</selection>
       </booleans>
     </DialogueEditorDialogueObject>
+    <DialogueEditorDialogueObject>
+      <id>24</id>
+      <name>mayNofficetable</name>
+      <startPage>0</startPage>
+      <scrollPosition>
+        <x>0</x>
+        <y>0</y>
+      </scrollPosition>
+      <phases>
+        <DialogueEditorPhaseObject>
+          <id>0</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>216</x>
+            <y>232</y>
+          </position>
+          <outs>
+            <int>1</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>Found it! Now let me see if I can find Jane...</text>
+          <name>May Taylor</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>1</id>
+          <type>EndPhase</type>
+          <position>
+            <x>698</x>
+            <y>148</y>
+          </position>
+          <outs />
+          <advanced>false</advanced>
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+      </phases>
+      <floats>
+        <variables />
+        <selection>0</selection>
+      </floats>
+      <strings>
+        <variables />
+        <selection>0</selection>
+      </strings>
+      <booleans>
+        <variables />
+        <selection>0</selection>
+      </booleans>
+    </DialogueEditorDialogueObject>
   </dialogues>
   <globals>
     <booleans>
@@ -10898,5 +11006,5 @@ For White Shark.</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>23</currentDialogueId>
+  <currentDialogueId>24</currentDialogueId>
 </DialogueEditorMasterObject>
