@@ -50,9 +50,6 @@ public enum clickableID {
 	//chapter 1
 	sharkLightPoster = 0,
 	shammySwag = 1,
-	frankBracelet = 2,
-	frankBlood = 3,
-	partnerBlood = 4,
 	noelPicture = 5,
 	janeShammyRooms = 6,
 	hideoutBed = 7,
@@ -116,6 +113,9 @@ public enum Convo {
 	janeShammyBracelet = 15,
 	janeCuteBox = 16,
 	janeNinasPhone = 17,
+	frankBracelet = 20,
+	frankBlood = 21,
+	partnerBlood = 22,
 	janeShammyCase = 24,
 	
 	//chapter 2
