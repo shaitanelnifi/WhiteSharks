@@ -5614,7 +5614,7 @@ MonoBehaviour:
   whatCharacter: May
   nextLevel: chapter4networkoffice
   isTherePlayer: 1
-  spawnHereAfter: {x: 1.29999995, y: -3.66000009}
+  spawnHereAfter: {x: 3.8499999, y: -3.57999992}
   loadNewXML: 1
   dialoguer: chapter4
   needGUI: 0

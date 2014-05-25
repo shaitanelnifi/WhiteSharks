@@ -224,6 +224,7 @@ public class playerScript : CaseElement {
 
 		DoorScript doorObj = collider.gameObject.GetComponent<DoorScript> ();
 		ConditionDoor condObj = collider.gameObject.GetComponent<ConditionDoor>();
+		DialogueDoor diaObj = collider.gameObject.GetComponent<DialogueDoor>();
 
 		if (condObj != null) {
 			if (condObj.gotThem()){
@@ -237,11 +238,18 @@ public class playerScript : CaseElement {
 				}
 				condObj.useDoor();
 			}
-		} else if (doorObj != null){ 
+		}
+		else if(diaObj != null) {
 			canScale = false;
 			gameObject.collider2D.enabled = false;
 			renderer.enabled = false;
-			if (backEffect == null){
+			diaObj.useDoor();
+		}
+		else if(doorObj != null) {
+			canScale = false;
+			gameObject.collider2D.enabled = false;
+			renderer.enabled = false;
+			if(backEffect == null) {
 				//Debug.Log("Calling effect");
 				backEffect = (GameObject)Instantiate(Resources.Load("blackScreen"));
 				//Debug.Log(backEffect);
