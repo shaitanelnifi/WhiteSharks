@@ -620,8 +620,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter3finplazabeforepeijun
-  x: 1.27147806
-  y: .816252708
+  x: .585175097
+  y: .786854386
   mouseOverIcon: Door_Icon
 --- !u!60 &1037912665
 PolygonCollider2D:
@@ -1071,11 +1071,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: x
-      value: 1.27147806
+      value: .585175097
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: y
-      value: .816252708
+      value: .786854386
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: toolText
