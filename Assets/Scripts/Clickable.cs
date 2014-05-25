@@ -37,7 +37,7 @@ public class Clickable : MonoBehaviour {
 				if (player.canWalk && !wall){
 					clickedOnSomething = true;
 					player.setTarget(new Vector3(transform.position.x, transform.position.y, 0));
-				} else {
+				} else if (!player.talking){
 					player.stopMove();
 					player.canWalk = true;
 				}

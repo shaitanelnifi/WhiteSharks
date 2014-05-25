@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <DialogueEditorMasterObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <dialogues>
     <DialogueEditorDialogueObject>
@@ -204,7 +204,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Oook, just making sure! I’ll follow you!</text>
+          <text>Oook, just making sure! I�ll follow you!</text>
           <name>May Taylor</name>
           <portrait />
           <audio />
@@ -250,7 +250,7 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>You’re overflowing with confidence... follow me!</text>
+          <text>You�re overflowing with confidence... follow me!</text>
           <name>May Taylor</name>
           <portrait />
           <audio />
@@ -3349,8 +3349,8 @@
       <name>MayFranksJournal</name>
       <startPage>23</startPage>
       <scrollPosition>
-        <x>50.6</x>
-        <y>904.2002</y>
+        <x>244.2</x>
+        <y>69.3</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -3411,7 +3411,7 @@
             <int>28</int>
             <int>5</int>
             <int>9</int>
-            <int>17</int>
+            <int>24</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -4427,8 +4427,8 @@
           <id>24</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>863.6</x>
-            <y>389</y>
+            <x>877.6</x>
+            <y>397</y>
           </position>
           <outs>
             <int>17</int>
@@ -5372,7 +5372,7 @@
       <startPage>2</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>60</y>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -5570,7 +5570,7 @@
       <name>MayMoesPicture</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>72.59999</x>
+        <x>73</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -8789,7 +8789,7 @@
       <startPage>12</startPage>
       <scrollPosition>
         <x>168.3</x>
-        <y>3213.9</y>
+        <y>3207</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -16507,7 +16507,7 @@
   </themes>
   <selectorScrollPosition>
     <x>0</x>
-    <y>60</y>
+    <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>36</currentDialogueId>
+  <currentDialogueId>19</currentDialogueId>
 </DialogueEditorMasterObject>
