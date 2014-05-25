@@ -345,7 +345,7 @@ MonoBehaviour:
   loadNewXML: 0
   dialoguer: chapter3
   needGUI: 1
-  dialogue: ffffffff
+  dialogue: 
   setOffset: 0
   player: {fileID: 0}
   maxY: -2.99557304

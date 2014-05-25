@@ -89,7 +89,7 @@ GameObject:
   - 114: {fileID: 53471143}
   m_Layer: 10
   m_Name: doorBar
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -351,7 +351,7 @@ MonoBehaviour:
   loadNewXML: 0
   dialoguer: chapter3
   needGUI: 0
-  dialogue: 1c000000
+  dialogue: 
   setOffset: 0
   player: {fileID: 0}
   maxY: 2
@@ -629,7 +629,7 @@ GameObject:
   - 114: {fileID: 2049421911}
   m_Layer: 10
   m_Name: doorAlley
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
