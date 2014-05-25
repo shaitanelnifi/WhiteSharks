@@ -730,7 +730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 310540221002056449fe867ca45f78f7, type: 3}
-  waitThisLong: -1
+  waitThisLong: 1
   whatCharacter: May
   nextLevel: chapter3bellyalleypostpeijun
   isTherePlayer: 0
