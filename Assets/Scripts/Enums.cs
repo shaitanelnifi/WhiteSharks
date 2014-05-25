@@ -88,6 +88,11 @@ public enum clickableID {
 	maychapter3finofficepostpeijun = 15,
 	cantenter = 19,
 
+	//chapter 4
+	janechapter4networkmapcelldoor = 4,
+	janechapter4mapbots = 5,
+	maychapter4Networkofficetable = 24,
+
 };
 
 
