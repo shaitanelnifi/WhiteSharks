@@ -8,8 +8,8 @@ public class Disableable : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		dis[1].gameObject.renderer.enabled = false;
-		dis[2].gameObject.renderer.enabled = false;
+		//dis[1].gameObject.renderer.enabled = false;
+		//dis[2].gameObject.renderer.enabled = false;
 		
 	}
 	
