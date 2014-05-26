@@ -89,7 +89,7 @@ GameObject:
   - 114: {fileID: 53471143}
   m_Layer: 10
   m_Name: doorBar
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,8 +107,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter3bellybarbeforepeijun
-  x: 0
-  y: 0
+  x: -8.44575691
+  y: -2.78745389
   mouseOverIcon: Door_Icon
 --- !u!60 &53471144
 PolygonCollider2D:
@@ -249,6 +249,14 @@ Prefab:
       propertyPath: toolText
       value: To Alley
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: x
+      value: 4.80501986
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: y
+      value: -2.5267911
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
   m_RootGameObject: {fileID: 2049421910}
@@ -309,6 +317,14 @@ Prefab:
       propertyPath: toolText
       value: To Bar
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: y
+      value: -2.78745389
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: x
+      value: -8.44575691
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
   m_RootGameObject: {fileID: 53471142}
@@ -351,14 +367,14 @@ MonoBehaviour:
   loadNewXML: 0
   dialoguer: chapter3
   needGUI: 0
-  dialogue: 1c000000
+  dialogue: 
   setOffset: 0
   player: {fileID: 0}
   maxY: 2
   minY: 1
   minScale: 1
   maxScale: 1
-  baseSpeed: 1
+  baseSpeed: 4
   placeTop: 0
 --- !u!4 &374970098
 Transform:
@@ -629,7 +645,7 @@ GameObject:
   - 114: {fileID: 2049421911}
   m_Layer: 10
   m_Name: doorAlley
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -647,8 +663,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter3bellyalleybeforepeijun
-  x: 0
-  y: 0
+  x: 4.80501986
+  y: -2.5267911
   mouseOverIcon: Door_Icon
 --- !u!60 &2049421912
 PolygonCollider2D:

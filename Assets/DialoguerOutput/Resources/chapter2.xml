@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DialogueEditorMasterObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <dialogues>
     <DialogueEditorDialogueObject>
@@ -6,8 +6,8 @@
       <name>MayWalkwayStart</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>144.099915</y>
+        <x>375.3001</x>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -23,8 +23,8 @@
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Hey newbie! The doctor asked me to come with you so you don�t get lost down there!</text>
-          <name>May</name>
+          <text>Hey newbie! The doctor asked me to come with you so you don't get lost down there!</text>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -70,7 +70,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Do you know how to get to the plaza?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -111,8 +111,8 @@
             <y>63</y>
           </position>
           <outs>
-            <int>3</int>
-            <int>4</int>
+            <int>7</int>
+            <int>6</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -138,7 +138,7 @@
           <newWindow>false</newWindow>
           <choices>
             <string>Of course!</string>
-            <string>Of� course?</string>
+            <string>Of course?</string>
           </choices>
           <waitType>Seconds</waitType>
           <waitDuration>0</waitDuration>
@@ -154,21 +154,14 @@
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
           <id>3</id>
-          <type>TextPhase</type>
-          <theme />
+          <type>EndPhase</type>
           <position>
-            <x>1201</x>
-            <y>64</y>
+            <x>1881</x>
+            <y>544</y>
           </position>
-          <outs>
-            <int>5</int>
-          </outs>
-          <advanced>true</advanced>
-          <metadata />
-          <text>Oook, just making sure! I�ll follow you!</text>
-          <name>May</name>
-          <portrait />
-          <audio />
+          <outs />
+          <advanced>false</advanced>
+          <text />
           <audioDelay>0</audioDelay>
           <rect>
             <x>0</x>
@@ -203,16 +196,16 @@
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>1198.00952</x>
-            <y>508</y>
+            <x>1563.05151</x>
+            <y>46</y>
           </position>
           <outs>
-            <int>5</int>
+            <int>3</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>You�re overflowing with confidence... Follow me!</text>
-          <name>May</name>
+          <text>Oook, just making sure! I'll follow you!</text>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -246,14 +239,113 @@
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
           <id>5</id>
-          <type>EndPhase</type>
+          <type>TextPhase</type>
+          <theme />
           <position>
-            <x>1595</x>
-            <y>416</y>
+            <x>1576.052</x>
+            <y>511.0022</y>
           </position>
-          <outs />
-          <advanced>false</advanced>
+          <outs>
+            <int>3</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>You're overflowing with confidence... follow me!</text>
+          <name>May Taylor</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>6</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>1222.04456</x>
+            <y>492</y>
+          </position>
+          <outs>
+            <int>5</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
           <text />
+          <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>7</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>1241.05554</x>
+            <y>27.0098877</y>
+          </position>
+          <outs>
+            <int>4</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text />
+          <name />
+          <portrait />
+          <audio />
           <audioDelay>0</audioDelay>
           <rect>
             <x>0</x>
@@ -320,7 +412,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Why haven't we left yet?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -428,7 +520,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>We can't go back yet, we just left!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -518,8 +610,8 @@
       <name>MayPlazaStart</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>40.6999931</x>
-        <y>37.4</y>
+        <x>1304.78381</x>
+        <y>322.019653</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -536,7 +628,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Okay Noob, shall we head out?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -628,7 +720,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Whatever. Let's head into the Belly.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -669,8 +761,8 @@
             <y>10</y>
           </position>
           <outs>
-            <int>4</int>
-            <int>5</int>
+            <int>8</int>
+            <int>9</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -715,8 +807,8 @@
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>1477</x>
-            <y>10</y>
+            <x>1826</x>
+            <y>22</y>
           </position>
           <outs>
             <int>6</int>
@@ -724,7 +816,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Wow... just wow. The entrance is over here.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -761,8 +853,8 @@
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>1477.6</x>
-            <y>463</y>
+            <x>1816.6</x>
+            <y>483</y>
           </position>
           <outs>
             <int>7</int>
@@ -770,7 +862,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Prove it!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -806,8 +898,8 @@
           <id>6</id>
           <type>EndPhase</type>
           <position>
-            <x>2006.6</x>
-            <y>319</y>
+            <x>2154.6</x>
+            <y>323</y>
           </position>
           <outs />
           <advanced>false</advanced>
@@ -845,8 +937,8 @@
           <id>7</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>1815.7</x>
-            <y>476</y>
+            <x>2151.7</x>
+            <y>465</y>
           </position>
           <outs>
             <int>6</int>
@@ -884,6 +976,98 @@
           <variableSetValue>true</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>8</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>1477.76343</x>
+            <y>19</y>
+          </position>
+          <outs>
+            <int>4</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text />
+          <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>9</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>1490.76343</x>
+            <y>479</y>
+          </position>
+          <outs>
+            <int>5</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text />
+          <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
       </phases>
       <floats>
         <variables />
@@ -903,7 +1087,7 @@
       <name>MayPlazaWaiting</name>
       <startPage>2</startPage>
       <scrollPosition>
-        <x>0</x>
+        <x>312.018433</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -921,7 +1105,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>C'mon, weren't you gonna prove it?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1051,7 +1235,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Seriously, the Belly is a biiig part of this place, just head downstairs before you start embarrassing me.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1120,7 +1304,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Noob, where are you going? We have a job to do.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1210,7 +1394,7 @@
       <name>MayBarStart</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>247.500046</x>
+        <x>1518.0896</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -1228,7 +1412,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Pei!!!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1315,12 +1499,12 @@
             <y>12</y>
           </position>
           <outs>
-            <int>4</int>
+            <int>3</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
           <text>I'm doing great, just showing this Noob around a bit. What are you up to?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1361,7 +1545,7 @@
             <y>10</y>
           </position>
           <outs>
-            <int xsi:nil="true" />
+            <int>4</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -1412,7 +1596,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>OH man now I'm hungry. She's got the best noodles EVER!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1520,7 +1704,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>We have to go deeper into the Belly.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1617,6 +1801,7 @@
         <DialogueEditorPhaseObject>
           <id>0</id>
           <type>TextPhase</type>
+          <theme />
           <position>
             <x>191</x>
             <y>10</y>
@@ -1624,10 +1809,10 @@
           <outs>
             <int>1</int>
           </outs>
-          <advanced>false</advanced>
+          <advanced>true</advanced>
           <metadata />
           <text>That's the wrong way, Noobie. C'mon!</text>
-          <name />
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1825,7 +2010,7 @@
       <name>MayMarketStart</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
+        <x>336.0193</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -1843,7 +2028,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>There's the stand!! Best. Noodles. Ever!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1889,7 +2074,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Frank's apartment isn't this way, though...</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1997,7 +2182,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Stop tickling me and keep going!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2105,7 +2290,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Where are you going, dude? It's that way, down the alleyway!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2201,52 +2386,6 @@
       <phases>
         <DialogueEditorPhaseObject>
           <id>0</id>
-          <type>TextPhase</type>
-          <theme />
-          <position>
-            <x>207</x>
-            <y>10</y>
-          </position>
-          <outs>
-            <int>1</int>
-          </outs>
-          <advanced>true</advanced>
-          <metadata />
-          <text />
-          <name />
-          <portrait />
-          <audio />
-          <audioDelay>0</audioDelay>
-          <rect>
-            <x>0</x>
-            <y>0</y>
-            <center>
-              <x>0</x>
-              <y>0</y>
-            </center>
-            <width>0</width>
-            <height>0</height>
-            <xMin>0</xMin>
-            <yMin>0</yMin>
-            <xMax>0</xMax>
-            <yMax>0</yMax>
-          </rect>
-          <newWindow>false</newWindow>
-          <choices />
-          <waitType>Seconds</waitType>
-          <waitDuration>0</waitDuration>
-          <variableScope>Global</variableScope>
-          <variableType>Boolean</variableType>
-          <variableId>0</variableId>
-          <variableScrollPosition>
-            <x>0</x>
-            <y>0</y>
-          </variableScrollPosition>
-          <variableSetEquation>Equals</variableSetEquation>
-          <variableGetEquation>Equals</variableGetEquation>
-        </DialogueEditorPhaseObject>
-        <DialogueEditorPhaseObject>
-          <id>1</id>
           <type>EndPhase</type>
           <position>
             <x>563</x>
@@ -2321,7 +2460,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Here we are! This is Frank's apartment.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2429,7 +2568,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Stupid! This is what we came for. The door's right here.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2537,7 +2676,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Looks like the big guy was in a hurry, huh?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2622,7 +2761,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>I guess you'll have to do your job and find something...</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2674,7 +2813,7 @@
       <startPage>2</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>7.981201</y>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -2691,7 +2830,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Hurry up Noobie. Why are you taking so long?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2812,8 +2951,8 @@
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>100</x>
-            <y>447</y>
+            <x>209</x>
+            <y>466</y>
           </position>
           <outs>
             <int>1</int>
@@ -2821,7 +2960,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>We have everything we need, right?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2936,7 +3075,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Ahh... how am I supposed to unlock this thing?!...</text>
-          <name>Jane</name>
+          <name>Jane Doe</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2977,12 +3116,12 @@
             <y>10</y>
           </position>
           <outs>
-            <int>3</int>
+            <int>6</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
           <text>Hellooo! I'm here!!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -3028,7 +3167,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>There! Piece of cake...</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -3074,7 +3213,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Now I'm really hungry....</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -3145,6 +3284,52 @@
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>6</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>1000.03979</x>
+            <y>483</y>
+          </position>
+          <outs>
+            <int>3</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>...</text>
+          <name>May Taylor</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
       </phases>
       <floats>
         <variables />
@@ -3162,10 +3347,10 @@
     <DialogueEditorDialogueObject>
       <id>19</id>
       <name>MayFranksJournal</name>
-      <startPage>24</startPage>
+      <startPage>23</startPage>
       <scrollPosition>
-        <x>419.599976</x>
-        <y>0</y>
+        <x>244.2</x>
+        <y>69.3</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -3223,10 +3408,10 @@
             <y>10</y>
           </position>
           <outs>
-            <int>2</int>
-            <int>6</int>
-            <int>10</int>
-            <int>25</int>
+            <int>28</int>
+            <int>5</int>
+            <int>9</int>
+            <int>24</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -3270,58 +3455,13 @@
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
           <id>2</id>
-          <type>ConditionalPhase</type>
-          <position>
-            <x>885</x>
-            <y>10</y>
-          </position>
-          <outs>
-            <int>3</int>
-            <int>5</int>
-          </outs>
-          <advanced>false</advanced>
-          <metadata />
-          <text />
-          <audioDelay>0</audioDelay>
-          <rect>
-            <x>0</x>
-            <y>0</y>
-            <center>
-              <x>0</x>
-              <y>0</y>
-            </center>
-            <width>0</width>
-            <height>0</height>
-            <xMin>0</xMin>
-            <yMin>0</yMin>
-            <xMax>0</xMax>
-            <yMax>0</yMax>
-          </rect>
-          <newWindow>false</newWindow>
-          <choices />
-          <waitType>Seconds</waitType>
-          <waitDuration>0</waitDuration>
-          <variableScope>Global</variableScope>
-          <variableType>Boolean</variableType>
-          <variableId>1</variableId>
-          <variableScrollPosition>
-            <x>0</x>
-            <y>0</y>
-          </variableScrollPosition>
-          <variableSetEquation>Equals</variableSetEquation>
-          <variableSetValue>false</variableSetValue>
-          <variableGetEquation>Equals</variableGetEquation>
-          <variableGetValue>true</variableGetValue>
-        </DialogueEditorPhaseObject>
-        <DialogueEditorPhaseObject>
-          <id>3</id>
           <type>SetVariablePhase</type>
           <position>
             <x>1191</x>
             <y>10</y>
           </position>
           <outs>
-            <int>4</int>
+            <int>3</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -3357,14 +3497,14 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>4</id>
+          <id>3</id>
           <type>SetVariablePhase</type>
           <position>
             <x>1504</x>
             <y>11</y>
           </position>
           <outs>
-            <int>5</int>
+            <int>25</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -3400,15 +3540,15 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>5</id>
+          <id>4</id>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>1193.6</x>
-            <y>313</y>
+            <x>1507.6</x>
+            <y>311</y>
           </position>
           <outs>
-            <int>14</int>
+            <int>13</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -3446,15 +3586,15 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>6</id>
+          <id>5</id>
           <type>ConditionalPhase</type>
           <position>
-            <x>885.9</x>
-            <y>772</y>
+            <x>863.9</x>
+            <y>757</y>
           </position>
           <outs>
-            <int>7</int>
-            <int>9</int>
+            <int>6</int>
+            <int>26</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -3491,14 +3631,14 @@
           <variableGetValue>true</variableGetValue>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>7</id>
+          <id>6</id>
           <type>SetVariablePhase</type>
           <position>
             <x>1199.6001</x>
             <y>766.7001</y>
           </position>
           <outs>
-            <int>8</int>
+            <int>7</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -3534,14 +3674,14 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>8</id>
+          <id>7</id>
           <type>SetVariablePhase</type>
           <position>
             <x>1512.6001</x>
             <y>767.7001</y>
           </position>
           <outs>
-            <int>9</int>
+            <int>26</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -3577,15 +3717,15 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>9</id>
+          <id>8</id>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>1201.7002</x>
-            <y>1067</y>
+            <x>1532.7002</x>
+            <y>1084</y>
           </position>
           <outs>
-            <int>15</int>
+            <int>14</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -3623,15 +3763,15 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>10</id>
+          <id>9</id>
           <type>ConditionalPhase</type>
           <position>
-            <x>895.5999</x>
-            <y>1531</y>
+            <x>861.5999</x>
+            <y>1515</y>
           </position>
           <outs>
-            <int>11</int>
-            <int>13</int>
+            <int>10</int>
+            <int>27</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -3660,7 +3800,7 @@
           <variableId>3</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>204</y>
+            <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
@@ -3668,14 +3808,14 @@
           <variableGetValue>true</variableGetValue>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>11</id>
+          <id>10</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>1208.6</x>
-            <y>1528</y>
+            <x>1188.6</x>
+            <y>1537</y>
           </position>
           <outs>
-            <int>12</int>
+            <int>11</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -3711,14 +3851,14 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>12</id>
+          <id>11</id>
           <type>SetVariablePhase</type>
           <position>
             <x>1524.6</x>
             <y>1531</y>
           </position>
           <outs>
-            <int>13</int>
+            <int>27</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -3754,7 +3894,7 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>13</id>
+          <id>12</id>
           <type>TextPhase</type>
           <theme />
           <position>
@@ -3762,7 +3902,7 @@
             <y>1851</y>
           </position>
           <outs>
-            <int>16</int>
+            <int>15</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -3800,15 +3940,15 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>14</id>
+          <id>13</id>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>1503.6</x>
-            <y>314</y>
+            <x>1822.6</x>
+            <y>307</y>
           </position>
           <outs>
-            <int>19</int>
+            <int>18</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -3846,15 +3986,15 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>15</id>
+          <id>14</id>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>1511.6</x>
-            <y>1065</y>
+            <x>1926.6</x>
+            <y>1093</y>
           </position>
           <outs>
-            <int>19</int>
+            <int>18</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -3892,7 +4032,7 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>16</id>
+          <id>15</id>
           <type>TextPhase</type>
           <theme />
           <position>
@@ -3900,7 +4040,7 @@
             <y>1851</y>
           </position>
           <outs>
-            <int>17</int>
+            <int>16</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -3938,15 +4078,15 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>17</id>
+          <id>16</id>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>1532.6</x>
-            <y>2302.2</y>
+            <x>1534.6</x>
+            <y>2324.2</y>
           </position>
           <outs>
-            <int>19</int>
+            <int>18</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -3984,11 +4124,11 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>18</id>
+          <id>17</id>
           <type>EndPhase</type>
           <position>
-            <x>993.1118</x>
-            <y>353</y>
+            <x>1057.11182</x>
+            <y>326</y>
           </position>
           <outs />
           <advanced>false</advanced>
@@ -4023,14 +4163,14 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>19</id>
+          <id>18</id>
           <type>ConditionalPhase</type>
           <position>
-            <x>510.111816</x>
-            <y>943</y>
+            <x>388.111816</x>
+            <y>955</y>
           </position>
           <outs>
-            <int>20</int>
+            <int>19</int>
             <int>1</int>
           </outs>
           <advanced>false</advanced>
@@ -4063,11 +4203,11 @@
             <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
-          <variableGetEquation>Equals</variableGetEquation>
-          <variableGetValue>3</variableGetValue>
+          <variableGetEquation>GreaterThan</variableGetEquation>
+          <variableGetValue>2</variableGetValue>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>20</id>
+          <id>19</id>
           <type>TextPhase</type>
           <theme />
           <position>
@@ -4075,7 +4215,7 @@
             <y>1290.2</y>
           </position>
           <outs>
-            <int>21</int>
+            <int>20</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -4113,7 +4253,7 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>21</id>
+          <id>20</id>
           <type>TextPhase</type>
           <theme />
           <position>
@@ -4121,7 +4261,7 @@
             <y>1294.2</y>
           </position>
           <outs>
-            <int>23</int>
+            <int>22</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -4159,7 +4299,7 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>22</id>
+          <id>21</id>
           <type>EndPhase</type>
           <position>
             <x>1097</x>
@@ -4198,14 +4338,14 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>23</id>
+          <id>22</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>769.0215</x>
-            <y>1250.20862</y>
+            <x>770.0215</x>
+            <y>1176.20862</y>
           </position>
           <outs>
-            <int>22</int>
+            <int>21</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -4234,14 +4374,14 @@
           <variableId>7</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>68</y>
+            <y>60</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>24</id>
+          <id>23</id>
           <type>SetVariablePhase</type>
           <position>
             <x>23</x>
@@ -4284,14 +4424,14 @@
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>25</id>
+          <id>24</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>882.6</x>
-            <y>396</y>
+            <x>877.6</x>
+            <y>397</y>
           </position>
           <outs>
-            <int>18</int>
+            <int>17</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -4326,9 +4466,198 @@
           <variableSetValue>true</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>25</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>1192.645</x>
+            <y>313</y>
+          </position>
+          <outs>
+            <int>4</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text />
+          <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>26</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>1201.57654</x>
+            <y>1090.0636</y>
+          </position>
+          <outs>
+            <int>8</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text />
+          <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>27</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>881.5558</x>
+            <y>1878.09863</y>
+          </position>
+          <outs>
+            <int>12</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>28</id>
+          <type>ConditionalPhase</type>
+          <position>
+            <x>867.1</x>
+            <y>10</y>
+          </position>
+          <outs>
+            <int>2</int>
+            <int>25</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>1</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>false</variableSetValue>
+          <variableGetEquation>Equals</variableGetEquation>
+          <variableGetValue>true</variableGetValue>
+        </DialogueEditorPhaseObject>
       </phases>
       <floats>
-        <variables />
+        <variables>
+          <DialogueEditorVariableObject>
+            <name>readEntries</name>
+            <variable>0</variable>
+            <id>0</id>
+          </DialogueEditorVariableObject>
+        </variables>
         <selection>0</selection>
       </floats>
       <strings>
@@ -4336,7 +4665,28 @@
         <selection>0</selection>
       </strings>
       <booleans>
-        <variables />
+        <variables>
+          <DialogueEditorVariableObject>
+            <name>initEntry1</name>
+            <variable>false</variable>
+            <id>0</id>
+          </DialogueEditorVariableObject>
+          <DialogueEditorVariableObject>
+            <name>initEntry2</name>
+            <variable>false</variable>
+            <id>1</id>
+          </DialogueEditorVariableObject>
+          <DialogueEditorVariableObject>
+            <name>initEntry3</name>
+            <variable>false</variable>
+            <id>2</id>
+          </DialogueEditorVariableObject>
+          <DialogueEditorVariableObject>
+            <name>readJournal</name>
+            <variable>false</variable>
+            <id>3</id>
+          </DialogueEditorVariableObject>
+        </variables>
         <selection>0</selection>
       </booleans>
     </DialogueEditorDialogueObject>
@@ -4363,7 +4713,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>We have everything we need, right?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -4471,7 +4821,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Just leaving the room now won't help us...</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -4551,7 +4901,7 @@
           </position>
           <outs>
             <int>0</int>
-            <int>1</int>
+            <int>3</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -4583,8 +4933,54 @@
             <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
-          <variableGetEquation>NotEquals</variableGetEquation>
+          <variableGetEquation>LessThan</variableGetEquation>
           <variableGetValue>3</variableGetValue>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>3</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>570</x>
+            <y>460</y>
+          </position>
+          <outs>
+            <int>1</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>We've read enough, we can leave now.</text>
+          <name>May Taylor</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
       </phases>
       <floats>
@@ -4623,7 +5019,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Uh... Noob? Don't you remember? The big guy was talking about this room over here.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -4731,7 +5127,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>I've hacked the neighbor's door. It is unlocked now.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -4924,7 +5320,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>How should I know?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -4976,7 +5372,7 @@
       <startPage>2</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>16.003418</y>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -4984,8 +5380,8 @@
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>340</x>
-            <y>18</y>
+            <x>374</x>
+            <y>10</y>
           </position>
           <outs>
             <int>1</int>
@@ -4993,7 +5389,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>I wonder what the big guy wanted here?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -5029,8 +5425,8 @@
           <id>1</id>
           <type>EndPhase</type>
           <position>
-            <x>692</x>
-            <y>13</y>
+            <x>1002</x>
+            <y>537</y>
           </position>
           <outs />
           <advanced>false</advanced>
@@ -5114,8 +5510,8 @@
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>21</x>
-            <y>446</y>
+            <x>374</x>
+            <y>472</y>
           </position>
           <outs>
             <int>1</int>
@@ -5123,7 +5519,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>So... what was the big guy investigating that had to do with Moe?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -5174,7 +5570,7 @@
       <name>MayMoesPicture</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>855</x>
+        <x>71</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -5277,7 +5673,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>I'll look it up and upload the file to your journal.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -5389,7 +5785,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>So... what was the big guy investigating that had to do with Moe?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -5497,7 +5893,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Oh! Pei's back! Can we get some noodles? Please! Please! PLEASE!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -5651,7 +6047,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Hurry up Noob. I'm hungry!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -5782,7 +6178,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Ok... noodles please?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -5822,8 +6218,8 @@
             <y>467</y>
           </position>
           <outs>
-            <int>0</int>
             <int>5</int>
+            <int>0</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -5919,7 +6315,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Sorry, it's a secret.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -6011,7 +6407,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>mfgh-- it's a secret.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -6165,7 +6561,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Sorry, it's a secret.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -6257,7 +6653,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>mfgh-- it's a secret.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -6347,8 +6743,8 @@
       <name>PeijunMarketPassword</name>
       <startPage>12</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>780</y>
+        <x>57</x>
+        <y>795.4</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -6503,7 +6899,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>WHAT?! I WAS PROMISED NOODLES!!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -6687,7 +7083,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>PLEASE Pei? We really need it! PLEASE NOODLES ARE ON THE LINE!!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -6952,7 +7348,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Please don't abuse what I have told you and be careful. Especially you, May.</text>
-          <name />
+          <name>PeiJun Shi</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -7111,7 +7507,7 @@
       <name>JoshCafeStart</name>
       <startPage>6</startPage>
       <scrollPosition>
-        <x>0</x>
+        <x>152.900009</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -7541,7 +7937,7 @@
       <name>MayCafeClue</name>
       <startPage>5</startPage>
       <scrollPosition>
-        <x>0</x>
+        <x>41.79999</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -7559,7 +7955,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>We NEED that jacket!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -7697,7 +8093,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Just find me a terminal, I can probably hack stuff with it!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -7776,8 +8172,8 @@
             <y>459</y>
           </position>
           <outs>
-            <int>0</int>
             <int>6</int>
+            <int>0</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -7827,7 +8223,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Let's get out of here before some firefighting bots get here.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -7879,7 +8275,7 @@
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>240</y>
+        <y>413</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -7896,7 +8292,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Jackpot! Now I'm not bored anymore!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -7988,7 +8384,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Shut up Shammy, we do this all the time!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -8034,7 +8430,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Noobie, give me something to hack!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -8076,8 +8472,8 @@
           </position>
           <outs>
             <int>5</int>
-            <int>6</int>
-            <int>8</int>
+            <int>11</int>
+            <int>12</int>
           </outs>
           <advanced>true</advanced>
           <metadata>2:boolIsTrue:4, 3:boolIsTrue:5</metadata>
@@ -8162,16 +8558,16 @@
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>555</x>
-            <y>470</y>
+            <x>903</x>
+            <y>454</y>
           </position>
           <outs>
-            <int>7</int>
+            <int>13</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
           <text>Okie doke! It's no longer disabled. Pull it now!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -8207,8 +8603,8 @@
           <id>7</id>
           <type>EndPhase</type>
           <position>
-            <x>903</x>
-            <y>481</y>
+            <x>1234</x>
+            <y>474</y>
           </position>
           <outs />
           <advanced>false</advanced>
@@ -8256,7 +8652,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Ooooooh, I have a great idea for this one!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -8297,7 +8693,7 @@
             <y>921</y>
           </position>
           <outs>
-            <int>10</int>
+            <int>14</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -8373,6 +8769,182 @@
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>11</id>
+          <type>TextPhase</type>
+          <position>
+            <x>569</x>
+            <y>599</y>
+          </position>
+          <outs>
+            <int>6</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>12</id>
+          <type>TextPhase</type>
+          <position>
+            <x>589</x>
+            <y>759</y>
+          </position>
+          <outs>
+            <int>8</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>13</id>
+          <type>SetVariablePhase</type>
+          <position>
+            <x>1252</x>
+            <y>527</y>
+          </position>
+          <outs>
+            <int>7</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>14</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>204</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>true</variableSetValue>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>14</id>
+          <type>SetVariablePhase</type>
+          <position>
+            <x>1254</x>
+            <y>984</y>
+          </position>
+          <outs>
+            <int>10</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>15</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>204</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>true</variableSetValue>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
       </phases>
       <floats>
         <variables />
@@ -8393,7 +8965,7 @@
       <startPage>12</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>3160</y>
+        <y>1448.70007</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -8456,7 +9028,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>I'm pulling it.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -8548,7 +9120,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>...</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -8893,7 +9465,7 @@
           <variableId>4</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>14</y>
+            <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -8942,12 +9514,12 @@
           <id>12</id>
           <type>ConditionalPhase</type>
           <position>
-            <x>53</x>
-            <y>1400</y>
+            <x>10</x>
+            <y>1386</y>
           </position>
           <outs>
-            <int>0</int>
             <int>13</int>
+            <int>0</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -8987,12 +9559,12 @@
           <id>13</id>
           <type>ConditionalPhase</type>
           <position>
-            <x>417</x>
-            <y>1401</y>
+            <x>459</x>
+            <y>1389</y>
           </position>
           <outs>
-            <int>14</int>
             <int>25</int>
+            <int>14</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -9134,7 +9706,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Awwwww, this is terrible fire music!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -9269,7 +9841,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>You changed the fire alarm sound?!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -9315,7 +9887,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>I want to actually set this place on fire now!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -9584,7 +10156,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>I know, isn't it great?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -9676,7 +10248,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Stop hesitat-</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -9768,7 +10340,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>YEEAH!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -9948,7 +10520,7 @@
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>607</y>
+        <y>411</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -10421,7 +10993,7 @@
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>165</y>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -10438,7 +11010,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>So far you've been doing everything here.</text>
-          <name />
+          <name>Jane Doe</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -10908,7 +11480,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Why even have them then?!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -11076,8 +11648,8 @@
             <y>476</y>
           </position>
           <outs>
-            <int>0</int>
             <int>6</int>
+            <int>0</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -11173,7 +11745,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>You'll see, you'll all see! MWAHAHAHAHA!</text>
-          <name />
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -11219,7 +11791,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>...[sigh].</text>
-          <name />
+          <name>Jane Doe</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -11373,7 +11945,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>You'll see, you'll all see! MWAHAHAHAHA!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -11815,7 +12387,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Let's get out of here before some firefighting bots get here.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -12014,7 +12586,7 @@
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>1123</y>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -12783,7 +13355,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Ouch! My sensitive gamer eyes. Stupid sun...</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -12891,7 +13463,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Noob, where are you going? We have a job to do.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -12999,7 +13571,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Ouch! My sensitive gamer eyes. Stupid sun...</text>
-          <name />
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -13107,7 +13679,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Noob, where are you going? We have a job to do.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -13215,7 +13787,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Ugh, alcohol. Coffee is so much better.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -13431,7 +14003,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Ok, I've figured it out. I'm that smart, you know?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -13523,7 +14095,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>You have to order a child sized white chocolate mocha frappuccino light blended coffee with an extra shot of espresso, one pump of sugar free raspberry flavoring, and no whipped cream on top.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -13615,7 +14187,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>A child sized white chocolate mocha frappuccino light blended coffee with an extra shot of espresso, one pump of sugar free raspberry flavoring, and no whipped cream on top.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -13661,7 +14233,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Go!</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -13769,7 +14341,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>All the clues are pointing here. Certainly you figured it out already, right?</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -13815,7 +14387,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>You have to order a child sized white chocolate mocha frappuccino light blended coffee with an extra shot of espresso, one pump of sugar free raspberry flavoring, and no whipped cream on top.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -13906,7 +14478,7 @@
       <startPage>3</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>2520</y>
+        <y>16.5</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -15028,7 +15600,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Okie dokie artichokie, but don't take too long.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -15136,7 +15708,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Wow, this place is a dump.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -15244,7 +15816,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>We have already searched these rooms. Let's check somewhere else.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -15352,7 +15924,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Wow, this place is a dump.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -15460,7 +16032,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>We have already searched these areas. Let's check somewhere else.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -15568,7 +16140,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Those noodles were soooooooo good. I kinda want more...</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -15784,7 +16356,7 @@
           <advanced>true</advanced>
           <metadata />
           <text>Let's get out of here before some firefighting bots get here.</text>
-          <name>May</name>
+          <name>May Taylor</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -16062,7 +16634,7 @@
           <id>15</id>
         </DialogueEditorVariableObject>
       </variables>
-      <selection>15</selection>
+      <selection>0</selection>
     </booleans>
     <floats>
       <variables>
@@ -16111,7 +16683,7 @@
   </themes>
   <selectorScrollPosition>
     <x>0</x>
-    <y>124</y>
+    <y>164</y>
   </selectorScrollPosition>
-  <currentDialogueId>19</currentDialogueId>
+  <currentDialogueId>35</currentDialogueId>
 </DialogueEditorMasterObject>

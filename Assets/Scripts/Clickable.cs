@@ -7,12 +7,12 @@ public class Clickable : MonoBehaviour {
 	public int offset;
 	
 	//Mouse icon information
-	private string mouseOverIcon = "Examine_Icon";	
-	private string defaultIcon = "Walk_Icon";		//The standard mouse icon when not hovering over an object
-	private playerScript player;
+	protected string mouseOverIcon = "Examine_Icon";
+	protected string defaultIcon = "Walk_Icon";		//The standard mouse icon when not hovering over an object
+	protected playerScript player;
 	public bool wall;
-	private bool clickedOnSomething;
-	private distanceCheck pDist;
+	protected bool clickedOnSomething;
+	protected distanceCheck pDist;
 	
 	public void OnMouseEnter(){
 		//Debug.LogWarning ("Stop? Go?: " + player.canWalk);
@@ -37,7 +37,7 @@ public class Clickable : MonoBehaviour {
 				if (player.canWalk && !wall){
 					clickedOnSomething = true;
 					player.setTarget(new Vector3(transform.position.x, transform.position.y, 0));
-				} else {
+				} else if (!player.talking){
 					player.stopMove();
 					player.canWalk = true;
 				}

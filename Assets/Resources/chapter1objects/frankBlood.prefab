@@ -59,11 +59,12 @@ MonoBehaviour:
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
-  myConvo: -1
-  offset: 0
+  myConvo: 21
+  pickUpConvo: 36
   conditions: 
   associatedObjects: []
   mouseOverIcon: Grab_Icon
+  autoPickupPostConvo: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
