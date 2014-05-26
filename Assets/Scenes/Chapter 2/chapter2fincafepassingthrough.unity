@@ -490,7 +490,7 @@ GameObject:
   - 114: {fileID: 753407151}
   - 114: {fileID: 753407150}
   m_Layer: 10
-  m_Name: May
+  m_Name: MayNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -800,7 +800,7 @@ MonoBehaviour:
   loadNewXML: 0
   dialoguer: chapter2
   needGUI: 0
-  dialogue: ffffffff
+  dialogue: 
   setOffset: 0
   player: {fileID: 0}
   maxY: -1.35435796
@@ -919,7 +919,7 @@ GameObject:
   - 114: {fileID: 1540752792}
   m_Layer: 10
   m_Name: doorPlaza
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
