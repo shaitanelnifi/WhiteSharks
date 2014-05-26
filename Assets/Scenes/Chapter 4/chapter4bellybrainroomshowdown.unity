@@ -163,6 +163,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1085850464}
   - 114: {fileID: 1085850463}
+  - 114: {fileID: 1085850465}
   m_Layer: 0
   m_Name: SceneBehavior
   m_TagString: Untagged
@@ -183,7 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 258ccc3c9d307944a837f2dcef189496, type: 3}
-  waitThisLong: 2
+  waitThisLong: -1
   whatCharacter: Jane
   nextLevel: chapter4networkbrainroomrip
   isTherePlayer: 0
@@ -211,6 +212,26 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1085850465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1085850462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d5c1d0f9d8476f4ab402bd6ca20a642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progress: 50
+  progressNeeded: 100
+  pos: {x: 256, y: 96}
+  progressBarEmpty: {fileID: 2800000, guid: 49c2eded774a4be46853770d8c51dffa, type: 3}
+  progressBarMay: {fileID: 2800000, guid: 358bbd49e07377948a5db4f827269265, type: 3}
+  progressBarFounder: {fileID: 2800000, guid: f089926a265d92b4e961cdc87fdcf456, type: 3}
+  waitThisLong: 2
+  nextScene: chapter4networkbrainroomrip
+  failConversation: 0
 --- !u!1 &1313870441
 GameObject:
   m_ObjectHideFlags: 0

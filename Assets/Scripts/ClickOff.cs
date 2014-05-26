@@ -12,10 +12,12 @@ public class ClickOff : MonoBehaviour {
 	public float waitThisLong;
 
 	public string nextScene;
-	public Convo rewardConversation;
+	public Convo failConversation;
 
 	private bool success = false;
 	private bool playingConv = false;
+	private bool started = false;
+	private bool failure = false;
 
 	void Start(){
 
@@ -41,26 +43,35 @@ public class ClickOff : MonoBehaviour {
 	void Update()
 	{
 
-		if (progress < progressNeeded && !success) {
-			if (Input.GetMouseButtonDown (0)) {
-					progress++;
-			}
+		if (started) {
+			if (progress < progressNeeded && !success) {
+					if (Input.GetMouseButtonDown (0)) {
+							progress++;
+					}
 
-			progress -= Time.deltaTime * 2;
-		} else {
-			success = true;
+					progress -= Time.deltaTime * 2;
+			} else if (progress >= progressNeeded && !success){
+					success = true;
+			} else if (progress <= 0){
+				failure = true;
+			}
+		} else if (GameManager.dialogueJustFinished) {
+			started = true;
 		}
 
 		if (success && !playingConv) {
-			playingConv = true;
-			Dialoguer.StartDialogue ((int)rewardConversation);
-		} else if (GameManager.dialogueJustFinished) {
 			if (waitThisLong <= 0){
-			GameManager.dialogueJustFinished = false;
-			Application.LoadLevel(nextScene);
+				playingConv = true;
+				Application.LoadLevel(nextScene);
 			} else {
 				waitThisLong-= Time.deltaTime;
 			}
+		} else if (failure = true && !playingConv){
+				playingConv = true;
+				if (failConversation != Convo.ch0none)
+					Dialoguer.StartDialogue((int)failConversation);
+		} else if (playingConv && GameManager.dialogueJustFinished){
+				Application.LoadLevel(Application.loadedLevelName);
 		}
 	}
 }
