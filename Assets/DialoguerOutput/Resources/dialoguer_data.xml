@@ -1788,7 +1788,7 @@ It's not like I have anything important to do, right?</text>
       <name>janemapbots</name>
       <startPage>3</startPage>
       <scrollPosition>
-        <x>0</x>
+        <x>554</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -1848,7 +1848,7 @@ Head out of your cell and head towards the hall in front of you. x</text>
             <y>115</y>
           </position>
           <outs>
-            <int>2</int>
+            <int>6</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -1889,8 +1889,8 @@ Head out of your cell and head towards the hall in front of you. x</text>
           <id>2</id>
           <type>EndPhase</type>
           <position>
-            <x>1147</x>
-            <y>23</y>
+            <x>1447</x>
+            <y>88</y>
           </position>
           <outs />
           <advanced>false</advanced>
@@ -2058,6 +2058,49 @@ Once you have it, walk down the hall.</text>
             <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>6</id>
+          <type>SetVariablePhase</type>
+          <position>
+            <x>1196</x>
+            <y>163</y>
+          </position>
+          <outs>
+            <int>2</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>5</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>26</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>true</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
       </phases>
@@ -3544,7 +3587,7 @@ Once you have it, walk down the hall.</text>
       <startPage>11</startPage>
       <scrollPosition>
         <x>438.023682</x>
-        <y>1759.79956</y>
+        <y>1537.2998</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -11837,8 +11880,13 @@ For White Shark.</text>
           <variable>false</variable>
           <id>4</id>
         </DialogueEditorVariableObject>
+        <DialogueEditorVariableObject>
+          <name>freeToGo</name>
+          <variable>false</variable>
+          <id>5</id>
+        </DialogueEditorVariableObject>
       </variables>
-      <selection>4</selection>
+      <selection>5</selection>
     </booleans>
     <floats>
       <variables>
@@ -11879,5 +11927,5 @@ For White Shark.</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>11</currentDialogueId>
+  <currentDialogueId>5</currentDialogueId>
 </DialogueEditorMasterObject>

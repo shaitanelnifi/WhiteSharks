@@ -16,9 +16,7 @@ public class NetworkMap : MonoBehaviour {
 		drone.SetBool("DeactivatedDrone", Dialoguer.GetGlobalBoolean(4));
 		if (Dialoguer.GetGlobalBoolean (3))
 						Destroy (cellDoor);
-		Debug.Log (Dialoguer.GetGlobalBoolean (3));
-		if (Dialoguer.GetGlobalBoolean (3) && Dialoguer.GetGlobalBoolean(4)) {
-			jane.SetBool("moveJane", true);
-		}
+		jane.SetBool("moveJane", Dialoguer.GetGlobalBoolean (5));
+
 	}
 }
