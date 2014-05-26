@@ -3,6 +3,7 @@ using System.Collections;
 
 public class MapClickable : Clickable {
 
+	public Convo dialogueEnum;
 
 	private bool doneTalking = false;
 
@@ -116,7 +117,7 @@ public class MapClickable : Clickable {
 
 	public void startDialogue() {
 		if(!wall) {
-			Dialoguer.StartDialogue((int)diaNum + offset);
+			Dialoguer.StartDialogue((int)dialogueEnum);
 		}
 		player.stopMove();
 		SoundManager.Instance.StopWalk();
