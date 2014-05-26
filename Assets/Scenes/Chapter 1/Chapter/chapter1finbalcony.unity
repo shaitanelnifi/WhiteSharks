@@ -310,6 +310,10 @@ Prefab:
       propertyPath: m_Center.x
       value: -.25
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
+      propertyPath: maxDist
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
   m_RootGameObject: {fileID: 576624418}
@@ -1079,7 +1083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 4
+  maxDist: 5
 --- !u!61 &576624420
 BoxCollider2D:
   m_ObjectHideFlags: 0

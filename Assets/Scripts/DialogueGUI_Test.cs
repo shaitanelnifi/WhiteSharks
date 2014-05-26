@@ -167,14 +167,17 @@ public class DialogueGUI_Test : MonoBehaviour {
 					{
 						foreach (genericScene scene in genericSceneObj)
 						{
+							Vector3 top = new Vector3 (0f, Screen.height / 1.6f, 1f);
+							Vector3 bottom = new Vector3(0f, -Screen.height*0.8f, 1f);
+
 							// If want to place on top of screen, else...
 							if (scene.getPlaceTop())
 							{
-								convo.transform.localPosition = new Vector3(0f, Screen.height/2f, 1f);
+								convo.transform.localPosition = top;
 							}
 							else
 							{
-								convo.transform.localPosition = new Vector3(0f, -Screen.height*0.6f, 1f);
+								convo.transform.localPosition = bottom;
 							}
 						}
 						runOnce = true;
@@ -215,7 +218,6 @@ public class DialogueGUI_Test : MonoBehaviour {
 			
 				convo.GetComponent<UISprite> ().enabled = true;
 			}
-	
 		}
 
 		// Setup
@@ -368,22 +370,11 @@ public class DialogueGUI_Test : MonoBehaviour {
 		nameLabel.text = _nameText;
 
 		if (leftChar.spriteName.Equals ("") || ! leftChar.spriteName.Equals (_nameText.Replace(" ", string.Empty) + "Sprite")) {
-			//Debug.LogWarning ("Left char's name is " + _nameText);
 			leftSpriteName = _nameText.Replace(" ", string.Empty) + "Sprite";
 		}
 
 		leftChar.spriteName = leftSpriteName;
 		leftChar.MarkAsChanged();
-
-//		if (_nameText.Equals("Jane Doe"))
-//		{
-//			rightSpriteName = "JaneSprite";
-//		} else if (_nameText.Equals("Frank")) {
-//			rightSpriteName = "FrankSprite";
-//		}
-//
-//		rightChar.spriteName = rightSpriteName;
-//		rightChar.MarkAsChanged();
 	}
 
 	// Enable single collider
@@ -478,8 +469,8 @@ public class DialogueGUI_Test : MonoBehaviour {
 		while(true)
 		{
 			runOnce = false;
-			Debug.Log ("Every 2 sec");
-			yield return new WaitForSeconds(2);
+			Debug.Log ("Every 1 sec");
+			yield return new WaitForSeconds(1);
 		}
 	}
 }
