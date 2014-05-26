@@ -903,7 +903,7 @@ MonoBehaviour:
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 2d2f9725d81f04949a1b5c1fcc6ff25e, type: 3}
   waitThisLong: -1
-  whatCharacter: May
+  whatCharacter: 
   nextLevel: chapter4networkmap
   isTherePlayer: 0
   spawnHereAfter: {x: 11.8699999, y: -1.63}
@@ -968,6 +968,10 @@ Prefab:
     - target: {fileID: 11400002, guid: b56336a7933425e45b6f557fab344cdb, type: 2}
       propertyPath: diaNum
       value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: b56336a7933425e45b6f557fab344cdb, type: 2}
+      propertyPath: id
+      value: chapter4networkmap
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b56336a7933425e45b6f557fab344cdb, type: 2}

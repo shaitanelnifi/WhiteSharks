@@ -91,6 +91,9 @@ public enum clickableID {
 	//chapter 4
 	janechapter4networkmapcelldoor = 4,
 	janechapter4mapbots = 5,
+	janechapter4bellybarwrongway = 7,
+	janechapter4bellybrainroomwrongway = 9,
+	janechapter4bellybrainroomterminal = 10,
 	maychapter4Networkofficetable = 24,
 
 };
