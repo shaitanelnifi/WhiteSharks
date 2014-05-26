@@ -5,6 +5,7 @@ public class DialogueDoor : DoorScript {
 
 	public bool playDoorSound = false;
 	public bool wall;
+	public bool hasConvo = true;
 	public clickableID diaNum;
 	public int offset;
 	private bool clickedOnSomething;
@@ -25,22 +26,25 @@ public class DialogueDoor : DoorScript {
 	}
 
 	void Update() {
-
 		if(player == null)
 			player = (playerScript)FindObjectOfType(typeof(playerScript));
 
 	}
 
 	public void useDoor() {
-
 		GameManager.Instance.currRoom = id;
 		SoundManager.Instance.StopWalk();
 		GameManager.Instance.SetNextX(x);
 		GameManager.Instance.SetNextY(y);
 		orderCount = 0;
 		if(playDoorSound) SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/FinDoor"), SoundManager.SoundType.Sfx, true);
-		startDialogue();
-		StartCoroutine("DialogueDone");
+		if (hasConvo) {
+						startDialogue ();
+						StartCoroutine ("DialogueDone");
+				} else {
+			backEffect = (GameObject)Instantiate(Resources.Load("blackScreen"));
+			StartCoroutine("Fade");
+		}
 	}
 
 	IEnumerator DialogueDone() {

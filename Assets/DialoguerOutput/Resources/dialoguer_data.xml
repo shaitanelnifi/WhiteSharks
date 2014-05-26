@@ -1786,9 +1786,9 @@ It's not like I have anything important to do, right?</text>
     <DialogueEditorDialogueObject>
       <id>5</id>
       <name>janemapbots</name>
-      <startPage>0</startPage>
+      <startPage>3</startPage>
       <scrollPosition>
-        <x>186.011963</x>
+        <x>0</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -1797,8 +1797,8 @@ It's not like I have anything important to do, right?</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>184</x>
-            <y>106</y>
+            <x>342</x>
+            <y>155</y>
           </position>
           <outs>
             <int>1</int>
@@ -1843,11 +1843,11 @@ It's not like I have anything important to do, right?</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>555</x>
-            <y>93</y>
+            <x>703</x>
+            <y>112</y>
           </position>
           <outs>
-            <int>3</int>
+            <int>2</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -1927,11 +1927,11 @@ It's not like I have anything important to do, right?</text>
           <id>3</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>873.011963</x>
-            <y>121</y>
+            <x>25</x>
+            <y>164</y>
           </position>
           <outs>
-            <int>2</int>
+            <int>0</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
