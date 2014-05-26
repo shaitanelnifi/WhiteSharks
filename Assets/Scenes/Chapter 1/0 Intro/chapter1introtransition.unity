@@ -281,7 +281,7 @@ MonoBehaviour:
   dialoguer: chapter1
   needGUI: 0
   dialogue: 
-  setOffset: 0
+  setOffset: 18
   player: {fileID: 0}
   maxY: 2
   minY: 1
