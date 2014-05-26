@@ -346,9 +346,9 @@ MonoBehaviour:
   playMe: {fileID: 0}
   waitThisLong: 4
   whatCharacter: May
-  nextLevel: chapter3finofficewalkwaybeforepeijun
+  nextLevel: chapter3finofficelobby
   isTherePlayer: 1
-  spawnHereAfter: {x: 2.945086, y: -2.47189498}
+  spawnHereAfter: {x: 0, y: -4.47189522}
   loadNewXML: 1
   dialoguer: chapter3
   needGUI: 0
