@@ -7553,8 +7553,8 @@
       <name>JoshCafeStart</name>
       <startPage>6</startPage>
       <scrollPosition>
-        <x>338.01355</x>
-        <y>579</y>
+        <x>110.0061</x>
+        <y>356.975952</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -7562,8 +7562,8 @@
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>576</x>
-            <y>10</y>
+            <x>352</x>
+            <y>25</y>
           </position>
           <outs>
             <int>1</int>
@@ -7608,11 +7608,11 @@
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>912</x>
-            <y>10</y>
+            <x>677</x>
+            <y>72</y>
           </position>
           <outs>
-            <int>2</int>
+            <int>9</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -7654,8 +7654,8 @@
           <type>BranchedTextPhase</type>
           <theme />
           <position>
-            <x>211</x>
-            <y>473</y>
+            <x>18</x>
+            <y>939</y>
           </position>
           <outs>
             <int>3</int>
@@ -7704,8 +7704,8 @@
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>566</x>
-            <y>475</y>
+            <x>372</x>
+            <y>993</y>
           </position>
           <outs>
             <int>4</int>
@@ -7750,8 +7750,8 @@
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>909</x>
-            <y>474</y>
+            <x>795</x>
+            <y>778</y>
           </position>
           <outs>
             <int>7</int>
@@ -7834,8 +7834,8 @@
           <id>6</id>
           <type>ConditionalPhase</type>
           <position>
-            <x>208</x>
-            <y>89</y>
+            <x>10</x>
+            <y>91</y>
           </position>
           <outs>
             <int>0</int>
@@ -7868,19 +7868,19 @@
           <variableId>13</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>236</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
-          <variableGetEquation>Equals</variableGetEquation>
+          <variableGetEquation>NotEquals</variableGetEquation>
           <variableGetValue>true</variableGetValue>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
           <id>7</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>1246</x>
-            <y>225</y>
+            <x>1406</x>
+            <y>256</y>
           </position>
           <outs>
             <int>5</int>
@@ -7912,10 +7912,10 @@
           <variableId>13</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>166</y>
+            <y>236</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
-          <variableSetValue>true</variableSetValue>
+          <variableSetValue>toggle</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
@@ -7932,6 +7932,98 @@
           <advanced>true</advanced>
           <metadata />
           <text>Yes? Are you ready to Enlighten your soul? If not, don't waste my time.</text>
+          <name>Josh Susach</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>9</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>59.012207</x>
+            <y>464</y>
+          </position>
+          <outs>
+            <int>10</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>Ehhh… We are looking for Frank, have you seen him?</text>
+          <name>Jane Doe</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>10</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>380.0005</x>
+            <y>498.992432</y>
+          </position>
+          <outs>
+            <int>2</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>I am afraid not. Are you his new girlfriend? He left his jacket here last night.</text>
           <name>Josh Susach</name>
           <portrait />
           <audio />
@@ -16837,7 +16929,7 @@
   </themes>
   <selectorScrollPosition>
     <x>0</x>
-    <y>744</y>
+    <y>513.157166</y>
   </selectorScrollPosition>
-  <currentDialogueId>13</currentDialogueId>
+  <currentDialogueId>33</currentDialogueId>
 </DialogueEditorMasterObject>
