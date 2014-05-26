@@ -1063,6 +1063,7 @@ GameObject:
   - 114: {fileID: 576624419}
   - 114: {fileID: 576624425}
   - 95: {fileID: 576624426}
+  - 114: {fileID: 576624427}
   - 95: {fileID: 576624424}
   m_Layer: 10
   m_Name: NoelAlt
@@ -1202,6 +1203,18 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!114 &576624427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 147f6141f4730475db67483bbd79c4b0,
+    type: 2}
+  m_PrefabInternal: {fileID: 51413040}
+  m_GameObject: {fileID: 576624418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ae4b32f68af1b4e977f56ed01a1f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &674667616
 GameObject:
   m_ObjectHideFlags: 0
@@ -2480,9 +2493,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 3
-  m_SortingOrder: 1
-  m_SortingLayerID: 1982072587
+  m_SortingLayer: 4
+  m_SortingOrder: 10
+  m_SortingLayerID: 2514339253
   m_Sprite: {fileID: 21300000, guid: 5343b476f1a9e254c83980c529608361, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1239288160
