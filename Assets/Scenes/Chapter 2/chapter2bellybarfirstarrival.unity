@@ -155,8 +155,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter2bellymarketempty
-  x: -8.72952461
-  y: -5.3029108
+  x: 6
+  y: -3.29999995
   mouseOverIcon: Door_Icon
 --- !u!60 &371819719
 PolygonCollider2D:
@@ -238,8 +238,8 @@ Transform:
   m_PrefabInternal: {fileID: 887903733}
   m_GameObject: {fileID: 371819717}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.12756824, y: -.784879923, z: 0}
-  m_LocalScale: {x: .100000001, y: .319999993, z: .949355006}
+  m_LocalPosition: {x: -7.99652672, y: -.744490027, z: 0}
+  m_LocalScale: {x: .259223223, y: .829513371, z: .949355006}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &433192853
@@ -471,11 +471,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.12756824
+      value: -7.99652672
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.784879923
+      value: -.744490027
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -503,19 +503,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalScale.x
-      value: .100000001
+      value: .259223223
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalScale.y
-      value: .319999993
+      value: .829513371
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: x
-      value: -8.72952461
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: y
-      value: -5.3029108
+      value: -3.29999995
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: id
