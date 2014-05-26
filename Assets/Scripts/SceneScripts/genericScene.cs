@@ -77,6 +77,7 @@ public class genericScene : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		Debug.Log (Dialoguer.GetGlobalBoolean (1));
 		if (autoPlay)
 		StartCoroutine ("wait");
 		//Debug.Log ("ALIVE");
