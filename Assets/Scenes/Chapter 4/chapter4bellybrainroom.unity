@@ -154,6 +154,66 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1001 &519697373
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.11431861
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .975495577
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .391807884
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .391807258
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: m_Size.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+  m_RootGameObject: {fileID: 1436568751}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &769384171
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,8 +255,7 @@ MonoBehaviour:
   offset: 0
   whatCharacter: May
   nextLevel: chapter4networkbrainroom
-  isTherePlayer: 1
-  spawnHereAfter: {x: 0, y: 0}
+  isTherePlayer: 0
 --- !u!114 &769384173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,7 +361,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: b56336a7933425e45b6f557fab344cdb, type: 2}
       propertyPath: isTherePlayer
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b56336a7933425e45b6f557fab344cdb, type: 2}
@@ -322,7 +381,7 @@ GameObject:
   - 61: {fileID: 921011108}
   - 114: {fileID: 921011107}
   - 114: {fileID: 921011106}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WrongWayExit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,10 +515,10 @@ MonoBehaviour:
   dialogue: 08000000
   setOffset: 0
   player: {fileID: 0}
-  maxY: 2
-  minY: 1
-  minScale: 1
-  maxScale: 1
+  maxY: 1.70972598
+  minY: -2.12811995
+  minScale: .2113996
+  maxScale: .577777624
   baseSpeed: 1
   placeTop: 0
 --- !u!4 &1085850464
@@ -521,6 +580,141 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &1436568751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+  m_PrefabInternal: {fileID: 519697373}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1436568758}
+  - 114: {fileID: 1436568757}
+  - 212: {fileID: 1436568756}
+  - 61: {fileID: 1436568755}
+  - 95: {fileID: 1436568754}
+  - 114: {fileID: 1436568753}
+  - 114: {fileID: 1436568752}
+  m_Layer: 10
+  m_Name: Shammy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1436568752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: d4ca5765567e743f5b7ad7717198a638,
+    type: 2}
+  m_PrefabInternal: {fileID: 519697373}
+  m_GameObject: {fileID: 1436568751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolText: Talk
+  sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
+--- !u!114 &1436568753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: d4ca5765567e743f5b7ad7717198a638,
+    type: 2}
+  m_PrefabInternal: {fileID: 519697373}
+  m_GameObject: {fileID: 1436568751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 6
+--- !u!95 &1436568754
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: d4ca5765567e743f5b7ad7717198a638,
+    type: 2}
+  m_PrefabInternal: {fileID: 519697373}
+  m_GameObject: {fileID: 1436568751}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
+--- !u!61 &1436568755
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100000, guid: d4ca5765567e743f5b7ad7717198a638,
+    type: 2}
+  m_PrefabInternal: {fileID: 519697373}
+  m_GameObject: {fileID: 1436568751}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 5, y: 5}
+  m_Center: {x: 0, y: 0}
+--- !u!212 &1436568756
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200000, guid: d4ca5765567e743f5b7ad7717198a638,
+    type: 2}
+  m_PrefabInternal: {fileID: 519697373}
+  m_GameObject: {fileID: 1436568751}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_SortingLayerID: 1982072587
+  m_Sprite: {fileID: 21300000, guid: 7f860ab72ad7d49e2a3fc0301000c7e5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: .435294122}
+--- !u!114 &1436568757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: d4ca5765567e743f5b7ad7717198a638,
+    type: 2}
+  m_PrefabInternal: {fileID: 519697373}
+  m_GameObject: {fileID: 1436568751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e55abf860691c541a849b33c21c6089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementName: Shammy the Shark
+  description: He's a criminal. He's an artist. He's proud of both.
+  profileImage: {fileID: 21300000, guid: 7f860ab72ad7d49e2a3fc0301000c7e5, type: 3}
+  visible: 1
+  clickedOnSomething: 0
+  maxDist: 1
+  myConvo: 0
+  playerObj: {fileID: 0}
+  box: {fileID: 1436568755}
+  mouseOverIcon: Speech_Icon
+--- !u!4 &1436568758
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+  m_PrefabInternal: {fileID: 519697373}
+  m_GameObject: {fileID: 1436568751}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.11431861, y: .975495577, z: 1}
+  m_LocalScale: {x: .391807884, y: .391807258, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1001 &1905039991
