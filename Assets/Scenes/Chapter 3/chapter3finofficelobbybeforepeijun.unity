@@ -5820,7 +5820,7 @@ MonoBehaviour:
   dialoguer: chapter3
   needGUI: 0
   dialogue: 
-  setOffset: 18
+  setOffset: 0
   player: {fileID: 0}
   maxY: -2.72000003
   minY: -4.92999983

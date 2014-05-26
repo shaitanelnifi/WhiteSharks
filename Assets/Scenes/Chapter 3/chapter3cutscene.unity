@@ -317,11 +317,11 @@ MonoBehaviour:
   nextLevel: chapter3cutscenepart2
   isTherePlayer: 0
   spawnHereAfter: {x: 4.80501986, y: -2.5267911}
-  loadNewXML: 1
+  loadNewXML: 0
   dialoguer: chapter3
-  needGUI: 1
+  needGUI: 0
   dialogue: 11000000
-  setOffset: 18
+  setOffset: 0
   player: {fileID: 0}
   maxY: 2
   minY: 1
@@ -6007,7 +6007,6 @@ GameObject:
   - 212: {fileID: 1697760720}
   - 114: {fileID: 1697760722}
   - 114: {fileID: 1697760723}
-  - 95: {fileID: 1697760724}
   m_Layer: 0
   m_Name: intronarrationplaceholder
   m_TagString: Untagged
@@ -6073,22 +6072,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e658c681fb004ceea1797ea8b5f078a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  a: {fileID: 1697760724}
+  a: {fileID: 0}
   varName: 
---- !u!95 &1697760724
-Animator:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1697760719}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ee992b1e155b442cb8fdfee416aa6eb3, type: 2}
-  m_CullingMode: 0
-  m_ApplyRootMotion: 1
-  m_AnimatePhysics: 0
-  m_HasTransformHierarchy: 1
 --- !u!1 &2041039059
 GameObject:
   m_ObjectHideFlags: 0
