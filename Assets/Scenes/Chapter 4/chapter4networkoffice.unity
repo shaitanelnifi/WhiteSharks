@@ -903,7 +903,7 @@ MonoBehaviour:
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 2d2f9725d81f04949a1b5c1fcc6ff25e, type: 3}
   waitThisLong: -1
-  whatCharacter: InvisibleMan
+  whatCharacter: Jane
   nextLevel: chapter4networkmap
   isTherePlayer: 0
   spawnHereAfter: {x: 11.8699999, y: -1.63}
@@ -983,7 +983,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: b56336a7933425e45b6f557fab344cdb, type: 2}
       propertyPath: isTherePlayer
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: b56336a7933425e45b6f557fab344cdb, type: 2}
       propertyPath: spawnHereAfter.x
@@ -1055,7 +1055,7 @@ MonoBehaviour:
   offset: 0
   whatCharacter: Jane
   nextLevel: chapter4networkmap
-  isTherePlayer: 1
+  isTherePlayer: 0
   spawnHereAfter: {x: -4.69999981, y: -3.29999995}
 --- !u!61 &1591390568
 BoxCollider2D:
