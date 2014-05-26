@@ -43,12 +43,14 @@ public class genericScene : MonoBehaviour {
 		if (loadNewXML || !Dialoguer.isInitialized ()) {
 						Dialoguer.Initialize (dialoguer);
 			GameManager.offset = 0;
+
+			if (GameManager.offset == 0)
+				GameManager.offset = setOffset;
+
 			setOffset = 0;
 				}
 
 		GameManager.dialogueJustFinished = false;
-		if (GameManager.offset == 0)
-			GameManager.offset = setOffset;
 
 		if (autoPlay) 
 			playDialogue();

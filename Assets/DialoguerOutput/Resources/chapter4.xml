@@ -1591,7 +1591,7 @@ It's not like I have anything important to do, right?</text>
       <name>janeNmapcelldoor</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>585</x>
+        <x>570.0348</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -1788,7 +1788,7 @@ It's not like I have anything important to do, right?</text>
       <name>janemapbots</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
+        <x>186.011963</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -1797,8 +1797,8 @@ It's not like I have anything important to do, right?</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>169</x>
-            <y>86</y>
+            <x>184</x>
+            <y>106</y>
           </position>
           <outs>
             <int>1</int>
@@ -1843,11 +1843,11 @@ It's not like I have anything important to do, right?</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>611</x>
-            <y>73</y>
+            <x>555</x>
+            <y>93</y>
           </position>
           <outs>
-            <int>2</int>
+            <int>3</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -1888,8 +1888,8 @@ It's not like I have anything important to do, right?</text>
           <id>2</id>
           <type>EndPhase</type>
           <position>
-            <x>939</x>
-            <y>10</y>
+            <x>1147</x>
+            <y>23</y>
           </position>
           <outs />
           <advanced>false</advanced>
@@ -1921,6 +1921,49 @@ It's not like I have anything important to do, right?</text>
             <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>3</id>
+          <type>SetVariablePhase</type>
+          <position>
+            <x>873.011963</x>
+            <y>121</y>
+          </position>
+          <outs>
+            <int>2</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>4</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>5</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>true</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
       </phases>
@@ -11553,8 +11596,13 @@ For White Shark.</text>
           <variable>false</variable>
           <id>3</id>
         </DialogueEditorVariableObject>
+        <DialogueEditorVariableObject>
+          <name>deactivatedBots</name>
+          <variable>false</variable>
+          <id>4</id>
+        </DialogueEditorVariableObject>
       </variables>
-      <selection>3</selection>
+      <selection>4</selection>
     </booleans>
     <floats>
       <variables>
@@ -11595,5 +11643,5 @@ For White Shark.</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>4</currentDialogueId>
+  <currentDialogueId>5</currentDialogueId>
 </DialogueEditorMasterObject>

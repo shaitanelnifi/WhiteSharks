@@ -252,7 +252,6 @@ GameObject:
   - 212: {fileID: 260692480}
   - 114: {fileID: 260692479}
   - 114: {fileID: 260692478}
-  - 95: {fileID: 260692477}
   m_Layer: 0
   m_Name: intronarrationplaceholder
   m_TagString: Untagged
@@ -260,20 +259,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &260692477
-Animator:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 260692476}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ee992b1e155b442cb8fdfee416aa6eb3, type: 2}
-  m_CullingMode: 0
-  m_ApplyRootMotion: 1
-  m_AnimatePhysics: 0
-  m_HasTransformHierarchy: 1
 --- !u!114 &260692478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e658c681fb004ceea1797ea8b5f078a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  a: {fileID: 260692477}
+  a: {fileID: 0}
   varName: 
 --- !u!114 &260692479
 MonoBehaviour:
@@ -397,7 +382,7 @@ MonoBehaviour:
   dialoguer: chapter3
   needGUI: 0
   dialogue: 12000000
-  setOffset: 18
+  setOffset: 0
   player: {fileID: 0}
   maxY: 2
   minY: 1

@@ -973,7 +973,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 4c281b7a78264434faea95625cf11996, type: 3}
-  waitThisLong: .5
+  waitThisLong: -1
   whatCharacter: May
   nextLevel: chapter1finbalcony
   isTherePlayer: 1
@@ -981,8 +981,8 @@ MonoBehaviour:
   loadNewXML: 0
   dialoguer: chapter1
   needGUI: 0
-  dialogue: ffffffff
-  setOffset: 18
+  dialogue: 
+  setOffset: 0
   player: {fileID: 0}
   maxY: -2.365376
   minY: -5.05575895
