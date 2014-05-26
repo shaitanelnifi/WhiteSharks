@@ -11,6 +11,11 @@ public class DialogueDoor : DoorScript {
 	private bool doneTalking = false;
 	GameObject backEffect = null;
 
+	public string whatCharacter;
+	public string nextLevel;
+	public bool isTherePlayer = false;
+	public Vector2 spawnHereAfter;
+
 	void Start() {
 
 		player = (playerScript)FindObjectOfType(typeof(playerScript));
@@ -52,7 +57,20 @@ public class DialogueDoor : DoorScript {
 			temp = true;
 			yield return new WaitForSeconds(0.3f);
 		}
-		Application.LoadLevel(id);
+
+		GameManager.Instance.playerInScene = isTherePlayer;
+
+		if(isTherePlayer) {
+
+			//Debug.Log ("Setting nexts to " + spawnHereAfter.x + " and " + spawnHereAfter.y);
+			GameManager.Instance.SetMainCharacter(whatCharacter);
+			GameManager.Instance.SetNextX(spawnHereAfter.x);
+			GameManager.Instance.SetNextY(spawnHereAfter.y);
+		}
+		GameManager.dialogueJustFinished = false;
+		SoundManager.Instance.CantWalk();
+		GameManager.Instance.GetComponent<DialogueGUI_Test>().resetRunOnce();
+		Application.LoadLevel(nextLevel);
 	}
 
 	public void startDialogue() {
