@@ -2378,7 +2378,7 @@
     <DialogueEditorDialogueObject>
       <id>13</id>
       <name>MayAlleyStart</name>
-      <startPage>1</startPage>
+      <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
         <y>0</y>
@@ -2388,58 +2388,12 @@
           <id>0</id>
           <type>EndPhase</type>
           <position>
-            <x>612</x>
-            <y>33</y>
+            <x>563</x>
+            <y>10</y>
           </position>
           <outs />
           <advanced>false</advanced>
           <text />
-          <audioDelay>0</audioDelay>
-          <rect>
-            <x>0</x>
-            <y>0</y>
-            <center>
-              <x>0</x>
-              <y>0</y>
-            </center>
-            <width>0</width>
-            <height>0</height>
-            <xMin>0</xMin>
-            <yMin>0</yMin>
-            <xMax>0</xMax>
-            <yMax>0</yMax>
-          </rect>
-          <newWindow>false</newWindow>
-          <choices />
-          <waitType>Seconds</waitType>
-          <waitDuration>0</waitDuration>
-          <variableScope>Global</variableScope>
-          <variableType>Boolean</variableType>
-          <variableId>0</variableId>
-          <variableScrollPosition>
-            <x>0</x>
-            <y>0</y>
-          </variableScrollPosition>
-          <variableSetEquation>Equals</variableSetEquation>
-          <variableGetEquation>Equals</variableGetEquation>
-        </DialogueEditorPhaseObject>
-        <DialogueEditorPhaseObject>
-          <id>1</id>
-          <type>TextPhase</type>
-          <theme />
-          <position>
-            <x>233</x>
-            <y>80</y>
-          </position>
-          <outs>
-            <int>0</int>
-          </outs>
-          <advanced>true</advanced>
-          <metadata />
-          <text>Over here, noob!</text>
-          <name>May Taylor</name>
-          <portrait />
-          <audio />
           <audioDelay>0</audioDelay>
           <rect>
             <x>0</x>
@@ -16839,5 +16793,5 @@
     <x>0</x>
     <y>744</y>
   </selectorScrollPosition>
-  <currentDialogueId>13</currentDialogueId>
+  <currentDialogueId>63</currentDialogueId>
 </DialogueEditorMasterObject>
