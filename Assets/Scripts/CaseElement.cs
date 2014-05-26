@@ -24,7 +24,7 @@ public abstract class CaseElement : MonoBehaviour {
 	protected void Init(){
 
 		player = (playerScript) FindObjectOfType(typeof(playerScript));
-		profileImage = gameObject.GetComponent<SpriteRenderer> ().sprite;
+		//profileImage = gameObject.GetComponent<SpriteRenderer> ().sprite;
 		pDist = gameObject.GetComponent<distanceCheck>();
 		if (maxDist < GameManager.Instance.maxDist)
 			maxDist = GameManager.Instance.maxDist;

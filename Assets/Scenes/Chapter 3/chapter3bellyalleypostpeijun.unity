@@ -5492,8 +5492,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter3bellymarketpostpeijun
-  x: -8.72952461
-  y: -5.3029108
+  x: -.689999998
+  y: -3.49000001
   mouseOverIcon: Door_Icon
 --- !u!60 &750283170
 PolygonCollider2D:
@@ -5718,8 +5718,8 @@ MonoBehaviour:
   waitThisLong: -1
   whatCharacter: May
   nextLevel: chapter3bellymarketpostpeijun
-  isTherePlayer: 0
-  spawnHereAfter: {x: 1.55027294, y: -3.39677405}
+  isTherePlayer: 1
+  spawnHereAfter: {x: .600000024, y: -3.70000005}
   loadNewXML: 0
   dialoguer: chapter3
   needGUI: 0
@@ -5776,8 +5776,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter3cutscene
-  x: 0
-  y: 0
+  x: -8.69999981
+  y: -5.30000019
   mouseOverIcon: Door_Icon
   getTheseToProceed: []
   getTheseGlobalBools: 000000000200000003000000
@@ -5933,6 +5933,14 @@ Prefab:
       propertyPath: dontGotIt
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: x
+      value: -8.69999981
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: y
+      value: -5.30000019
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
   m_RootGameObject: {fileID: 1092467914}
@@ -5987,11 +5995,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: x
-      value: -8.72952461
+      value: -.689999998
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: y
-      value: -5.3029108
+      value: -3.49000001
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: id

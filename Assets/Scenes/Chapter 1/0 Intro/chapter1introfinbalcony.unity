@@ -117,6 +117,18 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: bdff53c4a333548ccb639481bcbb3e0b, type: 2}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: bdff53c4a333548ccb639481bcbb3e0b, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 2514339253
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: bdff53c4a333548ccb639481bcbb3e0b, type: 2}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bdff53c4a333548ccb639481bcbb3e0b, type: 2}
   m_RootGameObject: {fileID: 130707987}
@@ -260,9 +272,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 3
-  m_SortingOrder: 1
-  m_SortingLayerID: 1982072587
+  m_SortingLayer: 4
+  m_SortingOrder: 10
+  m_SortingLayerID: 2514339253
   m_Sprite: {fileID: 21300000, guid: 5343b476f1a9e254c83980c529608361, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &130707989
@@ -569,6 +581,7 @@ GameObject:
   - 114: {fileID: 674490212}
   - 114: {fileID: 674490211}
   - 95: {fileID: 674490210}
+  - 114: {fileID: 674490217}
   m_Layer: 10
   m_Name: CarlosFranco
   m_TagString: Untagged
@@ -692,6 +705,18 @@ Transform:
   m_LocalScale: {x: .635606408, y: .635606587, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &674490217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 9cd4a299eda5848e98323344f2b5c521,
+    type: 2}
+  m_PrefabInternal: {fileID: 194275551}
+  m_GameObject: {fileID: 674490209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ae4b32f68af1b4e977f56ed01a1f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &939621633
 GameObject:
   m_ObjectHideFlags: 0
