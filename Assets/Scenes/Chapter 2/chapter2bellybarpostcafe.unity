@@ -203,8 +203,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter2bellybrainroomcutscene
-  x: 0
-  y: 0
+  x: 7.46488094
+  y: -1.99707603
   mouseOverIcon: Door_Icon
   getTheseToProceed: []
   getTheseGlobalBools: 06000000
