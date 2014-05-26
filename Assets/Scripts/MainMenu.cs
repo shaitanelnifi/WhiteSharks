@@ -3,46 +3,102 @@ using System.Collections;
 
 public class MainMenu : MonoBehaviour {
 
+	// Main Menu
 	public GameObject start;
+	public GameObject credits;
 	public GameObject options;
-	public GameObject quit;
+	
+	// Options Menu
+	public GameObject options_goBack;
+
+	// Credits
+	public GameObject creditsLabel;
+	public GameObject credits_goBack;
+
+	public Camera cam;
+	public float smooth;
+
 	private string _wo;
 	private bool test_Mode = false;
 	private string sceneName;
 
+	private Vector3 camPosition;
+	private Vector3 creditsStart;
+	private Vector3 creditsPos;
+	private bool isCredits = false;
 
 	// Use this for initialization
 	public MainMenu(string name){
 		test_Mode = true;
 		sceneName = name;
 	}
+
+	void Awake() {
+		camPosition = cam.transform.localPosition;
+		creditsStart = new Vector3 (-4205f, -1959f, camPosition.z);
+		creditsPos = new Vector3(-4320f, 5000f, camPosition.z);
+		smooth = 4.0f;
+	}
+
 	void Start () {
 		UIEventListener.Get (start).onClick += this.onClick;
+		UIEventListener.Get (credits).onClick += this.onClick;
 		UIEventListener.Get (options).onClick += this.onClick;
-		UIEventListener.Get (quit).onClick += this.onClick;
+		UIEventListener.Get (options_goBack).onClick += this.onClick;
+		UIEventListener.Get (credits_goBack).onClick += this.onClick;
 		SoundManager.Instance.Play2DMusic((AudioClip)Resources.Load("Sounds/Music/MainMenu"));
-	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+		// Reset credits after they're mostly out of frame
+		if (cam.transform.localPosition.x > -50f && !isCredits)
+		{
+			creditsLabel.transform.localPosition = creditsStart;
+		}
 
-
-
-	void onClick(GameObject button){
-		if (button == start) {
-			Debug.Log ("START");	
+		// Start game
+		if (cam.transform.localPosition.y > 2449f)
+		{
 			startGame();
 		}
-		if (button == options) {
-			Debug.Log ("OPTIONS");		
-			optionsMenu();
+
+		if (cam.transform.localPosition.x < -4319f && isCredits)
+		{
+			creditsLabel.transform.localPosition = Vector3.Lerp(creditsLabel.transform.localPosition, creditsPos, Time.deltaTime / 50f);
 		}
-		if (button == quit) {
-			Debug.Log ("QUIT");		
-			quitGame();
+		else
+		{
+			ChangeScreen ();
+		}
+	}
+
+	void ChangeScreen()
+	{
+		cam.transform.localPosition = Vector3.Lerp (cam.transform.localPosition, camPosition, Time.deltaTime * smooth);
+	}
+	
+	void onClick(GameObject button){
+		if (button == start) {
+			camPosition = new Vector3(camPosition.x, 2450f, camPosition.z);
+		}
+
+		if (button == credits) {
+			camPosition = new Vector3(-4320f, camPosition.y, camPosition.z);
+			isCredits = true;
+		}
+
+		if (button == options) {
+			camPosition = new Vector3(4320f, camPosition.y, camPosition.z);
+		}
+
+		if (button == options_goBack) {
+			camPosition = new Vector3 (0f, camPosition.y, camPosition.z);
+		}
+
+		if (button == credits_goBack) {;
+			camPosition = new Vector3 (0f, camPosition.y, camPosition.z);
+			isCredits = false;
 		}
 	}
 
@@ -64,16 +120,5 @@ public class MainMenu : MonoBehaviour {
 			break;
 		}
 
-	}
-	
-	private void optionsMenu() {
-		print ("Entering Options menu");
-	}
-	
-	private void quitGame() {
-		print ("Quitting game");
-		
-		DontDestroyOnLoad(GameManager.Instance);
-		GameManager.Instance.quitGame();  
 	}
 }
