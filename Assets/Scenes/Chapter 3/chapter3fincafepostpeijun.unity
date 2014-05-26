@@ -575,8 +575,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 7.17743492, y: 2.52223063}
-  m_Center: {x: -.0875921473, y: -.0625699908}
+  m_Size: {x: 5.07688332, y: 3.31454062}
+  m_Center: {x: .00453737238, y: -.0165049452}
 --- !u!114 &342701596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,7 +612,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 4df6e5d2503ff4e10b2007b87b3c2a2a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86e93ada56b53024d8612deb77b00729, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &342701598
 Transform:
@@ -962,10 +962,10 @@ MonoBehaviour:
   dialogue: 
   setOffset: 0
   player: {fileID: 0}
-  maxY: 2
-  minY: 1
-  minScale: 1
-  maxScale: 1
+  maxY: -1.35435796
+  minY: -3.95000005
+  minScale: .469999999
+  maxScale: .74000001
   baseSpeed: 1
   placeTop: 0
 --- !u!4 &1365040143
