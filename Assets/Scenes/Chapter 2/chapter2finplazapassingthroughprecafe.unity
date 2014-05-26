@@ -132,6 +132,7 @@ GameObject:
   - 61: {fileID: 75125467}
   - 114: {fileID: 75125466}
   - 114: {fileID: 75125465}
+  - 114: {fileID: 75125471}
   m_Layer: 10
   m_Name: MayNPC
   m_TagString: Untagged
@@ -241,6 +242,18 @@ Transform:
   m_LocalScale: {x: .25, y: .25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &75125471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 0cd273a218ec6e0439c117e44dfa0e95,
+    type: 2}
+  m_PrefabInternal: {fileID: 2116574870}
+  m_GameObject: {fileID: 75125464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ae4b32f68af1b4e977f56ed01a1f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &158288507
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,11 +497,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: x
-      value: -8.72952461
+      value: .733239889
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: y
-      value: -5.3029108
+      value: -.973757923
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: id
@@ -2132,8 +2145,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter2fincafepreclue
-  x: -8.72952461
-  y: -5.3029108
+  x: .733239889
+  y: -.973757923
   mouseOverIcon: Door_Icon
 --- !u!50 &1967308394
 Rigidbody2D:

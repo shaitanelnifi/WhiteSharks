@@ -1419,8 +1419,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter3fincafebeforepeijun
-  x: -8.72952461
-  y: -5.3029108
+  x: .733239889
+  y: -.973757923
   mouseOverIcon: Door_Icon
 --- !u!60 &538454942
 PolygonCollider2D:
@@ -1555,11 +1555,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: x
-      value: -8.72952461
+      value: .733239889
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: y
-      value: -5.3029108
+      value: -.973757923
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: id
@@ -1688,6 +1688,7 @@ GameObject:
   - 114: {fileID: 872398297}
   - 114: {fileID: 872398296}
   - 95: {fileID: 872398295}
+  - 114: {fileID: 872398302}
   - 95: {fileID: 872398294}
   m_Layer: 10
   m_Name: LiamOShea
@@ -1824,6 +1825,18 @@ Transform:
   m_LocalScale: {x: .300000012, y: .300000012, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &872398302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: dd72aa61d2de34ba4b04c27282d212d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1125965030}
+  m_GameObject: {fileID: 872398293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ae4b32f68af1b4e977f56ed01a1f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &891523688
 Prefab:
   m_ObjectHideFlags: 0
