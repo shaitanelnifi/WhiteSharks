@@ -954,7 +954,7 @@ MonoBehaviour:
     absolute: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
-  mWidth: 230
+  mWidth: 228
   mHeight: 64
   mDepth: 1
   autoResizeBoxCollider: 0
@@ -1289,7 +1289,7 @@ MonoBehaviour:
     absolute: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
-  mWidth: 230
+  mWidth: 228
   mHeight: 64
   mDepth: 1
   autoResizeBoxCollider: 0
@@ -1628,7 +1628,7 @@ MonoBehaviour:
     absolute: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 2518
+  mWidth: 2520
   mHeight: 256
   mDepth: 6
   autoResizeBoxCollider: 0
@@ -1716,7 +1716,7 @@ MonoBehaviour:
     absolute: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 612
+  mWidth: 614
   mHeight: 96
   mDepth: 2
   autoResizeBoxCollider: 0
@@ -1960,7 +1960,7 @@ MonoBehaviour:
     absolute: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
-  mWidth: 230
+  mWidth: 228
   mHeight: 64
   mDepth: 1
   autoResizeBoxCollider: 0
@@ -2841,7 +2841,7 @@ MonoBehaviour:
     absolute: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 1260
+  mWidth: 1248
   mHeight: 3968
   mDepth: 4
   autoResizeBoxCollider: 0

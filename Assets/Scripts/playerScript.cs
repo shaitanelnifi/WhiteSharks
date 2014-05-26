@@ -31,7 +31,7 @@ public class playerScript : CaseElement {
 	public bool talking =false;
 
 	//path finding variables
-	float nodeTriggerDistace = 0.5f;
+	float nodeTriggerDistace = 0.4f;
 	int currentWayPoint;
 	Seeker seeker;
 	Path path;
