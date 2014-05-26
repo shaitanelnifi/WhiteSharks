@@ -347,8 +347,8 @@ MonoBehaviour:
   waitThisLong: 4
   whatCharacter: May
   nextLevel: chapter3finofficelobby
-  isTherePlayer: 0
-  spawnHereAfter: {x: 0, y: -4.47189522}
+  isTherePlayer: 1
+  spawnHereAfter: {x: 99, y: 99}
   loadNewXML: 1
   dialoguer: chapter3
   needGUI: 0
