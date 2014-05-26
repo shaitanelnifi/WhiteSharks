@@ -5384,8 +5384,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter4bellybrainroom
-  x: 0
-  y: 0
+  x: 7.46488094
+  y: -1.99707603
   mouseOverIcon: Door_Icon
   getTheseToProceed: []
   getTheseGlobalBools: 00000000
@@ -6180,6 +6180,14 @@ Prefab:
       propertyPath: id
       value: chapter4bellybrainroom
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: y
+      value: -1.99707603
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: x
+      value: 7.46488094
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6000000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
@@ -6291,7 +6299,7 @@ GameObject:
   - 61: {fileID: 1771113102}
   - 114: {fileID: 1771113101}
   - 114: {fileID: 1771113100}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: BartenderBot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

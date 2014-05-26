@@ -588,8 +588,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter4bellybar
-  x: 1.62485898
-  y: -3.1073451
+  x: 2.33515501
+  y: -5.07082701
   mouseOverIcon: 
   playDoorSound: 1
   wall: 0

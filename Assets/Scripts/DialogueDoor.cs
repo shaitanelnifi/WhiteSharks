@@ -15,7 +15,6 @@ public class DialogueDoor : DoorScript {
 	public string whatCharacter;
 	public string nextLevel;
 	public bool isTherePlayer = false;
-	public Vector2 spawnHereAfter;
 
 	void Start() {
 
@@ -68,8 +67,8 @@ public class DialogueDoor : DoorScript {
 
 			//Debug.Log ("Setting nexts to " + spawnHereAfter.x + " and " + spawnHereAfter.y);
 			GameManager.Instance.SetMainCharacter(whatCharacter);
-			GameManager.Instance.SetNextX(spawnHereAfter.x);
-			GameManager.Instance.SetNextY(spawnHereAfter.y);
+			GameManager.Instance.SetNextX(x);
+			GameManager.Instance.SetNextY(y);
 		}
 		GameManager.dialogueJustFinished = false;
 		SoundManager.Instance.CantWalk();
