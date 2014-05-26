@@ -43,10 +43,12 @@ public class ClickOff : MonoBehaviour {
 	
 	void Update()
 	{
-
+		Debug.LogWarning ("Just Finished: " + GameManager.dialogueJustFinished);
 		if (GameManager.dialogueJustFinished) {
 			started = true;
-		} else if (started) {
+			GameManager.dialogueJustFinished = false;
+		} 
+		if (started) {
 
 			if (progress <= 0f){
 				failure = true;

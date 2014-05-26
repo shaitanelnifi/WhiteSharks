@@ -231,7 +231,8 @@ MonoBehaviour:
   progressBarFounder: {fileID: 2800000, guid: f089926a265d92b4e961cdc87fdcf456, type: 3}
   waitThisLong: 2
   nextScene: chapter4networkbrainroomrip
-  failConversation: -1
+  failConversation: 15
+  started: 0
 --- !u!1 &1313870441
 GameObject:
   m_ObjectHideFlags: 0
