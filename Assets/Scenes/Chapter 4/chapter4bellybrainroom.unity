@@ -194,7 +194,7 @@ MonoBehaviour:
   diaNum: 10
   offset: 0
   whatCharacter: May
-  nextLevel: chapter4bellybrainroomshowdown
+  nextLevel: chapter4networkbrainroom
   isTherePlayer: 1
   spawnHereAfter: {x: 0, y: 0}
 --- !u!114 &769384173
@@ -294,7 +294,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: b56336a7933425e45b6f557fab344cdb, type: 2}
       propertyPath: nextLevel
-      value: chapter4bellybrainroomshowdown
+      value: chapter4networkbrainroom
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: b56336a7933425e45b6f557fab344cdb, type: 2}
       propertyPath: whatCharacter
