@@ -16,14 +16,14 @@ public class ClickOff : MonoBehaviour {
 
 	private bool success = false;
 	private bool playingConv = false;
-	private bool started = false;
+	public bool started = false;
 	private bool failure = false;
 
 	void Start(){
 
+		Destroy (FindObjectOfType (typeof(playerScript)) as GameObject);
+		GameManager.dialogueJustFinished = false;
 		pos.x = Screen.width / 2 - progressBarMay.width / 2;
-		if (failConversation == Convo.ch0none)
-			started = true;
 	}
 	
 	void OnGUI()
@@ -44,7 +44,9 @@ public class ClickOff : MonoBehaviour {
 	void Update()
 	{
 
-		if (started) {
+		if (GameManager.dialogueJustFinished) {
+			started = true;
+		} else if (started) {
 
 			if (progress <= 0f){
 				failure = true;
@@ -57,8 +59,6 @@ public class ClickOff : MonoBehaviour {
 			} else if (progress >= progressNeeded && !success){
 					success = true;
 			}
-		} else if (GameManager.dialogueJustFinished) {
-			started = true;
 		}
 
 		if (success && !playingConv) {
