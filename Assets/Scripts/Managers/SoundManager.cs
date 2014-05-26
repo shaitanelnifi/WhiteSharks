@@ -21,7 +21,7 @@ public class SoundManager : MonoBehaviour {
 	public bool isWalking = false;
 
 	//change this number to modulate how many increments sound can be broken into. aka if you want a 100pt slider, make this 100
-	private int soundChangeIncrementNumber = 4;
+	private int soundChangeIncrementNumber = 100;
 
 	private float soundPercentageChange;
 

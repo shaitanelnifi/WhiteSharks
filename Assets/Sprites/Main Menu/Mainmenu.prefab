@@ -42,7 +42,7 @@ MonoBehaviour:
   mSprites:
   - name: arrow
     x: 3074
-    y: 3241
+    y: 3073
     width: 255
     height: 185
     borderLeft: 0
@@ -107,6 +107,19 @@ MonoBehaviour:
     paddingBottom: 0
   - name: credits_button
     x: 3074
+    y: 3611
+    width: 573
+    height: 167
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: genericbutton
+    x: 3074
     y: 3779
     width: 573
     height: 167
@@ -133,7 +146,7 @@ MonoBehaviour:
     paddingBottom: 1
   - name: options_button
     x: 3074
-    y: 3611
+    y: 3443
     width: 573
     height: 167
     borderLeft: 0
@@ -159,7 +172,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: slider_empty
     x: 3074
-    y: 3427
+    y: 3351
     width: 999
     height: 91
     borderLeft: 0
@@ -172,7 +185,7 @@ MonoBehaviour:
     paddingBottom: 5
   - name: slider_full
     x: 3074
-    y: 3519
+    y: 3259
     width: 999
     height: 91
     borderLeft: 0
