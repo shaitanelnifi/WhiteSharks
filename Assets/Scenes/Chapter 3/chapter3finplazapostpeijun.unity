@@ -107,8 +107,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter3fincafepostpeijun
-  x: -8.72952461
-  y: -5.3029108
+  x: .733239889
+  y: -.973757923
   mouseOverIcon: Door_Icon
 --- !u!60 &5948216
 PolygonCollider2D:
@@ -6305,6 +6305,7 @@ GameObject:
   - 114: {fileID: 731007476}
   - 114: {fileID: 731007475}
   - 95: {fileID: 731007474}
+  - 114: {fileID: 731007481}
   - 95: {fileID: 731007473}
   m_Layer: 10
   m_Name: LiamOShea
@@ -6441,6 +6442,18 @@ Transform:
   m_LocalScale: {x: .300000012, y: .300000012, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &731007481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: dd72aa61d2de34ba4b04c27282d212d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 2053348931}
+  m_GameObject: {fileID: 731007472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ae4b32f68af1b4e977f56ed01a1f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1085850462
 GameObject:
   m_ObjectHideFlags: 0
@@ -7480,11 +7493,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: x
-      value: -8.72952461
+      value: .733239889
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: y
-      value: -5.3029108
+      value: -.973757923
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: id
