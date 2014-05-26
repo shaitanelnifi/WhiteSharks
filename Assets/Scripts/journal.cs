@@ -30,11 +30,15 @@ public class journal : MonoBehaviour {
 	public GameObject viewTab2;
 	public GameObject poiObjectView;
 	public GameObject journalButton;
+	public GameObject notificationPanel;
+	public float notificationTime;
 	private bool inMenu;
+	private bool isNotifying;
 	
 	private List<GameObject> viewTabList;
 	private List<GameObject> poiButtonList;
 	private static List<GameObject> objectButtonList;
+	private Queue<GameObject> notificationQ;
 	
 	public GameObject poiButtonGrid;
 	public GameObject objectButtonGrid;
@@ -42,11 +46,10 @@ public class journal : MonoBehaviour {
 	public UI2DSprite poiPortrait;
 
 	private GameObject mainCam;
-	private int ignoreRaycastLayer;
-	private int guiLayer;
 	public LayerMask cullingMask;
 	
-	public UILabel descriptionLabel, panelNameLabel, timeLabel;
+	public UILabel descriptionLabel, panelNameLabel, pcName;
+	private GameObject pc;
 	
 	public static Inventory inventory = new Inventory();
 	
@@ -63,10 +66,6 @@ public class journal : MonoBehaviour {
 	
 	void OnLevelWasLoaded(int level){
 		//Sets camera culling to ignore this object's layer.
-		/*ignoreRaycastLayer = 4; //bit 4
-		guiLayer = 10;  //bit 10
-		cullingMask = ~((1 << ignoreRaycastLayer) | (1 << guiLayer));
-		mainCam.camera.cullingMask = cullingMask;*/
 		mainCam = GameObject.Find ("Main Camera");
 		mainCam.camera.cullingMask = cullingMask;
 
@@ -109,10 +108,14 @@ public class journal : MonoBehaviour {
 		
 		poiButtonList = new List<GameObject>();
 		objectButtonList = new List<GameObject>();
+		notificationQ = new Queue<GameObject>();
+		isNotifying = false;
 		initPoIView();
 		changeView(0);
 		changePOI (0);
-		StartCoroutine (UpdateTime ());
+
+		string[] pcNameSplit = GameObject.FindGameObjectWithTag("Player").name.Split('(');
+		pcName.text = pcNameSplit[0];
 	}
 	
 	//Single onclick function for any button in the journal.
@@ -219,46 +222,48 @@ public class journal : MonoBehaviour {
 		}
 	}
 	
-	//Initialize obj view.
-	//Not being used for scroll view.
-	/*	public void initObjView(){
-		//Add buttons to obj button list and put them in UI event listener.
-		foreach (Transform child in objectButtonGrid.transform){
-			UIEventListener.Get(child.gameObject).onClick += this.onClick;
-			objectButtonList.Add(child.gameObject);
-		}
-		//Put suspect names on poi button labels.
-		for (int i = 0; i < inventory.Count; i++) {
-			if( inventory.getName(i) != ""){
-				objectButtonList[i].gameObject.GetComponentInChildren<UILabel>().text = inventory.getName(i);
-			}
-			else {
-				objectButtonList[i].gameObject.GetComponentInChildren<UILabel>().text = emptyName;
-			}
-		}
-	}*/
-	
 	public void addObject(CaseObject newObject){
 		changeView (1);
-		inventory.Add (newObject);
 		GameObject tempButton = (GameObject)Instantiate (buttonPrefab, objectButtonGrid.transform.position, objectButtonGrid.transform.rotation);
+		objectButtonList.Add (tempButton);
+		notificationQ.Enqueue(objectButtonList[objectButtonList.Count - 1]);
 		tempButton.transform.parent = objectButtonGrid.transform;
 		tempButton.transform.GetComponentInChildren<UILabel>().text = inventory.getName (inventory.Count - 1);
 		tempButton.transform.localScale = new Vector3(1,1,1);
 		UIEventListener.Get (tempButton).onClick += this.onClick;
-		objectButtonList.Add (tempButton);
 		objectButtonGrid.GetComponent<UIGrid>().Reposition();
+
+		if(!isNotifying){
+			isNotifying = true;
+			StartCoroutine(showNotifications());
+		}
 	}
-	
-	public void addObject(objectContainer newObject){
-		changeView (1);
-		GameObject tempButton = (GameObject)Instantiate (buttonPrefab, objectButtonGrid.transform.position, objectButtonGrid.transform.rotation);
-		tempButton.transform.parent = objectButtonGrid.transform;
-		tempButton.transform.GetComponentInChildren<UILabel>().text = inventory.getName (inventory.Count - 1);
-		tempButton.transform.localScale = new Vector3(1,1,1);
-		UIEventListener.Get (tempButton).onClick += this.onClick;
-		objectButtonList.Add (tempButton);
-		objectButtonGrid.GetComponent<UIGrid>().Reposition();
+
+	IEnumerator showNotifications(){
+		notificationPanel.GetComponent<TweenPosition>().Play();
+		setNotifications(notificationQ.Dequeue ());
+		yield return new WaitForSeconds(notificationTime);
+		notificationPanel.GetComponent<TweenPosition>().PlayReverse();
+		StartCoroutine(waitForPanelTween());
+	}
+
+	//Similar to changeObject. Should merge.
+	void setNotifications(GameObject button){
+		if(objectButtonList.Contains(button)){
+			notificationPanel.GetComponentInChildren<UILabel>().text = inventory.getName(objectButtonList.IndexOf(button)) + " was added to the journal.";
+			notificationPanel.GetComponentInChildren<UI2DSprite>().sprite2D = inventory.getIcon(objectButtonList.IndexOf(button));
+		}
+		//Might have to add else to show npcs that are added.
+	}
+
+	IEnumerator waitForPanelTween(){
+		yield return new WaitForSeconds(1.0f);
+		if(notificationQ.Count != 0){
+			StartCoroutine(showNotifications());
+		}
+		else {
+			isNotifying = false;
+		}
 	}
 	
 	//Clear description labels. Might rename and add obj/poi grid on/off.
@@ -266,9 +271,23 @@ public class journal : MonoBehaviour {
 		panelNameLabel.text = "";
 		descriptionLabel.text = "";
 	}
+
+	//Method for setting PC's name on label.
+	public void getPCName(){
+		string[] pcNameSplit = GameObject.FindGameObjectWithTag("Player").name.Split('(');
+		pcName.text = pcNameSplit[0];
+	}
+
+	void testNotificationQ(){
+		for(int i = 0; i < 3; i++){
+			GameObject newCaseObject = (GameObject)Resources.Load ("chapter1objects/brokenBracelet", typeof(GameObject));
+			notificationQ.Enqueue(newCaseObject);
+		}
+		StartCoroutine(showNotifications());
+	}
 	
 	//Keeps time.
-	IEnumerator UpdateTime(){
+/*	IEnumerator UpdateTime(){
 		while (true) {
 			DateTime currentTime = System.DateTime.Now;
 			//timeLabel.text = currentTime.ToString("HH:mm");
@@ -276,7 +295,7 @@ public class journal : MonoBehaviour {
 			timeLabel.text = "";
 			yield return new WaitForSeconds(0.2f);
 		}
-	}
+	}*/
 	
 	
 	public bool isItemInInventory(GameObject item){
