@@ -84,6 +84,7 @@ public class playerScript : CaseElement {
 	}
 
 	public static void turnOffSmoothMod(){
+
 		GameObject playerObj;
 		//do{
 			playerObj = GameObject.FindWithTag ("Player");
