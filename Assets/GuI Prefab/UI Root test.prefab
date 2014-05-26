@@ -1463,6 +1463,9 @@ MonoBehaviour:
   objectButtonGrid: {fileID: 100048}
   buttonPrefab: {fileID: 100000, guid: 64d4793b759e75249921ded8eb8fde6a, type: 2}
   poiPortrait: {fileID: 11400134}
+  cullingMask:
+    serializedVersion: 2
+    m_Bits: 0
   descriptionLabel: {fileID: 11400032}
   panelNameLabel: {fileID: 11400136}
   timeLabel: {fileID: 11400028}
@@ -3575,8 +3578,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   start: {fileID: 100096}
+  credits: {fileID: 0}
   options: {fileID: 100092}
-  quit: {fileID: 100106}
+  options_goBack: {fileID: 0}
+  creditsLabel: {fileID: 0}
+  credits_goBack: {fileID: 0}
+  cam: {fileID: 0}
+  smooth: 0
 --- !u!114 &11400162
 MonoBehaviour:
   m_ObjectHideFlags: 1
