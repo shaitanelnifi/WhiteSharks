@@ -5776,8 +5776,11 @@ MonoBehaviour:
   x: -8.69999981
   y: -5.30000019
   mouseOverIcon: Door_Icon
-  getTheseToProceed: []
-  getTheseGlobalBools: 000000000200000003000000
+  getTheseToProceed:
+  - {fileID: 100000, guid: d9492c609ceb3724c867cd7e195f8e3e, type: 2}
+  - {fileID: 100000, guid: bd2cf820f4447a84789de2500eda94f9, type: 2}
+  - {fileID: 100000, guid: 84d7dde759ae26645a48966a3f59790e, type: 2}
+  getTheseGlobalBools: 
   dontGotIt: 19
 --- !u!60 &1092467916
 PolygonCollider2D:
@@ -5871,8 +5874,12 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
-      propertyPath: getTheseGlobalBools.Array.size
+      propertyPath: getTheseToProceed.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: getTheseGlobalBools.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
       propertyPath: m_LocalPosition.x
@@ -5938,6 +5945,18 @@ Prefab:
       propertyPath: y
       value: -5.30000019
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: getTheseToProceed.Array.data[0]
+      value: 
+      objectReference: {fileID: 100000, guid: d9492c609ceb3724c867cd7e195f8e3e, type: 2}
+    - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: getTheseToProceed.Array.data[1]
+      value: 
+      objectReference: {fileID: 100000, guid: bd2cf820f4447a84789de2500eda94f9, type: 2}
+    - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: getTheseToProceed.Array.data[2]
+      value: 
+      objectReference: {fileID: 100000, guid: 84d7dde759ae26645a48966a3f59790e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
   m_RootGameObject: {fileID: 1092467914}

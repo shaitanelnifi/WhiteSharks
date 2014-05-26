@@ -23,14 +23,15 @@ public class ConditionDoor : DoorScript {
 
 	//rename this 
 	public bool gotThem(){
-		
+
+		bool yay = true;
 		//Check the journal inventory for these things
 		for (int i = 0; i < getTheseToProceed.Length; i++) {
 			
 			GameObject current = getTheseToProceed[i];
 			
 			if (!journal.Instance.isItemInInventory(current))
-				return false;
+				yay = false;
 		}
 		
 		for (int i = 0; i < getTheseGlobalBools.Length; i++) {
@@ -38,11 +39,11 @@ public class ConditionDoor : DoorScript {
 			bool current = Dialoguer.GetGlobalBoolean(getTheseGlobalBools[i]);
 			
 			if (!current)
-				return false;
+				yay = false;
 			
 		}
 		
-		return true;
+		return yay;
 		
 	}
 
