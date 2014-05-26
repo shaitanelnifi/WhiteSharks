@@ -350,9 +350,9 @@ MonoBehaviour:
   isTherePlayer: 0
   spawnHereAfter: {x: 2.945086, y: -2.47189498}
   loadNewXML: 1
-  dialoguer: chapter3
+  dialoguer: chapter4
   needGUI: 0
-  dialogue: ffffffff
+  dialogue: 
   setOffset: 0
   player: {fileID: 0}
   maxY: 2

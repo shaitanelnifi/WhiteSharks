@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: chapter3finbalconypostpeijun
+  id: chapter3finbalconeypostpeijun
   x: 6.0999999
   y: .100000001
   mouseOverIcon: Door_Icon

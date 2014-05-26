@@ -5557,7 +5557,7 @@ MonoBehaviour:
   waitThisLong: 1
   whatCharacter: May
   nextLevel: chapter3bellyalleypostpeijun
-  isTherePlayer: 0
+  isTherePlayer: 1
   spawnHereAfter: {x: 4.80501986, y: -2.5267911}
   loadNewXML: 0
   dialoguer: chapter3
