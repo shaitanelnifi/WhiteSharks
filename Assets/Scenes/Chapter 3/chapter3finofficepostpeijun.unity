@@ -1090,10 +1090,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1863201770}
   - 212: {fileID: 1863201769}
-  - 114: {fileID: 1863201768}
   - 61: {fileID: 1863201767}
   - 114: {fileID: 1863201766}
   - 114: {fileID: 1863201765}
+  - 114: {fileID: 1863201771}
   m_Layer: 0
   m_Name: HPCDesk
   m_TagString: Untagged
@@ -1140,20 +1140,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 2.31272769, y: 3.95302773}
   m_Center: {x: -.135288373, y: .0805078968}
---- !u!114 &1863201768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1863201764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  diaNum: 15
-  offset: 0
-  wall: 0
 --- !u!212 &1863201769
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1188,6 +1174,30 @@ Transform:
   m_LocalScale: {x: 2.03059363, y: .233639255, z: .973497033}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1863201771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1863201764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8176f69eb181690498446187bf0de721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementName: High Performance Computer
+  description: This High Performance Computer will prove useful later on.  It has
+    1 yottabyte of RAM, what a powerhouse!
+  profileImage: {fileID: 21300000, guid: 86da638bb4a12dd4c96d5b8656206432, type: 3}
+  visible: 0
+  clickedOnSomething: 0
+  maxDist: 1
+  myConvo: 15
+  pickUpConvo: 20
+  conditions: 
+  associatedObjects: []
+  mouseOverIcon: Grab_Icon
+  autoPickupPostConvo: 1
 --- !u!1 &1864717039
 GameObject:
   m_ObjectHideFlags: 0

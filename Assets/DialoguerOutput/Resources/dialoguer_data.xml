@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <DialogueEditorMasterObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <dialogues>
     <DialogueEditorDialogueObject>
@@ -603,7 +603,7 @@
             <y>461</y>
           </position>
           <outs>
-            <int>8</int>
+            <int>7</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -644,59 +644,12 @@
           <id>7</id>
           <type>EndPhase</type>
           <position>
-            <x>1554</x>
-            <y>512</y>
+            <x>1193</x>
+            <y>474</y>
           </position>
           <outs />
           <advanced>false</advanced>
           <text />
-          <audioDelay>0</audioDelay>
-          <rect>
-            <x>0</x>
-            <y>0</y>
-            <center>
-              <x>0</x>
-              <y>0</y>
-            </center>
-            <width>0</width>
-            <height>0</height>
-            <xMin>0</xMin>
-            <yMin>0</yMin>
-            <xMax>0</xMax>
-            <yMax>0</yMax>
-          </rect>
-          <newWindow>false</newWindow>
-          <choices />
-          <waitType>Seconds</waitType>
-          <waitDuration>0</waitDuration>
-          <variableScope>Global</variableScope>
-          <variableType>Boolean</variableType>
-          <variableId>0</variableId>
-          <variableScrollPosition>
-            <x>0</x>
-            <y>0</y>
-          </variableScrollPosition>
-          <variableSetEquation>Equals</variableSetEquation>
-          <variableGetEquation>Equals</variableGetEquation>
-        </DialogueEditorPhaseObject>
-        <DialogueEditorPhaseObject>
-          <id>8</id>
-          <type>TextPhase</type>
-          <theme />
-          <position>
-            <x>1185.00977</x>
-            <y>461.0111</y>
-          </position>
-          <outs>
-            <int>7</int>
-          </outs>
-          <advanced>true</advanced>
-          <metadata />
-          <text>...
-What?</text>
-          <name>May Taylor</name>
-          <portrait />
-          <audio />
           <audioDelay>0</audioDelay>
           <rect>
             <x>0</x>
@@ -1363,7 +1316,7 @@ What?</text>
           <advanced>true</advanced>
           <metadata />
           <text>Due to technical difficulties, the bar is closed. Please come back soon.</text>
-          <name>Bartender</name>
+          <name>BARTENDER-BOT</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1471,7 +1424,7 @@ What?</text>
           <advanced>true</advanced>
           <metadata />
           <text>We have to talk. Come to my room as soon as you can. This is serious.</text>
-          <name>Peijun Shi</name>
+          <name>PeiJun [note]</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1561,8 +1514,8 @@ What?</text>
       <name>PeiJunRoom</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>278.016357</x>
-        <y>436.0266</y>
+        <x>93.9</x>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -1579,7 +1532,7 @@ What?</text>
           <advanced>true</advanced>
           <metadata />
           <text>I'm glad you came. This is serious. I've been receiving messages from the underground channels, and there's something going on. May, ypu have to go back in.</text>
-          <name>Peijun Shi</name>
+          <name>PeiJun Shi</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1671,7 +1624,7 @@ What?</text>
           <advanced>true</advanced>
           <metadata />
           <text>Yes. From what I know, some things can't be handled from the real world and you... well, you're the only one that's capable of doing that.</text>
-          <name>Peijun Shi</name>
+          <name>PeiJun Shi</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1763,7 +1716,7 @@ What?</text>
           <advanced>true</advanced>
           <metadata />
           <text>I can help you with that. I might be old, but my brain is still in it's place. Cooking noodles gets boring, we have to have our hobbies, right?</text>
-          <name>Peijun Shi</name>
+          <name>PeiJun Shi</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1809,7 +1762,7 @@ What?</text>
           <advanced>true</advanced>
           <metadata />
           <text>I have a list of items that I need in order to construct a device that will help you do the dive.</text>
-          <name>Peijun Shi</name>
+          <name>PeiJun Shi</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1900,8 +1853,8 @@ What?</text>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Yes.</text>
-          <name>Peijun Shi</name>
+          <text>Yes</text>
+          <name>PeiJun Shi</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -1992,11 +1945,8 @@ What?</text>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I will need:
-a HIGH PERFORMANCE COMPUTER, 
-a SHARKULUS RIFT 
-and a TERMINAL.</text>
-          <name>Peijun Shi</name>
+          <text>I will need a HIGH PERFORMANCE COMPUTER, a SHARKULUS RIFT and a TERMINAL.</text>
+          <name>PeiJun Shi</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2091,7 +2041,7 @@ and a TERMINAL.</text>
           <advanced>true</advanced>
           <metadata />
           <text />
-          <name>May Taylor</name>
+          <name>May</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2142,7 +2092,7 @@ and a TERMINAL.</text>
           <advanced>true</advanced>
           <metadata />
           <text>Didn't you tell me that you used to play with one of those at the OFFICE?</text>
-          <name>Peijun Shi</name>
+          <name>PeiJun Shi</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2234,7 +2184,7 @@ and a TERMINAL.</text>
           <advanced>true</advanced>
           <metadata />
           <text>I'm sure that you can think of a CAFE where all the retro equipment would be "cool"... or enlightening for the spirit.</text>
-          <name>Peijun Shi</name>
+          <name>PeiJun Shi</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2280,7 +2230,7 @@ and a TERMINAL.</text>
           <advanced>true</advanced>
           <metadata />
           <text>That's why I've been tracking people at the Fin and their schedules.</text>
-          <name>Peijun Shi</name>
+          <name>PeiJun Shi</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2326,7 +2276,7 @@ and a TERMINAL.</text>
           <advanced>true</advanced>
           <metadata />
           <text>Combining factors such as IQ, schedule and perception, I've determined that the best victim is LIAM O'SHEA, a security guard.</text>
-          <name>Peijun Shi</name>
+          <name>PeiJun Shi</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2372,7 +2322,7 @@ and a TERMINAL.</text>
           <advanced>true</advanced>
           <metadata />
           <text>He lives by the balcony at the east of the Fin, room 0. He's on duty all day.</text>
-          <name>Peijun Shi</name>
+          <name>PeiJun Shi</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2418,7 +2368,7 @@ and a TERMINAL.</text>
           <advanced>true</advanced>
           <metadata />
           <text>I've uploaded the files with this information to your notes, so you don't have to come back and interrupt me. I'm busy!</text>
-          <name>Peijun Shi</name>
+          <name>PeiJun Shi</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2934,7 +2884,7 @@ and a TERMINAL.</text>
       <name>RobotBarPostPJ</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>742.0459</x>
+        <x>0</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -2952,7 +2902,7 @@ and a TERMINAL.</text>
           <advanced>true</advanced>
           <metadata />
           <text>Welcome to the Residential Area restaurant and bar.</text>
-          <name>Bartender</name>
+          <name>BARTENDER-BOT</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2998,7 +2948,7 @@ and a TERMINAL.</text>
           <advanced>true</advanced>
           <metadata />
           <text>Because of age limitations, I can only serve you: WATER, COFFEE, TEA, CHOCOLATE.</text>
-          <name>Bartender</name>
+          <name>BARTENDER-BOT</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -3044,7 +2994,7 @@ and a TERMINAL.</text>
           <advanced>true</advanced>
           <metadata />
           <text>Would you like to purchase anything?</text>
-          <name>Bartender</name>
+          <name>BARTENDER-BOT</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -3136,7 +3086,7 @@ and a TERMINAL.</text>
           <advanced>true</advanced>
           <metadata />
           <text>I am sorry, but because of age limitations, I can only serve you: WATER, COFFEE, TEA, CHOCOLATE.</text>
-          <name>Bartender</name>
+          <name>BARTENDER-BOT</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -3182,7 +3132,7 @@ and a TERMINAL.</text>
           <advanced>true</advanced>
           <metadata />
           <text>Would you like to purchase anything?</text>
-          <name>Bartender</name>
+          <name>BARTENDER-BOT</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -3318,7 +3268,7 @@ and a TERMINAL.</text>
       <name>LiamPlazaPostPJ</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>424.024658</x>
+        <x>0</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -3518,8 +3468,8 @@ and a TERMINAL.</text>
       <name>JoshCafePostPJ</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>158.010254</x>
-        <y>324.019775</y>
+        <x>0</x>
+        <y>282</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -3618,8 +3568,8 @@ and a TERMINAL.</text>
           <id>2</id>
           <type>ConditionalPhase</type>
           <position>
-            <x>351</x>
-            <y>460</y>
+            <x>367</x>
+            <y>470</y>
           </position>
           <outs>
             <int>3</int>
@@ -3656,7 +3606,7 @@ and a TERMINAL.</text>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
-          <variableGetEquation>NotEquals</variableGetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
           <variableGetValue>true</variableGetValue>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
@@ -4037,8 +3987,8 @@ and a TERMINAL.</text>
           <id>2</id>
           <type>ConditionalPhase</type>
           <position>
-            <x>10</x>
-            <y>106</y>
+            <x>52</x>
+            <y>105</y>
           </position>
           <outs>
             <int>0</int>
@@ -4075,7 +4025,7 @@ and a TERMINAL.</text>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>false</variableSetValue>
-          <variableGetEquation>NotEquals</variableGetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
           <variableGetValue>true</variableGetValue>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
@@ -4083,8 +4033,8 @@ and a TERMINAL.</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>101</x>
-            <y>488</y>
+            <x>112</x>
+            <y>442</y>
           </position>
           <outs>
             <int>4</int>
@@ -5740,115 +5690,6 @@ and a TERMINAL.</text>
         <selection>0</selection>
       </booleans>
     </DialogueEditorDialogueObject>
-    <DialogueEditorDialogueObject>
-      <id>20</id>
-      <name>MayJournalAdd</name>
-      <startPage>0</startPage>
-      <scrollPosition>
-        <x>0</x>
-        <y>0</y>
-      </scrollPosition>
-      <phases>
-        <DialogueEditorPhaseObject>
-          <id>0</id>
-          <type>TextPhase</type>
-          <theme />
-          <position>
-            <x>102</x>
-            <y>123</y>
-          </position>
-          <outs>
-            <int>1</int>
-          </outs>
-          <advanced>true</advanced>
-          <metadata />
-          <text>I guess I should take notes on that...
-Added to the journal!</text>
-          <name>May Taylor</name>
-          <portrait />
-          <audio />
-          <audioDelay>0</audioDelay>
-          <rect>
-            <x>0</x>
-            <y>0</y>
-            <center>
-              <x>0</x>
-              <y>0</y>
-            </center>
-            <width>0</width>
-            <height>0</height>
-            <xMin>0</xMin>
-            <yMin>0</yMin>
-            <xMax>0</xMax>
-            <yMax>0</yMax>
-          </rect>
-          <newWindow>false</newWindow>
-          <choices />
-          <waitType>Seconds</waitType>
-          <waitDuration>0</waitDuration>
-          <variableScope>Global</variableScope>
-          <variableType>Boolean</variableType>
-          <variableId>0</variableId>
-          <variableScrollPosition>
-            <x>0</x>
-            <y>0</y>
-          </variableScrollPosition>
-          <variableSetEquation>Equals</variableSetEquation>
-          <variableGetEquation>Equals</variableGetEquation>
-        </DialogueEditorPhaseObject>
-        <DialogueEditorPhaseObject>
-          <id>1</id>
-          <type>EndPhase</type>
-          <position>
-            <x>516</x>
-            <y>76</y>
-          </position>
-          <outs />
-          <advanced>false</advanced>
-          <text />
-          <audioDelay>0</audioDelay>
-          <rect>
-            <x>0</x>
-            <y>0</y>
-            <center>
-              <x>0</x>
-              <y>0</y>
-            </center>
-            <width>0</width>
-            <height>0</height>
-            <xMin>0</xMin>
-            <yMin>0</yMin>
-            <xMax>0</xMax>
-            <yMax>0</yMax>
-          </rect>
-          <newWindow>false</newWindow>
-          <choices />
-          <waitType>Seconds</waitType>
-          <waitDuration>0</waitDuration>
-          <variableScope>Global</variableScope>
-          <variableType>Boolean</variableType>
-          <variableId>0</variableId>
-          <variableScrollPosition>
-            <x>0</x>
-            <y>0</y>
-          </variableScrollPosition>
-          <variableSetEquation>Equals</variableSetEquation>
-          <variableGetEquation>Equals</variableGetEquation>
-        </DialogueEditorPhaseObject>
-      </phases>
-      <floats>
-        <variables />
-        <selection>0</selection>
-      </floats>
-      <strings>
-        <variables />
-        <selection>0</selection>
-      </strings>
-      <booleans>
-        <variables />
-        <selection>0</selection>
-      </booleans>
-    </DialogueEditorDialogueObject>
   </dialogues>
   <globals>
     <booleans>
@@ -5874,7 +5715,7 @@ Added to the journal!</text>
           <id>3</id>
         </DialogueEditorVariableObject>
       </variables>
-      <selection>1</selection>
+      <selection>3</selection>
     </booleans>
     <floats>
       <variables />
@@ -5909,5 +5750,5 @@ Added to the journal!</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>12</currentDialogueId>
+  <currentDialogueId>19</currentDialogueId>
 </DialogueEditorMasterObject>
