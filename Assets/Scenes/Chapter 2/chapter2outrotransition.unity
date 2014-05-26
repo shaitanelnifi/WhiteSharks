@@ -235,7 +235,7 @@ MonoBehaviour:
   waitThisLong: 4
   whatCharacter: Jane
   nextLevel: chapter3introtransition
-  isTherePlayer: 1
+  isTherePlayer: 0
   spawnHereAfter: {x: 2.945086, y: -2.47189498}
   loadNewXML: 1
   dialoguer: chapter3
