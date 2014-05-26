@@ -599,7 +599,6 @@ MonoBehaviour:
   whatCharacter: Jane
   nextLevel: chapter4bellybar
   isTherePlayer: 1
-  spawnHereAfter: {x: 0, y: 0}
 --- !u!50 &1758629745
 Rigidbody2D:
   m_ObjectHideFlags: 0
