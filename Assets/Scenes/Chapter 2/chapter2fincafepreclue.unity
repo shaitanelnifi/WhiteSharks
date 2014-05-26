@@ -88,7 +88,7 @@ GameObject:
   - 114: {fileID: 150639329}
   - 114: {fileID: 150639328}
   m_Layer: 10
-  m_Name: May
+  m_Name: MayNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5845,6 +5845,10 @@ Prefab:
       propertyPath: getTheseToProceed.Array.data[0]
       value: 
       objectReference: {fileID: 100000, guid: 4472ac579a526424ea5c6964d85fb6a2, type: 2}
+    - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: y
+      value: .600000024
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
   m_RootGameObject: {fileID: 1880728883}
@@ -6024,9 +6028,10 @@ MonoBehaviour:
   clickedOnSomething: 0
   maxDist: 4
   myConvo: 41
-  offset: 0
+  pickUpConvo: 62
   conditions: 0c000000
-  associatedObjects: []
+  associatedObjects:
+  - {fileID: 11400000, guid: 86789d4e374869e45bb04d2c5c50c064, type: 2}
   mouseOverIcon: Grab_Icon
   autoPickupPostConvo: 1
 --- !u!114 &1551934858
@@ -6121,7 +6126,7 @@ GameObject:
   - 114: {fileID: 1880728884}
   m_Layer: 10
   m_Name: conditionalDoor
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6140,7 +6145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: chapter2finplazapassingthroughpostcafe
   x: 0
-  y: 0
+  y: .600000024
   mouseOverIcon: Door_Icon
   getTheseToProceed:
   - {fileID: 100000, guid: 4472ac579a526424ea5c6964d85fb6a2, type: 2}
