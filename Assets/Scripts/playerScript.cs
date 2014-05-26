@@ -36,6 +36,7 @@ public class playerScript : CaseElement {
 	Seeker seeker;
 	Path path;
 	Vector3 targetPosition;
+	bool startPath = false;
 	public float baseSpeed;
 
 
@@ -116,11 +117,14 @@ public class playerScript : CaseElement {
 					   targetPosition.x = mousePosition.x;
 					   targetPosition.y = mousePosition.y;
 					   SoundManager.Instance.CanWalk();
-					   seeker.StartPath(transform.position, targetPosition, OnPath);
+						startPath = true;
+					   //seeker.StartPath(transform.position, targetPosition, OnPath);
 				   }
 			}
 		}
-
+		if(startPath){
+			seeker.StartPath(transform.position, targetPosition, OnPath);
+		}
 		//if theres no path or already at the last node of path, break
 		if(path == null||currentWayPoint> path.vectorPath.Count){
 			SoundManager.Instance.StopWalk();
@@ -199,6 +203,8 @@ public class playerScript : CaseElement {
 		//Debug.LogWarning ("STOP");
 		setTarget(new Vector2(transform.position.x, transform.position.y));
 		canWalk = false;
+		startPath = false;
+		targetPosition = transform.position;
 		SoundManager.Instance.CantWalk();
 		if (anim != null)
 		anim.SetFloat("distance", 0f);
@@ -225,7 +231,7 @@ public class playerScript : CaseElement {
 		DoorScript doorObj = collider.gameObject.GetComponent<DoorScript> ();
 		ConditionDoor condObj = collider.gameObject.GetComponent<ConditionDoor>();
 		DialogueDoor diaObj = collider.gameObject.GetComponent<DialogueDoor>();
-
+		startPath = false;
 		if (condObj != null) {
 			if (condObj.gotThem()){
 				canScale = false;

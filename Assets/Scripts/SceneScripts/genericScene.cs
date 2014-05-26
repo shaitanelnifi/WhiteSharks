@@ -63,13 +63,13 @@ public class genericScene : MonoBehaviour {
 
 	void playDialogue(){
 
-		if (dialogue.Length != 0)
+		if (dialogue.Length != 0){
 			Dialoguer.StartDialogue ((int)dialogue[curDia]);
 
-		if (player != null) {
-			player.stopMove ();
-			player.talking = true;
-			//Debug.LogWarning("TALKING");
+			if (player != null) {
+				player.stopMove ();
+				player.talking = true;
+			}
 		}
 	}
 	
