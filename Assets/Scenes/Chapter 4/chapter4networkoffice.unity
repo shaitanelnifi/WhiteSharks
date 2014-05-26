@@ -903,9 +903,9 @@ MonoBehaviour:
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 2d2f9725d81f04949a1b5c1fcc6ff25e, type: 3}
   waitThisLong: -1
-  whatCharacter: Jane
+  whatCharacter: InvisibleMan
   nextLevel: chapter4networkmap
-  isTherePlayer: 1
+  isTherePlayer: 0
   spawnHereAfter: {x: 11.8699999, y: -1.63}
   loadNewXML: 0
   dialoguer: chapter4
