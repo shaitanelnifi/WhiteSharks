@@ -304,9 +304,11 @@ public class journal : MonoBehaviour {
 		for (int i = 0; i < inventory.Count; i++) {
 			
 			string itemString = item.GetComponent<CaseObject>().elementName;
+
 			string invenString = inventory.getName(i);
-			if (itemString == invenString)
+			if (itemString.Equals (invenString)){
 				matchFound = true;
+			}
 			
 		}
 		
