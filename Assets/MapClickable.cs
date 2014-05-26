@@ -109,21 +109,23 @@ public class MapClickable : Clickable {
 	}
 	void Start() {
 
-	}
+	}*/
 
 	void Update() {
 
-	}*/
+	}
+
+	public void OnMouseDown() {
+		if(Input.GetMouseButtonDown(0)) {
+			startDialogue();
+		}
+
+	}
 
 	public void startDialogue() {
 		if(!wall) {
 			Dialoguer.StartDialogue((int)dialogueEnum);
 		}
-		player.stopMove();
-		SoundManager.Instance.StopWalk();
-		GameManager.Instance.updateMouseIcon(mouseOverIcon);
-		clickedOnSomething = false;
-		player.talking = true;
 		StartCoroutine("DialogueDone");
 		doneTalking = true;
 	}

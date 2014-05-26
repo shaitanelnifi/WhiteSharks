@@ -83,9 +83,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 12547321}
   - 212: {fileID: 12547323}
-  - 95: {fileID: 12547322}
   - 114: {fileID: 12547324}
   - 61: {fileID: 12547325}
+  - 95: {fileID: 12547322}
   m_Layer: 0
   m_Name: DroneIcon
   m_TagString: Untagged
@@ -155,7 +155,7 @@ MonoBehaviour:
   diaNum: 0
   offset: 0
   wall: 0
-  dialogueEnum: 0
+  dialogueEnum: 5
 --- !u!61 &12547325
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -176,8 +176,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 497776721}
   - 212: {fileID: 497776723}
-  - 95: {fileID: 497776722}
   - 61: {fileID: 497776724}
+  - 95: {fileID: 497776722}
+  - 114: {fileID: 497776725}
   m_Layer: 0
   m_Name: JaneIcon
   m_TagString: Untagged
@@ -244,6 +245,37 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .589999974, y: .600000024}
   m_Center: {x: 0, y: 0}
+--- !u!114 &497776725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 497776720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438b05127308f8940bf9d5802302b150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementName: 
+  description: 
+  profileImage: {fileID: 0}
+  visible: 0
+  clickedOnSomething: 0
+  maxDist: 1
+  myConvo: -1
+  scaleInfo:
+  - 0
+  - 0
+  - 0
+  - 0
+  canScale: 1
+  anim: {fileID: 0}
+  canWalk: 1
+  walkWait: 0
+  facingLeft: 1
+  goingtLeft: 1
+  talking: 0
+  baseSpeed: 0
 --- !u!1 &529652769
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,9 +357,9 @@ MonoBehaviour:
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 2d2f9725d81f04949a1b5c1fcc6ff25e, type: 3}
   waitThisLong: -1
-  whatCharacter: Jane
+  whatCharacter: InvisibleMan
   nextLevel: chapter4bellybar
-  isTherePlayer: 1
+  isTherePlayer: 0
   spawnHereAfter: {x: 11.8699999, y: -1.63}
   loadNewXML: 0
   dialoguer: chapter4
@@ -363,8 +395,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cabd104dd27fa4b628a2281be548198b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  droneAnimator: {fileID: 12547322}
-  janeAnimator: {fileID: 497776722}
+  drone: {fileID: 12547322}
+  jane: {fileID: 497776722}
 --- !u!1 &1412360234
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +429,7 @@ MonoBehaviour:
   diaNum: 0
   offset: 0
   wall: 0
-  dialogueEnum: 0
+  dialogueEnum: 4
 --- !u!4 &1412360236
 Transform:
   m_ObjectHideFlags: 0
@@ -537,7 +569,7 @@ GameObject:
   - 114: {fileID: 1758629744}
   m_Layer: 10
   m_Name: sceneDoor
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -554,7 +586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: finoffice
+  id: chapter4bellybar
   x: 1.62485898
   y: -3.1073451
   mouseOverIcon: 
@@ -683,6 +715,14 @@ Prefab:
     - target: {fileID: 11400000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
       propertyPath: mouseOverIcon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
+      propertyPath: m_TagString
+      value: door
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
+      propertyPath: id
+      value: chapter4bellybar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b9780f550f334e4290a8c255561d574, type: 2}
