@@ -22,7 +22,8 @@ public class ClickOff : MonoBehaviour {
 	void Start(){
 
 		pos.x = Screen.width / 2 - progressBarMay.width / 2;
-
+		if (failConversation == Convo.ch0none)
+			started = true;
 	}
 	
 	void OnGUI()
@@ -44,7 +45,10 @@ public class ClickOff : MonoBehaviour {
 	{
 
 		if (started) {
-			if (progress < progressNeeded && !success) {
+
+			if (progress <= 0f){
+				failure = true;
+			} else if (progress < progressNeeded && !success) {
 					if (Input.GetMouseButtonDown (0)) {
 							progress++;
 					}
@@ -52,8 +56,6 @@ public class ClickOff : MonoBehaviour {
 					progress -= Time.deltaTime * 2;
 			} else if (progress >= progressNeeded && !success){
 					success = true;
-			} else if (progress <= 0){
-				failure = true;
 			}
 		} else if (GameManager.dialogueJustFinished) {
 			started = true;
@@ -62,12 +64,15 @@ public class ClickOff : MonoBehaviour {
 		if (success && !playingConv) {
 			if (waitThisLong <= 0){
 				playingConv = true;
+				Debug.LogWarning("YAY");
+				if (nextScene != "")
 				Application.LoadLevel(nextScene);
 			} else {
 				waitThisLong-= Time.deltaTime;
 			}
-		} else if (failure = true && !playingConv){
+		} else if (failure && !playingConv){
 				playingConv = true;
+				Debug.LogWarning("AWW");
 				if (failConversation != Convo.ch0none)
 					Dialoguer.StartDialogue((int)failConversation);
 		} else if (playingConv && GameManager.dialogueJustFinished){
