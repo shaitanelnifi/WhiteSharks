@@ -3581,6 +3581,10 @@ MonoBehaviour:
   credits: {fileID: 0}
   options: {fileID: 100092}
   options_goBack: {fileID: 0}
+  options_apply: {fileID: 0}
+  volume_percent: {fileID: 0}
+  sfx_percent: {fileID: 0}
+  music_percent: {fileID: 0}
   creditsLabel: {fileID: 0}
   credits_goBack: {fileID: 0}
   cam: {fileID: 0}

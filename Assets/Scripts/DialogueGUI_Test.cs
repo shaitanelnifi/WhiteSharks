@@ -40,7 +40,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		addDialoguerEvents();
-
+		StartCoroutine (resetRunOnce());
 		_showDialogueBox = false;
 	}
 
@@ -170,7 +170,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 							// If want to place on top of screen, else...
 							if (scene.getPlaceTop())
 							{
-								convo.transform.localPosition = new Vector3(0f, Screen.height, 1f);
+								convo.transform.localPosition = new Vector3(0f, Screen.height/2f, 1f);
 							}
 							else
 							{
@@ -335,7 +335,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 	{
 		if (convoBubble != null)
 		{
-			convoBubble.transform.localScale = new Vector3(1,1,1);
+			convoBubble.transform.localScale = new Vector3(0.75f, 0.75f, 1f);
 		}
 	}
 
@@ -473,8 +473,13 @@ public class DialogueGUI_Test : MonoBehaviour {
 		return _metadata;
 	}
 
-	public void resetRunOnce()
+	IEnumerator resetRunOnce()
 	{
-		runOnce = false;
+		while(true)
+		{
+			runOnce = false;
+			Debug.Log ("Every 2 sec");
+			yield return new WaitForSeconds(2);
+		}
 	}
 }

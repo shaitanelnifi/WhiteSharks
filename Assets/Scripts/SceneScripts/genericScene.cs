@@ -145,7 +145,6 @@ public class genericScene : MonoBehaviour {
 							}
 							GameManager.dialogueJustFinished = false;
 							SoundManager.Instance.CantWalk ();
-							GameManager.Instance.GetComponent<DialogueGUI_Test>().resetRunOnce();
 							Application.LoadLevel (nextLevel);
 					}
 			} else if (dialogue [curDia].Equals (Convo.ch0none)) {
@@ -164,7 +163,6 @@ public class genericScene : MonoBehaviour {
 							}
 							GameManager.dialogueJustFinished = false;
 							SoundManager.Instance.CantWalk ();
-							GameManager.Instance.GetComponent<DialogueGUI_Test>().resetRunOnce();
 							Application.LoadLevel (nextLevel);
 					}
 			}
@@ -182,7 +180,6 @@ public class genericScene : MonoBehaviour {
 			}
 			GameManager.dialogueJustFinished = false;
 			SoundManager.Instance.CantWalk ();
-			GameManager.Instance.GetComponent<DialogueGUI_Test>().resetRunOnce();
 			Application.LoadLevel (nextLevel);
 		}
 	}

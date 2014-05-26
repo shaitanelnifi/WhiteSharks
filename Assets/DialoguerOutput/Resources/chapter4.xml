@@ -1591,7 +1591,7 @@ It's not like I have anything important to do, right?</text>
       <name>janeNmapcelldoor</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>31</x>
+        <x>585</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -1650,7 +1650,7 @@ It's not like I have anything important to do, right?</text>
             <y>10</y>
           </position>
           <outs>
-            <int>2</int>
+            <int>3</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -1691,8 +1691,8 @@ It's not like I have anything important to do, right?</text>
           <id>2</id>
           <type>EndPhase</type>
           <position>
-            <x>1144</x>
-            <y>10</y>
+            <x>1492</x>
+            <y>28</y>
           </position>
           <outs />
           <advanced>false</advanced>
@@ -1728,14 +1728,13 @@ It's not like I have anything important to do, right?</text>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
           <id>3</id>
-          <type>ConditionalPhase</type>
+          <type>SetVariablePhase</type>
           <position>
-            <x>89</x>
-            <y>96</y>
+            <x>1151</x>
+            <y>125</y>
           </position>
           <outs>
-            <int xsi:nil="true" />
-            <int xsi:nil="true" />
+            <int>2</int>
           </outs>
           <advanced>false</advanced>
           <metadata />
@@ -1761,14 +1760,14 @@ It's not like I have anything important to do, right?</text>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
           <variableType>Boolean</variableType>
-          <variableId>0</variableId>
+          <variableId>3</variableId>
           <variableScrollPosition>
             <x>0</x>
             <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>true</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
-          <variableGetValue>true</variableGetValue>
         </DialogueEditorPhaseObject>
       </phases>
       <floats>
@@ -11549,8 +11548,13 @@ For White Shark.</text>
           <variable>false</variable>
           <id>2</id>
         </DialogueEditorVariableObject>
+        <DialogueEditorVariableObject>
+          <name>openedCell</name>
+          <variable>false</variable>
+          <id>3</id>
+        </DialogueEditorVariableObject>
       </variables>
-      <selection>2</selection>
+      <selection>3</selection>
     </booleans>
     <floats>
       <variables>
@@ -11591,5 +11595,5 @@ For White Shark.</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>14</currentDialogueId>
+  <currentDialogueId>4</currentDialogueId>
 </DialogueEditorMasterObject>
