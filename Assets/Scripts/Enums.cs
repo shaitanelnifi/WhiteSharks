@@ -164,6 +164,7 @@ public enum Convo {
 	noelchapter2brainroomcutscene = 44,
 	maychapter2finplazapassingthrough = 45,
 	maychapter2bellybarpassingthroughwaiting = 49,
+	maychapter2bellypostcafestart = 51,
 	maychapter2bellybarpostcafewaiting = 52,
 	robotchapter2bellybarpostcafe = 53,
 	maychapter2bellyalleypassingthroughwaiting = 55,
