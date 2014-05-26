@@ -69,7 +69,6 @@ public class DialogueDoor : DoorScript {
 		}
 		GameManager.dialogueJustFinished = false;
 		SoundManager.Instance.CantWalk();
-		GameManager.Instance.GetComponent<DialogueGUI_Test>().resetRunOnce();
 		Application.LoadLevel(nextLevel);
 	}
 
