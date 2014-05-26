@@ -83,9 +83,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 95588710}
   - 212: {fileID: 95588709}
-  - 114: {fileID: 95588708}
   - 114: {fileID: 95588711}
   - 60: {fileID: 95588712}
+  - 114: {fileID: 95588708}
   m_Layer: 0
   m_Name: Trapdoor(dafuq)_0
   m_TagString: Untagged
@@ -101,13 +101,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 95588707}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
+  m_Script: {fileID: 11500000, guid: 51a2a268bd181ea43b3064a7728d1db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter2bellybrainroomcutscene
   x: 0
   y: 0
   mouseOverIcon: Door_Icon
+  getTheseToProceed: []
+  getTheseGlobalBools: 06000000
+  dontGotIt: 63
 --- !u!212 &95588709
 SpriteRenderer:
   m_ObjectHideFlags: 0

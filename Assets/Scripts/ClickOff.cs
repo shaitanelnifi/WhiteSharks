@@ -3,20 +3,64 @@ using System.Collections;
 
 public class ClickOff : MonoBehaviour {
 
-	float progress = 0;
-	Vector2 pos = new Vector2(20,40);
-	Vector2 size = new Vector2(60,20);
-	Texture2D progressBarEmpty;
-	Texture2D progressBarFull;
+	public float progress = 50f;
+	public float progressNeeded = 100f;
+	public Vector2 pos = new Vector2(256, 96);
+	public Texture2D progressBarEmpty;
+	public Texture2D progressBarMay;
+	public Texture2D progressBarFounder;
+	public float waitThisLong;
+
+	public string nextScene;
+	public Convo rewardConversation;
+
+	private bool success = false;
+	private bool playingConv = false;
+
+	void Start(){
+
+		pos.x = Screen.width / 2 - progressBarMay.width / 2;
+
+	}
 	
 	void OnGUI()
 	{
-		GUI.DrawTexture(new Rect(pos.x, pos.y, size.x, size.y), progressBarEmpty);
-		GUI.DrawTexture(new Rect(pos.x, pos.y, size.x * Mathf.Clamp01(progress), size.y), progressBarFull);
+		GUI.DrawTexture(new Rect(pos.x, pos.y, progressBarFounder.width, 
+		                         progressBarFounder.height), progressBarFounder);
+
+		GUI.DrawTexture(new Rect(pos.x, pos.y, progressBarMay.width * Mathf.Clamp01(progress / progressNeeded), 
+		                         progressBarMay.height), progressBarMay);
+
+		GUI.DrawTexture(new Rect(Screen.width / 2 - progressBarEmpty.width / 2, 0, progressBarEmpty.width, 
+		                         progressBarEmpty.height), progressBarEmpty);
 	} 
+
+	void playReward(){
+	}
 	
 	void Update()
 	{
-		progress = Time.time * 0.05f;
+
+		if (progress < progressNeeded && !success) {
+			if (Input.GetMouseButtonDown (0)) {
+					progress++;
+			}
+
+			progress -= Time.deltaTime * 2;
+		} else {
+			success = true;
+		}
+
+		if (success && !playingConv) {
+			playingConv = true;
+			Dialoguer.StartDialogue ((int)rewardConversation);
+		} else if (GameManager.dialogueJustFinished) {
+			if (waitThisLong <= 0){
+			GameManager.dialogueJustFinished = false;
+			Application.LoadLevel(nextScene);
+			} else {
+				waitThisLong-= Time.deltaTime;
+			}
+		}
 	}
 }
