@@ -1591,7 +1591,7 @@ It's not like I have anything important to do, right?</text>
       <name>janeNmapcelldoor</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>570.0348</x>
+        <x>410.025024</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -1608,7 +1608,7 @@ It's not like I have anything important to do, right?</text>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>It's open, but there are several security bots in the next room.</text>
+          <text>It's open, but there's a security bot patrolling.</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -1788,7 +1788,7 @@ It's not like I have anything important to do, right?</text>
       <name>janemapbots</name>
       <startPage>3</startPage>
       <scrollPosition>
-        <x>0</x>
+        <x>554</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -1797,15 +1797,16 @@ It's not like I have anything important to do, right?</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>342</x>
-            <y>155</y>
+            <x>44</x>
+            <y>418</y>
           </position>
           <outs>
-            <int>1</int>
+            <int>4</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>All right, they're down. Head out of your cell and enter the open cell next door. In it should be your flash drive. Once you have your flash drive, walk down the hall. There should be a door which leads to a back entrance to the bar. When you get there, you need to head into the brain room.</text>
+          <text> All right, they're down. 
+Head out of your cell and head towards the hall in front of you. x</text>
           <name>May Taylor</name>
           <portrait />
           <audio />
@@ -1843,11 +1844,11 @@ It's not like I have anything important to do, right?</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>703</x>
-            <y>112</y>
+            <x>829</x>
+            <y>115</y>
           </position>
           <outs>
-            <int>2</int>
+            <int>6</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -1888,8 +1889,8 @@ It's not like I have anything important to do, right?</text>
           <id>2</id>
           <type>EndPhase</type>
           <position>
-            <x>1147</x>
-            <y>23</y>
+            <x>1447</x>
+            <y>88</y>
           </position>
           <outs />
           <advanced>false</advanced>
@@ -1927,8 +1928,8 @@ It's not like I have anything important to do, right?</text>
           <id>3</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>25</x>
-            <y>164</y>
+            <x>10</x>
+            <y>110</y>
           </position>
           <outs>
             <int>0</int>
@@ -1961,6 +1962,142 @@ It's not like I have anything important to do, right?</text>
           <variableScrollPosition>
             <x>0</x>
             <y>5</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>true</variableSetValue>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>4</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>384</x>
+            <y>57</y>
+          </position>
+          <outs>
+            <int>5</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>There's a storage room on the right, in it should be your flash drive. 
+Once you have it, walk down the hall.</text>
+          <name>May Taylor</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>5</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>412</x>
+            <y>524.003662</y>
+          </position>
+          <outs>
+            <int>1</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text> There should be a door which leads to a back entrance to the bar. When you get there, you need to head into the brain room.</text>
+          <name>May Taylor</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>6</id>
+          <type>SetVariablePhase</type>
+          <position>
+            <x>1196</x>
+            <y>163</y>
+          </position>
+          <outs>
+            <int>2</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>5</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>26</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -3449,8 +3586,8 @@ It's not like I have anything important to do, right?</text>
       <name>NBRoomstart</name>
       <startPage>11</startPage>
       <scrollPosition>
-        <x>172.700058</x>
-        <y>5020</y>
+        <x>438.023682</x>
+        <y>1537.2998</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -4153,7 +4290,7 @@ It's not like I have anything important to do, right?</text>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Blah</text>
+          <text>They make people happy!</text>
           <name>Shammy</name>
           <portrait />
           <audio />
@@ -4739,12 +4876,12 @@ It's not like I have anything important to do, right?</text>
           <type>BranchedTextPhase</type>
           <theme />
           <position>
-            <x>343.9998</x>
-            <y>3962</y>
+            <x>269.9998</x>
+            <y>3888</y>
           </position>
           <outs>
-            <int>44</int>
-            <int>44</int>
+            <int>46</int>
+            <int>29</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -4789,15 +4926,16 @@ It's not like I have anything important to do, right?</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>978.999756</x>
-            <y>3965</y>
+            <x>422.999756</x>
+            <y>4296</y>
           </position>
           <outs>
-            <int>30</int>
+            <int>48</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Blah</text>
+          <text>In this world, wherever there’s light there are also shadows. 
+As long as the concept of winners exists, there must also be losers. </text>
           <name>Shammy</name>
           <portrait />
           <audio />
@@ -4835,15 +4973,15 @@ It's not like I have anything important to do, right?</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>362.999756</x>
-            <y>4550</y>
+            <x>262.999756</x>
+            <y>4721</y>
           </position>
           <outs>
             <int>31</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Dear child, I'm sorry to tell you that this is where our conversation is going to end, and with it your silly plots to overcome what's right.</text>
+          <text>Dear child, I'm sorry to tell you that this is where our conversation is going to end...</text>
           <name>Shammy</name>
           <portrait />
           <audio />
@@ -4881,15 +5019,17 @@ It's not like I have anything important to do, right?</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>701.499756</x>
-            <y>4546</y>
+            <x>734.499756</x>
+            <y>4794</y>
           </position>
           <outs>
             <int>32</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Tell me May, do you know who my last victim was?</text>
+          <text>...and with it, your plots to overcome what's right.
+
+Tell me May, do you know who my last victim was?</text>
           <name>Shammy</name>
           <portrait />
           <audio />
@@ -4927,13 +5067,13 @@ It's not like I have anything important to do, right?</text>
           <type>BranchedTextPhase</type>
           <theme />
           <position>
-            <x>1278.49976</x>
-            <y>4530</y>
+            <x>1279.49976</x>
+            <y>4424</y>
           </position>
           <outs>
+            <int>44</int>
             <int>45</int>
-            <int>46</int>
-            <int>45</int>
+            <int>44</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -4979,8 +5119,8 @@ It's not like I have anything important to do, right?</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>574.8998</x>
-            <y>5004</y>
+            <x>607.8998</x>
+            <y>5097</y>
           </position>
           <outs>
             <int>35</int>
@@ -5291,8 +5431,8 @@ It's not like I have anything important to do, right?</text>
           <id>40</id>
           <type>TextPhase</type>
           <position>
-            <x>830.300049</x>
-            <y>1883.50012</y>
+            <x>732.300049</x>
+            <y>1841.50012</y>
           </position>
           <outs>
             <int>15</int>
@@ -5471,53 +5611,8 @@ It's not like I have anything important to do, right?</text>
           <id>44</id>
           <type>TextPhase</type>
           <position>
-            <x>670.7001</x>
-            <y>4002.9</y>
-          </position>
-          <outs>
-            <int>29</int>
-          </outs>
-          <advanced>false</advanced>
-          <metadata />
-          <text />
-          <name />
-          <portrait />
-          <audio />
-          <audioDelay>0</audioDelay>
-          <rect>
-            <x>0</x>
-            <y>0</y>
-            <center>
-              <x>0</x>
-              <y>0</y>
-            </center>
-            <width>0</width>
-            <height>0</height>
-            <xMin>0</xMin>
-            <yMin>0</yMin>
-            <xMax>0</xMax>
-            <yMax>0</yMax>
-          </rect>
-          <newWindow>false</newWindow>
-          <choices />
-          <waitType>Seconds</waitType>
-          <waitDuration>0</waitDuration>
-          <variableScope>Global</variableScope>
-          <variableType>Boolean</variableType>
-          <variableId>0</variableId>
-          <variableScrollPosition>
-            <x>0</x>
-            <y>0</y>
-          </variableScrollPosition>
-          <variableSetEquation>Equals</variableSetEquation>
-          <variableGetEquation>Equals</variableGetEquation>
-        </DialogueEditorPhaseObject>
-        <DialogueEditorPhaseObject>
-          <id>45</id>
-          <type>TextPhase</type>
-          <position>
-            <x>209.700073</x>
-            <y>5153.9</y>
+            <x>1153.70007</x>
+            <y>4854.9</y>
           </position>
           <outs>
             <int>33</int>
@@ -5558,7 +5653,7 @@ It's not like I have anything important to do, right?</text>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
-          <id>46</id>
+          <id>45</id>
           <type>TextPhase</type>
           <position>
             <x>1342.70007</x>
@@ -5571,6 +5666,190 @@ It's not like I have anything important to do, right?</text>
           <metadata />
           <text />
           <name />
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>46</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>628.7042</x>
+            <y>3783.92114</y>
+          </position>
+          <outs>
+            <int>47</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>They’re components! I have to keep my HPU properly supplied and powered.x</text>
+          <name>Shammy</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>47</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>930.703</x>
+            <y>3836.91968</y>
+          </position>
+          <outs>
+            <int>30</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>What could be more powerful and better shaped and connected than the original model for all computers?</text>
+          <name>Shammy</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>48</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>872.7025</x>
+            <y>4309.936</y>
+          </position>
+          <outs>
+            <int>49</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>The selfish desire of wanting peace causes wars, and hatred is born to protect love. My goal, my plan, is to bring peace to everybody, to create a new world where lies cannot exist. </text>
+          <name>Shammy</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>49</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>722.719849</x>
+            <y>4426.951</y>
+          </position>
+          <outs>
+            <int>30</int>
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>By enduring the life they were given, these people will be willing to accept their fate, and join me for a better future. For a better eternity.</text>
+          <name>Shammy</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -6682,7 +6961,7 @@ It's not like I have anything important to do, right?</text>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>m2May?! Are you there? What's going on?</text>
+          <text>May?! Are you there? What's going on?</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -11601,8 +11880,13 @@ For White Shark.</text>
           <variable>false</variable>
           <id>4</id>
         </DialogueEditorVariableObject>
+        <DialogueEditorVariableObject>
+          <name>freeToGo</name>
+          <variable>false</variable>
+          <id>5</id>
+        </DialogueEditorVariableObject>
       </variables>
-      <selection>4</selection>
+      <selection>5</selection>
     </booleans>
     <floats>
       <variables>
