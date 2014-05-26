@@ -30,7 +30,7 @@ public class TooltipScript : MonoBehaviour {
 			font = Resources.Load ("Fonts/KoushikiSans") as Font;
 
 		if (ClickRevealer == null)
-			ClickRevealer = Resources.Load ("Textures/ClickRevealer") as Texture2D;
+			ClickRevealer = Resources.Load ("Textures/IndicatorRing") as Texture2D;
 
 		if (scale.x == 0f) {
 			scale.x = transform.localScale.x;
