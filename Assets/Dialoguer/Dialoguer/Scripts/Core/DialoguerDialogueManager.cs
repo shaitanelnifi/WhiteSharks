@@ -59,6 +59,7 @@ namespace DialoguerCore{
 				temp.canWalk = true;
 				temp.walkWait = 30;
 				temp.talking = false;
+				if (temp.anim != null)
 				temp.anim.SetFloat("distance", 0f);
 				temp.setTarget(new Vector2(temp.transform.position.x, temp.transform.position.y));
 				}
