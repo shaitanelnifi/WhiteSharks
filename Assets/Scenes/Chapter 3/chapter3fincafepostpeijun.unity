@@ -746,10 +746,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 342701598}
   - 212: {fileID: 342701597}
-  - 114: {fileID: 342701596}
   - 61: {fileID: 342701595}
   - 114: {fileID: 342701594}
   - 114: {fileID: 342701593}
+  - 114: {fileID: 342701599}
   m_Layer: 0
   m_Name: Sharkulus right - placeholder
   m_TagString: Untagged
@@ -796,20 +796,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 5.07688332, y: 3.31454062}
   m_Center: {x: .00453737238, y: -.0165049452}
---- !u!114 &342701596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 342701592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  diaNum: 13
-  offset: 0
-  wall: 0
 --- !u!212 &342701597
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -844,6 +830,30 @@ Transform:
   m_LocalScale: {x: -.48510021, y: .485101432, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &342701599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342701592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8176f69eb181690498446187bf0de721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementName: Sharkulus Rift
+  description: The newest in virtual reality technology, the Sharkulus Rift brings
+    gaming to an all new level.  Also comes with many apps for general use.
+  profileImage: {fileID: 21300000, guid: 86e93ada56b53024d8612deb77b00729, type: 3}
+  visible: 0
+  clickedOnSomething: 0
+  maxDist: 1
+  myConvo: 13
+  pickUpConvo: 20
+  conditions: 01000000
+  associatedObjects: []
+  mouseOverIcon: Grab_Icon
+  autoPickupPostConvo: 1
 --- !u!1001 &355979435
 Prefab:
   m_ObjectHideFlags: 0

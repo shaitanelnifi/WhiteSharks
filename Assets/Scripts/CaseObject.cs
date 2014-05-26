@@ -24,6 +24,9 @@ public class CaseObject : CaseElement {
 
 		if (GameManager.pickUpConvo != pickUpConvo)
 			GameManager.pickUpConvo = pickUpConvo;
+
+		if (profileImage == null)
+			profileImage = GetComponent<SpriteRenderer> ().sprite;
 	}
 
 	public void OnMouseEnter(){
