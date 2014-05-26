@@ -686,10 +686,10 @@ MonoBehaviour:
   dialogue: 
   setOffset: 0
   player: {fileID: 0}
-  maxY: 2
-  minY: 1
-  minScale: 1
-  maxScale: 1
+  maxY: .800000012
+  minY: .400000006
+  minScale: .400000006
+  maxScale: .400000006
   baseSpeed: 3
   placeTop: 0
 --- !u!4 &1085850464

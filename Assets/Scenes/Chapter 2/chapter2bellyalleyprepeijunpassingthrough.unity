@@ -462,11 +462,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: x
-      value: 4.70966291
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: y
-      value: -1.20139599
+      value: -3.5999999
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: id
@@ -759,8 +759,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter2bellymarketpeijun
-  x: 4.70966291
-  y: -1.20139599
+  x: -6
+  y: -3.5999999
   mouseOverIcon: Door_Icon
 --- !u!50 &1122036498
 Rigidbody2D:
