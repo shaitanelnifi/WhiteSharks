@@ -238,7 +238,7 @@ MonoBehaviour:
   isTherePlayer: 1
   spawnHereAfter: {x: 2.945086, y: -2.47189498}
   loadNewXML: 1
-  dialoguer: chapter2
+  dialoguer: chapter3
   needGUI: 0
   dialogue: 
   setOffset: 0
