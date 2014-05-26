@@ -193,10 +193,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 80053675}
-  - 114: {fileID: 80053674}
   - 61: {fileID: 80053673}
   - 114: {fileID: 80053672}
   - 114: {fileID: 80053671}
+  - 114: {fileID: 80053674}
   m_Layer: 0
   m_Name: projector
   m_TagString: Untagged
@@ -249,18 +249,27 @@ BoxCollider2D:
 --- !u!114 &80053674
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99,
-    type: 2}
-  m_PrefabInternal: {fileID: 865073656}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 80053670}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 8176f69eb181690498446187bf0de721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diaNum: 16
-  offset: 0
-  wall: 0
+  elementName: Terminal Projector
+  description: 'Multiple of these state of the art hologram projectors display Shammy
+    all across White Shark.  '
+  profileImage: {fileID: 21300000, guid: 1037d2f91fe02e04f9a5f4677e58d0d6, type: 3}
+  visible: 0
+  clickedOnSomething: 0
+  maxDist: 1
+  myConvo: 15
+  pickUpConvo: 20
+  conditions: 
+  associatedObjects: []
+  mouseOverIcon: Grab_Icon
+  autoPickupPostConvo: 1
 --- !u!4 &80053675
 Transform:
   m_ObjectHideFlags: 0
@@ -20368,10 +20377,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 659764325}
-  - 114: {fileID: 659764324}
   - 61: {fileID: 659764323}
   - 114: {fileID: 659764322}
   - 114: {fileID: 659764321}
+  - 114: {fileID: 659764324}
   m_Layer: 0
   m_Name: projector
   m_TagString: Untagged
@@ -20424,18 +20433,27 @@ BoxCollider2D:
 --- !u!114 &659764324
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99,
-    type: 2}
-  m_PrefabInternal: {fileID: 2026890524}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 659764320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 8176f69eb181690498446187bf0de721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diaNum: 16
-  offset: 0
-  wall: 0
+  elementName: Terminal Projector
+  description: 'Multiple of these state of the art hologram projectors display Shammy
+    all across White Shark.  '
+  profileImage: {fileID: 21300000, guid: 1037d2f91fe02e04f9a5f4677e58d0d6, type: 3}
+  visible: 0
+  clickedOnSomething: 0
+  maxDist: 1
+  myConvo: 15
+  pickUpConvo: 20
+  conditions: 
+  associatedObjects: []
+  mouseOverIcon: Grab_Icon
+  autoPickupPostConvo: 1
 --- !u!4 &659764325
 Transform:
   m_ObjectHideFlags: 0
@@ -20544,7 +20562,8 @@ Prefab:
       propertyPath: toolText
       value: Examine Projector
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
   m_RootGameObject: {fileID: 80053670}
   m_IsPrefabParent: 0
@@ -21177,7 +21196,6 @@ GameObject:
   - 4: {fileID: 1784878805}
   - 60: {fileID: 1784878804}
   - 50: {fileID: 1784878803}
-  - 114: {fileID: 1784878802}
   - 114: {fileID: 1784878801}
   - 114: {fileID: 1784878800}
   m_Layer: 0
@@ -21217,21 +21235,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDist: 6
---- !u!114 &1784878802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 7009d671cc508fc4f87ffc4b28b7efa7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1887604787}
-  m_GameObject: {fileID: 1784878799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  diaNum: 9
-  offset: 0
-  wall: 0
 --- !u!50 &1784878803
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -21315,7 +21318,8 @@ Prefab:
       propertyPath: toolText
       value: Examine Bed
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7009d671cc508fc4f87ffc4b28b7efa7, type: 2}
   m_RootGameObject: {fileID: 1784878799}
   m_IsPrefabParent: 0
@@ -21447,7 +21451,8 @@ Prefab:
       propertyPath: toolText
       value: Examine Projector
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
   m_RootGameObject: {fileID: 659764320}
   m_IsPrefabParent: 0
