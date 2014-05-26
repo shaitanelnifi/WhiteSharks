@@ -903,9 +903,9 @@ MonoBehaviour:
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 2d2f9725d81f04949a1b5c1fcc6ff25e, type: 3}
   waitThisLong: -1
-  whatCharacter: 
+  whatCharacter: Jane
   nextLevel: chapter4networkmap
-  isTherePlayer: 0
+  isTherePlayer: 1
   spawnHereAfter: {x: 11.8699999, y: -1.63}
   loadNewXML: 0
   dialoguer: chapter4
@@ -973,6 +973,26 @@ Prefab:
       propertyPath: id
       value: chapter4networkmap
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: b56336a7933425e45b6f557fab344cdb, type: 2}
+      propertyPath: whatCharacter
+      value: Jane
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: b56336a7933425e45b6f557fab344cdb, type: 2}
+      propertyPath: nextLevel
+      value: chapter4networkmap
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: b56336a7933425e45b6f557fab344cdb, type: 2}
+      propertyPath: isTherePlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: b56336a7933425e45b6f557fab344cdb, type: 2}
+      propertyPath: spawnHereAfter.x
+      value: -4.69999981
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: b56336a7933425e45b6f557fab344cdb, type: 2}
+      propertyPath: spawnHereAfter.y
+      value: -3.29999995
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b56336a7933425e45b6f557fab344cdb, type: 2}
   m_RootGameObject: {fileID: 1591390565}
@@ -1033,6 +1053,10 @@ MonoBehaviour:
   wall: 0
   diaNum: 24
   offset: 0
+  whatCharacter: Jane
+  nextLevel: chapter4networkmap
+  isTherePlayer: 1
+  spawnHereAfter: {x: -4.69999981, y: -3.29999995}
 --- !u!61 &1591390568
 BoxCollider2D:
   m_ObjectHideFlags: 0
