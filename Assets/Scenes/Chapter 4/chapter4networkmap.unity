@@ -149,13 +149,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 12547320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ff31754a4d315d4280796aec4e79700, type: 3}
+  m_Script: {fileID: 11500000, guid: b1fdb836ce1856148b0a32af44d433ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   diaNum: 0
   offset: 0
   wall: 0
-  dialogueEnum: 5
+  dialogueEnum: 0
 --- !u!61 &12547325
 BoxCollider2D:
   m_ObjectHideFlags: 0
