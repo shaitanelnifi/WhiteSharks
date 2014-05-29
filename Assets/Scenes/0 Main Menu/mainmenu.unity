@@ -448,11 +448,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400060, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: mWidth
-      value: 2520
+      value: 2516
       objectReference: {fileID: 0}
     - target: {fileID: 11400062, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: mWidth
-      value: 614
+      value: 610
       objectReference: {fileID: 0}
     - target: {fileID: 11400052, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: mWidth
@@ -460,7 +460,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400038, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: mWidth
-      value: 1248
+      value: 1254
       objectReference: {fileID: 0}
     - target: {fileID: 11400070, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
@@ -480,11 +480,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400060, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: 9.84375
+      value: 9.828125
       objectReference: {fileID: 0}
     - target: {fileID: 11400062, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: 6.39583349
+      value: 6.35416651
       objectReference: {fileID: 0}
     - target: {fileID: 11400052, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
@@ -492,15 +492,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400038, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: .314516127
+      value: .316028237
       objectReference: {fileID: 0}
     - target: {fileID: 11400076, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: mWidth
-      value: 332
+      value: 334
       objectReference: {fileID: 0}
     - target: {fileID: 11400076, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: 3.45833325
+      value: 3.47916675
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
@@ -960,13 +960,13 @@ MonoBehaviour:
     absolute: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 332
+  mWidth: 334
   mHeight: 96
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 3.45833325
+  aspectRatio: 3.47916675
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: 389b122e9f3aa4b16ab074fa5d295d07, type: 3}
   mFont: {fileID: 0}
@@ -1954,13 +1954,13 @@ MonoBehaviour:
     absolute: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 2520
+  mWidth: 2516
   mHeight: 256
   mDepth: 6
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 9.84375
+  aspectRatio: 9.828125
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: 3932d823f4ad346e39de2df615198d00, type: 3}
   mFont: {fileID: 0}
@@ -2042,13 +2042,13 @@ MonoBehaviour:
     absolute: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 614
+  mWidth: 610
   mHeight: 96
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 6.39583349
+  aspectRatio: 6.35416651
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: 389b122e9f3aa4b16ab074fa5d295d07, type: 3}
   mFont: {fileID: 0}
@@ -3169,13 +3169,13 @@ MonoBehaviour:
     absolute: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 1248
+  mWidth: 1254
   mHeight: 3968
   mDepth: 4
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: .314516127
+  aspectRatio: .316028237
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: e8a2bdb4cdc714a34a70a05bce765e27, type: 3}
   mFont: {fileID: 0}
