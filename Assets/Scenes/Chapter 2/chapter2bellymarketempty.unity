@@ -5476,8 +5476,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1, y: 2.02006054}
-  m_Center: {x: 0, y: .038421154}
+  m_Size: {x: 1.61986923, y: 2.84655285}
+  m_Center: {x: 0, y: 0}
 --- !u!114 &925798574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5500,7 +5500,7 @@ Transform:
   m_PrefabInternal: {fileID: 1359015461}
   m_GameObject: {fileID: 925798570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.02911854, y: -3.0563798, z: 0}
+  m_LocalPosition: {x: 8.13692188, y: -3.35283899, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5754,11 +5754,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 7.02911854
+      value: 8.13692188
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.0563798
+      value: -3.35283899
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5782,15 +5782,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_Size.y
-      value: 2.02006054
+      value: 2.84655285
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_Center.y
-      value: .038421154
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: diaNum
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: m_Size.x
+      value: 1.61986923
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: m_Center.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
