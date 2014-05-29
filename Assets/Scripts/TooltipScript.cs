@@ -99,7 +99,7 @@ public class TooltipScript : MonoBehaviour {
 
 	void Update(){
 
-			if (Input.GetKey (KeyCode.Space)) {
+			if (Input.GetKey (KeyCode.Space) || Input.GetMouseButton(1)) {
 				revealAll = true;
 				point = Camera.main.WorldToScreenPoint(transform.position);
 			} else {
