@@ -392,11 +392,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_LocalScale.x
-      value: .311149091
+      value: .25
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_LocalScale.y
-      value: .311149925
+      value: .25
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: myConvo
@@ -418,6 +418,11 @@ Prefab:
       propertyPath: m_Size.x
       value: 1.87794292
       objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 25be51c5c234a46c0b5c6177db77e3d9,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
   m_RootGameObject: {fileID: 1735621742}
@@ -6109,7 +6114,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 2
   m_SortingLayerID: 2971093031
-  m_Sprite: {fileID: 21300000, guid: 78422715a9353441bafee92e5c7914d8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 25be51c5c234a46c0b5c6177db77e3d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1735621748
 Transform:
@@ -6119,7 +6124,7 @@ Transform:
   m_GameObject: {fileID: 1735621742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.62477374, y: -3.63610578, z: -1}
-  m_LocalScale: {x: .311149091, y: .311149925, z: 1}
+  m_LocalScale: {x: .25, y: .25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!95 &1735621749
