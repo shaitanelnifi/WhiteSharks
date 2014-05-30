@@ -114,10 +114,10 @@ MonoBehaviour:
   dialogue: 1c000000
   setOffset: 0
   player: {fileID: 0}
-  maxY: -3.58709788
-  minY: -4.72441816
-  minScale: .363007188
-  maxScale: .425000012
+  maxY: 0
+  minY: -10
+  minScale: .400000006
+  maxScale: .400000006
   baseSpeed: 3
   placeTop: 0
 --- !u!4 &374970098
@@ -340,11 +340,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalScale.x
-      value: .37207222
+      value: .300903499
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalScale.y
-      value: .37207365
+      value: .300904602
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: myConvo
@@ -634,7 +634,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4
+  orthographic size: 4.49629021
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5872,7 +5872,7 @@ Transform:
   m_GameObject: {fileID: 1664819161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.80036736, y: -3.6451931, z: -1}
-  m_LocalScale: {x: .37207222, y: .37207365, z: 1}
+  m_LocalScale: {x: .300903499, y: .300904602, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &1664819168
