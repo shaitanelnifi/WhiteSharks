@@ -81,6 +81,8 @@ public enum clickableID {
 	maychapter2bellybarbyemay = 54,
 	maychapter2bellyalleypassingthroughwrongway = 56,
 	janechapter2ExamineTrapDoor = 63,
+	maychapter2marketpeijunwrongway = 64,
+	janechapter2LITERALLYNOTHING = 65,
 
 	//chapter 3
 	noelchapter3finofficenote = 2,
