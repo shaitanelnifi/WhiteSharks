@@ -56,8 +56,8 @@ public class MainMenu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//Debug.Log ("SFX: " + SoundManager.sfxVolume);
-		//Debug.Log ("MUS: " + SoundManager.musicVolume);
+//		Debug.Log ("SFX: " + SoundManager.sfxVolume);
+//		Debug.Log ("MUS: " + SoundManager.musicVolume);
 		// Reset credits after they're mostly out of frame
 		if (cam.transform.localPosition.x > -50f && !isCredits)
 		{
@@ -104,8 +104,19 @@ public class MainMenu : MonoBehaviour {
 		}
 
 		if (button == options_apply) {
+			int settingVol = int.Parse(volume_percent.GetComponent<UILabel>().text.TrimEnd ('%'));
+			int numTimesVol = (int)Mathf.Abs (settingVol - (SoundManager.gameVolume * 100f));
+			if (settingVol > (int)(SoundManager.gameVolume * 100))
+			{
+				changeGameVolume(1, numTimesVol);
+			}
+			else if (settingVol < (int)(SoundManager.sfxVolume * 100))
+			{
+				changeGameVolume(-1, numTimesVol);
+			}
+
 			int settingSFX = int.Parse(sfx_percent.GetComponent<UILabel>().text.TrimEnd('%'));
-			int numTimesSFX = (int)Mathf.Abs(settingSFX - (SoundManager.sfxVolume * 100));
+			int numTimesSFX = (int)Mathf.Abs(settingSFX - (SoundManager.sfxVolume * 100f));
 			if (settingSFX > (int)(SoundManager.sfxVolume * 100))
 			{
 				changeSfxVolume(1, numTimesSFX);
@@ -116,7 +127,7 @@ public class MainMenu : MonoBehaviour {
 			}
 
 			int settingMusic = int.Parse(music_percent.GetComponent<UILabel>().text.TrimEnd('%'));
-			int numTimesMusic = (int)Mathf.Abs(settingMusic - (SoundManager.sfxVolume * 100));
+			int numTimesMusic = (int)Mathf.Abs(settingMusic - (SoundManager.musicVolume * 100f));
 			if (settingMusic > (int)(SoundManager.musicVolume * 100))
 			{
 				changeMusicVolume(1, numTimesMusic);
@@ -145,6 +156,13 @@ public class MainMenu : MonoBehaviour {
 		for (int i = 0; i < numTimes; ++i)
 		{
 			SoundManager.Instance.EditMusic (direction);
+		}
+	}
+
+	private void changeGameVolume(int direction, int numTimes) {
+		for (int i = 0; i < numTimes; ++i)
+		{
+			SoundManager.Instance.EditAll (direction);
 		}
 	}
 
