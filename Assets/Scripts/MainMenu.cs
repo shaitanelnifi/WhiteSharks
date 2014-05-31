@@ -56,8 +56,8 @@ public class MainMenu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log ("SFX: " + SoundManager.sfxVolume);
-		Debug.Log ("MUS: " + SoundManager.musicVolume);
+		//Debug.Log ("SFX: " + SoundManager.sfxVolume);
+		//Debug.Log ("MUS: " + SoundManager.musicVolume);
 		// Reset credits after they're mostly out of frame
 		if (cam.transform.localPosition.x > -50f && !isCredits)
 		{
