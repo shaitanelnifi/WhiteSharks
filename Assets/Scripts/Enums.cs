@@ -91,6 +91,7 @@ public enum clickableID {
 	//14, //merged with 13
 	maychapter3finofficepostpeijun = 15,
 	cantenter = 19,
+	maychapter3finlobbywrongway = 21,
 
 	//chapter 4
 	janechapter4networkmapcelldoor = 4,
