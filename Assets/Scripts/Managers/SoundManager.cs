@@ -7,7 +7,7 @@ public class SoundManager : MonoBehaviour {
 	//Volume
 	public static float sfxVolume = 1.0f; //overall volume control for sound effects
 	public static float musicVolume = 1.0f; //overall volume control for music
-	private static float gameVolume = 1.0f; //overall volume control for everything
+	public static float gameVolume = 1.0f; //overall volume control for everything
 
 	public enum SoundType { Sfx, Music }
 
