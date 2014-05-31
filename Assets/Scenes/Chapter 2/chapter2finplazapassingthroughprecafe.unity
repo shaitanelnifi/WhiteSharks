@@ -2472,7 +2472,7 @@ MonoBehaviour:
   minY: -2.5999999
   minScale: .25
   maxScale: .349999994
-  baseSpeed: 1
+  baseSpeed: 3
   placeTop: 0
 --- !u!4 &2104545173
 Transform:

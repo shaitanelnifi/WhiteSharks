@@ -680,6 +680,7 @@ GameObject:
   - 61: {fileID: 721835894}
   - 114: {fileID: 721835893}
   - 114: {fileID: 721835892}
+  - 114: {fileID: 721835898}
   m_Layer: 10
   m_Name: MayNPC
   m_TagString: Untagged
@@ -789,6 +790,18 @@ Transform:
   m_LocalScale: {x: .494283617, y: .494285494, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &721835898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 0cd273a218ec6e0439c117e44dfa0e95,
+    type: 2}
+  m_PrefabInternal: {fileID: 1244668432}
+  m_GameObject: {fileID: 721835891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ae4b32f68af1b4e977f56ed01a1f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &727265625
 GameObject:
   m_ObjectHideFlags: 0
