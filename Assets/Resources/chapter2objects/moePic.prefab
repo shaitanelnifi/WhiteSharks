@@ -84,7 +84,7 @@ MonoBehaviour:
   elementName: Examine Picture
   description: "REPORT\r\nName of Victim: Moe\r\nFormer Occupation: Bartender\r\nCause
     of Death: Blood loss and brain removal\r"
-  profileImage: {fileID: 21300000, guid: 65f09a00f2b108f42b5ae00a619ac1f7, type: 3}
+  profileImage: {fileID: 21300000, guid: 7d89f3c830cc9bd429335f07c69b0f79, type: 3}
   visible: 1
   clickedOnSomething: 0
   maxDist: 4
