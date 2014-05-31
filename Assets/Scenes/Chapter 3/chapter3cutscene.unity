@@ -88,6 +88,7 @@ GameObject:
   - 114: {fileID: 175465967}
   - 114: {fileID: 175465966}
   - 95: {fileID: 175465965}
+  - 114: {fileID: 175465972}
   m_Layer: 10
   m_Name: PeijunShi
   m_TagString: Untagged
@@ -207,9 +208,21 @@ Transform:
   m_GameObject: {fileID: 175465964}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.15648079, y: -3.47967076, z: -1}
-  m_LocalScale: {x: .906309485, y: .906309962, z: 1}
+  m_LocalScale: {x: .649999976, y: .649999976, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &175465972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: e95b9d1a228e644d7bcddf8736d250c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 265993443}
+  m_GameObject: {fileID: 175465964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ae4b32f68af1b4e977f56ed01a1f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &265993443
 Prefab:
   m_ObjectHideFlags: 0
@@ -247,11 +260,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_LocalScale.x
-      value: .906309485
+      value: .649999976
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_LocalScale.y
-      value: .906309962
+      value: .649999976
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
