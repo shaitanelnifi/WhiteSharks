@@ -5713,6 +5713,7 @@ GameObject:
   - 114: {fileID: 802854815}
   - 114: {fileID: 802854814}
   - 114: {fileID: 802854820}
+  - 114: {fileID: 802854821}
   m_Layer: 10
   m_Name: JoshSusach
   m_TagString: Untagged
@@ -5829,6 +5830,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6ae4b32f68af1b4e977f56ed01a1f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &802854821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 802854813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7a763a5761a6049b8f266536826b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1085850462
