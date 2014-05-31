@@ -78,6 +78,7 @@ public class CaseObject : CaseElement {
 			player.talking = true;
 			//player.stopMove ();
 			Dialoguer.StartDialogue ((int)myConvo);
+			tookItem = true;
 		}
 
 	}
@@ -115,7 +116,7 @@ public class CaseObject : CaseElement {
 				pickUpItem ();
 
 		if (autoPickupPostConvo && GameManager.dialogueJustFinished && checkCondis() && !clickedOnSomething)
-		if (pDist.isCloseEnough (player.transform.position) && !player.talking) {
+		if (pDist.isCloseEnough (player.transform.position) && !player.talking && tookItem) {
 			handleAssociated();
 			collectItems();
 			player.stopMove ();
