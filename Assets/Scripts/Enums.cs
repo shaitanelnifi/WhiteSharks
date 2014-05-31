@@ -65,7 +65,6 @@ public enum clickableID {
 	projector = 17,
 
 	//chapter 2
-	maychapter2finofficewalkwaywrongway = 2,
 	maychapter2finplazawrongway = 5,
 	maychapter2bellybarfirstarrivalwrongway = 8,
 	maychapter2bellymarketwrongway = 12,
@@ -91,6 +90,8 @@ public enum clickableID {
 	//14, //merged with 13
 	maychapter3finofficepostpeijun = 15,
 	cantenter = 19,
+	maychapter3finlobbywrongway = 21,
+	maychapter3finofficenonote = 22,
 
 	//chapter 4
 	janechapter4networkmapcelldoor = 4,
@@ -133,6 +134,7 @@ public enum Convo {
 	//chapter 2
 	maychapter2finofficewalkwaystart = 0,
 	maychapter2finofficewalkwaywaiting = 1,
+	maychapter2finofficewalkwaywrongway = 2,
 	maychapter2finplazafirstarrivalstart = 3,
 	maychapter2finplazafirstarrivalwaiting = 4,
 	maychapter2bellybarfirstarrivalstart = 6,
