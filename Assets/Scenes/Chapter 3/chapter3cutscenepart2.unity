@@ -241,6 +241,155 @@ Transform:
   m_LocalScale: {x: .334314287, y: .334312677, z: 3.6828413}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &257759076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+  m_PrefabInternal: {fileID: 1551845366}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 257759084}
+  - 212: {fileID: 257759083}
+  - 114: {fileID: 257759082}
+  - 61: {fileID: 257759081}
+  - 114: {fileID: 257759080}
+  - 114: {fileID: 257759079}
+  - 95: {fileID: 257759078}
+  - 114: {fileID: 257759077}
+  m_Layer: 10
+  m_Name: PeijunShi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &257759077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: e95b9d1a228e644d7bcddf8736d250c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1551845366}
+  m_GameObject: {fileID: 257759076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ae4b32f68af1b4e977f56ed01a1f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &257759078
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: e95b9d1a228e644d7bcddf8736d250c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1551845366}
+  m_GameObject: {fileID: 257759076}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bc2059febb1b649609e9345800449302, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
+--- !u!114 &257759079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: e95b9d1a228e644d7bcddf8736d250c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1551845366}
+  m_GameObject: {fileID: 257759076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolText: Talk
+  sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 0, y: 0}
+--- !u!114 &257759080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: e95b9d1a228e644d7bcddf8736d250c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1551845366}
+  m_GameObject: {fileID: 257759076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDist: 4
+--- !u!61 &257759081
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100000, guid: e95b9d1a228e644d7bcddf8736d250c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1551845366}
+  m_GameObject: {fileID: 257759076}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.587304, y: 5.41710043}
+  m_Center: {x: -.14414978, y: -.0314495564}
+--- !u!114 &257759082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: e95b9d1a228e644d7bcddf8736d250c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1551845366}
+  m_GameObject: {fileID: 257759076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e55abf860691c541a849b33c21c6089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementName: Peijun Shi
+  description: 'Mrs. Shi is a well known shopkeeper of the Community Housing main
+    plaza market, and has maintained her stall (tent?) for more than 30 years now. '
+  profileImage: {fileID: 21300000, guid: 5966b3b796970448caf08c4e7987902e, type: 3}
+  visible: 1
+  clickedOnSomething: 0
+  maxDist: 1
+  myConvo: 0
+  playerObj: {fileID: 0}
+  box: {fileID: 257759081}
+  mouseOverIcon: Speech_Icon
+--- !u!212 &257759083
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200000, guid: e95b9d1a228e644d7bcddf8736d250c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1551845366}
+  m_GameObject: {fileID: 257759076}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 2
+  m_SortingOrder: 2
+  m_SortingLayerID: 2971093031
+  m_Sprite: {fileID: 21300000, guid: 78422715a9353441bafee92e5c7914d8, type: 3}
+  m_Color: {r: .691176474, g: 1, b: .757200778, a: 1}
+--- !u!4 &257759084
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+  m_PrefabInternal: {fileID: 1551845366}
+  m_GameObject: {fileID: 257759076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.15648079, y: -3.47967076, z: -1}
+  m_LocalScale: {x: .649999976, y: .649999976, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &260692476
 GameObject:
   m_ObjectHideFlags: 0
@@ -5751,155 +5900,66 @@ Prefab:
   m_RootGameObject: {fileID: 1680835166}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &1654348683
-GameObject:
+--- !u!1001 &1551845366
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
-  m_PrefabInternal: {fileID: 1997204919}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1654348690}
-  - 212: {fileID: 1654348689}
-  - 114: {fileID: 1654348688}
-  - 61: {fileID: 1654348687}
-  - 114: {fileID: 1654348686}
-  - 114: {fileID: 1654348685}
-  - 95: {fileID: 1654348684}
-  - 114: {fileID: 1654348691}
-  m_Layer: 10
-  m_Name: PeijunShi
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!95 &1654348684
-Animator:
   serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9500000, guid: e95b9d1a228e644d7bcddf8736d250c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1997204919}
-  m_GameObject: {fileID: 1654348683}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bc2059febb1b649609e9345800449302, type: 2}
-  m_CullingMode: 0
-  m_ApplyRootMotion: 1
-  m_AnimatePhysics: 0
-  m_HasTransformHierarchy: 1
---- !u!114 &1654348685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: e95b9d1a228e644d7bcddf8736d250c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1997204919}
-  m_GameObject: {fileID: 1654348683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toolText: Talk
-  sizeOfFont: 24
-  ClickRevealer: {fileID: 0}
-  iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
---- !u!114 &1654348686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: e95b9d1a228e644d7bcddf8736d250c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1997204919}
-  m_GameObject: {fileID: 1654348683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDist: 4
---- !u!61 &1654348687
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100000, guid: e95b9d1a228e644d7bcddf8736d250c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1997204919}
-  m_GameObject: {fileID: 1654348683}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: 1.587304, y: 5.41710043}
-  m_Center: {x: -.14414978, y: -.0314495564}
---- !u!114 &1654348688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: e95b9d1a228e644d7bcddf8736d250c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1997204919}
-  m_GameObject: {fileID: 1654348683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e55abf860691c541a849b33c21c6089, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elementName: Peijun Shi
-  description: 'Mrs. Shi is a well known shopkeeper of the Community Housing main
-    plaza market, and has maintained her stall (tent?) for more than 30 years now. '
-  profileImage: {fileID: 21300000, guid: 5966b3b796970448caf08c4e7987902e, type: 3}
-  visible: 1
-  clickedOnSomething: 0
-  maxDist: 1
-  myConvo: 0
-  playerObj: {fileID: 0}
-  box: {fileID: 1654348687}
-  mouseOverIcon: Speech_Icon
---- !u!212 &1654348689
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 21200000, guid: e95b9d1a228e644d7bcddf8736d250c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1997204919}
-  m_GameObject: {fileID: 1654348683}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 2
-  m_SortingOrder: 2
-  m_SortingLayerID: 2971093031
-  m_Sprite: {fileID: 21300000, guid: 78422715a9353441bafee92e5c7914d8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &1654348690
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
-  m_PrefabInternal: {fileID: 1997204919}
-  m_GameObject: {fileID: 1654348683}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.15648079, y: -3.47967076, z: -1}
-  m_LocalScale: {x: .906309485, y: .906309962, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
---- !u!114 &1654348691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400006, guid: e95b9d1a228e644d7bcddf8736d250c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1997204919}
-  m_GameObject: {fileID: 1654348683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ae4b32f68af1b4e977f56ed01a1f5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 8.15648079
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.47967076
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .649999976
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .649999976
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_Color.r
+      value: .691176474
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: m_Color.b
+      value: .757200778
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+  m_RootGameObject: {fileID: 257759076}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1680835166
 GameObject:
   m_ObjectHideFlags: 0
@@ -6013,54 +6073,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1001 &1997204919
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 8.15648079
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -3.47967076
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
-      propertyPath: m_LocalScale.x
-      value: .906309485
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
-      propertyPath: m_LocalScale.y
-      value: .906309962
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
-  m_RootGameObject: {fileID: 1654348683}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &2041039059
 GameObject:
   m_ObjectHideFlags: 0
