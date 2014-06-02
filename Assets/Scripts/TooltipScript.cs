@@ -30,7 +30,7 @@ public class TooltipScript : MonoBehaviour {
 			font = Resources.Load ("Fonts/KoushikiSans") as Font;
 
 		if (ClickRevealer == null)
-			ClickRevealer = Resources.Load ("Textures/ClickRevealer") as Texture2D;
+			ClickRevealer = Resources.Load ("Textures/IndicatorRing") as Texture2D;
 
 		if (scale.x == 0f) {
 			scale.x = transform.localScale.x;
@@ -99,7 +99,7 @@ public class TooltipScript : MonoBehaviour {
 
 	void Update(){
 
-			if (Input.GetKey (KeyCode.Space)) {
+			if (Input.GetKey (KeyCode.Space) || Input.GetMouseButton(1)) {
 				revealAll = true;
 				point = Camera.main.WorldToScreenPoint(transform.position);
 			} else {

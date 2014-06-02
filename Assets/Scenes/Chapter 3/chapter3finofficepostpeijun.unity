@@ -902,16 +902,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 4c281b7a78264434faea95625cf11996, type: 3}
-  waitThisLong: .5
+  waitThisLong: -1
   whatCharacter: May
   nextLevel: chapter3finofficelobby
   isTherePlayer: 1
-  spawnHereAfter: {x: 11.8699999, y: -1.63}
+  spawnHereAfter: {x: .199004099, y: -3.62471008}
   loadNewXML: 0
   dialoguer: chapter3
   needGUI: 0
-  dialogue: ffffffff
-  setOffset: 18
+  dialogue: 
+  setOffset: 0
   player: {fileID: 0}
   maxY: -2.365376
   minY: -5.05575895
@@ -1039,7 +1039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolText: To Balcony
+  toolText: To Lobby
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
@@ -1056,8 +1056,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter3finofficelobbypostpeijun
-  x: 9.92000008
-  y: -1.74000001
+  x: .199004099
+  y: -3.62471008
   mouseOverIcon: Door_Icon
 --- !u!61 &1679785479
 BoxCollider2D:
@@ -1090,10 +1090,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1863201770}
   - 212: {fileID: 1863201769}
-  - 114: {fileID: 1863201768}
   - 61: {fileID: 1863201767}
   - 114: {fileID: 1863201766}
   - 114: {fileID: 1863201765}
+  - 114: {fileID: 1863201771}
   m_Layer: 0
   m_Name: HPCDesk
   m_TagString: Untagged
@@ -1112,7 +1112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolText: Examine Photo
+  toolText: Search Desk
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
@@ -1140,20 +1140,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 2.31272769, y: 3.95302773}
   m_Center: {x: -.135288373, y: .0805078968}
---- !u!114 &1863201768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1863201764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  diaNum: 15
-  offset: 0
-  wall: 0
 --- !u!212 &1863201769
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1188,6 +1174,30 @@ Transform:
   m_LocalScale: {x: 2.03059363, y: .233639255, z: .973497033}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1863201771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1863201764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8176f69eb181690498446187bf0de721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementName: High Performance Computer
+  description: This High Performance Computer will prove useful later on.  It has
+    1 yottabyte of RAM, what a powerhouse!
+  profileImage: {fileID: 21300000, guid: 86da638bb4a12dd4c96d5b8656206432, type: 3}
+  visible: 0
+  clickedOnSomething: 0
+  maxDist: 1
+  myConvo: 15
+  pickUpConvo: 20
+  conditions: 
+  associatedObjects: []
+  mouseOverIcon: Grab_Icon
+  autoPickupPostConvo: 1
 --- !u!1 &1864717039
 GameObject:
   m_ObjectHideFlags: 0

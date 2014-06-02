@@ -174,7 +174,7 @@ MonoBehaviour:
   smoothType: 0
   subdivisions: 2
   iterations: 1
-  strength: .569999993
+  strength: .400000006
   uniformLength: 1
   maxSegmentLength: 1
   bezierTangentLength: .400000006
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438b05127308f8940bf9d5802302b150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementName: 
+  elementName: May Taylor
   description: 
   profileImage: {fileID: 0}
   visible: 0
@@ -225,10 +225,10 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 65f3a839d4fabbc4d948f874762dcf16, type: 3}
+  m_SortingLayer: 3
+  m_SortingOrder: 2
+  m_SortingLayerID: 1982072587
+  m_Sprite: {fileID: 21300000, guid: 1f11e758a90d34325afe310802d6ef48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21200002
 SpriteRenderer:
@@ -251,7 +251,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 65f3a839d4fabbc4d948f874762dcf16, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1f11e758a90d34325afe310802d6ef48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

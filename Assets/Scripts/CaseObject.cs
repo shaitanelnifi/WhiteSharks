@@ -24,6 +24,9 @@ public class CaseObject : CaseElement {
 
 		if (GameManager.pickUpConvo != pickUpConvo)
 			GameManager.pickUpConvo = pickUpConvo;
+
+		if (profileImage == null)
+			profileImage = GetComponent<SpriteRenderer> ().sprite;
 	}
 
 	public void OnMouseEnter(){
@@ -68,13 +71,14 @@ public class CaseObject : CaseElement {
 		if (checkCondis()) {
 			handleAssociated();
 			collectItems();
-			player.stopMove ();
+			//player.stopMove ();
 			player.talking = true;
 			Dialoguer.StartDialogue((int)myConvo);
 		} else if (myConvo != Convo.ch0none) {
 			player.talking = true;
-			player.stopMove ();
+			//player.stopMove ();
 			Dialoguer.StartDialogue ((int)myConvo);
+			tookItem = true;
 		}
 
 	}
@@ -111,9 +115,13 @@ public class CaseObject : CaseElement {
 			if (pDist.isCloseEnough (player.transform.position))
 				pickUpItem ();
 
-		if (autoPickupPostConvo && GameManager.dialogueJustFinished)
-		if (pDist.isCloseEnough (player.transform.position) && !player.talking) {
-			pickUpItem ();
+		if (autoPickupPostConvo && GameManager.dialogueJustFinished && checkCondis() && !clickedOnSomething)
+		if (pDist.isCloseEnough (player.transform.position) && !player.talking && tookItem) {
+			handleAssociated();
+			collectItems();
+			player.stopMove ();
+			player.talking = true;
+			Dialoguer.StartDialogue(pickUpConvo);
 			autoPickupPostConvo = false;
 		}
 	}

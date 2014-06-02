@@ -40,12 +40,17 @@ public class genericScene : MonoBehaviour {
 
 		sceneInit ();
 
-		if (loadNewXML || !Dialoguer.isInitialized ())
-			Dialoguer.Initialize(dialoguer);
+		if (loadNewXML || !Dialoguer.isInitialized ()) {
+						Dialoguer.Initialize (dialoguer);
+			GameManager.offset = 0;
+
+			if (GameManager.offset == 0)
+				GameManager.offset = setOffset;
+
+			setOffset = 0;
+				}
 
 		GameManager.dialogueJustFinished = false;
-		if (GameManager.offset == 0)
-			GameManager.offset = setOffset;
 
 		if (autoPlay) 
 			playDialogue();
@@ -60,13 +65,13 @@ public class genericScene : MonoBehaviour {
 
 	void playDialogue(){
 
-		if (dialogue.Length != 0)
+		if (dialogue.Length != 0){
 			Dialoguer.StartDialogue ((int)dialogue[curDia]);
 
-		if (player != null) {
-			player.stopMove ();
-			player.talking = true;
-			//Debug.LogWarning("TALKING");
+			if (player != null) {
+				player.stopMove ();
+				player.talking = true;
+			}
 		}
 	}
 	
@@ -142,7 +147,6 @@ public class genericScene : MonoBehaviour {
 							}
 							GameManager.dialogueJustFinished = false;
 							SoundManager.Instance.CantWalk ();
-							GameManager.Instance.GetComponent<DialogueGUI_Test>().resetRunOnce();
 							Application.LoadLevel (nextLevel);
 					}
 			} else if (dialogue [curDia].Equals (Convo.ch0none)) {
@@ -161,7 +165,6 @@ public class genericScene : MonoBehaviour {
 							}
 							GameManager.dialogueJustFinished = false;
 							SoundManager.Instance.CantWalk ();
-							GameManager.Instance.GetComponent<DialogueGUI_Test>().resetRunOnce();
 							Application.LoadLevel (nextLevel);
 					}
 			}
@@ -179,7 +182,6 @@ public class genericScene : MonoBehaviour {
 			}
 			GameManager.dialogueJustFinished = false;
 			SoundManager.Instance.CantWalk ();
-			GameManager.Instance.GetComponent<DialogueGUI_Test>().resetRunOnce();
 			Application.LoadLevel (nextLevel);
 		}
 	}

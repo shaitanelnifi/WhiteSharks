@@ -5508,7 +5508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f67cbf8240874835a8a9a1e29d5690a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: chapter3finoffice
+  id: chapter3finofficebeforepeijun
   x: 1.29999995
   y: -4.65999985
   mouseOverIcon: Door_Icon
@@ -5700,7 +5700,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
       propertyPath: id
-      value: chapter3finoffice
+      value: chapter3finofficebeforepeijun
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 99870bb5d1c6240c1bcd84e40a9d3e47, type: 2}
       propertyPath: x
@@ -5819,8 +5819,8 @@ MonoBehaviour:
   loadNewXML: 0
   dialoguer: chapter3
   needGUI: 0
-  dialogue: ffffffff
-  setOffset: 18
+  dialogue: 
+  setOffset: 0
   player: {fileID: 0}
   maxY: -2.72000003
   minY: -4.92999983
@@ -5874,8 +5874,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter3finofficewalkwaybeforepeijun
-  x: 9.92000008
-  y: -1.74000001
+  x: 2.945086
+  y: -2.47189498
   mouseOverIcon: Door_Icon
 --- !u!61 &1531734943
 BoxCollider2D:

@@ -50,9 +50,6 @@ public enum clickableID {
 	//chapter 1
 	sharkLightPoster = 0,
 	shammySwag = 1,
-	frankBracelet = 2,
-	frankBlood = 3,
-	partnerBlood = 4,
 	noelPicture = 5,
 	janeShammyRooms = 6,
 	hideoutBed = 7,
@@ -68,7 +65,6 @@ public enum clickableID {
 	projector = 17,
 
 	//chapter 2
-	maychapter2finofficewalkwaywrongway = 2,
 	maychapter2finplazawrongway = 5,
 	maychapter2bellybarfirstarrivalwrongway = 8,
 	maychapter2bellymarketwrongway = 12,
@@ -83,13 +79,27 @@ public enum clickableID {
 	//maychapter2finplazawrongway = 46,
 	maychapter2bellybarbyemay = 54,
 	maychapter2bellyalleypassingthroughwrongway = 56,
+	janechapter2ExamineTrapDoor = 63,
+	maychapter2marketpeijunwrongway = 64,
+	janechapter2LITERALLYNOTHING = 65,
 
 	//chapter 3
 	noelchapter3finofficenote = 2,
+	peijunchapter3bellymarketbeforepeijun = 7,
 	joshchapter3fincafepostpeijunpreorder = 13,
 	//14, //merged with 13
 	maychapter3finofficepostpeijun = 15,
 	cantenter = 19,
+	maychapter3finlobbywrongway = 21,
+	maychapter3finofficenonote = 22,
+
+	//chapter 4
+	janechapter4networkmapcelldoor = 4,
+	janechapter4mapbots = 5,
+	janechapter4bellybarwrongway = 7,
+	janechapter4bellybrainroomwrongway = 9,
+	janechapter4bellybrainroomterminal = 10,
+	maychapter4Networkofficetable = 24,
 
 };
 
@@ -116,11 +126,15 @@ public enum Convo {
 	janeShammyBracelet = 15,
 	janeCuteBox = 16,
 	janeNinasPhone = 17,
+	frankBracelet = 20,
+	frankBlood = 21,
+	partnerBlood = 22,
 	janeShammyCase = 24,
 	
 	//chapter 2
 	maychapter2finofficewalkwaystart = 0,
 	maychapter2finofficewalkwaywaiting = 1,
+	maychapter2finofficewalkwaywrongway = 2,
 	maychapter2finplazafirstarrivalstart = 3,
 	maychapter2finplazafirstarrivalwaiting = 4,
 	maychapter2bellybarfirstarrivalstart = 6,
@@ -154,6 +168,7 @@ public enum Convo {
 	noelchapter2brainroomcutscene = 44,
 	maychapter2finplazapassingthrough = 45,
 	maychapter2bellybarpassingthroughwaiting = 49,
+	maychapter2bellypostcafestart = 51,
 	maychapter2bellybarpostcafewaiting = 52,
 	robotchapter2bellybarpostcafe = 53,
 	maychapter2bellyalleypassingthroughwaiting = 55,

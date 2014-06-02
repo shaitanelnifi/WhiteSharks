@@ -7,12 +7,12 @@ public class Clickable : MonoBehaviour {
 	public int offset;
 	
 	//Mouse icon information
-	private string mouseOverIcon = "Examine_Icon";	
-	private string defaultIcon = "Walk_Icon";		//The standard mouse icon when not hovering over an object
-	private playerScript player;
+	protected string mouseOverIcon = "Examine_Icon";
+	protected string defaultIcon = "Walk_Icon";		//The standard mouse icon when not hovering over an object
+	protected playerScript player;
 	public bool wall;
-	private bool clickedOnSomething;
-	private distanceCheck pDist;
+	protected bool clickedOnSomething;
+	protected distanceCheck pDist;
 	
 	public void OnMouseEnter(){
 		//Debug.LogWarning ("Stop? Go?: " + player.canWalk);
@@ -24,7 +24,9 @@ public class Clickable : MonoBehaviour {
 	public void OnMouseExit(){
 		GameManager.Instance.updateMouseIcon (defaultIcon);
 		//Debug.Log ("Talking " + player.talking);
+
 		if (player != null) {
+			//player.canWalk = true;
 				if (wall && !player.talking) {
 					player.canWalk = true;
 			}
@@ -34,21 +36,33 @@ public class Clickable : MonoBehaviour {
 	public void OnMouseDown(){
 		if (Input.GetMouseButtonDown (0)) {
 			if (player != null) {
+
 				if (player.canWalk && !wall){
 					clickedOnSomething = true;
 					player.setTarget(new Vector3(transform.position.x, transform.position.y, 0));
-				} else {
+				} else if (!player.talking){
 					player.stopMove();
 					player.canWalk = true;
+					clickedOnSomething = true;
 				}
 			}
 		}
 		
 	}
 
+/*	public void OnMouseUp(){
+		if (wall) {
+			player.stopMove();
+			//player.canWalk = true;
+		}
+	
+	}*/
+
+
+
 	public void onMouseMiss(){
 		
-		if (Input.GetMouseButton (0)) {
+		if (Input.GetMouseButtonDown (0)) {
 			//Debug.LogWarning("Checking click.");      
 			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 			if (hit.collider != null) {
@@ -65,11 +79,13 @@ public class Clickable : MonoBehaviour {
 		if(!wall){
 			Dialoguer.StartDialogue((int)diaNum + offset);
 		}
-		player.stopMove();
+
+		Debug.Log("3dddclickeasdasdasdasdasdasantiddddasdasdasdasdasdasd");
 		SoundManager.Instance.StopWalk();
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);
 		clickedOnSomething = false;
 		player.talking = true;
+		player.stopMove();
 	}
 	
 	public void Start(){
@@ -93,6 +109,7 @@ public class Clickable : MonoBehaviour {
 						startDialogue ();
 		} else if (wall && clickedOnSomething){
 			player.stopMove();
+
 			clickedOnSomething = false;
 		}
 

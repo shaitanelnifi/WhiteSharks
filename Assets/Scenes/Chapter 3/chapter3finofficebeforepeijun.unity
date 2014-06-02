@@ -317,8 +317,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter3finofficelobbybeforepeijun
-  x: 9.92000008
-  y: -1.74000001
+  x: .199004099
+  y: -3.62471008
   mouseOverIcon: Door_Icon
 --- !u!61 &438467836
 BoxCollider2D:
@@ -973,16 +973,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 4c281b7a78264434faea95625cf11996, type: 3}
-  waitThisLong: .5
+  waitThisLong: -1
   whatCharacter: May
   nextLevel: chapter1finbalcony
   isTherePlayer: 1
-  spawnHereAfter: {x: 11.8699999, y: -1.63}
+  spawnHereAfter: {x: .199004099, y: -3.62471008}
   loadNewXML: 0
   dialoguer: chapter1
   needGUI: 0
-  dialogue: ffffffff
-  setOffset: 18
+  dialogue: 
+  setOffset: 0
   player: {fileID: 0}
   maxY: -2.365376
   minY: -5.05575895

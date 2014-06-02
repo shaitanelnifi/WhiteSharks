@@ -20,4 +20,6 @@ public enum DialoguerDialogues{
 	chaptercutscene = 17,
 	cutsceneNetwork = 18,
 	cantenter = 19,
+	MayJournalAdd = 20,
+	MayLobbyWrongWay = 21,
 }

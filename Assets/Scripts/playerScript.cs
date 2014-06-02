@@ -31,11 +31,12 @@ public class playerScript : CaseElement {
 	public bool talking =false;
 
 	//path finding variables
-	float nodeTriggerDistace = 0.5f;
+	float nodeTriggerDistace = 0.4f;
 	int currentWayPoint;
 	Seeker seeker;
 	Path path;
 	Vector3 targetPosition;
+	bool startPath = false;
 	public float baseSpeed;
 
 
@@ -83,10 +84,11 @@ public class playerScript : CaseElement {
 	}
 
 	public static void turnOffSmoothMod(){
+
 		GameObject playerObj;
-		do{
+		//do{
 			playerObj = GameObject.FindWithTag ("Player");
-		}while (playerObj == null);
+		//}while (playerObj == null);
 		((SimpleSmoothModifier)playerObj.GetComponent<SimpleSmoothModifier>()).enabled = false;
 
 	}
@@ -116,11 +118,14 @@ public class playerScript : CaseElement {
 					   targetPosition.x = mousePosition.x;
 					   targetPosition.y = mousePosition.y;
 					   SoundManager.Instance.CanWalk();
-					   seeker.StartPath(transform.position, targetPosition, OnPath);
+						startPath = true;
+					   //seeker.StartPath(transform.position, targetPosition, OnPath);
 				   }
 			}
 		}
-
+		if(startPath){
+			seeker.StartPath(transform.position, targetPosition, OnPath);
+		}
 		//if theres no path or already at the last node of path, break
 		if(path == null||currentWayPoint> path.vectorPath.Count){
 			SoundManager.Instance.StopWalk();
@@ -199,6 +204,8 @@ public class playerScript : CaseElement {
 		//Debug.LogWarning ("STOP");
 		setTarget(new Vector2(transform.position.x, transform.position.y));
 		canWalk = false;
+		startPath = false;
+		targetPosition = transform.position;
 		SoundManager.Instance.CantWalk();
 		if (anim != null)
 		anim.SetFloat("distance", 0f);
@@ -225,7 +232,7 @@ public class playerScript : CaseElement {
 		DoorScript doorObj = collider.gameObject.GetComponent<DoorScript> ();
 		ConditionDoor condObj = collider.gameObject.GetComponent<ConditionDoor>();
 		DialogueDoor diaObj = collider.gameObject.GetComponent<DialogueDoor>();
-
+		startPath = false;
 		if (condObj != null) {
 			if (condObj.gotThem()){
 				canScale = false;

@@ -5,11 +5,16 @@ public class DialogueDoor : DoorScript {
 
 	public bool playDoorSound = false;
 	public bool wall;
+	public bool hasConvo = true;
 	public clickableID diaNum;
 	public int offset;
 	private bool clickedOnSomething;
 	private bool doneTalking = false;
 	GameObject backEffect = null;
+
+	public string whatCharacter;
+	public string nextLevel;
+	public bool isTherePlayer = false;
 
 	void Start() {
 
@@ -20,22 +25,25 @@ public class DialogueDoor : DoorScript {
 	}
 
 	void Update() {
-
 		if(player == null)
 			player = (playerScript)FindObjectOfType(typeof(playerScript));
 
 	}
 
 	public void useDoor() {
-
 		GameManager.Instance.currRoom = id;
 		SoundManager.Instance.StopWalk();
 		GameManager.Instance.SetNextX(x);
 		GameManager.Instance.SetNextY(y);
 		orderCount = 0;
 		if(playDoorSound) SoundManager.Instance.Play2DSound((AudioClip)Resources.Load("Sounds/SoundEffects/FinDoor"), SoundManager.SoundType.Sfx, true);
-		startDialogue();
-		StartCoroutine("DialogueDone");
+		if (hasConvo) {
+						startDialogue ();
+						StartCoroutine ("DialogueDone");
+				} else {
+			backEffect = (GameObject)Instantiate(Resources.Load("blackScreen"));
+			StartCoroutine("Fade");
+		}
 	}
 
 	IEnumerator DialogueDone() {
@@ -52,7 +60,19 @@ public class DialogueDoor : DoorScript {
 			temp = true;
 			yield return new WaitForSeconds(0.3f);
 		}
-		Application.LoadLevel(id);
+
+		GameManager.Instance.playerInScene = isTherePlayer;
+
+		if(isTherePlayer) {
+
+			//Debug.Log ("Setting nexts to " + spawnHereAfter.x + " and " + spawnHereAfter.y);
+			GameManager.Instance.SetMainCharacter(whatCharacter);
+			GameManager.Instance.SetNextX(x);
+			GameManager.Instance.SetNextY(y);
+		}
+		GameManager.dialogueJustFinished = false;
+		SoundManager.Instance.CantWalk();
+		Application.LoadLevel(nextLevel);
 	}
 
 	public void startDialogue() {

@@ -23,6 +23,7 @@ public class DoorScript : MonoBehaviour {
 		player = (playerScript) FindObjectOfType(typeof(playerScript));
 		orderCount++;
 		order = orderCount;
+		gameObject.tag = "door";
 
 	}
 
