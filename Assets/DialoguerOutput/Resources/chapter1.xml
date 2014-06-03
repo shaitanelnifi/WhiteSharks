@@ -7,7 +7,7 @@
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>200.960571</y>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -108,7 +108,7 @@
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>White Shark has always been more than a place, a corporation, a collective. </text>
+          <text>White Shark has always been more than a place, a corporation, a collective.</text>
           <name />
           <portrait />
           <audio />
@@ -497,8 +497,8 @@
           <id>11</id>
           <type>TextPhase</type>
           <position>
-            <x>685</x>
-            <y>352.019531</y>
+            <x>992</x>
+            <y>300.019531</y>
           </position>
           <outs>
             <int>12</int>
@@ -637,7 +637,7 @@ Most of our technology was made at the expense of people who will never see the 
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>The Belly, the slums. The residential common area, the home of the little people, as the snobs like to call them.</text>
+          <text>The Belly; the slums. The residential common area, the home of the little people, as the snobs like to call them.</text>
           <name />
           <portrait />
           <audio />
@@ -770,7 +770,7 @@ Most of our technology was made at the expense of people who will never see the 
           </outs>
           <advanced>false</advanced>
           <metadata />
-          <text>What he could not predict is that after generations some of us would indeed evolve, but to be able to resist him better… and that’s where everything started.</text>
+          <text>What he could not predict is that after generations some of us would indeed evolve and be able to resist him better… and that’s where everything started.</text>
           <name />
           <portrait />
           <audio />
@@ -1814,7 +1814,7 @@ Most of our technology was made at the expense of people who will never see the 
       <name>Frank and Partner two</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>140.990356</x>
+        <x>85.00232</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -1941,7 +1941,7 @@ Most of our technology was made at the expense of people who will never see the 
           <variableId>0</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>68</y>
+            <y>52</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -2480,8 +2480,8 @@ I’m going to double check outside, I’ll be back soon.</text>
       <name>Jane and Shammy one</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>865.7003</x>
-        <y>2682.406</y>
+        <x>457.378418</x>
+        <y>846.4547</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -4009,7 +4009,7 @@ I’m going to double check outside, I’ll be back soon.</text>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Welcome Detective Jane Doe! </text>
+          <text>Welcome Detective Jane Doe!</text>
           <name>Shammy</name>
           <portrait />
           <audio />
@@ -4424,8 +4424,8 @@ I’m going to double check outside, I’ll be back soon.</text>
       <name>Noel and Alexia</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>34.0014648</x>
-        <y>0</y>
+        <x>0</x>
+        <y>1439.45435</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -4674,7 +4674,7 @@ She has been here long enough, and she’s proved capable.</text>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>You’re going to send her? Do you think she’s ready for the belly yet?</text>
+          <text>You’re going to send her? Do you think she’s ready for the Belly yet?</text>
           <name>Noel Alt</name>
           <portrait />
           <audio />
@@ -4896,8 +4896,8 @@ She has been here long enough, and she’s proved capable.</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>336</x>
-            <y>1559.999</y>
+            <x>729</x>
+            <y>1312.999</y>
           </position>
           <outs>
             <int>11</int>
@@ -4943,8 +4943,8 @@ We don’t have a lot of time, the witnesses have been in lockdown since this mo
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>656</x>
-            <y>1558.999</y>
+            <x>1075</x>
+            <y>1309.999</y>
           </position>
           <outs>
             <int>12</int>
@@ -5035,17 +5035,17 @@ We don’t have a lot of time, the witnesses have been in lockdown since this mo
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>337</x>
-            <y>1706.999</y>
+            <x>362</x>
+            <y>1354.999</y>
           </position>
           <outs>
             <int>14</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>We have two witnesses, a teenager named Nina Walker and a security guard called Liam O’Shea.
+          <text>We have two witnesses, a teenager named [3DFF49]Nina Walker[-] and a security guard called [3DFF49]Liam O’Shea[-].
 
-Their profiles are being uploaded to your journal as we speak.</text>
+[3DFF49]Their profiles are being uploaded to your journal as we speak. [-]</text>
           <name>Alexia Ross</name>
           <portrait />
           <audio />
@@ -5083,8 +5083,8 @@ Their profiles are being uploaded to your journal as we speak.</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>648</x>
-            <y>1686.999</y>
+            <x>749</x>
+            <y>1843.999</y>
           </position>
           <outs>
             <int>15</int>
@@ -5137,7 +5137,7 @@ Their profiles are being uploaded to your journal as we speak.</text>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>As for clues, the scout drones have been able to recover a bracelet fragment. May tried to analyze it, but a key part is apparently missing. </text>
+          <text>As for clues, the scout drones have been able to recover a [3DFF49]bracelet fragment[-]. May tried to analyze it, but a key part is apparently missing. </text>
           <name>Alexia Ross</name>
           <portrait />
           <audio />
@@ -5175,15 +5175,15 @@ Their profiles are being uploaded to your journal as we speak.</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>340</x>
-            <y>1697.99731</y>
+            <x>407</x>
+            <y>1822.99731</y>
           </position>
           <outs>
             <int>17</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>We’ve also discovered that photographic evidence was… posted on a social network, but the post lacks sufficient detail.
+          <text>We’ve also discovered that [3DFF49]photographic evidence[-] was… posted on a social network, but the post lacks sufficient detail.
 </text>
           <name>Alexia Ross</name>
           <portrait />
@@ -5222,15 +5222,15 @@ Their profiles are being uploaded to your journal as we speak.</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>681</x>
-            <y>1697.99731</y>
+            <x>1047</x>
+            <y>1792.99731</y>
           </position>
           <outs>
             <int>18</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>You should try to recover the rest of the bracelet and the original picture.
+          <text>You should try to recover the rest of the [3DFF49]bracelet[-] and the [3DFF49]original picture[-].
 </text>
           <name>Alexia Ross</name>
           <portrait />
@@ -5369,8 +5369,8 @@ Their profiles are being uploaded to your journal as we speak.</text>
       <name>Jane and Alexia one</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>0</y>
+        <x>40.6999931</x>
+        <y>555.499939</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -6779,8 +6779,8 @@ Their profiles are being uploaded to your journal as we speak.</text>
       <name>Jane and Nina</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>1310.04028</x>
-        <y>4198.096</y>
+        <x>426.746643</x>
+        <y>2169.69751</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -7148,7 +7148,7 @@ Their profiles are being uploaded to your journal as we speak.</text>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I dont have it and you will never find it. </text>
+          <text>I don't have it and you will never find it. </text>
           <name>Nina Walker</name>
           <portrait />
           <audio />
@@ -8061,7 +8061,7 @@ Their profiles are being uploaded to your journal as we speak.</text>
           <variableId>5</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>68</y>
+            <y>52</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -8909,7 +8909,7 @@ Their profiles are being uploaded to your journal as we speak.</text>
       <name>Jane and Noel three</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>200.0122</x>
+        <x>173.000977</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -9147,7 +9147,7 @@ Their profiles are being uploaded to your journal as we speak.</text>
       <startPage>0</startPage>
       <scrollPosition>
         <x>0</x>
-        <y>0</y>
+        <y>4337.89355</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -10011,7 +10011,7 @@ Their profiles are being uploaded to your journal as we speak.</text>
           <advanced>true</advanced>
           <metadata />
           <text>No, he doesn't have a last name. 
-His name is Frank. Just Frank.</text>
+His name is [3DFF49]Frank[-]. Just [3DFF49]Frank[-].</text>
           <name>May Taylor</name>
           <portrait />
           <audio />
@@ -10192,8 +10192,8 @@ It can’t be that hard, even for you!</text>
       <name>Jane and Alexia two</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>8280.086</y>
+        <x>282</x>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -13504,8 +13504,8 @@ Here’s Nina’s phone.</text>
       <name>Jane and Nina's phone</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>1911.79944</x>
-        <y>1825.23364</y>
+        <x>445.4258</x>
+        <y>897.836243</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -15782,7 +15782,7 @@ I can’t believe people like this character.</text>
       <name>Frank's Bracelet</name>
       <startPage>4</startPage>
       <scrollPosition>
-        <x>56.00464</x>
+        <x>0</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -15885,7 +15885,7 @@ I can’t believe people like this character.</text>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>This bracelet is covered in blood and in pieces. Only one piece is here.</text>
+          <text>[3DFF49]This bracelet is covered in blood and in pieces. Only one piece is here. [-]</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -16256,8 +16256,8 @@ I can’t believe people like this character.</text>
       <name>Partner's Blood Puddle</name>
       <startPage>4</startPage>
       <scrollPosition>
-        <x>256.015</x>
-        <y>91</y>
+        <x>0</x>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -16361,7 +16361,7 @@ I can’t believe people like this character.</text>
           <metadata />
           <text>What happened here? 
 Is this what Alexia and Noel were talking about? 
-I’ll have to check out the files.</text>
+[3DFF49]I’ll have to check out the files in my journal.[-]</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -16822,8 +16822,8 @@ I sometimes forget he teaches on the side.</text>
       <name>Jane and Shammy Case</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>1613.00366</x>
-        <y>381.03772</y>
+        <x>585.604065</x>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -20435,7 +20435,7 @@ I sometimes forget he teaches on the side.</text>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>I'll add this to my journal.</text>
+          <text>[3DFF49]I'll add this to my journal.[-]</text>
           <name>Jane Doe</name>
           <portrait />
           <audio />
@@ -20870,5 +20870,5 @@ Why am I… feeling… so… dizzy?</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>17</currentDialogueId>
+  <currentDialogueId>22</currentDialogueId>
 </DialogueEditorMasterObject>

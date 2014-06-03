@@ -481,7 +481,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 750f72ca34307ac498a0540d33d3bd86, type: 2}
       propertyPath: toolText
-      value: Beep Boop
+      value: Bartender
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: 750f72ca34307ac498a0540d33d3bd86, type: 2}
       propertyPath: m_SortingLayer
@@ -545,7 +545,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: wall
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: diaNum
@@ -5631,7 +5631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolText: To Fin
+  toolText: To Fin Plaza
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
@@ -5675,7 +5675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diaNum: 8
   offset: 0
-  wall: 1
+  wall: 0
 --- !u!4 &688963340
 Transform:
   m_ObjectHideFlags: 0
@@ -5683,8 +5683,8 @@ Transform:
   m_PrefabInternal: {fileID: 2032133072}
   m_GameObject: {fileID: 688963335}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.9982796, y: -4.56967783, z: 0}
-  m_LocalScale: {x: 3.0120759, y: 9.27824497, z: 0}
+  m_LocalPosition: {x: 12.0799999, y: -1.60000002, z: 0}
+  m_LocalScale: {x: 3.0120759, y: 21.5300007, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &754596420
@@ -6596,7 +6596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diaNum: 8
   offset: 0
-  wall: 1
+  wall: 0
 --- !u!4 &1956309068
 Transform:
   m_ObjectHideFlags: 0
@@ -6640,7 +6640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolText: Beep Boop
+  toolText: Bartender
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 16, y: 180}
@@ -6739,11 +6739,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 11.9982796
+      value: 12.0799999
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.56967783
+      value: -1.60000002
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6771,7 +6771,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_LocalScale.y
-      value: 9.27824497
+      value: 21.5300007
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_LocalScale.z
@@ -6779,7 +6779,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: wall
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: diaNum
@@ -6787,7 +6787,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: toolText
-      value: To Fin
+      value: To Fin Plaza
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_Layer
