@@ -88,6 +88,7 @@ GameObject:
   - 114: {fileID: 110126560}
   - 114: {fileID: 110126565}
   - 95: {fileID: 110126567}
+  - 114: {fileID: 110126568}
   - 95: {fileID: 110126566}
   m_Layer: 10
   m_Name: LiamOShea
@@ -143,7 +144,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 2
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 3401e01ddcafe4131af79f39bb485590, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9600821bf69ab4f07a1ae87411a51f42, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &110126563
 MonoBehaviour:
@@ -217,13 +218,25 @@ Animator:
     type: 2}
   m_PrefabInternal: {fileID: 195794085}
   m_GameObject: {fileID: 110126559}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9213df5b4b8354871b63ebed3ddde41a, type: 2}
   m_CullingMode: 0
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!114 &110126568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: dd72aa61d2de34ba4b04c27282d212d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 195794085}
+  m_GameObject: {fileID: 110126559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ae4b32f68af1b4e977f56ed01a1f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &195794085
 Prefab:
   m_ObjectHideFlags: 0
