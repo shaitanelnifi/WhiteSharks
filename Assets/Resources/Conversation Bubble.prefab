@@ -348,7 +348,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.19302464, y: -609.322021, z: 0}
+  m_LocalPosition: {x: -142.833344, y: -2119.37866, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400020}
@@ -487,7 +487,7 @@ MonoBehaviour:
   hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
   pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
   duration: .200000003
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  disabledColor: {r: .980392158, g: .941176474, b: .784313738, a: 1}
   dragHighlight: 0
   onClick: []
 --- !u!114 &11400004
@@ -517,7 +517,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: .980392158, g: .941176474, b: .784313738, a: 1}
   mPivot: 3
   mWidth: 1281
   mHeight: 55
@@ -580,7 +580,7 @@ MonoBehaviour:
   hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
   pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
   duration: .200000003
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  disabledColor: {r: .980392158, g: .941176474, b: .784313738, a: 1}
   dragHighlight: 0
   onClick: []
 --- !u!114 &11400010
@@ -610,7 +610,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: .980392158, g: .941176474, b: .784313738, a: 1}
   mPivot: 3
   mWidth: 1281
   mHeight: 55
@@ -673,7 +673,7 @@ MonoBehaviour:
   hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
   pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
   duration: .200000003
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  disabledColor: {r: .980392158, g: .941176474, b: .784313738, a: 1}
   dragHighlight: 0
   onClick: []
 --- !u!114 &11400016
@@ -703,7 +703,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: .980392158, g: .941176474, b: .784313738, a: 1}
   mPivot: 3
   mWidth: 1281
   mHeight: 55
@@ -766,7 +766,7 @@ MonoBehaviour:
   hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
   pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
   duration: .200000003
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  disabledColor: {r: .980392158, g: .941176474, b: .784313738, a: 1}
   dragHighlight: 0
   onClick: []
 --- !u!114 &11400022
@@ -796,7 +796,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: .980392158, g: .941176474, b: .784313738, a: 1}
   mPivot: 3
   mWidth: 1281
   mHeight: 55
@@ -859,7 +859,7 @@ MonoBehaviour:
   hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
   pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
   duration: .200000003
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  disabledColor: {r: .980392158, g: .941176474, b: .784313738, a: 1}
   dragHighlight: 0
   onClick: []
 --- !u!114 &11400028
@@ -889,7 +889,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: .980392158, g: .941176474, b: .784313738, a: 1}
   mPivot: 3
   mWidth: 1281
   mHeight: 55
@@ -952,7 +952,7 @@ MonoBehaviour:
   hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
   pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
   duration: .200000003
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  disabledColor: {r: .980392158, g: .941176474, b: .784313738, a: 1}
   dragHighlight: 0
   onClick: []
 --- !u!114 &11400034
@@ -982,7 +982,7 @@ MonoBehaviour:
     target: {fileID: 0}
     relative: 1
     absolute: 0
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: .980392158, g: .941176474, b: .784313738, a: 1}
   mPivot: 3
   mWidth: 1281
   mHeight: 55
@@ -994,7 +994,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: e8a2bdb4cdc714a34a70a05bce765e27, type: 3}
   mFont: {fileID: 0}
-  mText: 
+  mText: This is a test of
   mFontSize: 36
   mFontStyle: 0
   mEncoding: 1

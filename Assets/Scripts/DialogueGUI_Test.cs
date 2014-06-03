@@ -56,7 +56,6 @@ public class DialogueGUI_Test : MonoBehaviour {
 
 	private void onDialogueStartedHandler(){
 		_dialogue = true;
-
 		time = 0;
 
 		if (convoBubble != null)
@@ -82,7 +81,6 @@ public class DialogueGUI_Test : MonoBehaviour {
 	}
 	
 	private void onDialogueTextPhaseHandler(DialoguerTextData data){
-		resetChoiceColor ();
 		_windowCurrentText = string.Empty;
 		_windowTargetText = data.text;
 		
@@ -109,7 +107,6 @@ public class DialogueGUI_Test : MonoBehaviour {
 		// Resets the camera to default size
 		_dialogue = false;
 		_showDialogueBox = false;
-		//Camera.main.orthographicSize = 6.0f;
 	}
 	
 	private void onDialoguerMessageEvent(string message, string metadata){
@@ -134,7 +131,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 			Component[] buttons = GameObject.Find ("BranchedChoices").GetComponentsInChildren(typeof(UIWidget));
 			foreach (Component button in buttons)
 			{
-				button.GetComponent<UIWidget>().color = new Color(255f, 255f, 255f);
+				button.GetComponent<UIWidget>().color = new Color(250f, 240f, 200f, 255f);
 			}
 		}
 	}
@@ -250,7 +247,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 			{
 				for (int i = 0; i < _branchedTextChoices.Length; ++i)
 				{
-					choices[i].text = _branchedTextChoices[i];		
+					choices[i].text = "- " + _branchedTextChoices[i];		
 				}
 			}
 			else
@@ -282,7 +279,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 				}
 				foreach (int i in newlist)
 				{
-					choices[i-1].text = _branchedTextChoices[i-1];
+					choices[i-1].text = "- " + _branchedTextChoices[i-1];
 					enableCollider(choices[i-1]);
 				}
 				int itor = 0;
@@ -290,7 +287,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 				{
 					if (Dialoguer.GetGlobalBoolean(varlist[itor]))
 					{
-						choices[i-1].text = _branchedTextChoices[i-1];
+						choices[i-1].text = "- " + _branchedTextChoices[i-1];
 						enableCollider(choices[i-1]);
 					}
 					else
