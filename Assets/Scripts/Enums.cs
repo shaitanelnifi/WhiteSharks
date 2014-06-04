@@ -76,12 +76,12 @@ public enum clickableID {
 	janechapter2fincafealarmposthack = 38,
 	janechapter2fincafespeakersprehack = 39,
 	janechapter2fincafespeakersposthack = 40,
-	//maychapter2finplazawrongway = 46,
+	maychapter2finplazapassingthroughwrongway = 46,
 	maychapter2bellybarbyemay = 54,
 	maychapter2bellyalleypassingthroughwrongway = 56,
 	janechapter2ExamineTrapDoor = 63,
 	maychapter2marketpeijunwrongway = 64,
-	janechapter2LITERALLYNOTHING = 65,
+	maychapter2bellybarpostcafewrongway = 65,
 
 	//chapter 3
 	noelchapter3finofficenote = 2,
