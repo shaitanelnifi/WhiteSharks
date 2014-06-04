@@ -201,11 +201,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: wall
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: diaNum
-      value: 13
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: toolText
@@ -462,7 +462,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: x
-      value: -6
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: y
@@ -570,7 +570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diaNum: 22
+  diaNum: 56
   offset: 0
   wall: 0
 --- !u!4 &690767294
@@ -593,11 +593,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 6.1500001
+      value: 6.29000664
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.48000002
+      value: -4.47999144
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.z
@@ -625,11 +625,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalScale.x
-      value: .850000024
+      value: .782977104
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalScale.y
-      value: .850000024
+      value: .782977104
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
@@ -759,7 +759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter2bellymarketpeijun
-  x: -6
+  x: -3
   y: -3.5999999
   mouseOverIcon: Door_Icon
 --- !u!50 &1122036498
@@ -6039,15 +6039,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: wall
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: diaNum
-      value: 13
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: toolText
-      value: ???
+      value: Moe's Room
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_Layer
@@ -6097,7 +6097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolText: ???
+  toolText: Moe's Room
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
@@ -6139,9 +6139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diaNum: 13
+  diaNum: 56
   offset: 0
-  wall: 1
+  wall: 0
 --- !u!4 &1203072240
 Transform:
   m_ObjectHideFlags: 0
@@ -6226,9 +6226,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diaNum: 13
+  diaNum: 56
   offset: 0
-  wall: 1
+  wall: 0
 --- !u!4 &1383000592
 Transform:
   m_ObjectHideFlags: 0
@@ -6445,7 +6445,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 65f3a839d4fabbc4d948f874762dcf16, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 458f21f493f384543b59cd166032237e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1834268166
 MonoBehaviour:
@@ -6479,8 +6479,8 @@ Transform:
   m_PrefabInternal: {fileID: 734315299}
   m_GameObject: {fileID: 1834268161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.1500001, y: -4.48000002, z: -1}
-  m_LocalScale: {x: .850000024, y: .850000024, z: 1}
+  m_LocalPosition: {x: 6.29000664, y: -4.47999144, z: -1}
+  m_LocalScale: {x: .782977104, y: .782977104, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &1834268168
@@ -6548,7 +6548,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: diaNum
-      value: 22
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: toolText

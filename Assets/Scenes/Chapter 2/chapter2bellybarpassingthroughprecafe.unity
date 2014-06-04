@@ -5336,7 +5336,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: y
-      value: -3.29999995
+      value: -3.70000005
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: id
@@ -5544,7 +5544,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 65f3a839d4fabbc4d948f874762dcf16, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 458f21f493f384543b59cd166032237e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &903951335
 MonoBehaviour:
@@ -5661,7 +5661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: chapter2bellymarketpassingthrough
   x: 6
-  y: -3.29999995
+  y: -3.70000005
   mouseOverIcon: Door_Icon
 --- !u!50 &936307443
 Rigidbody2D:
@@ -6577,7 +6577,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_SortingLayerID: 2971093031
-  m_Sprite: {fileID: 21300000, guid: 0b95d120e1eb8428792d5c3f931bc7c9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0da5deb6a299148169bac23aa6e65217, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1993266777
 MonoBehaviour:
