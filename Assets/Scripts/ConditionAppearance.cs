@@ -1,25 +1,27 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
-public class joshscript : MonoBehaviour {
+public class ConditionAppearance : MonoBehaviour {
+
+	public int getBoolID;
+	public bool getBoolCondition;
+	public double getPosition;
 
 	// Use this for initialization
 	void Start () {
-
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-		float oldX = -3.158945f;
+		
+		float oldX = (float)getPosition;
 		float newX = 40.0f;
 
-		if (!Dialoguer.GetGlobalBoolean(12)) {
-			//transform.position.x = -3.158945f;
+		if (Dialoguer.GetGlobalBoolean(getBoolID) == getBoolCondition) {
 			transform.position = new Vector3(oldX, transform.position.y);
 		}
 		else {
-			//transform.position.x = 40.0f;
 			transform.position = new Vector3(newX, transform.position.y);
 		}
 	}

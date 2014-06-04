@@ -752,7 +752,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 65f3a839d4fabbc4d948f874762dcf16, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 458f21f493f384543b59cd166032237e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &721835896
 MonoBehaviour:
@@ -786,8 +786,8 @@ Transform:
   m_PrefabInternal: {fileID: 1244668432}
   m_GameObject: {fileID: 721835891}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2278142, y: -2.87312508, z: -1}
-  m_LocalScale: {x: .494283617, y: .494285494, z: 1}
+  m_LocalPosition: {x: 1.38448262, y: -2.8731246, z: -1}
+  m_LocalScale: {x: .419282794, y: .419283599, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &721835898
@@ -960,7 +960,7 @@ GameObject:
   - 60: {fileID: 848841939}
   - 114: {fileID: 848841938}
   m_Layer: 10
-  m_Name: doorback
+  m_Name: doorForward
   m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolText: Moe's Room
+  toolText: Neighbor's Room
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
@@ -1188,11 +1188,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.2278142
+      value: 1.38448262
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.87312508
+      value: -2.8731246
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1216,11 +1216,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalScale.x
-      value: .494283617
+      value: .419282794
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalScale.y
-      value: .494285494
+      value: .419283599
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: myConvo
@@ -6920,7 +6920,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: toolText
-      value: Moe's Room
+      value: Neighbor's Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: m_Name
+      value: doorForward
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}

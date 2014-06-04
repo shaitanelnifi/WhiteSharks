@@ -2840,7 +2840,7 @@ MonoBehaviour:
   minY: -3.39677405
   minScale: .25
   maxScale: .425000012
-  baseSpeed: 1.5
+  baseSpeed: 1.79999995
   placeTop: 0
 --- !u!4 &1085850464
 Transform:
@@ -3722,7 +3722,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 65f3a839d4fabbc4d948f874762dcf16, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 458f21f493f384543b59cd166032237e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1773664227
 MonoBehaviour:
