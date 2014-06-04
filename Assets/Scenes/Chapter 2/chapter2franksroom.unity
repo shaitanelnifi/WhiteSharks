@@ -5423,11 +5423,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.85044956
+      value: 5.01320839
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.60934544
+      value: -2.6093421
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5451,11 +5451,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalScale.x
-      value: .708701372
+      value: .600000024
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalScale.y
-      value: .708703279
+      value: .600000024
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: myConvo
@@ -5935,7 +5935,7 @@ GameObject:
   - 114: {fileID: 1918062536}
   - 114: {fileID: 1918062535}
   - 114: {fileID: 1918062534}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: eJournalLocked
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6018,9 +6018,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_SortingLayerID: 1982072587
+  m_SortingLayerID: 2971093031
   m_Sprite: {fileID: 21300000, guid: f0a992aff77e1b64a96b6544807c3df0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1918062539
@@ -6183,6 +6183,7 @@ GameObject:
   - 61: {fileID: 2065904532}
   - 114: {fileID: 2065904531}
   - 114: {fileID: 2065904530}
+  - 114: {fileID: 2065904536}
   m_Layer: 10
   m_Name: MayNPC
   m_TagString: Untagged
@@ -6254,7 +6255,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 65f3a839d4fabbc4d948f874762dcf16, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 458f21f493f384543b59cd166032237e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2065904534
 MonoBehaviour:
@@ -6288,7 +6289,19 @@ Transform:
   m_PrefabInternal: {fileID: 1189222679}
   m_GameObject: {fileID: 2065904529}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.85044956, y: -2.60934544, z: -1}
-  m_LocalScale: {x: .708701372, y: .708703279, z: 1}
+  m_LocalPosition: {x: 5.01320839, y: -2.6093421, z: -1}
+  m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &2065904536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 0cd273a218ec6e0439c117e44dfa0e95,
+    type: 2}
+  m_PrefabInternal: {fileID: 1189222679}
+  m_GameObject: {fileID: 2065904529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ae4b32f68af1b4e977f56ed01a1f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

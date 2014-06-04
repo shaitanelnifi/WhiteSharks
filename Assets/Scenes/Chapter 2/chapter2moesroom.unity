@@ -179,6 +179,7 @@ GameObject:
   - 61: {fileID: 643644518}
   - 114: {fileID: 643644517}
   - 114: {fileID: 643644516}
+  - 114: {fileID: 643644522}
   m_Layer: 10
   m_Name: MayNPC
   m_TagString: Untagged
@@ -250,7 +251,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 65f3a839d4fabbc4d948f874762dcf16, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 458f21f493f384543b59cd166032237e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &643644520
 MonoBehaviour:
@@ -285,9 +286,21 @@ Transform:
   m_GameObject: {fileID: 643644515}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.85044956, y: -2.60934544, z: -1}
-  m_LocalScale: {x: .708701372, y: .708703279, z: 1}
+  m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &643644522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 0cd273a218ec6e0439c117e44dfa0e95,
+    type: 2}
+  m_PrefabInternal: {fileID: 675794203}
+  m_GameObject: {fileID: 643644515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ae4b32f68af1b4e977f56ed01a1f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &675794203
 Prefab:
   m_ObjectHideFlags: 0
@@ -325,11 +338,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalScale.x
-      value: .708701372
+      value: .600000024
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalScale.y
-      value: .708703279
+      value: .600000024
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: myConvo
@@ -5756,7 +5769,7 @@ GameObject:
   - 114: {fileID: 1807851168}
   - 114: {fileID: 1807851167}
   - 114: {fileID: 1807851166}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: moePic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5778,7 +5791,7 @@ MonoBehaviour:
   elementName: Examine Picture
   description: "REPORT\r\nName of Victim: Moe\r\nFormer Occupation: Bartender\r\nCause
     of Death: Blood loss and brain removal\r"
-  profileImage: {fileID: 21300000, guid: 65f09a00f2b108f42b5ae00a619ac1f7, type: 3}
+  profileImage: {fileID: 21300000, guid: 7d89f3c830cc9bd429335f07c69b0f79, type: 3}
   visible: 1
   clickedOnSomething: 0
   maxDist: 4
@@ -5849,9 +5862,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_SortingLayerID: 1982072587
+  m_SortingLayerID: 2971093031
   m_Sprite: {fileID: 21300000, guid: 7d89f3c830cc9bd429335f07c69b0f79, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1807851171

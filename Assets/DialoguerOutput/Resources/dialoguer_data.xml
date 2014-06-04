@@ -17584,7 +17584,7 @@
     <DialogueEditorDialogueObject>
       <id>65</id>
       <name>barpostcafewrongway</name>
-      <startPage>0</startPage>
+      <startPage>1</startPage>
       <scrollPosition>
         <x>0</x>
         <y>0</y>
@@ -17634,11 +17634,11 @@
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>191</x>
-            <y>15</y>
+            <x>253</x>
+            <y>96</y>
           </position>
           <outs>
-            <int xsi:nil="true" />
+            <int>0</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -17828,7 +17828,7 @@
   </themes>
   <selectorScrollPosition>
     <x>0</x>
-    <y>31.3816624</y>
+    <y>264</y>
   </selectorScrollPosition>
-  <currentDialogueId>15</currentDialogueId>
+  <currentDialogueId>65</currentDialogueId>
 </DialogueEditorMasterObject>
