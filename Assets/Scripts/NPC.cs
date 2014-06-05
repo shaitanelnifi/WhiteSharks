@@ -12,6 +12,7 @@ public class NPC : CaseElement {
 	
 	public GameObject playerObj;
 	public BoxCollider2D box;
+	protected string defaultIcon = "Walk_Icon";
 
 	//Mouse icon information
 	public string mouseOverIcon = "Speech_Icon";
@@ -21,8 +22,25 @@ public class NPC : CaseElement {
 	}
 	
 	public void OnMouseEnter(){
-			if (player != null && player.canWalk)
-				GameManager.Instance.updateMouseIcon(mouseOverIcon);
+		if (player != null&& !player.talking)
+			GameManager.Instance.updateMouseIcon(mouseOverIcon);
+
+		if (Input.GetMouseButton (0)) {
+			player.stopMove();
+			
+		}
+	}
+
+	public void OnMouseExit(){
+		GameManager.Instance.updateMouseIcon (defaultIcon);
+		//Debug.Log ("Talking " + player.talking);
+		
+		if (player != null) {
+			//player.canWalk = true;
+			if (!player.talking) {
+				player.canWalk = true;
+			}
+		}
 	}
 
 	//enable conversation object if left mouse button is clicked.

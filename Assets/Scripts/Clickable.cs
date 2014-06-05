@@ -15,6 +15,10 @@ public class Clickable : MonoBehaviour {
 	protected distanceCheck pDist;
 	
 	public void OnMouseEnter(){
+		if (Input.GetMouseButton (0)) {
+			player.stopMove();
+
+		}
 		//Debug.LogWarning ("Stop? Go?: " + player.canWalk);
 		if (player != null && !wall)
 			if (player.canWalk)
@@ -27,7 +31,7 @@ public class Clickable : MonoBehaviour {
 
 		if (player != null) {
 			//player.canWalk = true;
-				if (wall && !player.talking) {
+				if (!player.talking) {
 					player.canWalk = true;
 			}
 		}
