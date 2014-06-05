@@ -233,7 +233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 99be9662ded03f54085ac2dea293383b, type: 3}
-  waitThisLong: 2
+  waitThisLong: 1
   whatCharacter: May
   nextLevel: chapter4endcutscene
   isTherePlayer: 0

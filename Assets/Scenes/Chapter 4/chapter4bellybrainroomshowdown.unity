@@ -279,7 +279,7 @@ MonoBehaviour:
   progressBarEmpty: {fileID: 2800000, guid: 49c2eded774a4be46853770d8c51dffa, type: 3}
   progressBarMay: {fileID: 2800000, guid: 358bbd49e07377948a5db4f827269265, type: 3}
   progressBarFounder: {fileID: 2800000, guid: f089926a265d92b4e961cdc87fdcf456, type: 3}
-  waitThisLong: 2
+  waitThisLong: .5
   nextScene: chapter4networkbrainroomrip
   failConversation: 15
   started: 0

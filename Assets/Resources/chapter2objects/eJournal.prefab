@@ -55,7 +55,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementName: Frank's Journal
   description: A journal containing details about Frank's recent activities.
-  profileImage: {fileID: 21300000, guid: f08c79b37de4846779c6874efaa0cae1, type: 3}
+  profileImage: {fileID: 21300000, guid: f0a992aff77e1b64a96b6544807c3df0, type: 3}
   visible: 1
   clickedOnSomething: 0
   maxDist: 4
