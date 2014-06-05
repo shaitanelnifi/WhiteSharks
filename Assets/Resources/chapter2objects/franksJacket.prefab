@@ -82,8 +82,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementName: Frank's Jacket
-  description: Frank's jacket must contain some sort of clue!
-  profileImage: {fileID: 21300000, guid: f08c79b37de4846779c6874efaa0cae1, type: 3}
+  description: You found a map inside this jacket, it'd be a great idea to look at
+    it.
+  profileImage: {fileID: 21300000, guid: db3282b25c101f44b823e5b5c1565fae, type: 3}
   visible: 1
   clickedOnSomething: 0
   maxDist: 4

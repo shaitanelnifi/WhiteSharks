@@ -6183,6 +6183,10 @@ Prefab:
       propertyPath: toolText
       value: Take Jacket?
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 4472ac579a526424ea5c6964d85fb6a2, type: 2}
+      propertyPath: autoPickupPostConvo
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4472ac579a526424ea5c6964d85fb6a2, type: 2}
   m_RootGameObject: {fileID: 1551934856}
@@ -6447,7 +6451,7 @@ MonoBehaviour:
   associatedObjects:
   - {fileID: 11400000, guid: 86789d4e374869e45bb04d2c5c50c064, type: 2}
   mouseOverIcon: Grab_Icon
-  autoPickupPostConvo: 1
+  autoPickupPostConvo: 0
 --- !u!114 &1551934858
 MonoBehaviour:
   m_ObjectHideFlags: 0
