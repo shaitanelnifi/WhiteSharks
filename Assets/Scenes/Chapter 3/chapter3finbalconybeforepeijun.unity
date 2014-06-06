@@ -1080,7 +1080,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: e272233e040da41df924bf5730188f88, type: 2}
       propertyPath: myConvo
-      value: 4
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e272233e040da41df924bf5730188f88, type: 2}
@@ -1840,7 +1840,7 @@ MonoBehaviour:
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
-  myConvo: 4
+  myConvo: 9
   playerObj: {fileID: 0}
   box: {fileID: 968864801}
   mouseOverIcon: Speech_Icon

@@ -5527,7 +5527,7 @@ MonoBehaviour:
   minY: -5.05575895
   minScale: .25
   maxScale: .370669812
-  baseSpeed: 1
+  baseSpeed: 1.5
   placeTop: 0
 --- !u!4 &1085850464
 Transform:
@@ -5573,7 +5573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter3finplazapostpeijun
-  x: .585175097
+  x: -1.57000005
   y: .786854029
   mouseOverIcon: Door_Icon
 --- !u!60 &1219118260
@@ -5907,7 +5907,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: x
-      value: .585175097
+      value: -1.57000005
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: y
