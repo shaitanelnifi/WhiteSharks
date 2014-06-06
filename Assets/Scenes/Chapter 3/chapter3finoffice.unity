@@ -112,7 +112,7 @@ MonoBehaviour:
   mouseOverIcon: Door_Icon
   getTheseToProceed: []
   getTheseGlobalBools: 04000000
-  dontGotIt: 22
+  dontGotIt: 21
 --- !u!60 &142851013
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -193,8 +193,8 @@ Transform:
   m_PrefabInternal: {fileID: 164465776}
   m_GameObject: {fileID: 142851011}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0226485878, y: -5.11826277, z: 0}
-  m_LocalScale: {x: .505160511, y: .199566618, z: .949355006}
+  m_LocalPosition: {x: -.022646904, y: -5.44000053, z: 0}
+  m_LocalScale: {x: .551197231, y: .300000101, z: .949355006}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1001 &163012505
@@ -290,11 +290,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.0226485878
+      value: -.022646904
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -5.11826277
+      value: -5.44000053
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -318,11 +318,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
       propertyPath: m_LocalScale.x
-      value: .505160511
+      value: .551197231
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
       propertyPath: m_LocalScale.y
-      value: .199566618
+      value: .300000101
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
       propertyPath: toolText
@@ -346,7 +346,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
       propertyPath: dontGotIt
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}

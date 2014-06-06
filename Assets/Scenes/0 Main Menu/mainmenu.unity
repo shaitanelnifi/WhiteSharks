@@ -432,75 +432,116 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400070, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: mWidth
-      value: 224
+      value: 228
       objectReference: {fileID: 0}
     - target: {fileID: 11400080, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: mWidth
-      value: 224
+      value: 228
       objectReference: {fileID: 0}
     - target: {fileID: 11400074, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: mWidth
-      value: 262
+      value: 260
       objectReference: {fileID: 0}
     - target: {fileID: 11400090, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: mWidth
-      value: 374
+      value: 370
       objectReference: {fileID: 0}
     - target: {fileID: 11400060, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: mWidth
-      value: 2532
+      value: 2520
       objectReference: {fileID: 0}
     - target: {fileID: 11400062, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: mWidth
-      value: 610
+      value: 614
       objectReference: {fileID: 0}
     - target: {fileID: 11400052, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: mWidth
-      value: 224
+      value: 228
       objectReference: {fileID: 0}
     - target: {fileID: 11400038, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: mWidth
-      value: 1268
+      value: 1248
       objectReference: {fileID: 0}
     - target: {fileID: 11400070, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: 3.5
+      value: 3.5625
       objectReference: {fileID: 0}
     - target: {fileID: 11400080, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: 3.5
+      value: 3.5625
       objectReference: {fileID: 0}
     - target: {fileID: 11400074, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: 2.72916675
+      value: 2.70833325
       objectReference: {fileID: 0}
     - target: {fileID: 11400090, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: 2.921875
+      value: 2.890625
       objectReference: {fileID: 0}
     - target: {fileID: 11400060, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: 9.890625
+      value: 9.84375
       objectReference: {fileID: 0}
     - target: {fileID: 11400062, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: 6.35416651
+      value: 6.39583349
       objectReference: {fileID: 0}
     - target: {fileID: 11400052, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: 3.5
+      value: 3.5625
       objectReference: {fileID: 0}
     - target: {fileID: 11400038, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: .319556445
+      value: .443181813
       objectReference: {fileID: 0}
     - target: {fileID: 11400076, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: mWidth
-      value: 336
+      value: 332
       objectReference: {fileID: 0}
     - target: {fileID: 11400076, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: 3.5
+      value: 3.45833325
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400038, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
+      propertyPath: mText
+      value: '[9F9F9F]Credits[-]
+
+        [F0F0F0]Team White Shark[-]
+
+
+        [990000]Developers[-]
+
+        Anthony Lim
+
+
+        Maria Lopez-Latorre
+
+
+        John Mai
+
+
+        Kevin Meggs
+
+
+        Santiago Selga-Eaton
+
+
+        Adrian Williams
+
+
+        Jack Cotrel
+
+
+        [990000]Artists[-]
+
+        Kevin Chapman
+
+
+        Sue-Young Kim'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400038, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
+      propertyPath: mHeight
+      value: 2816
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
@@ -966,7 +1007,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 3.5
+  aspectRatio: 3.45833325
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: 389b122e9f3aa4b16ab074fa5d295d07, type: 3}
   mFont: {fileID: 0}
@@ -1164,7 +1205,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 3.5
+  aspectRatio: 3.5625
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: 389b122e9f3aa4b16ab074fa5d295d07, type: 3}
   mFont: {fileID: 0}
@@ -1499,7 +1540,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 3.5
+  aspectRatio: 3.5625
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: 389b122e9f3aa4b16ab074fa5d295d07, type: 3}
   mFont: {fileID: 0}
@@ -1674,7 +1715,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.72916675
+  aspectRatio: 2.70833325
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: 389b122e9f3aa4b16ab074fa5d295d07, type: 3}
   mFont: {fileID: 0}
@@ -1859,7 +1900,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.921875
+  aspectRatio: 2.890625
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: 389b122e9f3aa4b16ab074fa5d295d07, type: 3}
   mFont: {fileID: 0}
@@ -1960,7 +2001,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 9.890625
+  aspectRatio: 9.84375
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: 3932d823f4ad346e39de2df615198d00, type: 3}
   mFont: {fileID: 0}
@@ -2048,7 +2089,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 6.35416651
+  aspectRatio: 6.39583349
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: 389b122e9f3aa4b16ab074fa5d295d07, type: 3}
   mFont: {fileID: 0}
@@ -2292,7 +2333,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 3.5
+  aspectRatio: 3.5625
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: 389b122e9f3aa4b16ab074fa5d295d07, type: 3}
   mFont: {fileID: 0}
@@ -3170,12 +3211,12 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 1248
-  mHeight: 3968
+  mHeight: 2816
   mDepth: 4
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: .319556445
+  aspectRatio: .443181813
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: e8a2bdb4cdc714a34a70a05bce765e27, type: 3}
   mFont: {fileID: 0}
@@ -3184,7 +3225,7 @@ MonoBehaviour:
     [F0F0F0]Team White Shark[-]
 
 
-    [990000]Programmers[-]
+    [990000]Developers[-]
 
     Anthony Lim
 
@@ -3205,20 +3246,6 @@ MonoBehaviour:
 
 
     Jack Cotrel
-
-
-    [990000]Writers[-]
-
-    Maria Lopez-Latorre
-
-
-    Jack Cotrel
-
-
-    Santiago Selga-Eaton
-
-
-    Kevin Meggs
 
 
     [990000]Artists[-]
