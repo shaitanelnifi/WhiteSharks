@@ -8174,10 +8174,10 @@ MonoBehaviour:
   dialogue: 
   setOffset: 0
   player: {fileID: 0}
-  maxY: -3.8599999
-  minY: -5.5
-  minScale: .899999976
-  maxScale: 1.14999998
+  maxY: 2
+  minY: -2
+  minScale: .349999994
+  maxScale: .899999976
   baseSpeed: 4
   placeTop: 0
 --- !u!1 &1723915446
