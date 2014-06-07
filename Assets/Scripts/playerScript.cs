@@ -92,6 +92,7 @@ public class playerScript : CaseElement {
 
 	}
 
+	//handles player character's movement.
 	void FixedUpdate(){	
 		if (Input.GetKey (KeyCode.S)) {
 			skipToNextScene();		
