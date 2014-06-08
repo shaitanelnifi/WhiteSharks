@@ -251,7 +251,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &1030226826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,7 +378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 258ccc3c9d307944a837f2dcef189496, type: 3}
-  waitThisLong: 2
+  waitThisLong: .699999988
   whatCharacter: May
   nextLevel: chapter4bellybrainroomshowdown
   isTherePlayer: 0
