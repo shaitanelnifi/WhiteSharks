@@ -39,8 +39,8 @@ public class MainMenu : MonoBehaviour {
 	
 	void Awake() {
 		camPosition = cam.transform.localPosition;
-		creditsStart = new Vector3 (-4205f, -1959f, camPosition.z);
-		creditsPos = new Vector3(-4320f, 5000f, camPosition.z);
+		creditsStart = new Vector3 (-4205f, -5500f, camPosition.z);
+		creditsPos = new Vector3(-4320f, 8000f, camPosition.z);
 		smooth = 4.0f;
 	}
 	
@@ -72,7 +72,7 @@ public class MainMenu : MonoBehaviour {
 		
 		if (cam.transform.localPosition.x < -4319f && isCredits)
 		{
-			creditsLabel.transform.localPosition = Vector3.Lerp(creditsLabel.transform.localPosition, creditsPos, Time.deltaTime / 50f);
+			creditsLabel.transform.localPosition = Vector3.Lerp(creditsLabel.transform.localPosition, creditsPos, Time.deltaTime / 40f);
 		}
 		else
 		{
