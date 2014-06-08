@@ -6180,7 +6180,7 @@ and a [3DFF49]terminal[-].</text>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>There's a note on the desk, I should read that before leaving.</text>
+          <text>I should probably check in with the office.</text>
           <name>May Taylor</name>
           <portrait />
           <audio />
@@ -6800,5 +6800,5 @@ and a [3DFF49]terminal[-].</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>24</currentDialogueId>
+  <currentDialogueId>21</currentDialogueId>
 </DialogueEditorMasterObject>

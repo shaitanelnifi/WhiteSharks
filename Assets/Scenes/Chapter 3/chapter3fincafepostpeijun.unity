@@ -768,7 +768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolText: Examine Plushie
+  toolText: Examine Sharkulus Rift
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
@@ -1311,9 +1311,9 @@ MonoBehaviour:
   player: {fileID: 0}
   maxY: -1.35435796
   minY: -3.95000005
-  minScale: .469999999
-  maxScale: .74000001
-  baseSpeed: 1
+  minScale: .25
+  maxScale: .5
+  baseSpeed: 2
   placeTop: 0
 --- !u!4 &1365040143
 Transform:

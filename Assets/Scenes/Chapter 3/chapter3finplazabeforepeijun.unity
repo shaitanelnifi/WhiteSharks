@@ -844,6 +844,7 @@ GameObject:
   - 61: {fileID: 313550720}
   - 50: {fileID: 313550719}
   - 114: {fileID: 313550718}
+  - 114: {fileID: 313550723}
   m_Layer: 10
   m_Name: doorBar
   m_TagString: Untagged
@@ -930,6 +931,22 @@ Transform:
   m_LocalScale: {x: .0452894829, y: .313902646, z: .949355006}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &313550723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 313550717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolText: To Bar
+  sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!1001 &383505160
 Prefab:
   m_ObjectHideFlags: 0
@@ -2336,8 +2353,8 @@ MonoBehaviour:
   player: {fileID: 0}
   maxY: -2.365376
   minY: -5.05575895
-  minScale: .25
-  maxScale: .370669812
+  minScale: .150000006
+  maxScale: .300000012
   baseSpeed: 3
   placeTop: 0
 --- !u!4 &1085850464
@@ -2671,8 +2688,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1182264595}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.57000005, y: .720000029, z: 0}
-  m_LocalScale: {x: .25, y: .25, z: 1}
+  m_LocalPosition: {x: .616226673, y: -5.0918951, z: 0}
+  m_LocalScale: {x: .300000012, y: .300000012, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &1378734775

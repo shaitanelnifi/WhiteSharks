@@ -6534,8 +6534,8 @@ MonoBehaviour:
   player: {fileID: 0}
   maxY: -2.365376
   minY: -5.05575895
-  minScale: .25
-  maxScale: .370669812
+  minScale: .150000006
+  maxScale: .300000012
   baseSpeed: 3
   placeTop: 0
 --- !u!4 &1085850464
@@ -7276,6 +7276,7 @@ GameObject:
   - 61: {fileID: 1396281119}
   - 50: {fileID: 1396281118}
   - 114: {fileID: 1396281117}
+  - 114: {fileID: 1396281122}
   m_Layer: 10
   m_Name: doorBar
   m_TagString: Untagged
@@ -7362,6 +7363,22 @@ Transform:
   m_LocalScale: {x: .0452894829, y: .313902646, z: .949355006}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1396281122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1396281116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolText: To Bar
+  sizeOfFont: 24
+  ClickRevealer: {fileID: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!1 &1470571796
 GameObject:
   m_ObjectHideFlags: 0
