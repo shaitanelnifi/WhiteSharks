@@ -65,7 +65,7 @@ public class ConditionDoor : DoorScript {
 	}
 
 	void OnMouseDown(){
-		if (!gotThem ()) {
+		if (((int)dontGotIt) != -1 && !gotThem ()) {
 			GameManager.dialogueJustFinished = false;
 			Dialoguer.StartDialogue ((int)dontGotIt);
 		}
