@@ -73,27 +73,31 @@ public class TooltipScript : MonoBehaviour {
 	}
 
 	void OnGUI(){
-		if (currText != "" && !revealAll) {
-			float x = Input.mousePosition.x;
-			float y = Input.mousePosition.y;
+		//if(true) { //<- make this not commented and one below commented if want to just load scene and test
+		if(player != null && player.canWalk) {
+			if(currText != "" && !revealAll) {
+				float x = Input.mousePosition.x;
+				float y = Input.mousePosition.y;
 
-			GUI.Label (new Rect (x - 150, Screen.height - y - 30, 300, 60), currText, guiStyleBack);
-			GUI.Label (new Rect (x - 151, Screen.height - y - 29, 300, 60), currText, guiStyleFore);
-		} else if (revealAll && toolText != "") {
-			float x = point.x;
-			float y = point.y; // bottom left corner set to the 3D point
-
-			//Debug.LogWarning("SPACE2");
-
-			GUI.DrawTexture(new Rect(x - (32 + iconMod.x) * scale.x, Screen.height - y - (32 + iconMod.y) * scale.y, 
-			                         iconSize * scale.x, iconSize * scale.y), ClickRevealer);
-
-			if (doorscript != null){
-				GUI.Label (new Rect(x - (32 + iconMod.x) * scale.x, Screen.height - y - (32 + iconMod.y) * scale.y, 20, 20), doorscript.getOrder ().ToString(), guiStyleFore);
-				GUI.Label (new Rect(x - (32 + iconMod.x) * scale.x, Screen.height - y - (31 + iconMod.y) * scale.y, 20, 20), doorscript.getOrder ().ToString(), guiStyleBack);
+				GUI.Label(new Rect(x - 150, Screen.height - y - 30, 300, 60), currText, guiStyleBack);
+				GUI.Label(new Rect(x - 151, Screen.height - y - 29, 300, 60), currText, guiStyleFore);
 			}
-			//GUI.Label (new Rect (x - iconMod.x - 150, Screen.height - y - iconMod.y * transform.localScale.y -30, 300, 60), toolText, guiStyleBack);
-			//GUI.Label (new Rect (x - textAdjusts.x + 1 , Screen.height - y - textAdjusts.y * transform.localScale.y + 31, 300, 60), toolText, guiStyleFore);
+			else if(revealAll && toolText != "") {
+				float x = point.x;
+				float y = point.y; // bottom left corner set to the 3D point
+
+				//Debug.LogWarning("SPACE2");
+
+				GUI.DrawTexture(new Rect(x - (32 + iconMod.x) * scale.x, Screen.height - y - (32 + iconMod.y) * scale.y,
+										 iconSize * scale.x, iconSize * scale.y), ClickRevealer);
+
+				/*if (doorscript != null){
+					GUI.Label (new Rect(x - (32 + iconMod.x) * scale.x, Screen.height - y - (32 + iconMod.y) * scale.y, 20, 20), doorscript.getOrder ().ToString(), guiStyleFore);
+					GUI.Label (new Rect(x - (32 + iconMod.x) * scale.x, Screen.height - y - (31 + iconMod.y) * scale.y, 20, 20), doorscript.getOrder ().ToString(), guiStyleBack);
+				}*/
+				//GUI.Label (new Rect (x - iconMod.x - 150, Screen.height - y - iconMod.y * transform.localScale.y -30, 300, 60), toolText, guiStyleBack);
+				//GUI.Label (new Rect (x - textAdjusts.x + 1 , Screen.height - y - textAdjusts.y * transform.localScale.y + 31, 300, 60), toolText, guiStyleFore);
+			}
 		}
 	}
 

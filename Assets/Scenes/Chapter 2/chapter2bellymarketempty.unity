@@ -5452,7 +5452,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &925798572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5500,7 +5500,7 @@ Transform:
   m_PrefabInternal: {fileID: 1359015461}
   m_GameObject: {fileID: 925798570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.13692188, y: -1.89999998, z: 0}
+  m_LocalPosition: {x: 8.13692188, y: -3.02952719, z: 0}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5513,11 +5513,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.61563659
+      value: -2.56429386
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.22390032
+      value: -1.84000492
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5541,7 +5541,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalScale.y
-      value: .961610794
+      value: .709187984
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalScale.x
@@ -5745,8 +5745,8 @@ Transform:
   m_PrefabInternal: {fileID: 979795337}
   m_GameObject: {fileID: 1356396479}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.61563659, y: -1.22390032, z: 0}
-  m_LocalScale: {x: .19640775, y: .961610794, z: .949355006}
+  m_LocalPosition: {x: -2.56429386, y: -1.84000492, z: 0}
+  m_LocalScale: {x: .19640775, y: .709187984, z: .949355006}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1001 &1359015461
@@ -5762,7 +5762,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.89999998
+      value: -3.02952719
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5811,6 +5811,14 @@ Prefab:
     - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: toolText
       value: To Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: scale.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
@@ -6025,8 +6033,8 @@ MonoBehaviour:
   toolText: Talk
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
-  iconMod: {x: 16, y: 180}
-  scale: {x: 0, y: 0}
+  iconMod: {x: 0, y: 35}
+  scale: {x: 1, y: 1}
 --- !u!114 &1593535271
 MonoBehaviour:
   m_ObjectHideFlags: 0

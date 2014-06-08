@@ -286,8 +286,8 @@ MonoBehaviour:
   toolText: Talk
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
-  iconMod: {x: 16, y: 180}
-  scale: {x: 0, y: 0}
+  iconMod: {x: 0, y: 35}
+  scale: {x: 1, y: 1}
 --- !u!114 &433192855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,7 +335,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 65f3a839d4fabbc4d948f874762dcf16, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 458f21f493f384543b59cd166032237e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &433192858
 MonoBehaviour:
@@ -518,7 +518,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &624607866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1073,8 +1073,8 @@ MonoBehaviour:
   toolText: Bartender
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
-  iconMod: {x: 16, y: 180}
-  scale: {x: 0, y: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &1127502834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1122,7 +1122,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_SortingLayerID: 2971093031
-  m_Sprite: {fileID: 21300000, guid: 0b95d120e1eb8428792d5c3f931bc7c9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0da5deb6a299148169bac23aa6e65217, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1127502837
 MonoBehaviour:
@@ -1238,6 +1238,14 @@ Prefab:
     - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: m_Center.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: scale.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}

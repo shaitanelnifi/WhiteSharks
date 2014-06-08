@@ -111,7 +111,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &71088676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,6 +349,14 @@ Prefab:
       propertyPath: myConvo
       value: 33
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: f96a0d45c4d0449d7a663ea6d8130974, type: 2}
+      propertyPath: scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: f96a0d45c4d0449d7a663ea6d8130974, type: 2}
+      propertyPath: scale.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f96a0d45c4d0449d7a663ea6d8130974, type: 2}
   m_RootGameObject: {fileID: 71088674}
@@ -496,7 +504,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &590712794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,8 +638,8 @@ MonoBehaviour:
   toolText: Talk
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
-  iconMod: {x: 16, y: 180}
-  scale: {x: 0, y: 0}
+  iconMod: {x: 0, y: 35}
+  scale: {x: 1, y: 1}
 --- !u!114 &753407151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1591,6 +1599,14 @@ Prefab:
     - target: {fileID: 11400000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
       propertyPath: myConvo
       value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: scale.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
