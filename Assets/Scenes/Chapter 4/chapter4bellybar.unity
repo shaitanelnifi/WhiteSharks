@@ -5204,6 +5204,7 @@ GameObject:
   - 114: {fileID: 641827656}
   - 114: {fileID: 641827655}
   - 60: {fileID: 641827654}
+  - 114: {fileID: 641827660}
   m_Layer: 10
   m_Name: conditionalDoor
   m_TagString: door
@@ -5374,6 +5375,20 @@ Transform:
   m_LocalScale: {x: .660873234, y: .44557485, z: .949355006}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &641827660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 641827653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0773a0d9b06f524b8b72b1470bab04c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getBoolID: 0
+  getBoolCondition: 1
+  getPosition: 3.8670001029968262
 --- !u!1001 &682754419
 Prefab:
   m_ObjectHideFlags: 0

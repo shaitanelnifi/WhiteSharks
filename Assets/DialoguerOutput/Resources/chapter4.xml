@@ -1788,7 +1788,7 @@ It's not like I have anything important to do, right?</text>
       <name>janemapbots</name>
       <startPage>3</startPage>
       <scrollPosition>
-        <x>554</x>
+        <x>159.099991</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -2097,7 +2097,7 @@ Once you have it, walk down the hall.</text>
           <variableId>5</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>26</y>
+            <y>14</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
           <variableSetValue>true</variableSetValue>
@@ -2122,8 +2122,8 @@ Once you have it, walk down the hall.</text>
       <name>robotbellybar</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>0</x>
-        <y>0</y>
+        <x>846.9999</x>
+        <y>1447.39978</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -2140,7 +2140,7 @@ Once you have it, walk down the hall.</text>
           <advanced>true</advanced>
           <metadata />
           <text>I am sorry but the bar is currently closed.</text>
-          <name>BARTENDER-BOT</name>
+          <name>Bartender</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2284,7 +2284,7 @@ Once you have it, walk down the hall.</text>
           <advanced>true</advanced>
           <metadata />
           <text>...</text>
-          <name>BARTENDER-BOT</name>
+          <name>Bartender</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2513,7 +2513,7 @@ Once you have it, walk down the hall.</text>
           <advanced>true</advanced>
           <metadata />
           <text>I am sorry, but the bar is closed.</text>
-          <name>BARTENDER-BOT</name>
+          <name>Bartender</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2559,7 +2559,7 @@ Once you have it, walk down the hall.</text>
           <advanced>true</advanced>
           <metadata />
           <text>...</text>
-          <name>BARTENDER-BOT</name>
+          <name>Bartender</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -2657,7 +2657,7 @@ Once you have it, walk down the hall.</text>
           <advanced>true</advanced>
           <metadata />
           <text>CODE RECOGNIZED, OPENING GATE.</text>
-          <name>BARTENDER-BOT</name>
+          <name>Bartender</name>
           <portrait />
           <audio />
           <audioDelay>0</audioDelay>
@@ -11927,5 +11927,5 @@ For White Shark.</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>5</currentDialogueId>
+  <currentDialogueId>6</currentDialogueId>
 </DialogueEditorMasterObject>
