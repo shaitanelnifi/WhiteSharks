@@ -664,6 +664,10 @@ Prefab:
       propertyPath: maxDist
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 0269d62a56b778c43837adf042842990, type: 2}
+      propertyPath: maxDist
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0269d62a56b778c43837adf042842990, type: 2}
   m_RootGameObject: {fileID: 1807851165}
@@ -6067,7 +6071,7 @@ MonoBehaviour:
   profileImage: {fileID: 21300000, guid: 7d89f3c830cc9bd429335f07c69b0f79, type: 3}
   visible: 1
   clickedOnSomething: 0
-  maxDist: 4
+  maxDist: 5
   myConvo: 26
   pickUpConvo: 62
   conditions: 0a000000
