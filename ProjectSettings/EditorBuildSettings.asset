@@ -32,7 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter 1/Chapter/chapter1finoffice.unity
   - enabled: 1
-    path: Assets/Scenes/Chapter 1/Chapter/chapter1finplaza.unity
+    path: Assets/Scenes/Others/chapter1finplaza.unity
   - enabled: 1
     path: Assets/Scenes/Chapter 1/Chapter/chapter1finroom0.unity
   - enabled: 1
