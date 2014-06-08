@@ -47,6 +47,7 @@ public enum NPCNames{
 };
 
 public enum clickableID {
+	none = -1,
 	//chapter 1
 	sharkLightPoster = 0,
 	shammySwag = 1,
