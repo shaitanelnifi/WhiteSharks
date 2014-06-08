@@ -271,7 +271,7 @@ MonoBehaviour:
   visible: 0
   clickedOnSomething: 0
   maxDist: 1
-  myConvo: 15
+  myConvo: 16
   pickUpConvo: 20
   conditions: 
   associatedObjects: []
