@@ -307,7 +307,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &272194266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1151,6 +1151,7 @@ GameObject:
   - 114: {fileID: 991983521}
   - 114: {fileID: 991983520}
   - 114: {fileID: 991983526}
+  - 114: {fileID: 991983527}
   m_Layer: 10
   m_Name: JoshSusach
   m_TagString: Untagged
@@ -1174,7 +1175,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &991983521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1269,6 +1270,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ae4b32f68af1b4e977f56ed01a1f5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &991983527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 991983519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0773a0d9b06f524b8b72b1470bab04c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getBoolID: 1
+  getBoolCondition: 0
+  getPosition: -3.877000093460083
 --- !u!1 &1365040141
 GameObject:
   m_ObjectHideFlags: 0
