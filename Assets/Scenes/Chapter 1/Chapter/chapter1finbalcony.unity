@@ -3053,11 +3053,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 6.94341803
+      value: 6.94341755
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.57414532
+      value: 3.0362246
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3093,7 +3093,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalScale.y
-      value: .780182242
+      value: 1.33849847
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Size.y
@@ -3113,7 +3113,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalScale.x
-      value: .107809171
+      value: .109605864
       objectReference: {fileID: 0}
     - target: {fileID: 6000000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_Poly.m_Paths.Array.data[0].Array.data[1].x
@@ -3170,6 +3170,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: y
       value: -5.3029108
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
+      propertyPath: iconMod.x
+      value: -10.2200003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
@@ -9462,8 +9466,8 @@ Transform:
   m_PrefabInternal: {fileID: 1373861238}
   m_GameObject: {fileID: 1838341067}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.94341803, y: 2.57414532, z: 0}
-  m_LocalScale: {x: .107809171, y: .780182242, z: .949355006}
+  m_LocalPosition: {x: 6.94341755, y: 3.0362246, z: 0}
+  m_LocalScale: {x: .109605864, y: 1.33849847, z: .949355006}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &1838341073
@@ -9481,7 +9485,7 @@ MonoBehaviour:
   toolText: To Room 0
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
-  iconMod: {x: 0, y: 0}
+  iconMod: {x: -10.2200003, y: 0}
   scale: {x: 1, y: 1}
 --- !u!1 &1879666966
 GameObject:
