@@ -111,8 +111,8 @@ public class journal : MonoBehaviour {
 		notificationQ = new Queue<GameObject>();
 		isNotifying = false;
 		initPoIView();
-		changeView(0);
-		changePOI (0);
+		changeView(1);
+		//changePOI (1);
 
 		string[] pcNameSplit = GameObject.FindGameObjectWithTag("Player").name.Split('(');
 		pcName.text = pcNameSplit[0];
