@@ -5319,7 +5319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolText: 
+  toolText: To Brain Room
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
@@ -5910,6 +5910,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
       propertyPath: dontGotIt
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}
+      propertyPath: toolText
+      value: To Brain Room
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6000000, guid: 033f964dca822ca4b88dbdb48d77889c, type: 2}

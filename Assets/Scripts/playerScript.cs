@@ -56,7 +56,7 @@ public class playerScript : CaseElement {
 		canScale = true;
 
 		float scale = calcScale ();
-		transform.localScale = new Vector2 (scale, scale);
+		if (Application.loadedLevelName != "chapter4networkmap")transform.localScale = new Vector2 (scale, scale);
 
 	}
 

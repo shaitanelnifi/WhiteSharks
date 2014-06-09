@@ -5285,6 +5285,14 @@ Prefab:
       propertyPath: spawnHereAfter.y
       value: -3.29999995
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: b56336a7933425e45b6f557fab344cdb, type: 2}
+      propertyPath: scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: b56336a7933425e45b6f557fab344cdb, type: 2}
+      propertyPath: scale.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b56336a7933425e45b6f557fab344cdb, type: 2}
   m_RootGameObject: {fileID: 1591390565}
@@ -5324,7 +5332,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &1591390567
 MonoBehaviour:
   m_ObjectHideFlags: 0
