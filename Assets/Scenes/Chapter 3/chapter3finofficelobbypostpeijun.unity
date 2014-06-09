@@ -5695,7 +5695,7 @@ MonoBehaviour:
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
-  myConvo: -1
+  myConvo: 22
   playerObj: {fileID: 0}
   box: {fileID: 1049733290}
   mouseOverIcon: Speech_Icon
@@ -5823,7 +5823,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &1287622660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6184,7 +6184,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
       propertyPath: myConvo
-      value: -1
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
       propertyPath: enumName

@@ -499,7 +499,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!1 &623330652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,8 +1241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb89dc5b299e48af9a0eaea28dec7f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
-  id: 1
 --- !u!4 &1018292206
 Transform:
   m_ObjectHideFlags: 0
@@ -1559,7 +1557,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: e272233e040da41df924bf5730188f88, type: 2}
       propertyPath: iconMod.y
-      value: 480
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e272233e040da41df924bf5730188f88, type: 2}
       propertyPath: m_SortingLayer
@@ -1572,6 +1570,14 @@ Prefab:
     - target: {fileID: 11400002, guid: e272233e040da41df924bf5730188f88, type: 2}
       propertyPath: maxDist
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: e272233e040da41df924bf5730188f88, type: 2}
+      propertyPath: scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: e272233e040da41df924bf5730188f88, type: 2}
+      propertyPath: scale.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e272233e040da41df924bf5730188f88, type: 2}
@@ -2274,7 +2280,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!1 &1688167031
 GameObject:
   m_ObjectHideFlags: 0
@@ -2475,11 +2481,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: iconMod.x
-      value: 320
+      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: iconMod.y
-      value: -32
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
@@ -22236,7 +22242,7 @@ MonoBehaviour:
   toolText: Examine Window
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
-  iconMod: {x: 320, y: -32}
+  iconMod: {x: 240, y: 0}
   scale: {x: 0, y: 0}
 --- !u!1 &2097457552
 GameObject:
@@ -22252,6 +22258,7 @@ GameObject:
   - 114: {fileID: 2097457553}
   - 114: {fileID: 2097457558}
   - 95: {fileID: 2097457560}
+  - 114: {fileID: 2097457561}
   - 95: {fileID: 2097457559}
   m_Layer: 10
   m_Name: NinaWalker
@@ -22357,8 +22364,8 @@ MonoBehaviour:
   toolText: Talk
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
-  iconMod: {x: 0, y: 480}
-  scale: {x: 0, y: 0}
+  iconMod: {x: 0, y: 200}
+  scale: {x: 1, y: 1}
 --- !u!95 &2097457559
 Animator:
   serializedVersion: 2
@@ -22388,3 +22395,15 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!114 &2097457561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: e272233e040da41df924bf5730188f88,
+    type: 2}
+  m_PrefabInternal: {fileID: 1222521169}
+  m_GameObject: {fileID: 2097457552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ae4b32f68af1b4e977f56ed01a1f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

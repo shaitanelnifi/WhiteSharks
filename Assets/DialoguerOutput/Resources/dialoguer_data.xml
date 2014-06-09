@@ -5276,7 +5276,7 @@
             <y>10</y>
           </position>
           <outs>
-            <int>2</int>
+            <int>3</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -5357,15 +5357,61 @@
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>569</x>
-            <y>15</y>
+            <x>982</x>
+            <y>126</y>
+          </position>
+          <outs>
+            <int xsi:nil="true" />
+          </outs>
+          <advanced>true</advanced>
+          <metadata />
+          <text>How should I know?</text>
+          <name>May Taylor</name>
+          <portrait />
+          <audio />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>3</id>
+          <type>TextPhase</type>
+          <theme />
+          <position>
+            <x>542</x>
+            <y>12</y>
           </position>
           <outs>
             <int>1</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>How should I know?</text>
+          <text>The agency's records say that there was a crime scene here the other day. It's so clean, you can't even tell!</text>
           <name>May Taylor</name>
           <portrait />
           <audio />
@@ -17828,7 +17874,7 @@
   </themes>
   <selectorScrollPosition>
     <x>0</x>
-    <y>264</y>
+    <y>155.017838</y>
   </selectorScrollPosition>
-  <currentDialogueId>65</currentDialogueId>
+  <currentDialogueId>24</currentDialogueId>
 </DialogueEditorMasterObject>

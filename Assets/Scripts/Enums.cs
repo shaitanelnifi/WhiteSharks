@@ -47,6 +47,7 @@ public enum NPCNames{
 };
 
 public enum clickableID {
+	none = -1,
 	//chapter 1
 	sharkLightPoster = 0,
 	shammySwag = 1,
@@ -90,8 +91,9 @@ public enum clickableID {
 	//14, //merged with 13
 	maychapter3finofficepostpeijun = 15,
 	cantenter = 19,
-	maychapter3finlobbywrongway = 21,
-	maychapter3finofficenonote = 22,
+	chapter3OfficeWrongway = 21,
+	chapter3hackingliamsdoor = 23,
+	chapter3balconywrongway = 24,
 
 	//chapter 4
 	janechapter4networkmapcelldoor = 4,
@@ -193,6 +195,7 @@ public enum Convo {
 	shammychapter3finofficeliamsroom = 16,
 	peijunchapter3bellypeijunroomendcutscene = 17,
 	alexiachapter3bellypeijunroomnetworkendcutscene = 18,
+	shammychapter3 = 22,
 
 	//chapter4
 	alexiachapter4networkpeijunroomstart = 0,

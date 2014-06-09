@@ -34,7 +34,7 @@ public class DialogueGUI_Test : MonoBehaviour {
 	private int choiceIndex;
 	private float time;
 	private float delay = 0.16f;
-	
+
 	private genericScene[] genericSceneObj;
 	
 	// Use this for initialization
@@ -167,24 +167,32 @@ public class DialogueGUI_Test : MonoBehaviour {
 				{
 					genericSceneObj = FindObjectsOfType(typeof(genericScene)) as genericScene[];
 				}
-				Vector3 top = new Vector3 (0f, Screen.height / 1.6f, 1f);
-				Vector3 bottom = new Vector3(0f, -Screen.height*0.8f, 1f);
+				Vector3 top = new Vector3 (0f, 100f, 1f);
+				Vector3 bottom = new Vector3(0f, -800f, 1f);
+				Vector3 centertop = new Vector3(-200f, -100f, 1f);
+				Vector3 centerbottom = new Vector3(-200f, -800f, 1f);
 				
 				if (genericSceneObj != null && genericSceneObj.Length >= 1)
 				{
 					foreach (genericScene scene in genericSceneObj)
 					{
-						
+						string sprName = convo.GetComponent<UISprite>().spriteName;
 						// If want to place on top of screen, else...
 						if (scene.getPlaceTop())
 						{
-							convo.transform.localPosition = Vector3.Lerp (convo.transform.localPosition, top, Time.deltaTime * 8f);
+							if (sprName == "conversation-template-new")
+								convo.transform.localPosition = Vector3.Lerp (convo.transform.localPosition, top, Time.deltaTime * 8f);
+							else if (sprName == "regulartext")
+								convo.transform.localPosition = Vector3.Lerp (convo.transform.localPosition, centertop, Time.deltaTime * 8f);
 						}
 						else
 						{
-							convo.transform.localPosition = Vector3.Lerp (convo.transform.localPosition, bottom, Time.deltaTime * 8f);
+							if (sprName == "conversation-template-new")
+								convo.transform.localPosition = Vector3.Lerp (convo.transform.localPosition, bottom, Time.deltaTime * 8f);
+							else if (sprName == "regulartext")
+								convo.transform.localPosition = Vector3.Lerp (convo.transform.localPosition, centerbottom, Time.deltaTime * 8f);
 						}
-						
+
 						Color col = convo.GetComponent<UIWidget>().color;
 						col.a = Mathf.Lerp (col.a, 1f, Time.deltaTime * 4f);
 						convo.GetComponent<UIWidget>().color = col;
@@ -199,25 +207,14 @@ public class DialogueGUI_Test : MonoBehaviour {
 						    _nameText == "")
 						{
 							convo.GetComponent<UISprite>().spriteName = "regulartext";
-							Vector3 pos = convo.transform.localPosition;
-							float offset = 200f;	// for shifting the prefab position
-							Vector3 newPos = new Vector3(pos.x - offset, pos.y, pos.z);
 							convo.GetComponent<UIWidget>().width = 8000;
-							//convo.transform.localPosition = newPos;
 							convoText.GetComponent<UIWidget>().pivot = UIWidget.Pivot.Top;
 							convo.GetComponent<UISprite>().MarkAsChanged();
 						}
 						else
 						{
 							convo.GetComponent<UISprite>().spriteName = "conversation-template-new";
-							///Vector3 pos = convo.transform.localPosition;
-							//float offset = 0f;	// for shifting the prefab position
-							//Vector3 newPos = new Vector3(pos.x + offset, pos.y, pos.z);
 							convo.GetComponent<UIWidget>().width = 4618;
-							//								if (scene.getPlaceTop())
-							//									convo.transform.localPosition = top;
-							//								else
-							//									convo.transform.localPosition = bottom;
 							convoText.GetComponent<UIWidget>().pivot = UIWidget.Pivot.TopLeft;
 							convo.GetComponent<UISprite>().MarkAsChanged();
 						}

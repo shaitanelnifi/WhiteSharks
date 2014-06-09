@@ -194,8 +194,8 @@ MonoBehaviour:
   toolText: Talk
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
-  iconMod: {x: 0, y: 540}
-  scale: {x: 0, y: 0}
+  iconMod: {x: 0, y: 240}
+  scale: {x: 1, y: 1}
 --- !u!95 &110126566
 Animator:
   serializedVersion: 2
@@ -287,6 +287,18 @@ Prefab:
     - target: {fileID: 21200000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
       propertyPath: m_SortingLayerID
       value: 1982072587
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
+      propertyPath: iconMod.y
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
+      propertyPath: scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
+      propertyPath: scale.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
@@ -20189,8 +20201,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 467432649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.2061663, y: -2.40732145, z: 0}
-  m_LocalScale: {x: .0964506119, y: 1.12860882, z: .949355006}
+  m_LocalPosition: {x: -11.2061663, y: -.456320524, z: 0}
+  m_LocalScale: {x: .0964506119, y: 1.81988144, z: .949355006}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &467432654
@@ -20223,7 +20235,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!1 &623330652
 GameObject:
   m_ObjectHideFlags: 0
@@ -20671,8 +20683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb89dc5b299e48af9a0eaea28dec7f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
-  id: 1
 --- !u!4 &1018292206
 Transform:
   m_ObjectHideFlags: 0
@@ -21287,7 +21297,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!1001 &1692288815
 Prefab:
   m_ObjectHideFlags: 0

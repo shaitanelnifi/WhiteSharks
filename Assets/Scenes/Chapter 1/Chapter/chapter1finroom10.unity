@@ -276,7 +276,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &233192609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -753,7 +753,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!1 &540224995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,8 +1413,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb89dc5b299e48af9a0eaea28dec7f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
-  id: 1
 --- !u!4 &1018292206
 Transform:
   m_ObjectHideFlags: 0
@@ -1553,6 +1551,14 @@ Prefab:
     - target: {fileID: 11400002, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: maxDist
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: scale.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
@@ -20920,7 +20926,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &1370953901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21333,7 +21339,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!1 &1675740779
 GameObject:
   m_ObjectHideFlags: 0
@@ -21635,6 +21641,14 @@ Prefab:
     - target: {fileID: 11400002, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: maxDist
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
+      propertyPath: scale.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}

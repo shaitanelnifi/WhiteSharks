@@ -109,7 +109,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &46520855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,7 +271,7 @@ MonoBehaviour:
   visible: 0
   clickedOnSomething: 0
   maxDist: 1
-  myConvo: 15
+  myConvo: 16
   pickUpConvo: 20
   conditions: 
   associatedObjects: []
@@ -20001,7 +20001,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &540267137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20084,7 +20084,7 @@ MonoBehaviour:
   visible: 1
   clickedOnSomething: 0
   maxDist: 8
-  myConvo: -1
+  myConvo: 22
   playerObj: {fileID: 0}
   box: {fileID: 540267139}
   mouseOverIcon: Speech_Icon
@@ -20142,8 +20142,8 @@ MonoBehaviour:
   player: {fileID: 0}
   maxY: -3.8599999
   minY: -5.5
-  minScale: .899999976
-  maxScale: 1.14999998
+  minScale: .699999988
+  maxScale: .899999976
   baseSpeed: 4
   placeTop: 0
 --- !u!212 &623330654
@@ -20558,8 +20558,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb89dc5b299e48af9a0eaea28dec7f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
-  id: 1
 --- !u!4 &1018292206
 Transform:
   m_ObjectHideFlags: 0
@@ -21317,7 +21315,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
       propertyPath: myConvo
-      value: -1
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}

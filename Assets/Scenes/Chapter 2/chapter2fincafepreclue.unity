@@ -215,8 +215,8 @@ MonoBehaviour:
   toolText: Talk
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
-  iconMod: {x: 16, y: 180}
-  scale: {x: 0, y: 0}
+  iconMod: {x: 0, y: 35}
+  scale: {x: 1, y: 1}
 --- !u!114 &150639329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5737,7 +5737,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &802854815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5840,7 +5840,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 802854813}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cffc6a877fa0f4408cdcae296205dfe, type: 3}
+  m_Script: {fileID: 11500000, guid: e0773a0d9b06f524b8b72b1470bab04c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   getBoolID: 12
@@ -6139,6 +6139,14 @@ Prefab:
       propertyPath: myConvo
       value: 35
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
+      propertyPath: scale.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
   m_RootGameObject: {fileID: 1534780353}
@@ -6309,7 +6317,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &1534780355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6440,8 +6448,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementName: Frank's Jacket
-  description: Frank's jacket must contain some sort of clue!
-  profileImage: {fileID: 21300000, guid: f08c79b37de4846779c6874efaa0cae1, type: 3}
+  description: You found a map inside this jacket, it'd be a great idea to look at
+    it.
+  profileImage: {fileID: 21300000, guid: db3282b25c101f44b823e5b5c1565fae, type: 3}
   visible: 1
   clickedOnSomething: 0
   maxDist: 4
