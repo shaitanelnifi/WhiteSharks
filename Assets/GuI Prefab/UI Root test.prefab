@@ -1459,6 +1459,8 @@ MonoBehaviour:
   viewTab2: {fileID: 100046}
   poiObjectView: {fileID: 100078}
   journalButton: {fileID: 100022}
+  notificationPanel: {fileID: 0}
+  notificationTime: 0
   poiButtonGrid: {fileID: 100010}
   objectButtonGrid: {fileID: 100048}
   buttonPrefab: {fileID: 100000, guid: 64d4793b759e75249921ded8eb8fde6a, type: 2}
@@ -1468,7 +1470,7 @@ MonoBehaviour:
     m_Bits: 0
   descriptionLabel: {fileID: 11400032}
   panelNameLabel: {fileID: 11400136}
-  timeLabel: {fileID: 11400028}
+  pcName: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1870,7 +1872,7 @@ MonoBehaviour:
   aspectRatio: 4.69999981
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
+  mFont: {fileID: 0}
   mText: New Label
   mFontSize: 20
   mFontStyle: 0
