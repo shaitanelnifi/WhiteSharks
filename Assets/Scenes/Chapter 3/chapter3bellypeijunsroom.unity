@@ -6034,7 +6034,6 @@ GameObject:
   - 114: {fileID: 1410044586}
   - 61: {fileID: 1410044585}
   - 114: {fileID: 1410044584}
-  - 114: {fileID: 1410044583}
   - 95: {fileID: 1410044582}
   - 114: {fileID: 1410044581}
   m_Layer: 10
@@ -6071,23 +6070,6 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
---- !u!114 &1410044583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: e95b9d1a228e644d7bcddf8736d250c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1416711343}
-  m_GameObject: {fileID: 1410044580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toolText: Talk
-  sizeOfFont: 24
-  ClickRevealer: {fileID: 0}
-  iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
 --- !u!114 &1410044584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6214,7 +6196,8 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: .649999976
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400004, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
   m_RootGameObject: {fileID: 1410044580}
   m_IsPrefabParent: 0

@@ -436,98 +436,6 @@ Prefab:
   m_RootGameObject: {fileID: 446559291}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1001 &279020154
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -3.88000011
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.45000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: m_Size.x
-      value: 2.32439852
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: m_Center.x
-      value: -.0324401855
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: m_Size.y
-      value: 1.54584122
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: m_Center.y
-      value: -.227079391
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: diaNum
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: toolText
-      value: To Frank's Room
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: m_LocalScale.x
-      value: .980000019
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 5.36000013
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: m_Name
-      value: ClickableFrankOld
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: scale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: scale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-  m_RootGameObject: {fileID: 354778671}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1001 &297461865
 Prefab:
   m_ObjectHideFlags: 0
@@ -616,93 +524,6 @@ Prefab:
   m_RootGameObject: {fileID: 740907365}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &354778671
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-  m_PrefabInternal: {fileID: 279020154}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 354778676}
-  - 114: {fileID: 354778675}
-  - 61: {fileID: 354778674}
-  - 114: {fileID: 354778673}
-  - 114: {fileID: 354778672}
-  m_Layer: 10
-  m_Name: ClickableFrankOld
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
---- !u!114 &354778672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99,
-    type: 2}
-  m_PrefabInternal: {fileID: 279020154}
-  m_GameObject: {fileID: 354778671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toolText: To Frank's Room
-  sizeOfFont: 24
-  ClickRevealer: {fileID: 0}
-  iconMod: {x: 0, y: 0}
-  scale: {x: 1, y: 1}
---- !u!114 &354778673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: f9b971af2a87b7045b837214a1258b99,
-    type: 2}
-  m_PrefabInternal: {fileID: 279020154}
-  m_GameObject: {fileID: 354778671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d939d62edb1a42747af2133d18686dcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDist: 5
---- !u!61 &354778674
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100000, guid: f9b971af2a87b7045b837214a1258b99,
-    type: 2}
-  m_PrefabInternal: {fileID: 279020154}
-  m_GameObject: {fileID: 354778671}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: 2.32439852, y: 1.54584122}
-  m_Center: {x: -.0324401855, y: -.227079391}
---- !u!114 &354778675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99,
-    type: 2}
-  m_PrefabInternal: {fileID: 279020154}
-  m_GameObject: {fileID: 354778671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  diaNum: 24
-  offset: 0
-  wall: 0
---- !u!4 &354778676
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
-  m_PrefabInternal: {fileID: 279020154}
-  m_GameObject: {fileID: 354778671}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.88000011, y: 1.45000005, z: 0}
-  m_LocalScale: {x: .980000019, y: 5.36000013, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
 --- !u!1 &355282683
 GameObject:
   m_ObjectHideFlags: 0
@@ -6398,8 +6219,8 @@ Transform:
   m_PrefabInternal: {fileID: 1879516271}
   m_GameObject: {fileID: 1479054491}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.82999992, y: .430000007, z: 0}
-  m_LocalScale: {x: .119999997, y: 1.07000005, z: .949355006}
+  m_LocalPosition: {x: 5.0288291, y: -.754728019, z: 0}
+  m_LocalScale: {x: .119999997, y: .494540751, z: .949355006}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1001 &1730318366
@@ -6850,11 +6671,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.82999992
+      value: 5.0288291
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .430000007
+      value: -.754728019
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6886,7 +6707,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.07000005
+      value: .494540751
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: x

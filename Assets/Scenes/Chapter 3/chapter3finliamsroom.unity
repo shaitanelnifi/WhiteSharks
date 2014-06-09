@@ -109,7 +109,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &46520855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20001,7 +20001,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &540267137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20558,8 +20558,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb89dc5b299e48af9a0eaea28dec7f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
-  id: 1
 --- !u!4 &1018292206
 Transform:
   m_ObjectHideFlags: 0
