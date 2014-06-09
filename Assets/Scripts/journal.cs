@@ -285,6 +285,16 @@ public class journal : MonoBehaviour {
 		}
 		StartCoroutine(showNotifications());
 	}
+
+	void Update() {
+		if (Input.GetKeyDown (KeyCode.J))
+		{
+			journalAccusationPanelToggle(journalButton);
+			GameObject.Find ("Journal Button").GetComponent<UIPlayTween>().Play(true);
+			AudioClip clip = Resources.Load ("Sounds/SoundEffects/Tap") as AudioClip;
+			NGUITools.PlaySound(clip);
+		}
+	}
 	
 	//Keeps time.
 /*	IEnumerator UpdateTime(){
