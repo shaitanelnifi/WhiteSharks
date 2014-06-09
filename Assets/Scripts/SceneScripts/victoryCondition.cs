@@ -66,6 +66,8 @@ public class victoryCondition : genericScene {
 				Dialoguer.StartDialogue ((int)dialogue [curDia]);
 				
 			} else if ((int)dialogue [curDia] >= 0 && GameManager.dialogueJustFinished && curDia == dialogue.Length - 1) {
+				if (player != null)
+					player.canWalk = false;
 				yield return new WaitForSeconds (waitThisLong);
 				GameManager.Instance.playerInScene = isTherePlayer;
 				done = true;
