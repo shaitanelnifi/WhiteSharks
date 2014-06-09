@@ -73,8 +73,8 @@ public class TooltipScript : MonoBehaviour {
 	}
 
 	void OnGUI(){
-		if(true) { //<- make this not commented and one below commented if want to just load scene and test
-		//if(player != null && player.canWalk) {
+		//if(true) { //<- make this not commented and one below commented if want to just load scene and test
+		if(player != null && !player.talking) {
 			if(currText != "" && !revealAll) {
 				float x = Input.mousePosition.x;
 				float y = Input.mousePosition.y;
