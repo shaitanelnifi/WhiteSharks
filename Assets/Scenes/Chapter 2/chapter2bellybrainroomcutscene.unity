@@ -5090,7 +5090,7 @@ MonoBehaviour:
   playMe: {fileID: 8300000, guid: 258ccc3c9d307944a837f2dcef189496, type: 3}
   waitThisLong: 1
   whatCharacter: Jane
-  nextLevel: chapter2outrotransition
+  nextLevel: chapter3introtransition
   isTherePlayer: 0
   spawnHereAfter: {x: 0, y: 0}
   loadNewXML: 0

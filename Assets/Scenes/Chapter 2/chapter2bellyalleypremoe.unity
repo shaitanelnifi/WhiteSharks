@@ -233,7 +233,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: diaNum
-      value: 15
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: f9b971af2a87b7045b837214a1258b99, type: 2}
       propertyPath: toolText
@@ -1158,7 +1158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543e8340a9c6ccf4c8a994d2b1fcb4ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diaNum: 15
+  diaNum: 22
   offset: 0
   wall: 0
 --- !u!4 &957929149
