@@ -209,7 +209,8 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400004, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d4ca5765567e743f5b7ad7717198a638, type: 2}
   m_RootGameObject: {fileID: 1030226824}
   m_IsPrefabParent: 0
@@ -227,7 +228,6 @@ GameObject:
   - 61: {fileID: 1030226828}
   - 95: {fileID: 1030226827}
   - 114: {fileID: 1030226826}
-  - 114: {fileID: 1030226825}
   m_Layer: 10
   m_Name: Shammy
   m_TagString: Untagged
@@ -235,23 +235,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1030226825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: d4ca5765567e743f5b7ad7717198a638,
-    type: 2}
-  m_PrefabInternal: {fileID: 531729632}
-  m_GameObject: {fileID: 1030226824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toolText: Talk
-  sizeOfFont: 24
-  ClickRevealer: {fileID: 0}
-  iconMod: {x: 0, y: 0}
-  scale: {x: 1, y: 1}
 --- !u!114 &1030226826
 MonoBehaviour:
   m_ObjectHideFlags: 0

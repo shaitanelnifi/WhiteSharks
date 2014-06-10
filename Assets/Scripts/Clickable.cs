@@ -84,7 +84,6 @@ public class Clickable : MonoBehaviour {
 			Dialoguer.StartDialogue((int)diaNum + offset);
 		}
 
-		Debug.Log("3dddclickeasdasdasdasdasdasantiddddasdasdasdasdasdasd");
 		SoundManager.Instance.StopWalk();
 		GameManager.Instance.updateMouseIcon(mouseOverIcon);
 		clickedOnSomething = false;

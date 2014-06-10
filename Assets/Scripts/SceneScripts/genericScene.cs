@@ -134,6 +134,8 @@ public class genericScene : MonoBehaviour {
 			} else 
 			if ((int)dialogue [curDia] >= 0 && GameManager.dialogueJustFinished && curDia == dialogue.Length - 1) {
 					if (waitThisLong != -1) {
+					if (player != null)
+						player.canWalk = false;
 							yield return new WaitForSeconds (waitThisLong);
 							done = true;
 							GameManager.Instance.playerInScene = isTherePlayer;

@@ -5400,14 +5400,6 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 400000, guid: 750f72ca34307ac498a0540d33d3bd86, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -.525412083
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 750f72ca34307ac498a0540d33d3bd86, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -.685329437
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 750f72ca34307ac498a0540d33d3bd86, type: 2}
       propertyPath: m_LocalPosition.z
       value: -1
       objectReference: {fileID: 0}
@@ -6173,8 +6165,8 @@ MonoBehaviour:
   toolText: Beep Boop
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
-  iconMod: {x: 16, y: 180}
-  scale: {x: 0, y: 0}
+  iconMod: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &1771113101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6198,8 +6190,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 4, y: 7.5}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 4, y: 8.5}
+  m_Center: {x: 0, y: 2}
 --- !u!212 &1771113103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6256,7 +6248,7 @@ Transform:
   m_PrefabInternal: {fileID: 682754419}
   m_GameObject: {fileID: 1771113099}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.525412083, y: -.685329437, z: -1}
+  m_LocalPosition: {x: -1.15463495, y: -1.84602594, z: -1}
   m_LocalScale: {x: .343105137, y: .34310317, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

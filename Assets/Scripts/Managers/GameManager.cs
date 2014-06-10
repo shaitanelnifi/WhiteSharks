@@ -193,8 +193,8 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void OnGUI() {
-		GUI.Label (new Rect (Screen.width / 3.5f, Screen.height - 20f, Screen.width, 50f),
-		           "BETA - NOT REPRESENTATIVE OF FINAL GAMEPLAY");
+//		GUI.Label (new Rect (Screen.width / 3.5f, Screen.height - 20f, Screen.width, 50f),
+//		           "BETA - NOT REPRESENTATIVE OF FINAL GAMEPLAY");
 
 		//Handle mouse updates here
 

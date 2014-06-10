@@ -7,8 +7,12 @@ public class NetworkMap : MonoBehaviour {
 	public Animator jane;
 	public GameObject cellDoor;
 
+
+	protected playerScript player;
+
 	// Use this for initialization
 	void Start () {
+		player = (playerScript)FindObjectOfType(typeof(playerScript));
 	}
 	
 	// Update is called once per frame
@@ -17,6 +21,6 @@ public class NetworkMap : MonoBehaviour {
 		if (Dialoguer.GetGlobalBoolean (3))
 						Destroy (cellDoor);
 		jane.SetBool("moveJane", Dialoguer.GetGlobalBoolean (5));
-
+		if(GameManager.dialogueJustFinished) player.talking = false;
 	}
 }

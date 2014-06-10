@@ -1328,7 +1328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoPlay: 1
   playMe: {fileID: 8300000, guid: 258ccc3c9d307944a837f2dcef189496, type: 3}
-  waitThisLong: 120
+  waitThisLong: -1
   whatCharacter: Jane
   nextLevel: chapter1introfinroom
   isTherePlayer: 1
@@ -1341,7 +1341,7 @@ MonoBehaviour:
   player: {fileID: 0}
   maxY: 1.55999994
   minY: -1.60000002
-  minScale: .354999989
+  minScale: .342999995
   maxScale: .800000012
   baseSpeed: 4
   placeTop: 0

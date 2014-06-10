@@ -111,9 +111,9 @@ public class MapClickable : Clickable {
 
 	}*/
 	
-	void Update() {
+	//void Update() {
 		
-	}
+	//}
 	
 	public void OnMouseDown() {
 		if(Input.GetMouseButtonDown(0)) {
@@ -124,20 +124,25 @@ public class MapClickable : Clickable {
 	
 	public void startDialogue() {
 		if(!wall) {
+			GameManager.dialogueJustFinished = false;
+			StartCoroutine("DialogueDone");
 			Dialoguer.StartDialogue((int)dialogueEnum);
 		}
-		StartCoroutine("DialogueDone");
-		doneTalking = true;
 	}
-	
-	
-	
-	
+
+
+
+
 	IEnumerator DialogueDone() {
-		while(!doneTalking || player.talking) {
+		Debug.Log("dialogue over1: " + GameManager.dialogueJustFinished);
+		while(!GameManager.dialogueJustFinished) {
 			yield return null;
 		}
-		Destroy(gameObject);
+		gameObject.GetComponent<TooltipScript>().enabled = false;
+		Debug.Log("dialogue over2: " + GameManager.dialogueJustFinished);
+		player.talking = false;
+		StopCoroutine("DialogueDone");
+		//Destroy(gameObject);
 	}
 	
 	

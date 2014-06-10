@@ -42,7 +42,7 @@ MonoBehaviour:
   mSprites:
   - name: base
     x: 0
-    y: 865
+    y: 2830
     width: 923
     height: 610
     borderLeft: 0
@@ -54,21 +54,21 @@ MonoBehaviour:
     paddingTop: 22
     paddingBottom: 0
   - name: button
-    x: 168
-    y: 139
-    width: 220
-    height: 59
+    x: 537
+    y: 2573
+    width: 328
+    height: 89
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 0
+    paddingLeft: 12
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: emptyMugShot
-    x: 629
-    y: 96
+    x: 1803
+    y: 3241
     width: 164
     height: 199
     borderLeft: 0
@@ -80,8 +80,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: infowindow
-    x: 924
-    y: 1169
+    x: 0
+    y: 2523
     width: 536
     height: 306
     borderLeft: 0
@@ -93,8 +93,8 @@ MonoBehaviour:
     paddingTop: 149
     paddingBottom: 106
   - name: Journal base
-    x: 0
-    y: 296
+    x: 924
+    y: 2872
     width: 878
     height: 568
     borderLeft: 0
@@ -106,8 +106,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: journalDropdown
-    x: 0
-    y: 199
+    x: 537
+    y: 2663
     width: 628
     height: 96
     borderLeft: 0
@@ -119,8 +119,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: journalPlaceHolder
-    x: 0
-    y: 1476
+    x: 1020
+    y: 3524
     width: 1024
     height: 572
     borderLeft: 0
@@ -132,23 +132,23 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: NEW Journal base
-    x: 1025
-    y: 1482
-    width: 882
-    height: 566
+    x: 0
+    y: 3441
+    width: 1019
+    height: 655
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
+    paddingLeft: 2
+    paddingRight: 3
     paddingTop: 0
-    paddingBottom: 0
+    paddingBottom: 2
   - name: NEW Top HUD
-    x: 924
-    y: 1063
-    width: 1024
-    height: 43
+    x: 0
+    y: 2473
+    width: 1152
+    height: 49
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -158,8 +158,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: NoelAltProfile
-    x: 0
-    y: 19
+    x: 1803
+    y: 3061
     width: 167
     height: 179
     borderLeft: 0
@@ -171,10 +171,10 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Top HUD
-    x: 924
-    y: 1107
-    width: 1024
-    height: 61
+    x: 537
+    y: 2760
+    width: 1152
+    height: 69
     borderLeft: 0
     borderRight: 0
     borderTop: 0

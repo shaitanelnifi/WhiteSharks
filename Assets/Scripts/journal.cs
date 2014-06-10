@@ -111,8 +111,8 @@ public class journal : MonoBehaviour {
 		notificationQ = new Queue<GameObject>();
 		isNotifying = false;
 		initPoIView();
-		changeView(0);
-		changePOI (0);
+		changeView(1);
+		//changePOI (1);
 
 		string[] pcNameSplit = GameObject.FindGameObjectWithTag("Player").name.Split('(');
 		pcName.text = pcNameSplit[0];
@@ -284,6 +284,16 @@ public class journal : MonoBehaviour {
 			notificationQ.Enqueue(newCaseObject);
 		}
 		StartCoroutine(showNotifications());
+	}
+
+	void Update() {
+		if (Input.GetKeyDown (KeyCode.J))
+		{
+			journalAccusationPanelToggle(journalButton);
+			GameObject.Find ("Journal Button").GetComponent<UIPlayTween>().Play(true);
+			AudioClip clip = Resources.Load ("Sounds/SoundEffects/Tap") as AudioClip;
+			NGUITools.PlaySound(clip);
+		}
 	}
 	
 	//Keeps time.
