@@ -1449,10 +1449,6 @@ Prefab:
       propertyPath: myConvo
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 11400004, guid: e272233e040da41df924bf5730188f88, type: 2}
-      propertyPath: iconMod.y
-      value: 200
-      objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e272233e040da41df924bf5730188f88, type: 2}
       propertyPath: m_SortingLayer
       value: 3
@@ -22184,7 +22180,7 @@ MonoBehaviour:
   toolText: Talk
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
-  iconMod: {x: 0, y: 200}
+  iconMod: {x: 0, y: 0}
   scale: {x: 1, y: 1}
 --- !u!95 &2097457559
 Animator:

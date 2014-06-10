@@ -357,10 +357,6 @@ Prefab:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
-      propertyPath: iconMod.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400004, guid: 9cd4a299eda5848e98323344f2b5c521, type: 2}
       propertyPath: iconMod.x
       value: -10
       objectReference: {fileID: 0}
@@ -619,7 +615,7 @@ MonoBehaviour:
   toolText: Talk
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
-  iconMod: {x: -10, y: 180}
+  iconMod: {x: -10, y: 0}
   scale: {x: 1, y: 1}
 --- !u!114 &674490212
 MonoBehaviour:

@@ -1513,7 +1513,8 @@ What?</text>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>We have to talk. Come to [3DFF49]my room[-] as soon as you can. This is serious.</text>
+          <text>We have to talk. Come to [3DFF49]my room[-] as soon as you can. This is serious.
+It's the first room on the left in the Alley here.</text>
           <name>Peijun Shi</name>
           <portrait />
           <audio />
@@ -1605,7 +1606,7 @@ What?</text>
       <startPage>0</startPage>
       <scrollPosition>
         <x>455.399841</x>
-        <y>2331</y>
+        <y>0</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -7016,5 +7017,5 @@ and a [3DFF49]terminal[-].</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>26</currentDialogueId>
+  <currentDialogueId>7</currentDialogueId>
 </DialogueEditorMasterObject>
