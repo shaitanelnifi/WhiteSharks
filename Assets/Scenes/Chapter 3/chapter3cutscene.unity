@@ -133,8 +133,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.587304, y: 5.41710043}
-  m_Center: {x: -.14414978, y: -.0314495564}
+  m_Size: {x: 3.27999997, y: 10.0799999}
+  m_Center: {x: -.349999994, y: 0}
 --- !u!114 &175465969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,7 +180,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 2
   m_SortingLayerID: 2971093031
-  m_Sprite: {fileID: 21300000, guid: 78422715a9353441bafee92e5c7914d8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 25be51c5c234a46c0b5c6177db77e3d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &175465971
 Transform:
@@ -189,8 +189,8 @@ Transform:
   m_PrefabInternal: {fileID: 265993443}
   m_GameObject: {fileID: 175465964}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.15648079, y: -3.47967076, z: -1}
-  m_LocalScale: {x: .649999976, y: .649999976, z: 1}
+  m_LocalPosition: {x: 6.94249153, y: -.674414992, z: -1}
+  m_LocalScale: {x: .56775111, y: .56775111, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &175465972
@@ -214,11 +214,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 8.15648079
+      value: 6.94249153
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.47967076
+      value: -.674414992
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -242,11 +242,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_LocalScale.x
-      value: .649999976
+      value: .56775111
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_LocalScale.y
-      value: .649999976
+      value: .56775111
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400004, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}

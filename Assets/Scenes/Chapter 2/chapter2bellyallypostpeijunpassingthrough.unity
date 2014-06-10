@@ -6129,11 +6129,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 6.1500001
+      value: 5.93221235
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.48000002
+      value: -.552299976
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6161,11 +6161,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalScale.x
-      value: .782977104
+      value: .692713678
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalScale.y
-      value: .782977104
+      value: .692713201
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
+      propertyPath: m_Center.y
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
@@ -6295,7 +6299,7 @@ MonoBehaviour:
   toolText: Talk
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
-  iconMod: {x: 0, y: 35}
+  iconMod: {x: 0, y: 0}
   scale: {x: 1, y: 1}
 --- !u!114 &1316384515
 MonoBehaviour:
@@ -6320,8 +6324,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 2, y: 7.5}
-  m_Center: {x: 0, y: 3.75}
+  m_Size: {x: 2, y: 9}
+  m_Center: {x: 0, y: -1}
 --- !u!212 &1316384517
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6363,7 +6367,7 @@ MonoBehaviour:
     outstanding member of our community. Graduated with honours in both human biology
     and psychology, Noel is the person to get in touch with if you ever feel in need
     of help.
-  profileImage: {fileID: 21300000, guid: ae077eceb54a74421ae84077cfc03fa6, type: 3}
+  profileImage: {fileID: 21300000, guid: 5baf4611ee9c6430386a2cc7ac613d59, type: 3}
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
@@ -6378,8 +6382,8 @@ Transform:
   m_PrefabInternal: {fileID: 1105340015}
   m_GameObject: {fileID: 1316384513}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.1500001, y: -4.48000002, z: -1}
-  m_LocalScale: {x: .782977104, y: .782977104, z: 1}
+  m_LocalPosition: {x: 5.93221235, y: -.552299976, z: -1}
+  m_LocalScale: {x: .692713678, y: .692713201, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &1316384520

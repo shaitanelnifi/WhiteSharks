@@ -247,11 +247,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 11.7914505
+      value: 11.7030115
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.54551792
+      value: 1.99210596
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -295,16 +295,8 @@ Prefab:
       value: 10.25
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
-      propertyPath: m_Center.y
-      value: 5.125
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: m_Size.x
       value: 2.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
-      propertyPath: m_Center.x
-      value: -.25
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 147f6141f4730475db67483bbd79c4b0, type: 2}
       propertyPath: maxDist
@@ -1092,7 +1084,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 2.25, y: 10.25}
-  m_Center: {x: -.25, y: 5.125}
+  m_Center: {x: 0, y: 0}
 --- !u!212 &576624421
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1149,7 +1141,7 @@ Transform:
   m_PrefabInternal: {fileID: 51413040}
   m_GameObject: {fileID: 576624418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.7914505, y: -1.54551792, z: -1}
+  m_LocalPosition: {x: 11.7030115, y: 1.99210596, z: -1}
   m_LocalScale: {x: -.672732174, y: .672732592, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

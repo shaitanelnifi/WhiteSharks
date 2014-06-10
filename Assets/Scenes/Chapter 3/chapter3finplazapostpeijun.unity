@@ -6422,7 +6422,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 3, y: 9}
-  m_Center: {x: 0, y: 4.5}
+  m_Center: {x: 0, y: 0}
 --- !u!212 &731007478
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6445,7 +6445,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 2
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 9600821bf69ab4f07a1ae87411a51f42, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bcb6ffa8476c441b3af37fd9ad771db4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &731007479
 MonoBehaviour:
@@ -6476,8 +6476,8 @@ Transform:
   m_PrefabInternal: {fileID: 2053348931}
   m_GameObject: {fileID: 731007472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.01999998, y: -5.07000017, z: -1}
-  m_LocalScale: {x: .300000012, y: .300000012, z: 1}
+  m_LocalPosition: {x: 1.84947312, y: -3.61620045, z: -1}
+  m_LocalScale: {x: .287844211, y: .287844121, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &731007481
@@ -7824,11 +7824,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.01999998
+      value: 1.84947312
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -5.07000017
+      value: -3.61620045
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -7848,11 +7848,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
       propertyPath: m_LocalScale.y
-      value: .300000012
+      value: .287844121
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
       propertyPath: m_LocalScale.x
-      value: .300000012
+      value: .287844211
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
       propertyPath: myConvo
