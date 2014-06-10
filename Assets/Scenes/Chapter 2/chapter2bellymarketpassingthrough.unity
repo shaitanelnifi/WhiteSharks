@@ -486,8 +486,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 2, y: 7.5}
-  m_Center: {x: 0, y: 3.75}
+  m_Size: {x: 2, y: 9}
+  m_Center: {x: 0, y: -1}
 --- !u!212 &984982744
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -529,7 +529,7 @@ MonoBehaviour:
     outstanding member of our community. Graduated with honours in both human biology
     and psychology, Noel is the person to get in touch with if you ever feel in need
     of help.
-  profileImage: {fileID: 21300000, guid: ae077eceb54a74421ae84077cfc03fa6, type: 3}
+  profileImage: {fileID: 21300000, guid: 5baf4611ee9c6430386a2cc7ac613d59, type: 3}
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
@@ -544,7 +544,7 @@ Transform:
   m_PrefabInternal: {fileID: 1377448008}
   m_GameObject: {fileID: 984982740}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.09444046, y: -3.60459328, z: -1}
+  m_LocalPosition: {x: -5.67528248, y: -2.6541245, z: -1}
   m_LocalScale: {x: .239999995, y: .239999995, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -649,8 +649,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.87794292, y: 7.50969648}
-  m_Center: {x: -.203446746, y: 3.89454865}
+  m_Size: {x: 3.27999997, y: 10.0799999}
+  m_Center: {x: -.349999994, y: 0}
 --- !u!114 &1079960518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -705,7 +705,7 @@ Transform:
   m_PrefabInternal: {fileID: 1340153725}
   m_GameObject: {fileID: 1079960512}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.62477374, y: -3.63610578, z: -1}
+  m_LocalPosition: {x: 3.62477565, y: -2.659235, z: -1}
   m_LocalScale: {x: .230000004, y: .230000004, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6056,11 +6056,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.62477374
+      value: 3.62477565
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.63610578
+      value: -2.659235
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6096,19 +6096,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_Center.y
-      value: 3.89454865
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_Center.x
-      value: -.203446746
+      value: -.349999994
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_Size.y
-      value: 7.50969648
+      value: 10.0799999
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_Size.x
-      value: 1.87794292
+      value: 3.27999997
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
       propertyPath: m_Sprite
@@ -6137,11 +6137,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.09444046
+      value: -5.67528248
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.60459328
+      value: -2.6541245
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.z

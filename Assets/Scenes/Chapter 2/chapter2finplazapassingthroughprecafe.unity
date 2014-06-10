@@ -155,7 +155,7 @@ MonoBehaviour:
   toolText: Talk
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
-  iconMod: {x: 0, y: 35}
+  iconMod: {x: 0, y: 0}
   scale: {x: 1, y: 1}
 --- !u!114 &75125466
 MonoBehaviour:
@@ -180,8 +180,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 2, y: 7.5}
-  m_Center: {x: 0, y: 3.75}
+  m_Size: {x: 2, y: 9}
+  m_Center: {x: 0, y: -1}
 --- !u!212 &75125468
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
     outstanding member of our community. Graduated with honours in both human biology
     and psychology, Noel is the person to get in touch with if you ever feel in need
     of help.
-  profileImage: {fileID: 21300000, guid: ae077eceb54a74421ae84077cfc03fa6, type: 3}
+  profileImage: {fileID: 21300000, guid: 5baf4611ee9c6430386a2cc7ac613d59, type: 3}
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
@@ -238,7 +238,7 @@ Transform:
   m_PrefabInternal: {fileID: 2116574870}
   m_GameObject: {fileID: 75125464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.25279808, y: -2.61550593, z: -1}
+  m_LocalPosition: {x: -2.39794469, y: -1.68567204, z: -1}
   m_LocalScale: {x: .150000006, y: .150000006, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7888,11 +7888,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.25279808
+      value: -2.39794469
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.61550593
+      value: -1.68567204
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.z

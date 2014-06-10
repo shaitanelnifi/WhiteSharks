@@ -3715,8 +3715,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 2, y: 7.5}
-  m_Center: {x: 0, y: 3.75}
+  m_Size: {x: 2, y: 9}
+  m_Center: {x: 0, y: -1}
 --- !u!212 &1773664226
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3758,7 +3758,7 @@ MonoBehaviour:
     outstanding member of our community. Graduated with honours in both human biology
     and psychology, Noel is the person to get in touch with if you ever feel in need
     of help.
-  profileImage: {fileID: 21300000, guid: ae077eceb54a74421ae84077cfc03fa6, type: 3}
+  profileImage: {fileID: 21300000, guid: 5baf4611ee9c6430386a2cc7ac613d59, type: 3}
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
@@ -3773,8 +3773,8 @@ Transform:
   m_PrefabInternal: {fileID: 1808457780}
   m_GameObject: {fileID: 1773664222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.74923515, y: -3.39677405, z: -1}
-  m_LocalScale: {x: .316350222, y: .316350013, z: 1}
+  m_LocalPosition: {x: -4.14702845, y: -1.91909623, z: -1}
+  m_LocalScale: {x: .287774265, y: .287773877, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &1773664229
@@ -3798,11 +3798,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.74923515
+      value: -4.14702845
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.39677405
+      value: -1.91909623
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3826,11 +3826,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalScale.x
-      value: .316350222
+      value: .287774265
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: m_LocalScale.y
-      value: .316350013
+      value: .287773877
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 0cd273a218ec6e0439c117e44dfa0e95, type: 2}
       propertyPath: myConvo
