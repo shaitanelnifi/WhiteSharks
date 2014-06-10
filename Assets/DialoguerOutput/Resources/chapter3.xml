@@ -4401,7 +4401,7 @@ and a [3DFF49]terminal[-].</text>
           </outs>
           <advanced>true</advanced>
           <metadata />
-          <text>Perfect!</text>
+          <text>I don't think Josh'd want his Sharkulus rift stolen while he's gone. No thief would ever look in my pockets!</text>
           <name>May Taylor</name>
           <portrait />
           <audio />
@@ -7017,5 +7017,5 @@ and a [3DFF49]terminal[-].</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>7</currentDialogueId>
+  <currentDialogueId>13</currentDialogueId>
 </DialogueEditorMasterObject>
