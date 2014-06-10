@@ -6136,8 +6136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter3bellymarketbeforepeijun
-  x: -.689999998
-  y: -3.49000001
+  x: -4.53907824
+  y: -4.25981712
   mouseOverIcon: Door_Icon
 --- !u!60 &1479054493
 PolygonCollider2D:
@@ -6711,11 +6711,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: x
-      value: -.689999998
+      value: -4.53907824
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: y
-      value: -3.49000001
+      value: -4.25981712
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: id

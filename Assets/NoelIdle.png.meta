@@ -56,7 +56,7 @@ TextureImporter:
         y: 1024
         width: 1024
         height: 1024
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
     - name: NoelIdle_1
       rect:
@@ -65,7 +65,7 @@ TextureImporter:
         y: 1024
         width: 1024
         height: 1024
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
     - name: NoelIdle_2
       rect:
@@ -74,7 +74,7 @@ TextureImporter:
         y: 1024
         width: 1024
         height: 1024
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
     - name: NoelIdle_3
       rect:
@@ -83,7 +83,7 @@ TextureImporter:
         y: 1024
         width: 1024
         height: 1024
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
     - name: NoelIdle_4
       rect:
@@ -92,16 +92,7 @@ TextureImporter:
         y: 0
         width: 1024
         height: 1024
-      alignment: 7
-      pivot: {x: 0, y: 0}
-    - name: NoelIdle_5
-      rect:
-        serializedVersion: 2
-        x: 2048
-        y: 0
-        width: 1024
-        height: 1024
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 
   userData: 
