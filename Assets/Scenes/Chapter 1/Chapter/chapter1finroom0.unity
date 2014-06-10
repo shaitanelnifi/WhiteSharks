@@ -194,7 +194,7 @@ MonoBehaviour:
   toolText: Talk
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
-  iconMod: {x: 0, y: 240}
+  iconMod: {x: 0, y: 0}
   scale: {x: 1, y: 1}
 --- !u!95 &110126566
 Animator:
@@ -287,10 +287,6 @@ Prefab:
     - target: {fileID: 21200000, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
       propertyPath: m_SortingLayerID
       value: 1982072587
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400004, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
-      propertyPath: iconMod.y
-      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: dd72aa61d2de34ba4b04c27282d212d5, type: 2}
       propertyPath: scale.x
