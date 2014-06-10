@@ -55,20 +55,20 @@ MonoBehaviour:
     paddingBottom: 0
   - name: BartenderSprite
     x: 0
-    y: 2827
-    width: 290
-    height: 290
+    y: 1970
+    width: 278
+    height: 288
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
+    paddingLeft: 2
+    paddingRight: 10
+    paddingTop: 2
     paddingBottom: 0
   - name: CarlosFrancoSprite
     x: 0
-    y: 1968
+    y: 2259
     width: 290
     height: 284
     borderLeft: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
     paddingBottom: 10
   - name: exitbutton
     x: 200
-    y: 1146
+    y: 1148
     width: 244
     height: 244
     borderLeft: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: FrankSprite
     x: 0
-    y: 2253
+    y: 2544
     width: 290
     height: 285
     borderLeft: 0
@@ -157,22 +157,9 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 5
     paddingBottom: 0
-  - name: JaneDoeSprite
-    x: 2290
-    y: 3754
-    width: 176
-    height: 176
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 7
-    paddingRight: 0
-    paddingTop: 7
-    paddingBottom: 0
   - name: JaneSprite
     x: 0
-    y: 1071
+    y: 1073
     width: 199
     height: 319
     borderLeft: 0
@@ -185,15 +172,15 @@ MonoBehaviour:
     paddingBottom: 0
   - name: JoshSusachSprite
     x: 0
-    y: 1677
-    width: 278
+    y: 1393
+    width: 262
     height: 290
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 12
-    paddingRight: 0
+    paddingLeft: 17
+    paddingRight: 11
     paddingTop: 0
     paddingBottom: 0
   - name: LiamOSheaSprite
@@ -237,7 +224,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: NinaWalkerSprite
     x: 0
-    y: 2539
+    y: 2830
     width: 290
     height: 287
     borderLeft: 0
@@ -249,8 +236,8 @@ MonoBehaviour:
     paddingTop: 3
     paddingBottom: 0
   - name: NoelAltSprite
-    x: 291
-    y: 2827
+    x: 263
+    y: 1393
     width: 228
     height: 290
     borderLeft: 0
@@ -262,7 +249,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: NoelMugshot
-    x: 2467
+    x: 2290
     y: 3781
     width: 130
     height: 149
@@ -276,7 +263,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: PeijunShiSprite
     x: 0
-    y: 1391
+    y: 1684
     width: 277
     height: 285
     borderLeft: 0
