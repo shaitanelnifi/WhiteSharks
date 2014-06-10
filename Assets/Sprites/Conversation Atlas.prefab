@@ -80,7 +80,7 @@ MonoBehaviour:
     paddingTop: 6
     paddingBottom: 0
   - name: ChaseSprite
-    x: 2106
+    x: 1922
     y: 3749
     width: 183
     height: 181
@@ -183,21 +183,8 @@ MonoBehaviour:
     paddingRight: 11
     paddingTop: 0
     paddingBottom: 0
-  - name: LiamOSheaSprite
-    x: 1922
-    y: 3749
-    width: 183
-    height: 181
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 2
-    paddingBottom: 0
   - name: LiamO'SheaSprite
-    x: 3546
+    x: 2964
     y: 3806
     width: 290
     height: 290
@@ -249,7 +236,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: NoelMugshot
-    x: 2290
+    x: 2106
     y: 3781
     width: 130
     height: 149
@@ -288,7 +275,7 @@ MonoBehaviour:
     paddingTop: 81
     paddingBottom: 10
   - name: ShammySprite
-    x: 2964
+    x: 3546
     y: 3806
     width: 290
     height: 290
