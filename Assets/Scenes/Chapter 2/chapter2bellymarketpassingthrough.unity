@@ -461,7 +461,7 @@ MonoBehaviour:
   toolText: Talk
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
-  iconMod: {x: 0, y: 35}
+  iconMod: {x: 0, y: 0}
   scale: {x: 1, y: 1}
 --- !u!114 &984982742
 MonoBehaviour:
@@ -625,7 +625,7 @@ MonoBehaviour:
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
-  scale: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
 --- !u!114 &1079960516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6115,6 +6115,14 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 25be51c5c234a46c0b5c6177db77e3d9,
         type: 3}
+    - target: {fileID: 11400004, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
+      propertyPath: scale.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e95b9d1a228e644d7bcddf8736d250c0, type: 2}
   m_RootGameObject: {fileID: 1079960512}
