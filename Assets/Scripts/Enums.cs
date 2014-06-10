@@ -94,6 +94,8 @@ public enum clickableID {
 	chapter3OfficeWrongway = 21,
 	chapter3hackingliamsdoor = 23,
 	chapter3balconywrongway = 24,
+	chapter3liamwindow = 25,
+	chapter3liambed = 26,
 
 	//chapter 4
 	janechapter4networkmapcelldoor = 4,
