@@ -27,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0386118889, y: -2.22810435, z: 0}
-  m_LocalScale: {x: -.48510021, y: .485101432, z: 1}
+  m_LocalPosition: {x: 17.6045704, y: -2.70369315, z: 0}
+  m_LocalScale: {x: -.196641967, y: .196642309, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!61 &6100000
@@ -40,8 +40,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 5.07688332, y: 3.31454062}
-  m_Center: {x: .00453737238, y: -.0165049452}
+  m_Size: {x: 10, y: 7}
+  m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -84,7 +84,7 @@ MonoBehaviour:
   elementName: Sharkulus Rift
   description: The newest in virtual reality technology, the Sharkulus Rift brings
     gaming to an all new level.  Also comes with many apps for general use.
-  profileImage: {fileID: 21300000, guid: 86e93ada56b53024d8612deb77b00729, type: 3}
+  profileImage: {fileID: 21300000, guid: 8d73ead3eab8bc2468b889c2723e7cb6, type: 3}
   visible: 0
   clickedOnSomething: 0
   maxDist: 1
@@ -115,7 +115,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 86e93ada56b53024d8612deb77b00729, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8d73ead3eab8bc2468b889c2723e7cb6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

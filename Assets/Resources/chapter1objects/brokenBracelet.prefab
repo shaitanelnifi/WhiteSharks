@@ -27,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
-  m_LocalScale: {x: .5, y: .5, z: .5}
+  m_LocalPosition: {x: 15.6774073, y: -2.13061571, z: -5}
+  m_LocalScale: {x: .134414762, y: .134414405, z: .5}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!61 &6100000
@@ -40,8 +40,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 3.37905192, y: 2.57283711}
-  m_Center: {x: .0954732895, y: -.0318245888}
+  m_Size: {x: 6, y: 5.25}
+  m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -56,7 +56,7 @@ MonoBehaviour:
   elementName: Broken Bracelet
   description: An example of technology exclusive to White Shark, broken. Better have
     May do her hacker magic on this.
-  profileImage: {fileID: 0}
+  profileImage: {fileID: 21300000, guid: e20655e41ed7c534d9405b05bee7f3df, type: 3}
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
@@ -115,7 +115,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 7b721c91f337a4d26af99a503cfa3486, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e20655e41ed7c534d9405b05bee7f3df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

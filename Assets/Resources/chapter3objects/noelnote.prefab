@@ -27,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.851895869, y: -3.03758478, z: 0}
-  m_LocalScale: {x: .150000006, y: .150000006, z: 1}
+  m_LocalPosition: {x: 17.7080402, y: -3.27048564, z: 0}
+  m_LocalScale: {x: .137419388, y: .137419447, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!61 &6100000
@@ -40,8 +40,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 7.76999998, y: 11.1000004}
-  m_Center: {x: -.0875850767, y: .133382589}
+  m_Size: {x: 8, y: 18}
+  m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -55,7 +55,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementName: Noel's Note
   description: Wow, that jerk actually wrote this.
-  profileImage: {fileID: 21300000, guid: de5e4c1f39f2541e6946e58c44b983d5, type: 3}
+  profileImage: {fileID: 21300000, guid: 21ad50c9ddf81174186dbcb336435383, type: 3}
   visible: 1
   clickedOnSomething: 0
   maxDist: 3
@@ -114,7 +114,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_SortingLayerID: 2971093031
-  m_Sprite: {fileID: 21300000, guid: de5e4c1f39f2541e6946e58c44b983d5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 21ad50c9ddf81174186dbcb336435383, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

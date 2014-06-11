@@ -55,7 +55,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementName: Frank's Blood
   description: A section of blood found near the broken bracelet.
-  profileImage: {fileID: 0}
+  profileImage: {fileID: 21300000, guid: b1dd7c6a8178c431b90b4ae299f403ef, type: 3}
   visible: 1
   clickedOnSomething: 0
   maxDist: 1
