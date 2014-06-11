@@ -2730,7 +2730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d44bc69c2ca5f943b845318866dc1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: d818d97c75052d1428278fd2d7e40a9e, type: 3}
+  audioClip: {fileID: 8300000, guid: 303597bff58ed402eadb284f5c3ddb90, type: 3}
   trigger: 0
   volume: 1
   pitch: 1
@@ -3275,7 +3275,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3009
+  startingRenderQueue: 3019
   mAlpha: 1
   mClipping: 3
   mClipRange: {x: 0, y: -107, z: 230, w: 394}

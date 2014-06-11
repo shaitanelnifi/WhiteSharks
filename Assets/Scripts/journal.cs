@@ -134,7 +134,7 @@ public class journal : MonoBehaviour {
 	
 	//No longer toggles.
 	void journalAccusationPanelToggle(GameObject button){
-		if (GameManager.dialogueJustFinished) {
+		if (!GameManager.Instance.GetComponent<DialogueGUI_Test>().isDialogue()) {
 			if(button == journalButton) {
 				playerScript player = (playerScript)FindObjectOfType(typeof(playerScript));
 				if(inMenu) {
