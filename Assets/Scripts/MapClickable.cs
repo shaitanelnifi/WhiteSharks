@@ -116,7 +116,7 @@ public class MapClickable : Clickable {
 	//}
 	
 	public void OnMouseDown() {
-		if(Input.GetMouseButtonDown(0)) {
+		if(Input.GetMouseButtonDown(0) && GameManager.dialogueJustFinished && doneTalking == false) {
 			startDialogue();
 		}
 		
@@ -127,6 +127,7 @@ public class MapClickable : Clickable {
 			GameManager.dialogueJustFinished = false;
 			StartCoroutine("DialogueDone");
 			Dialoguer.StartDialogue((int)dialogueEnum);
+			doneTalking = true;
 		}
 	}
 
