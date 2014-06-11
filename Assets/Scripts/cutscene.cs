@@ -5,6 +5,7 @@ public class cutscene : MonoBehaviour {
 
 	public Animator a;
 	public string varName;
+	public bool isBool;
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +16,9 @@ public class cutscene : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		a.SetFloat (varName, Dialoguer.GetGlobalFloat (2));
+		if (isBool)
+			a.SetBool (varName, Dialoguer.GetGlobalBoolean (6));
+		else
+			a.SetFloat (varName, Dialoguer.GetGlobalFloat (2));
 	}
 }

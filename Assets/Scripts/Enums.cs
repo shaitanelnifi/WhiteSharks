@@ -216,6 +216,12 @@ public enum Convo {
 	founderchapter4networkbrainroomrip = 13,
 	janechapter4endcutscene = 14,
 	founderchapter4lostbuttonmash = 15,
+	ch4endbellybar = 17,
+	ch4endfinplaza = 18,
+	ch4endcafe = 19,
+	ch4endcafe2 = 20,
+	ch4endfrank = 21,
+	ch4endplaza2 = 22,
 	alexiachapter4endnarration = 23,
 	
 };
