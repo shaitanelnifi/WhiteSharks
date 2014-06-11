@@ -411,8 +411,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: chapter2bellymarketpassingthrough
-  x: -6
-  y: -3.5999999
+  x: -2.254529
+  y: -3.92950606
   mouseOverIcon: Door_Icon
 --- !u!50 &422799279
 Rigidbody2D:
@@ -721,11 +721,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: x
-      value: -6
+      value: -2.254529
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: y
-      value: -3.5999999
+      value: -3.92950606
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 569fc5d6af77b96428b903f376398da8, type: 2}
       propertyPath: id
