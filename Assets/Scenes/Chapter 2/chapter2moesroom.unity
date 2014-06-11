@@ -634,11 +634,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 0269d62a56b778c43837adf042842990, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 11.2257919
+      value: 11.5216932
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0269d62a56b778c43837adf042842990, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.51494837
+      value: 1.38657367
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0269d62a56b778c43837adf042842990, type: 2}
       propertyPath: m_LocalPosition.z
@@ -668,6 +668,24 @@ Prefab:
       propertyPath: maxDist
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 0269d62a56b778c43837adf042842990, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5baf4611ee9c6430386a2cc7ac613d59,
+        type: 3}
+    - target: {fileID: 400000, guid: 0269d62a56b778c43837adf042842990, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .311884135
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0269d62a56b778c43837adf042842990, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .311884463
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 0269d62a56b778c43837adf042842990, type: 2}
+      propertyPath: profileImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 5baf4611ee9c6430386a2cc7ac613d59,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0269d62a56b778c43837adf042842990, type: 2}
   m_RootGameObject: {fileID: 1807851165}
@@ -6068,7 +6086,7 @@ MonoBehaviour:
   elementName: Examine Picture
   description: "REPORT\r\nName of Victim: Moe\r\nFormer Occupation: Bartender\r\nCause
     of Death: Blood loss and brain removal\r"
-  profileImage: {fileID: 21300000, guid: 7d89f3c830cc9bd429335f07c69b0f79, type: 3}
+  profileImage: {fileID: 21300000, guid: 5baf4611ee9c6430386a2cc7ac613d59, type: 3}
   visible: 1
   clickedOnSomething: 0
   maxDist: 5
@@ -6142,7 +6160,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_SortingLayerID: 2971093031
-  m_Sprite: {fileID: 21300000, guid: 7d89f3c830cc9bd429335f07c69b0f79, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5baf4611ee9c6430386a2cc7ac613d59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1807851171
 Transform:
@@ -6151,8 +6169,8 @@ Transform:
   m_PrefabInternal: {fileID: 867018826}
   m_GameObject: {fileID: 1807851165}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.2257919, y: 1.51494837, z: -1}
-  m_LocalScale: {x: .613635182, y: .613635421, z: 1}
+  m_LocalPosition: {x: 11.5216932, y: 1.38657367, z: -1}
+  m_LocalScale: {x: .311884135, y: .311884463, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &1986024428
