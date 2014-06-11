@@ -1329,7 +1329,7 @@ MonoBehaviour:
   whatCharacter: Jane
   nextLevel: chapter1finbalcony
   isTherePlayer: 1
-  spawnHereAfter: {x: 11.8699999, y: -1.63}
+  spawnHereAfter: {x: 10.8000002, y: -1.63}
   loadNewXML: 0
   dialoguer: chapter1
   needGUI: 0

@@ -276,7 +276,7 @@ MonoBehaviour:
   whatCharacter: Jane
   nextLevel: chapter1finlobby
   isTherePlayer: 1
-  spawnHereAfter: {x: 2.4000001, y: -5}
+  spawnHereAfter: {x: 2.4000001, y: -4.0999999}
   loadNewXML: 1
   dialoguer: chapter1
   needGUI: 0
