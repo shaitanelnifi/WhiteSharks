@@ -41,8 +41,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: bbdf6aa58fab24e30b2644a3be80d067, type: 2}
   mSprites:
   - name: arrow
-    x: 3074
-    y: 3073
+    x: 3650
+    y: 1863
     width: 255
     height: 185
     borderLeft: 0
@@ -53,22 +53,9 @@ MonoBehaviour:
     paddingRight: 25
     paddingTop: 5
     paddingBottom: 10
-  - name: background
-    x: 2049
-    y: 3535
-    width: 1024
-    height: 561
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
   - name: black
-    x: 0
-    y: 1621
+    x: 2049
+    y: 239
     width: 1024
     height: 449
     borderLeft: 0
@@ -79,9 +66,35 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: blank
+    x: 4052
+    y: 2016
+    width: 32
+    height: 32
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Blank_Black_Super_Wide
+    x: 3975
+    y: 1927
+    width: 96
+    height: 48
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 2
+    paddingRight: 2
+    paddingTop: 26
+    paddingBottom: 26
   - name: button
-    x: 3749
-    y: 4007
+    x: 3650
+    y: 1773
     width: 328
     height: 89
     borderLeft: 0
@@ -93,8 +106,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cornerExitButton
-    x: 3648
-    y: 3856
+    x: 3650
+    y: 1682
     width: 323
     height: 90
     borderLeft: 0
@@ -107,7 +120,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: credits_button
     x: 3074
-    y: 3611
+    y: 1083
     width: 573
     height: 167
     borderLeft: 0
@@ -120,7 +133,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: genericbutton
     x: 3074
-    y: 3779
+    y: 915
     width: 573
     height: 167
     borderLeft: 0
@@ -131,9 +144,48 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: Keyboard_Black_J
+    x: 3975
+    y: 1976
+    width: 76
+    height: 72
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 12
+    paddingRight: 12
+    paddingTop: 14
+    paddingBottom: 14
+  - name: Keyboard_Black_Mouse_Left
+    x: 3906
+    y: 1956
+    width: 68
+    height: 92
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 16
+    paddingRight: 16
+    paddingTop: 4
+    paddingBottom: 4
+  - name: Keyboard_Black_Mouse_Right
+    x: 3906
+    y: 1863
+    width: 68
+    height: 92
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 16
+    paddingRight: 16
+    paddingTop: 4
+    paddingBottom: 4
   - name: login_button
-    x: 3074
-    y: 3947
+    x: 2049
+    y: 89
     width: 674
     height: 149
     borderLeft: 0
@@ -146,7 +198,7 @@ MonoBehaviour:
     paddingBottom: 1
   - name: options_button
     x: 3074
-    y: 3443
+    y: 747
     width: 573
     height: 167
     borderLeft: 0
@@ -159,7 +211,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: optionsbg
     x: 0
-    y: 2071
+    y: 23
     width: 2048
     height: 899
     borderLeft: 0
@@ -172,7 +224,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: slider_empty
     x: 3074
-    y: 3351
+    y: 563
     width: 999
     height: 91
     borderLeft: 0
@@ -185,7 +237,7 @@ MonoBehaviour:
     paddingBottom: 5
   - name: slider_full
     x: 3074
-    y: 3259
+    y: 655
     width: 999
     height: 91
     borderLeft: 0
@@ -198,9 +250,9 @@ MonoBehaviour:
     paddingBottom: 5
   - name: the-white-for-web
     x: 2049
-    y: 2460
-    width: 1024
-    height: 510
+    y: 1251
+    width: 1600
+    height: 797
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -210,8 +262,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: thumb
-    x: 3972
-    y: 3848
+    x: 3650
+    y: 1583
     width: 33
     height: 98
     borderLeft: 0
@@ -224,7 +276,7 @@ MonoBehaviour:
     paddingBottom: 1
   - name: top layer
     x: 2049
-    y: 2973
+    y: 689
     width: 1024
     height: 561
     borderLeft: 0
@@ -237,7 +289,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: whitesharkmenu
     x: 0
-    y: 2971
+    y: 923
     width: 2048
     height: 1125
     borderLeft: 0
