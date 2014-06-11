@@ -19,10 +19,12 @@ public class ConditionAppearance : MonoBehaviour {
 		float newX = 40.0f;
 
 		if (Dialoguer.GetGlobalBoolean(getBoolID) == getBoolCondition) {
-			transform.position = new Vector3(oldX, transform.position.y);
+			//transform.position = new Vector3(oldX, transform.position.y);
+			renderer.enabled = false;
 		}
 		else {
-			transform.position = new Vector3(newX, transform.position.y);
+			//transform.position = new Vector3(newX, transform.position.y);
+			renderer.enabled = true;
 		}
 	}
 }
