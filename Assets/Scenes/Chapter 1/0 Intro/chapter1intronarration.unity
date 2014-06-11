@@ -104,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: {fileID: 0}
   varName: 
+  isBool: 0
 --- !u!4 &309699931
 Transform:
   m_ObjectHideFlags: 0
@@ -137,7 +138,6 @@ MonoBehaviour:
   dialoguer: chapter1
   needGUI: 0
   dialogue: 00000000
-  curDia: 0
   setOffset: 18
   player: {fileID: 0}
   maxY: 2
@@ -145,6 +145,7 @@ MonoBehaviour:
   minScale: 1
   maxScale: 1
   baseSpeed: 1
+  placeTop: 0
 --- !u!1 &1697760719
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,6 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: {fileID: 1697760724}
   varName: 
+  isBool: 0
 --- !u!95 &1697760724
 Animator:
   serializedVersion: 2
