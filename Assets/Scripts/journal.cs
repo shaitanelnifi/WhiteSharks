@@ -280,6 +280,11 @@ public class journal : MonoBehaviour {
 		pcName.text = pcNameSplit[0];
 	}
 
+	public bool isMenu()
+	{
+		return inMenu;
+	}
+
 	void testNotificationQ(){
 		for(int i = 0; i < 3; i++){
 			GameObject newCaseObject = (GameObject)Resources.Load ("chapter1objects/brokenBracelet", typeof(GameObject));
@@ -291,12 +296,21 @@ public class journal : MonoBehaviour {
 	void Update() {
 		if (Input.GetKeyDown (KeyCode.J))
 		{
-			if(GameManager.dialogueJustFinished) {
+			if(!GameManager.Instance.GetComponent<DialogueGUI_Test>().isDialogue()) {
 				journalAccusationPanelToggle(journalButton);
 				GameObject.Find("Journal Button").GetComponent<UIPlayTween>().Play(true);
 				AudioClip clip = Resources.Load("Sounds/SoundEffects/Tap") as AudioClip;
 				NGUITools.PlaySound(clip);
 			}
+		}
+
+		if (GameManager.Instance.GetComponent<DialogueGUI_Test>().isDialogue())
+		{
+			journalButton.GetComponent<UIPlayTween>().enabled = false;
+		}
+		else
+		{
+			journalButton.GetComponent<UIPlayTween>().enabled = true;
 		}
 	}
 	

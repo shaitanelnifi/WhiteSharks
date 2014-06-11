@@ -119,7 +119,12 @@ public class DialogueGUI_Test : MonoBehaviour {
 		
 	}
 	#endregion
-	
+
+	public bool isDialogue()
+	{
+		return _dialogue;
+	}
+
 	List<string[]> parseString(string[] str)
 	{
 		List<string[]> list = new List<string[]>();
@@ -327,8 +332,11 @@ public class DialogueGUI_Test : MonoBehaviour {
 			disableColliders();
 			if (Input.GetMouseButtonUp(0) && time > delay)
 			{
-				time = 0;
-				Dialoguer.ContinueDialogue(0);
+				if (!journal.Instance.isMenu())
+				{
+					time = 0;
+					Dialoguer.ContinueDialogue(0);
+				}
 			}
 		}
 		
