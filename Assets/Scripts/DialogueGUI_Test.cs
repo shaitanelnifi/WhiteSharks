@@ -332,7 +332,15 @@ public class DialogueGUI_Test : MonoBehaviour {
 			disableColliders();
 			if (Input.GetMouseButtonUp(0) && time > delay)
 			{
-				if (!journal.Instance.isMenu())
+				if (journal.Instance != null)
+				{
+					if (!journal.Instance.isMenu())
+					{
+						time = 0;
+						Dialoguer.ContinueDialogue(0);
+					}
+				}
+				else
 				{
 					time = 0;
 					Dialoguer.ContinueDialogue(0);
