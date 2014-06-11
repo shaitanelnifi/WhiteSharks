@@ -74,7 +74,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: walk
-  m_Speed: 1
+  m_Speed: -1
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: 1f2efdb96f00e4283a5cd2d80bf8340b, type: 2}
