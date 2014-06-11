@@ -134,22 +134,24 @@ public class journal : MonoBehaviour {
 	
 	//No longer toggles.
 	void journalAccusationPanelToggle(GameObject button){
-		if (button == journalButton){
-			playerScript player = (playerScript) FindObjectOfType(typeof(playerScript));
-			if (inMenu){
-				player.stopMove();
-				player.canWalk = true;
-				player.talking = false;
-				Time.timeScale = 1f;
-				inMenu = false;
-				Debug.LogWarning("Ding");
-			}
-			else {
-				player.stopMove();
-				player.talking = true;
-				inMenu = true;	
-				Debug.LogWarning("Dong");
-				Time.timeScale = 0f;
+		if (GameManager.dialogueJustFinished) {
+			if(button == journalButton) {
+				playerScript player = (playerScript)FindObjectOfType(typeof(playerScript));
+				if(inMenu) {
+					player.stopMove();
+					player.canWalk = true;
+					player.talking = false;
+					Time.timeScale = 1f;
+					inMenu = false;
+					Debug.LogWarning("Ding");
+				}
+				else {
+					player.stopMove();
+					player.talking = true;
+					inMenu = true;
+					Debug.LogWarning("Dong");
+					Time.timeScale = 0f;
+				}
 			}
 		}
 	}
@@ -289,10 +291,12 @@ public class journal : MonoBehaviour {
 	void Update() {
 		if (Input.GetKeyDown (KeyCode.J))
 		{
-			journalAccusationPanelToggle(journalButton);
-			GameObject.Find ("Journal Button").GetComponent<UIPlayTween>().Play(true);
-			AudioClip clip = Resources.Load ("Sounds/SoundEffects/Tap") as AudioClip;
-			NGUITools.PlaySound(clip);
+			if(GameManager.dialogueJustFinished) {
+				journalAccusationPanelToggle(journalButton);
+				GameObject.Find("Journal Button").GetComponent<UIPlayTween>().Play(true);
+				AudioClip clip = Resources.Load("Sounds/SoundEffects/Tap") as AudioClip;
+				NGUITools.PlaySound(clip);
+			}
 		}
 	}
 	
