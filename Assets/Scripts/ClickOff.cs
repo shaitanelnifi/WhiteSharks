@@ -28,14 +28,16 @@ public class ClickOff : MonoBehaviour {
 	
 	void OnGUI()
 	{
-		GUI.DrawTexture(new Rect(pos.x, pos.y, progressBarFounder.width, 
-		                         progressBarFounder.height), progressBarFounder);
+		if (started) {
+			GUI.DrawTexture (new Rect (pos.x, pos.y, progressBarFounder.width, 
+                 progressBarFounder.height), progressBarFounder);
 
-		GUI.DrawTexture(new Rect(pos.x, pos.y, progressBarMay.width * Mathf.Clamp01(progress / progressNeeded), 
-		                         progressBarMay.height), progressBarMay);
+			GUI.DrawTexture (new Rect (pos.x, pos.y, progressBarMay.width * Mathf.Clamp01 (progress / progressNeeded), 
+                 progressBarMay.height), progressBarMay);
 
-		GUI.DrawTexture(new Rect(Screen.width / 2 - progressBarEmpty.width / 2, 0, progressBarEmpty.width, 
-		                         progressBarEmpty.height), progressBarEmpty);
+			GUI.DrawTexture (new Rect (Screen.width / 2 - progressBarEmpty.width / 2, 0, progressBarEmpty.width, 
+                 progressBarEmpty.height), progressBarEmpty);
+		}
 	} 
 
 	void playReward(){
