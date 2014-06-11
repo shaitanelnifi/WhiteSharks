@@ -2122,8 +2122,8 @@ Once you have it, walk down the hall.</text>
       <name>robotbellybar</name>
       <startPage>0</startPage>
       <scrollPosition>
-        <x>846.9999</x>
-        <y>1447.39978</y>
+        <x>349</x>
+        <y>276</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -6944,8 +6944,8 @@ Tell me May, do you know who my last victim was?</text>
       <name>EndCutsceneBRoom1</name>
       <startPage>4</startPage>
       <scrollPosition>
-        <x>22</x>
-        <y>0</y>
+        <x>152.589813</x>
+        <y>254</y>
       </scrollPosition>
       <phases>
         <DialogueEditorPhaseObject>
@@ -7684,11 +7684,11 @@ Your efforts have...</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>264</x>
-            <y>1882</y>
+            <x>74</x>
+            <y>1873</y>
           </position>
           <outs>
-            <int>17</int>
+            <int>44</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -8943,6 +8943,45 @@ For White Shark.</text>
           <variableSetEquation>Equals</variableSetEquation>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>44</id>
+          <type>EndPhase</type>
+          <position>
+            <x>433.5898</x>
+            <y>1956.0929</y>
+          </position>
+          <outs />
+          <advanced>false</advanced>
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>0</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>0</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
       </phases>
       <floats>
         <variables />
@@ -9724,7 +9763,7 @@ For White Shark.</text>
       <name>endsceneBelly</name>
       <startPage>4</startPage>
       <scrollPosition>
-        <x>0</x>
+        <x>542.4194</x>
         <y>0</y>
       </scrollPosition>
       <phases>
@@ -9779,11 +9818,11 @@ For White Shark.</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>827</x>
-            <y>10</y>
+            <x>725</x>
+            <y>264</y>
           </position>
           <outs>
-            <int>2</int>
+            <int>6</int>
           </outs>
           <advanced>true</advanced>
           <metadata />
@@ -9871,8 +9910,8 @@ For White Shark.</text>
           <type>TextPhase</type>
           <theme />
           <position>
-            <x>170</x>
-            <y>333</y>
+            <x>229</x>
+            <y>475</y>
           </position>
           <outs>
             <int>5</int>
@@ -9916,8 +9955,8 @@ For White Shark.</text>
           <id>4</id>
           <type>SetVariablePhase</type>
           <position>
-            <x>173</x>
-            <y>10</y>
+            <x>10</x>
+            <y>117</y>
           </position>
           <outs>
             <int>0</int>
@@ -9992,6 +10031,49 @@ For White Shark.</text>
             <y>0</y>
           </variableScrollPosition>
           <variableSetEquation>Equals</variableSetEquation>
+          <variableGetEquation>Equals</variableGetEquation>
+        </DialogueEditorPhaseObject>
+        <DialogueEditorPhaseObject>
+          <id>6</id>
+          <type>SetVariablePhase</type>
+          <position>
+            <x>1009.41943</x>
+            <y>411</y>
+          </position>
+          <outs>
+            <int>2</int>
+          </outs>
+          <advanced>false</advanced>
+          <metadata />
+          <text />
+          <audioDelay>0</audioDelay>
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <center>
+              <x>0</x>
+              <y>0</y>
+            </center>
+            <width>0</width>
+            <height>0</height>
+            <xMin>0</xMin>
+            <yMin>0</yMin>
+            <xMax>0</xMax>
+            <yMax>0</yMax>
+          </rect>
+          <newWindow>false</newWindow>
+          <choices />
+          <waitType>Seconds</waitType>
+          <waitDuration>0</waitDuration>
+          <variableScope>Global</variableScope>
+          <variableType>Boolean</variableType>
+          <variableId>6</variableId>
+          <variableScrollPosition>
+            <x>0</x>
+            <y>47</y>
+          </variableScrollPosition>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>true</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
       </phases>
@@ -10490,14 +10572,14 @@ For White Shark.</text>
           <waitType>Seconds</waitType>
           <waitDuration>0</waitDuration>
           <variableScope>Global</variableScope>
-          <variableType>Float</variableType>
-          <variableId>0</variableId>
+          <variableType>Boolean</variableType>
+          <variableId>6</variableId>
           <variableScrollPosition>
             <x>0</x>
-            <y>0</y>
+            <y>47</y>
           </variableScrollPosition>
-          <variableSetEquation>Add</variableSetEquation>
-          <variableSetValue>1</variableSetValue>
+          <variableSetEquation>Equals</variableSetEquation>
+          <variableSetValue>true</variableSetValue>
           <variableGetEquation>Equals</variableGetEquation>
         </DialogueEditorPhaseObject>
         <DialogueEditorPhaseObject>
@@ -11885,8 +11967,13 @@ For White Shark.</text>
           <variable>false</variable>
           <id>5</id>
         </DialogueEditorVariableObject>
+        <DialogueEditorVariableObject>
+          <name>alexiaDisappear</name>
+          <variable>false</variable>
+          <id>6</id>
+        </DialogueEditorVariableObject>
       </variables>
-      <selection>5</selection>
+      <selection>6</selection>
     </booleans>
     <floats>
       <variables>
@@ -11927,5 +12014,5 @@ For White Shark.</text>
     <x>0</x>
     <y>0</y>
   </selectorScrollPosition>
-  <currentDialogueId>6</currentDialogueId>
+  <currentDialogueId>20</currentDialogueId>
 </DialogueEditorMasterObject>
