@@ -2152,7 +2152,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_SortingLayerID: 1982072587
-  m_Sprite: {fileID: 21300000, guid: 4df6e5d2503ff4e10b2007b87b3c2a2a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2b0a4c17f3faed449bf86df28d8d60f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1688167034
 Transform:
@@ -2161,8 +2161,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1688167031}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.47410488, y: -4.38760948, z: 0}
-  m_LocalScale: {x: -.705848515, y: .705850005, z: 1}
+  m_LocalPosition: {x: 6.6314044, y: -3.99074793, z: 0}
+  m_LocalScale: {x: -.215668589, y: .215669498, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!61 &1688167035
@@ -2174,8 +2174,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 7.17743492, y: 2.52223063}
-  m_Center: {x: -.0875921473, y: -.0625699908}
+  m_Size: {x: 24, y: 9}
+  m_Center: {x: 0, y: 0}
 --- !u!114 &1688167036
 MonoBehaviour:
   m_ObjectHideFlags: 0
