@@ -27,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.5700569, y: -1.45049167, z: -1}
-  m_LocalScale: {x: .185144827, y: .185144573, z: 1}
+  m_LocalPosition: {x: 6.11045265, y: -1.68926728, z: -1}
+  m_LocalScale: {x: .0794741511, y: .0794740468, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!61 &6100000
@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32265abd59844014bbd30b6908f5a45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolText: Read Journal
+  toolText: Take Jacket?
   sizeOfFont: 24
   ClickRevealer: {fileID: 0}
   iconMod: {x: 0, y: 0}
@@ -94,7 +94,7 @@ MonoBehaviour:
   associatedObjects:
   - {fileID: 11400000, guid: 86789d4e374869e45bb04d2c5c50c064, type: 2}
   mouseOverIcon: Grab_Icon
-  autoPickupPostConvo: 1
+  autoPickupPostConvo: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

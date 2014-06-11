@@ -331,7 +331,7 @@ Animator:
   m_GameObject: {fileID: 272194264}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6839f59c67524e34911c5380a813a7a, type: 2}
   m_CullingMode: 0
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
@@ -462,8 +462,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 5.07688332, y: 3.31454062}
-  m_Center: {x: .00453737238, y: -.0165049452}
+  m_Size: {x: 10, y: 7}
+  m_Center: {x: 0, y: 0}
 --- !u!212 &342701597
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -485,7 +485,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_SortingLayerID: 2514339253
-  m_Sprite: {fileID: 21300000, guid: 86e93ada56b53024d8612deb77b00729, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8d73ead3eab8bc2468b889c2723e7cb6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &342701598
 Transform:
@@ -494,8 +494,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 342701592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .526361346, y: -2.12516689, z: 0}
-  m_LocalScale: {x: -.387542278, y: .387543529, z: 1}
+  m_LocalPosition: {x: 1.17832589, y: -2.11408019, z: 0}
+  m_LocalScale: {x: -.174246952, y: .174247041, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &342701599
@@ -512,7 +512,7 @@ MonoBehaviour:
   elementName: Sharkulus Rift
   description: The newest in virtual reality technology, the Sharkulus Rift brings
     gaming to an all new level.  Also comes with many apps for general use.
-  profileImage: {fileID: 21300000, guid: 86e93ada56b53024d8612deb77b00729, type: 3}
+  profileImage: {fileID: 21300000, guid: 8d73ead3eab8bc2468b889c2723e7cb6, type: 3}
   visible: 0
   clickedOnSomething: 0
   maxDist: 1
@@ -571,7 +571,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: f96a0d45c4d0449d7a663ea6d8130974, type: 2}
       propertyPath: m_Size.x
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: f96a0d45c4d0449d7a663ea6d8130974, type: 2}
       propertyPath: m_Size.y
@@ -1375,7 +1375,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 2, y: 9}
+  m_Size: {x: 5, y: 9}
   m_Center: {x: 0, y: 4.5}
 --- !u!212 &991983523
 SpriteRenderer:
@@ -1448,6 +1448,7 @@ MonoBehaviour:
   getBoolID: 1
   getBoolCondition: 0
   getPosition: -3.877000093460083
+  reverseType: 1
 --- !u!1 &1365040141
 GameObject:
   m_ObjectHideFlags: 0

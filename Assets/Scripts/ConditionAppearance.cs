@@ -6,6 +6,7 @@ public class ConditionAppearance : MonoBehaviour {
 	public int getBoolID;
 	public bool getBoolCondition;
 	public double getPosition;
+	public bool reverseType = false;
 
 	// Use this for initialization
 	void Start () {
@@ -19,12 +20,18 @@ public class ConditionAppearance : MonoBehaviour {
 		float newX = 40.0f;
 
 		if (Dialoguer.GetGlobalBoolean(getBoolID) == getBoolCondition) {
-			//transform.position = new Vector3(oldX, transform.position.y);
+			if (!reverseType){
 			renderer.enabled = false;
+			} else {
+				renderer.enabled = true;
+			}
 		}
 		else {
-			//transform.position = new Vector3(newX, transform.position.y);
-			renderer.enabled = true;
+			if (!reverseType){
+				renderer.enabled = true;
+			} else {
+				renderer.enabled = false;
+			}
 		}
 	}
 }
