@@ -134,12 +134,10 @@ public class MapClickable : Clickable {
 
 
 	IEnumerator DialogueDone() {
-		Debug.Log("dialogue over1: " + GameManager.dialogueJustFinished);
 		while(!GameManager.dialogueJustFinished) {
 			yield return null;
 		}
 		gameObject.GetComponent<TooltipScript>().enabled = false;
-		Debug.Log("dialogue over2: " + GameManager.dialogueJustFinished);
 		player.talking = false;
 		StopCoroutine("DialogueDone");
 		//Destroy(gameObject);
