@@ -1082,13 +1082,13 @@ MonoBehaviour:
     absolute: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 332
+  mWidth: 334
   mHeight: 96
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 3.45833325
+  aspectRatio: 3.47916675
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: 389b122e9f3aa4b16ab074fa5d295d07, type: 3}
   mFont: {fileID: 0}
@@ -1368,13 +1368,13 @@ MonoBehaviour:
     absolute: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
-  mWidth: 228
+  mWidth: 226
   mHeight: 64
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 3.5625
+  aspectRatio: 3.53125
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: 389b122e9f3aa4b16ab074fa5d295d07, type: 3}
   mFont: {fileID: 0}
@@ -1867,13 +1867,13 @@ MonoBehaviour:
     absolute: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
-  mWidth: 228
+  mWidth: 226
   mHeight: 64
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 3.5625
+  aspectRatio: 3.53125
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: 389b122e9f3aa4b16ab074fa5d295d07, type: 3}
   mFont: {fileID: 0}
@@ -2416,13 +2416,13 @@ MonoBehaviour:
     absolute: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 614
+  mWidth: 612
   mHeight: 96
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 6.39583349
+  aspectRatio: 6.375
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: 389b122e9f3aa4b16ab074fa5d295d07, type: 3}
   mFont: {fileID: 0}
@@ -2660,13 +2660,13 @@ MonoBehaviour:
     absolute: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
-  mWidth: 228
+  mWidth: 226
   mHeight: 64
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 3.5625
+  aspectRatio: 3.53125
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: 389b122e9f3aa4b16ab074fa5d295d07, type: 3}
   mFont: {fileID: 0}
@@ -3627,15 +3627,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400076, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: 3.45833325
+      value: 3.47916675
       objectReference: {fileID: 0}
     - target: {fileID: 11400070, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: 3.5625
+      value: 3.53125
       objectReference: {fileID: 0}
     - target: {fileID: 11400080, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: 3.5625
+      value: 3.53125
       objectReference: {fileID: 0}
     - target: {fileID: 11400074, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
@@ -3651,15 +3651,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400062, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: 6.39583349
+      value: 6.375
       objectReference: {fileID: 0}
     - target: {fileID: 11400052, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: 3.5625
+      value: 3.53125
       objectReference: {fileID: 0}
     - target: {fileID: 11400038, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: aspectRatio
-      value: .209909543
+      value: .2109375
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: m_LocalScale.y
@@ -3668,6 +3668,30 @@ Prefab:
     - target: {fileID: 400034, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
       propertyPath: m_LocalScale.y
       value: 4.82999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400076, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
+      propertyPath: mWidth
+      value: 334
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400070, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
+      propertyPath: mWidth
+      value: 226
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400080, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
+      propertyPath: mWidth
+      value: 226
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400062, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
+      propertyPath: mWidth
+      value: 612
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400052, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
+      propertyPath: mWidth
+      value: 226
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400038, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
+      propertyPath: mWidth
+      value: 2052
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d928bb265e6fc14a8274191904f2889, type: 2}
@@ -3807,13 +3831,13 @@ MonoBehaviour:
     absolute: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 2042
+  mWidth: 2052
   mHeight: 9728
   mDepth: 4
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: .209909543
+  aspectRatio: .2109375
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: e8a2bdb4cdc714a34a70a05bce765e27, type: 3}
   mFont: {fileID: 0}

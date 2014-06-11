@@ -15,7 +15,7 @@ public class LayerSwitch : MonoBehaviour {
 			playerObj = GameObject.FindWithTag ("Player");
 		}
 		else{
-			if(transform.position.y > playerObj.transform.position.y){
+			if((transform.position.y- (renderer.bounds.size.y/2)) > playerObj.transform.position.y){
 				renderer.sortingLayerID = playerObj.renderer.sortingLayerID -1;
 			}
 			else{
