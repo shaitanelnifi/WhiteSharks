@@ -144,6 +144,8 @@ public class journal : MonoBehaviour {
 					Time.timeScale = 1f;
 					inMenu = false;
 					Debug.LogWarning("Ding");
+					AudioClip clip = Resources.Load("Sounds/SoundEffects/Tap") as AudioClip;
+					NGUITools.PlaySound(clip);
 				}
 				else {
 					player.stopMove();
@@ -151,6 +153,9 @@ public class journal : MonoBehaviour {
 					inMenu = true;
 					Debug.LogWarning("Dong");
 					Time.timeScale = 0f;
+					AudioClip clip = Resources.Load("Sounds/SoundEffects/Tap") as AudioClip;
+					NGUITools.PlaySound(clip);
+
 				}
 			}
 		}
