@@ -230,8 +230,8 @@ MonoBehaviour:
   player: {fileID: 0}
   maxY: -2.99557304
   minY: -4.30000019
-  minScale: .5
-  maxScale: .620000005
+  minScale: .550000012
+  maxScale: .819999993
   baseSpeed: 6
   placeTop: 0
 --- !u!212 &285852857
